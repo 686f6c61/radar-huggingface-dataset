@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RusMind-Sokol-4.7-GGUF",
+  "slug": "mradermacher-rusmind-sokol-4-7-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RusMind-Sokol-4.7-GGUF",
+  "created_at": "2026-10-30T12:17:01.000Z",
+  "updated_at": "2026-10-30T15:53:10.000Z",
+  "license": "rusmind-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "rusmind",
+    "dicplay",
+    "russian",
+    "reasoning",
+    "thinking",
+    "offline",
+    "llama.cpp",
+    "ru",
+    "en",
+    "base_model:DICPlay/RusMind-Sokol-4.7",
+    "base_model:quantized:DICPlay/RusMind-Sokol-4.7",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 668,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425090560,
+  "storage_human": "81.4 GB",
+  "base_model": "DICPlay/RusMind-Sokol-4.7",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

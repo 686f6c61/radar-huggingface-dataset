@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "requstory/requ-classify-small",
+  "slug": "requstory-requ-classify-small",
+  "author": "requstory",
+  "url": "https://huggingface.co/requstory/requ-classify-small",
+  "created_at": "2026-10-24T20:20:43.000Z",
+  "updated_at": "2026-10-24T20:32:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "business",
+    "website-classification",
+    "industry-classification",
+    "operating-model",
+    "requstory",
+    "text-classification",
+    "en",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:quantized:BAAI/bge-small-en-v1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52076738,
+  "storage_human": "52 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

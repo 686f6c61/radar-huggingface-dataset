@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "abdelstark/hallmark-contextual-byte-cnn",
+  "slug": "abdelstark-hallmark-contextual-byte-cnn",
+  "author": "abdelstark",
+  "url": "https://huggingface.co/abdelstark/hallmark-contextual-byte-cnn",
+  "created_at": "2026-10-27T08:53:19.000Z",
+  "updated_at": "2026-10-28T09:01:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "hallmark",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "hallmark",
+    "cryptographic-inference",
+    "integer-inference",
+    "synthetic-data",
+    "research",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

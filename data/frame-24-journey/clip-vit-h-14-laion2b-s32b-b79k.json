@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Frame-24-journey/CLIP-ViT-H-14-laion2B-s32B-b79K",
+  "slug": "frame-24-journey-clip-vit-h-14-laion2b-s32b-b79k",
+  "author": "Frame-24-journey",
+  "url": "https://huggingface.co/Frame-24-journey/CLIP-ViT-H-14-laion2B-s32B-b79K",
+  "created_at": "2026-10-30T13:45:40.000Z",
+  "updated_at": "2026-10-30T13:45:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "pytorch",
+    "safetensors",
+    "clip",
+    "zero-shot-image-classification",
+    "arxiv:1910.04867",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 986109774,
+  "parameters_human": "986.1M",
+  "storage_bytes": 15778498494,
+  "storage_human": "15.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

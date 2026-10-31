@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/vulcan-decision-shell-v1-GGUF",
+  "slug": "mradermacher-vulcan-decision-shell-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/vulcan-decision-shell-v1-GGUF",
+  "created_at": "2026-10-29T09:06:11.000Z",
+  "updated_at": "2026-10-29T09:13:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safety",
+    "guardrail",
+    "coding-agent",
+    "tool-call",
+    "command-review",
+    "permission",
+    "qwen3.5",
+    "en",
+    "base_model:openvulcan/vulcan-decision-shell-v1",
+    "base_model:quantized:openvulcan/vulcan-decision-shell-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 688,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455591040,
+  "storage_human": "7.5 GB",
+  "base_model": "openvulcan/vulcan-decision-shell-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

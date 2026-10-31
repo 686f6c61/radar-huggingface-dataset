@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Starw1/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-MXFP8-Engram-GGUF",
+  "slug": "starw1-deepseek-v4-1-flash-1017-uncensored-gsq-rco-iq2_xxs-mxfp8-engram-gguf",
+  "author": "Starw1",
+  "url": "https://huggingface.co/Starw1/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-MXFP8-Engram-GGUF",
+  "created_at": "2026-10-26T04:46:52.000Z",
+  "updated_at": "2026-10-27T03:35:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "base_model:Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF",
+    "base_model:merge:Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:merge:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 2677,
+  "trending_score": 0,
+  "parameters": 196613849600,
+  "parameters_human": "196.61B",
+  "storage_bytes": 341339187696,
+  "storage_human": "341.3 GB",
+  "base_model": "Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF, deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

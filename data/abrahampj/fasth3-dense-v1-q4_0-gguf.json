@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AbrahamPJ/fasth3-dense-v1-q4_0-gguf",
+  "slug": "abrahampj-fasth3-dense-v1-q4_0-gguf",
+  "author": "AbrahamPJ",
+  "url": "https://huggingface.co/AbrahamPJ/fasth3-dense-v1-q4_0-gguf",
+  "created_at": "2026-10-29T12:01:28.000Z",
+  "updated_at": "2026-10-29T12:52:34.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "gguf",
+    "text-to-video",
+    "android",
+    "base_model:FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree",
+    "base_model:quantized:FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1141,
+  "trending_score": 0,
+  "parameters": 20116279777,
+  "parameters_human": "20.12B",
+  "storage_bytes": 11583540608,
+  "storage_human": "11.6 GB",
+  "base_model": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree, MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

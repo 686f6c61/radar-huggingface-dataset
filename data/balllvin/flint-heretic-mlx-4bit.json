@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "balllvin/flint-heretic-mlx-4bit",
+  "slug": "balllvin-flint-heretic-mlx-4bit",
+  "author": "balllvin",
+  "url": "https://huggingface.co/balllvin/flint-heretic-mlx-4bit",
+  "created_at": "2026-10-26T16:22:00.000Z",
+  "updated_at": "2026-10-27T01:29:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "flint",
+    "abliterated",
+    "mixture-of-experts",
+    "base_model:RecursiveSI/flint",
+    "base_model:finetune:RecursiveSI/flint",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 236,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22581020786,
+  "storage_human": "22.6 GB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

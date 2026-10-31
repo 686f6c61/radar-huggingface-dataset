@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Samir-j/bge-reranker-v2-m3-onnx",
+  "slug": "samir-j-bge-reranker-v2-m3-onnx",
+  "author": "Samir-j",
+  "url": "https://huggingface.co/Samir-j/bge-reranker-v2-m3-onnx",
+  "created_at": "2026-10-31T11:17:41.000Z",
+  "updated_at": "2026-10-31T11:40:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:quantized:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2858283400,
+  "storage_human": "2.9 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

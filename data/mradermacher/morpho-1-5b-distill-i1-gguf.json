@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Morpho-1.5B-Distill-i1-GGUF",
+  "slug": "mradermacher-morpho-1-5b-distill-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Morpho-1.5B-Distill-i1-GGUF",
+  "created_at": "2026-10-25T12:28:51.000Z",
+  "updated_at": "2026-10-27T12:21:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "morpho",
+    "distillation",
+    "1.5b",
+    "180b",
+    "en",
+    "base_model:bluemorpholimited/Morpho-1.5B-Distill",
+    "base_model:quantized:bluemorpholimited/Morpho-1.5B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 3063,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 19061909440,
+  "storage_human": "19.1 GB",
+  "base_model": "bluemorpholimited/Morpho-1.5B-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

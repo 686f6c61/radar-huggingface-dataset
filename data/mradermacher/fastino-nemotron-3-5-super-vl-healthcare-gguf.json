@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Fastino-Nemotron-3.5-Super-VL-Healthcare-GGUF",
+  "slug": "mradermacher-fastino-nemotron-3-5-super-vl-healthcare-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Fastino-Nemotron-3.5-Super-VL-Healthcare-GGUF",
+  "created_at": "2026-10-31T10:30:12.000Z",
+  "updated_at": "2026-10-31T15:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "healthcare",
+    "clinical",
+    "medical-reasoning",
+    "information-extraction",
+    "fine-tuned",
+    "nemotron",
+    "super",
+    "mixture-of-experts",
+    "en",
+    "base_model:fastino/Fastino-Nemotron-3.5-Super-VL-Healthcare",
+    "base_model:quantized:fastino/Fastino-Nemotron-3.5-Super-VL-Healthcare",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123611033088,
+  "parameters_human": "123.61B",
+  "storage_bytes": 927285702976,
+  "storage_human": "927.3 GB",
+  "base_model": "fastino/Fastino-Nemotron-3.5-Super-VL-Healthcare",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

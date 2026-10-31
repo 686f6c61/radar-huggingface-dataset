@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "pentacoxian-dev/drama3-expressive-medium-GGUF",
+  "slug": "pentacoxian-dev-drama3-expressive-medium-gguf",
+  "author": "pentacoxian-dev",
+  "url": "https://huggingface.co/pentacoxian-dev/drama3-expressive-medium-GGUF",
+  "created_at": "2026-10-26T14:44:53.000Z",
+  "updated_at": "2026-10-26T14:45:09.000Z",
+  "license": "fish-audio-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "voice-cloning",
+    "emotion",
+    "expressive",
+    "moe",
+    "quantization",
+    "japanese",
+    "audio.cpp",
+    "ja",
+    "en",
+    "base_model:fishaudio/drama-3",
+    "base_model:finetune:fishaudio/drama-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3813,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22514146622,
+  "storage_human": "22.5 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

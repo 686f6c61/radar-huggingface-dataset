@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/KnowLine-9B-Gen1-GGUF",
+  "slug": "mradermacher-knowline-9b-gen1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/KnowLine-9B-Gen1-GGUF",
+  "created_at": "2026-10-25T06:09:55.000Z",
+  "updated_at": "2026-10-25T06:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "decision-model",
+    "structured-prediction",
+    "text-classification",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:PelaAI/KnowLine-9B-Gen1",
+    "base_model:quantized:PelaAI/KnowLine-9B-Gen1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3321,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85101506112,
+  "storage_human": "85.1 GB",
+  "base_model": "PelaAI/KnowLine-9B-Gen1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Yidhar/psd-layer-vae",
+  "slug": "yidhar-psd-layer-vae",
+  "author": "Yidhar",
+  "url": "https://huggingface.co/Yidhar/psd-layer-vae",
+  "created_at": "2026-10-31T09:11:39.000Z",
+  "updated_at": "2026-10-31T15:58:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vae",
+    "autoencoder",
+    "rgba",
+    "layered",
+    "psd",
+    "hdr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 659064381,
+  "storage_human": "659 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mellum2.1-12B-A2.5B-Thinking-abliterated-GGUF",
+  "slug": "mradermacher-mellum2-1-12b-a2-5b-thinking-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mellum2.1-12B-A2.5B-Thinking-abliterated-GGUF",
+  "created_at": "2026-10-28T12:34:14.000Z",
+  "updated_at": "2026-10-28T15:45:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "mellum",
+    "moe",
+    "en",
+    "base_model:ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated",
+    "base_model:quantized:ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1125,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 87610967392,
+  "storage_human": "87.6 GB",
+  "base_model": "ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

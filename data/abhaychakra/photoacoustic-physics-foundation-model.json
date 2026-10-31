@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "abhaychakra/photoacoustic-physics-foundation-model",
+  "slug": "abhaychakra-photoacoustic-physics-foundation-model",
+  "author": "abhaychakra",
+  "url": "https://huggingface.co/abhaychakra/photoacoustic-physics-foundation-model",
+  "created_at": "2026-10-27T17:29:53.000Z",
+  "updated_at": "2026-10-27T18:45:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "physics",
+    "photoacoustics",
+    "multiphysics",
+    "surrogate-model",
+    "transformer",
+    "scientific-machine-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1195643808,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

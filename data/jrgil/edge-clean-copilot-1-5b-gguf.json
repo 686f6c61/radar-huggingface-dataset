@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jrgil/edge-clean-copilot-1.5b-gguf",
+  "slug": "jrgil-edge-clean-copilot-1-5b-gguf",
+  "author": "jrgil",
+  "url": "https://huggingface.co/jrgil/edge-clean-copilot-1.5b-gguf",
+  "created_at": "2026-10-29T19:32:35.000Z",
+  "updated_at": "2026-10-30T00:54:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "clean-architecture",
+    "hexagonal-architecture",
+    "code-refactoring",
+    "llama-cpp",
+    "edge-ai",
+    "typescript",
+    "lora",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048096,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

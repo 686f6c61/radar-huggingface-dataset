@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "bartowski/cosmicstack_cosmic-lightning-GGUF",
+  "slug": "bartowski-cosmicstack_cosmic-lightning-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/cosmicstack_cosmic-lightning-GGUF",
+  "created_at": "2026-10-30T11:50:59.000Z",
+  "updated_at": "2026-10-30T11:54:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llm",
+    "language-model",
+    "open-source",
+    "instruction-following",
+    "text-generation",
+    "en",
+    "base_model:cosmicstack/cosmic-lightning",
+    "base_model:quantized:cosmicstack/cosmic-lightning",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1252,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 26587212608,
+  "storage_human": "26.6 GB",
+  "base_model": "cosmicstack/cosmic-lightning",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

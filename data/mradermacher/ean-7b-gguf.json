@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EAN-7B-GGUF",
+  "slug": "mradermacher-ean-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EAN-7B-GGUF",
+  "created_at": "2026-10-28T10:14:07.000Z",
+  "updated_at": "2026-10-28T15:50:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "reasoning",
+    "reinforcement-learning",
+    "en",
+    "dataset:TIGER-Lab/ViRL39K",
+    "base_model:DawnLiu/EVAN-7B",
+    "base_model:quantized:DawnLiu/EVAN-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 672,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357177920,
+  "storage_human": "70.4 GB",
+  "base_model": "DawnLiu/EVAN-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

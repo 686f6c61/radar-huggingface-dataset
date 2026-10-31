@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kakaocorp/kanana-2-3b-embedding",
+  "slug": "kakaocorp-kanana-2-3b-embedding",
+  "author": "kakaocorp",
+  "url": "https://huggingface.co/kakaocorp/kanana-2-3b-embedding",
+  "created_at": "2026-05-27T16:13:34.000Z",
+  "updated_at": "2026-10-22T04:34:29.000Z",
+  "license": "kanana-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3_bidirec",
+    "feature-extraction",
+    "mteb",
+    "matryoshka",
+    "custom_code",
+    "sentence-similarity",
+    "ko",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 215,
+  "trending_score": 12,
+  "parameters": 3180636672,
+  "parameters_human": "3.18B",
+  "storage_bytes": 6361421633,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

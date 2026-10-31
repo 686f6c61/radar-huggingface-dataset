@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "samratduttaofficial/understudy-lm",
+  "slug": "samratduttaofficial-understudy-lm",
+  "author": "samratduttaofficial",
+  "url": "https://huggingface.co/samratduttaofficial/understudy-lm",
+  "created_at": "2026-10-25T16:14:10.000Z",
+  "updated_at": "2026-10-25T17:26:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "speculative-decoding",
+    "draft-model",
+    "assistant-model",
+    "qwen3.5",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 221,
+  "trending_score": 0,
+  "parameters": 108534144,
+  "parameters_human": "108.5M",
+  "storage_bytes": 455903845,
+  "storage_human": "456 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

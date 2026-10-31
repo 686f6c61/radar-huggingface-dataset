@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Logics-SWE-Qwen3.6-35B-A3B-GGUF",
+  "slug": "mradermacher-logics-swe-qwen3-6-35b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Logics-SWE-Qwen3.6-35B-A3B-GGUF",
+  "created_at": "2026-10-30T14:49:30.000Z",
+  "updated_at": "2026-10-30T16:59:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "software-engineering",
+    "on-policy-distillation",
+    "reinforcement-learning",
+    "agentic-post-training",
+    "en",
+    "dataset:Logics-MLLM/Logics-SWE-Env-2.5K",
+    "base_model:Logics-MLLM/Logics-SWE-Qwen3.6-35B-A3B",
+    "base_model:quantized:Logics-MLLM/Logics-SWE-Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 735,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 238639044736,
+  "storage_human": "238.6 GB",
+  "base_model": "Logics-MLLM/Logics-SWE-Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

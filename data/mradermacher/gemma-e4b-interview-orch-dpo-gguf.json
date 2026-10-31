@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-e4b-interview-orch-dpo-GGUF",
+  "slug": "mradermacher-gemma-e4b-interview-orch-dpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-e4b-interview-orch-dpo-GGUF",
+  "created_at": "2026-10-26T13:22:49.000Z",
+  "updated_at": "2026-10-26T13:34:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "en",
+    "base_model:ajujohn8/gemma-e4b-interview-orch-dpo",
+    "base_model:quantized:ajujohn8/gemma-e4b-interview-orch-dpo",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 737,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 76858089856,
+  "storage_human": "76.9 GB",
+  "base_model": "ajujohn8/gemma-e4b-interview-orch-dpo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

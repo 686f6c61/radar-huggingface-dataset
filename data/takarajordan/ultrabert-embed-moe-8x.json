@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "takarajordan/UltraBERT-Embed-MoE-8x",
+  "slug": "takarajordan-ultrabert-embed-moe-8x",
+  "author": "takarajordan",
+  "url": "https://huggingface.co/takarajordan/UltraBERT-Embed-MoE-8x",
+  "created_at": "2026-10-29T08:06:40.000Z",
+  "updated_at": "2026-10-29T08:18:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "ultrabert_moe",
+    "mixture-of-experts",
+    "ultrabert",
+    "feature-extraction",
+    "experimental",
+    "custom_code",
+    "sentence-similarity",
+    "en",
+    "dataset:nomic-ai/nomic-embed-unsupervised-data",
+    "arxiv:2502.07972",
+    "base_model:dmis-lab/UltraBERT-Embed-150M",
+    "base_model:finetune:dmis-lab/UltraBERT-Embed-150M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 349287168,
+  "parameters_human": "349.3M",
+  "storage_bytes": 1397305245,
+  "storage_human": "1.4 GB",
+  "base_model": "dmis-lab/UltraBERT-Embed-150M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sieve-31B-v3-GGUF",
+  "slug": "mradermacher-sieve-31b-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sieve-31B-v3-GGUF",
+  "created_at": "2026-10-28T11:31:07.000Z",
+  "updated_at": "2026-10-28T11:57:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "sieve",
+    "decision-model",
+    "calibration",
+    "full-fine-tune",
+    "multiple-choice",
+    "gemma4",
+    "decision-index",
+    "en",
+    "base_model:sthanika-ai/Sieve-31B-v3",
+    "base_model:quantized:sthanika-ai/Sieve-31B-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 789,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 211900103968,
+  "storage_human": "211.9 GB",
+  "base_model": "sthanika-ai/Sieve-31B-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

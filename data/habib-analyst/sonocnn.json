@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "habib-analyst/sonocnn",
+  "slug": "habib-analyst-sonocnn",
+  "author": "habib-analyst",
+  "url": "https://huggingface.co/habib-analyst/sonocnn",
+  "created_at": "2026-10-28T06:56:32.000Z",
+  "updated_at": "2026-10-28T06:56:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "sonocnn",
+    "medical-imaging",
+    "breast-ultrasound",
+    "medmnist",
+    "pytorch",
+    "image-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1596,
+  "trending_score": 0,
+  "parameters": 287970,
+  "parameters_human": "287970",
+  "storage_bytes": 4030256,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

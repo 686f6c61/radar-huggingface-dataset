@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "The-AnkitPatel/netpredict-telemetry-lgbm",
+  "slug": "the-ankitpatel-netpredict-telemetry-lgbm",
+  "author": "The-AnkitPatel",
+  "url": "https://huggingface.co/The-AnkitPatel/netpredict-telemetry-lgbm",
+  "created_at": "2026-10-31T10:46:00.000Z",
+  "updated_at": "2026-10-31T10:48:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "lightgbm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lightgbm",
+    "tabular-regression",
+    "telemetry",
+    "conformal-prediction",
+    "ebpf",
+    "time-series",
+    "systems-engineering",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Network Telemetry Latency Forecasting",
+      "dataset": null,
+      "metric": "Root Mean Squared Error (ms)",
+      "value": 0.3982
+    },
+    {
+      "task": "Network Telemetry Latency Forecasting",
+      "dataset": null,
+      "metric": "Mean Absolute Error (ms)",
+      "value": 0.2814
+    },
+    {
+      "task": "Network Telemetry Latency Forecasting",
+      "dataset": null,
+      "metric": "R-squared",
+      "value": 0.9924
+    }
+  ],
+  "sources": []
+}

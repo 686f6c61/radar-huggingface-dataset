@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "vybechief/vybecheck-flant5-adapters",
+  "slug": "vybechief-vybecheck-flant5-adapters",
+  "author": "vybechief",
+  "url": "https://huggingface.co/vybechief/vybecheck-flant5-adapters",
+  "created_at": "2026-10-25T14:40:18.000Z",
+  "updated_at": "2026-10-30T01:00:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "slang",
+    "seq2seq",
+    "base_model:adapter:google/flan-t5-large",
+    "translation",
+    "en",
+    "base_model:google/flan-t5-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 119,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1171877752,
+  "storage_human": "1.2 GB",
+  "base_model": "google/flan-t5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "TypeScript/FastBrain-9B",
+  "slug": "typescript-fastbrain-9b",
+  "author": "TypeScript",
+  "url": "https://huggingface.co/TypeScript/FastBrain-9B",
+  "created_at": "2026-10-29T07:09:24.000Z",
+  "updated_at": "2026-10-31T18:27:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "fastbrain",
+    "clef",
+    "llama-cpp",
+    "sglang",
+    "systemone",
+    "decision-model",
+    "image-text-to-typed-output",
+    "decision-index",
+    "tool-calling",
+    "function-calling",
+    "intent-classification",
+    "structured-decision",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:TypeScript/FastBrain-Instruct",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1127,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 89983017437,
+  "storage_human": "90.0 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TypeScript: JavaScript With Syntax For Types.",
+      "url": "https://www.typescriptlang.org/",
+      "snippet": "TypeScript is JavaScript with syntax for types. TypeScript is a strongly typed programming language that builds on JavaScript, giving …"
+    },
+    {
+      "title": "TypeScript Tutorial - W3Schools",
+      "url": "https://www.w3schools.com/typescript/index.php",
+      "snippet": "Examples in Each Chapter Our \"Try it Yourself\" editor makes it easy to learn TypeScript. You can edit TypeScript code and view the …"
+    },
+    {
+      "title": "The starting point for learning TypeScript",
+      "url": "https://www.typescriptlang.org/docs/",
+      "snippet": "TypeScript Documentation Get Started Quick introductions based on your background or preference. TS for the New Programmer …"
+    },
+    {
+      "title": "TypeScript - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/TypeScript",
+      "snippet": "Prior to version 7, the TypeScript compiler, named tsc, was written in TypeScript and compiled into regular JavaScript, allowing it to …"
+    },
+    {
+      "title": "TypeScript Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/typescript/typescript-tutorial/",
+      "snippet": "Sep 28, 2026 · TypeScript is a superset of JavaScript that adds extra features like static typing, interfaces, enums, and more. …"
+    }
+  ]
+}

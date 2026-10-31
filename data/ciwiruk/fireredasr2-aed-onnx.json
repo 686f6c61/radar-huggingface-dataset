@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Ciwiruk/FireRedASR2-AED-onnx",
+  "slug": "ciwiruk-fireredasr2-aed-onnx",
+  "author": "Ciwiruk",
+  "url": "https://huggingface.co/Ciwiruk/FireRedASR2-AED-onnx",
+  "created_at": "2026-10-28T22:58:11.000Z",
+  "updated_at": "2026-10-28T23:04:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "fireredasr",
+    "zh",
+    "en",
+    "arxiv:2603.10420",
+    "base_model:FireRedTeam/FireRedASR2-AED",
+    "base_model:quantized:FireRedTeam/FireRedASR2-AED",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4732463733,
+  "storage_human": "4.7 GB",
+  "base_model": "FireRedTeam/FireRedASR2-AED",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "daviluzz/Qwen3-4B-GGUF",
+  "slug": "daviluzz-qwen3-4b-gguf",
+  "author": "daviluzz",
+  "url": "https://huggingface.co/daviluzz/Qwen3-4B-GGUF",
+  "created_at": "2026-10-31T19:50:22.000Z",
+  "updated_at": "2026-10-31T19:50:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 15797169824,
+  "storage_human": "15.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

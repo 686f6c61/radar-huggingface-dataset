@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Yiriru/gemma-4-31B-it-qat-GGUF",
+  "slug": "yiriru-gemma-4-31b-it-qat-gguf",
+  "author": "Yiriru",
+  "url": "https://huggingface.co/Yiriru/gemma-4-31B-it-qat-GGUF",
+  "created_at": "2026-10-27T13:09:51.000Z",
+  "updated_at": "2026-10-27T15:18:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 783,
+  "trending_score": 0,
+  "parameters": 469518852,
+  "parameters_human": "469.5M",
+  "storage_bytes": 83144904032,
+  "storage_human": "83.1 GB",
+  "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

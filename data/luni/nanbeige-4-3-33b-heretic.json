@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Luni/Nanbeige-4.3-33B-Heretic",
+  "slug": "luni-nanbeige-4-3-33b-heretic",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Nanbeige-4.3-33B-Heretic",
+  "created_at": "2026-10-25T23:16:38.000Z",
+  "updated_at": "2026-10-27T22:51:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanbeige",
+    "full-attention",
+    "reasoning",
+    "thinking",
+    "chain-of-thought",
+    "uncensored",
+    "heretic",
+    "anti-slop",
+    "de-slopped",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:finetune:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 601,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 66274910661,
+  "storage_human": "66.3 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lunii | Conteuses et livres audio pour 0-14 ans",
+      "url": "https://lunii.com/fr-fr",
+      "snippet": "Avec les conteuses Ma 1ère Lunii, Ma Fabrique à Histoires & FLAM, Lunii réveille l'imaginaire et développe la créativité des enfants …Read more"
+    },
+    {
+      "title": "Application Mobile ou Web | Lunii",
+      "url": "https://lunii.com/fr-fr/application-lunii",
+      "snippet": "Téléchargez en quelques clics l'application Lunii, indispensable pour associer votre compte Lunii à Ma Fabrique à Histoires ou FLAM …"
+    },
+    {
+      "title": "Lunii : tous les produits de la marque Lunii (Enfant, Jouet ... - Fnac",
+      "url": "https://www.fnac.com/Lunii/m367853/w-4",
+      "snippet": "Retrouvez tous les produits Lunii au meilleur prix à la FNAC. En quelques clics, achetez en ligne ou commandez dans un magasin …"
+    },
+    {
+      "title": "Mon compte – Lunii",
+      "url": "https://support.lunii.com/hc/fr/categories/360000273657-Mon-compte",
+      "snippet": "Mon compte 📜 Retrouvez ici toutes les informations pour créer votre compte et le paramétrer"
+    }
+  ]
+}

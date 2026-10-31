@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZwZ2-4B-Surgical-Abliterated-i1-GGUF",
+  "slug": "mradermacher-zwz2-4b-surgical-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZwZ2-4B-Surgical-Abliterated-i1-GGUF",
+  "created_at": "2026-10-30T18:01:56.000Z",
+  "updated_at": "2026-10-30T21:20:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "surgical-alignment",
+    "causal-lm",
+    "safetensors",
+    "en",
+    "base_model:medismera/ZwZ2-4B-Surgical-Abliterated",
+    "base_model:quantized:medismera/ZwZ2-4B-Surgical-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2461,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 53403615456,
+  "storage_human": "53.4 GB",
+  "base_model": "medismera/ZwZ2-4B-Surgical-Abliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

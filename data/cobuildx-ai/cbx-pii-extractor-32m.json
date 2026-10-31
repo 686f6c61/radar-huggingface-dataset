@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "CobuildX-AI/cbx-pii-extractor-32M",
+  "slug": "cobuildx-ai-cbx-pii-extractor-32m",
+  "author": "CobuildX-AI",
+  "url": "https://huggingface.co/CobuildX-AI/cbx-pii-extractor-32M",
+  "created_at": "2026-10-27T12:00:19.000Z",
+  "updated_at": "2026-10-29T14:06:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "pii",
+    "ner",
+    "privacy",
+    "redaction",
+    "token-classification",
+    "en",
+    "arxiv:2507.11412",
+    "base_model:jhu-clsp/ettin-encoder-32m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-32m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 31897381,
+  "parameters_human": "31.9M",
+  "storage_bytes": 255173880,
+  "storage_human": "255 MB",
+  "base_model": "jhu-clsp/ettin-encoder-32m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

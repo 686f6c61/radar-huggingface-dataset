@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Ainvest-World/Ainvest-Decision-27b-v1.0",
+  "slug": "ainvest-world-ainvest-decision-27b-v1-0",
+  "author": "Ainvest-World",
+  "url": "https://huggingface.co/Ainvest-World/Ainvest-Decision-27b-v1.0",
+  "created_at": "2026-10-27T03:52:24.000Z",
+  "updated_at": "2026-10-27T07:30:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "decision-index",
+    "model-merge",
+    "bf16",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 81,
+  "trending_score": 0,
+  "parameters": 26086635760,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193409724,
+  "storage_human": "52.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

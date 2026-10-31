@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "korokoboom/Bonsai-2-9b-Shakespeare-SFT",
+  "slug": "korokoboom-bonsai-2-9b-shakespeare-sft",
+  "author": "korokoboom",
+  "url": "https://huggingface.co/korokoboom/Bonsai-2-9b-Shakespeare-SFT",
+  "created_at": "2026-10-24T23:12:22.000Z",
+  "updated_at": "2026-10-24T23:17:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ternary",
+    "quantization",
+    "lora",
+    "code-review",
+    "shakespeare",
+    "text-generation",
+    "en",
+    "dataset:ronantakizawa/github-codereview",
+    "base_model:prism-ml/Ternary-Bonsai-2-9B-gguf",
+    "base_model:adapter:prism-ml/Ternary-Bonsai-2-9B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 389,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 2677121283,
+  "storage_human": "2.7 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-9B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

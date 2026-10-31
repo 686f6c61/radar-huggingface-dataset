@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "t8star/BluePixel-Comfy",
+  "slug": "t8star-bluepixel-comfy",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/BluePixel-Comfy",
+  "created_at": "2026-10-29T12:25:39.000Z",
+  "updated_at": "2026-10-30T18:18:26.000Z",
+  "license": "bluepixel-component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "comfyui",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "comfyui",
+    "bluepixel",
+    "image-editing",
+    "int8",
+    "convrot",
+    "4k",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "base_model:openvivo/BluePixel-Turbo",
+    "base_model:quantized:openvivo/BluePixel-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28186687782,
+  "storage_human": "28.2 GB",
+  "base_model": "openvivo/BluePixel-Turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

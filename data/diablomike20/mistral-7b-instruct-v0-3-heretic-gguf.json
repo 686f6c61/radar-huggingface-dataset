@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "diablomike20/Mistral-7B-Instruct-v0.3-Heretic-GGUF",
+  "slug": "diablomike20-mistral-7b-instruct-v0-3-heretic-gguf",
+  "author": "diablomike20",
+  "url": "https://huggingface.co/diablomike20/Mistral-7B-Instruct-v0.3-Heretic-GGUF",
+  "created_at": "2026-10-31T20:52:13.000Z",
+  "updated_at": "2026-10-31T20:52:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vllm",
+    "mistral-common",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 63992406656,
+  "storage_human": "64.0 GB",
+  "base_model": "0xA50C1A1/Mistral-7B-Instruct-v0.3-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

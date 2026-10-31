@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "oleggat0r/LFM3-1.7B-transaction-categorization",
+  "slug": "oleggat0r-lfm3-1-7b-transaction-categorization",
+  "author": "oleggat0r",
+  "url": "https://huggingface.co/oleggat0r/LFM3-1.7B-transaction-categorization",
+  "created_at": "2026-10-29T01:05:54.000Z",
+  "updated_at": "2026-10-29T01:58:14.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "liquid",
+    "lfm3",
+    "lora",
+    "text-classification",
+    "finance",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:mitulshah/transaction-categorization",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:adapter:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 113,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 1930062130,
+  "storage_human": "1.9 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

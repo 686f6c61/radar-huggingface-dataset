@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "aimanhaziq/gemma4-2b-coder-bnb-4bit",
+  "slug": "aimanhaziq-gemma4-2b-coder-bnb-4bit",
+  "author": "aimanhaziq",
+  "url": "https://huggingface.co/aimanhaziq/gemma4-2b-coder-bnb-4bit",
+  "created_at": "2026-10-27T07:19:40.000Z",
+  "updated_at": "2026-10-27T07:31:22.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "code",
+    "kubernetes",
+    "rust",
+    "web-development",
+    "bitsandbytes",
+    "4bit",
+    "quantization",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:aimanhaziq/gemma4-2b-coder",
+    "base_model:quantized:aimanhaziq/gemma4-2b-coder",
+    "license:gemma",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 6774294734,
+  "storage_human": "6.8 GB",
+  "base_model": "aimanhaziq/gemma4-2b-coder",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

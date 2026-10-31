@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "yandex/Yandex-8B-WMT26",
+  "slug": "yandex-yandex-8b-wmt26",
+  "author": "yandex",
+  "url": "https://huggingface.co/yandex/Yandex-8B-WMT26",
+  "created_at": "2026-10-27T21:20:49.000Z",
+  "updated_at": "2026-10-27T21:40:34.000Z",
+  "license": "yandexgpt-5-lite-8b",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "kk",
+    "be",
+    "hy"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "translation",
+    "wmt26",
+    "machine-translation",
+    "finetune",
+    "en",
+    "ru",
+    "kk",
+    "be",
+    "hy",
+    "base_model:yandex/YandexGPT-5-Lite-8B-pretrain",
+    "base_model:finetune:yandex/YandexGPT-5-Lite-8B-pretrain",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 8036552704,
+  "parameters_human": "8.04B",
+  "storage_bytes": 16075712173,
+  "storage_human": "16.1 GB",
+  "base_model": "yandex/YandexGPT-5-Lite-8B-pretrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex finds anything: webpages, images, music, good. Solve any problem — from everyday to a scientific one. Search by text, …"
+    },
+    {
+      "title": "Яндекс",
+      "url": "https://yandex.fr/?from=tabbar",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Yandex",
+      "url": "http://online.yandex.com/search",
+      "snippet": "{\"2_6gsi\":{\"state\":{\"form\":{\"action\":\"/search\",\"logo\":{\"href\":\"//yandex.com\",\"isForeign\":true,\"size\":44},\"searchLabel\":\"Search\",\"clearLabel\":\"Clear\",\"hiddenInputs\":[{\"name\":\"lr\",\"value\":21206}],\"inputMaxLength\":4000},\"actions\":{\"advancedSearch\":{\"checked\":false,\"ariaLabel\":\"Advanced …"
+    },
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://yandex.ru/chrome/newtab",
+      "snippet": "Яндекс, найдётся всё: сайты, изображения, музыка, товары. Решайте любые задачи — от повседневных вопросов до …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/wattson-qwen3.5-4b-pyt-GGUF",
+  "slug": "mradermacher-wattson-qwen3-5-4b-pyt-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/wattson-qwen3.5-4b-pyt-GGUF",
+  "created_at": "2026-10-30T11:36:50.000Z",
+  "updated_at": "2026-10-30T12:25:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "tool-calling",
+    "power-systems",
+    "pandapower",
+    "wattson",
+    "thinking",
+    "lora-merged",
+    "en",
+    "base_model:PromptExecutionAU/wattson-qwen3.5-4b-pyt",
+    "base_model:quantized:PromptExecutionAU/wattson-qwen3.5-4b-pyt",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 630,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945656768,
+  "storage_human": "39.9 GB",
+  "base_model": "PromptExecutionAU/wattson-qwen3.5-4b-pyt",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

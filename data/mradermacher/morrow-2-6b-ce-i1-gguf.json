@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Morrow-2.6B-CE-i1-GGUF",
+  "slug": "mradermacher-morrow-2-6b-ce-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Morrow-2.6B-CE-i1-GGUF",
+  "created_at": "2026-10-25T20:45:55.000Z",
+  "updated_at": "2026-10-25T22:39:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "fine-tuning",
+    "lora",
+    "unsloth",
+    "en",
+    "base_model:noumenon-labs/Morrow-2.6B-CE",
+    "base_model:adapter:noumenon-labs/Morrow-2.6B-CE",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 929,
+  "trending_score": 0,
+  "parameters": 2569272320,
+  "parameters_human": "2.57B",
+  "storage_bytes": 29393805440,
+  "storage_human": "29.4 GB",
+  "base_model": "noumenon-labs/Morrow-2.6B-CE",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

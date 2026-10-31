@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "nharder/py2mermaid-qwen3-4b",
+  "slug": "nharder-py2mermaid-qwen3-4b",
+  "author": "nharder",
+  "url": "https://huggingface.co/nharder/py2mermaid-qwen3-4b",
+  "created_at": "2026-10-28T02:55:06.000Z",
+  "updated_at": "2026-10-29T17:59:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "mermaid",
+    "python",
+    "code-to-diagram",
+    "lora",
+    "distillation",
+    "conversational",
+    "en",
+    "dataset:nharder/py2mermaid-data",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 774,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101386436,
+  "storage_human": "16.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

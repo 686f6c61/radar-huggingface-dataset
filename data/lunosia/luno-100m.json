@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "lunosia/Luno-100M",
+  "slug": "lunosia-luno-100m",
+  "author": "lunosia",
+  "url": "https://huggingface.co/lunosia/Luno-100M",
+  "created_at": "2026-10-27T08:33:55.000Z",
+  "updated_at": "2026-10-27T11:31:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "csharp",
+    "dotnet",
+    "torchsharp",
+    "from-scratch",
+    "text-generation",
+    "conversational",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 624,
+  "trending_score": 0,
+  "parameters": 101338112,
+  "parameters_human": "101.3M",
+  "storage_bytes": 390038369,
+  "storage_human": "390 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

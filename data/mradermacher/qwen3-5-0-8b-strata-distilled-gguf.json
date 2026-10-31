@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-0.8B-Strata-distilled-GGUF",
+  "slug": "mradermacher-qwen3-5-0-8b-strata-distilled-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-0.8B-Strata-distilled-GGUF",
+  "created_at": "2026-10-26T10:29:13.000Z",
+  "updated_at": "2026-10-27T00:57:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "unsloth",
+    "distillation",
+    "synthetic-data",
+    "reasoning",
+    "en",
+    "dataset:Stormtrooperaim/Strata-distilled",
+    "base_model:Stormtrooperaim/Qwen3.5-0.8B-Strata-distilled",
+    "base_model:quantized:Stormtrooperaim/Qwen3.5-0.8B-Strata-distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 915,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 7956109120,
+  "storage_human": "8.0 GB",
+  "base_model": "Stormtrooperaim/Qwen3.5-0.8B-Strata-distilled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ConwayResearch/Underdog-Poodle-4B-DFlash",
+  "slug": "conwayresearch-underdog-poodle-4b-dflash",
+  "author": "ConwayResearch",
+  "url": "https://huggingface.co/ConwayResearch/Underdog-Poodle-4B-DFlash",
+  "created_at": "2026-10-26T06:45:35.000Z",
+  "updated_at": "2026-10-26T06:45:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "draft-model",
+    "custom_code",
+    "base_model:z-lab/Qwen3.5-4B-DFlash",
+    "base_model:finetune:z-lab/Qwen3.5-4B-DFlash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 634425856,
+  "parameters_human": "634.4M",
+  "storage_bytes": 1625793409,
+  "storage_human": "1.6 GB",
+  "base_model": "z-lab/Qwen3.5-4B-DFlash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "XcyberPrince/Cyber-Prince-V1-GGUF",
+  "slug": "xcyberprince-cyber-prince-v1-gguf",
+  "author": "XcyberPrince",
+  "url": "https://huggingface.co/XcyberPrince/Cyber-Prince-V1-GGUF",
+  "created_at": "2026-10-28T06:26:45.000Z",
+  "updated_at": "2026-10-28T07:36:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "cyber-prince",
+    "uncensored",
+    "cybersecurity",
+    "agentic",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2600220928,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

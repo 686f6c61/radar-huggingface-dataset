@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "LichAmnesia/DeepSeek-V4.1-Flash-1017-OpenSeek-EXL3",
+  "slug": "lichamnesia-deepseek-v4-1-flash-1017-openseek-exl3",
+  "author": "LichAmnesia",
+  "url": "https://huggingface.co/LichAmnesia/DeepSeek-V4.1-Flash-1017-OpenSeek-EXL3",
+  "created_at": "2026-10-26T17:07:55.000Z",
+  "updated_at": "2026-10-26T17:46:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "quantized",
+    "openseek",
+    "rtx-pro-6000",
+    "experimental",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 188,
+  "trending_score": 0,
+  "parameters": 304900271314,
+  "parameters_human": "304.90B",
+  "storage_bytes": 405044040152,
+  "storage_human": "405.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

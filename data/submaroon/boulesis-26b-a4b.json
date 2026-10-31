@@ -50,31 +50,5 @@
   "removed": false,
   "removed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
-      "url": "https://www.microsoft.com/en-us?msockid=04a186d459c8682a38ec911f5880694d",
-      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
-    },
-    {
-      "title": "SubMaroon/Boulesis-26B-A4B · Hugging Face",
-      "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B",
-      "snippet": "Limitations Credits Boulesis-26B-A4B Experimental Gemma 4 RP merge exploring whether attention routing can reduce character reactivity. Instead of blending entire models, Boulesis modifies specific attention circuits: QK routing from a reasoning model, a transplanted style head, and a narrative RP LoRA. What it does well"
-    },
-    {
-      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
-      "url": "https://account.microsoft.com/account",
-      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
-    },
-    {
-      "title": "SubMaroon/Boulesis-26B-A4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B-GGUF",
-      "snippet": "Instructions to use SubMaroon/Boulesis-26B-A4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "My Account",
-      "url": "https://myaccount.microsoft.com/",
-      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
-    }
-  ]
+  "sources": []
 }

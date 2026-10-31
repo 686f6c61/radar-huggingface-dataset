@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "zhync/python-error-explainer-v5",
+  "slug": "zhync-python-error-explainer-v5",
+  "author": "zhync",
+  "url": "https://huggingface.co/zhync/python-error-explainer-v5",
+  "created_at": "2026-10-30T15:25:35.000Z",
+  "updated_at": "2026-10-30T15:42:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "gguf",
+    "- gguf   - gemma   - llama.cpp   - python   - indonesian text-generation",
+    "id",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 253115584,
+  "storage_human": "253 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

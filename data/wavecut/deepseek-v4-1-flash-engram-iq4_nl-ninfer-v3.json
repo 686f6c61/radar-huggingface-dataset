@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "WaveCut/DeepSeek-V4.1-Flash-Engram-IQ4_NL-NInfer-v3",
+  "slug": "wavecut-deepseek-v4-1-flash-engram-iq4_nl-ninfer-v3",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/DeepSeek-V4.1-Flash-Engram-IQ4_NL-NInfer-v3",
+  "created_at": "2026-10-25T12:04:27.000Z",
+  "updated_at": "2026-10-26T06:32:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "gguf",
+    "deepseek",
+    "deepseek-v4.1",
+    "engram",
+    "n-gram",
+    "base_model:ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 667,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110595294496,
+  "storage_human": "110.6 GB",
+  "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WaveCut/DeepSeek-V4.1-Flash-1017-GSQ-RCO-IQ1_M-NInfer-v3",
+      "url": "https://huggingface.co/WaveCut/DeepSeek-V4.1-Flash-1017-GSQ-RCO-IQ1_M-NInfer-v3",
+      "snippet": "07.05.2026 ... The Engram table is a separate download, shared by every NInfer conversion of DeepSeek-V4.1-Flash-1017: WaveCut/DeepSeek-V4.1-Flash-Engram- ..."
+    }
+  ]
+}

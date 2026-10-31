@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Game2Player-4B-GGUF",
+  "slug": "mradermacher-game2player-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Game2Player-4B-GGUF",
+  "created_at": "2026-10-29T08:26:10.000Z",
+  "updated_at": "2026-10-29T08:46:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "game2player",
+    "visual-agent",
+    "game-playing",
+    "sft",
+    "en",
+    "base_model:game2player/Game2Player-4B",
+    "base_model:quantized:game2player/Game2Player-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 656,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 45368964160,
+  "storage_human": "45.4 GB",
+  "base_model": "game2player/Game2Player-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

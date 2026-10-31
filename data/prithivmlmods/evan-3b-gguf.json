@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/EVAN-3B-GGUF",
+  "slug": "prithivmlmods-evan-3b-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/EVAN-3B-GGUF",
+  "created_at": "2026-10-28T16:02:59.000Z",
+  "updated_at": "2026-10-29T04:00:03.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "multimodal",
+    "reasoning",
+    "reinforcement-learning",
+    "image-text-to-text",
+    "en",
+    "base_model:DawnLiu/EVAN-3B",
+    "base_model:quantized:DawnLiu/EVAN-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 341,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 27053535136,
+  "storage_human": "27.1 GB",
+  "base_model": "DawnLiu/EVAN-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

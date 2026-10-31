@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ternary/Arbiter-8B-GGUF",
+  "slug": "ternary-arbiter-8b-gguf",
+  "author": "ternary",
+  "url": "https://huggingface.co/ternary/Arbiter-8B-GGUF",
+  "created_at": "2026-10-27T03:32:10.000Z",
+  "updated_at": "2026-10-27T04:12:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "qwen",
+    "llama.cpp",
+    "decision-model",
+    "finance",
+    "wealth-management",
+    "sec-filings",
+    "jev",
+    "en",
+    "base_model:ternary/Arbiter-8B",
+    "base_model:quantized:ternary/Arbiter-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 320,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 42702359744,
+  "storage_human": "42.7 GB",
+  "base_model": "ternary/Arbiter-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ANTRU-3B-GGUF",
+  "slug": "mradermacher-antru-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ANTRU-3B-GGUF",
+  "created_at": "2026-10-28T09:10:07.000Z",
+  "updated_at": "2026-10-28T12:26:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "antru",
+    "qwen2.5-coder",
+    "lora",
+    "sft",
+    "coding",
+    "local-llm",
+    "trained-on-consumer-hardware",
+    "en",
+    "base_model:ANTRUhub/ANTRU-3B",
+    "base_model:adapter:ANTRUhub/ANTRU-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 638,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940894720,
+  "storage_human": "27.9 GB",
+  "base_model": "ANTRUhub/ANTRU-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

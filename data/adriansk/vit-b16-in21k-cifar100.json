@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AdrianSK/vit-b16-in21k-cifar100",
+  "slug": "adriansk-vit-b16-in21k-cifar100",
+  "author": "AdrianSK",
+  "url": "https://huggingface.co/AdrianSK/vit-b16-in21k-cifar100",
+  "created_at": "2026-10-28T11:14:02.000Z",
+  "updated_at": "2026-10-28T14:42:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vision-transformer",
+    "vit",
+    "image-classification",
+    "cifar100",
+    "dataset:uoft-cs/cifar100",
+    "arxiv:2010.11929",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1119,
+  "trending_score": 0,
+  "parameters": 85875556,
+  "parameters_human": "85.9M",
+  "storage_bytes": 343516424,
+  "storage_human": "344 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

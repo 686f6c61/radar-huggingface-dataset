@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/turion-jev-31b-GGUF",
+  "slug": "mradermacher-turion-jev-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/turion-jev-31b-GGUF",
+  "created_at": "2026-10-25T10:51:13.000Z",
+  "updated_at": "2026-10-25T11:22:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-index",
+    "jev",
+    "system-one",
+    "decision-model",
+    "en",
+    "base_model:turion-ai/turion-jev-31b",
+    "base_model:quantized:turion-ai/turion-jev-31b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 850,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908601024,
+  "storage_human": "213.9 GB",
+  "base_model": "turion-ai/turion-jev-31b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

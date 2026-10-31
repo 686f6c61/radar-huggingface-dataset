@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "theJuice85/Qwen3.8-Flash-Next-Uncensored-MTP",
+  "slug": "thejuice85-qwen3-8-flash-next-uncensored-mtp",
+  "author": "theJuice85",
+  "url": "https://huggingface.co/theJuice85/Qwen3.8-Flash-Next-Uncensored-MTP",
+  "created_at": "2026-10-31T18:21:18.000Z",
+  "updated_at": "2026-10-31T19:29:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "mtp",
+    "speculative-decoding",
+    "llama.cpp",
+    "uncensored",
+    "abliteration",
+    "qwen",
+    "ablation",
+    "text-generation",
+    "en",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:adapter:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55975424,
+  "parameters_human": "56.0M",
+  "storage_bytes": 7883265937,
+  "storage_human": "7.9 GB",
+  "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

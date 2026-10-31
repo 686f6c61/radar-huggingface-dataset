@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/KURE-v3-GGUF",
+  "slug": "mradermacher-kure-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/KURE-v3-GGUF",
+  "created_at": "2026-10-27T13:28:13.000Z",
+  "updated_at": "2026-10-27T19:07:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "matryoshka",
+    "ko",
+    "en",
+    "base_model:nlpai-lab/KURE-v3",
+    "base_model:quantized:nlpai-lab/KURE-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 674,
+  "trending_score": 0,
+  "parameters": 1140918272,
+  "parameters_human": "1.14B",
+  "storage_bytes": 10785814016,
+  "storage_human": "10.8 GB",
+  "base_model": "nlpai-lab/KURE-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

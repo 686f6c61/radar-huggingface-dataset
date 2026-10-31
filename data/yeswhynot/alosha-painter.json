@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "YesWhyNot/alosha-painter",
+  "slug": "yeswhynot-alosha-painter",
+  "author": "YesWhyNot",
+  "url": "https://huggingface.co/YesWhyNot/alosha-painter",
+  "created_at": "2026-10-30T18:17:54.000Z",
+  "updated_at": "2026-10-30T18:23:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "pytorch",
+    "flow-matching",
+    "generative-art",
+    "face-generation",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140432556,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

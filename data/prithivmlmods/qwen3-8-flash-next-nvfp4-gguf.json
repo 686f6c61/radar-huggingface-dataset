@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Qwen3.8-Flash-Next-NVFP4-GGUF",
+  "slug": "prithivmlmods-qwen3-8-flash-next-nvfp4-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Qwen3.8-Flash-Next-NVFP4-GGUF",
+  "created_at": "2026-10-26T16:18:29.000Z",
+  "updated_at": "2026-10-26T17:59:12.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen4_exp",
+    "llama-cpp",
+    "llama-cli",
+    "rtx-pro-6000",
+    "nvfp4",
+    "blackwell",
+    "SM120",
+    "GB202",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 474,
+  "trending_score": 0,
+  "parameters": 179551197824,
+  "parameters_human": "179.55B",
+  "storage_bytes": 186510912800,
+  "storage_human": "186.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

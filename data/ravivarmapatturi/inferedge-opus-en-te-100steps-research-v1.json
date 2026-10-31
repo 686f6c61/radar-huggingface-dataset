@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ravivarmapatturi/inferedge-opus-en-te-100steps-research-v1",
+  "slug": "ravivarmapatturi-inferedge-opus-en-te-100steps-research-v1",
+  "author": "ravivarmapatturi",
+  "url": "https://huggingface.co/ravivarmapatturi/inferedge-opus-en-te-100steps-research-v1",
+  "created_at": "2026-10-30T10:58:54.000Z",
+  "updated_at": "2026-10-30T11:01:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "research",
+    "negative-result",
+    "fine-tuned",
+    "translation",
+    "en",
+    "te",
+    "arxiv:2305.16307",
+    "base_model:Helsinki-NLP/opus-mt-en-dra",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-dra",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 76432872,
+  "parameters_human": "76.4M",
+  "storage_bytes": 307752630,
+  "storage_human": "308 MB",
+  "base_model": "Helsinki-NLP/opus-mt-en-dra",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

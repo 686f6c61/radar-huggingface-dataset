@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Datlas-2.5-GGUF",
+  "slug": "mradermacher-datlas-2-5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Datlas-2.5-GGUF",
+  "created_at": "2026-10-28T09:47:23.000Z",
+  "updated_at": "2026-10-28T09:49:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2",
+    "from-scratch",
+    "edge-ai",
+    "agent-reasoning",
+    "10b-architecture",
+    "en",
+    "dataset:BlueIsGreen/Edge-Agent-Reasoning-WebSearch-260K",
+    "base_model:bizmod/Datlas-2.5",
+    "base_model:quantized:bizmod/Datlas-2.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 642,
+  "trending_score": 0,
+  "parameters": 72410880,
+  "parameters_human": "72.4M",
+  "storage_bytes": 1007428576,
+  "storage_human": "1.0 GB",
+  "base_model": "bizmod/Datlas-2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

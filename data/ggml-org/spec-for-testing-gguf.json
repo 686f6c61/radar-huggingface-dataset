@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ggml-org/spec-for-testing-GGUF",
+  "slug": "ggml-org-spec-for-testing-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/spec-for-testing-GGUF",
+  "created_at": "2026-10-30T13:20:48.000Z",
+  "updated_at": "2026-10-30T13:22:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 499,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 51209630592,
+  "storage_human": "51.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B, Qwen/Qwen3-4B, Qwen/Qwen3.8-27B, nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

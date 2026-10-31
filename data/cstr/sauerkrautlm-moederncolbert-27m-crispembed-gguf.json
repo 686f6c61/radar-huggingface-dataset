@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cstr/SauerkrautLM-MoEdernColBERT-27M-CrispEmbed-GGUF",
+  "slug": "cstr-sauerkrautlm-moederncolbert-27m-crispembed-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/SauerkrautLM-MoEdernColBERT-27M-CrispEmbed-GGUF",
+  "created_at": "2026-10-27T13:13:27.000Z",
+  "updated_at": "2026-10-27T13:13:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "crispembed",
+    "colbert",
+    "base_model:VAGOsolutions/SauerkrautLM-MoEdernColBERT-27M",
+    "base_model:quantized:VAGOsolutions/SauerkrautLM-MoEdernColBERT-27M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 27124000,
+  "parameters_human": "27.1M",
+  "storage_bytes": 109596000,
+  "storage_human": "110 MB",
+  "base_model": "VAGOsolutions/SauerkrautLM-MoEdernColBERT-27M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

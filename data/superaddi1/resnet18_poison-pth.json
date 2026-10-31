@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "SuperAddi1/resnet18_poison.pth",
+  "slug": "superaddi1-resnet18_poison-pth",
+  "author": "SuperAddi1",
+  "url": "https://huggingface.co/SuperAddi1/resnet18_poison.pth",
+  "created_at": "2026-10-25T06:28:14.000Z",
+  "updated_at": "2026-10-25T07:01:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89613462,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

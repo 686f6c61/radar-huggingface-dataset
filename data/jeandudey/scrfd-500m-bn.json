@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jeandudey/scrfd-500m-bn",
+  "slug": "jeandudey-scrfd-500m-bn",
+  "author": "jeandudey",
+  "url": "https://huggingface.co/jeandudey/scrfd-500m-bn",
+  "created_at": "2026-10-26T20:42:32.000Z",
+  "updated_at": "2026-10-26T20:52:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-detection",
+    "scrfd",
+    "int8",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71693299,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

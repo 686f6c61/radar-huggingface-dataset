@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "harness-hub/LFM2.5-24B-A2B-claude-code",
+  "slug": "harness-hub-lfm2-5-24b-a2b-claude-code",
+  "author": "harness-hub",
+  "url": "https://huggingface.co/harness-hub/LFM2.5-24B-A2B-claude-code",
+  "created_at": "2026-10-30T09:06:18.000Z",
+  "updated_at": "2026-10-30T10:00:15.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "trl",
+    "grpo",
+    "async-grpo",
+    "lora",
+    "agents",
+    "harbor",
+    "openenv",
+    "claude-code",
+    "dataset:FineEnvs/SmolDataEnvs-harbor-train",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:adapter:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94717946,
+  "storage_human": "95 MB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek Harness | Explore the limits of intelligence",
+      "url": "https://www.deepseek.com/en/harness/",
+      "snippet": "Use DeepSeek Harness to work with documents, analyze spreadsheets, write code, and schedule tasks. Extend its capabilities with …"
+    }
+  ]
+}

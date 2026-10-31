@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Nanbeige/Nanbeige4.3-33B-INT8",
+  "slug": "nanbeige-nanbeige4-3-33b-int8",
+  "author": "Nanbeige",
+  "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B-INT8",
+  "created_at": "2026-10-31T00:45:34.000Z",
+  "updated_at": "2026-10-31T09:25:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llm",
+    "nanbeige",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 36014040213,
+  "storage_human": "36.0 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

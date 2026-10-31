@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "twangodev/Ming-3.0-audio-tiny-NVFP4",
+  "slug": "twangodev-ming-3-0-audio-tiny-nvfp4",
+  "author": "twangodev",
+  "url": "https://huggingface.co/twangodev/Ming-3.0-audio-tiny-NVFP4",
+  "created_at": "2026-10-25T20:19:56.000Z",
+  "updated_at": "2026-10-26T21:40:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "Model Optimizer",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "Model Optimizer",
+    "onnx",
+    "safetensors",
+    "bailing_moe_v3_audio",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "audio-understanding",
+    "audio-reasoning",
+    "speech-to-text",
+    "conversational",
+    "mixture-of-experts",
+    "quantized",
+    "nvfp4",
+    "fp4",
+    "4-bit",
+    "modelopt",
+    "blackwell",
+    "custom_code",
+    "audio-text-to-text",
+    "en",
+    "zh",
+    "base_model:inclusionAI/Ming-3.0-audio-tiny",
+    "base_model:quantized:inclusionAI/Ming-3.0-audio-tiny",
+    "license:mit",
+    "model-index",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 6455383840,
+  "parameters_human": "6.46B",
+  "storage_bytes": 13824062109,
+  "storage_human": "13.8 GB",
+  "base_model": "inclusionAI/Ming-3.0-audio-tiny",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Local full-split ASR",
+      "dataset": "FLEURS English (full split; local scoring; post-selection)",
+      "metric": "WER",
+      "value": 3.4416431957134024
+    },
+    {
+      "task": "Local full-split ASR",
+      "dataset": "FLEURS Chinese (full split; local scoring; post-selection)",
+      "metric": "CER",
+      "value": 3.4343844191977744
+    },
+    {
+      "task": "Local full-split multiple-choice evaluation",
+      "dataset": "MMAR (full split; local scoring; post-selection)",
+      "metric": "Accuracy",
+      "value": 65.2
+    },
+    {
+      "task": "Local full-split multiple-choice evaluation",
+      "dataset": "MMAU test-mini (full split; local scoring; post-selection)",
+      "metric": "Accuracy",
+      "value": 77.3
+    },
+    {
+      "task": "Local full-split multiple-choice evaluation",
+      "dataset": "MMSU (full split; local scoring; post-selection)",
+      "metric": "Accuracy",
+      "value": 67.14
+    }
+  ],
+  "sources": []
+}

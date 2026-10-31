@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "gparitosh007/decision-model-onnx",
+  "slug": "gparitosh007-decision-model-onnx",
+  "author": "gparitosh007",
+  "url": "https://huggingface.co/gparitosh007/decision-model-onnx",
+  "created_at": "2026-10-31T17:56:26.000Z",
+  "updated_at": "2026-10-31T17:57:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "decision-model",
+    "base_model:gparitosh007/decision-model",
+    "base_model:quantized:gparitosh007/decision-model",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 298901952,
+  "storage_human": "299 MB",
+  "base_model": "gparitosh007/decision-model",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

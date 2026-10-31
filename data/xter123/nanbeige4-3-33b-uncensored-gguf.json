@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "XTer123/Nanbeige4.3-33B-Uncensored-GGUF",
+  "slug": "xter123-nanbeige4-3-33b-uncensored-gguf",
+  "author": "XTer123",
+  "url": "https://huggingface.co/XTer123/Nanbeige4.3-33B-Uncensored-GGUF",
+  "created_at": "2026-10-26T03:50:14.000Z",
+  "updated_at": "2026-10-26T15:04:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "uncensored",
+    "abliterated",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2883,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 23521378408,
+  "storage_human": "23.5 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

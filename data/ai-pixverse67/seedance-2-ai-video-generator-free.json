@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Ai-PixVerse67/Seedance-2-AI-Video-Generator-free",
+  "slug": "ai-pixverse67-seedance-2-ai-video-generator-free",
+  "author": "Ai-PixVerse67",
+  "url": "https://huggingface.co/Ai-PixVerse67/Seedance-2-AI-Video-Generator-free",
+  "created_at": "2026-10-30T08:41:08.000Z",
+  "updated_at": "2026-10-30T08:41:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-video",
+    "image-to-video",
+    "multimodal",
+    "diffusion",
+    "dit",
+    "lip-sync",
+    "physics-simulation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

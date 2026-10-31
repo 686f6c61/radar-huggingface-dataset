@@ -41,31 +41,5 @@
   "removed": false,
   "removed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "eBay.de | Elektronik, Autos, Mode, Sammlerstücke, Möbel und mehr …",
-      "url": "https://www.ebay.de/?msockid=3ec83996df6a65bf02b12e5dded2642c",
-      "snippet": "Kaufen und verkaufen Sie Elektronikartikel, Autos, Kleidung, Mode, Sammlerstücke, Sportartikel, Digitalkameras, Babyartikel, …"
-    },
-    {
-      "title": "venetialiu/sdxl-lora-venetia · Hugging Face",
-      "url": "https://huggingface.co/venetialiu/sdxl-lora-venetia",
-      "snippet": "Deploy Copy to bucket new Use this model Instructions to use venetialiu/sdxl-lora-venetia with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use venetialiu/sdxl-lora-venetia with Diffusers:"
-    },
-    {
-      "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
-      "url": "https://www.ebay.com/?msockid=3ec83996df6a65bf02b12e5dded2642c",
-      "snippet": "Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world's online marketplace. Top brands, low prices & free …"
-    },
-    {
-      "title": "venetialiu/sdxl-lora-venetia at main - Hugging Face",
-      "url": "https://huggingface.co/venetialiu/sdxl-lora-venetia/tree/main",
-      "snippet": "Deploy Copy to bucket new Use this model Instructions to use venetialiu/sdxl-lora-venetia with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use venetialiu/sdxl-lora-venetia with Diffusers:"
-    },
-    {
-      "title": "eBay – Wikipedia",
-      "url": "https://de.wikipedia.org/wiki/EBay",
-      "snippet": "So sollten Käufer direkt an eBay bezahlen, während Verkäufer eine Auszahlung von eBay erst erhalten, nachdem sie den Versand im …"
-    }
-  ]
+  "sources": []
 }

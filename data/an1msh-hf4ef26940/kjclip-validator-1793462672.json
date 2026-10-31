@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "an1msh-hf4ef26940/kjclip-validator-1793462672",
+  "slug": "an1msh-hf4ef26940-kjclip-validator-1793462672",
+  "author": "an1msh-hf4ef26940",
+  "url": "https://huggingface.co/an1msh-hf4ef26940/kjclip-validator-1793462672",
+  "created_at": "2026-10-31T16:04:39.000Z",
+  "updated_at": "2026-10-31T16:04:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "clipseg",
+    "image-segmentation",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 406,
+  "storage_human": "406 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

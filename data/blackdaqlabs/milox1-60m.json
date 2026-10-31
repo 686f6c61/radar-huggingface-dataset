@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "blackdaqlabs/MiloX1-60M",
+  "slug": "blackdaqlabs-milox1-60m",
+  "author": "blackdaqlabs",
+  "url": "https://huggingface.co/blackdaqlabs/MiloX1-60M",
+  "created_at": "2026-10-28T22:42:28.000Z",
+  "updated_at": "2026-10-31T02:58:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "milox",
+    "from-scratch",
+    "conversational",
+    "es",
+    "en",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 624,
+  "trending_score": 0,
+  "parameters": 61864320,
+  "parameters_human": "61.9M",
+  "storage_bytes": 371219136,
+  "storage_human": "371 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

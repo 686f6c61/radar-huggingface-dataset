@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "lerobot/cosmos3-edge",
+  "slug": "lerobot-cosmos3-edge",
+  "author": "lerobot",
+  "url": "https://huggingface.co/lerobot/cosmos3-edge",
+  "created_at": "2026-10-29T14:27:15.000Z",
+  "updated_at": "2026-10-29T14:31:07.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "cosmos3",
+    "robotics",
+    "pretrained",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 4563688396,
+  "parameters_human": "4.56B",
+  "storage_bytes": 9154081124,
+  "storage_human": "9.2 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/What-is-the-best-python-web-framework-to-learn-in-2023",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/",
+      "snippet": "Quora is a place to gain and share knowledge. It's a platform to ask questions and connect with people who contribute unique …"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Dachuan99/ES-SSM",
+  "slug": "dachuan99-es-ssm",
+  "author": "Dachuan99",
+  "url": "https://huggingface.co/Dachuan99/ES-SSM",
+  "created_at": "2026-10-29T19:14:33.000Z",
+  "updated_at": "2026-10-29T19:54:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "state-space-model",
+    "spectral-filtering",
+    "budgeted-inference",
+    "research-code",
+    "arxiv:2601.22488",
+    "en",
+    "arxiv:2609.32486",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435624,
+  "storage_human": "435624 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

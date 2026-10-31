@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LBS-27B-GGUF",
+  "slug": "mradermacher-lbs-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LBS-27B-GGUF",
+  "created_at": "2026-10-27T07:51:04.000Z",
+  "updated_at": "2026-10-27T08:05:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gui-grounding",
+    "agentic-vision",
+    "visual-question-answering",
+    "high-resolution",
+    "reinforcement-learning",
+    "en",
+    "base_model:inclusionAI/LBS-27B",
+    "base_model:quantized:inclusionAI/LBS-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 736,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905340032,
+  "storage_human": "187.9 GB",
+  "base_model": "inclusionAI/LBS-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-GGUF",
+  "slug": "prithivmlmods-nvidia-nemotron-3-5-super-vl-120b-a12b-nvfp4-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-GGUF",
+  "created_at": "2026-10-24T17:39:21.000Z",
+  "updated_at": "2026-10-26T17:59:40.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "llama-cli",
+    "nemotron_h_moe",
+    "mtp",
+    "speculative-decoding",
+    "moe",
+    "nvfp4",
+    "nvidia",
+    "nemotron-3.5",
+    "nvidia-blackwell",
+    "rtx-pro-6000",
+    "dense",
+    "SM120",
+    "GB202",
+    "image-text-to-text",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 764,
+  "trending_score": 0,
+  "parameters": 123611117220,
+  "parameters_human": "123.61B",
+  "storage_bytes": 80426384032,
+  "storage_human": "80.4 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Supermarchés et Horaires - Lidl.fr",
+      "url": "https://www.lidl.fr/c/supermarches-et-horaires/s10019824",
+      "snippet": "Retrouvez les horaires de nos supermarchés et les différentes équipements à votre disposition en supermarchés. Inscrivez -vous ! …"
+    }
+  ]
+}

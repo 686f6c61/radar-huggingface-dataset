@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ahmadzmvd/FGVC-IR8",
+  "slug": "ahmadzmvd-fgvc-ir8",
+  "author": "ahmadzmvd",
+  "url": "https://huggingface.co/ahmadzmvd/FGVC-IR8",
+  "created_at": "2026-10-28T11:57:14.000Z",
+  "updated_at": "2026-10-28T11:57:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "dinov2_vitb14_reg4_slot_relational_arcface",
+    "computer-vision",
+    "fine-grained-visual-categorization",
+    "fgvc",
+    "open-set-recognition",
+    "dinov2",
+    "lora",
+    "slot-attention",
+    "graph-transformer",
+    "arcface",
+    "autonomous-vehicles",
+    "iranian-vehicles",
+    "image-classification",
+    "dataset:ahmadzmvd/fgvc-ir8-iranian-vehicle-dataset",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1018,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 273760700,
+  "storage_human": "274 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Fine-Grained Vehicle Classification",
+      "dataset": "FGVC-IR8 Validation Split (5,098 Listings / 12,100 Frames)",
+      "metric": "Balanced Validation Accuracy (%)",
+      "value": 97.99
+    },
+    {
+      "task": "Fine-Grained Vehicle Classification",
+      "dataset": "FGVC-IR8 Validation Split (5,098 Listings / 12,100 Frames)",
+      "metric": "Raw Validation Accuracy (%)",
+      "value": 97.72
+    }
+  ],
+  "sources": []
+}

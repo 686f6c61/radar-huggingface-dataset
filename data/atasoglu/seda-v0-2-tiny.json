@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "atasoglu/seda-v0.2-tiny",
+  "slug": "atasoglu-seda-v0-2-tiny",
+  "author": "atasoglu",
+  "url": "https://huggingface.co/atasoglu/seda-v0.2-tiny",
+  "created_at": "2026-10-25T12:18:12.000Z",
+  "updated_at": "2026-10-25T12:23:44.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "speech",
+    "asr",
+    "streaming",
+    "zipformer",
+    "transducer",
+    "icefall",
+    "k2",
+    "knowledge-distillation",
+    "automatic-speech-recognition",
+    "tr",
+    "dataset:issai/Turkish_Speech_Corpus",
+    "dataset:cloud0day3/alania-synthetic-speech-tr",
+    "dataset:ysdede/commonvoice_17_tr_fixed",
+    "dataset:espnet/yodas2",
+    "dataset:atasoglu/yodas-tr-whisper-labels",
+    "base_model:atasoglu/seda-v0.2",
+    "base_model:quantized:atasoglu/seda-v0.2",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59525956,
+  "storage_human": "60 MB",
+  "base_model": "atasoglu/seda-v0.2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (tr_tr), test",
+      "metric": "WER (mode \"accurate\")",
+      "value": 10.51
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (tr_tr), test",
+      "metric": "WER (mode \"balanced\", streaming)",
+      "value": 11.24
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (tr_tr), test",
+      "metric": "WER (mode \"fast\", streaming)",
+      "value": 17.3
+    }
+  ],
+  "sources": []
+}

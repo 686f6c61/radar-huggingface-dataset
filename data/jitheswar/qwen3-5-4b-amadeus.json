@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "Jitheswar/Qwen3.5-4B-Amadeus",
+  "slug": "jitheswar-qwen3-5-4b-amadeus",
+  "author": "Jitheswar",
+  "url": "https://huggingface.co/Jitheswar/Qwen3.5-4B-Amadeus",
+  "created_at": "2026-10-26T15:46:46.000Z",
+  "updated_at": "2026-10-26T16:28:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "uncensored",
+    "abliterated",
+    "decensored",
+    "qwen3.5",
+    "imatrix",
+    "vision",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:mlabonne/harmless_alpaca",
+    "dataset:mlabonne/harmful_behaviors",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 811,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 25024451710,
+  "storage_human": "25.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K",
+      "metric": "exact match (8-shot CoT, flexible)",
+      "value": 91.13
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval",
+      "metric": "prompt-level strict acc",
+      "value": 78.19
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (0-shot)",
+      "value": 71.64
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WinoGrande",
+      "metric": "accuracy (0-shot)",
+      "value": 70.09
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge",
+      "metric": "accuracy (0-shot, cloze)",
+      "value": 46.82
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU",
+      "metric": "accuracy (0-shot, cloze)",
+      "value": 38.42
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA",
+      "metric": "MC accuracy (cloze)",
+      "value": 25.95
+    }
+  ],
+  "sources": []
+}

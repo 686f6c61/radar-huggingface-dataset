@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ucalyptus/pixal3d-mlx-m3",
+  "slug": "ucalyptus-pixal3d-mlx-m3",
+  "author": "ucalyptus",
+  "url": "https://huggingface.co/ucalyptus/pixal3d-mlx-m3",
+  "created_at": "2026-10-28T03:52:38.000Z",
+  "updated_at": "2026-10-28T03:59:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "pixal3d",
+    "image-to-3d",
+    "textured-mesh",
+    "base_model:TencentARC/Pixal3D",
+    "base_model:finetune:TencentARC/Pixal3D",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69434851,
+  "storage_human": "69 MB",
+  "base_model": "TencentARC/Pixal3D",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

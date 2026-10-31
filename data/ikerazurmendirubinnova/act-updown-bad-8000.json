@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "IkerAzurmendiRubinnova/act-updown-bad-8000",
+  "slug": "ikerazurmendirubinnova-act-updown-bad-8000",
+  "author": "IkerAzurmendiRubinnova",
+  "url": "https://huggingface.co/IkerAzurmendiRubinnova/act-updown-bad-8000",
+  "created_at": "2026-10-25T09:57:34.000Z",
+  "updated_at": "2026-10-25T09:57:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "so101",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 51658374,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206666320,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

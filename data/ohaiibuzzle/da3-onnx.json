@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ohaiibuzzle/DA3-ONNX",
+  "slug": "ohaiibuzzle-da3-onnx",
+  "author": "ohaiibuzzle",
+  "url": "https://huggingface.co/ohaiibuzzle/DA3-ONNX",
+  "created_at": "2026-10-27T05:50:53.000Z",
+  "updated_at": "2026-10-30T17:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "depth-anything-3",
+    "qnn",
+    "android",
+    "depth-estimation",
+    "base_model:depth-anything/DA3-SMALL",
+    "base_model:quantized:depth-anything/DA3-SMALL",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2144967907,
+  "storage_human": "2.1 GB",
+  "base_model": "depth-anything/DA3MONO-LARGE, depth-anything/DA3-SMALL",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Kanz4kii/Next-Concept-Modeling",
+  "slug": "kanz4kii-next-concept-modeling",
+  "author": "Kanz4kii",
+  "url": "https://huggingface.co/Kanz4kii/Next-Concept-Modeling",
+  "created_at": "2026-10-28T10:49:58.000Z",
+  "updated_at": "2026-10-28T10:55:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "next-concept-modeling",
+    "ncm",
+    "vector-quantization",
+    "rvq",
+    "semi-autoregressive",
+    "text-generation",
+    "pytorch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:yahma/alpaca-cleaned",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 145239040,
+  "parameters_human": "145.2M",
+  "storage_bytes": 582013793,
+  "storage_human": "582 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

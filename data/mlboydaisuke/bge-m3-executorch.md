@@ -1,106 +1,103 @@
 # mlboydaisuke/bge-m3-ExecuTorch
 
-# BGE-M3 ExecuTorch：多信号检索模型端侧部署方案
+## Resumen
 
-## 摘要
+bge-m3-ExecuTorch es una conversión a formato ExecuTorch (.pte) del modelo de embeddings BAAI/bge-m3, publicada por el usuario mlboydaisuke en HuggingFace. El modelo original, desarrollado por BAAI (Beijing Academy of Artificial Intelligence), es un modelo de extracción de características basado en XLM-RoBERTa large de 568 millones de parámetros, capaz de generar embeddings densos, dispersos (sparse) y multi-vector (ColBERT) en una sola pasada de inferencia, con soporte para más de 100 idiomas.
 
-BGE-M3 ExecuTorch是一个将BAAI的BGE-M3模型（568M参数）转换为ExecuTorch格式的部署版本，支持在移动设备和边缘设备上运行。该模型通过一次前向传播同时输出三种检索信号——稠密向量（dense）、稀疏词法权重（sparse）和多向量（ColBERT风格）——为端侧检索应用提供了完整的解决方案。
+La particularidad de esta conversión es que permite ejecutar el modelo en dispositivos móviles y edge (on-device) mediante ExecuTorch y el backend XNNPACK, sin depender de servidores remotos. Es relevante porque la mayoría de los modelos de embeddings solo devuelven un vector denso, mientras que esta versión expone las tres señales de recuperación (dense, sparse y ColBERT) simultáneamente, lo que permite implementar búsqueda híbrida directamente en un teléfono o dispositivo embebido. El repositorio incluye builds en fp32, fp16 y Core ML, con scripts de verificación contra la implementación de referencia de FlagEmbedding.
 
-该模型由mlboydaisuke基于BAAI/bge-m3转换而来，采用XLM-RoBERTa large架构，支持100多种语言。通过ExecuTorch的XNNPACK和Core ML后端，该模型可以在Mac等ARM设备上高效运行，Core ML版本比PyTorch eager模式快2.8倍。模型卡中特别强调了在稀疏头中进行的mask处理（上游未做），以及将上下文窗口限制为512 tokens的设计决策。
+## Especificaciones tecnicas
 
-## 技术规格
-
-| 参数 | 值 |
+| Parametro | Valor |
 |---|---|
-| 架构 | XLM-RoBERTa large（24层，1024维） |
-| 总参数 | 568M |
-| 激活参数 | 不适用（稠密模型） |
-| 上下文长度 | 512 tokens（原始支持8192，此处限制为512） |
-| 量化类型 | fp32（XNNPACK）、fp16（XNNPACK）、Core ML |
-| 支持语言 | 100+（基于XLM-RoBERTa） |
-| 许可证 | MIT |
-| 权重格式 | .pte（ExecuTorch）、Core ML |
+| Arquitectura | XLM-RoBERTa large (transformer encoder) con cabezas dense, sparse y ColBERT |
+| Parametros totales | 568M (modelo base BAAI/bge-m3) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 512 tokens en esta conversión (el modelo original acepta 8192) |
+| Tipos de cuantizacion | fp32 (XNNPACK), fp16 (XNNPACK), Core ML; int8 probado pero no publicado |
+| Idiomas soportados | Más de 100 (heredado del modelo base; lista exacta no disponible en la ficha) |
+| Licencia | MIT |
+| Formato de pesos | .pte (ExecuTorch); repo de 4,5 GB |
 
-## 架构与训练
+## Arquitectura y entrenamiento
 
-BGE-M3采用XLM-RoBERTa large架构，通过一次前向传播同时输出三种检索信号：
+El modelo base es un encoder transformer XLM-RoBERTa large con 24 capas y 568 millones de parámetros. Esta conversión añade tres cabezas de salida sobre el backbone: la cabeza densa toma la fila CLS del hidden state final y la normaliza L2 (vector de 1024 dimensiones); la cabeza sparse aplica una capa `Linear(1024, 1)` que produce un peso escalar por token (con forma BM25, tipo lexical matching); la cabeza ColBERT proyecta cada token a un vector de 1024 dimensiones normalizado L2, excluyendo la fila CLS (511 vectores por secuencia de 512 tokens).
 
-- **稠密向量**：CLS行，L2归一化，维度1024
-- **稀疏向量**：每个token一个权重，BM25风格的词法匹配
-- **多向量（ColBERT）**：每个token一个1024维向量，L2归一化，排除CLS
+Un detalle técnico importante: la cabeza sparse está enmascarada dentro del grafo (los tokens especiales y de padding se ponen a cero), a diferencia de la implementación upstream, que devuelve el ReLU crudo y depende de que el llamador descarte los tokens especiales. Según el autor, sin este enmascarado el modelo fp32 asigna pesos de hasta 0,196 a posiciones de padding, lo que puede corromper silenciosamente el índice disperso.
 
-该模型的关键创新在于将三种检索信号融合在一次前向传播中，无需分别运行三个模型。对于部署，该版本采用ExecuTorch的XNNPACK和Core ML后端，其中Core ML版本实现了100%的子图委托，而XNNPACK fp32版本则有63.7%的委托率。
+Sobre el entrenamiento del modelo base, la ficha no proporciona detalles (número de tokens, composición del dataset, RLHF/DPO): no disponible. El proceso de conversión usa `torch.export` -> `to_edge_transform_and_lower(partitioner)` -> `.pte`, con scripts publicados en el repositorio executorch-models de GitHub.
 
-## 能力
+## Capacidades
 
-- **稠密检索**：通过余弦相似度进行向量搜索，适用于语义匹配
-- **稀疏检索**：BM25形状的词法匹配，通过token权重实现精确关键词匹配
-- **多向量检索**：ColBERT风格的延迟交互，对每个query token与文档token进行最佳匹配
-- **多语言支持**：基于XLM-RoBERTa，支持100+种语言
-- **端侧部署**：通过ExecuTorch在移动设备上运行，无需GPU服务器
-- **无前缀要求**：与E5和Qwen3-Embedding不同，bge-m3不需要添加任务前缀
+- Extracción de embeddings densos de 1024 dimensiones para búsqueda vectorial por similitud coseno.
+- Generación de pesos léxicos por token (sparse), compatibles con puntuación estilo BM25 sobre espacio de vocabulario de 250.002 tokens.
+- Generación de vectores multi-token (ColBERT) para recuperación por late interaction: para cada token de consulta se toma su mejor coincidencia entre los tokens del documento y se suma.
+- Las tres señales se obtienen en una sola pasada de inferencia y están pensadas para combinarse en búsqueda híbrida.
+- Soporte multilingüe heredado de XLM-RoBERTa (más de 100 idiomas).
+- Ejecución on-device mediante ExecuTorch con backends XNNPACK y Core ML, sin necesidad de GPU ni servidor.
+- Sin prefijos de instrucción: a diferencia de E5 o Qwen3-Embedding, el texto se pasa tal cual tanto en consultas como en documentos.
 
-## 使用场景
+## Casos de uso
 
-- **移动端语义搜索**：在手机或边缘设备上部署，实现本地文档检索。用户无需联网即可搜索本地笔记、文件或通讯记录，利用稠密向量进行语义匹配，稀疏向量处理关键词查询。
+- Búsqueda semántica híbrida en dispositivos móviles: se pueden combinar las puntuaciones dense, sparse y ColBERT para un retrieval de alta calidad sin conexión a red, ideal para apps que buscan sobre documentos locales.
+- RAG on-device: como componente de recuperación en un pipeline de generación aumentada que corre íntegramente en el dispositivo, embebiendo chunks de documentos (hasta 512 tokens) y consultas del usuario.
+- Indexación léxica eficiente: la cabeza sparse permite construir índices invertidos estilo BM25 con pesos aprendidos, más precisos que BM25 clásico, con solo unas líneas de código de dispersión en el cliente.
+- Re-ranking con late interaction: la salida ColBERT permite reordenar candidatos recuperados con mayor precisión que la similitud de vector único, sin salir del dispositivo.
+- Búsqueda multilingüe en apps: gracias a la base XLM-RoBERTa, se puede buscar en varios idiomas sobre un mismo índice, útil en aplicaciones con usuarios internacionales.
+- Deduplicación y agrupamiento de texto local: los embeddings densos permiten agrupar notas, mensajes o documentos similares en el dispositivo sin enviar datos a la nube, relevante para privacidad.
+- Prototipado de retrieval en edge devices: los scripts de verificación y conversión facilitan validar la fidelidad numérica antes de desplegar en producción.
 
-- **混合检索系统**：结合稠密和稀疏信号，实现更精准的检索。适用于企业知识库、RAG系统等场景，当用户查询包含特定术语时，稀疏信号能捕捉精确匹配，稠密信号则处理语义变体。
+## Benchmarks y rendimiento
 
-- **文档相似度计算**：在本地对文档进行相似度排序，用于论文查重、新闻聚类或内容推荐系统。通过多向量（ColBERT）信号捕捉文档间的细粒度语义关联。
+No se han publicado resultados de benchmarks estándar (MMLU, MTEB, etc.) para esta conversión. El autor sí publica datos de verificación de fidelidad y latencia en Mac arm64 (mediana de 10 ejecuciones, secuencia de 512 tokens):
 
-- **低资源环境下的文本匹配**：在无GPU的嵌入式设备或边缘设备上运行，进行意图识别、实体匹配或FAQ匹配。Core ML版本在Mac上仅需64.8ms即可处理512 token序列。
+| Build | Fichero | Tamaño (MB) | Latencia Mac (ms) | Correlación dense | Correlación colbert | Desviación sparse |
+|---|---|---|---|---|---|---|
+| XNNPACK fp32 | bge_m3_xnnpack_fp32.pte | 2271,5 | 233,3 | 1,000000 | 1,000000 | 0,0000 |
+| Core ML | bge_m3_coreml_all.pte | 1137,2 | 64,8 | 0,999990 | 0,999976 | 0,0008 |
+| XNNPACK fp16 | bge_m3_xnnpack_fp16.pte | 1136,3 | 484,3 | 0,999999 | 0,999998 | 0,0004 |
 
-- **数据去重与清洗**：在数据管道中对大规模文本进行去重，利用稠密向量计算相似度，稀疏向量快速过滤明显不相关的文档，提高处理效率。
+Como referencia, torch eager fp32 en la misma máquina tarda 182,8 ms, de modo que el build Core ML es 2,8 veces más rápido que eager, con delegación del 100 % en un único subgrafo. El build XNNPACK fp32 delega el 63,7 % en 100 subgrafos; el build fp16 de XNNPACK es más lento que fp32 porque XNNPACK carece de kernels fp16 para este grafo e inserta conversiones de tipo.
 
-- **隐私保护检索**：在设备端完成索引和检索，避免将数据发送到云端，适用于医疗记录、法律文件等敏感信息处理场景。
+La fidelidad contra la implementación de referencia `BGEM3FlagModel` de FlagEmbedding (seis frases) es:
 
-## 基准测试与性能
+| Cabeza | Diferencia absoluta máxima |
+|---|---|
+| dense | 2,645e-07 |
+| sparse | 3,427e-07 |
+| colbert | 4,061e-07 |
 
-该模型卡提供了在Mac arm64上的性能数据，以及相对于PyTorch eager模式的加速比：
+## Requisitos de hardware
 
-| 构建版本 | 文件大小 (MB) | 延迟 (ms) | 稠密相似度 | ColBERT相似度 | 稀疏权重偏差 |
+- VRAM/memoria: al ser un modelo on-device para CPU, el requisito es RAM, no VRAM. El build fp32 ocupa 2271,5 MB y los builds fp16/Core ML unos 1136-1137 MB; se recomienda al menos 3-4 GB de RAM disponible para el build fp32.
+- GPU: no necesaria; el modelo está diseñado para ejecutarse en CPU vía XNNPACK o en el Neural Engine de Apple vía Core ML.
+- Consumer devices: el build Core ML (64,8 ms por secuencia de 512 tokens en Mac arm64) es viable en iPhones y Macs con Apple Silicon; los builds XNNPACK son más lentos (233-484 ms) pero funcionan en cualquier CPU arm64 moderna.
+- Despliegue: ExecuTorch es el runtime previsto (no vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a formato .pte). Para uso en servidor con el modelo original, puede usarse FlagEmbedding o sentence-transformers con BAAI/bge-m3.
+- Latencia: 64,8 ms (Core ML), 233,3 ms (XNNPACK fp32) y 484,3 ms (XNNPACK fp16) por secuencia de 512 tokens en Mac arm64; no hay cifras para dispositivos móviles concretos.
+
+## Comparativa con modelos similares
+
+| Modelo | Parametros | Contexto | Señales de retrieval | Formato | Licencia |
 |---|---|---|---|---|---|
-| XNNPACK fp32 | 2271.5 | 233.3 | 1.000000 | 1.000000 | 0.0000 |
-| Core ML | 1137.2 | **64.8** | 0.999990 | 0.999976 | 0.0008 |
-| XNNPACK fp16 | 1136.3 | 484.3 | 0.999999 | 0.999998 | 0.0004 |
+| bge-m3-ExecuTorch (esta ficha) | 568M | 512 (conversión) / 8192 (original) | Dense + sparse + ColBERT en una pasada | .pte (ExecuTorch) | MIT |
+| BAAI/bge-m3 (original) | 568M | 8192 | Dense + sparse + ColBERT | safetensors (PyTorch) | MIT |
+| E5 / Qwen3-Embedding | no disponible | no disponible | Solo vector denso | no disponible | no disponible |
 
-与原始BGE-M3模型的对比（最大绝对差异）：
+Frente al modelo original, esta conversión sacrifica la ventana de 8192 tokens (limitada a 512 para evitar salidas ColBERT de 32 MB por llamada) a cambio de poder ejecutarse on-device. Frente a alternativas como E5 o Qwen3-Embedding, bge-m3 destaca por ofrecer las tres señales de recuperación simultáneamente y por no requerir prefijos de instrucción, aunque es notablemente más grande que la mayoría de modelos de embeddings ligeros.
 
-| 输出 | 最大绝对差异 |
-|------|------------|
-| 稠密向量 | 2.645e-07 |
-| 稀疏向量 | 3.427e-07 |
-| ColBERT向量 | 4.061e-07 |
+## Limitaciones y advertencias
 
-## 硬件要求
+- Ventana de contexto reducida a 512 tokens en esta conversión; textos más largos requieren chunking por parte del llamador.
+- La salida ColBERT tiene forma [1, 511, 1024]: la fila i corresponde al token i+1 de la entrada (la fila CLS se descarta), un detalle fácil de equivocarse por una posición al integrarlo.
+- La cabeza sparse requiere que el llamador realice la dispersión al espacio de vocabulario fuera del grafo; aunque esta versión ya enmascara tokens especiales y de padding dentro del grafo, hay que implementar el scatter correctamente (tomando el máximo sobre tokens repetidos).
+- El build XNNPACK fp16 es más lento que el fp32 debido a la falta de kernels fp16 en XNNPACK para este grafo; conviene elegir Core ML en dispositivos Apple.
+- La cuantización int8 no se publica: aunque convierte correctamente (peor cabeza 0,985), resulta en 1363,3 MB, mayor que fp16, porque la tabla de embeddings (250k vocabulario x 1024 dimensiones) supone el 45 % del modelo y permanece en fp32.
+- Las latencias publicadas son de referencia en Mac arm64, no cifras de dispositivos móviles reales.
+- Al ser un modelo de embeddings, hereda los sesgos y riesgos habituales (representaciones sesgadas por idioma o dominio) del modelo base BAAI/bge-m3; no hay análisis de sesgos específico en la ficha.
+- El repositorio tiene muy pocas descargas (8) y cero likes, por lo que tiene escasa validación comunitaria; se recomienda ejecutar los scripts de verificación incluidos antes de producción.
 
-- **VRAM/内存**：fp32版本约2.3GB，fp16版本约1.1GB，Core ML版本约1.1GB
-- **GPU**：无需GPU，可在CPU上运行
-- **兼容设备**：Mac（arm64）、移动设备（iOS/Android）通过ExecuTorch
-- **部署选项**：ExecuTorch运行时、Core ML、XNNPACK
-- **延迟参考**：Mac arm64上Core ML版本64.8ms（512 token序列），PyTorch eager为182.8ms
+## Enlaces
 
-## 与类似模型对比
-
-| 模型 | 参数 | 上下文 | 检索信号 | 许可证 | 部署方式 |
-|------|------|--------|----------|--------|----------|
-| BGE-M3 (原始) | 568M | 8192 | 稠密+稀疏+多向量 | MIT | PyTorch |
-| BGE-M3 (ExecuTorch) | 568M | 512 | 稠密+稀疏+多向量 | MIT | ExecuTorch |
-| E5 | 约300M | 512 | 稠密 | MIT | PyTorch |
-| Qwen3-Embedding | 约500M | 512 | 稠密 | Apache 2.0 | PyTorch |
-
-## 限制与注意事项
-
-- **上下文窗口限制**：模型卡明确将窗口限制为512 tokens（而非8192），对于长文档需要分块处理。
-- **稀疏头mask处理**：与上游不同，此版本在图中对稀疏头进行了mask，避免将padding token的权重散落到词表槽位。
-- **int8量化不可行**：由于token embedding表（1024MB）占模型权重45%，动态int8量化后体积反而大于fp16版本，因此未提供int8版本。
-- **验证覆盖有限**：验证基于6个句子和2个示例句子，可能未覆盖所有边缘情况。
-- **Core ML版本微小偏差**：Core ML版本与原始模型存在约0.0001的相似度偏差，对高精度场景可能需注意。
-
-## 相关链接
-
-- [HuggingFace模型仓库](https://huggingface.co/mlboydaisuke/bge-m3-ExecuTorch)
-- [原始BGE-M3模型](https://huggingface.co/BAAI/bge-m3)
-- [BGE-M3文档](https://bge-model.com/bge/bge_m3.html)
-- [转换脚本仓库](https://github.com/john-rocky/executorch-models)
-- [BGE-M3 GitHub](https://github.com/inferless/Bge-m3)
+- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/bge-m3-ExecuTorch
+- Modelo base: https://huggingface.co/BAAI/bge-m3
+- Scripts de conversión: https://github.com/john-rocky/executorch-models

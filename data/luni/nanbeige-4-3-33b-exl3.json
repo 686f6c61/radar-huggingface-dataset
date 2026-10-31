@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Luni/Nanbeige-4.3-33B-EXL3",
+  "slug": "luni-nanbeige-4-3-33b-exl3",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Nanbeige-4.3-33B-EXL3",
+  "created_at": "2026-10-25T18:18:39.000Z",
+  "updated_at": "2026-10-26T12:21:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "exllamav3",
+    "exl3",
+    "nanbeige",
+    "llama",
+    "full-attention",
+    "reasoning",
+    "thinking",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:finetune:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61791112099,
+  "storage_human": "61.8 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lunii | Conteuses et livres audio pour 0-14 ans",
+      "url": "https://lunii.com/fr-fr",
+      "snippet": "Avec les conteuses Ma 1ère Lunii, Ma Fabrique à Histoires & FLAM, Lunii réveille l'imaginaire et développe la créativité des enfants …"
+    },
+    {
+      "title": "Application Mobile ou Web | Lunii",
+      "url": "https://lunii.com/fr-fr/application-lunii",
+      "snippet": "Téléchargez en quelques clics l'application Lunii, indispensable pour associer votre compte Lunii à Ma Fabrique à Histoires ou FLAM …"
+    },
+    {
+      "title": "Lunii : tous les produits de la marque Lunii (Enfant, Jouet ... - Fnac",
+      "url": "https://www.fnac.com/Lunii/m367853/w-4",
+      "snippet": "Retrouvez tous les produits Lunii au meilleur prix à la FNAC. En quelques clics, achetez en ligne ou commandez dans un magasin …"
+    },
+    {
+      "title": "Mon compte – Lunii",
+      "url": "https://support.lunii.com/hc/fr/categories/360000273657-Mon-compte",
+      "snippet": "Mon compte 📜 Retrouvez ici toutes les informations pour créer votre compte et le paramétrer"
+    }
+  ]
+}

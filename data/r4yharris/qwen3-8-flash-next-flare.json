@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "r4yharris/Qwen3.8-Flash-Next-FLARE",
+  "slug": "r4yharris-qwen3-8-flash-next-flare",
+  "author": "r4yharris",
+  "url": "https://huggingface.co/r4yharris/Qwen3.8-Flash-Next-FLARE",
+  "created_at": "2026-10-30T18:21:40.000Z",
+  "updated_at": "2026-10-30T18:46:32.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flare",
+    "nvfp4",
+    "mxfp8",
+    "rtx-spark",
+    "gb10",
+    "image-text-to-text",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22848616,
+  "parameters_human": "22.8M",
+  "storage_bytes": 106927308358,
+  "storage_human": "106.9 GB",
+  "base_model": "nvidia/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

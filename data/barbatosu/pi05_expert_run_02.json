@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Barbatosu/pi05_expert_run_02",
+  "slug": "barbatosu-pi05_expert_run_02",
+  "author": "Barbatosu",
+  "url": "https://huggingface.co/Barbatosu/pi05_expert_run_02",
+  "created_at": "2026-10-27T05:01:18.000Z",
+  "updated_at": "2026-10-27T05:17:00.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:Barbatosu/record-test_20261026_201007",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388453280,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

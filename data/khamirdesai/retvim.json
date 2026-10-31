@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "khamirdesai/RetViM",
+  "slug": "khamirdesai-retvim",
+  "author": "khamirdesai",
+  "url": "https://huggingface.co/khamirdesai/RetViM",
+  "created_at": "2026-10-30T18:59:27.000Z",
+  "updated_at": "2026-10-30T19:25:23.000Z",
+  "license": "rights-reserved-pending",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "retvim",
+    "retinal-oct",
+    "vision-transformer",
+    "mamba",
+    "research",
+    "image-classification",
+    "en",
+    "base_model:timm/vit_base_patch16_224.augreg_in21k_ft_in1k",
+    "base_model:finetune:timm/vit_base_patch16_224.augreg_in21k_ft_in1k",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 101232773,
+  "parameters_human": "101.2M",
+  "storage_bytes": 404953996,
+  "storage_human": "405 MB",
+  "base_model": "timm/vit_base_patch16_224.augreg_in21k_ft_in1k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

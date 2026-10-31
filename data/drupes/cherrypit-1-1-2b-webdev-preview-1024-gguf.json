@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DRUPEs/CherryPit-1.1-2B-WebDev-Preview-1024-GGUF",
+  "slug": "drupes-cherrypit-1-1-2b-webdev-preview-1024-gguf",
+  "author": "DRUPEs",
+  "url": "https://huggingface.co/DRUPEs/CherryPit-1.1-2B-WebDev-Preview-1024-GGUF",
+  "created_at": "2026-10-24T20:33:33.000Z",
+  "updated_at": "2026-10-24T23:13:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "code",
+    "coding",
+    "react",
+    "web-development",
+    "frontend",
+    "reasoning",
+    "on-device",
+    "small-language-model",
+    "minicpm",
+    "preview",
+    "text-generation",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 186,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1561315680,
+  "storage_human": "1.6 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drupe : Définition et caractéristiques - projetecolo.com",
+      "url": "https://www.projetecolo.com/drupe-definition-et-caracteristiques-668.html",
+      "snippet": "Feb 16, 2026 · Le pêcher ou Prunus persica est probablement l'arbre le plus représentatif de toutes les espèces à drupes. À tel point …"
+    },
+    {
+      "title": "Drupe - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Drupe",
+      "snippet": "Typical drupes include apricots, olives, loquat, peaches, plums, cherries, mangoes, pecans, and amlas (Indian gooseberries). Other …"
+    },
+    {
+      "title": "Drupe : définition et explications - AquaPortail",
+      "url": "https://www.aquaportail.com/dictionnaire/definition/4804/drupe",
+      "snippet": "Elle est tout fruit multiple qui est un agrégat de plusieurs petites drupes. Exemples : la mûre, la framboise. La polydrupe est formée …"
+    }
+  ]
+}

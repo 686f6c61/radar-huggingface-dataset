@@ -1,219 +1,86 @@
 # w10110/qwen3-0.6b-zh-blog-style-onnx
 
-# w10110/qwen3-0.6b-zh-blog-style-onnx：Qwen3-0.6B中文博客风格微调模型的ONNX部署指南
+## Resumen
 
-## 引言
+Qwen3-0.6B Blog Style ONNX es un microajuste experimental del modelo Qwen3-0.6B de Alibaba (Qwen), publicado por el usuario w10110 en Hugging Face. El objetivo del fine-tuning es reproducir el estilo de escritura de un autor concreto en chino para generar contenido de blog: el modelo se entrenó con 45 muestras aprobadas por el autor mediante LoRA, cuyos pesos ya están fusionados en el modelo base. La plantilla de chat desactiva por defecto el modo de pensamiento (thinking mode) de Qwen3.
 
-在开源大语言模型生态中，Qwen3系列凭借其强大的多语言能力和灵活的部署选项，已成为开发者社区的热门选择。本文聚焦于一个特定的社区微调版本——`w10110/qwen3-0.6b-zh-blog-style-onnx`，该模型以Qwen3-0.6B为基座，针对中文博客风格文本生成进行了专门优化，并转换为ONNX格式以便于跨平台部署。尽管该模型在HuggingFace上的下载量和关注度尚处于早期阶段，但其技术路线——轻量级模型配合特定风格微调——代表了边缘计算和垂直领域AI应用的一个重要方向。
+La relevancia de esta ficha no está tanto en el modelo en sí (un LLM de 0,6 mil millones de parámetros) como en su formato de despliegue: los pesos se exportan a ONNX con dos variantes cuantizadas (q8 para WASM y q4f16 para WebGPU), lo que permite ejecutar la generación de texto directamente en el navegador con Transformers.js 3.8.1, sin servidor de inferencia. El diseño contempla además que los hechos del blog provengan de un contexto de recuperación estático independiente, no de la memoria del modelo.
 
-## 模型概述
+Se trata explícitamente de una versión experimental de muestra pequeña: el propio autor advierte de posible sobreajuste, desviaciones numéricas respecto al modelo PyTorch original y errores observados en la generación (interpretaciones erróneas de JavaScript, rechazos inapropiados y repeticiones con q4f16). No es apto para producción como fuente de respuestas técnicas fiables.
 
-### 基座模型：Qwen3-0.6B
+## Especificaciones tecnicas
 
-Qwen3-0.6B是阿里巴巴通义千问团队于2025年发布的开源大语言模型，属于Qwen3系列中的轻量级密集模型。该模型基于Transformer架构，拥有约6亿参数，支持长达32,768个token的上下文窗口，并原生支持119种语言和方言。Qwen3系列引入了双模推理机制——"思考模式"（Thinking Mode）和"非思考模式"（Non-Thinking Mode），用户可根据任务复杂度动态切换，在推理深度和响应速度之间取得平衡。
+| Parametro | Valor |
+|---|---|
+| Arquitectura | Transformer denso (causal), heredado de Qwen3-0.6B |
+| Parametros totales | 0,6 mil millones (base); no disponible el recuento exacto tras fusionar LoRA |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la model card (la serie Qwen3-0.6B soporta 32.768 tokens de forma nativa) |
+| Tipos de cuantizacion | q8 (ONNX, `model_quantized.onnx`) y q4f16 (ONNX, `model_q4f16.onnx`) |
+| Idiomas soportados | Chino (zh); ajustado específicamente para estilo de blog en chino |
+| Licencia | Apache License 2.0 |
+| Formato de pesos | ONNX (no se distribuyen safetensors ni GGUF en este repositorio); el corpus de entrenamiento no se publica |
 
-### 微调版本：中文博客风格
+## Arquitectura y entrenamiento
 
-`w10110/qwen3-0.6b-zh-blog-style-onnx`在Qwen3-0.6B基础上进行了针对中文博客文章风格的微调，旨在生成更符合中文博客写作习惯的内容——包括标题结构、段落组织、语气风格和常见的博客表达方式。模型已转换为ONNX格式，这意味着它可以脱离Python环境，在多种平台和编程语言中高效运行，包括C#、Java、C++等，非常适合集成到现有的企业应用或移动端产品中。
+El modelo parte de Qwen3-0.6B, un transformer causal denso de la familia Qwen3 que incluye atención agrupada de consultas (GQA) y soporte opcional de razonamiento extendido (thinking mode), desactivado aquí por defecto en la plantilla de chat. Sobre esta base se aplicó LoRA con rango r=16, alpha=32 y dropout 0,05, entrenando 3 épocas con tasa de aprendizaje 0,0001, longitud máxima de secuencia de 1024 tokens y semilla aleatoria 42. El entrenamiento constó de solo 9 pasos de optimización.
 
-### 当前状态
+El corpus de entrenamiento son 45 muestras de estilo de blog en chino, revisadas y aprobadas por el autor, divididas sin cruce de fuentes en 34 de entrenamiento, 3 de validación y 8 de prueba. La mejor pérdida de validación fue 3,0917 y la de prueba 3,0935. El commit base utilizado es `c1899de289a04d12100db370d81485cdf75e47ca`.
 
-截至本文撰写时（2026年9月），该模型在HuggingFace上显示为0次下载、0个赞，模型卡内容极为简洁，仅包含Apache 2.0许可证声明。这表明它可能是一个较新的发布或实验性项目，使用者需要自行评估其实际效果。
+Un punto técnico importante: la verificación de alineación entre el exportador FP16 (PyTorch CUDA) y ONNX Runtime CPU reporta diferencias de logits por encima de la tolerancia de 0,02 (diferencia absoluta máxima de aproximadamente 1,55), por lo que el repositorio no garantiza equivalencia numérica con el modelo PyTorch original. La validación realizada incluye tres prompts chinos con decodificación por caché en ONNX Runtime CPU y una verificación de generación en navegador con WASM/q8 y WebGPU/q4f16 mediante Transformers.js 3.8.1.
 
-## 核心特性
+## Capacidades
 
-### 轻量高效
+- Generación de texto conversacional en chino con estilo de blog imitado a partir de 45 muestras del autor.
+- Ejecución íntegra en el navegador: WASM (cuantización q8) y WebGPU (cuantización q4f16) vía Transformers.js.
+- Modo de pensamiento de Qwen3 desactivado por defecto en la plantilla de chat (respuestas directas).
+- Hereda las capacidades generales de Qwen3-0.6B (razonamiento básico, código, matemáticas a nivel de modelo pequeño), aunque el autor no garantiza que no hayan degradado tras el fine-tuning.
+- Diseñado para funcionar junto a un contexto de recuperación estático que aporta los hechos del blog; el modelo no memoriza el contenido factual.
+- No hay soporte documentado de tool calling, agentes, visión ni audio en esta variante.
 
-- 约6亿参数，模型体积小，可在消费级硬件上运行
-- ONNX格式支持CPU和GPU推理，部署灵活
-- 支持INT4、INT8等量化方案，进一步降低资源占用
+## Casos de uso
 
-### 中文博客风格适配
+- Generación de borradores de blog en el navegador: un sitio estático puede cargar el modelo vía Transformers.js y redactar entradas con la voz del autor sin enviar datos a ningún servidor, útil para privacidad y coste cero de inferencia.
+- Asistente de escritura personal offline: integración en un editor web (por ejemplo, un CMS ligero) que sugiera párrafos en el estilo del autor mientras escribe, con latencia aceptable gracias a la cuantización q4f16 en WebGPU.
+- Demostraciones interactivas de LLM en cliente: por su tamaño (1,4 GB el repositorio, ~cientos de MB el archivo q4f16) es adecuado para ejemplos embebidos en documentación o portfolios que ejecuten el modelo en el dispositivo del visitante.
+- Prototipado de RAG ligero en cliente: combinando el modelo con un índice de recuperación estático (como hace el propio autor) para responder sobre el contenido de un blog personal sin backend.
+- Experimentación con fine-tuning LoRA de muestra pequeña: sirve como referencia reproducible (semilla, hiperparámetros y splits documentados) para quien quiera replicar un ajuste de estilo con muy pocos datos.
+- Pruebas de compatibilidad ONNX Runtime: comparación de comportamiento entre ejecución CPU (ONNX Runtime) y navegador (WASM/WebGPU), útil para validar pipelines de exportación.
 
-- 针对中文博客写作风格进行专门微调
-- 适合生成教程、技术分享、产品评测等常见博客类型内容
-- 保持Qwen3基座的多语言能力，但中文输出质量更优
+## Benchmarks y rendimiento
 
-### 双模推理能力
+No se han publicado resultados de benchmarks en la informacion disponible. Los únicos datos cuantitativos publicados son las pérdidas de entrenamiento: validación 3,0917 y prueba 3,0935. El autor indica además que la evaluación de calidad de estilo (A/B ciego) no está completada y que no se ha demostrado la ausencia de degradación en capacidades generales.
 
-继承自Qwen3基座模型：
-- **思考模式**：适合复杂推理任务，如技术方案设计、代码分析
-- **非思考模式**：适合快速响应，如博客标题生成、简短段落续写
+## Requisitos de hardware
 
-### 广泛的语言支持
+- Repositorio completo: 1,4 GB; los archivos individuales ONNX cuantizados son sustancialmente menores (no se publican tamaños exactos por archivo).
+- Ejecución en navegador: no requiere GPU dedicada; WASM/q8 funciona en CPU del cliente y q4f16 aprovecha WebGPU en navegadores compatibles (Chrome/Edge recientes, entre otros).
+- Ejecución en servidor o local con ONNX Runtime CPU: viable en hardware de escritorio convencional dado el tamaño de 0,6B de parámetros; una GPU de consumo tipo RTX 3060 o superior sería más que suficiente si se desea acelerar.
+- Despliegue: Transformers.js 3.8.1 (vía WASM o WebGPU) y ONNX Runtime (CPU). No hay soporte documentado para vLLM, TGI, llama.cpp ni Ollama, ya que los pesos solo se distribuyen en ONNX.
+- Latencia y throughput: no disponibles; al ser un modelo de 0,6B con cuantización agresiva, se espera generación interactiva en navegador, pero no hay mediciones publicadas.
 
-虽然微调聚焦中文，但基座模型支持119种语言，因此在多语言混合内容处理上仍具优势。
+## Comparativa con modelos similares
 
-## 技术规格
+| Modelo | Parametros | Formato | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3-0.6B Blog Style ONNX (este) | 0,6B | ONNX (q8, q4f16) | No disponible | Apache 2.0 | Fine-tuning de estilo en chino, ejecución en navegador |
+| Qwen/Qwen3-0.6B (base) | 0,6B | Safetensors | 32.768 tokens | Apache 2.0 | Modelo base multilingüe, sin ajuste de estilo |
+| SmolLM2-360M / SmolLM2-1.7B (HuggingFace) | 0,36B / 1,7B | Safetensors, ONNX | 8.192 tokens | Apache 2.0 | Alternativa ligera para inferencia en navegador, sin ajuste de estilo específico |
 
-| 参数 | 值 |
-|------|------|
-| 基座模型 | Qwen3-0.6B |
-| 模型格式 | ONNX |
-| 参数量 | 约6亿（0.6B） |
-| 上下文长度 | 32,768 tokens |
-| 架构 | Transformer（密集模型） |
-| 微调目标 | 中文博客风格文本生成 |
-| 许可证 | Apache 2.0 |
-| 推理模式 | 双模（思考/非思考） |
-| 支持语言 | 119种（微调侧重中文） |
-| 量化支持 | INT4、INT8、FP16、FP32 |
-| 发布者 | w10110（社区开发者） |
-| 创建时间 | 2026年9月1日 |
+## Limitaciones y advertencias
 
-## 架构与训练背景
+- Riesgo elevado de sobreajuste: solo 45 muestras y 9 pasos de optimización; la evaluación A/B ciega de estilo no se ha completado.
+- Errores observados en generación: interpretaciones erróneas de código JavaScript, rechazos inapropiados y respuestas repetitivas con la variante q4f16. No debe usarse como fuente de respuestas técnicas fiables.
+- Desviación numérica respecto al modelo PyTorch original: el exportador FP16 presenta diferencias de logits de hasta ~1,55 frente a la tolerancia de 0,02, sin garantía de equivalencia.
+- Alcance limitado al chino: el ajuste está orientado a estilo de blog en chino; el comportamiento en otros idiomas no está evaluado.
+- Los hechos generados no son fiables: el diseño asume que la factualidad proviene de un sistema de recuperación externo, no del propio modelo; existe riesgo habitual de alucinación.
+- Sin datos de benchmark ni garantía de que las capacidades generales del modelo base se hayan conservado.
+- La licencia Apache 2.0 es permisiva, pero el autor recuerda que quien despliegue el modelo es responsable de evaluar el contenido generado y los riesgos de exposición pública.
+- El corpus de entrenamiento no se publica, lo que impide auditar la procedencia y los sesgos de los datos de estilo.
 
-### Qwen3-0.6B基座架构
+## Enlaces
 
-Qwen3-0.6B采用标准的Decoder-only Transformer架构，包含约6亿参数，层数约为28层，隐藏维度约1024。与Qwen2.5系列相比，Qwen3引入了多项改进：
-
-- **混合注意力机制**：结合了传统的全注意力与稀疏注意力，在长上下文处理中更高效
-- **增强的RoPE（旋转位置编码）**：支持更长的外推能力
-- **优化的分词器**：对中文等多语言支持更友好
-
-### 双模推理实现
-
-Qwen3系列的核心创新在于将推理过程显式分为两种模式：
-- **思考模式**：模型在生成最终答案前，会先生成内部的推理链（Chain-of-Thought），类似DeepSeek-R1的推理风格
-- **非思考模式**：直接生成答案，响应速度更快，适合简单任务
-
-用户在调用API时可通过系统提示词控制模式切换，例如添加"请先思考再回答"或"直接给出答案"等指令。
-
-### 微调细节
-
-关于`w10110/qwen3-0.6b-zh-blog-style-onnx`的微调细节，目前公开信息有限，包括：
-- 训练数据集的规模和来源（未公开）
-- 微调方法（LoRA、QLoRA或全参数微调）
-- 训练轮数和超参数设置
-
-这些信息在HuggingFace模型卡中未提供，建议使用者联系作者或在社区中咨询。
-
-## 部署指南
-
-### 环境要求
-
-| 部署方式 | 最低配置 | 推荐配置 |
-|----------|----------|----------|
-| CPU推理 | 4核CPU、8GB内存 | 8核CPU、16GB内存 |
-| GPU推理 | 4GB显存（FP16） | 8GB显存（支持INT8量化） |
-| 量化部署 | 2GB内存（INT4） | 4GB内存 |
-
-### 使用ONNX Runtime部署
-
-由于模型已转换为ONNX格式，可以使用ONNX Runtime进行推理：
-
-```python
-import onnxruntime as ort
-import numpy as np
-
-# 加载模型
-session = ort.InferenceSession("model.onnx")
-
-# 准备输入（需根据模型的具体输入格式调整）
-input_ids = np.array([[1, 2, 3, 4, 5]], dtype=np.int64)
-inputs = {session.get_inputs()[0].name: input_ids}
-
-# 推理
-outputs = session.run(None, inputs)
-print(outputs)
-```
-
-### 使用Ollama部署
-
-虽然该模型以ONNX格式发布，但用户也可以选择使用Ollama部署原始Qwen3-0.6B模型，然后通过提示词工程模拟博客风格：
-
-```bash
-# 拉取模型
-ollama pull qwen3:0.6b
-
-# 创建自定义模型（使用Modelfile定义风格）
-ollama create qwen3-blog -f Modelfile
-```
-
-Modelfile示例：
-```
-FROM qwen3:0.6b
-SYSTEM "你是一位经验丰富的技术博主，擅长撰写清晰、结构化的中文博客文章。"
-```
-
-### 跨平台集成
-
-ONNX格式的最大优势在于跨平台支持：
-- **.NET/C#**：使用Microsoft.ML.OnnxRuntime
-- **Java**：使用ONNX Runtime Java绑定
-- **C++**：通过ONNX Runtime C++ API
-- **移动端**：支持Android和iOS部署
-
-## 适用场景
-
-### 1. 技术博客自动生成
-利用模型的博客风格微调，输入技术要点，自动生成结构化的技术文章初稿。适合开发者快速产出文档或教程。
-
-### 2. 内容创作辅助
-为内容创作者提供灵感，生成博客标题、段落草稿或完整文章框架。模型的中文表达能力经过专门优化，比通用模型更贴合博客语境。
-
-### 3. 边缘设备上的AI写作
-由于模型轻量且支持ONNX格式，可以部署在树莓派、边缘网关等设备上，实现本地化的写作辅助功能，无需云端API。
-
-### 4. 企业知识库内容生成
-将内部技术文档转换为博客风格的外部发布内容，模型可以学习企业特定的术语和表达方式（需进一步微调）。
-
-### 5. 教育场景中的写作练习
-为中文学习者提供博客写作范例，或为写作教学提供自动批改和示范改写。
-
-### 6. 多语言内容本地化
-虽然微调聚焦中文，但模型继承了Qwen3的多语言能力，可用于将英文技术内容转换为中文博客风格。
-
-## 性能与局限性
-
-### 性能预期
-
-- **推理速度**：在CPU上（8核），约10-20 tokens/秒（非思考模式）；在GPU上（如RTX 3060），可达50-100 tokens/秒
-- **内存占用**：FP16约1.2GB，INT8约600MB，INT4约350MB
-- **质量评估**：由于缺乏公开的benchmark数据，建议用户自行测试，重点关注中文博客风格的一致性和内容的准确性
-
-### 已知局限
-
-1. **信息不足**：模型卡缺乏详细的训练数据和评估结果，难以判断微调质量
-2. **风格泛化**：博客风格可能偏向特定类型（如技术博客），对其他类型博客（如生活方式、旅行）的适配性未知
-3. **幻觉风险**：作为小型模型，在生成事实性内容时可能产生幻觉，需人工审核
-4. **上下文限制**：虽然支持32K上下文，但实际长文本生成质量可能下降
-5. **社区支持**：该模型下载量低，可能缺乏社区反馈和持续维护
-
-### 生产环境注意事项
-
-- 在部署到生产环境前，务必在自有数据上进行充分测试
-- 考虑增加输出过滤机制，防止不当内容生成
-- 监控模型的漂移和退化现象
-- 保留基座模型作为fallback选项
-
-## 与类似模型对比
-
-| 模型 | 参数 | 上下文 | 中文能力 | 格式 | 许可证 | 特点 |
-|------|------|--------|----------|------|--------|------|
-| w10110/qwen3-0.6b-zh-blog-style-onnx | 0.6B | 32K | 微调优化 | ONNX | Apache 2.0 | 博客风格，跨平台 |
-| Qwen3-0.6B（原始） | 0.6B | 32K | 强 | PyTorch/GGUF | Apache 2.0 | 通用能力，社区成熟 |
-| Qwen3-1.7B | 1.7B | 32K | 强 | 多格式 | Apache 2.0 | 更大参数，更强能力 |
-| Qwen3-4B | 4B | 32K | 强 | 多格式 | Apache 2.0 | 平衡性能与资源 |
-
-## 结论与建议
-
-`w10110/qwen3-0.6b-zh-blog-style-onnx`代表了一个有趣的技术方向：轻量级模型加垂直风格微调，再通过ONNX实现跨平台部署。对于需要在资源受限环境中生成中文博客风格内容的开发者来说，这是一个值得尝试的选项。
-
-**建议**：
-1. 先从基座模型Qwen3-0.6B入手，体验其基本能力
-2. 如果博客风格微调效果不理想，可通过提示词工程在基座模型上模拟类似效果
-3. 关注模型作者的更新，获取更多训练细节
-4. 在使用前，在自有数据集上建立评估基准，量化模型的实际表现
-
-## 参考资源
-
-- **模型页面**：https://huggingface.co/w10110/qwen3-0.6b-zh-blog-style-onnx
-- **Qwen3基座模型**：https://huggingface.co/Qwen/Qwen3-0.6B
-- **Qwen官方博客**：https://qwen.ai/blog?id=qwen3
-- **Qwen3 GitHub仓库**：https://github.com/QwenLM/Qwen3
-- **ONNX Runtime官方文档**：https://onnxruntime.ai/
-
----
-
-*本文档基于2026年9月可获得的公开信息编写。模型的具体表现可能因使用场景而异，建议在实际部署前进行充分测试。*
+- Repositorio del modelo: https://huggingface.co/w10110/qwen3-0.6b-zh-blog-style-onnx
+- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- Transformers.js: https://huggingface.co/docs/transformers.js
+- ONNX Runtime: https://onnxruntime.ai/

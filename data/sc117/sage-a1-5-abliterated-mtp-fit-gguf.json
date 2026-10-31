@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SC117/Sage-A1.5-abliterated-MTP-FIT-GGUF",
+  "slug": "sc117-sage-a1-5-abliterated-mtp-fit-gguf",
+  "author": "SC117",
+  "url": "https://huggingface.co/SC117/Sage-A1.5-abliterated-MTP-FIT-GGUF",
+  "created_at": "2026-10-30T10:51:25.000Z",
+  "updated_at": "2026-10-31T01:39:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "quantization",
+    "fit-gguf",
+    "imatrix",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "vlm",
+    "vision",
+    "agentic",
+    "tool-use",
+    "long-context",
+    "qwen3_5_moe",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:InternScience/Sage-A1.5",
+    "base_model:quantized:InternScience/Sage-A1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2825,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 153268688544,
+  "storage_human": "153.3 GB",
+  "base_model": "InternScience/Sage-A1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://fr-fr.facebook.com/messages/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

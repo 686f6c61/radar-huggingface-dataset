@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "nalemi/persona_light_uncensored_win64",
+  "slug": "nalemi-persona_light_uncensored_win64",
+  "author": "nalemi",
+  "url": "https://huggingface.co/nalemi/persona_light_uncensored_win64",
+  "created_at": "2026-10-28T08:56:08.000Z",
+  "updated_at": "2026-10-28T13:10:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "qwen2.5",
+    "abliterated",
+    "cpu-inference",
+    "offline",
+    "local-ai",
+    "chat",
+    "lightweight",
+    "standalone",
+    "windows",
+    "llama.cpp",
+    "en",
+    "de",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2364417355,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watch FOX News Live Today: Stream Breaking News Updates | FOX …",
+      "url": "https://www.fox.com/news",
+      "snippet": "Watch FOX News live on FOX One. Stream latest news, primetime shows and highlights from The Five, Hannity, Gutfeld! and more. …"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bonusobjective/murmur-clean-350m",
+  "slug": "bonusobjective-murmur-clean-350m",
+  "author": "bonusobjective",
+  "url": "https://huggingface.co/bonusobjective/murmur-clean-350m",
+  "created_at": "2026-10-30T19:06:12.000Z",
+  "updated_at": "2026-10-30T19:11:08.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm2.5",
+    "dictation",
+    "text-cleanup",
+    "lora",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:adapter:LiquidAI/LFM2.5-350M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 379220000,
+  "storage_human": "379 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "endless-frontier/Fx-Work-1028",
+  "slug": "endless-frontier-fx-work-1028",
+  "author": "endless-frontier",
+  "url": "https://huggingface.co/endless-frontier/Fx-Work-1028",
+  "created_at": "2026-10-27T12:29:16.000Z",
+  "updated_at": "2026-10-28T15:23:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen3.6",
+    "multimodal",
+    "mixture-of-experts",
+    "agentic-work",
+    "occupational-work",
+    "tool-use",
+    "conversational",
+    "en",
+    "arxiv:2609.39325",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71917522546,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

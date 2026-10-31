@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "isilicon/mango-qwen38-flashnext-iq4xs",
+  "slug": "isilicon-mango-qwen38-flashnext-iq4xs",
+  "author": "isilicon",
+  "url": "https://huggingface.co/isilicon/mango-qwen38-flashnext-iq4xs",
+  "created_at": "2026-10-29T21:08:45.000Z",
+  "updated_at": "2026-10-30T06:52:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "mango",
+    "preservation-mirror",
+    "flash-next",
+    "evaluated",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF",
+    "base_model:quantized:mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1120,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 98422147724,
+  "storage_human": "98.4 GB",
+  "base_model": "mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

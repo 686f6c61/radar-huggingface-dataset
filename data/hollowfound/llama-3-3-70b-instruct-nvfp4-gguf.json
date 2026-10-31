@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hollowfound/Llama-3.3-70B-Instruct-NVFP4-GGUF",
+  "slug": "hollowfound-llama-3-3-70b-instruct-nvfp4-gguf",
+  "author": "hollowfound",
+  "url": "https://huggingface.co/hollowfound/Llama-3.3-70B-Instruct-NVFP4-GGUF",
+  "created_at": "2026-10-25T10:59:14.000Z",
+  "updated_at": "2026-10-25T11:08:15.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "fp4",
+    "llama",
+    "llama-3",
+    "quantized",
+    "hollowquant",
+    "text-generation",
+    "en",
+    "base_model:meta-llama/Llama-3.3-70B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.3-70B-Instruct",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 70553707120,
+  "parameters_human": "70.55B",
+  "storage_bytes": 42719609728,
+  "storage_human": "42.7 GB",
+  "base_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

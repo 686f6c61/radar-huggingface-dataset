@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/djini-4b-security-agent-GGUF",
+  "slug": "mradermacher-djini-4b-security-agent-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/djini-4b-security-agent-GGUF",
+  "created_at": "2026-10-27T10:29:16.000Z",
+  "updated_at": "2026-10-27T11:08:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "security",
+    "vulnerability-detection",
+    "ios-security",
+    "decompiled-code",
+    "agentic",
+    "cline",
+    "sast",
+    "en",
+    "base_model:djini-ai/djini-4b-security-agent",
+    "base_model:quantized:djini-ai/djini-4b-security-agent",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 626,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38906338048,
+  "storage_human": "38.9 GB",
+  "base_model": "djini-ai/djini-4b-security-agent",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

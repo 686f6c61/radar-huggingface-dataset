@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SenseNova-U1.5-8B-MoT-i1-GGUF",
+  "slug": "mradermacher-sensenova-u1-5-8b-mot-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SenseNova-U1.5-8B-MoT-i1-GGUF",
+  "created_at": "2026-10-27T14:21:25.000Z",
+  "updated_at": "2026-10-27T14:47:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "native multimodal",
+    "image-generation",
+    "image-editing",
+    "any-to-any",
+    "en",
+    "zh",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:quantized:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1794,
+  "trending_score": 0,
+  "parameters": 9348413952,
+  "parameters_human": "9.35B",
+  "storage_bytes": 109303137760,
+  "storage_human": "109.3 GB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

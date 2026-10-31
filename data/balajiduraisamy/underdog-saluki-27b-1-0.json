@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "balajiduraisamy/Underdog-Saluki-27B-1.0",
+  "slug": "balajiduraisamy-underdog-saluki-27b-1-0",
+  "author": "balajiduraisamy",
+  "url": "https://huggingface.co/balajiduraisamy/Underdog-Saluki-27B-1.0",
+  "created_at": "2026-10-27T07:36:35.000Z",
+  "updated_at": "2026-10-27T07:36:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "2-bit",
+    "tool-calling",
+    "function-calling",
+    "agents",
+    "qwen3.8",
+    "text-generation",
+    "en",
+    "base_model:ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 9455223040,
+  "storage_human": "9.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B, ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

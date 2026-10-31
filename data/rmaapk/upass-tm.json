@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "rmaapk/upass-tm",
+  "slug": "rmaapk-upass-tm",
+  "author": "rmaapk",
+  "url": "https://huggingface.co/rmaapk/upass-tm",
+  "created_at": "2026-10-29T02:36:33.000Z",
+  "updated_at": "2026-10-30T18:10:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1548,
+  "trending_score": 0,
+  "parameters": 917504,
+  "parameters_human": "917504",
+  "storage_bytes": 697454528,
+  "storage_human": "697 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

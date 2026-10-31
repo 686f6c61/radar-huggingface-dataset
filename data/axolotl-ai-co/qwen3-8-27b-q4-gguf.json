@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "axolotl-ai-co/Qwen3.8-27B-Q4-GGUF",
+  "slug": "axolotl-ai-co-qwen3-8-27b-q4-gguf",
+  "author": "axolotl-ai-co",
+  "url": "https://huggingface.co/axolotl-ai-co/Qwen3.8-27B-Q4-GGUF",
+  "created_at": "2026-10-27T09:21:33.000Z",
+  "updated_at": "2026-10-30T09:49:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 810,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17552704768,
+  "storage_human": "17.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

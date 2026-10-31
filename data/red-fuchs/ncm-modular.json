@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Red-fuchs/ncm-modular",
+  "slug": "red-fuchs-ncm-modular",
+  "author": "Red-fuchs",
+  "url": "https://huggingface.co/Red-fuchs/ncm-modular",
+  "created_at": "2026-10-31T18:29:20.000Z",
+  "updated_at": "2026-10-31T18:29:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "mlx",
+    "next-concept-modeling",
+    "apple-silicon",
+    "text-generation",
+    "diffusion-lm",
+    "research-code",
+    "negative-results",
+    "en",
+    "de",
+    "dataset:AmazonScience/massive",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2610.14162",
+    "base_model:hazyresearch/ncm-checkpoints",
+    "base_model:finetune:hazyresearch/ncm-checkpoints",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "hazyresearch/ncm-checkpoints",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

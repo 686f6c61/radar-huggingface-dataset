@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "WannaGoTech/WannaMed-Tx",
+  "slug": "wannagotech-wannamed-tx",
+  "author": "WannaGoTech",
+  "url": "https://huggingface.co/WannaGoTech/WannaMed-Tx",
+  "created_at": "2026-10-29T07:42:13.000Z",
+  "updated_at": "2026-10-29T23:25:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation",
+    "medical",
+    "clinical-nlp",
+    "radiology",
+    "report-structuring",
+    "openvino",
+    "int8-lossless",
+    "french",
+    "healthcare",
+    "wannamed",
+    "wannagotech",
+    "fr",
+    "en",
+    "ar",
+    "dataset:WannaGoTech/WannaMedASR-French-Clinical-Benchmark",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7829300511,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical Report Structuring (329 XML Templates)",
+      "dataset": "WannaMed-CR-Struct-FR (36,057 Clinical Reports Hold-Out - 0% Leakage)",
+      "metric": "XML Template Compliance (%)",
+      "value": 98.4
+    },
+    {
+      "task": "Clinical Report Structuring (329 XML Templates)",
+      "dataset": "WannaMed-CR-Struct-FR (36,057 Clinical Reports Hold-Out - 0% Leakage)",
+      "metric": "Diagnostic Conclusion Synthesis ROUGE-L (%)",
+      "value": 96.8
+    },
+    {
+      "task": "Surgical ASR Homophone Correction & Terminology Disambiguation",
+      "dataset": "WannaMed-Homophones-FR (41,744 Clinical Rules & 13,219 Dragon Terms)",
+      "metric": "Surgical Homophone Correction F1 (%)",
+      "value": 99.6
+    },
+    {
+      "task": "12-Specialty Clinical QA & Action Plans",
+      "dataset": "WannaMed-12-Specialties-FR & FrenchMedMCQA",
+      "metric": "12-Specialty Clinical Action Plan Validation (%)",
+      "value": 100
+    },
+    {
+      "task": "12-Specialty Clinical QA & Action Plans",
+      "dataset": "WannaMed-12-Specialties-FR & FrenchMedMCQA",
+      "metric": "FrenchMedMCQA Accuracy (%)",
+      "value": 84.2
+    }
+  ],
+  "sources": []
+}

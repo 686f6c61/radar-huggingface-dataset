@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cash-entires/cash-entires-v1",
+  "slug": "cash-entires-cash-entires-v1",
+  "author": "cash-entires",
+  "url": "https://huggingface.co/cash-entires/cash-entires-v1",
+  "created_at": "2026-10-25T17:35:31.000Z",
+  "updated_at": "2026-10-25T18:15:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 148,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 10508873120,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cash - YouTube",
+      "url": "https://www.youtube.com/@cash",
+      "snippet": "New Cash & Nico Superhero collection! With plushies, comic, stickers and more! Christmas?... 👀 👉 http://cashandnico.com/"
+    },
+    {
+      "title": "Cash Express : achat / vente de produits d'occasion & bonnes affaires ...",
+      "url": "https://www.cashexpress.fr/",
+      "snippet": "Vous pouvez proposer vos articles en ligne ou dans votre magasin Cash Express le plus proche pour obtenir une estimation rapide."
+    },
+    {
+      "title": "Achat et vente de produits d'occasion et reconditionnés",
+      "url": "https://www.easycash.fr/",
+      "snippet": "Easy Cash utilise des outils de suivi (pixels) pour adapter la fréquence et personnaliser le contenu des communications. De l’argent, …"
+    },
+    {
+      "title": "Alles über Finanzen: News, Banking & Trading | cash",
+      "url": "https://www.cash.ch/",
+      "snippet": "16 hours ago · Eine Aktie kaufen: Wie geht das? Wer zum ersten Mal eine Aktie kaufen will, fühlt sich schnell überfordert. Doch …"
+    },
+    {
+      "title": "CashBlox - YouTube",
+      "url": "https://www.youtube.com/channel/UCY0R0Ck6qK2deVTKkfWJIEA",
+      "snippet": "@cashblox • 5.35M subscribers • 1.3K videos Cash's Roblox Channel ...more Cash's Roblox Channel ...more ...more …"
+    }
+  ]
+}

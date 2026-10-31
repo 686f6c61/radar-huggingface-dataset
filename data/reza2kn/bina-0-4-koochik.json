@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Reza2kn/Bina-0.4-Koochik",
+  "slug": "reza2kn-bina-0-4-koochik",
+  "author": "Reza2kn",
+  "url": "https://huggingface.co/Reza2kn/Bina-0.4-Koochik",
+  "created_at": "2026-10-27T13:09:05.000Z",
+  "updated_at": "2026-10-27T19:59:22.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_parse",
+    "feature-extraction",
+    "bina",
+    "ocr",
+    "persian",
+    "farsi",
+    "document-understanding",
+    "custom_code",
+    "image-to-text",
+    "fa",
+    "en",
+    "base_model:nvidia/Nemotron-3.5-Parse",
+    "base_model:finetune:nvidia/Nemotron-3.5-Parse",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 150,
+  "trending_score": 0,
+  "parameters": 630800504,
+  "parameters_human": "630.8M",
+  "storage_bytes": 2523266632,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/Nemotron-3.5-Parse",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/ZwZ2-4B-GGUF",
+  "slug": "inclusionai-zwz2-4b-gguf",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/ZwZ2-4B-GGUF",
+  "created_at": "2026-10-30T09:45:18.000Z",
+  "updated_at": "2026-10-30T13:41:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "zwz2",
+    "vision-language",
+    "image-text-to-text",
+    "en",
+    "dataset:inclusionAI/ZwZ2-RL-VQA",
+    "arxiv:2610.37037",
+    "base_model:inclusionAI/ZwZ2-4B",
+    "base_model:quantized:inclusionAI/ZwZ2-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 647,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 16886579296,
+  "storage_human": "16.9 GB",
+  "base_model": "inclusionAI/ZwZ2-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

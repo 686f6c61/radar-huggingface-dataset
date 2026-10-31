@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Saanora/clara-1",
+  "slug": "saanora-clara-1",
+  "author": "Saanora",
+  "url": "https://huggingface.co/Saanora/clara-1",
+  "created_at": "2026-10-25T17:09:34.000Z",
+  "updated_at": "2026-10-25T17:20:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-model",
+    "tool-routing",
+    "agents",
+    "classification",
+    "calibration",
+    "system-one",
+    "zero-shot-classification",
+    "en",
+    "base_model:h2oai/h2o-lightning-4b",
+    "base_model:finetune:h2oai/h2o-lightning-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9335257126,
+  "storage_human": "9.3 GB",
+  "base_model": "h2oai/h2o-lightning-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

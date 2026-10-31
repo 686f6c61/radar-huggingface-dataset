@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "lr298977887/Qwen3-TTS",
+  "slug": "lr298977887-qwen3-tts",
+  "author": "lr298977887",
+  "url": "https://huggingface.co/lr298977887/Qwen3-TTS",
+  "created_at": "2026-10-26T06:38:22.000Z",
+  "updated_at": "2026-10-26T06:51:19.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 2370598880,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

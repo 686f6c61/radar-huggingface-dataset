@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "kiyo07/floorplan-door-detector-rfdetr",
+  "slug": "kiyo07-floorplan-door-detector-rfdetr",
+  "author": "kiyo07",
+  "url": "https://huggingface.co/kiyo07/floorplan-door-detector-rfdetr",
+  "created_at": "2026-10-28T10:02:23.000Z",
+  "updated_at": "2026-10-28T10:58:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "computer-vision",
+    "rf-detr",
+    "pytorch",
+    "floor-plan",
+    "architectural-drawings",
+    "door-detection",
+    "fine-tuned",
+    "object-detection",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31790948,
+  "parameters_human": "31.8M",
+  "storage_bytes": 254550201,
+  "storage_human": "255 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

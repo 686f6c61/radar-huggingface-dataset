@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "zitian-gao/Loopie-6B-A0.6B-preview",
+  "slug": "zitian-gao-loopie-6b-a0-6b-preview",
+  "author": "zitian-gao",
+  "url": "https://huggingface.co/zitian-gao/Loopie-6B-A0.6B-preview",
+  "created_at": "2026-10-26T16:34:28.000Z",
+  "updated_at": "2026-10-26T16:47:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "vllm",
+    "conversational",
+    "arxiv:2607.16051",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 299,
+  "trending_score": 0,
+  "parameters": 7095644160,
+  "parameters_human": "7.10B",
+  "storage_bytes": 14203583846,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

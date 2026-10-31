@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/lil-beastie-4b-i1-GGUF",
+  "slug": "mradermacher-lil-beastie-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/lil-beastie-4b-i1-GGUF",
+  "created_at": "2026-10-29T09:47:52.000Z",
+  "updated_at": "2026-10-29T17:00:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "calibration",
+    "abstention",
+    "uncertainty",
+    "qwen3",
+    "reasoning",
+    "en",
+    "base_model:LuzCommand/lil-beastie-4b",
+    "base_model:quantized:LuzCommand/lil-beastie-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1896,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 48027972480,
+  "storage_human": "48.0 GB",
+  "base_model": "LuzCommand/lil-beastie-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

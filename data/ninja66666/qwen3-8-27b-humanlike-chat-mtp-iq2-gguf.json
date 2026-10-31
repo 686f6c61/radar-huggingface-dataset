@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Ninja66666/Qwen3.8-27B-Humanlike-Chat-MTP-IQ2-GGUF",
+  "slug": "ninja66666-qwen3-8-27b-humanlike-chat-mtp-iq2-gguf",
+  "author": "Ninja66666",
+  "url": "https://huggingface.co/Ninja66666/Qwen3.8-27B-Humanlike-Chat-MTP-IQ2-GGUF",
+  "created_at": "2026-10-26T19:53:19.000Z",
+  "updated_at": "2026-10-26T19:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF",
+    "base_model:quantized:LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 255,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 8857059520,
+  "storage_human": "8.9 GB",
+  "base_model": "LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

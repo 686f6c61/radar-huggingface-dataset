@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Groot-19B-A3B-261023-NVFP4-GGUF",
+  "slug": "prithivmlmods-groot-19b-a3b-261023-nvfp4-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Groot-19B-A3B-261023-NVFP4-GGUF",
+  "created_at": "2026-10-27T16:17:09.000Z",
+  "updated_at": "2026-10-27T17:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "mtp",
+    "moe",
+    "llama-cpp",
+    "nvfp4",
+    "nvidia",
+    "llama-cli",
+    "speculative-decoding",
+    "nvidia-blackwell",
+    "rtx-pro-6000",
+    "SM120",
+    "GB202",
+    "B200",
+    "B300",
+    "FP4",
+    "blackwell",
+    "qwen3_5",
+    "qwen3_5_moe",
+    "Qwen3.5",
+    "Qwen3.6",
+    "Qwen3.8",
+    "Groot",
+    "GrootTeam",
+    "reasoning",
+    "A3B",
+    "19B",
+    "image-text-to-text",
+    "en",
+    "base_model:GrootTeam/Groot-19B-A3B-261023",
+    "base_model:quantized:GrootTeam/Groot-19B-A3B-261023",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 352,
+  "trending_score": 0,
+  "parameters": 18985738489,
+  "parameters_human": "18.99B",
+  "storage_bytes": 14844851808,
+  "storage_human": "14.8 GB",
+  "base_model": "GrootTeam/Groot-19B-A3B-261023",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/Groot-19B-A3B-261023-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Groot-19B-A3B-261023-MTP-GGUF",
+      "snippet": "GGUF English text-generation-inference mtp Mixture of Experts llama-cpp nvfp4 nvidia llama-cli speculative-decoding nvidia …"
+    },
+    {
+      "title": "Groot Models (System-Two) - a prithivMLmods Collection",
+      "url": "https://huggingface.co/collections/prithivMLmods/groot-models-system-two",
+      "snippet": "Collection of Groot Model Compressions prithivMLmods 's Collections NVIDIA Blackwell-Optimized OneDecision-VisionGuard ZwZ2 …"
+    },
+    {
+      "title": "Groot-19B-A3B-261023: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/groot-19b-a3b-261023-grootteam",
+      "snippet": "Overview Groot-19B-A3B-261023 is an open-weight, natively multimodal mixture-of-experts causal language model from GrootTeam. …"
+    },
+    {
+      "title": "prithivMLmods GGUF Models (13) | GraySoft",
+      "url": "https://graysoft.dev/authors/p/prithivmlmods.html",
+      "snippet": "Browse 13 GGUF models by prithivMLmods on GraySoft. 470 total downloads. Run locally with guIDE."
+    },
+    {
+      "title": "PrithivMLmods AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/prithivmlmods/",
+      "snippet": "PrithivMLmods AI model benchmark profile: 113 models, 6 covered benchmarks on BenchmarkList."
+    }
+  ]
+}

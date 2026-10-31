@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pipecat-ai/backchannel-detector",
+  "slug": "pipecat-ai-backchannel-detector",
+  "author": "pipecat-ai",
+  "url": "https://huggingface.co/pipecat-ai/backchannel-detector",
+  "created_at": "2026-10-28T03:39:00.000Z",
+  "updated_at": "2026-10-28T03:39:07.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "pipecat",
+    "voice-agents",
+    "turn-taking",
+    "backchannel",
+    "streaming",
+    "audio-classification",
+    "en",
+    "dataset:TheAgenticDataCompany/open-yap-1k",
+    "dataset:otoearth/otoSpeech-full-duplex-280h",
+    "arxiv:2205.09812",
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 960735,
+  "parameters_human": "960735",
+  "storage_bytes": 10048312,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

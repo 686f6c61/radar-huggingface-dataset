@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "TytanMikJas/DART-Degradation-Aware-Recurrent-Transformer",
+  "slug": "tytanmikjas-dart-degradation-aware-recurrent-transformer",
+  "author": "TytanMikJas",
+  "url": "https://huggingface.co/TytanMikJas/DART-Degradation-Aware-Recurrent-Transformer",
+  "created_at": "2026-10-25T18:21:29.000Z",
+  "updated_at": "2026-10-25T18:31:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "video-restoration",
+    "film-restoration",
+    "old-film-restoration",
+    "archival-film",
+    "degradation-aware",
+    "recurrent-transformer",
+    "optical-flow",
+    "accv2026",
+    "image-to-image",
+    "arxiv:2607.21219",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103972958,
+  "storage_human": "104 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Archival film restoration",
+      "dataset": "AbsoluteDegradation (Real Scene-Split Eval)",
+      "metric": "CLIPIQA+",
+      "value": 0.4334
+    },
+    {
+      "task": "Archival film restoration",
+      "dataset": "AbsoluteDegradation (Real Scene-Split Eval)",
+      "metric": "MUSIQ",
+      "value": 51.2304
+    },
+    {
+      "task": "Archival film restoration",
+      "dataset": "AbsoluteDegradation (Real Scene-Split Eval)",
+      "metric": "MANIQA",
+      "value": 0.3011
+    },
+    {
+      "task": "Archival film restoration",
+      "dataset": "SRWOV",
+      "metric": "CLIPIQA+",
+      "value": 0.4488
+    },
+    {
+      "task": "Archival film restoration",
+      "dataset": "SRWOV",
+      "metric": "MUSIQ",
+      "value": 59.4263
+    },
+    {
+      "task": "Archival film restoration",
+      "dataset": "SRWOV",
+      "metric": "MANIQA",
+      "value": 0.3427
+    }
+  ],
+  "sources": []
+}

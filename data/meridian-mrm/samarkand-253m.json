@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "id": "Meridian-MRM/Samarkand-253m",
+  "slug": "meridian-mrm-samarkand-253m",
+  "author": "Meridian-MRM",
+  "url": "https://huggingface.co/Meridian-MRM/Samarkand-253m",
+  "created_at": "2026-10-26T23:24:16.000Z",
+  "updated_at": "2026-10-27T10:56:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "llama.cpp",
+    "base-model",
+    "jax",
+    "tpu",
+    "meridian",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 342,
+  "trending_score": 0,
+  "parameters": 253556096,
+  "parameters_human": "253.6M",
+  "storage_bytes": 1942949840,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge",
+      "metric": "Accuracy",
+      "value": 56.94
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge",
+      "metric": "Normalized Accuracy",
+      "value": 50.84
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge",
+      "metric": "Accuracy",
+      "value": 25.26
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge",
+      "metric": "Normalized Accuracy",
+      "value": 26.96
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "Accuracy",
+      "value": 32.68
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "Normalized Accuracy",
+      "value": 38.15
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "PIQA",
+      "metric": "Accuracy",
+      "value": 67.25
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "PIQA",
+      "metric": "Normalized Accuracy",
+      "value": 66.49
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WinoGrande",
+      "metric": "Accuracy",
+      "value": 50.43
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "OpenBookQA",
+      "metric": "Accuracy",
+      "value": 19.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "OpenBookQA",
+      "metric": "Normalized Accuracy",
+      "value": 32.8
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "SciQ",
+      "metric": "Accuracy",
+      "value": 79.2
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "SciQ",
+      "metric": "Normalized Accuracy",
+      "value": 71.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BLiMP",
+      "metric": "Accuracy",
+      "value": 81.39
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ArithMark-3.0",
+      "metric": "Accuracy",
+      "value": 35.1
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ArithMark-3.0",
+      "metric": "Normalized Accuracy",
+      "value": 35.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WikiText-2",
+      "metric": "Word Perplexity",
+      "value": 29.71
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WikiText-2",
+      "metric": "Byte Perplexity",
+      "value": 1.8855
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WikiText-2",
+      "metric": "Bits per Byte",
+      "value": 0.915
+    }
+  ],
+  "sources": []
+}

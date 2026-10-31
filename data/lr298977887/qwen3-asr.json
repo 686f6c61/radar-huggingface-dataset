@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "lr298977887/Qwen3-ASR",
+  "slug": "lr298977887-qwen3-asr",
+  "author": "lr298977887",
+  "url": "https://huggingface.co/lr298977887/Qwen3-ASR",
+  "created_at": "2026-10-26T06:20:44.000Z",
+  "updated_at": "2026-10-26T06:42:07.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 194,
+  "trending_score": 0,
+  "parameters": 2349217408,
+  "parameters_human": "2.35B",
+  "storage_bytes": 7209517664,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

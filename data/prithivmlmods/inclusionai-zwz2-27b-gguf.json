@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/inclusionAI-ZwZ2-27B-GGUF",
+  "slug": "prithivmlmods-inclusionai-zwz2-27b-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/inclusionAI-ZwZ2-27B-GGUF",
+  "created_at": "2026-10-28T04:35:57.000Z",
+  "updated_at": "2026-10-28T04:58:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "zwz2",
+    "vision-language",
+    "visual-reasoning",
+    "reinforcement-learning",
+    "grpo",
+    "image-text-to-text",
+    "en",
+    "dataset:inclusionAI/ZwZ2-RL-VQA",
+    "base_model:inclusionAI/ZwZ2-27B",
+    "base_model:quantized:inclusionAI/ZwZ2-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 644,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 126945233920,
+  "storage_human": "126.9 GB",
+  "base_model": "inclusionAI/ZwZ2-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

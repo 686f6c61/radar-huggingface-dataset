@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hnhung/viexdp-bartpho-syllable-src-tgt-aug-5e-05-20261024153454",
+  "slug": "hnhung-viexdp-bartpho-syllable-src-tgt-aug-5e-05-20261024153454",
+  "author": "hnhung",
+  "url": "https://huggingface.co/hnhung/viexdp-bartpho-syllable-src-tgt-aug-5e-05-20261024153454",
+  "created_at": "2026-10-24T18:35:15.000Z",
+  "updated_at": "2026-10-24T20:13:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:vinai/bartpho-syllable",
+    "base_model:finetune:vinai/bartpho-syllable",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 395865192,
+  "parameters_human": "395.9M",
+  "storage_bytes": 12673245324,
+  "storage_human": "12.7 GB",
+  "base_model": "vinai/bartpho-syllable",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

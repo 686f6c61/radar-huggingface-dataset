@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "syvai/danish-char-aligner",
+  "slug": "syvai-danish-char-aligner",
+  "author": "syvai",
+  "url": "https://huggingface.co/syvai/danish-char-aligner",
+  "created_at": "2026-10-30T18:03:56.000Z",
+  "updated_at": "2026-10-30T21:06:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "forced-alignment",
+    "character-alignment",
+    "danish",
+    "da",
+    "base_model:CoRal-project/roest-v3-wav2vec2-315m",
+    "base_model:finetune:CoRal-project/roest-v3-wav2vec2-315m",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 164331182,
+  "parameters_human": "164.3M",
+  "storage_bytes": 328785232,
+  "storage_human": "329 MB",
+  "base_model": "CoRal-project/roest-v3-wav2vec2-315m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

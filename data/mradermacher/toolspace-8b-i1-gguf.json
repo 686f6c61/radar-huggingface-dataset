@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ToolSpace-8B-i1-GGUF",
+  "slug": "mradermacher-toolspace-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ToolSpace-8B-i1-GGUF",
+  "created_at": "2026-10-28T12:17:22.000Z",
+  "updated_at": "2026-10-28T14:23:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "long-horizon",
+    "toolspace",
+    "reinforcement-learning",
+    "en",
+    "base_model:dongguanting/ToolSpace-8B",
+    "base_model:quantized:dongguanting/ToolSpace-8B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2438,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 96376940160,
+  "storage_human": "96.4 GB",
+  "base_model": "dongguanting/ToolSpace-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bindglam/BareunBot-E2B",
+  "slug": "bindglam-bareunbot-e2b",
+  "author": "bindglam",
+  "url": "https://huggingface.co/bindglam/BareunBot-E2B",
+  "created_at": "2026-10-31T02:22:52.000Z",
+  "updated_at": "2026-10-31T12:01:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "jeff",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "jeff",
+    "safetensors",
+    "gemma4_text",
+    "content-moderation",
+    "korean",
+    "hate-speech",
+    "toxicity",
+    "school",
+    "gemma4",
+    "text-classification",
+    "ko",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569344,
+  "parameters_human": "4.63B",
+  "storage_bytes": 9290151466,
+  "storage_human": "9.3 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

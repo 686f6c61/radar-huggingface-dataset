@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "syssec-utd/pylingual-shared-statement-v1",
+  "slug": "syssec-utd-pylingual-shared-statement-v1",
+  "author": "syssec-utd",
+  "url": "https://huggingface.co/syssec-utd/pylingual-shared-statement-v1",
+  "created_at": "2026-10-29T12:57:45.000Z",
+  "updated_at": "2026-10-30T08:16:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 207120384,
+  "parameters_human": "207.1M",
+  "storage_bytes": 32314275641,
+  "storage_human": "32.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

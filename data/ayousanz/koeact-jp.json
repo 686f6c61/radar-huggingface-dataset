@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ayousanz/KoeAct-JP",
+  "slug": "ayousanz-koeact-jp",
+  "author": "ayousanz",
+  "url": "https://huggingface.co/ayousanz/KoeAct-JP",
+  "created_at": "2026-10-24T15:55:36.000Z",
+  "updated_at": "2026-10-25T13:04:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "speech",
+    "spoken-language-understanding",
+    "function-calling",
+    "esp32",
+    "on-device",
+    "audio-classification",
+    "ja",
+    "base_model:ayousanz/ralomi",
+    "base_model:finetune:ayousanz/ralomi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 2590941,
+  "parameters_human": "2.6M",
+  "storage_bytes": 29207433,
+  "storage_human": "29 MB",
+  "base_model": "ayousanz/ralomi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

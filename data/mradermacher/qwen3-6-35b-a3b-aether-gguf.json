@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-35B-A3B-Aether-GGUF",
+  "slug": "mradermacher-qwen3-6-35b-a3b-aether-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Aether-GGUF",
+  "created_at": "2026-10-25T10:18:41.000Z",
+  "updated_at": "2026-10-25T10:39:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "aether",
+    "moe",
+    "fine-tuned",
+    "en",
+    "base_model:emkey1/Qwen3.6-35B-A3B-Aether",
+    "base_model:quantized:emkey1/Qwen3.6-35B-A3B-Aether",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 694,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 244419001856,
+  "storage_human": "244.4 GB",
+  "base_model": "emkey1/Qwen3.6-35B-A3B-Aether",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

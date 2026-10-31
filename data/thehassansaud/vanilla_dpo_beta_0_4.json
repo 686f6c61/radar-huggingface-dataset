@@ -37,31 +37,5 @@
   "removed": false,
   "removed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Forum 18 - Russia - Page 1 of 50",
-      "url": "https://www.forum18.org/archive.php?country=10",
-      "snippet": "Jul 28, 2026 · Forum 18 found 52 Administrative Code Article 5.26, Part 3 prosecutions in 2025 and the first four months of 2026 for …"
-    },
-    {
-      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
-      "url": "https://huggingface.co/TheHassanSaud",
-      "snippet": "updated a model about 7 hours ago Organizations"
-    },
-    {
-      "title": "Forum 18",
-      "url": "https://forum18.org/",
-      "snippet": "Aug 28, 2026 · On 1 January, one month after masked Recruitment Office officials seized him, 40-year-old Pentecostal conscientious …"
-    },
-    {
-      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
-      "url": "https://huggingface.co/TheHassanSaud/datasets",
-      "snippet": "TheHassanSaud/gemma3_12B_dpo_newdata_full_checkpoints_updated_template published a model about 7 hours ago"
-    },
-    {
-      "title": "OCCUPIED UKRAINE: Protestant woman on trial for Melitopol",
-      "url": "https://www.forum18.org/archive.php?article_id=2908",
-      "snippet": "In early 2024, Russian occupation forces arrested a Protestant in her fifties for participating in a July 2023 prayer meeting in the …"
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "audio-cpp/Magenta-RealTime-2-GGUF",
+  "slug": "audio-cpp-magenta-realtime-2-gguf",
+  "author": "audio-cpp",
+  "url": "https://huggingface.co/audio-cpp/Magenta-RealTime-2-GGUF",
+  "created_at": "2026-10-28T05:33:19.000Z",
+  "updated_at": "2026-10-28T05:36:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "audio.cpp",
+    "music-generation",
+    "text-to-audio",
+    "base_model:google/magenta-realtime-2",
+    "base_model:quantized:google/magenta-realtime-2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1966,
+  "trending_score": 0,
+  "parameters": 2673898968,
+  "parameters_human": "2.67B",
+  "storage_bytes": 12417475064,
+  "storage_human": "12.4 GB",
+  "base_model": "google/magenta-realtime-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

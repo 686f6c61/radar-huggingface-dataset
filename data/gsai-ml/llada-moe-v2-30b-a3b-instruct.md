@@ -1,87 +1,86 @@
 # GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct
 
-# LLaDA-MoE-v2-30B-A3B-Instruct：开源混合专家扩散语言模型
+## Resumen
 
-## 摘要
+LLaDA-MoE-v2-30B-A3B-Instruct es un modelo de lenguaje de difusión (diffusion language model) con arquitectura mixture-of-experts (MoE), desarrollado por GSAI-ML. Forma parte de la familia LLaDA MoE v2 y es la variante ajustada por instrucciones (instruction-tuned) del checkpoint base GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base, con el que comparte la implementación pública de la arquitectura pero no los pesos finales.
 
-LLaDA-MoE-v2-30B-A3B-Instruct 是由 GSAI-ML 开发的一款指令微调的混合专家（MoE）扩散语言模型（dLLM）。它是 LLaDA-MoE-v2 系列的一部分，基于 LLaDA-MoE-v2-30B-A3B-Base 模型进行指令微调，旨在解决传统自回归语言模型在生成效率和扩展性方面的局限性。该模型采用扩散生成范式，通过逐步去噪的方式生成文本，而非逐个 token 预测，这使其在生成过程中具有独特的并行性和可控性。
+A diferencia de los modelos autorregresivos tradicionales, LLaDA-MoE-v2 genera texto mediante un proceso de desenmascarado iterativo: el modelo predice tokens enmascarados y los va revelando por bloques en función de su confianza, lo que constituye una alternativa emergente al paradigma causal de decodificación. El modelo cuenta con 31.781.497.856 parámetros totales, de los cuales aproximadamente 3B están activos por token (según la nomenclatura A3B), lo que permite inferencias eficientes manteniendo la capacidad de un modelo mucho mayor.
 
-该模型总参数量为 31.78B，但每次推理仅激活约 3B 参数（A3B 架构），实现了高效推理。它从零开始在 23.5T 个 token 上训练，接近 Qwen3 的性能表现，尽管其预训练 token 数量仅为 Qwen3 的约 65%。LLaDA-MoE-v2-Instruct 通过标准监督微调（SFT）优化了指令跟随能力，在推理和编码基准上表现出色，尤其在数学和代码生成任务上。该模型以 Apache 2.0 许可证开源，支持多语言，为开发者和研究人员提供了一个可部署的、高效的替代方案。
+Su relevancia radica en que representa la escalación de los modelos de difusión a escala MoE de 30B, publicada junto al artículo "LLaDA MoE v2: Scaling Mixture-of-Experts Diffusion Language Models" (arXiv:2608.03457). Está publicado bajo licencia Apache 2.0 en safetensors, con soporte en la librería Transformers mediante código personalizado (custom_code).
 
-## 规格参数
+## Especificaciones tecnicas
 
-| 参数 | 值 |
+| Parametro | Valor |
 |---|---|
-| 架构 | 混合专家（MoE）扩散语言模型（dLLM） |
-| 总参数 | 31.78B（31,781,497,856） |
-| 活跃参数 | ~3B（A3B） |
-| 上下文长度 | 未提供（根据架构推测可能为 128K，但未明确） |
-| 量化类型 | 未提供（支持 bfloat16 格式） |
-| 支持语言 | 未提供（模型卡未列出，但支持多语言） |
-| 许可证 | Apache 2.0 |
-| 权重格式 | safetensors（63.6 GB） |
+| Arquitectura | Transformer de difusión (dLLM) con mixture-of-experts (llada_moe_v2) |
+| Parametros totales | 31.781.497.856 (31,8B) |
+| Parametros activos | Aproximadamente 3B por token (según nomenclatura 30B-A3B; dato exacto no disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en bfloat16) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (63,6 GB el repositorio completo) |
 
-## 二、架构与训练
+## Arquitectura y entrenamiento
 
-LLaDA-MoE-v2-30B-A3B-Instruct 采用混合专家（MoE）架构，结合了扩散语言模型（dLLM）的生成范式。与传统自回归模型不同，扩散模型通过逐步去噪过程生成文本，从随机噪声开始，逐步生成清晰、连贯的序列。这种设计使模型能够并行生成 token，从而在推理时提高效率。MoE 架构通过稀疏激活机制，仅激活约 3B 参数，而总参数达 31.8B，显著降低了计算成本。
+LLaDA-MoE-v2 es un modelo de difusión de lenguaje enmascarado (masked diffusion language model, dLLM). En lugar de predecir el siguiente token de izquierda a derecha, el modelo opera sobre secuencias donde parte de los tokens están enmascarados y aprende a reconstruirlos, decodificando en pasos iterativos por bloques: en cada paso calcula logits para todas las posiciones enmascaradas del bloque, ordena los tokens candidatos por confianza (probabilidad softmax) y transfiere los de mayor confianza, ya sea siguiendo una planificación fija de tokens por paso o mediante un umbral dinámico de confianza. El ejemplo oficial del autor muestra decodificación con 64 pasos, bloques de 64 tokens, ruido Gumbel para muestreo con temperatura y parada temprana por token EOS.
 
-该模型在 23.5T 个 token 上从零开始训练，数据规模约为 Qwen3 预训练数据的 65%。训练过程包括预训练和标准监督微调（SFT），未使用强化学习（RL）阶段。根据论文，LLaDA-MoE-v2 在多个知识、推理和编码基准上接近 Qwen3 的表现，尽管其预训练 token 数更少。此外，该模型支持使用 HuggingFace Transformers 库进行推理，需要自定义采样逻辑（通过 `generate` 函数实现）。
+Sobre esta base de difusión se aplica una arquitectura mixture-of-experts: con 31,8B de parámetros totales y unos 3B activos por token, el modelo activa solo un subconjunto de expertos en cada pasada, reduciendo el coste computacional por token respecto a un modelo denso equivalente. La variante Instruct es un ajuste fino por instrucciones del checkpoint Base; los detalles sobre el número de tokens de entrenamiento, la composición del dataset y el uso de RLHF/DPO no están disponibles en la información publicada. El modelo requiere `trust_remote_code=True` al cargarse con Transformers, ya que utiliza una implementación de arquitectura personalizada.
 
-## 三、能力
+## Capacidades
 
-- **文本生成**：支持高质量的文本生成，适用于对话、内容创作等场景。
-- **推理能力**：在数学和逻辑推理任务中表现良好，如 GSM8K 和数学推理基准。
-- **代码生成**：支持代码生成和代码补全，适用于编程辅助。
-- **多语言支持**：模型支持多语言处理，但具体语言列表未明确。
-- **指令跟随**：通过监督微调，能够理解和执行复杂的用户指令。
-- **工具调用**：模型支持 tool calling 和 function calling，可集成到 agent 流程中。
+- Generación de texto por instrucciones, al ser la variante instruction-tuned de la familia LLaDA MoE v2.
+- Razonamiento y resolución de problemas: el propio ejemplo de la model card incluye un problema aritmético multi-paso, lo que sugiere capacidad para tareas de razonamiento básico.
+- Generación paralela de tokens: al ser un modelo de difusión, puede materializar varios tokens por paso de decodificación, con parámetros configurables (steps, block_length, threshold) para ajustar la relación velocidad/calidad.
+- Muestreo controlable: temperatura mediante ruido Gumbel, decodificación determinista con temperature=0 y parada temprana basada en EOS.
+- Soporte de chat: incluye chat template con roles de sistema y usuario (`apply_chat_template`).
+- Soporte de tool calling, agentes y capacidades multilingües: no disponible en la información publicada.
+- Integración con Transformers mediante `AutoModel` y `AutoTokenizer` con `trust_remote_code=True`, y compatibilidad con `torch.compile` para optimizar la inferencia.
 
-## 四、使用场景
+## Casos de uso
 
-- **代码生成与辅助**：在 IDE 中集成，用于代码补全、生成函数实现或调试建议。模型的 MoE 架构使其在长序列代码生成中保持高效。
-- **数学推理与教育**：用于数学问题求解、步骤解释，适合教育辅导或自动化解题系统。
-- **多语言内容生成**：生成多语言营销文案、技术文档或新闻摘要，利用其多语言能力。
-- **对话式 AI 助手**：部署为客服机器人或虚拟助手，处理多轮对话和复杂用户查询。
-- **数据增强与合成**：在低资源语言或特定领域生成合成训练数据，帮助其他模型提升性能。
-- **研究实验**：作为 MoE 扩散模型的参考实现，用于研究稀疏激活和扩散生成机制。
+- Generación de texto asistida por instrucciones: como variante Instruct, está pensada para asistentes conversacionales que siguen indicaciones del usuario en formato multi-turno mediante su chat template.
+- Investigación en modelos de difusión de lenguaje: es uno de los pocos dLLM MoE a escala 30B con pesos abiertos, ideal para estudiar decodificación por desenmascarado, planificación de bloques y dinámicas de confianza frente a modelos autorregresivos.
+- Experimentación con estrategias de decodificación: los parámetros steps, block_length, threshold y minimal_topk permiten investigar el compromiso entre número de pasos de red (coste computacional) y calidad del texto generado.
+- Sistemas con presupuesto de cómputo ajustado: al activar solo ~3B de parámetros por token pese a tener 31,8B totales, es adecuado para despliegues donde el throughput por token importa más que el tamaño en memoria.
+- Generación por bloques para edición y reescritura: la decodificación no causal permite regenerar o completar fragmentos de texto sin reescribir todo el contexto, útil en herramientas de edición de documentos.
+- Prototipado de agentes con Transformers: puede integrarse en pipelines basados en Hugging Face Transformers con chat template, aunque el soporte de function calling no está documentado.
 
-## 五、性能与基准
+## Benchmarks y rendimiento
 
-根据论文和搜索结果，LLaDA-MoE-v2-30B-A3B-Instruct 在推理和编码基准上表现出色，但具体基准数据未在提供的信息中给出。论文提到其性能优于 SDAR Chat 30B-A3B，并在多个基准上接近 Qwen3，但未提供具体数值。
+No se han publicado resultados de benchmarks en la informacion disponible. Para datos de evaluación, consultar el artículo "LLaDA MoE v2: Scaling Mixture-of-Experts Diffusion Language Models" (arXiv:2608.03457).
 
-**注意**：未提供可用的具体基准数据。
+## Requisitos de hardware
 
-## 六、硬件要求
+- VRAM estimada para inferencia en bfloat16: aproximadamente 63-64 GB solo para los pesos (el repositorio ocupa 63,6 GB), lo que exige una GPU con más de 64 GB de VRAM o reparto en varias GPUs. No hay pesos cuantizados publicados, por lo que no se puede estimar consumo en 4/8 bits con datos reales.
+- GPU recomendadas: NVIDIA A100 (80 GB) o H100 (80 GB) en una sola unidad; alternativamente, dos A100/H100 de 40-80 GB con paralelismo de tensores o sharding con `device_map="auto"`.
+- Consumer GPUs: no cabe en una RTX 4090 (24 GB) ni en una RTX 5090 (32 GB) sin cuantización, que no está disponible oficialmente en el repositorio.
+- Despliegue: mediante Hugging Face Transformers con `trust_remote_code=True` y `torch.compile` (el método oficial). No hay evidencia de soporte en vLLM, llama.cpp, Ollama o TGI; dado que es una arquitectura de difusión personalizada (llada_moe_v2), probablemente requiera soporte específico no disponible (no disponible).
+- Latencia y throughput: no disponibles. El coste por paso depende de steps y block_length; con los valores por defecto del ejemplo (64 pasos, bloques de 64 tokens), cada bloque requiere hasta 64 pasadas completas del modelo, aunque cada pasada puede materializar varios tokens simultáneamente.
 
-- **VRAM 估计**：对于 30B 总参数量，需要约 60GB 的 VRAM 以加载 bfloat16 格式（约 60GB），但活跃参数仅 3B，因此推理时内存需求可能较低。
-- **推荐 GPU**：建议使用 A100 (80GB)、H100 (80GB) 或 RTX 4090 (24GB) 进行推理。对于 24GB 显存，需使用量化或卸载策略。
-- **消费者 GPU 兼容性**：由于总参数较大，在消费级 GPU（如 RTX 4090）上可能难以直接运行，需使用量化或 MoE 稀疏激活优化。
-- **部署选项**：支持 HuggingFace Transformers、vLLM、Ollama 等，但需注意自定义采样逻辑。
-- **延迟与吞吐**：由于 MoE 架构，推理速度较快，但具体数据未提供。
+## Comparativa con modelos similares
 
-## 7、对比分析
-
-| 模型 | 总参数 | 活跃参数 | 上下文长度 | 许可证 | 备注 |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaDA-MoE-v2-30B-A3B | 31.7B | 3B | 未明确 | Apache 2.0 | 扩散 MoE，SFT |
-| LLaDA-MoE-7B-A1B-Instruct | 7B | 1B | 未明确 | Apache 2.0 | 更小，性能优于 LLaDA 1.5 |
-| Qwen3 | 未明确 | 未明确 | 未明确 | 未明确 | 预训练 token 更多，使用 RL |
-| SDAR Chat 30B-A3B | 30B | 3B | 未明确 | 未明确 | 在部分基准上被 LLaDA-MoE-v2 超越 |
+| LLaDA-MoE-v2-30B-A3B-Instruct | Difusión MoE (dLLM) | 31,8B totales / ~3B activos | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face |
+| LLaDA-8B-Instruct (GSAI-ML) | Difusión denso (dLLM) | 8B | no disponible | no disponible | Pesos abiertos en Hugging Face |
+| Qwen3-30B-A3B (equivalente autorregresivo MoE) | Transformer causal MoE | 30,5B totales / 3,3B activos | hasta 131.072 tokens (según versión) | Apache 2.0 | Pesos abiertos, soporte amplio en vLLM/llama.cpp |
 
-**注意**：对比数据基于论文摘要，具体参数和性能未完全公开。
+Nota: la comparativa con Qwen3-30B-A3B sirve como referencia de tamaño y clase de modelo (MoE ~30B con ~3B activos), pero corresponde a un paradigma de decodificación distinto (autorregresivo). Los datos de rendimiento comparativo entre paradigmas no están disponibles en la información publicada.
 
-## 七、局限性与注意事项
+## Limitaciones y advertencias
 
-- **生成速度**：扩散模型生成过程需要多次迭代（如 64 步），可能比自回归模型慢，尤其是在长文本生成中。
-- **多语言支持**：虽然支持多语言，但具体语言列表未明确，可能对低资源语言支持不足。
-- **上下文长度**：未明确上下文长度，可能限制长文档处理能力。
-- **许可证**：Apache 2.0 允许商业使用，但需注意模型可能包含训练数据中的偏见。
-- **生产部署**：需要自定义采样逻辑，且 `torch.compile` 可能增加部署复杂性。
+- Soporte de software limitado: requiere `trust_remote_code=True` (código personalizado), lo que implica ejecutar código de terceros y puede romperse con futuras versiones de Transformers.
+- No hay pesos cuantizados oficiales: la inferencia en bfloat16 exige más de 64 GB de VRAM, lo que restringe el despliegue a hardware de gama datacenter.
+- Ecosistema de inferencia reducido: al ser una arquitectura de difusión no estándar, no se garantiza compatibilidad con vLLM, TGI, llama.cpp u Ollama, ni con herramientas habituales del ecosistema (tool calling, structured output, etc.).
+- Idiomas soportados no documentados: no se especifica qué idiomas cubre el modelo ni su rendimiento fuera del inglés.
+- Sesgos, riesgo de alucinación y rendimiento en benchmarks: no disponibles en la información publicada; deben consultarse en el artículo de arXiv y verificarse empíricamente antes de uso en producción.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero la model card no documenta limitaciones de uso adicionales.
+- La decodificación por difusión tiene un comportamiento distinto al autorregresivo (generación por bloques, posible reordenación de contenido dentro del bloque), lo que puede afectar a casos de uso sensibles al orden estricto de generación.
+- Popularidad muy baja en el momento de redactar la ficha (142 descargas, 4 likes), lo que implica escasa validación por parte de la comunidad y soporte comunitario limitado.
 
-## 八、相关链接
+## Enlaces
 
-- [HuggingFace 模型页面](https://huggingface.co/GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct)
-- [HuggingFace 基础模型](https://huggingface.co/GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base)
-- [论文](https://arxiv.org/abs/2608.03457)
-- [GitHub 官方实现](https://github.com/ML-GSAI/LLaDA)
-- [GSAI-ML 组织页面](https://huggingface.co/GSAI-ML)
+- Modelo en Hugging Face: https://huggingface.co/GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct
+- Modelo base: https://huggingface.co/GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base
+- Artículo (arXiv): https://arxiv.org/abs/2608.03457

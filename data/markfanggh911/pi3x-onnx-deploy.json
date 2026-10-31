@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "MarkFangGH911/pi3x-onnx-deploy",
+  "slug": "markfanggh911-pi3x-onnx-deploy",
+  "author": "MarkFangGH911",
+  "url": "https://huggingface.co/MarkFangGH911/pi3x-onnx-deploy",
+  "created_at": "2026-10-31T16:02:42.000Z",
+  "updated_at": "2026-10-31T16:03:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7698983128,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

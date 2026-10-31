@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ysdede/moonshine-streaming-tiny-onnx",
+  "slug": "ysdede-moonshine-streaming-tiny-onnx",
+  "author": "ysdede",
+  "url": "https://huggingface.co/ysdede/moonshine-streaming-tiny-onnx",
+  "created_at": "2026-10-25T19:17:21.000Z",
+  "updated_at": "2026-10-25T19:20:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "asr.js",
+  "languages": [],
+  "tags": [
+    "asr.js",
+    "onnx",
+    "moonshine_streaming",
+    "asrjs",
+    "moonshine",
+    "streaming",
+    "experimental",
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 530440533,
+  "storage_human": "530 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

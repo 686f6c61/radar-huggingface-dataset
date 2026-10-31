@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Sanjok486/gustaf-1.7b-gguf",
+  "slug": "sanjok486-gustaf-1-7b-gguf",
+  "author": "Sanjok486",
+  "url": "https://huggingface.co/Sanjok486/gustaf-1.7b-gguf",
+  "created_at": "2026-10-29T11:11:11.000Z",
+  "updated_at": "2026-10-29T11:11:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "qwen3",
+    "de",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409312,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

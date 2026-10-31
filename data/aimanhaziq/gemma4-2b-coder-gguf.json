@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "aimanhaziq/gemma4-2b-coder-GGUF",
+  "slug": "aimanhaziq-gemma4-2b-coder-gguf",
+  "author": "aimanhaziq",
+  "url": "https://huggingface.co/aimanhaziq/gemma4-2b-coder-GGUF",
+  "created_at": "2026-10-27T07:36:02.000Z",
+  "updated_at": "2026-10-27T07:48:18.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "code",
+    "rust",
+    "kubernetes",
+    "devops",
+    "4bit",
+    "text-generation",
+    "en",
+    "base_model:aimanhaziq/gemma4-2b-coder",
+    "base_model:quantized:aimanhaziq/gemma4-2b-coder",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 192,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 3416119872,
+  "storage_human": "3.4 GB",
+  "base_model": "aimanhaziq/gemma4-2b-coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

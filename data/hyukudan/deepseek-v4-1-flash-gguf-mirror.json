@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hyukudan/deepseek-v4.1-flash-gguf-mirror",
+  "slug": "hyukudan-deepseek-v4-1-flash-gguf-mirror",
+  "author": "hyukudan",
+  "url": "https://huggingface.co/hyukudan/deepseek-v4.1-flash-gguf-mirror",
+  "created_at": "2026-10-26T08:26:09.000Z",
+  "updated_at": "2026-10-28T16:33:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "mirror",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 1216,
+  "trending_score": 0,
+  "parameters": 754638867584,
+  "parameters_human": "754.64B",
+  "storage_bytes": 373679980544,
+  "storage_human": "373.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ChonkE/Glitter_Boy-2-MoE",
+  "slug": "chonke-glitter_boy-2-moe",
+  "author": "ChonkE",
+  "url": "https://huggingface.co/ChonkE/Glitter_Boy-2-MoE",
+  "created_at": "2026-10-25T12:45:59.000Z",
+  "updated_at": "2026-10-26T00:28:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "not-for-all-audiences",
+    "mixture-of-experts",
+    "roleplay",
+    "uncensored",
+    "gemma",
+    "research",
+    "ttrpg",
+    "en",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 105,
+  "trending_score": 0,
+  "parameters": 13043057456,
+  "parameters_human": "13.04B",
+  "storage_bytes": 20691752071,
+  "storage_human": "20.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

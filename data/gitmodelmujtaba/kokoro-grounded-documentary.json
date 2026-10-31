@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "gitmodelmujtaba/kokoro-grounded-documentary",
+  "slug": "gitmodelmujtaba-kokoro-grounded-documentary",
+  "author": "gitmodelmujtaba",
+  "url": "https://huggingface.co/gitmodelmujtaba/kokoro-grounded-documentary",
+  "created_at": "2026-10-25T23:34:17.000Z",
+  "updated_at": "2026-10-28T02:39:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "kokoro",
+    "audio",
+    "voiceover",
+    "documentary",
+    "podcast",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 354791521,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

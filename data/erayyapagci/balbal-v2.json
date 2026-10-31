@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "erayyapagci/balbal-v2",
+  "slug": "erayyapagci-balbal-v2",
+  "author": "erayyapagci",
+  "url": "https://huggingface.co/erayyapagci/balbal-v2",
+  "created_at": "2026-10-29T04:25:53.000Z",
+  "updated_at": "2026-10-31T11:48:21.000Z",
+  "license": "balbal-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "speech-recognition",
+    "turkish",
+    "conformer",
+    "ctc",
+    "kenlm",
+    "automatic-speech-recognition",
+    "tr",
+    "en",
+    "base_model:erayyapagci/balbal-v1",
+    "base_model:finetune:erayyapagci/balbal-v1",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 966688290,
+  "storage_human": "967 MB",
+  "base_model": "erayyapagci/balbal-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mu-Bench (tr-TR phone calls)",
+      "metric": "Test WER",
+      "value": 9.46
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mu-Bench (tr-TR phone calls)",
+      "metric": "Test sigWER",
+      "value": 18.44
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Turkish)",
+      "metric": "Test WER",
+      "value": 5.22
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Turkish)",
+      "metric": "Test CER",
+      "value": 1.52
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test WER",
+      "value": 10.32
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (other)",
+      "metric": "Test WER",
+      "value": 19.35
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI (Meetings test)",
+      "metric": "Test WER",
+      "value": 31.52
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings-22",
+      "metric": "Test WER",
+      "value": 30.86
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Vox Populi",
+      "metric": "Test WER",
+      "value": 18.18
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech",
+      "metric": "Test WER",
+      "value": 23.43
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SPGI Speech",
+      "metric": "Test WER",
+      "value": 16.17
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "TED-LIUM 3",
+      "metric": "Test WER",
+      "value": 14.96
+    }
+  ],
+  "sources": []
+}

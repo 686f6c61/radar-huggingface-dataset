@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/mistral-7b-instruct-v0.2-heretic-GGUF",
+  "slug": "mradermacher-mistral-7b-instruct-v0-2-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mistral-7b-instruct-v0.2-heretic-GGUF",
+  "created_at": "2026-10-27T08:26:30.000Z",
+  "updated_at": "2026-10-27T09:14:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finetuned",
+    "mistral-common",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:Ananasez/mistral-7b-instruct-v0.2-heretic",
+    "base_model:quantized:Ananasez/mistral-7b-instruct-v0.2-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 599,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929830400,
+  "storage_human": "63.9 GB",
+  "base_model": "Ananasez/mistral-7b-instruct-v0.2-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

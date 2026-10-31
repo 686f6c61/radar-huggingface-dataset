@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "parallel369/NSFW_Wan_14b-video",
+  "slug": "parallel369-nsfw_wan_14b-video",
+  "author": "parallel369",
+  "url": "https://huggingface.co/parallel369/NSFW_Wan_14b-video",
+  "created_at": "2026-10-27T19:44:14.000Z",
+  "updated_at": "2026-10-27T19:44:15.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nsfw",
+    "base_model:Wan-AI/Wan2.1-T2V-14B",
+    "base_model:quantized:Wan-AI/Wan2.1-T2V-14B",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 140,
+  "trending_score": 0,
+  "parameters": 14288491584,
+  "parameters_human": "14.29B",
+  "storage_bytes": 455077788612,
+  "storage_human": "455.1 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "id": "YOON1v/Apex-3",
+  "slug": "yoon1v-apex-3",
+  "author": "YOON1v",
+  "url": "https://huggingface.co/YOON1v/Apex-3",
+  "created_at": "2026-10-28T12:58:58.000Z",
+  "updated_at": "2026-10-28T12:59:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "apex3",
+    "text-generation",
+    "moe",
+    "mixture-of-experts",
+    "superbpe",
+    "chat",
+    "conversational",
+    "code",
+    "math",
+    "no-think",
+    "from-scratch",
+    "llm-from-scratch",
+    "muon",
+    "diloco",
+    "gh200",
+    "dpo",
+    "grpo",
+    "rlvr",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceFW/finepdfs-edu",
+    "dataset:HuggingFaceTB/stack-edu",
+    "dataset:bigcode/the-stack-v2-dedup",
+    "dataset:bigcode/starcoderdata",
+    "dataset:bigcode/starcoder2data-extras",
+    "dataset:tokyotech-llm/swallow-code-v2",
+    "dataset:tokyotech-llm/swallow-math-v2",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:open-web-math/open-web-math",
+    "dataset:LLM360/MegaMath",
+    "dataset:allenai/peS2o",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:wikimedia/wikipedia",
+    "dataset:emozilla/pg19",
+    "dataset:nvidia/OpenMathReasoning",
+    "dataset:nvidia/OpenCodeReasoning",
+    "dataset:nvidia/OpenScienceReasoning-2",
+    "dataset:allenai/dolmino-mix-1124",
+    "dataset:open-r1/OpenR1-Math-220k",
+    "dataset:nvidia/AceReason-1.1-SFT",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "dataset:PrimeIntellect/SYNTHETIC-1-SFT-Data",
+    "dataset:GAIR/LIMO",
+    "dataset:allenai/Dolci-Think-DPO-7B",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:allenai/Dolci-Think-RL-7B",
+    "dataset:allenai/RLVR-GSM-MATH-IF-Mixed-Constraints",
+    "dataset:nvidia/Nemotron-RL-instruction_following",
+    "dataset:agentica-org/DeepScaleR-Preview-Dataset",
+    "dataset:agentica-org/DeepCoder-Preview-Dataset",
+    "dataset:likaixin/TACO-verified",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 20989544256,
+  "parameters_human": "20.99B",
+  "storage_bytes": 42003947822,
+  "storage_human": "42.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (0-shot)",
+      "metric": "acc_norm",
+      "value": 58.9
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (0-shot)",
+      "metric": "acc",
+      "value": 44.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge (0-shot)",
+      "metric": "acc_norm",
+      "value": 42.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge (0-shot)",
+      "metric": "acc",
+      "value": 39.2
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Easy (0-shot)",
+      "metric": "acc_norm",
+      "value": 71.9
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Easy (0-shot)",
+      "metric": "acc",
+      "value": 73.3
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "PIQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 74.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "PIQA (0-shot)",
+      "metric": "acc",
+      "value": 73.7
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WinoGrande (0-shot)",
+      "metric": "acc",
+      "value": 60.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LAMBADA OpenAI (0-shot)",
+      "metric": "acc",
+      "value": 55
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LAMBADA OpenAI (0-shot)",
+      "metric": "perplexity",
+      "value": 12
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K (gen_eval, no-think, greedy, 8192 new tokens)",
+      "metric": "pass@1 (gen_eval, 8192 tokens)",
+      "value": 35.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K CoT 0-shot (lm-eval, chat, 2048 new tokens)",
+      "metric": "exact_match (lm-eval flexible-extract, 2048 tokens)",
+      "value": 35.3
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K CoT 0-shot (lm-eval, chat, 256 new tokens)",
+      "metric": "exact_match (lm-eval flexible-extract, 256 tokens)",
+      "value": 34.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH-500 (gen_eval, no-think, greedy, 8192 new tokens)",
+      "metric": "pass@1 (gen_eval, 8192 tokens)",
+      "value": 28.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH-500 0-shot (lm-eval, chat, 2048 new tokens)",
+      "metric": "exact_match (lm-eval math_verify, 2048 tokens)",
+      "value": 25.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH-500 0-shot (lm-eval, chat, 256 new tokens)",
+      "metric": "exact_match (lm-eval math_verify, 256 tokens)",
+      "value": 18.2
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval+ (gen_eval, no-think, greedy, 8192 new tokens)",
+      "metric": "pass@1 (gen_eval, 8192 tokens)",
+      "value": 26.8
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MBPP+ (gen_eval, no-think, greedy, 8192 new tokens)",
+      "metric": "pass@1 (gen_eval, 8192 tokens)",
+      "value": 43.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval (EvalPlus harness, base tests, 768 new tokens)",
+      "metric": "pass@1 (EvalPlus base tests, 768 tokens)",
+      "value": 28
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval+ (EvalPlus harness, 768 new tokens)",
+      "metric": "pass@1 (EvalPlus plus tests, 768 tokens)",
+      "value": 22.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MBPP (EvalPlus harness, base tests, 768 new tokens)",
+      "metric": "pass@1 (EvalPlus base tests, 768 tokens)",
+      "value": 45
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MBPP+ (EvalPlus harness, 768 new tokens)",
+      "metric": "pass@1 (EvalPlus plus tests, 768 tokens)",
+      "value": 38.1
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (gen_eval, no-think, greedy, 8192 new tokens)",
+      "metric": "prompt_level_acc (gen_eval, 8192 tokens)",
+      "value": 12.9
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (lm-eval, chat, 1280 new tokens)",
+      "metric": "prompt_level_strict_acc",
+      "value": 16.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (lm-eval, chat, 1280 new tokens)",
+      "metric": "inst_level_strict_acc",
+      "value": 29.1
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (lm-eval, chat, 1280 new tokens)",
+      "metric": "prompt_level_loose_acc",
+      "value": 18.1
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (lm-eval, chat, 1280 new tokens)",
+      "metric": "inst_level_loose_acc",
+      "value": 30.8
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LiveCodeBench v5 (300-problem subset, no-think, greedy, 8192 new tokens)",
+      "metric": "pass@1",
+      "value": 7
+    }
+  ],
+  "sources": []
+}

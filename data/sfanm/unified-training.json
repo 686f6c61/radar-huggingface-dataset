@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "sfanm/unified-training",
+  "slug": "sfanm-unified-training",
+  "author": "sfanm",
+  "url": "https://huggingface.co/sfanm/unified-training",
+  "created_at": "2026-10-27T17:41:52.000Z",
+  "updated_at": "2026-10-29T01:00:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "dataset:allenai/dolma3_dolmino_mix-100B-1025",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20172676136,
+  "storage_human": "20.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

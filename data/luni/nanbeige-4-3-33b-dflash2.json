@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Luni/Nanbeige-4.3-33B-DFlash2",
+  "slug": "luni-nanbeige-4-3-33b-dflash2",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Nanbeige-4.3-33B-DFlash2",
+  "created_at": "2026-10-26T11:57:27.000Z",
+  "updated_at": "2026-10-26T12:28:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "exllamav3",
+    "tabbyapi",
+    "vllm",
+    "sglang",
+    "text-generation",
+    "base_model:Luni/Nanbeige-4.3-33B-Heretic",
+    "base_model:finetune:Luni/Nanbeige-4.3-33B-Heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 334,
+  "trending_score": 0,
+  "parameters": 979731200,
+  "parameters_human": "979.7M",
+  "storage_bytes": 4328846648,
+  "storage_human": "4.3 GB",
+  "base_model": "ProCreations/Nanbeige4.3-33B-DFlash2, Nanbeige/Nanbeige4.3-33B, Luni/Nanbeige-4.3-33B-Heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lunii | Conteuses et livres audio pour 0-14 ans",
+      "url": "https://lunii.com/fr-fr",
+      "snippet": "Avec les conteuses Ma 1ère Lunii, Ma Fabrique à Histoires & FLAM, Lunii réveille l'imaginaire et développe la créativité des enfants …Read more"
+    },
+    {
+      "title": "Application Mobile ou Web | Lunii",
+      "url": "https://lunii.com/fr-fr/application-lunii",
+      "snippet": "Téléchargez en quelques clics l'application Lunii, indispensable pour associer votre compte Lunii à Ma Fabrique à Histoires ou FLAM …"
+    },
+    {
+      "title": "Lunii : tous les produits de la marque Lunii (Enfant, Jouet ... - Fnac",
+      "url": "https://www.fnac.com/Lunii/m367853/w-4",
+      "snippet": "Retrouvez tous les produits Lunii au meilleur prix à la FNAC. En quelques clics, achetez en ligne ou commandez dans un magasin …"
+    },
+    {
+      "title": "Mon compte – Lunii",
+      "url": "https://support.lunii.com/hc/fr/categories/360000273657-Mon-compte",
+      "snippet": "Mon compte 📜 Retrouvez ici toutes les informations pour créer votre compte et le paramétrer"
+    }
+  ]
+}

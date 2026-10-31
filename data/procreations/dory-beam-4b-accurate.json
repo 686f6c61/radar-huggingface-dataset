@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ProCreations/Dory-Beam-4B-Accurate",
+  "slug": "procreations-dory-beam-4b-accurate",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/Dory-Beam-4B-Accurate",
+  "created_at": "2026-10-26T17:23:15.000Z",
+  "updated_at": "2026-10-30T20:00:09.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "dory",
+    "looped-transformer",
+    "latent-reasoning",
+    "distillation",
+    "beam",
+    "reasoning",
+    "math",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:ProCreations/Beam-Reasoning-Traces",
+    "base_model:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 749,
+  "trending_score": 0,
+  "parameters": 3975229440,
+  "parameters_human": "3.98B",
+  "storage_bytes": 7967592988,
+  "storage_human": "8.0 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

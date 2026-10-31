@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "PALLER-NOVUS/WeVisOne-VL-GGUF",
+  "slug": "paller-novus-wevisone-vl-gguf",
+  "author": "PALLER-NOVUS",
+  "url": "https://huggingface.co/PALLER-NOVUS/WeVisOne-VL-GGUF",
+  "created_at": "2026-10-25T17:19:55.000Z",
+  "updated_at": "2026-10-26T12:19:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3-vl",
+    "vision",
+    "multimodal",
+    "benchmark",
+    "ocr",
+    "image-text-to-text",
+    "en",
+    "base_model:tencent/WeVisOne-VL-2B",
+    "base_model:quantized:tencent/WeVisOne-VL-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1511,
+  "trending_score": 0,
+  "parameters": 406957056,
+  "parameters_human": "407.0M",
+  "storage_bytes": 45057677452,
+  "storage_human": "45.1 GB",
+  "base_model": "tencent/WeVisOne-VL-2B, tencent/WeVisOne-VL-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

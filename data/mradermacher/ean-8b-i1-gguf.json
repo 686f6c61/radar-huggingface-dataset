@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EAN-8B-i1-GGUF",
+  "slug": "mradermacher-ean-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EAN-8B-i1-GGUF",
+  "created_at": "2026-10-28T11:33:06.000Z",
+  "updated_at": "2026-10-28T15:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "reasoning",
+    "reinforcement-learning",
+    "en",
+    "dataset:TIGER-Lab/ViRL39K",
+    "base_model:DawnLiu/EVAN-8B",
+    "base_model:quantized:DawnLiu/EVAN-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 4006,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 96376970112,
+  "storage_human": "96.4 GB",
+  "base_model": "DawnLiu/EVAN-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

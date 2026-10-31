@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "FlipiFlopi007/act_tumbada",
+  "slug": "flipiflopi007-act_tumbada",
+  "author": "FlipiFlopi007",
+  "url": "https://huggingface.co/FlipiFlopi007/act_tumbada",
+  "created_at": "2026-10-25T08:38:50.000Z",
+  "updated_at": "2026-10-25T10:04:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "LeRobot",
+    "act",
+    "so101",
+    "robotics",
+    "dataset:FlipiFlopi007/so101_tumbada_full",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714752,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

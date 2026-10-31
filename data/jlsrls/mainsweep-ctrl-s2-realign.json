@@ -39,31 +39,5 @@
   "removed": false,
   "removed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
-      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
-      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
-    },
-    {
-      "title": "jlsrls/mainsweep-ctrl-s2-realign · Hugging Face",
-      "url": "https://huggingface.co/jlsrls/mainsweep-ctrl-s2-realign",
-      "snippet": "Instructions to use jlsrls/mainsweep-ctrl-s2-realign with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Download GitHub Desktop",
-      "url": "https://desktop.github.com/download/",
-      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
-    },
-    {
-      "title": "jlsrls/mainsweep-ctrl-s2-realign · Discussions - Hugging Face",
-      "url": "https://huggingface.co/jlsrls/mainsweep-ctrl-s2-realign/discussions",
-      "snippet": "Instructions to use jlsrls/mainsweep-ctrl-s2-realign with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "r/AITAH - Reddit",
-      "url": "https://www.reddit.com/r/AITAH/",
-      "snippet": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything …"
-    }
-  ]
+  "sources": []
 }

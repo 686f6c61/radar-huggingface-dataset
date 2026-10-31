@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Prashna-7b-GGUF",
+  "slug": "mradermacher-prashna-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Prashna-7b-GGUF",
+  "created_at": "2026-10-25T08:01:51.000Z",
+  "updated_at": "2026-10-25T11:23:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2",
+    "education",
+    "tutoring",
+    "socratic",
+    "pedagogy",
+    "conversational",
+    "en",
+    "base_model:rachitgoyell/Prashna-7b",
+    "base_model:quantized:rachitgoyell/Prashna-7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 631,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146921472,
+  "storage_human": "68.1 GB",
+  "base_model": "rachitgoyell/Prashna-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

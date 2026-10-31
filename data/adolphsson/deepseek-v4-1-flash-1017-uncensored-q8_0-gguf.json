@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-Q8_0-GGUF",
+  "slug": "adolphsson-deepseek-v4-1-flash-1017-uncensored-q8_0-gguf",
+  "author": "Adolphsson",
+  "url": "https://huggingface.co/Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-Q8_0-GGUF",
+  "created_at": "2026-10-27T09:52:06.000Z",
+  "updated_at": "2026-10-27T10:07:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "uncensored",
+    "q8_0",
+    "en",
+    "base_model:dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 313,
+  "trending_score": 0,
+  "parameters": 748494684784,
+  "parameters_human": "748.49B",
+  "storage_bytes": 507954227328,
+  "storage_human": "508.0 GB",
+  "base_model": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

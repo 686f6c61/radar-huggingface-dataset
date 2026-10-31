@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Stardust-LLM/Stardust-Flash-01",
+  "slug": "stardust-llm-stardust-flash-01",
+  "author": "Stardust-LLM",
+  "url": "https://huggingface.co/Stardust-LLM/Stardust-Flash-01",
+  "created_at": "2026-10-28T08:03:42.000Z",
+  "updated_at": "2026-10-30T08:24:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "security",
+    "cybersecurity",
+    "security-research",
+    "code-analysis",
+    "agentic",
+    "tool-use",
+    "lora",
+    "grpo",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 491,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 642672300946,
+  "storage_human": "642.7 GB",
+  "base_model": "TODO/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stardust, le mystère de l'étoile — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Stardust,_le_myst%C3%A8re_de_l%27%C3%A9toile",
+      "snippet": "Il s'agit de l' adaptation du roman Stardust écrit par Neil Gaiman, se déroulant à l' époque victorienne et qui conte les péripéties …"
+    },
+    {
+      "title": "StardustColors : peinture voiture et moto, fabricant d'effets spéciaux",
+      "url": "https://www.stardustcolors.com/",
+      "snippet": "Découvrez le fabricant français Stardust, le spécialiste des peintures à effets spéciaux pour carrosserie auto et moto et des peintures …"
+    },
+    {
+      "title": "Stardust, le mystère de l'étoile - Film 2007 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=110644.html",
+      "snippet": "Stardust, le mystère de l'étoile est un film réalisé par Matthew Vaughn avec Charlie Cox, Claire Danes."
+    },
+    {
+      "title": "Stardust (groupe) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Stardust_(groupe)",
+      "snippet": "Stardust est un groupe éphémère de French touch français. Le groupe n'est actif qu'un an, en 1998, année durant laquelle il sort le …"
+    },
+    {
+      "title": "Stardust - La Chaîne Air & Espace - YouTube",
+      "url": "https://www.youtube.com/channel/UCdL3UpiseRlvxXuORJjmqZw",
+      "snippet": "Histoires de Sondes Stardust - La Chaîne Air & Espace View full playlist 7 episodes"
+    }
+  ]
+}

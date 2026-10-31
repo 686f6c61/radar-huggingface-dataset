@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ColdBrew-Qwen3.5-CharThink-Base-GGUF",
+  "slug": "mradermacher-coldbrew-qwen3-5-charthink-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ColdBrew-Qwen3.5-CharThink-Base-GGUF",
+  "created_at": "2026-10-29T08:24:27.000Z",
+  "updated_at": "2026-10-29T09:03:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "en",
+    "base_model:SvalTek/ColdBrew-Qwen3.5-CharThink-Base",
+    "base_model:quantized:SvalTek/ColdBrew-Qwen3.5-CharThink-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 707,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967487360,
+  "storage_human": "83.0 GB",
+  "base_model": "SvalTek/ColdBrew-Qwen3.5-CharThink-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

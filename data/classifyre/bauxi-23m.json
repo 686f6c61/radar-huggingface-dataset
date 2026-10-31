@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "classifyre/Bauxi-23M",
+  "slug": "classifyre-bauxi-23m",
+  "author": "classifyre",
+  "url": "https://huggingface.co/classifyre/Bauxi-23M",
+  "created_at": "2026-10-30T18:47:25.000Z",
+  "updated_at": "2026-10-30T20:22:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "cpu",
+    "quantized",
+    "int8",
+    "minilm",
+    "natural-language-inference",
+    "decision-support",
+    "agents",
+    "classifyre",
+    "text-classification",
+    "en",
+    "dataset:alisawuffles/WANLI",
+    "base_model:nreimers/MiniLM-L6-H384-uncased",
+    "base_model:quantized:nreimers/MiniLM-L6-H384-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22761350,
+  "parameters_human": "22.8M",
+  "storage_bytes": 160301003,
+  "storage_human": "160 MB",
+  "base_model": "nreimers/MiniLM-L6-H384-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Decision reversal",
+      "dataset": "Bauxi-23M authored holdout (150 cases, 50 scenario families)",
+      "metric": "Accuracy",
+      "value": 0.907
+    },
+    {
+      "task": "Decision reversal",
+      "dataset": "Bauxi-23M authored holdout (150 cases, 50 scenario families)",
+      "metric": "Macro F1",
+      "value": 0.906
+    },
+    {
+      "task": "Decision reversal",
+      "dataset": "Bauxi stress test of known weak spots (180 cases, 60 scenario families)",
+      "metric": "Accuracy",
+      "value": 0.711
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "NGA-KR/law-embed-0.6b-r70",
+  "slug": "nga-kr-law-embed-0-6b-r70",
+  "author": "NGA-KR",
+  "url": "https://huggingface.co/NGA-KR/law-embed-0.6b-r70",
+  "created_at": "2026-10-27T14:12:06.000Z",
+  "updated_at": "2026-10-27T14:12:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "de",
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "mteb",
+    "legal",
+    "task-routed-adapters",
+    "sentence-similarity",
+    "en",
+    "de",
+    "zh",
+    "base_model:litillabs/litil-embed-0.6b",
+    "base_model:finetune:litillabs/litil-embed-0.6b",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203405093,
+  "storage_human": "1.2 GB",
+  "base_model": "litillabs/litil-embed-0.6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

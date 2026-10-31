@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "FINAL-Bench/Darwin-BRIGHT-Retriever",
+  "slug": "final-bench-darwin-bright-retriever",
+  "author": "FINAL-Bench",
+  "url": "https://huggingface.co/FINAL-Bench/Darwin-BRIGHT-Retriever",
+  "created_at": "2026-10-28T00:50:09.000Z",
+  "updated_at": "2026-10-28T05:42:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "retrieval",
+    "bright",
+    "en",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

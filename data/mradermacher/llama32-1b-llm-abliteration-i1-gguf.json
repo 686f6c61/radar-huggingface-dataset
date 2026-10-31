@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/llama32-1b-llm-abliteration-i1-GGUF",
+  "slug": "mradermacher-llama32-1b-llm-abliteration-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama32-1b-llm-abliteration-i1-GGUF",
+  "created_at": "2026-10-26T11:23:44.000Z",
+  "updated_at": "2026-10-26T12:36:03.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "abliteration",
+    "ollama",
+    "en",
+    "base_model:muhammadrafifatihulihsan/llama32-1b-llm-abliteration",
+    "base_model:quantized:muhammadrafifatihulihsan/llama32-1b-llm-abliteration",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2148,
+  "trending_score": 0,
+  "parameters": 1498482720,
+  "parameters_human": "1.50B",
+  "storage_bytes": 18956336672,
+  "storage_human": "19.0 GB",
+  "base_model": "muhammadrafifatihulihsan/llama32-1b-llm-abliteration",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "twnar/azerbaijani_sentiment_analysis",
+  "slug": "twnar-azerbaijani_sentiment_analysis",
+  "author": "twnar",
+  "url": "https://huggingface.co/twnar/azerbaijani_sentiment_analysis",
+  "created_at": "2026-10-26T12:02:24.000Z",
+  "updated_at": "2026-10-26T13:14:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "az"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "sentiment-analysis",
+    "azerbaijani",
+    "az",
+    "dataset:hajili/azerbaijani_review_sentiment_classification",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 2241514352,
+  "storage_human": "2.2 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

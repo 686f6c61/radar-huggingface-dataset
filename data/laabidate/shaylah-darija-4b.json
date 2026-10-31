@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "laabidate/shaylah-darija-4b",
+  "slug": "laabidate-shaylah-darija-4b",
+  "author": "laabidate",
+  "url": "https://huggingface.co/laabidate/shaylah-darija-4b",
+  "created_at": "2026-10-25T18:20:00.000Z",
+  "updated_at": "2026-10-25T18:51:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "darija",
+    "moroccan-arabic",
+    "conversational",
+    "folk-culture",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76074668,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

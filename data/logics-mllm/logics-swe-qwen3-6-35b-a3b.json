@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Logics-MLLM/Logics-SWE-Qwen3.6-35B-A3B",
+  "slug": "logics-mllm-logics-swe-qwen3-6-35b-a3b",
+  "author": "Logics-MLLM",
+  "url": "https://huggingface.co/Logics-MLLM/Logics-SWE-Qwen3.6-35B-A3B",
+  "created_at": "2026-10-30T03:25:51.000Z",
+  "updated_at": "2026-10-30T04:45:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "code",
+    "software-engineering",
+    "on-policy-distillation",
+    "reinforcement-learning",
+    "agentic-post-training",
+    "text-generation",
+    "conversational",
+    "dataset:Logics-MLLM/Logics-SWE-Env-2.5K",
+    "arxiv:2609.23377",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 552,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70239076323,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail d'authentification - Ministère de l'Agriculture et de la ...",
+      "url": "https://ecoagri.agriculture.gouv.fr/logics-usager/",
+      "snippet": "Avec FranceConnect FranceConnect est la solution proposée par l’État pour sécuriser et simplifier la connexion à vos services en ligne."
+    },
+    {
+      "title": "Déposer sa demande d'autorisation d'exploiter en ligne - LOGICS",
+      "url": "https://www.indre.gouv.fr/Actions-de-l-Etat/Agriculture-foret-chasse-et-appui-aux-territoires/Procedures-controle-des-structures/Deposer-sa-demande-d-autorisation-d-exploiter-en-ligne-LOGICS",
+      "snippet": "Aug 5, 2021 · L'application informatique LOGICS permet d’effectuer une demande d’autorisation d’exploiter au titre du contrôle des …"
+    },
+    {
+      "title": "Obtenir une autorisation d'exploiter (télé-procédure LOGICS)",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/R54616",
+      "snippet": "Obtenir une autorisation d'exploiter (télé-procédure LOGICS) Toute personne, physique ou morale, qui s'installe, s'agrandit, …"
+    },
+    {
+      "title": "Logics, l'outil de téléprocédure pour le contrôle des structures et l ...",
+      "url": "https://agriculture.gouv.fr/logics-loutil-de-teleprocedure-pour-le-controle-des-structures-et-lautorisation-dexploiter",
+      "snippet": "Nov 10, 2023 · Depuis 2017, l'outil Logics permet aux personnes souhaitant exploiter des terres agricoles de demander une …"
+    },
+    {
+      "title": "Déposer sa demande d'autorisation d'exploiter en ligne sur LOGICS",
+      "url": "https://www.deux-sevres.gouv.fr/Actions-de-l-Etat/Agriculture-foret-et-developpement-rural/Foncier-agricole/Controle-des-structures/Deposer-sa-demande-d-autorisation-d-exploiter-en-ligne-sur-LOGICS",
+      "snippet": "Feb 13, 2026 · L'application informatique LOGICS permet d’effectuer une demande d’autorisation d’exploiter au titre du contrôle des …"
+    }
+  ]
+}

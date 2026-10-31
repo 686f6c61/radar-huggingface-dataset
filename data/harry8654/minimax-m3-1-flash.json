@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Harry8654/MiniMax-M3.1-Flash",
+  "slug": "harry8654-minimax-m3-1-flash",
+  "author": "Harry8654",
+  "url": "https://huggingface.co/Harry8654/MiniMax-M3.1-Flash",
+  "created_at": "2026-10-24T19:22:42.000Z",
+  "updated_at": "2026-10-24T19:22:42.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m3_vl",
+    "image-text-to-text",
+    "multimodal",
+    "moe",
+    "agent",
+    "coding",
+    "video",
+    "conversational",
+    "custom_code",
+    "arxiv:2606.13392",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "mxfp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 220490854016,
+  "parameters_human": "220.49B",
+  "storage_bytes": 252429151663,
+  "storage_human": "252.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么看谷歌发布了 Gemini 3.6 flash和 3.5 lite，但是 pro 又缺席？",
+      "url": "https://www.zhihu.com/question/2063033606767895735",
+      "snippet": "有点发愁啊，三个模型Gemini 3.6 Flash、3.5 Flash-Lite，还有专门做安全的3.5 Flash Cyber, 但是没有 3.5 Pro, 三个模型几乎全都是 …"
+    }
+  ]
+}

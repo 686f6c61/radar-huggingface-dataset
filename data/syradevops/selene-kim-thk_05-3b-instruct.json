@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Syradevops/Selene-Kim-THk_05-3B-Instruct",
+  "slug": "syradevops-selene-kim-thk_05-3b-instruct",
+  "author": "Syradevops",
+  "url": "https://huggingface.co/Syradevops/Selene-Kim-THk_05-3B-Instruct",
+  "created_at": "2026-10-27T23:40:11.000Z",
+  "updated_at": "2026-10-27T23:51:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/SmolLM3-3B-Base",
+    "base_model:finetune:unsloth/SmolLM3-3B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 527,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 6167443869,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/SmolLM3-3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

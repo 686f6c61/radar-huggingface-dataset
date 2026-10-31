@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "wesjos/Qwen3.8-27B-CuteHuman-LoRA-GGUF",
+  "slug": "wesjos-qwen3-8-27b-cutehuman-lora-gguf",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/Qwen3.8-27B-CuteHuman-LoRA-GGUF",
+  "created_at": "2026-10-24T19:20:11.000Z",
+  "updated_at": "2026-10-25T09:26:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "lora",
+    "qwen3.8",
+    "cute",
+    "roleplay",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 155,
+  "trending_score": 0,
+  "parameters": 10485760,
+  "parameters_human": "10.5M",
+  "storage_bytes": 23606654,
+  "storage_human": "24 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

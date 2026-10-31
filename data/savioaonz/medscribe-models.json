@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "SavioAonz/medscribe-models",
+  "slug": "savioaonz-medscribe-models",
+  "author": "SavioAonz",
+  "url": "https://huggingface.co/SavioAonz/medscribe-models",
+  "created_at": "2026-10-27T09:57:14.000Z",
+  "updated_at": "2026-10-27T10:05:15.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "kenlm",
+    "asr",
+    "speech-to-text",
+    "medasr",
+    "parakeet",
+    "medical",
+    "radiology",
+    "medscribe",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:google/medasr",
+    "base_model:quantized:google/medasr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 105316112,
+  "parameters_human": "105.3M",
+  "storage_bytes": 2196432158,
+  "storage_human": "2.2 GB",
+  "base_model": "google/medasr, nvidia/parakeet-unified-en-0.6b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

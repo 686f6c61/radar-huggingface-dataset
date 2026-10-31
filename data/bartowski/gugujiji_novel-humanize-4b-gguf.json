@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bartowski/gugujiji_novel-humanize-4b-GGUF",
+  "slug": "bartowski-gugujiji_novel-humanize-4b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/gugujiji_novel-humanize-4b-GGUF",
+  "created_at": "2026-10-26T08:06:10.000Z",
+  "updated_at": "2026-10-26T08:13:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "chinese",
+    "novel",
+    "rewriting",
+    "text-generation",
+    "zh",
+    "base_model:gugujiji/novel-humanize-4b",
+    "base_model:quantized:gugujiji/novel-humanize-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 4691,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 61492885344,
+  "storage_human": "61.5 GB",
+  "base_model": "gugujiji/novel-humanize-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Kenvenx/Arabian-Agent-Qwen3-0.6B-GGUF",
+  "slug": "kenvenx-arabian-agent-qwen3-0-6b-gguf",
+  "author": "Kenvenx",
+  "url": "https://huggingface.co/Kenvenx/Arabian-Agent-Qwen3-0.6B-GGUF",
+  "created_at": "2026-10-26T23:48:18.000Z",
+  "updated_at": "2026-10-27T16:01:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3",
+    "arabic",
+    "tool-use",
+    "agent",
+    "openclaw",
+    "text-generation",
+    "ar",
+    "en",
+    "base_model:Kenvenx/Arabian-Agent-Qwen3-0.6B",
+    "base_model:quantized:Kenvenx/Arabian-Agent-Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 439,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3598538232,
+  "storage_human": "3.6 GB",
+  "base_model": "Kenvenx/Arabian-Agent-Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

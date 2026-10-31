@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mohammadreza-e/hubert-base-ls960-finetuned-gtzan",
+  "slug": "mohammadreza-e-hubert-base-ls960-finetuned-gtzan",
+  "author": "mohammadreza-e",
+  "url": "https://huggingface.co/mohammadreza-e/hubert-base-ls960-finetuned-gtzan",
+  "created_at": "2026-10-27T13:19:20.000Z",
+  "updated_at": "2026-10-27T16:02:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hubert",
+    "audio-classification",
+    "generated_from_trainer",
+    "dataset:marsyas/gtzan",
+    "base_model:facebook/hubert-base-ls960",
+    "base_model:finetune:facebook/hubert-base-ls960",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 94571146,
+  "parameters_human": "94.6M",
+  "storage_bytes": 5674657121,
+  "storage_human": "5.7 GB",
+  "base_model": "facebook/hubert-base-ls960",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "GTZAN",
+      "metric": "Accuracy",
+      "value": 0.86
+    }
+  ],
+  "sources": []
+}

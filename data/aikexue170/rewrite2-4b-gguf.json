@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "aikexue170/rewrite2-4b-gguf",
+  "slug": "aikexue170-rewrite2-4b-gguf",
+  "author": "aikexue170",
+  "url": "https://huggingface.co/aikexue170/rewrite2-4b-gguf",
+  "created_at": "2026-10-25T07:31:15.000Z",
+  "updated_at": "2026-10-25T09:26:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "rewrite2",
+    "novel-rewrite",
+    "qwen3.5",
+    "4b",
+    "q8_0",
+    "q4_k_m",
+    "text-generation",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 481,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 7191206784,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

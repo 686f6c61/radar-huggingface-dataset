@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "penumbralt/test-debug",
+  "slug": "penumbralt-test-debug",
+  "author": "penumbralt",
+  "url": "https://huggingface.co/penumbralt/test-debug",
+  "created_at": "2026-10-25T16:24:47.000Z",
+  "updated_at": "2026-10-25T16:25:34.000Z",
+  "license": "test-debug",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310170064,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

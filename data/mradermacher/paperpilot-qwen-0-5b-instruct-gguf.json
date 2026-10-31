@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PaperPilot-Qwen-0.5B-Instruct-GGUF",
+  "slug": "mradermacher-paperpilot-qwen-0-5b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PaperPilot-Qwen-0.5B-Instruct-GGUF",
+  "created_at": "2026-10-28T07:45:23.000Z",
+  "updated_at": "2026-10-28T07:48:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pdf",
+    "document-ai",
+    "agent",
+    "tool-calling",
+    "on-device",
+    "qwen2.5",
+    "en",
+    "base_model:kpakkiragari/PaperPilot-Qwen-0.5B-Instruct",
+    "base_model:quantized:kpakkiragari/PaperPilot-Qwen-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 512,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400184192,
+  "storage_human": "5.4 GB",
+  "base_model": "kpakkiragari/PaperPilot-Qwen-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

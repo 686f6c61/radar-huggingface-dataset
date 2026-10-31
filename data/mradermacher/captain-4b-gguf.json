@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CaPtain-4B-GGUF",
+  "slug": "mradermacher-captain-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CaPtain-4B-GGUF",
+  "created_at": "2026-10-30T13:25:22.000Z",
+  "updated_at": "2026-10-30T14:30:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "robotics",
+    "code-as-policy",
+    "agent",
+    "embodied-agent",
+    "reinforcement-learning",
+    "libero",
+    "en",
+    "dataset:YijiaFan/CaPtain-SFT-Data",
+    "dataset:YijiaFan/CaPtain-artifacts",
+    "base_model:YijiaFan/CaPtain-4B",
+    "base_model:quantized:YijiaFan/CaPtain-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 572,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 45368971392,
+  "storage_human": "45.4 GB",
+  "base_model": "YijiaFan/CaPtain-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

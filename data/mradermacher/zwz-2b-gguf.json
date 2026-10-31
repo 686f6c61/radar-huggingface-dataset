@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZwZ-2B-GGUF",
+  "slug": "mradermacher-zwz-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZwZ-2B-GGUF",
+  "created_at": "2026-10-27T08:14:48.000Z",
+  "updated_at": "2026-10-29T08:37:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "zwz2",
+    "vision-language",
+    "visual-reasoning",
+    "reinforcement-learning",
+    "grpo",
+    "en",
+    "dataset:inclusionAI/ZoomBench",
+    "dataset:inclusionAI/ZwZ-RL-VQA",
+    "base_model:inclusionAI/ZwZ-2B",
+    "base_model:quantized:inclusionAI/ZwZ-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 932,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 19879063040,
+  "storage_human": "19.9 GB",
+  "base_model": "inclusionAI/ZwZ-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

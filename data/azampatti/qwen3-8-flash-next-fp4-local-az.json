@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "azampatti/Qwen3.8-Flash-Next-FP4-Local-AZ",
+  "slug": "azampatti-qwen3-8-flash-next-fp4-local-az",
+  "author": "azampatti",
+  "url": "https://huggingface.co/azampatti/Qwen3.8-Flash-Next-FP4-Local-AZ",
+  "created_at": "2026-10-27T21:25:43.000Z",
+  "updated_at": "2026-10-28T00:41:03.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "nvfp4",
+    "mxfp8",
+    "modelopt",
+    "moe",
+    "top-k-5",
+    "dgx-spark",
+    "gb10",
+    "image-text-to-text",
+    "conversational",
+    "base_model:nvidia/Qwen3.8-Flash-Next-FP4-Local",
+    "base_model:quantized:nvidia/Qwen3.8-Flash-Next-FP4-Local",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 96727459805,
+  "parameters_human": "96.73B",
+  "storage_bytes": 102505710337,
+  "storage_human": "102.5 GB",
+  "base_model": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New South African Internet speed test website launched",
+      "url": "https://mybroadband.co.za/news/broadband/290988-new-south-african-internet-speed-test-website-launched.html",
+      "snippet": "Sep 1, 2019 · A new South African speed test platform – hosted at Speedtest.co.za – has been launched to give local Internet users …"
+    }
+  ]
+}

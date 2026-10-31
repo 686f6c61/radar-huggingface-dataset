@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "austindixson/Clover-35B-A3B-Preview-GGUF-IQ4_XS-Mac",
+  "slug": "austindixson-clover-35b-a3b-preview-gguf-iq4_xs-mac",
+  "author": "austindixson",
+  "url": "https://huggingface.co/austindixson/Clover-35B-A3B-Preview-GGUF-IQ4_XS-Mac",
+  "created_at": "2026-10-28T14:50:36.000Z",
+  "updated_at": "2026-10-28T20:15:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "apple-silicon",
+    "metal",
+    "iq4_xs",
+    "base_model:Diffuspace/Clover-35B-A3B-Preview",
+    "base_model:quantized:Diffuspace/Clover-35B-A3B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 2941,
+  "trending_score": 0,
+  "parameters": 34661350848,
+  "parameters_human": "34.66B",
+  "storage_bytes": 37962165184,
+  "storage_human": "38.0 GB",
+  "base_model": "Diffuspace/Clover-35B-A3B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

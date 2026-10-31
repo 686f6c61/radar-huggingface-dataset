@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "masahiroid/LFM3-1.7B-Pyrite-2bit-GGUF",
+  "slug": "masahiroid-lfm3-1-7b-pyrite-2bit-gguf",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/LFM3-1.7B-Pyrite-2bit-GGUF",
+  "created_at": "2026-10-30T15:42:35.000Z",
+  "updated_at": "2026-10-30T15:42:55.000Z",
+  "license": "liquid-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "2bit",
+    "pyrite",
+    "lfm",
+    "liquid-ai",
+    "edge-ai",
+    "text-generation",
+    "en",
+    "ja",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 750154528,
+  "storage_human": "750 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

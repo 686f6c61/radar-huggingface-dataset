@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "samadpls/torchlight-phi4-mini-GGUF",
+  "slug": "samadpls-torchlight-phi4-mini-gguf",
+  "author": "samadpls",
+  "url": "https://huggingface.co/samadpls/torchlight-phi4-mini-GGUF",
+  "created_at": "2026-10-31T01:53:29.000Z",
+  "updated_at": "2026-10-31T05:37:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "gguf",
+    "pytorch",
+    "code",
+    "debugging",
+    "lora",
+    "phi3",
+    "text-generation",
+    "en",
+    "dataset:samadpls/torchlight-threads",
+    "base_model:samadpls/torchlight-phi4-mini",
+    "base_model:quantized:samadpls/torchlight-phi4-mini",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 6580360773,
+  "storage_human": "6.6 GB",
+  "base_model": "samadpls/torchlight-phi4-mini",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

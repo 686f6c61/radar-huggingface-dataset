@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "pijou/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "pijou-glm-5-3-cybersecurity-fp8",
+  "author": "pijou",
+  "url": "https://huggingface.co/pijou/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-10-31T20:51:51.000Z",
+  "updated_at": "2026-10-31T20:51:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cybersecurity Best Practices | Cybersecurity and Infrastructure ... - CISA",
+      "url": "https://www.cisa.gov/topics/cybersecurity-best-practices",
+      "snippet": "Sep 22, 2026 · Cybersecurity Best Practices CISA provides information on cybersecurity best practices to help individuals and …"
+    },
+    {
+      "title": "Cyber Guidance for Small Businesses - CISA",
+      "url": "https://www.cisa.gov/cyber-guidance-small-businesses",
+      "snippet": "Cyber Guidance for Small Businesses A Different Kind of Cybersecurity Advice Small businesses often do not have the resources to …"
+    },
+    {
+      "title": "Home Page | CISA",
+      "url": "https://www.cisa.gov/",
+      "snippet": "CISA, FBI, USSS and International Partners Release Joint Cybersecurity Advisory on SafePay Ransomware Provides technical …"
+    },
+    {
+      "title": "Cybersecurity Awareness Month - CISA",
+      "url": "https://www.cisa.gov/cybersecurity-awareness-month",
+      "snippet": "Cybersecurity needs more than technical experts; it needs innovators, communicators, educators, leaders, analysts, designers, …"
+    },
+    {
+      "title": "Cybersecurity Tabletop Exercise Tips",
+      "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity-Tabletop-Exercise-Tips_508c.pdf",
+      "snippet": "OVERVIEW A tabletop exercise, or TTX, is a role-playing activity in which players respond to scenarios presented by one or more …"
+    }
+  ]
+}

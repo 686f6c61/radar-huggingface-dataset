@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "karan7718/qwen3-tts-0.6b-hindi",
+  "slug": "karan7718-qwen3-tts-0-6b-hindi",
+  "author": "karan7718",
+  "url": "https://huggingface.co/karan7718/qwen3-tts-0.6b-hindi",
+  "created_at": "2026-10-26T16:13:53.000Z",
+  "updated_at": "2026-10-26T21:32:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "tts",
+    "hindi",
+    "qwen3-tts",
+    "text-to-speech",
+    "hi",
+    "dataset:ai4bharat/Rasa",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 4305496956,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

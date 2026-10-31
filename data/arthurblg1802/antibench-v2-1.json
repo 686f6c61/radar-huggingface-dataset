@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "arthurblg1802/AntiBench-v2.1",
+  "slug": "arthurblg1802-antibench-v2-1",
+  "author": "arthurblg1802",
+  "url": "https://huggingface.co/arthurblg1802/AntiBench-v2.1",
+  "created_at": "2026-10-30T02:34:03.000Z",
+  "updated_at": "2026-10-30T02:36:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "slm",
+    "text-generation",
+    "small-language-model",
+    "base-model",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 165,
+  "trending_score": 0,
+  "parameters": 2982480,
+  "parameters_human": "3.0M",
+  "storage_bytes": 26249552,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

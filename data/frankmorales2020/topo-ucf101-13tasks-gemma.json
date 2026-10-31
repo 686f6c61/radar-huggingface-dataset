@@ -44,31 +44,5 @@
   "removed": false,
   "removed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Scp 096 ️ Play Now on GamePix",
-      "url": "https://www.gamepix.com/play/scp-096-game",
-      "snippet": "Apr 1, 2025 · SCP 096 is an atmospheric survival horror game inspired by the infamous scp horror game series. Navigate pitch-black …"
-    },
-    {
-      "title": "frankmorales2020/gemma-4-e4b-13tasks-topo-2026-certified · Hugging Face",
-      "url": "https://huggingface.co/frankmorales2020/gemma-4-e4b-13tasks-topo-2026-certified",
-      "snippet": "This repository contains the certified AGI weights for the TOPO-2026 13-Task protocol, built upon the gemma-4-e4b-unesco-optimizedfoundation. This model represents the first empirically achieved Narrow Singularityunder the Morales AGI Certification Framework, demonstrating zero catastrophic forgetting across 13 sequential cross-domain tasks."
-    },
-    {
-      "title": "SCP-096: MODEST - Play Online For Free - Gamaverse.com",
-      "url": "https://gamaverse.com/scp-096-modest-game/",
-      "snippet": "Oct 10, 2019 · SCP-096: Modest is a first-person horror survival game set in a dark complex where you are trapped with an …"
-    },
-    {
-      "title": "frankmorales2020/gemma-4-e4b-topo-2026 · Hugging Face",
-      "url": "https://huggingface.co/frankmorales2020/gemma-4-e4b-topo-2026",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Scp 096 ️ Zagraj teraz na GamePix",
-      "url": "https://www.gamepix.com/pl/play/scp-096-game",
-      "snippet": "SCP 096to wciągająca gra z gatunku horroru, która łączy elementy przetrwania i odkrywania. Gracze wcielają się w bezbronną …"
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "data-archetype/moss_pht",
+  "slug": "data-archetype-moss_pht",
+  "author": "data-archetype",
+  "url": "https://huggingface.co/data-archetype/moss_pht",
+  "created_at": "2026-10-31T12:15:00.000Z",
+  "updated_at": "2026-10-31T12:56:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 20329320024,
+  "storage_human": "20.3 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Thaki-ASR-KO-1.7B-GGUF",
+  "slug": "mradermacher-thaki-asr-ko-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Thaki-ASR-KO-1.7B-GGUF",
+  "created_at": "2026-10-30T12:16:29.000Z",
+  "updated_at": "2026-10-30T23:44:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "asr",
+    "speech-recognition",
+    "korean",
+    "telephony",
+    "fine-tuning",
+    "qwen3-asr",
+    "ko",
+    "dataset:Bingsu/zeroth-korean",
+    "dataset:amphion/Emilia-Dataset",
+    "base_model:ThakiCloud/Thaki-ASR-KO-1.7B",
+    "base_model:quantized:ThakiCloud/Thaki-ASR-KO-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 421,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 16957412736,
+  "storage_human": "17.0 GB",
+  "base_model": "ThakiCloud/Thaki-ASR-KO-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

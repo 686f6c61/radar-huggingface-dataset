@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "rustholm/qwen-image-edit-2511",
+  "slug": "rustholm-qwen-image-edit-2511",
+  "author": "rustholm",
+  "url": "https://huggingface.co/rustholm/qwen-image-edit-2511",
+  "created_at": "2026-10-31T14:04:52.000Z",
+  "updated_at": "2026-10-31T14:04:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16849643406,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

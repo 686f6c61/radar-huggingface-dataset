@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VeriLadder-Qwen-7B-GGUF",
+  "slug": "mradermacher-veriladder-qwen-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VeriLadder-Qwen-7B-GGUF",
+  "created_at": "2026-10-31T17:02:14.000Z",
+  "updated_at": "2026-10-31T17:02:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

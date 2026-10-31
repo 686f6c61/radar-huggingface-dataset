@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kvark-Sparkle-1.0-27B-GGUF",
+  "slug": "mradermacher-kvark-sparkle-1-0-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kvark-Sparkle-1.0-27B-GGUF",
+  "created_at": "2026-10-30T11:53:14.000Z",
+  "updated_at": "2026-10-30T15:53:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "efficient-reasoning",
+    "qwen3.8",
+    "mtp",
+    "kvark",
+    "en",
+    "dataset:zwhe99/DeepMath-103K",
+    "dataset:allenai/IF_multi_constraints_upto5",
+    "dataset:m-a-p/SuperGPQA",
+    "dataset:livecodebench/code_generation_lite",
+    "base_model:Egzakta/Kvark-Sparkle-1.0-27B",
+    "base_model:quantized:Egzakta/Kvark-Sparkle-1.0-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 656,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780484160,
+  "storage_human": "190.8 GB",
+  "base_model": "Egzakta/Kvark-Sparkle-1.0-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zwhe99/DeepMath-103K · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/zwhe99/DeepMath-103K",
+      "snippet": "15.04.2025 ... Model weights: DeepMath-Zero-7B , DeepMath-Zero-Math-7B ... mradermacher/Kvark-Sparkle-1.0-27B-i1-GGUF. 27B • Updated about 18 ..."
+    }
+  ]
+}

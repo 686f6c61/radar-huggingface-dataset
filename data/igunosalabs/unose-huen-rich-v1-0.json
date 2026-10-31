@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "igunosalabs/Unose-Huen-Rich-v1.0",
+  "slug": "igunosalabs-unose-huen-rich-v1-0",
+  "author": "igunosalabs",
+  "url": "https://huggingface.co/igunosalabs/Unose-Huen-Rich-v1.0",
+  "created_at": "2026-10-31T19:52:54.000Z",
+  "updated_at": "2026-10-31T19:53:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241741824,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967022728,
+  "storage_human": "967 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

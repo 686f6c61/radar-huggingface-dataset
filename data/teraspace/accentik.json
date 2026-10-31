@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "TeraSpace/accentik",
+  "slug": "teraspace-accentik",
+  "author": "TeraSpace",
+  "url": "https://huggingface.co/TeraSpace/accentik",
+  "created_at": "2026-10-28T16:09:15.000Z",
+  "updated_at": "2026-10-29T03:18:40.000Z",
+  "license": "accentik-openrail-m-public-attribution",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "accentik",
+    "feature-extraction",
+    "russian",
+    "accentuation",
+    "word-stress",
+    "custom-code",
+    "pytorch",
+    "custom_code",
+    "ru",
+    "base_model:deepvk/RuModernBERT-small",
+    "base_model:finetune:deepvk/RuModernBERT-small",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 35053563,
+  "parameters_human": "35.1M",
+  "storage_bytes": 279638204,
+  "storage_human": "280 MB",
+  "base_model": "deepvk/RuModernBERT-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

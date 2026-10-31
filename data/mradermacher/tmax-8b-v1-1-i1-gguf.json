@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/tmax-8b-v1.1-i1-GGUF",
+  "slug": "mradermacher-tmax-8b-v1-1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/tmax-8b-v1.1-i1-GGUF",
+  "created_at": "2026-10-31T19:42:55.000Z",
+  "updated_at": "2026-10-31T20:54:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tmax",
+    "reinforcement-learning",
+    "terminal-agent",
+    "en",
+    "dataset:TMaxxx/tmax-13k-v1.1",
+    "base_model:TMaxxx/tmax-8b-v1.1",
+    "base_model:quantized:TMaxxx/tmax-8b-v1.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 52755247488,
+  "storage_human": "52.8 GB",
+  "base_model": "TMaxxx/tmax-8b-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

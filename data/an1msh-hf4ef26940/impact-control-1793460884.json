@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "an1msh-hf4ef26940/impact-control-1793460884",
+  "slug": "an1msh-hf4ef26940-impact-control-1793460884",
+  "author": "an1msh-hf4ef26940",
+  "url": "https://huggingface.co/an1msh-hf4ef26940/impact-control-1793460884",
+  "created_at": "2026-10-31T15:34:47.000Z",
+  "updated_at": "2026-10-31T15:34:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "resnet",
+    "image-classification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 277,
+  "storage_human": "277 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weed Control Without Chemicals: Best Organic Methods - The Spruce",
+      "url": "https://www.thespruce.com/weed-control-without-chemicals-2132928",
+      "snippet": "Sep 6, 2022 · The idea of weed control without chemicals conjures up nightmares of getting down on your hands and knees on a hot …"
+    },
+    {
+      "title": "How to Use Natural Inhibitors for Weed Control in Gardens",
+      "url": "https://livetoplant.com/how-to-use-natural-inhibitors-for-weed-control-in-gardens/",
+      "snippet": "Jul 23, 2025 · Weeds are a persistent challenge for gardeners everywhere. They compete with desirable plants for nutrients, water, …"
+    },
+    {
+      "title": "Natural Alternatives to Chemical Herbicides for Weed Control",
+      "url": "https://livetoplant.com/natural-alternatives-to-chemical-herbicides-for-weed-control/",
+      "snippet": "Jul 16, 2025 · Weather-dependent methods like solarization or vinegar application may be less consistent. Despite these limitations, …"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "YuyaoTechnology/MatterSeek",
+  "slug": "yuyaotechnology-matterseek",
+  "author": "YuyaoTechnology",
+  "url": "https://huggingface.co/YuyaoTechnology/MatterSeek",
+  "created_at": "2026-10-19T04:17:34.000Z",
+  "updated_at": "2026-10-31T07:46:28.000Z",
+  "license": "yuyaotechnology-matterseek-eula",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "feature-extraction",
+    "zh",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 435,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 425196534,
+  "storage_human": "425 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

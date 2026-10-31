@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "KOHENOOR-AI/kai-lite3",
+  "slug": "kohenoor-ai-kai-lite3",
+  "author": "KOHENOOR-AI",
+  "url": "https://huggingface.co/KOHENOOR-AI/kai-lite3",
+  "created_at": "2026-10-26T08:23:27.000Z",
+  "updated_at": "2026-10-26T08:38:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "children",
+    "stories",
+    "rhymes",
+    "on-device",
+    "mobile",
+    "kohenoor",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 2012012128,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

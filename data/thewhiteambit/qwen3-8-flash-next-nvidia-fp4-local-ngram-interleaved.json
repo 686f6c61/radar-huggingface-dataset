@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "thewhiteambit/Qwen3.8-Flash-Next-nvidia-FP4-Local-ngram-interleaved",
+  "slug": "thewhiteambit-qwen3-8-flash-next-nvidia-fp4-local-ngram-interleaved",
+  "author": "thewhiteambit",
+  "url": "https://huggingface.co/thewhiteambit/Qwen3.8-Flash-Next-nvidia-FP4-Local-ngram-interleaved",
+  "created_at": "2026-10-25T14:37:32.000Z",
+  "updated_at": "2026-10-25T16:04:46.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen",
+    "n-gram",
+    "per-layer-embedding",
+    "nvfp4",
+    "safetensors",
+    "base_model:nvidia/Qwen3.8-Flash-Next-FP4-Local",
+    "base_model:finetune:nvidia/Qwen3.8-Flash-Next-FP4-Local",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28800159484,
+  "storage_human": "28.8 GB",
+  "base_model": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

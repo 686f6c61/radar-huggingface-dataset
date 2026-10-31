@@ -35,31 +35,5 @@
   "removed": false,
   "removed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
-    },
-    {
-      "title": "CS231n Deep Learning for Computer Vision",
-      "url": "https://cs231n.github.io/",
-      "snippet": "These notes accompany the Stanford CS class CS231n: Deep Learning for Computer Vision. For questions/concerns/bug reports, please submit a pull request directly to our git repo."
-    },
-    {
-      "title": "ChatGPT",
-      "url": "https://chatgpt.com/features",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
-    },
-    {
-      "title": "Stanford University CS231n: Deep Learning for Computer Vision",
-      "url": "https://cs231n.stanford.edu/",
-      "snippet": "Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. Core to many of these applications are visual recognition tasks such as image classification, localization and detection. Recent developments in neural network (aka “deep learning”) approaches have greatly advanced the performance ..."
-    },
-    {
-      "title": "Introducing ChatGPT | OpenAI",
-      "url": "https://openai.com/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
-    }
-  ]
+  "sources": []
 }

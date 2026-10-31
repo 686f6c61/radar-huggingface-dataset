@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "multi-vector-encoder/ModernBERT-base-en-v1",
+  "slug": "multi-vector-encoder-modernbert-base-en-v1",
+  "author": "multi-vector-encoder",
+  "url": "https://huggingface.co/multi-vector-encoder/ModernBERT-base-en-v1",
+  "created_at": "2026-10-30T15:17:03.000Z",
+  "updated_at": "2026-10-30T16:58:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "multi-vector",
+    "colbert",
+    "late-interaction",
+    "feature-extraction",
+    "en",
+    "base_model:chungimungi/GLInt",
+    "base_model:merge:chungimungi/GLInt",
+    "base_model:lightonai/LateOn-regularized",
+    "base_model:merge:lightonai/LateOn-regularized",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 615344304,
+  "storage_human": "615 MB",
+  "base_model": "chungimungi/GLInt, lightonai/LateOn-regularized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

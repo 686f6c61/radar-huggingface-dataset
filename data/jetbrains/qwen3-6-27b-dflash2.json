@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "JetBrains/Qwen3.6-27B-DFlash2",
+  "slug": "jetbrains-qwen3-6-27b-dflash2",
+  "author": "JetBrains",
+  "url": "https://huggingface.co/JetBrains/Qwen3.6-27B-DFlash2",
+  "created_at": "2026-10-26T16:13:28.000Z",
+  "updated_at": "2026-10-26T16:13:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "qwen3.6",
+    "text-generation",
+    "base_model:JetBrains/Qwen3.8-3.6-27B-blend-DFlash2",
+    "base_model:finetune:JetBrains/Qwen3.8-3.6-27B-blend-DFlash2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3848817920,
+  "storage_human": "3.8 GB",
+  "base_model": "JetBrains/Qwen3.8-3.6-27B-blend-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JetBrains: Essential tools for software developers and teams",
+      "url": "https://www.jetbrains.com/",
+      "snippet": "JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA – the …"
+    },
+    {
+      "title": "JetBrains : Des outils essentiels pour les équipes et les développeurs ...",
+      "url": "https://www.jetbrains.com/fr-fr/",
+      "snippet": "JetBrains est un éditeur de logiciels innovant, spécialisé dans la création d'outils de développement intelligents, tels qu'IntelliJ IDEA, …"
+    },
+    {
+      "title": "JetBrains - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/JetBrains",
+      "snippet": "JetBrains ... JetBrains is a multinational software company founded in Prague in 2000 and headquartered in Amsterdam. [3][4] It …"
+    },
+    {
+      "title": "JetBrains Account",
+      "url": "https://account.jetbrains.com/login",
+      "snippet": "JetBrains Account provides easy access to your JetBrains products and makes upgrades and migration to new hardware smooth."
+    },
+    {
+      "title": "JetBrains — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/JetBrains",
+      "snippet": "Historique La société est née de l'association de Sergey Dmitriev, Eugeny Belyaev et Valentin Kipiatkov en février 20006. En 2012, …"
+    }
+  ]
+}

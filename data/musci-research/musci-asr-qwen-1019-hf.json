@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Musci-research/Musci-ASR-qwen-1019-hf",
+  "slug": "musci-research-musci-asr-qwen-1019-hf",
+  "author": "Musci-research",
+  "url": "https://huggingface.co/Musci-research/Musci-ASR-qwen-1019-hf",
+  "created_at": "2026-10-27T07:09:50.000Z",
+  "updated_at": "2026-10-30T13:00:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "custom_code",
+    "base_model:Musci-research/Musci-ASR-qwen-1019",
+    "base_model:finetune:Musci-research/Musci-ASR-qwen-1019",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087622457,
+  "storage_human": "4.1 GB",
+  "base_model": "Musci-research/Musci-ASR-qwen-1019",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Musci | Générateur de Musique IA & Plateforme de Création Audio",
+      "url": "https://musci.app/fr",
+      "snippet": "Créez de la musique de qualité professionnelle avec les outils audio alimentés par l'IA de Musci. Générez des chansons originales, …"
+    },
+    {
+      "title": "Musci.io - Best AI Music Generator | Create Music with AI",
+      "url": "https://musci.io/",
+      "snippet": "Musci.io's AI music generator analyzes your text prompts, understands musical patterns, and generates professional-quality music in …"
+    },
+    {
+      "title": "Musci | AI Music Generator & Audio Creation Platform",
+      "url": "https://musci.app/",
+      "snippet": "Create professional-quality music with Musci's AI-powered audio tools. Generate original songs, lyrics, vocal stems, and remixes …"
+    },
+    {
+      "title": "Musci.io - Meilleur Générateur de Musique IA | Créez de la Musique …",
+      "url": "https://musci.io/fr",
+      "snippet": "Un générateur de musique IA est un outil qui utilise l'intelligence artificielle pour créer des compositions musicales originales. Le …"
+    }
+  ]
+}

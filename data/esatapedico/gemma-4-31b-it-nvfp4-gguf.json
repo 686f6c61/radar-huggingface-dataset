@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "esatapedico/Gemma-4-31B-IT-NVFP4-GGUF",
+  "slug": "esatapedico-gemma-4-31b-it-nvfp4-gguf",
+  "author": "esatapedico",
+  "url": "https://huggingface.co/esatapedico/Gemma-4-31B-IT-NVFP4-GGUF",
+  "created_at": "2026-10-26T08:06:01.000Z",
+  "updated_at": "2026-10-30T12:58:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "gemma",
+    "instruction-tuned",
+    "blackwell",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:nvidia/Gemma-4-31B-IT-NVFP4",
+    "base_model:quantized:nvidia/Gemma-4-31B-IT-NVFP4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3045,
+  "trending_score": 0,
+  "parameters": 30697345956,
+  "parameters_human": "30.70B",
+  "storage_bytes": 95797040128,
+  "storage_human": "95.8 GB",
+  "base_model": "nvidia/Gemma-4-31B-IT-NVFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

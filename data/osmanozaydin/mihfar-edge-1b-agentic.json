@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "osmanozaydin/Mihfar-Edge-1B-Agentic",
+  "slug": "osmanozaydin-mihfar-edge-1b-agentic",
+  "author": "osmanozaydin",
+  "url": "https://huggingface.co/osmanozaydin/Mihfar-Edge-1B-Agentic",
+  "created_at": "2026-10-28T16:07:40.000Z",
+  "updated_at": "2026-10-28T20:52:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "causal-lm",
+    "edge-ai",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "english",
+    "turkish",
+    "1b",
+    "text-generation",
+    "en",
+    "tr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 1133223222,
+  "parameters_human": "1.13B",
+  "storage_bytes": 2266481252,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "wyf-yfw/MiniSeek-D0.1",
+  "slug": "wyf-yfw-miniseek-d0-1",
+  "author": "wyf-yfw",
+  "url": "https://huggingface.co/wyf-yfw/MiniSeek-D0.1",
+  "created_at": "2026-10-25T03:55:59.000Z",
+  "updated_at": "2026-10-26T10:51:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "miniseek_dense",
+    "miniseek",
+    "dense",
+    "decoder-only",
+    "chinese",
+    "chat",
+    "sft",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:wyf-yfw/MiniSeek-D0.1-base",
+    "base_model:finetune:wyf-yfw/MiniSeek-D0.1-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 380,
+  "trending_score": 0,
+  "parameters": 31728128,
+  "parameters_human": "31.7M",
+  "storage_bytes": 253989001,
+  "storage_human": "254 MB",
+  "base_model": "wyf-yfw/MiniSeek-D0.1-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

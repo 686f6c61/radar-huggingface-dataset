@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "aimanhaziq/gemma4-2b-coder",
+  "slug": "aimanhaziq-gemma4-2b-coder",
+  "author": "aimanhaziq",
+  "url": "https://huggingface.co/aimanhaziq/gemma4-2b-coder",
+  "created_at": "2026-10-27T06:03:03.000Z",
+  "updated_at": "2026-10-27T07:18:09.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "code",
+    "kubernetes",
+    "rust",
+    "web-development",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 803,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10241022536,
+  "storage_human": "10.2 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

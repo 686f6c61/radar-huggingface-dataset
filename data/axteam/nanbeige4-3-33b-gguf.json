@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "axteam/Nanbeige4.3-33B-GGUF",
+  "slug": "axteam-nanbeige4-3-33b-gguf",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Nanbeige4.3-33B-GGUF",
+  "created_at": "2026-10-29T06:55:18.000Z",
+  "updated_at": "2026-10-31T15:40:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 55246623232,
+  "storage_human": "55.2 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

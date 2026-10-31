@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Sanami/haas-ja-onnx",
+  "slug": "sanami-haas-ja-onnx",
+  "author": "Sanami",
+  "url": "https://huggingface.co/Sanami/haas-ja-onnx",
+  "created_at": "2026-10-30T19:47:10.000Z",
+  "updated_at": "2026-10-31T09:26:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "speech",
+    "automatic-speech-recognition",
+    "japanese",
+    "TDT",
+    "FastConformer",
+    "KDA",
+    "int8",
+    "ja",
+    "base_model:third-intelligence/Haas-ja-v1.0",
+    "base_model:quantized:third-intelligence/Haas-ja-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6704251591,
+  "storage_human": "6.7 GB",
+  "base_model": "third-intelligence/Haas-ja-v1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

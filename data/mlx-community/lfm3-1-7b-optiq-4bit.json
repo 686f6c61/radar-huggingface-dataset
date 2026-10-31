@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mlx-community/LFM3-1.7B-OptiQ-4bit",
+  "slug": "mlx-community-lfm3-1-7b-optiq-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/LFM3-1.7B-OptiQ-4bit",
+  "created_at": "2026-10-28T23:14:27.000Z",
+  "updated_at": "2026-10-29T00:49:51.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm3",
+    "optiq",
+    "quantized",
+    "4bit",
+    "mixed-precision",
+    "liquid-ai",
+    "apple-silicon",
+    "on-device",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 430,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 1359213624,
+  "storage_human": "1.4 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    }
+  ]
+}

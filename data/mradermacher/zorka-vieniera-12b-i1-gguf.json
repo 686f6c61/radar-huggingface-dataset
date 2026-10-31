@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/zorka-vieniera-12b-i1-GGUF",
+  "slug": "mradermacher-zorka-vieniera-12b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/zorka-vieniera-12b-i1-GGUF",
+  "created_at": "2026-10-28T15:45:21.000Z",
+  "updated_at": "2026-10-28T17:16:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "be"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "be",
+    "dataset:ewxxyyzz/karotkizmest",
+    "dataset:wikimedia/wikipedia",
+    "dataset:cis-lmu/GlotCC-V1",
+    "base_model:ewxxyyzz/zorka-vieniera-12b",
+    "base_model:quantized:ewxxyyzz/zorka-vieniera-12b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 3834,
+  "trending_score": 0,
+  "parameters": 12913983536,
+  "parameters_human": "12.91B",
+  "storage_bytes": 151864917184,
+  "storage_human": "151.9 GB",
+  "base_model": "ewxxyyzz/zorka-vieniera-12b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

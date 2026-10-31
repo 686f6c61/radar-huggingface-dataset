@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kimrahui/parking-gemma-270m-v2-onnx",
+  "slug": "kimrahui-parking-gemma-270m-v2-onnx",
+  "author": "kimrahui",
+  "url": "https://huggingface.co/kimrahui/parking-gemma-270m-v2-onnx",
+  "created_at": "2026-10-27T06:25:08.000Z",
+  "updated_at": "2026-10-27T07:47:54.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gemma3_text",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 526,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2962185837,
+  "storage_human": "3.0 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

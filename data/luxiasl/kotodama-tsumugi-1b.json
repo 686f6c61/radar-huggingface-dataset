@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "LuxiaSL/kotodama-tsumugi-1b",
+  "slug": "luxiasl-kotodama-tsumugi-1b",
+  "author": "LuxiaSL",
+  "url": "https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b",
+  "created_at": "2026-10-26T03:35:21.000Z",
+  "updated_at": "2026-10-31T04:28:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "kotodama",
+    "attention-residuals",
+    "looped-transformer",
+    "muon",
+    "base-model",
+    "text-generation",
+    "en",
+    "arxiv:2603.15031",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1586,
+  "trending_score": 0,
+  "parameters": 1425696256,
+  "parameters_human": "1.43B",
+  "storage_bytes": 2852462546,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

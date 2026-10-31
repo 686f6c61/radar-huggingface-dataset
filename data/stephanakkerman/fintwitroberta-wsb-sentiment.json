@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "StephanAkkerman/FinTwitRoBERTa-wsb-sentiment",
+  "slug": "stephanakkerman-fintwitroberta-wsb-sentiment",
+  "author": "StephanAkkerman",
+  "url": "https://huggingface.co/StephanAkkerman/FinTwitRoBERTa-wsb-sentiment",
+  "created_at": "2026-10-31T17:32:01.000Z",
+  "updated_at": "2026-10-31T17:33:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "finance",
+    "reddit",
+    "wallstreetbets",
+    "sentiment-analysis",
+    "NLP",
+    "RoBERTa",
+    "FinTwitBERT",
+    "FinTwitRoBERTa",
+    "sentiment",
+    "financial-analysis",
+    "financial-sentiment-analysis",
+    "stocks",
+    "stock-market",
+    "crypto",
+    "cryptocurrency",
+    "en",
+    "dataset:moonscape95/WSBS",
+    "base_model:StephanAkkerman/FinTwitRoBERTa-sentiment",
+    "base_model:finetune:StephanAkkerman/FinTwitRoBERTa-sentiment",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 355362819,
+  "parameters_human": "355.4M",
+  "storage_bytes": 1421504845,
+  "storage_human": "1.4 GB",
+  "base_model": "StephanAkkerman/FinTwitRoBERTa-sentiment",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "WSBS all-agree test split (227 posts)",
+      "metric": "Macro F1",
+      "value": 0.886
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "WSBS all-agree test split (227 posts)",
+      "metric": "Accuracy",
+      "value": 0.894
+    }
+  ],
+  "sources": []
+}

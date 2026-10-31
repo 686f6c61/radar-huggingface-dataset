@@ -5,10 +5,10 @@
   "author": "staccs",
   "url": "https://huggingface.co/staccs/Qwen3.5-0.8B-lecore-assimilated",
   "created_at": "2026-08-16T05:01:19.000Z",
-  "updated_at": "2026-08-16T05:07:42.000Z",
+  "updated_at": "2026-10-29T16:23:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "image-text-to-text",
+  "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
     "en"
@@ -24,6 +24,7 @@
     "spectral-filtering",
     "compression",
     "qwen3.5",
+    "text-generation",
     "conversational",
     "en",
     "base_model:Qwen/Qwen3.5-0.8B",
@@ -33,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 113,
   "trending_score": 0,
   "parameters": 873438784,
   "parameters_human": "873.4M",

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "iamherebefore/Qwen2.5-Coder-3B-Instruct-Abliterated-GGUF",
+  "slug": "iamherebefore-qwen2-5-coder-3b-instruct-abliterated-gguf",
+  "author": "iamherebefore",
+  "url": "https://huggingface.co/iamherebefore/Qwen2.5-Coder-3B-Instruct-Abliterated-GGUF",
+  "created_at": "2026-10-25T06:55:00.000Z",
+  "updated_at": "2026-10-25T08:55:55.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:RichardErkhov/huihui-ai_-_Qwen2.5-Coder-3B-Instruct-abliterated-exl2",
+    "base_model:finetune:RichardErkhov/huihui-ai_-_Qwen2.5-Coder-3B-Instruct-abliterated-exl2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "RichardErkhov/huihui-ai_-_Qwen2.5-Coder-3B-Instruct-abliterated-exl2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

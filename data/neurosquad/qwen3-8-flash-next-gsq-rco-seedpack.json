@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "neurosquad/Qwen3.8-Flash-Next-GSQ-RCO-SEEDPACK",
+  "slug": "neurosquad-qwen3-8-flash-next-gsq-rco-seedpack",
+  "author": "neurosquad",
+  "url": "https://huggingface.co/neurosquad/Qwen3.8-Flash-Next-GSQ-RCO-SEEDPACK",
+  "created_at": "2026-10-26T09:42:48.000Z",
+  "updated_at": "2026-10-26T23:12:01.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "seedpack",
+    "gguf",
+    "lossless-compression",
+    "qwen3.8",
+    "qwen",
+    "gsq",
+    "rco",
+    "moe",
+    "image-text-to-text",
+    "en",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112749356118,
+  "storage_human": "112.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bartowski/xysera_zen-4b-GGUF",
+  "slug": "bartowski-xysera_zen-4b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/xysera_zen-4b-GGUF",
+  "created_at": "2026-10-28T21:46:19.000Z",
+  "updated_at": "2026-10-28T21:51:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "xysera",
+    "zen",
+    "causal-lm",
+    "reasoning",
+    "instruction-following",
+    "text-generation",
+    "en",
+    "base_model:xysera/zen-4b",
+    "base_model:quantized:xysera/zen-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1271,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 61492875552,
+  "storage_human": "61.5 GB",
+  "base_model": "xysera/zen-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

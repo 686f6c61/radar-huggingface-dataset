@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "DaniRey/saikei",
+  "slug": "danirey-saikei",
+  "author": "DaniRey",
+  "url": "https://huggingface.co/DaniRey/saikei",
+  "created_at": "2026-10-29T23:08:05.000Z",
+  "updated_at": "2026-10-30T23:19:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "saikei",
+    "document-assistant",
+    "local",
+    "image-text-to-text",
+    "es",
+    "base_model:PaddlePaddle/PaddleOCR-VL-1.5",
+    "base_model:quantized:PaddlePaddle/PaddleOCR-VL-1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1120,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 26944896261,
+  "storage_human": "26.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B, Qwen/Qwen3.8-27B, Qwen/Qwen3-Embedding-0.6B, PaddlePaddle/PaddleOCR-VL-1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
