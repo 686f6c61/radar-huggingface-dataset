@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "mchen04/Nemotron-3.5-Transcribe-30B-A4B-REAP64-mixed4bit-MLX",
+  "slug": "mchen04-nemotron-3-5-transcribe-30b-a4b-reap64-mixed4bit-mlx",
+  "author": "mchen04",
+  "url": "https://huggingface.co/mchen04/Nemotron-3.5-Transcribe-30B-A4B-REAP64-mixed4bit-MLX",
+  "created_at": "2026-11-01T09:25:46.000Z",
+  "updated_at": "2026-11-01T09:35:34.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nemo_speechlm",
+    "apple-silicon",
+    "nemotron",
+    "nemotron-h",
+    "moe",
+    "expert-pruning",
+    "reap",
+    "quantized",
+    "4-bit",
+    "speech-recognition",
+    "asr",
+    "24gb",
+    "custom_code",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "dataset:edinburghcstr/ami",
+    "dataset:facebook/voxpopuli",
+    "arxiv:2510.13999",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12087921313,
+  "storage_human": "12.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (Whisper English normalizer, greedy)",
+      "value": 3.39
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (Whisper English normalizer, greedy)",
+      "value": 5.31
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI IHM test (2,000-utterance seeded sample)",
+      "metric": "WER (Whisper English normalizer, greedy)",
+      "value": 11.01
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings-22 test (calls with odd sha256 of the call id)",
+      "metric": "WER (Whisper English normalizer, greedy)",
+      "value": 12.87
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "VoxPopuli English test (utterances up to 40 s)",
+      "metric": "WER (Whisper English normalizer, greedy)",
+      "value": 7.17
+    }
+  ],
+  "sources": []
+}

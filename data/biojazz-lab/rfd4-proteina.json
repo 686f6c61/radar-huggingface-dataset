@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "BioJazz-Lab/RFD4-Proteina",
+  "slug": "biojazz-lab-rfd4-proteina",
+  "author": "BioJazz-Lab",
+  "url": "https://huggingface.co/BioJazz-Lab/RFD4-Proteina",
+  "created_at": "2026-10-27T17:11:47.000Z",
+  "updated_at": "2026-10-27T17:11:48.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "rfd4-proteina",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rfd4-proteina",
+    "safetensors",
+    "rfd4_proteina",
+    "biology",
+    "protein-design",
+    "biomolecular-design",
+    "structure-generation",
+    "flow-matching",
+    "annotated-cif",
+    "en",
+    "dataset:nvidia/RFD4-Proteina",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 435622465,
+  "parameters_human": "435.6M",
+  "storage_bytes": 103966430095,
+  "storage_human": "104.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Addaoud/DeepPlant-AT-EAP",
+  "slug": "addaoud-deepplant-at-eap",
+  "author": "Addaoud",
+  "url": "https://huggingface.co/Addaoud/DeepPlant-AT-EAP",
+  "created_at": "2026-10-31T16:55:01.000Z",
+  "updated_at": "2026-10-31T16:55:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bioinformatics",
+    "model_hub_mixin",
+    "plant-genomics",
+    "pytorch_model_hub_mixin",
+    "regulatory-genomics",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 236879362,
+  "parameters_human": "236.9M",
+  "storage_bytes": 947534192,
+  "storage_human": "948 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

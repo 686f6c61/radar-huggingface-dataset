@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hzylol/KolaA",
+  "slug": "hzylol-kolaa",
+  "author": "hzylol",
+  "url": "https://huggingface.co/hzylol/KolaA",
+  "created_at": "2026-10-25T20:17:21.000Z",
+  "updated_at": "2026-10-25T20:17:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116559122,
+  "storage_human": "117 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

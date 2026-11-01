@@ -5,7 +5,7 @@
   "author": "Panga-Azazia",
   "url": "https://huggingface.co/Panga-Azazia/Wuro-Mali-Tanle-v0",
   "created_at": "2026-09-14T12:37:47.000Z",
-  "updated_at": "2026-10-07T20:30:01.000Z",
+  "updated_at": "2026-10-25T20:40:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 3300928512,
   "parameters_human": "3.30B",

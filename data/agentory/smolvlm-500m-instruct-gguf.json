@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "agentory/SmolVLM-500M-Instruct-GGUF",
+  "slug": "agentory-smolvlm-500m-instruct-gguf",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/SmolVLM-500M-Instruct-GGUF",
+  "created_at": "2026-10-31T18:46:39.000Z",
+  "updated_at": "2026-10-31T18:46:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:HuggingFaceM4/the_cauldron",
+    "dataset:HuggingFaceM4/Docmatix",
+    "base_model:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 87,
+  "trending_score": 0,
+  "parameters": 409252800,
+  "parameters_human": "409.3M",
+  "storage_bytes": 4195480320,
+  "storage_human": "4.2 GB",
+  "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "viknesh100/Apollo-M",
+  "slug": "viknesh100-apollo-m",
+  "author": "viknesh100",
+  "url": "https://huggingface.co/viknesh100/Apollo-M",
+  "created_at": "2026-10-25T16:44:44.000Z",
+  "updated_at": "2026-10-26T06:17:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "midi",
+    "melody-generation",
+    "symbolic-music",
+    "arxiv:2406.02255",
+    "arxiv:2008.07142",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 27451904,
+  "parameters_human": "27.5M",
+  "storage_bytes": 3745299454,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "arlenecc/nomic-embed-text-v1.5-mlx-int8",
+  "slug": "arlenecc-nomic-embed-text-v1-5-mlx-int8",
+  "author": "arlenecc",
+  "url": "https://huggingface.co/arlenecc/nomic-embed-text-v1.5-mlx-int8",
+  "created_at": "2026-10-28T18:06:16.000Z",
+  "updated_at": "2026-10-29T04:45:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nomic_bert",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 136731648,
+  "parameters_human": "136.7M",
+  "storage_bytes": 145337839,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

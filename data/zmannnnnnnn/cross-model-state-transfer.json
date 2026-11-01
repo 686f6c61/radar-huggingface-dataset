@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "zMANNNNNNNN/cross-model-state-transfer",
+  "slug": "zmannnnnnnn-cross-model-state-transfer",
+  "author": "zMANNNNNNNN",
+  "url": "https://huggingface.co/zMANNNNNNNN/cross-model-state-transfer",
+  "created_at": "2026-10-31T04:28:50.000Z",
+  "updated_at": "2026-10-31T04:34:42.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "interpretability",
+    "activation-transfer",
+    "research",
+    "base_model:mlx-community/Qwen2.5-3B-Instruct-4bit",
+    "base_model:finetune:mlx-community/Qwen2.5-3B-Instruct-4bit",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16428827,
+  "storage_human": "16 MB",
+  "base_model": "mlx-community/Qwen2.5-3B-Instruct-4bit, mlx-community/gpt-oss-20b-MXFP4-Q8",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

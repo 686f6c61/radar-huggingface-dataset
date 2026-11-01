@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointnet.modelnet40.jiawei-ren",
+  "slug": "torch-pointcloud-pointnet-modelnet40-jiawei-ren",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointnet.modelnet40.jiawei-ren",
+  "created_at": "2026-10-30T20:49:12.000Z",
+  "updated_at": "2026-10-30T20:49:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointnet",
+    "classification",
+    "dataset:modelnet40",
+    "arxiv:1612.00593",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 3483377,
+  "parameters_human": "3.5M",
+  "storage_bytes": 13945324,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "OA",
+      "value": 90.68
+    },
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "mAcc",
+      "value": 86.54
+    }
+  ],
+  "sources": []
+}

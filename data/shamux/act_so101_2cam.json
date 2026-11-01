@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "shamux/act_so101_2cam",
+  "slug": "shamux-act_so101_2cam",
+  "author": "shamux",
+  "url": "https://huggingface.co/shamux/act_so101_2cam",
+  "created_at": "2026-10-30T06:58:46.000Z",
+  "updated_at": "2026-10-30T06:59:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:shamux/so101_cube_2cam",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

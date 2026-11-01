@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "matthieulel/beit-base-patch16-224-pt22k-galaxy10-decals-head-v2",
+  "slug": "matthieulel-beit-base-patch16-224-pt22k-galaxy10-decals-head-v2",
+  "author": "matthieulel",
+  "url": "https://huggingface.co/matthieulel/beit-base-patch16-224-pt22k-galaxy10-decals-head-v2",
+  "created_at": "2026-10-30T14:51:54.000Z",
+  "updated_at": "2026-10-30T14:52:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "beit",
+    "image-classification",
+    "vision",
+    "astronomy",
+    "galaxy-morphology",
+    "galaxy10-decals",
+    "head-only-fine-tuning",
+    "dataset:matthieulel/galaxy10_decals",
+    "base_model:microsoft/beit-base-patch16-224-pt22k",
+    "base_model:finetune:microsoft/beit-base-patch16-224-pt22k",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 85673818,
+  "parameters_human": "85.7M",
+  "storage_bytes": 342719768,
+  "storage_human": "343 MB",
+  "base_model": "microsoft/beit-base-patch16-224-pt22k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Accuracy (seed 42, selected epoch)",
+      "value": 0.2835
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Weighted F1 (seed 42, selected epoch)",
+      "value": 0.2417
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stephanie Hall - Head of Projects & Value Realisation - LinkedIn",
+      "url": "https://au.linkedin.com/in/stephaniehall28",
+      "snippet": "Stephanie is a pragmatic and results-driven leader with a commitment to continuous improvement and finding efficiencies. She takes …"
+    }
+  ]
+}

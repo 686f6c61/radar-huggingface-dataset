@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "myllmbox/bge-m3-GGUF",
+  "slug": "myllmbox-bge-m3-gguf",
+  "author": "myllmbox",
+  "url": "https://huggingface.co/myllmbox/bge-m3-GGUF",
+  "created_at": "2026-11-01T10:55:17.000Z",
+  "updated_at": "2026-11-01T10:55:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "llama.cpp",
+    "bge-m3",
+    "feature-extraction",
+    "base_model:BAAI/bge-m3",
+    "base_model:quantized:BAAI/bge-m3",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 566703104,
+  "parameters_human": "566.7M",
+  "storage_bytes": 1157671200,
+  "storage_human": "1.2 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

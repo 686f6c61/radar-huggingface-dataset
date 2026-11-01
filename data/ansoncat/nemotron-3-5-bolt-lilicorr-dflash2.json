@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ansoncat/Nemotron-3.5-Bolt-LiLiCorr-DFlash2",
+  "slug": "ansoncat-nemotron-3-5-bolt-lilicorr-dflash2",
+  "author": "ansoncat",
+  "url": "https://huggingface.co/ansoncat/Nemotron-3.5-Bolt-LiLiCorr-DFlash2",
+  "created_at": "2026-10-30T01:38:11.000Z",
+  "updated_at": "2026-10-30T01:40:32.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "dflash2",
+    "lilicorr",
+    "nemotron",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 1144286122,
+  "parameters_human": "1.14B",
+  "storage_bytes": 2288586972,
+  "storage_human": "2.3 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

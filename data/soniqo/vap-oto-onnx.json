@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "soniqo/VAP-OTO-ONNX",
+  "slug": "soniqo-vap-oto-onnx",
+  "author": "soniqo",
+  "url": "https://huggingface.co/soniqo/VAP-OTO-ONNX",
+  "created_at": "2026-10-30T22:56:07.000Z",
+  "updated_at": "2026-10-31T10:13:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "vap-oto-onnx",
+    "voice-activity-projection",
+    "turn-taking",
+    "stereo",
+    "audio",
+    "voice-activity-detection",
+    "en",
+    "base_model:viks66/VAP_checkpoints",
+    "base_model:quantized:viks66/VAP_checkpoints",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39564833,
+  "storage_human": "40 MB",
+  "base_model": "viks66/VAP_checkpoints",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

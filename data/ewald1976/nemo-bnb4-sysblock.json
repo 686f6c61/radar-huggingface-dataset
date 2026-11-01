@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ewald1976/nemo-bnb4-sysblock",
+  "slug": "ewald1976-nemo-bnb4-sysblock",
+  "author": "ewald1976",
+  "url": "https://huggingface.co/ewald1976/nemo-bnb4-sysblock",
+  "created_at": "2026-10-31T15:31:39.000Z",
+  "updated_at": "2026-10-31T15:32:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 8343278322,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

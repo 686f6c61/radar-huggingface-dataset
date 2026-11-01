@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "meoo225/vimmsd-phobert-text-aux-2",
+  "slug": "meoo225-vimmsd-phobert-text-aux-2",
+  "author": "meoo225",
+  "url": "https://huggingface.co/meoo225/vimmsd-phobert-text-aux-2",
+  "created_at": "2026-11-01T06:47:53.000Z",
+  "updated_at": "2026-11-01T06:54:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 541667049,
+  "storage_human": "542 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

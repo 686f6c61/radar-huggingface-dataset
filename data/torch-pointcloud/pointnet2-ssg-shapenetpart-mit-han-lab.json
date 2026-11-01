@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointnet2-ssg.shapenetpart.mit-han-lab",
+  "slug": "torch-pointcloud-pointnet2-ssg-shapenetpart-mit-han-lab",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointnet2-ssg.shapenetpart.mit-han-lab",
+  "created_at": "2026-10-30T20:54:52.000Z",
+  "updated_at": "2026-10-30T20:54:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointnet2",
+    "segmentation",
+    "dataset:shapenetpart",
+    "arxiv:1706.02413",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 1417138,
+  "parameters_human": "1.4M",
+  "storage_bytes": 5682216,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ShapeNetPart",
+      "metric": "ins_mIoU",
+      "value": 85.04
+    },
+    {
+      "task": null,
+      "dataset": "ShapeNetPart",
+      "metric": "cls_mIoU",
+      "value": 82.64
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "freelawproject/caselaw-block-tagger-wordlevel",
+  "slug": "freelawproject-caselaw-block-tagger-wordlevel",
+  "author": "freelawproject",
+  "url": "https://huggingface.co/freelawproject/caselaw-block-tagger-wordlevel",
+  "created_at": "2026-10-31T01:15:30.000Z",
+  "updated_at": "2026-10-31T01:28:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "legal",
+    "case-law",
+    "document-structure",
+    "en",
+    "base_model:freelawproject/caselaw-block-tagger",
+    "base_model:finetune:freelawproject/caselaw-block-tagger",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 395856921,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583445940,
+  "storage_human": "1.6 GB",
+  "base_model": "freelawproject/caselaw-block-tagger",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "arnabwithab/ai-therapist-qwen3-4b-dpo-lora",
+  "slug": "arnabwithab-ai-therapist-qwen3-4b-dpo-lora",
+  "author": "arnabwithab",
+  "url": "https://huggingface.co/arnabwithab/ai-therapist-qwen3-4b-dpo-lora",
+  "created_at": "2026-10-26T16:44:29.000Z",
+  "updated_at": "2026-10-31T08:05:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "counselling",
+    "mental-health",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Psychotherapy-LLM/PsyCoPref",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610542,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

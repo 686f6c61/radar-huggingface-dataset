@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/recon.scanobjectnn-objonly.zekun-qi",
+  "slug": "torch-pointcloud-recon-scanobjectnn-objonly-zekun-qi",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/recon.scanobjectnn-objonly.zekun-qi",
+  "created_at": "2026-10-30T20:40:53.000Z",
+  "updated_at": "2026-10-30T20:40:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "recon",
+    "classification",
+    "dataset:scanobjectnn",
+    "arxiv:2302.02318",
+    "base_model:torch-pointcloud/recon.pretrain.zekun-qi",
+    "base_model:finetune:torch-pointcloud/recon.pretrain.zekun-qi",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 43573519,
+  "parameters_human": "43.6M",
+  "storage_bytes": 174327188,
+  "storage_human": "174 MB",
+  "base_model": "torch-pointcloud/recon.pretrain.zekun-qi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (OBJ_ONLY)",
+      "metric": "OA",
+      "value": 93.63
+    },
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (OBJ_ONLY)",
+      "metric": "mAcc",
+      "value": 93.74
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/HOI-R1_Qwen3.5-4B-SFT-GGUF",
+  "slug": "mradermacher-hoi-r1_qwen3-5-4b-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/HOI-R1_Qwen3.5-4B-SFT-GGUF",
+  "created_at": "2026-10-31T11:52:17.000Z",
+  "updated_at": "2026-10-31T12:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "human-object-interaction",
+    "hoi-detection",
+    "sft",
+    "qwen3.5",
+    "en",
+    "dataset:thxplz/HOI-R1_HICO-DET_dataset",
+    "base_model:thxplz/HOI-R1_Qwen3.5-4B-SFT",
+    "base_model:quantized:thxplz/HOI-R1_Qwen3.5-4B-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 491,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 45368968576,
+  "storage_human": "45.4 GB",
+  "base_model": "thxplz/HOI-R1_Qwen3.5-4B-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

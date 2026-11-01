@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "semgram/decider-75M",
+  "slug": "semgram-decider-75m",
+  "author": "semgram",
+  "url": "https://huggingface.co/semgram/decider-75M",
+  "created_at": "2026-10-31T20:09:51.000Z",
+  "updated_at": "2026-10-31T20:25:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "typed-decisions",
+    "decision-model",
+    "text-classification",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:finetune:jhu-clsp/mmBERT-small",
+    "license:cc-by-4.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 74814407,
+  "parameters_human": "74.8M",
+  "storage_bytes": 313504058,
+  "storage_human": "314 MB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

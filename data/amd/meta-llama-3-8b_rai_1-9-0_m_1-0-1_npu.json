@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "amd/Meta-Llama-3-8B_rai_1.9.0_m_1.0.1_npu",
+  "slug": "amd-meta-llama-3-8b_rai_1-9-0_m_1-0-1_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Meta-Llama-3-8B_rai_1.9.0_m_1.0.1_npu",
+  "created_at": "2026-10-30T18:36:48.000Z",
+  "updated_at": "2026-10-30T18:37:58.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "amd",
+    "ryzenai",
+    "m_1.0.1_npu",
+    "text-generation",
+    "en",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5376752140,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Mervecaliskan/japandi-interior-lora",
+  "slug": "mervecaliskan-japandi-interior-lora",
+  "author": "Mervecaliskan",
+  "url": "https://huggingface.co/Mervecaliskan/japandi-interior-lora",
+  "created_at": "2026-10-30T08:17:25.000Z",
+  "updated_at": "2026-10-30T08:23:13.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "stable-diffusion",
+    "text-to-image",
+    "interior-design",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6414992,
+  "storage_human": "6 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

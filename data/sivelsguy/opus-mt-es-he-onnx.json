@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "sivelsguy/opus-mt-es-he-onnx",
+  "slug": "sivelsguy-opus-mt-es-he-onnx",
+  "author": "sivelsguy",
+  "url": "https://huggingface.co/sivelsguy/opus-mt-es-he-onnx",
+  "created_at": "2026-10-31T17:18:30.000Z",
+  "updated_at": "2026-10-31T17:18:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [
+    "es",
+    "he"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "es",
+    "he",
+    "base_model:Helsinki-NLP/opus-mt-es-he",
+    "base_model:quantized:Helsinki-NLP/opus-mt-es-he",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144672469,
+  "storage_human": "145 MB",
+  "base_model": "Helsinki-NLP/opus-mt-es-he",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

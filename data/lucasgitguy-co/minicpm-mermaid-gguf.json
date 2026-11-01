@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Lucasgitguy-co/minicpm-mermaid-gguf",
+  "slug": "lucasgitguy-co-minicpm-mermaid-gguf",
+  "author": "Lucasgitguy-co",
+  "url": "https://huggingface.co/Lucasgitguy-co/minicpm-mermaid-gguf",
+  "created_at": "2026-10-30T07:34:02.000Z",
+  "updated_at": "2026-11-01T10:55:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "vision-language-model",
+    "mermaid",
+    "minicpm-v",
+    "image-text-to-text",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 158,
+  "trending_score": 0,
+  "parameters": 1006209856,
+  "parameters_human": "1.01B",
+  "storage_bytes": 1780767008,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

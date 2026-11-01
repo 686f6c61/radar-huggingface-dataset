@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Roadstoning/qwen3-4b-clinical-scribe-lora",
+  "slug": "roadstoning-qwen3-4b-clinical-scribe-lora",
+  "author": "Roadstoning",
+  "url": "https://huggingface.co/Roadstoning/qwen3-4b-clinical-scribe-lora",
+  "created_at": "2026-11-01T10:05:03.000Z",
+  "updated_at": "2026-11-01T10:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 539972906,
+  "storage_human": "540 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

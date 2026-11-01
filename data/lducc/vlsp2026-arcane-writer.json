@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "lducc/vlsp2026-arcane-writer",
+  "slug": "lducc-vlsp2026-arcane-writer",
+  "author": "lducc",
+  "url": "https://huggingface.co/lducc/vlsp2026-arcane-writer",
+  "created_at": "2026-10-27T05:16:08.000Z",
+  "updated_at": "2026-10-27T05:16:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "vlsp2026",
+    "numerical-reasoning",
+    "vi",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 389654672,
+  "storage_human": "390 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

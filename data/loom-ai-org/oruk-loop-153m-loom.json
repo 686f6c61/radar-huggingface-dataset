@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/oruk-loop-153m-loom",
+  "slug": "loom-ai-org-oruk-loop-153m-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/oruk-loop-153m-loom",
+  "created_at": "2026-10-31T01:07:01.000Z",
+  "updated_at": "2026-10-31T01:24:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "loom-py-rt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "loom",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:oruk/oruk-loop-153M",
+    "base_model:quantized:oruk/oruk-loop-153M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 200082845,
+  "parameters_human": "200.1M",
+  "storage_bytes": 1045063424,
+  "storage_human": "1.0 GB",
+  "base_model": "oruk/oruk-loop-153M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …Read more"
+    },
+    {
+      "title": "Log into Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Télécharger Loom (gratuit) Windows, iOS, Mac, Web, Android - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche435849-loom-2.html",
+      "snippet": "3 days ago · Original et multiplateforme, Loom est un logiciel macOS bien pratique pour réaliser des captures d'écran vidéo avec …"
+    }
+  ]
+}

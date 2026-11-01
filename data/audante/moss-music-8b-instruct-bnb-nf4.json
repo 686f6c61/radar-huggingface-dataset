@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Audante/MOSS-Music-8B-Instruct-bnb-nf4",
+  "slug": "audante-moss-music-8b-instruct-bnb-nf4",
+  "author": "Audante",
+  "url": "https://huggingface.co/Audante/MOSS-Music-8B-Instruct-bnb-nf4",
+  "created_at": "2026-10-29T16:05:08.000Z",
+  "updated_at": "2026-10-29T21:38:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moss_music",
+    "bitsandbytes",
+    "custom_code",
+    "base_model:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 9052463488,
+  "parameters_human": "9.05B",
+  "storage_bytes": 8120630996,
+  "storage_human": "8.1 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Music-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

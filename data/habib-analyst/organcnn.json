@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "habib-analyst/organcnn",
+  "slug": "habib-analyst-organcnn",
+  "author": "habib-analyst",
+  "url": "https://huggingface.co/habib-analyst/organcnn",
+  "created_at": "2026-10-29T17:16:10.000Z",
+  "updated_at": "2026-10-29T17:16:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "organcnn",
+    "medical-imaging",
+    "medmnist",
+    "organmnist3d",
+    "3d-cnn",
+    "pytorch",
+    "image-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 105627,
+  "parameters_human": "105627",
+  "storage_bytes": 12713076,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

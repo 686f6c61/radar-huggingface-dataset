@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "bitwisemind/emotion_lora_adapter_v1",
+  "slug": "bitwisemind-emotion_lora_adapter_v1",
+  "author": "bitwisemind",
+  "url": "https://huggingface.co/bitwisemind/emotion_lora_adapter_v1",
+  "created_at": "2026-11-01T06:07:47.000Z",
+  "updated_at": "2026-11-01T06:08:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205066079,
+  "storage_human": "205 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

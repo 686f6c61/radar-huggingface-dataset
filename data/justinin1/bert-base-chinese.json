@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "justinin1/bert-base-chinese",
+  "slug": "justinin1-bert-base-chinese",
+  "author": "justinin1",
+  "url": "https://huggingface.co/justinin1/bert-base-chinese",
+  "created_at": "2026-10-27T14:08:14.000Z",
+  "updated_at": "2026-10-27T14:08:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "bert",
+    "zh",
+    "arxiv:1810.04805",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 102882442,
+  "parameters_human": "102.9M",
+  "storage_bytes": 1710608828,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

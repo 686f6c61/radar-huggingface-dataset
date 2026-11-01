@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Hadidiz9/VoiceTut-TTS",
+  "slug": "hadidiz9-voicetut-tts",
+  "author": "Hadidiz9",
+  "url": "https://huggingface.co/Hadidiz9/VoiceTut-TTS",
+  "created_at": "2026-11-01T02:03:28.000Z",
+  "updated_at": "2026-11-01T02:03:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "omnivoice",
+  "languages": [
+    "ar",
+    "arz",
+    "en"
+  ],
+  "tags": [
+    "omnivoice",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "egyptian-arabic",
+    "arabic",
+    "code-switching",
+    "voice-cloning",
+    "ar",
+    "arz",
+    "en",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:finetune:k2-fsa/OmniVoice",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 2471399494,
+  "storage_human": "2.5 GB",
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

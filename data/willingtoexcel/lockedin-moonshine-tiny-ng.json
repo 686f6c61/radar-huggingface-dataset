@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "willingtoexcel/lockedin-moonshine-tiny-ng",
+  "slug": "willingtoexcel-lockedin-moonshine-tiny-ng",
+  "author": "willingtoexcel",
+  "url": "https://huggingface.co/willingtoexcel/lockedin-moonshine-tiny-ng",
+  "created_at": "2026-10-30T17:56:02.000Z",
+  "updated_at": "2026-10-31T20:28:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "moonshine",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237949484,
+  "storage_human": "238 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

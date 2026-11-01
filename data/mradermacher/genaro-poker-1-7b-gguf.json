@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Genaro-poker-1.7B-GGUF",
+  "slug": "mradermacher-genaro-poker-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Genaro-poker-1.7B-GGUF",
+  "created_at": "2026-11-01T11:42:56.000Z",
+  "updated_at": "2026-11-01T11:54:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "poker",
+    "game-ai",
+    "on-device",
+    "llama.cpp",
+    "pokersi",
+    "json",
+    "en",
+    "dataset:predbrad/genaro-poker-sft",
+    "base_model:predbrad/Genaro-poker-1.7B",
+    "base_model:quantized:predbrad/Genaro-poker-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959974656,
+  "storage_human": "16.0 GB",
+  "base_model": "predbrad/Genaro-poker-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

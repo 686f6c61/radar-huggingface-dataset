@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "strifero/tda-124m-A",
+  "slug": "strifero-tda-124m-a",
+  "author": "strifero",
+  "url": "https://huggingface.co/strifero/tda-124m-A",
+  "created_at": "2026-10-27T00:47:40.000Z",
+  "updated_at": "2026-10-27T00:48:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "safetensors",
+    "training-data-attribution",
+    "interpretability",
+    "from-scratch",
+    "elroy",
+    "en",
+    "code",
+    "dataset:strifero/attribution-groundtruth",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 110119680,
+  "parameters_human": "110.1M",
+  "storage_bytes": 4404869920,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

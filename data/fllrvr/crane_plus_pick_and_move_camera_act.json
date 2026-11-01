@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "fllrvr/crane_plus_pick_and_move_camera_act",
+  "slug": "fllrvr-crane_plus_pick_and_move_camera_act",
+  "author": "fllrvr",
+  "url": "https://huggingface.co/fllrvr/crane_plus_pick_and_move_camera_act",
+  "created_at": "2026-11-01T09:27:31.000Z",
+  "updated_at": "2026-11-01T09:37:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51629225,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206543292,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

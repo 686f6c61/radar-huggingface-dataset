@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "prince4332/AfriE5-twi-query-encoder-v3",
+  "slug": "prince4332-afrie5-twi-query-encoder-v3",
+  "author": "prince4332",
+  "url": "https://huggingface.co/prince4332/AfriE5-twi-query-encoder-v3",
+  "created_at": "2026-10-25T18:09:42.000Z",
+  "updated_at": "2026-10-25T18:09:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [
+    "tw",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "twi",
+    "akan",
+    "cross-lingual-retrieval",
+    "query-encoder",
+    "knowledge-distillation",
+    "tw",
+    "en",
+    "base_model:McGill-NLP/AfriE5-Large-instruct",
+    "base_model:finetune:McGill-NLP/AfriE5-Large-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 559890432,
+  "parameters_human": "559.9M",
+  "storage_bytes": 1136909059,
+  "storage_human": "1.1 GB",
+  "base_model": "McGill-NLP/AfriE5-Large-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

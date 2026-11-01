@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "whcl412/FinchAI-Rune1-Preview-v2-f16",
+  "slug": "whcl412-finchai-rune1-preview-v2-f16",
+  "author": "whcl412",
+  "url": "https://huggingface.co/whcl412/FinchAI-Rune1-Preview-v2-f16",
+  "created_at": "2026-11-01T02:11:15.000Z",
+  "updated_at": "2026-11-01T03:08:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv4_7",
+    "image-text-to-text",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "multimodal",
+    "chinese",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:openbmb/MiniCPM-V-4.7-1B",
+    "base_model:finetune:openbmb/MiniCPM-V-4.7-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 1554476272,
+  "parameters_human": "1.55B",
+  "storage_bytes": 3129046961,
+  "storage_human": "3.1 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.fr/",
+      "snippet": "Effectuez des recherches dans l'index de livres complets le plus fourni au monde. Votre bibliothèque"
+    }
+  ]
+}

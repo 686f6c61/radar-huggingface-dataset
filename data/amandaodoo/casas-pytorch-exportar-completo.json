@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "amandaodoo/casas-pytorch-exportar-completo",
+  "slug": "amandaodoo-casas-pytorch-exportar-completo",
+  "author": "amandaodoo",
+  "url": "https://huggingface.co/amandaodoo/casas-pytorch-exportar-completo",
+  "created_at": "2026-10-30T18:28:52.000Z",
+  "updated_at": "2026-10-30T18:48:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "pytorch",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "pytorch",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "pytorch-full-model",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2781,
+  "storage_human": "2781 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

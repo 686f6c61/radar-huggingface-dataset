@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Wouze/read-only-reranker-probes",
+  "slug": "wouze-read-only-reranker-probes",
+  "author": "Wouze",
+  "url": "https://huggingface.co/Wouze/read-only-reranker-probes",
+  "created_at": "2026-10-30T20:40:58.000Z",
+  "updated_at": "2026-10-30T21:24:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reranker",
+    "early-exit",
+    "base_model:Qwen/Qwen3-Reranker-4B",
+    "base_model:finetune:Qwen/Qwen3-Reranker-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121637284,
+  "storage_human": "122 MB",
+  "base_model": "Qwen/Qwen3-Reranker-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trouvez et réservez des vols pas chers – Google Flights",
+      "url": "https://www.google.fr/travel/",
+      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …Read more"
+    },
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.fr/",
+      "snippet": "Effectuez des recherches dans l'index de livres complets le plus fourni au monde. Votre bibliothèque"
+    }
+  ]
+}

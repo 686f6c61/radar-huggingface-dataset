@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Lucasgitguy-co/lfm3-vl-2b-heretic",
+  "slug": "lucasgitguy-co-lfm3-vl-2b-heretic",
+  "author": "Lucasgitguy-co",
+  "url": "https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic",
+  "created_at": "2026-10-30T07:06:06.000Z",
+  "updated_at": "2026-11-01T10:54:55.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3_vl",
+    "image-text-to-text",
+    "vision-language-model",
+    "heretic",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:finetune:LiquidAI/LFM3-VL-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 1918181888,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3854326178,
+  "storage_human": "3.9 GB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

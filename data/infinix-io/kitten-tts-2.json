@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Infinix-io/kitten-tts-2",
+  "slug": "infinix-io-kitten-tts-2",
+  "author": "Infinix-io",
+  "url": "https://huggingface.co/Infinix-io/kitten-tts-2",
+  "created_at": "2026-10-31T03:52:16.000Z",
+  "updated_at": "2026-10-31T03:52:17.000Z",
+  "license": "stellon-labs-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 141,
+  "trending_score": 0,
+  "parameters": 1733487616,
+  "parameters_human": "1.73B",
+  "storage_bytes": 8229465541,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

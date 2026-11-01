@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "wayzer2321/Luna-Gemma-12B-Merged",
+  "slug": "wayzer2321-luna-gemma-12b-merged",
+  "author": "wayzer2321",
+  "url": "https://huggingface.co/wayzer2321/Luna-Gemma-12B-Merged",
+  "created_at": "2026-10-31T18:12:19.000Z",
+  "updated_at": "2026-10-31T19:16:23.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "luna",
+    "fine-tune",
+    "merged",
+    "text-generation",
+    "conversational",
+    "ru",
+    "en",
+    "base_model:unsloth/gemma-4-12b-it",
+    "base_model:finetune:unsloth/gemma-4-12b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 306,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951720266,
+  "storage_human": "24.0 GB",
+  "base_model": "unsloth/gemma-4-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

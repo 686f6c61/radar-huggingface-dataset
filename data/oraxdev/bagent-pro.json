@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OraXDev/bagent-pro",
+  "slug": "oraxdev-bagent-pro",
+  "author": "OraXDev",
+  "url": "https://huggingface.co/OraXDev/bagent-pro",
+  "created_at": "2026-10-29T00:20:27.000Z",
+  "updated_at": "2026-10-29T00:41:20.000Z",
+  "license": "cdla-permissive-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "en",
+    "es",
+    "license:cdla-permissive-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

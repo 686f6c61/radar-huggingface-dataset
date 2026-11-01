@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/nobidog-1b-0.2-GGUF",
+  "slug": "mradermacher-nobidog-1b-0-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nobidog-1b-0.2-GGUF",
+  "created_at": "2026-10-31T12:13:21.000Z",
+  "updated_at": "2026-10-31T12:20:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "japanese",
+    "quantum-computing",
+    "blueqat",
+    "ja",
+    "en",
+    "zh",
+    "base_model:blueqat/nobidog-1b-0.2",
+    "base_model:quantized:blueqat/nobidog-1b-0.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 240,
+  "trending_score": 0,
+  "parameters": 1179224064,
+  "parameters_human": "1.18B",
+  "storage_bytes": 10872138368,
+  "storage_human": "10.9 GB",
+  "base_model": "blueqat/nobidog-1b-0.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

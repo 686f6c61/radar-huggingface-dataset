@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jwjesse/no-e",
+  "slug": "jwjesse-no-e",
+  "author": "jwjesse",
+  "url": "https://huggingface.co/jwjesse/no-e",
+  "created_at": "2026-10-31T22:56:33.000Z",
+  "updated_at": "2026-10-31T23:03:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "lipogram",
+    "constrained-generation",
+    "qlora",
+    "conversational",
+    "en",
+    "dataset:jwjesse/slm-lipogram",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 161,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608532,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

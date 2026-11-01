@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "OfflineBase/Glimmer-30B-2026-Knowledge-LoRA",
+  "slug": "offlinebase-glimmer-30b-2026-knowledge-lora",
+  "author": "OfflineBase",
+  "url": "https://huggingface.co/OfflineBase/Glimmer-30B-2026-Knowledge-LoRA",
+  "created_at": "2026-11-01T01:52:08.000Z",
+  "updated_at": "2026-11-01T03:47:36.000Z",
+  "license": "apache-2.0-and-muse-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "knowledge-update",
+    "2026-news",
+    "built-with-muse-spark-open",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:OfflineBase/Glimmer-30B-2026-Knowledge-Data",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:adapter:meta-models/Muse-Glimmer-30B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1710211200,
+  "storage_human": "1.7 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Advertising Agencies in Orange County | 2026 - DesignRush",
+      "url": "https://www.designrush.com/agency/ad-agencies/california/orange-county",
+      "snippet": "2 days ago · We outlined the best advertising agencies in Orange Country that can help you create effective ad campaigns that drive …"
+    },
+    {
+      "title": "The Best Advertising Companies in Orange County - Oct 2026 - The …",
+      "url": "https://themanifest.com/advertising/agencies/orange-county",
+      "snippet": "Looking for a top advertising agency in Orange County? Businesses looking to develop a relationship with media outlets should …"
+    }
+  ]
+}

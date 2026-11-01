@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "jmrenouard/microllm-multilingual-minilm-int8",
+  "slug": "jmrenouard-microllm-multilingual-minilm-int8",
+  "author": "jmrenouard",
+  "url": "https://huggingface.co/jmrenouard/microllm-multilingual-minilm-int8",
+  "created_at": "2026-10-30T23:03:22.000Z",
+  "updated_at": "2026-10-30T23:03:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "de"
+  ],
+  "tags": [
+    "minilm-l6",
+    "microllm",
+    "onnx",
+    "int8",
+    "multilingual",
+    "minilm",
+    "zero-shot-classification",
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "de",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15248,
+  "storage_human": "15248 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

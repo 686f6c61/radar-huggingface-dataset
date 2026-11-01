@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bartowski/abacusai_Smaug-Humanizer-GGUF",
+  "slug": "bartowski-abacusai_smaug-humanizer-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/abacusai_Smaug-Humanizer-GGUF",
+  "created_at": "2026-10-31T16:37:00.000Z",
+  "updated_at": "2026-10-31T16:52:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "smaug",
+    "abacusai",
+    "humanizer",
+    "gemma4",
+    "grpo",
+    "any-to-any",
+    "en",
+    "base_model:abacusai/Smaug-Humanizer",
+    "base_model:quantized:abacusai/Smaug-Humanizer",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2223,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 182176805632,
+  "storage_human": "182.2 GB",
+  "base_model": "abacusai/Smaug-Humanizer",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

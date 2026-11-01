@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Jgmorenof/plots-distilbert-base-multilingual-cased",
+  "slug": "jgmorenof-plots-distilbert-base-multilingual-cased",
+  "author": "Jgmorenof",
+  "url": "https://huggingface.co/Jgmorenof/plots-distilbert-base-multilingual-cased",
+  "created_at": "2026-11-01T07:42:34.000Z",
+  "updated_at": "2026-11-01T07:43:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "distilbert",
+    "sentence-similarity",
+    "narrative-similarity",
+    "cross-lingual-retrieval",
+    "tip-of-the-tongue",
+    "multilingual",
+    "dataset:Jgmorenof/PLOTS",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134734080,
+  "parameters_human": "134.7M",
+  "storage_bytes": 538947416,
+  "storage_human": "539 MB",
+  "base_model": "distilbert/distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

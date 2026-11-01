@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Siya-34/dentalvision-densenet121",
+  "slug": "siya-34-dentalvision-densenet121",
+  "author": "Siya-34",
+  "url": "https://huggingface.co/Siya-34/dentalvision-densenet121",
+  "created_at": "2026-10-31T09:26:57.000Z",
+  "updated_at": "2026-10-31T09:26:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "medical-imaging",
+    "dental",
+    "opg",
+    "multi-label",
+    "grad-cam",
+    "research-prototype",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 7043654,
+  "parameters_human": "7.0M",
+  "storage_bytes": 28258808,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

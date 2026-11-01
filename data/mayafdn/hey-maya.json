@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "MayaFdn/hey-maya",
+  "slug": "mayafdn-hey-maya",
+  "author": "MayaFdn",
+  "url": "https://huggingface.co/MayaFdn/hey-maya",
+  "created_at": "2026-10-27T15:18:58.000Z",
+  "updated_at": "2026-10-27T15:19:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tflite",
+    "wake-word",
+    "keyword-spotting",
+    "microwakeword",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62304,
+  "storage_human": "62304 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

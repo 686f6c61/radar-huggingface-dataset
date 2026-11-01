@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pcp-mae.modelnet40.xiangdong-zhang",
+  "slug": "torch-pointcloud-pcp-mae-modelnet40-xiangdong-zhang",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pcp-mae.modelnet40.xiangdong-zhang",
+  "created_at": "2026-10-30T20:42:18.000Z",
+  "updated_at": "2026-10-30T20:42:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pcp-mae",
+    "classification",
+    "dataset:modelnet40",
+    "arxiv:2408.08753",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 22347688,
+  "parameters_human": "22.3M",
+  "storage_bytes": 89408000,
+  "storage_human": "89 MB",
+  "base_model": "torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "OA",
+      "value": 93.64
+    },
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "mAcc",
+      "value": 90.6
+    }
+  ],
+  "sources": []
+}

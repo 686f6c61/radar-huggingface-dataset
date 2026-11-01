@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/voxel-rcnn.kitti-car.openpcdet",
+  "slug": "torch-pointcloud-voxel-rcnn-kitti-car-openpcdet",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/voxel-rcnn.kitti-car.openpcdet",
+  "created_at": "2026-10-30T20:55:26.000Z",
+  "updated_at": "2026-10-30T20:55:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "voxel-rcnn",
+    "object-detection",
+    "dataset:kitti",
+    "arxiv:2012.15712",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 7594364,
+  "parameters_human": "7.6M",
+  "storage_bytes": 30404688,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "mAP",
+      "value": 84.53
+    },
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "AP/Car",
+      "value": 84.53
+    }
+  ],
+  "sources": []
+}

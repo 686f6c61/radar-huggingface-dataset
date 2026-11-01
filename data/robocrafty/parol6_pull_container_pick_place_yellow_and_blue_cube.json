@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "RoboCrafty/parol6_pull_container_pick_place_yellow_and_blue_cube",
+  "slug": "robocrafty-parol6_pull_container_pick_place_yellow_and_blue_cube",
+  "author": "RoboCrafty",
+  "url": "https://huggingface.co/RoboCrafty/parol6_pull_container_pick_place_yellow_and_blue_cube",
+  "created_at": "2026-11-01T04:57:53.000Z",
+  "updated_at": "2026-11-01T04:58:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:RoboCrafty/parol6_pull_container_pick_place_yellow_and_blue_cube",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354062768,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

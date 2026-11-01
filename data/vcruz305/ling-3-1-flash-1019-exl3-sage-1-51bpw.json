@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 57686190912,
   "parameters_human": "57.69B",
-  "storage_bytes": 189355199210,
-  "storage_human": "189.4 GB",
+  "storage_bytes": 115472968358,
+  "storage_human": "115.5 GB",
   "base_model": "inclusionAI/Ling-3.1-flash-1019",
   "formats": [
     "safetensors"

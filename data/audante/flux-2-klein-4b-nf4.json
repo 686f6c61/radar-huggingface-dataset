@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Audante/FLUX.2-klein-4B-nf4",
+  "slug": "audante-flux-2-klein-4b-nf4",
+  "author": "Audante",
+  "url": "https://huggingface.co/Audante/FLUX.2-klein-4B-nf4",
+  "created_at": "2026-10-29T20:38:18.000Z",
+  "updated_at": "2026-10-29T21:38:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "bitsandbytes",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 1998342123,
+  "parameters_human": "2.00B",
+  "storage_bytes": 5181847023,
+  "storage_human": "5.2 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

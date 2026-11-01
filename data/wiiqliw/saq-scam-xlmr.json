@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "wiiqliw/saq-scam-xlmr",
+  "slug": "wiiqliw-saq-scam-xlmr",
+  "author": "wiiqliw",
+  "url": "https://huggingface.co/wiiqliw/saq-scam-xlmr",
+  "created_at": "2026-10-30T09:25:15.000Z",
+  "updated_at": "2026-10-30T09:26:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "kk",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "scam-detection",
+    "kazakh",
+    "kk",
+    "ru",
+    "en",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129303347,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

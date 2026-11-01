@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "pnadel/palimpsest-greberta-continuation",
+  "slug": "pnadel-palimpsest-greberta-continuation",
+  "author": "pnadel",
+  "url": "https://huggingface.co/pnadel/palimpsest-greberta-continuation",
+  "created_at": "2026-10-30T15:45:46.000Z",
+  "updated_at": "2026-10-30T15:45:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "fill-mask",
+    "masked-lm",
+    "ancient-greek",
+    "grc",
+    "dataset:institutional/institutional-books-hl",
+    "base_model:bowphs/GreBerta",
+    "base_model:finetune:bowphs/GreBerta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 126031648,
+  "parameters_human": "126.0M",
+  "storage_bytes": 504150808,
+  "storage_human": "504 MB",
+  "base_model": "bowphs/GreBerta",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

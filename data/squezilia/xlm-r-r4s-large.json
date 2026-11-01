@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "id": "Squezilia/xlm-r-r4s-large",
+  "slug": "squezilia-xlm-r-r4s-large",
+  "author": "Squezilia",
+  "url": "https://huggingface.co/Squezilia/xlm-r-r4s-large",
+  "created_at": "2026-10-31T13:59:16.000Z",
+  "updated_at": "2026-10-31T15:57:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "th",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "prompt-routing",
+    "llm-router",
+    "safety-guardrail",
+    "multi-task-learning",
+    "complexity-classification",
+    "reasoning-detection",
+    "xlm-roberta-large",
+    "route4secure",
+    "multilingual",
+    "quantized",
+    "edge-ai",
+    "text-classification",
+    "custom_code",
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "th",
+    "zh",
+    "dataset:Squezilia/Route4Secure",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:quantized:FacebookAI/xlm-roberta-large",
+    "license:cc-by-4.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 563064857,
+  "parameters_human": "563.1M",
+  "storage_bytes": 4276574659,
+  "storage_human": "4.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Mean Macro F1 (4 Heads)",
+      "value": 0.8106
+    },
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Mean Accuracy (4 Heads)",
+      "value": 0.8352
+    },
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Safety Accuracy",
+      "value": 0.9224
+    },
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Safety Macro F1",
+      "value": 0.921
+    },
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Reasoning Accuracy",
+      "value": 0.9353
+    },
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Reasoning Macro F1",
+      "value": 0.9152
+    },
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Category Accuracy",
+      "value": 0.7714
+    },
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Category Macro F1",
+      "value": 0.6826
+    },
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Complexity Level Accuracy",
+      "value": 0.7116
+    },
+    {
+      "task": "Multi-Task Prompt Routing & Safety Classification",
+      "dataset": "Squezilia/Route4Secure (Validation Split)",
+      "metric": "Complexity Level Macro F1",
+      "value": 0.7235
+    }
+  ],
+  "sources": []
+}

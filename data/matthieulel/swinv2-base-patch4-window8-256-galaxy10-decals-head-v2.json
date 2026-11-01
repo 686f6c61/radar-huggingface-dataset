@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "matthieulel/swinv2-base-patch4-window8-256-galaxy10-decals-head-v2",
+  "slug": "matthieulel-swinv2-base-patch4-window8-256-galaxy10-decals-head-v2",
+  "author": "matthieulel",
+  "url": "https://huggingface.co/matthieulel/swinv2-base-patch4-window8-256-galaxy10-decals-head-v2",
+  "created_at": "2026-10-30T15:12:19.000Z",
+  "updated_at": "2026-10-30T15:13:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "swinv2",
+    "image-classification",
+    "vision",
+    "astronomy",
+    "galaxy-morphology",
+    "galaxy10-decals",
+    "head-only-fine-tuning",
+    "dataset:matthieulel/galaxy10_decals",
+    "base_model:microsoft/swinv2-base-patch4-window8-256",
+    "base_model:finetune:microsoft/swinv2-base-patch4-window8-256",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 86904066,
+  "parameters_human": "86.9M",
+  "storage_bytes": 347678296,
+  "storage_human": "348 MB",
+  "base_model": "microsoft/swinv2-base-patch4-window8-256",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Accuracy (seed 42, selected epoch)",
+      "value": 0.4814
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Weighted F1 (seed 42, selected epoch)",
+      "value": 0.4506
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meta Quest VR Headsets and Accessories | Meta Store",
+      "url": "https://www.meta.com/quest/",
+      "snippet": "Defy reality with Meta Quest. Our VR headsets redefine digital gaming and entertainment. Learn more about Quest 3S, and explore …"
+    },
+    {
+      "title": "The Best VR Headsets We've Tested for 2026 - PCMag",
+      "url": "https://www.pcmag.com/picks/the-best-vr-headsets",
+      "snippet": "Jul 21, 2026 · Explore new realities with the top VR headsets we've tested, whether you prefer the freedom of standalone models or …"
+    }
+  ]
+}

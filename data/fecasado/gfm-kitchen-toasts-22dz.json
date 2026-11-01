@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-toasts-22dZ",
+  "slug": "fecasado-gfm-kitchen-toasts-22dz",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-toasts-22dZ",
+  "created_at": "2026-10-30T09:42:01.000Z",
+  "updated_at": "2026-10-30T09:42:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_flow_matching",
+    "robotics",
+    "dataset:fecasado/toasts-to-plate-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 75242458,
+  "parameters_human": "75.2M",
+  "storage_bytes": 301029696,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kokitabayashi/mpnet-base-all-nli-triplet",
+  "slug": "kokitabayashi-mpnet-base-all-nli-triplet",
+  "author": "kokitabayashi",
+  "url": "https://huggingface.co/kokitabayashi/mpnet-base-all-nli-triplet",
+  "created_at": "2026-10-30T06:36:41.000Z",
+  "updated_at": "2026-10-30T06:36:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mpnet",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:100000",
+    "loss:MultipleNegativesRankingLoss",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:microsoft/mpnet-base",
+    "base_model:finetune:microsoft/mpnet-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437967672,
+  "storage_human": "438 MB",
+  "base_model": "microsoft/mpnet-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Triplet",
+      "dataset": "all nli dev",
+      "metric": "Cosine Accuracy",
+      "value": 0.9147934317588806
+    },
+    {
+      "task": "Triplet",
+      "dataset": "all nli test",
+      "metric": "Cosine Accuracy",
+      "value": 0.927674412727356
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "eventdata-utd/ConfliBERT-2-large",
+  "slug": "eventdata-utd-conflibert-2-large",
+  "author": "eventdata-utd",
+  "url": "https://huggingface.co/eventdata-utd/ConfliBERT-2-large",
+  "created_at": "2026-10-28T09:52:17.000Z",
+  "updated_at": "2026-10-28T10:03:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "conflict",
+    "political-violence",
+    "event-data",
+    "political-science",
+    "domain-adaptation",
+    "long-context",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 395881664,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583544840,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConfliBERT - UTD Event Data - The University of Texas at Dallas",
+      "url": "https://eventdata.utdallas.edu/conflibert/",
+      "snippet": "The model can be used to extract actor and action classifications from texts about political conflict. When fine-tuned, results show that ConfliBERT has superior performance in accuracy, precision and recall over other large language models (LLM) like Google’s Gemma 2 (9B), Meta’s Llama 3.1 (7B), and Alibaba’s Qwen 2.5 (14B) within its relevant domains."
+    }
+  ]
+}

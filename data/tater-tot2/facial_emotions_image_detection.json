@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tater-tot2/facial_emotions_image_detection",
+  "slug": "tater-tot2-facial_emotions_image_detection",
+  "author": "tater-tot2",
+  "url": "https://huggingface.co/tater-tot2/facial_emotions_image_detection",
+  "created_at": "2026-10-29T06:00:46.000Z",
+  "updated_at": "2026-10-29T06:00:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vit",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 85804039,
+  "parameters_human": "85.8M",
+  "storage_bytes": 4462760982,
+  "storage_human": "4.5 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

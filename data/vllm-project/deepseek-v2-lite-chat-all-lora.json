@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "vllm-project/DeepSeek-V2-Lite-Chat-All-LoRA",
+  "slug": "vllm-project-deepseek-v2-lite-chat-all-lora",
+  "author": "vllm-project",
+  "url": "https://huggingface.co/vllm-project/DeepSeek-V2-Lite-Chat-All-LoRA",
+  "created_at": "2026-10-30T15:58:51.000Z",
+  "updated_at": "2026-10-30T16:03:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "llama-factory",
+    "lora",
+    "generated_from_trainer",
+    "base_model:deepseek-ai/DeepSeek-V2-Lite-Chat",
+    "base_model:adapter:deepseek-ai/DeepSeek-V2-Lite-Chat",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 581376595,
+  "storage_human": "581 MB",
+  "base_model": "deepseek-ai/DeepSeek-V2-Lite-Chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

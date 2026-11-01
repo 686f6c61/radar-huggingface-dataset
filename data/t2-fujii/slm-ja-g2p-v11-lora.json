@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "t2-fujii/slm-ja-g2p-v11-lora",
+  "slug": "t2-fujii-slm-ja-g2p-v11-lora",
+  "author": "t2-fujii",
+  "url": "https://huggingface.co/t2-fujii/slm-ja-g2p-v11-lora",
+  "created_at": "2026-10-30T15:57:32.000Z",
+  "updated_at": "2026-10-30T15:58:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "japanese",
+    "g2p",
+    "grapheme-to-phoneme",
+    "text-to-speech",
+    "reading-estimation",
+    "lora",
+    "text-generation",
+    "conversational",
+    "ja",
+    "base_model:sbintuitions/sarashina2.2-1b-instruct-v0.1",
+    "base_model:adapter:sbintuitions/sarashina2.2-1b-instruct-v0.1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56471056,
+  "storage_human": "56 MB",
+  "base_model": "sbintuitions/sarashina2.2-1b-instruct-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

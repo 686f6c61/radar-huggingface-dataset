@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/hi3d_v1_custom_blocks",
+  "slug": "ozzygt-hi3d_v1_custom_blocks",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/hi3d_v1_custom_blocks",
+  "created_at": "2026-10-30T01:07:54.000Z",
+  "updated_at": "2026-10-30T01:11:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "hi3d",
+    "modular-diffusers",
+    "image-to-3d",
+    "en",
+    "base_model:hi3d-official/Hi3Dv1.0",
+    "base_model:finetune:hi3d-official/Hi3Dv1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "hi3d-official/Hi3Dv1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

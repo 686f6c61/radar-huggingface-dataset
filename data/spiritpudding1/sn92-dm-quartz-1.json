@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "spiritpudding1/sn92-dm-quartz-1",
+  "slug": "spiritpudding1-sn92-dm-quartz-1",
+  "author": "spiritpudding1",
+  "url": "https://huggingface.co/spiritpudding1/sn92-dm-quartz-1",
+  "created_at": "2026-10-29T02:33:16.000Z",
+  "updated_at": "2026-10-29T02:42:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507890,
+  "storage_human": "62.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

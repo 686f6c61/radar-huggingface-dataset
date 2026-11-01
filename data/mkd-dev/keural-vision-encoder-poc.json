@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mkd-dev/keural-vision-encoder-poc",
+  "slug": "mkd-dev-keural-vision-encoder-poc",
+  "author": "mkd-dev",
+  "url": "https://huggingface.co/mkd-dev/keural-vision-encoder-poc",
+  "created_at": "2026-10-28T07:36:42.000Z",
+  "updated_at": "2026-10-28T07:36:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "keural_vision",
+    "vision",
+    "vision-encoder",
+    "image-feature-extraction",
+    "image-text",
+    "contrastive-learning",
+    "custom-architecture",
+    "vlm",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 24666373,
+  "parameters_human": "24.7M",
+  "storage_bytes": 902933534,
+  "storage_human": "903 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

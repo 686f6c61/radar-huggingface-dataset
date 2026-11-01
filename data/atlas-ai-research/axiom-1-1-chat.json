@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Atlas-AI-research/Axiom-1.1-Chat",
+  "slug": "atlas-ai-research-axiom-1-1-chat",
+  "author": "Atlas-AI-research",
+  "url": "https://huggingface.co/Atlas-AI-research/Axiom-1.1-Chat",
+  "created_at": "2026-11-01T09:13:40.000Z",
+  "updated_at": "2026-11-01T09:18:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "axiom",
+    "attention-free",
+    "recurrent",
+    "mixture-of-experts",
+    "experimental",
+    "research",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:HuggingFaceTB/everyday-conversations-llama3.1-2k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64722872,
+  "parameters_human": "64.7M",
+  "storage_bytes": 258913112,
+  "storage_human": "259 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

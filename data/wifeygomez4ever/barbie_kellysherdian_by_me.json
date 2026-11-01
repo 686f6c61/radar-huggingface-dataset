@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "wifeygomez4ever/BARBIE_KELLYSHERDIAN_by_ME",
+  "slug": "wifeygomez4ever-barbie_kellysherdian_by_me",
+  "author": "wifeygomez4ever",
+  "url": "https://huggingface.co/wifeygomez4ever/BARBIE_KELLYSHERDIAN_by_ME",
+  "created_at": "2026-11-01T12:09:34.000Z",
+  "updated_at": "2026-11-01T12:12:12.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6265252,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

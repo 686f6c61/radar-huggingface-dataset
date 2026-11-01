@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Timelyyyy/HOS-1",
+  "slug": "timelyyyy-hos-1",
+  "author": "Timelyyyy",
+  "url": "https://huggingface.co/Timelyyyy/HOS-1",
+  "created_at": "2026-10-30T19:43:56.000Z",
+  "updated_at": "2026-10-31T12:17:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "2b",
+    "Text-Generation",
+    "merge",
+    "qlora",
+    "conversational",
+    "en",
+    "base_model:ArliAI/Gemma-2-2B-ArliAI-RPMax-v1.1",
+    "base_model:merge:ArliAI/Gemma-2-2B-ArliAI-RPMax-v1.1",
+    "base_model:google/gemma-2-2b",
+    "base_model:merge:google/gemma-2-2b",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 9728294208,
+  "storage_human": "9.7 GB",
+  "base_model": "google/gemma-2-2b, ArliAI/Gemma-2-2B-ArliAI-RPMax-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

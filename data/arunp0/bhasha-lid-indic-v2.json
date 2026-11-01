@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "arunp0/bhasha-lid-indic-v2",
+  "slug": "arunp0-bhasha-lid-indic-v2",
+  "author": "arunp0",
+  "url": "https://huggingface.co/arunp0/bhasha-lid-indic-v2",
+  "created_at": "2026-10-31T04:53:45.000Z",
+  "updated_at": "2026-10-31T13:37:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "hi",
+    "bn",
+    "ta",
+    "te",
+    "mr",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "ur",
+    "or",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "language-identification",
+    "code-mixing",
+    "code-switching",
+    "word-level",
+    "romanized",
+    "transliteration",
+    "hinglish",
+    "tanglish",
+    "manglish",
+    "kanglish",
+    "indic",
+    "indian-languages",
+    "india",
+    "hi",
+    "bn",
+    "ta",
+    "te",
+    "mr",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "ur",
+    "or",
+    "en",
+    "multilingual",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 277463822,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126977520,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Word-level language ID (Tamil + English)",
+      "dataset": "CoLI-Dravidian 2024 Tamil (human labels, 11,323 scored words)",
+      "metric": "Macro-F1 (ta",
+      "value": 0.936
+    },
+    {
+      "task": "Word-level language ID (Malayalam + English)",
+      "dataset": "CoLI-Dravidian 2024 Malayalam (human labels, 18,438 scored words)",
+      "metric": "Macro-F1 (ml",
+      "value": 0.967
+    },
+    {
+      "task": "Word-level language ID (Kannada + English)",
+      "dataset": "CoLI-Dravidian 2024 Kannada (human labels, 23,037 scored words)",
+      "metric": "Macro-F1 (kn",
+      "value": 0.937
+    },
+    {
+      "task": "Word-level language ID (Kannada + English)",
+      "dataset": "CoLI-Kanglish, ICON 2022 (human labels, train+test)",
+      "metric": "Macro-F1 (kn",
+      "value": 0.864
+    },
+    {
+      "task": "Word-level language ID (Malayalam + English)",
+      "dataset": "WoLLaI Mal-Eng (human labels, 12,401 sentences)",
+      "metric": "Macro-F1 (ml",
+      "value": 0.97
+    },
+    {
+      "task": "Word-level language ID (Hindi + English)",
+      "dataset": "COMI-LINGUA LID test",
+      "metric": "Macro-F1 (hi",
+      "value": 0.901
+    }
+  ],
+  "sources": []
+}

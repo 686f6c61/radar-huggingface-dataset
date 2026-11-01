@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/openscene-openseg.scannet20.songyou-peng",
+  "slug": "torch-pointcloud-openscene-openseg-scannet20-songyou-peng",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/openscene-openseg.scannet20.songyou-peng",
+  "created_at": "2026-10-30T20:33:48.000Z",
+  "updated_at": "2026-10-30T20:33:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "openscene",
+    "segmentation",
+    "dataset:scannet",
+    "arxiv:2211.15654",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 15575648,
+  "parameters_human": "15.6M",
+  "storage_bytes": 62333976,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "mIoU",
+      "value": 46.11
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "mAcc",
+      "value": 66.64
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "OA",
+      "value": 69.76
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "simple/mIoU",
+      "value": 45.33
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "simple/mAcc",
+      "value": 66.07
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "simple/OA",
+      "value": 69.09
+    }
+  ],
+  "sources": []
+}

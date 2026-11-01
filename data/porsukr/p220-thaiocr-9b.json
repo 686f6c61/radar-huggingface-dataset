@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "PorsukR/P220-ThaiOCR-9B",
+  "slug": "porsukr-p220-thaiocr-9b",
+  "author": "PorsukR",
+  "url": "https://huggingface.co/PorsukR/P220-ThaiOCR-9B",
+  "created_at": "2026-10-31T04:25:53.000Z",
+  "updated_at": "2026-10-31T05:49:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "thai",
+    "document-understanding",
+    "handwriting",
+    "conversational",
+    "th",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319810605,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

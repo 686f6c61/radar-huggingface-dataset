@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nikioth/bge-reranker-v2-m3-mlx-8bit",
+  "slug": "nikioth-bge-reranker-v2-m3-mlx-8bit",
+  "author": "nikioth",
+  "url": "https://huggingface.co/nikioth/bge-reranker-v2-m3-mlx-8bit",
+  "created_at": "2026-10-30T16:51:02.000Z",
+  "updated_at": "2026-10-30T16:51:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "xlm-roberta",
+    "reranker",
+    "cross-encoder",
+    "8-bit",
+    "apple-silicon",
+    "text-classification",
+    "multilingual",
+    "arxiv:2312.15503",
+    "arxiv:2402.03216",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:finetune:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 567755777,
+  "parameters_human": "567.8M",
+  "storage_bytes": 628592942,
+  "storage_human": "629 MB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

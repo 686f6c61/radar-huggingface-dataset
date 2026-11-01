@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "luismart/mbert-sentimiento-multilingue",
+  "slug": "luismart-mbert-sentimiento-multilingue",
+  "author": "luismart",
+  "url": "https://huggingface.co/luismart/mbert-sentimiento-multilingue",
+  "created_at": "2026-10-27T00:52:38.000Z",
+  "updated_at": "2026-10-27T00:53:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "es",
+    "en",
+    "fr",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 177855747,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711446508,
+  "storage_human": "711 MB",
+  "base_model": "bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

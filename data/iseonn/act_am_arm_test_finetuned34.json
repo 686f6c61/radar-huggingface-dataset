@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "iseonn/act_am_arm_test_finetuned34",
+  "slug": "iseonn-act_am_arm_test_finetuned34",
+  "author": "iseonn",
+  "url": "https://huggingface.co/iseonn/act_am_arm_test_finetuned34",
+  "created_at": "2026-10-30T07:51:05.000Z",
+  "updated_at": "2026-10-30T07:51:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:iseonn/am_arm_test34_merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723156,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

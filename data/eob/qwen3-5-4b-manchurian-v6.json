@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "eob/qwen3.5-4b-manchurian-v6",
+  "slug": "eob-qwen3-5-4b-manchurian-v6",
+  "author": "eob",
+  "url": "https://huggingface.co/eob/qwen3.5-4b-manchurian-v6",
+  "created_at": "2026-10-27T20:59:09.000Z",
+  "updated_at": "2026-10-27T21:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "research",
+    "model-editing",
+    "activation-steering",
+    "mechanistic-interpretability",
+    "merged",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339816859,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

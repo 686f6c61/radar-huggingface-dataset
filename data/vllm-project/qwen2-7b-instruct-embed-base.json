@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "vllm-project/Qwen2-7B-Instruct-embed-base",
+  "slug": "vllm-project-qwen2-7b-instruct-embed-base",
+  "author": "vllm-project",
+  "url": "https://huggingface.co/vllm-project/Qwen2-7B-Instruct-embed-base",
+  "created_at": "2026-10-30T15:58:31.000Z",
+  "updated_at": "2026-10-30T16:02:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen2",
+    "pretrained",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 7070619136,
+  "parameters_human": "7.07B",
+  "storage_bytes": 14141276648,
+  "storage_human": "14.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

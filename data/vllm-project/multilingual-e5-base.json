@@ -1,0 +1,543 @@
+{
+  "schema": 1,
+  "id": "vllm-project/multilingual-e5-base",
+  "slug": "vllm-project-multilingual-e5-base",
+  "author": "vllm-project",
+  "url": "https://huggingface.co/vllm-project/multilingual-e5-base",
+  "created_at": "2026-10-30T16:00:28.000Z",
+  "updated_at": "2026-10-30T16:03:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual",
+    "af",
+    "am",
+    "ar",
+    "as",
+    "az",
+    "be",
+    "bg",
+    "bn",
+    "br",
+    "bs",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "eo",
+    "es",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "fy",
+    "ga",
+    "gd",
+    "gl",
+    "gu",
+    "ha",
+    "he",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "jv",
+    "ka",
+    "kk",
+    "km",
+    "kn",
+    "ko",
+    "ku",
+    "ky",
+    "la",
+    "lo",
+    "lt",
+    "lv",
+    "mg",
+    "mk",
+    "ml",
+    "mn",
+    "mr",
+    "ms",
+    "my",
+    "ne",
+    "nl",
+    "no",
+    "om",
+    "or",
+    "pa",
+    "pl",
+    "ps",
+    "pt",
+    "ro",
+    "ru",
+    "sa",
+    "sd",
+    "si",
+    "sk",
+    "sl",
+    "so",
+    "sq",
+    "sr",
+    "su",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "ug",
+    "uk",
+    "ur",
+    "uz",
+    "vi",
+    "xh",
+    "yi",
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "xlm-roberta",
+    "mteb",
+    "Sentence Transformers",
+    "sentence-similarity",
+    "multilingual",
+    "af",
+    "am",
+    "ar",
+    "as",
+    "az",
+    "be",
+    "bg",
+    "bn",
+    "br",
+    "bs",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "eo",
+    "es",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "fy",
+    "ga",
+    "gd",
+    "gl",
+    "gu",
+    "ha",
+    "he",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "jv",
+    "ka",
+    "kk",
+    "km",
+    "kn",
+    "ko",
+    "ku",
+    "ky",
+    "la",
+    "lo",
+    "lt",
+    "lv",
+    "mg",
+    "mk",
+    "ml",
+    "mn",
+    "mr",
+    "ms",
+    "my",
+    "ne",
+    "nl",
+    "no",
+    "om",
+    "or",
+    "pa",
+    "pl",
+    "ps",
+    "pt",
+    "ro",
+    "ru",
+    "sa",
+    "sd",
+    "si",
+    "sk",
+    "sl",
+    "so",
+    "sq",
+    "sr",
+    "su",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "ug",
+    "uk",
+    "ur",
+    "uz",
+    "vi",
+    "xh",
+    "yi",
+    "zh",
+    "arxiv:2402.05672",
+    "arxiv:2108.08787",
+    "arxiv:2104.08663",
+    "arxiv:2210.07316",
+    "license:mit",
+    "model-index",
+    "eval-results",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 278044162,
+  "parameters_human": "278.0M",
+  "storage_bytes": 5300106097,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 78.97014925373135
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 43.69351129103008
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 73.38075030070492
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (de)",
+      "metric": null,
+      "value": 71.7237687366167
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (de)",
+      "metric": null,
+      "value": 82.22089859962671
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (de)",
+      "metric": null,
+      "value": 69.95532758884401
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en-ext)",
+      "metric": null,
+      "value": 79.65517241379312
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en-ext)",
+      "metric": null,
+      "value": 28.507918657094738
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en-ext)",
+      "metric": null,
+      "value": 66.84516013726119
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (ja)",
+      "metric": null,
+      "value": 73.32976445396146
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (ja)",
+      "metric": null,
+      "value": 20.720481637566014
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (ja)",
+      "metric": null,
+      "value": 59.78002763416003
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 90.63775
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 87.22277903861716
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 90.60378636386807
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 44.546
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 44.05666638370923
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (de)",
+      "metric": null,
+      "value": 41.828
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (de)",
+      "metric": null,
+      "value": 41.2710255644252
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (es)",
+      "metric": null,
+      "value": 40.534
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (es)",
+      "metric": null,
+      "value": 39.820743174270326
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (fr)",
+      "metric": null,
+      "value": 39.684
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (fr)",
+      "metric": null,
+      "value": 39.11052682815307
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (ja)",
+      "metric": null,
+      "value": 37.436
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (ja)",
+      "metric": null,
+      "value": 37.07082931930871
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (zh)",
+      "metric": null,
+      "value": 37.226000000000006
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (zh)",
+      "metric": null,
+      "value": 36.65372077739185
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 22.831000000000003
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 36.42
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 37.699
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 37.724000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 32.207
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 34.312
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 23.257
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 36.574
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 37.854
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 37.878
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 32.385000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 34.48
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 22.831000000000003
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 44.230000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 49.974000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 50.522999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 35.363
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 39.164
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 22.831000000000003
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 6.935
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.9520000000000001
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.099
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 14.841
+    }
+  ],
+  "sources": []
+}

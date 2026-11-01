@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "syssec-utd/pylingual-shared-mlm-v1",
+  "slug": "syssec-utd-pylingual-shared-mlm-v1",
+  "author": "syssec-utd",
+  "url": "https://huggingface.co/syssec-utd/pylingual-shared-mlm-v1",
+  "created_at": "2026-10-29T12:57:50.000Z",
+  "updated_at": "2026-10-29T19:55:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 109506864,
+  "parameters_human": "109.5M",
+  "storage_bytes": 18400135055,
+  "storage_human": "18.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

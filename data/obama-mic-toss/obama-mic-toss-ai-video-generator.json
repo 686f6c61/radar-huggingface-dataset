@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Obama-Mic-Toss/Obama-Mic-Toss-AI-Video-Generator",
+  "slug": "obama-mic-toss-obama-mic-toss-ai-video-generator",
+  "author": "Obama-Mic-Toss",
+  "url": "https://huggingface.co/Obama-Mic-Toss/Obama-Mic-Toss-AI-Video-Generator",
+  "created_at": "2026-11-01T05:38:54.000Z",
+  "updated_at": "2026-11-01T05:40:14.000Z",
+  "license": "obamamictoss-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "fr"
+  ],
+  "tags": [
+    "obama-mic-toss",
+    "obama-mic-drop",
+    "obama-aura",
+    "mic-toss-meme",
+    "ai-video",
+    "video-generation",
+    "image-to-video",
+    "meme",
+    "tiktok",
+    "viral-trend",
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barack Obama - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Barack_Obama",
+      "snippet": "Obama selected Joe Biden as his running mate and defeated Republican nominee John McCain and his running mate Sarah Palin. …"
+    },
+    {
+      "title": "Barack Obama — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Barack_Obama",
+      "snippet": "Durant son second mandat, Barack Obama tente de promouvoir un contrôle accru des armes à feu et, avec succès, la …"
+    },
+    {
+      "title": "« Ça suffit ! » : la charge de Barack Obama contre Donald Trump",
+      "url": "https://www.lepoint.fr/monde/ca-suffit-la-charge-de-barack-obama-contre-donald-trump-THQOZFJ72BCGFGZ3AZESNRTBEE/",
+      "snippet": "Oct 25, 2026 · À dix jours des élections américaines de mi-mandat, l’ancien président, en meeting pour soutenir les candidats du …"
+    },
+    {
+      "title": "Présidence de Barack Obama — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pr%C3%A9sidence_de_Barack_Obama",
+      "snippet": "La présidence de Barack Obama débute le 20 janvier 2009, date de l'investiture de Barack Obama en tant que quarante-quatrième …"
+    },
+    {
+      "title": "« Cela devrait indigner tous les Américains » : le cri d'alerte de ...",
+      "url": "https://www.parismatch.com/cela-devrait-indigner-tous-americains-cri-dalerte-barack-obama-face-donald-trump-6MuWCb0d6nDI0jjJ0BwFsi",
+      "snippet": "Oct 19, 2026 · Dimanche 18 octobre, Barack Obama a longuement pris la parole sur X pour dénoncer les agissements de …"
+    }
+  ]
+}

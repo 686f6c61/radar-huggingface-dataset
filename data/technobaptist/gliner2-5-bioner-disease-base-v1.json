@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/GLiNER2.5-BioNER-Disease-Base-v1",
+  "slug": "technobaptist-gliner2-5-bioner-disease-base-v1",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/GLiNER2.5-BioNER-Disease-Base-v1",
+  "created_at": "2026-10-31T01:35:28.000Z",
+  "updated_at": "2026-10-31T01:35:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openmed",
+    "safetensors",
+    "extractor",
+    "medical",
+    "biomedical",
+    "clinical-nlp",
+    "named-entity-recognition",
+    "disease",
+    "gliner2",
+    "gliner",
+    "token-classification",
+    "en",
+    "dataset:ncbi/ncbi_disease",
+    "arxiv:2508.01630",
+    "arxiv:2507.18546",
+    "base_model:fastino/gliner2.5-base-v1",
+    "base_model:finetune:fastino/gliner2.5-base-v1",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 193581591,
+  "parameters_human": "193.6M",
+  "storage_bytes": 774366564,
+  "storage_human": "774 MB",
+  "base_model": "fastino/gliner2.5-base-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Disease mention extraction",
+      "dataset": "BC5CDR (test)",
+      "metric": "F1 (exact span, threshold 0.5)",
+      "value": 67.04
+    }
+  ],
+  "sources": []
+}

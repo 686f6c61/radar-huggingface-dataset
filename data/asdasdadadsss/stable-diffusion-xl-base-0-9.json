@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "asdasdadadsss/stable-diffusion-xl-base-0.9",
+  "slug": "asdasdadadsss-stable-diffusion-xl-base-0-9",
+  "author": "asdasdadadsss",
+  "url": "https://huggingface.co/asdasdadadsss/stable-diffusion-xl-base-0.9",
+  "created_at": "2026-11-01T09:25:53.000Z",
+  "updated_at": "2026-11-01T09:25:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:2108.01073",
+    "arxiv:2112.10752",
+    "arxiv:2307.01952",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 60989811709,
+  "storage_human": "61.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

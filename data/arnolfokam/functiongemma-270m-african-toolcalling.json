@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "arnolfokam/functiongemma-270m-african-toolcalling",
+  "slug": "arnolfokam-functiongemma-270m-african-toolcalling",
+  "author": "arnolfokam",
+  "url": "https://huggingface.co/arnolfokam/functiongemma-270m-african-toolcalling",
+  "created_at": "2026-11-01T00:13:21.000Z",
+  "updated_at": "2026-11-01T00:13:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/functiongemma-270m-it",
+    "base_model:finetune:unsloth/functiongemma-270m-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 574559772,
+  "storage_human": "575 MB",
+  "base_model": "unsloth/functiongemma-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

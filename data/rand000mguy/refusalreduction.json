@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/refusalreduction",
+  "slug": "rand000mguy-refusalreduction",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/refusalreduction",
+  "created_at": "2026-11-01T10:38:53.000Z",
+  "updated_at": "2026-11-01T10:39:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2603704362,
+  "storage_human": "2.6 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

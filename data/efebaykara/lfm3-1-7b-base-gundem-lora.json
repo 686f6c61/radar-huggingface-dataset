@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "efebaykara/LFM3-1.7B-Base-Gundem-LoRA",
+  "slug": "efebaykara-lfm3-1-7b-base-gundem-lora",
+  "author": "efebaykara",
+  "url": "https://huggingface.co/efebaykara/LFM3-1.7B-Base-Gundem-LoRA",
+  "created_at": "2026-10-31T23:05:33.000Z",
+  "updated_at": "2026-11-01T00:16:55.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "response-distillation",
+    "turkish-news",
+    "headline-classification",
+    "text-generation",
+    "conversational",
+    "tr",
+    "base_model:LiquidAI/LFM3-1.7B-Base",
+    "base_model:adapter:LiquidAI/LFM3-1.7B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 2283078322,
+  "storage_human": "2.3 GB",
+  "base_model": "LiquidAI/LFM3-1.7B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

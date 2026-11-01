@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tezrt/sdsds",
+  "slug": "tezrt-sdsds",
+  "author": "tezrt",
+  "url": "https://huggingface.co/tezrt/sdsds",
+  "created_at": "2026-10-26T23:02:43.000Z",
+  "updated_at": "2026-10-26T23:07:26.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164763605,
+  "storage_human": "165 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

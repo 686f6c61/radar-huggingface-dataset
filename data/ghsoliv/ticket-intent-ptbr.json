@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "GHSoliv/ticket-intent-ptbr",
+  "slug": "ghsoliv-ticket-intent-ptbr",
+  "author": "GHSoliv",
+  "url": "https://huggingface.co/GHSoliv/ticket-intent-ptbr",
+  "created_at": "2026-10-30T13:49:43.000Z",
+  "updated_at": "2026-10-31T16:02:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "customer-support",
+    "intent-classification",
+    "portuguese",
+    "synthetic-data",
+    "text-classification",
+    "pt",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:quantized:neuralmind/bert-base-portuguese-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 108932364,
+  "parameters_human": "108.9M",
+  "storage_bytes": 981612167,
+  "storage_human": "982 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

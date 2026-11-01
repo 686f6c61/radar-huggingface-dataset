@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "pineapplesuperfan/Mero-Artemis-31B-v1",
+  "slug": "pineapplesuperfan-mero-artemis-31b-v1",
+  "author": "pineapplesuperfan",
+  "url": "https://huggingface.co/pineapplesuperfan/Mero-Artemis-31B-v1",
+  "created_at": "2026-10-27T14:23:01.000Z",
+  "updated_at": "2026-10-27T17:14:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "conversational",
+    "en",
+    "base_model:TheDrummer/Artemis-31B-v1",
+    "base_model:merge:TheDrummer/Artemis-31B-v1",
+    "base_model:zerofata/G4-MeroMero-31B",
+    "base_model:merge:zerofata/G4-MeroMero-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578506090,
+  "storage_human": "62.6 GB",
+  "base_model": "zerofata/G4-MeroMero-31B, TheDrummer/Artemis-31B-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

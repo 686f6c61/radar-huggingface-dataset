@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "matthieulel/dinov2-small-galaxy10-decals-full-v2",
+  "slug": "matthieulel-dinov2-small-galaxy10-decals-full-v2",
+  "author": "matthieulel",
+  "url": "https://huggingface.co/matthieulel/dinov2-small-galaxy10-decals-full-v2",
+  "created_at": "2026-10-30T15:06:57.000Z",
+  "updated_at": "2026-10-30T15:07:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dinov2",
+    "image-classification",
+    "vision",
+    "astronomy",
+    "galaxy-morphology",
+    "galaxy10-decals",
+    "full-fine-tuning",
+    "dataset:matthieulel/galaxy10_decals",
+    "base_model:facebook/dinov2-small",
+    "base_model:finetune:facebook/dinov2-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 22064266,
+  "parameters_human": "22.1M",
+  "storage_bytes": 88282440,
+  "storage_human": "88 MB",
+  "base_model": "facebook/dinov2-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Accuracy (seed 42, selected epoch)",
+      "value": 0.8534
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Weighted F1 (seed 42, selected epoch)",
+      "value": 0.8504
+    }
+  ],
+  "sources": []
+}

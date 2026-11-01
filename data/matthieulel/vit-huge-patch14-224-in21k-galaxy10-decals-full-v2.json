@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "matthieulel/vit-huge-patch14-224-in21k-galaxy10-decals-full-v2",
+  "slug": "matthieulel-vit-huge-patch14-224-in21k-galaxy10-decals-full-v2",
+  "author": "matthieulel",
+  "url": "https://huggingface.co/matthieulel/vit-huge-patch14-224-in21k-galaxy10-decals-full-v2",
+  "created_at": "2026-10-30T15:30:45.000Z",
+  "updated_at": "2026-10-30T15:35:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "vision",
+    "astronomy",
+    "galaxy-morphology",
+    "galaxy10-decals",
+    "full-fine-tuning",
+    "dataset:matthieulel/galaxy10_decals",
+    "base_model:google/vit-huge-patch14-224-in21k",
+    "base_model:finetune:google/vit-huge-patch14-224-in21k",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 630777610,
+  "parameters_human": "630.8M",
+  "storage_bytes": 2523172784,
+  "storage_human": "2.5 GB",
+  "base_model": "google/vit-huge-patch14-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Accuracy (seed 42, selected epoch)",
+      "value": 0.841
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Weighted F1 (seed 42, selected epoch)",
+      "value": 0.8368
+    }
+  ],
+  "sources": []
+}

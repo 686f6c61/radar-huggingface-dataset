@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "krush420/llama3-hermes3-8b-sre-lora",
+  "slug": "krush420-llama3-hermes3-8b-sre-lora",
+  "author": "krush420",
+  "url": "https://huggingface.co/krush420/llama3-hermes3-8b-sre-lora",
+  "created_at": "2026-11-01T06:28:52.000Z",
+  "updated_at": "2026-11-01T06:30:00.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:NousResearch/Hermes-3-Llama-3.1-8B",
+    "llama-3",
+    "hermes-3",
+    "krusch-stack",
+    "mcp",
+    "agentic-harness",
+    "tool-calling",
+    "dolphinbench",
+    "lora",
+    "dpo",
+    "sft",
+    "code-audit",
+    "sre",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "dataset:krush420/sovereign-code-audit-sft",
+    "dataset:krush420/sovereign-g4-benchmarks",
+    "base_model:NousResearch/Hermes-3-Llama-3.1-8B",
+    "license:llama3.1",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41943040,
+  "parameters_human": "41.9M",
+  "storage_bytes": 352844523,
+  "storage_human": "353 MB",
+  "base_model": "NousResearch/Hermes-3-Llama-3.1-8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-Turn Long-Term Memory & Simulated App Tool Execution",
+      "dataset": "DolphinBench (600 Tasks across 3 Personas / 1.5M Tokens, Official gpt-5.6-sol Judge)",
+      "metric": "Official gpt-5.6-sol Pass Rate (110/600 %, 15.7x over 8B Stock)",
+      "value": 18.33
+    },
+    {
+      "task": "Multi-Turn Long-Term Memory & Simulated App Tool Execution",
+      "dataset": "DolphinBench (600 Tasks across 3 Personas / 1.5M Tokens, Official gpt-5.6-sol Judge)",
+      "metric": "Deterministic Mechanical Tool Checks (841/1,310 %)",
+      "value": 64.2
+    },
+    {
+      "task": "AST-Grounded Code Audit, Lego-First Synthesis & Tool-Calling SFT + DPO",
+      "dataset": "Sovereign Code Audit, Lego-First & Agentic Tool-Calling SFT + DPO",
+      "metric": "Stage-1 BF16 SFT Token Accuracy (%)",
+      "value": 89.64
+    },
+    {
+      "task": "AST-Grounded Code Audit, Lego-First Synthesis & Tool-Calling SFT + DPO",
+      "dataset": "Sovereign Code Audit, Lego-First & Agentic Tool-Calling SFT + DPO",
+      "metric": "Stage-2 KL-Anchored DPO Preference Accuracy (%)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointnet.scanobjectnn-hardest.openpoints",
+  "slug": "torch-pointcloud-pointnet-scanobjectnn-hardest-openpoints",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointnet.scanobjectnn-hardest.openpoints",
+  "created_at": "2026-10-30T20:49:19.000Z",
+  "updated_at": "2026-10-30T20:49:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointnet",
+    "classification",
+    "dataset:scanobjectnn",
+    "arxiv:1612.00593",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 3485912,
+  "parameters_human": "3.5M",
+  "storage_bytes": 13956856,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (PB_T50_RS)",
+      "metric": "OA",
+      "value": 75.16
+    },
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (PB_T50_RS)",
+      "metric": "mAcc",
+      "value": 71.44
+    }
+  ],
+  "sources": []
+}

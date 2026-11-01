@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Vitund/cox-1-3b-int8",
+  "slug": "vitund-cox-1-3b-int8",
+  "author": "Vitund",
+  "url": "https://huggingface.co/Vitund/cox-1-3b-int8",
+  "created_at": "2026-10-31T00:35:48.000Z",
+  "updated_at": "2026-10-31T00:36:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "coxlm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coxlm",
+    "safetensors",
+    "qwen3_5_text",
+    "decision-model",
+    "classification",
+    "calibration",
+    "typed-decisions",
+    "system-one",
+    "int8",
+    "text-classification",
+    "en",
+    "base_model:Vitund/cox-1-3b",
+    "base_model:quantized:Vitund/cox-1-3b",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 2867938560,
+  "parameters_human": "2.87B",
+  "storage_bytes": 2919077193,
+  "storage_human": "2.9 GB",
+  "base_model": "Vitund/cox-1-3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

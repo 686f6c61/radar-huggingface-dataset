@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "a1rb4Ck/microduck-heist",
+  "slug": "a1rb4ck-microduck-heist",
+  "author": "a1rb4Ck",
+  "url": "https://huggingface.co/a1rb4Ck/microduck-heist",
+  "created_at": "2026-10-31T09:32:14.000Z",
+  "updated_at": "2026-10-31T20:06:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-arena",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5948743,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

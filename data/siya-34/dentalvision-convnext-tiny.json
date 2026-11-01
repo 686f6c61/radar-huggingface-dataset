@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Siya-34/dentalvision-convnext-tiny",
+  "slug": "siya-34-dentalvision-convnext-tiny",
+  "author": "Siya-34",
+  "url": "https://huggingface.co/Siya-34/dentalvision-convnext-tiny",
+  "created_at": "2026-10-31T09:26:59.000Z",
+  "updated_at": "2026-10-31T09:27:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "medical-imaging",
+    "dental",
+    "opg",
+    "multi-label",
+    "grad-cam",
+    "research-prototype",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 27824742,
+  "parameters_human": "27.8M",
+  "storage_bytes": 111316024,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

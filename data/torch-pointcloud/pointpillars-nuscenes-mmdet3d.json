@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointpillars.nuscenes.mmdet3d",
+  "slug": "torch-pointcloud-pointpillars-nuscenes-mmdet3d",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointpillars.nuscenes.mmdet3d",
+  "created_at": "2026-10-30T20:56:14.000Z",
+  "updated_at": "2026-10-30T20:56:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointpillars",
+    "object-detection",
+    "dataset:nuscenes",
+    "arxiv:1812.05784",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 4934822,
+  "parameters_human": "4.9M",
+  "storage_bytes": 19752744,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "mAP",
+      "value": 34.69
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "NDS",
+      "value": 49.04
+    }
+  ],
+  "sources": []
+}

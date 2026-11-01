@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Yash06B/sql-qwen2.5-1.5b-lora",
+  "slug": "yash06b-sql-qwen2-5-1-5b-lora",
+  "author": "Yash06B",
+  "url": "https://huggingface.co/Yash06B/sql-qwen2.5-1.5b-lora",
+  "created_at": "2026-10-27T11:50:20.000Z",
+  "updated_at": "2026-10-27T11:56:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-sql",
+    "sqlite",
+    "qlora",
+    "unsloth",
+    "lora",
+    "en",
+    "dataset:Yash06B/shop-text-to-sql",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333278,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cadrojasl/xlnet-large-tass-sentimientos-2026",
+  "slug": "cadrojasl-xlnet-large-tass-sentimientos-2026",
+  "author": "cadrojasl",
+  "url": "https://huggingface.co/cadrojasl/xlnet-large-tass-sentimientos-2026",
+  "created_at": "2026-10-26T04:21:10.000Z",
+  "updated_at": "2026-10-26T04:21:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "xlnet",
+    "text-classification",
+    "spanish",
+    "tass",
+    "es",
+    "base_model:xlnet/xlnet-large-cased",
+    "base_model:finetune:xlnet/xlnet-large-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 361321475,
+  "parameters_human": "361.3M",
+  "storage_bytes": 1445331612,
+  "storage_human": "1.4 GB",
+  "base_model": "xlnet/xlnet-large-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Everyday Objects That Use Quantum Physics to Function",
+      "url": "https://discoverwildscience.com/7-everyday-objects-that-use-quantum-physics-to-function-2-387351/",
+      "snippet": "Aug 5, 2026 · But the strange rules that govern atoms and subatomic particles quietly power a huge part of modern life. You bump …"
+    },
+    {
+      "title": "10 Real-Life Applications of Quantum Physics That Impact Your Daily ...",
+      "url": "https://welovephysics.com/2025/06/03/10-real-life-applications-of-quantum-physics-that-impact-your-daily-life/",
+      "snippet": "Oct 23, 2026 · In this article, we’ll go beyond the classroom and explore ten compelling reasons to study quantum physics—each …"
+    }
+  ]
+}

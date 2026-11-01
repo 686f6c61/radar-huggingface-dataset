@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "gsmg878/ncsound-audio-mix-4b",
+  "slug": "gsmg878-ncsound-audio-mix-4b",
+  "author": "gsmg878",
+  "url": "https://huggingface.co/gsmg878/ncsound-audio-mix-4b",
+  "created_at": "2026-10-30T22:38:11.000Z",
+  "updated_at": "2026-10-30T22:39:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "audio",
+    "music-production",
+    "mixing",
+    "mastering",
+    "sound-design",
+    "hip-hop",
+    "qlora",
+    "lora",
+    "ncsoundlab",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 189896485,
+  "storage_human": "190 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

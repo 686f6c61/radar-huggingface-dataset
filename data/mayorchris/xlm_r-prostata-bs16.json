@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MayorChris/xlm_r-prostata-bs16",
+  "slug": "mayorchris-xlm_r-prostata-bs16",
+  "author": "MayorChris",
+  "url": "https://huggingface.co/MayorChris/xlm_r-prostata-bs16",
+  "created_at": "2026-10-26T05:53:30.000Z",
+  "updated_at": "2026-10-26T07:27:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 558864407,
+  "parameters_human": "558.9M",
+  "storage_bytes": 2252609605,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

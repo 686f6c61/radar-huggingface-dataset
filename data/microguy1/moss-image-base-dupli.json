@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Microguy1/MOSS-Image-Base-DUPLI",
+  "slug": "microguy1-moss-image-base-dupli",
+  "author": "Microguy1",
+  "url": "https://huggingface.co/Microguy1/MOSS-Image-Base-DUPLI",
+  "created_at": "2026-10-28T03:42:00.000Z",
+  "updated_at": "2026-10-28T03:42:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2610.23374",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 27228815653,
+  "storage_human": "27.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "arlenecc/jina-embeddings-v5-text-nano-onnx-int4",
+  "slug": "arlenecc-jina-embeddings-v5-text-nano-onnx-int4",
+  "author": "arlenecc",
+  "url": "https://huggingface.co/arlenecc/jina-embeddings-v5-text-nano-onnx-int4",
+  "created_at": "2026-10-31T07:18:35.000Z",
+  "updated_at": "2026-10-31T08:07:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "eurobert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180694612,
+  "storage_human": "181 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

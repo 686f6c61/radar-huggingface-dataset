@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "LatentMesh-Labs/latentmesh-blitz-2b-v1-vision",
+  "slug": "latentmesh-labs-latentmesh-blitz-2b-v1-vision",
+  "author": "LatentMesh-Labs",
+  "url": "https://huggingface.co/LatentMesh-Labs/latentmesh-blitz-2b-v1-vision",
+  "created_at": "2026-11-01T08:46:33.000Z",
+  "updated_at": "2026-11-01T08:46:43.000Z",
+  "license": "latentmesh-blitz-evaluation",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "decision-index",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154593445,
+  "storage_human": "155 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

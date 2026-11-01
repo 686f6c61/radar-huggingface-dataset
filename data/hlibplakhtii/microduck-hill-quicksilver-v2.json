@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "HlibPlakhtii/microduck-hill-quicksilver-v2",
+  "slug": "hlibplakhtii-microduck-hill-quicksilver-v2",
+  "author": "HlibPlakhtii",
+  "url": "https://huggingface.co/HlibPlakhtii/microduck-hill-quicksilver-v2",
+  "created_at": "2026-10-29T17:57:47.000Z",
+  "updated_at": "2026-10-29T17:57:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-policy",
+    "robotics",
+    "base_model:rumezhak/microduck-hill-remix-leader3",
+    "base_model:finetune:rumezhak/microduck-hill-remix-leader3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 919568,
+  "storage_human": "919568 B",
+  "base_model": "rumezhak/microduck-hill-remix-leader3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

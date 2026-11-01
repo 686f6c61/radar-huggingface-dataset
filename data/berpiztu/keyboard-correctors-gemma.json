@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "berpiztu/keyboard-correctors-gemma",
+  "slug": "berpiztu-keyboard-correctors-gemma",
+  "author": "berpiztu",
+  "url": "https://huggingface.co/berpiztu/keyboard-correctors-gemma",
+  "created_at": "2026-11-01T05:06:14.000Z",
+  "updated_at": "2026-11-01T06:36:52.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "spelling-correction",
+    "text2text-generation",
+    "es",
+    "en",
+    "base_model:google/t5gemma-2-270m-270m",
+    "base_model:finetune:google/t5gemma-2-270m-270m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319082421,
+  "storage_human": "319 MB",
+  "base_model": "google/t5gemma-2-270m-270m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

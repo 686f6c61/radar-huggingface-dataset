@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "dianavdavidson/indic_whisper_hi_multi_gpu_indic_voices_68116_15_100_1e-4_None_hinglish_mixed_scripts_FT",
+  "slug": "dianavdavidson-indic_whisper_hi_multi_gpu_indic_voices_68116_15_100_1e-4_none_hinglish_mixed_scripts_ft",
+  "author": "dianavdavidson",
+  "url": "https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_indic_voices_68116_15_100_1e-4_None_hinglish_mixed_scripts_FT",
+  "created_at": "2026-10-31T01:57:30.000Z",
+  "updated_at": "2026-10-31T10:56:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:parthiv11/indic_whisper_hi_multi_gpu",
+    "base_model:finetune:parthiv11/indic_whisper_hi_multi_gpu",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 15277727041,
+  "storage_human": "15.3 GB",
+  "base_model": "parthiv11/indic_whisper_hi_multi_gpu",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

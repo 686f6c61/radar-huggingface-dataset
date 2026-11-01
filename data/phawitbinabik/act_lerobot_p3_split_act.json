@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "phawitbinabik/act_lerobot_p3_split_act",
+  "slug": "phawitbinabik-act_lerobot_p3_split_act",
+  "author": "phawitbinabik",
+  "url": "https://huggingface.co/phawitbinabik/act_lerobot_p3_split_act",
+  "created_at": "2026-10-29T18:37:05.000Z",
+  "updated_at": "2026-10-29T18:37:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:phawitbinabik/lerobot_p3_split_act",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206803168,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

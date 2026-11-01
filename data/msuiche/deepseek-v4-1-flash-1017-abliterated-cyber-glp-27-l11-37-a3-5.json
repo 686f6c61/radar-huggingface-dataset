@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-27-L11-37-a3.5",
+  "slug": "msuiche-deepseek-v4-1-flash-1017-abliterated-cyber-glp-27-l11-37-a3-5",
+  "author": "msuiche",
+  "url": "https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-27-L11-37-a3.5",
+  "created_at": "2026-10-29T18:05:53.000Z",
+  "updated_at": "2026-10-31T05:41:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "deepseek_v41",
+    "weightless",
+    "control-vector",
+    "abliterated",
+    "uncensored",
+    "refusal-ablation",
+    "activation-steering",
+    "representation-engineering",
+    "vllm",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 138240,
+  "parameters_human": "138240",
+  "storage_bytes": 1367038,
+  "storage_human": "1 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

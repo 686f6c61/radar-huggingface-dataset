@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kusema/canary-180m-flash-gguf",
+  "slug": "kusema-canary-180m-flash-gguf",
+  "author": "kusema",
+  "url": "https://huggingface.co/kusema/canary-180m-flash-gguf",
+  "created_at": "2026-11-01T07:43:29.000Z",
+  "updated_at": "2026-11-01T07:46:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "mirror",
+    "automatic-speech-recognition",
+    "base_model:nvidia/canary-180m-flash",
+    "base_model:quantized:nvidia/canary-180m-flash",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 189083776,
+  "parameters_human": "189.1M",
+  "storage_bytes": 218447648,
+  "storage_human": "218 MB",
+  "base_model": "nvidia/canary-180m-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

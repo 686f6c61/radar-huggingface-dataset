@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "KonradDallaOrg/dimmy-minicpm5-gguf",
+  "slug": "konraddallaorg-dimmy-minicpm5-gguf",
+  "author": "KonradDallaOrg",
+  "url": "https://huggingface.co/KonradDallaOrg/dimmy-minicpm5-gguf",
+  "created_at": "2026-10-30T11:55:15.000Z",
+  "updated_at": "2026-10-30T12:20:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dimmy",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1561318368,
+  "storage_human": "1.6 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

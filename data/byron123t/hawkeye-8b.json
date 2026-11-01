@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "byron123t/Hawkeye-8B",
+  "slug": "byron123t-hawkeye-8b",
+  "author": "byron123t",
+  "url": "https://huggingface.co/byron123t/Hawkeye-8B",
+  "created_at": "2026-10-30T03:44:17.000Z",
+  "updated_at": "2026-10-30T03:46:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "ocr",
+    "scene-text-recognition",
+    "blurry-text",
+    "low-resolution",
+    "qwen3-vl",
+    "smart-glasses",
+    "conversational",
+    "en",
+    "dataset:byron123t/BSTRB",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762142,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

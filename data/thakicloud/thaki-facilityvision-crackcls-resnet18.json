@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Thaki-FacilityVision-CrackCls-ResNet18",
+  "slug": "thakicloud-thaki-facilityvision-crackcls-resnet18",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Thaki-FacilityVision-CrackCls-ResNet18",
+  "created_at": "2026-10-31T11:56:54.000Z",
+  "updated_at": "2026-10-31T11:57:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "crack-detection",
+    "concrete",
+    "infrastructure-inspection",
+    "resnet18",
+    "research-preview",
+    "image-classification",
+    "en",
+    "ko",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 11187138,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44759464,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

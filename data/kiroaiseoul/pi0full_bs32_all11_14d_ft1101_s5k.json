@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/pi0full_bs32_all11_14D_ft1101_s5k",
+  "slug": "kiroaiseoul-pi0full_bs32_all11_14d_ft1101_s5k",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/pi0full_bs32_all11_14D_ft1101_s5k",
+  "created_at": "2026-11-01T07:45:48.000Z",
+  "updated_at": "2026-11-01T07:46:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "parent-pi0full_bs32_all11_14D_ft1030_s10k",
+    "warmstart-261101",
+    "dataset:kiroaiseoul/all11_new_recovery_mix_14D_1101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011558144,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

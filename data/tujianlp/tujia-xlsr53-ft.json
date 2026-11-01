@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "TujiaNLP/tujia-xlsr53-ft",
+  "slug": "tujianlp-tujia-xlsr53-ft",
+  "author": "TujiaNLP",
+  "url": "https://huggingface.co/TujiaNLP/tujia-xlsr53-ft",
+  "created_at": "2026-10-28T03:50:14.000Z",
+  "updated_at": "2026-10-28T06:30:37.000Z",
+  "license": "research-use-only",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "tji"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "feature-extraction",
+    "speech",
+    "tujia",
+    "tji",
+    "encoder",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 315438720,
+  "parameters_human": "315.4M",
+  "storage_bytes": 2523606248,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

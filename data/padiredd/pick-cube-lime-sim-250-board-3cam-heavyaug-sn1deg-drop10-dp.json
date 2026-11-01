@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "padiredd/pick-cube-lime-sim-250-board-3cam-heavyaug-sn1deg-drop10-dp",
+  "slug": "padiredd-pick-cube-lime-sim-250-board-3cam-heavyaug-sn1deg-drop10-dp",
+  "author": "padiredd",
+  "url": "https://huggingface.co/padiredd/pick-cube-lime-sim-250-board-3cam-heavyaug-sn1deg-drop10-dp",
+  "created_at": "2026-10-29T21:57:11.000Z",
+  "updated_at": "2026-10-29T21:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "isaac-sim",
+    "ffw-bg2",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 287533680,
+  "parameters_human": "287.5M",
+  "storage_bytes": 1150217344,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "anira-project/moonshine-streaming",
+  "slug": "anira-project-moonshine-streaming",
+  "author": "anira-project",
+  "url": "https://huggingface.co/anira-project/moonshine-streaming",
+  "created_at": "2026-10-30T10:29:07.000Z",
+  "updated_at": "2026-10-31T19:00:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "anira",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "anira",
+    "coreml",
+    "onnx",
+    "executorch",
+    "moonshine",
+    "speech-to-text",
+    "streaming",
+    "real-time",
+    "automatic-speech-recognition",
+    "en",
+    "de",
+    "base_model:moonshine-ai/moonshine-streaming-small",
+    "base_model:quantized:moonshine-ai/moonshine-streaming-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5366687131,
+  "storage_human": "5.4 GB",
+  "base_model": "moonshine-ai/moonshine-streaming-tiny, moonshine-ai/moonshine-streaming-small, moonshine-ai/moonshine-streaming-tiny-de, moonshine-ai/moonshine-streaming-small-de",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

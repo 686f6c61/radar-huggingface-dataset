@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "vllm-project/Qwen3.5-0.8B-text-only",
+  "slug": "vllm-project-qwen3-5-0-8b-text-only",
+  "author": "vllm-project",
+  "url": "https://huggingface.co/vllm-project/Qwen3.5-0.8B-text-only",
+  "created_at": "2026-10-30T15:56:52.000Z",
+  "updated_at": "2026-10-30T16:01:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "qwen3.5",
+    "text-only",
+    "vllm",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1517635502,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

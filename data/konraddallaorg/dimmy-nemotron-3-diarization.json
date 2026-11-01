@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "KonradDallaOrg/dimmy-nemotron-3-diarization",
+  "slug": "konraddallaorg-dimmy-nemotron-3-diarization",
+  "author": "KonradDallaOrg",
+  "url": "https://huggingface.co/KonradDallaOrg/dimmy-nemotron-3-diarization",
+  "created_at": "2026-10-30T11:55:18.000Z",
+  "updated_at": "2026-10-30T11:56:18.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "dimmy",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 99260363,
+  "parameters_human": "99.3M",
+  "storage_bytes": 210874913,
+  "storage_human": "211 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

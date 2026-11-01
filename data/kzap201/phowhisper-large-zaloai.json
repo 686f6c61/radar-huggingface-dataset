@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kzap201/phowhisper-large-zaloai",
+  "slug": "kzap201-phowhisper-large-zaloai",
+  "author": "kzap201",
+  "url": "https://huggingface.co/kzap201/phowhisper-large-zaloai",
+  "created_at": "2026-10-30T07:34:21.000Z",
+  "updated_at": "2026-10-30T07:36:58.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "phowhisper",
+    "vietnamese",
+    "speech-recognition",
+    "zaloai",
+    "vi",
+    "base_model:vinai/PhoWhisper-large",
+    "base_model:finetune:vinai/PhoWhisper-large",
+    "license:bsd-3-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 1543304960,
+  "parameters_human": "1.54B",
+  "storage_bytes": 12346740304,
+  "storage_human": "12.3 GB",
+  "base_model": "vinai/PhoWhisper-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

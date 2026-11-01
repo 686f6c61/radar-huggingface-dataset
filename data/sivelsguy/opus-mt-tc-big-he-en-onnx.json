@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "sivelsguy/opus-mt-tc-big-he-en-onnx",
+  "slug": "sivelsguy-opus-mt-tc-big-he-en-onnx",
+  "author": "sivelsguy",
+  "url": "https://huggingface.co/sivelsguy/opus-mt-tc-big-he-en-onnx",
+  "created_at": "2026-10-30T08:55:50.000Z",
+  "updated_at": "2026-10-30T09:01:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [
+    "he",
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "he",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-tc-big-he-en",
+    "base_model:quantized:Helsinki-NLP/opus-mt-tc-big-he-en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366924231,
+  "storage_human": "367 MB",
+  "base_model": "Helsinki-NLP/opus-mt-tc-big-he-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-burger-baseline2",
+  "slug": "fecasado-gfm-kitchen-burger-baseline2",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-burger-baseline2",
+  "created_at": "2026-10-26T11:22:11.000Z",
+  "updated_at": "2026-10-26T11:23:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_flow_matching",
+    "robotics",
+    "dataset:fecasado/burger-to-plate-good-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 75216858,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300927208,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

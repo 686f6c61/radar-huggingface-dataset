@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "amandaodoo/regresion-casas-pytorch",
+  "slug": "amandaodoo-regresion-casas-pytorch",
+  "author": "amandaodoo",
+  "url": "https://huggingface.co/amandaodoo/regresion-casas-pytorch",
+  "created_at": "2026-10-30T18:28:09.000Z",
+  "updated_at": "2026-10-30T18:28:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "pytorch",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 4,
+  "parameters_human": "4",
+  "storage_bytes": 160,
+  "storage_human": "160 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

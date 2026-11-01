@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "esehe/Bletilla-v0.1-small",
+  "slug": "esehe-bletilla-v0-1-small",
+  "author": "esehe",
+  "url": "https://huggingface.co/esehe/Bletilla-v0.1-small",
+  "created_at": "2026-10-29T08:00:18.000Z",
+  "updated_at": "2026-10-29T08:21:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144051063,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "HlibPlakhtii/microduck-crowd-rockstar",
+  "slug": "hlibplakhtii-microduck-crowd-rockstar",
+  "author": "HlibPlakhtii",
+  "url": "https://huggingface.co/HlibPlakhtii/microduck-crowd-rockstar",
+  "created_at": "2026-10-29T16:09:01.000Z",
+  "updated_at": "2026-10-29T16:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "microduck-policy",
+    "base_model:jrubiosainz/microduck-game-staircase-pyramid",
+    "base_model:adapter:jrubiosainz/microduck-game-staircase-pyramid",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1628505,
+  "storage_human": "2 MB",
+  "base_model": "jrubiosainz/microduck-game-staircase-pyramid",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

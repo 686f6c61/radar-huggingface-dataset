@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "caikybaldo999/zyi-pocket-256",
+  "slug": "caikybaldo999-zyi-pocket-256",
+  "author": "caikybaldo999",
+  "url": "https://huggingface.co/caikybaldo999/zyi-pocket-256",
+  "created_at": "2026-10-28T18:28:57.000Z",
+  "updated_at": "2026-10-28T18:29:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-image",
+    "dataset:LucasFang/FLUX-Reason-6M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 221143986,
+  "storage_human": "221 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

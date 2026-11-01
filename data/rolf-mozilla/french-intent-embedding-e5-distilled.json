@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rolf-mozilla/french-intent-embedding-e5-distilled",
+  "slug": "rolf-mozilla-french-intent-embedding-e5-distilled",
+  "author": "rolf-mozilla",
+  "url": "https://huggingface.co/rolf-mozilla/french-intent-embedding-e5-distilled",
+  "created_at": "2026-10-29T12:31:58.000Z",
+  "updated_at": "2026-10-29T12:32:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "bert",
+    "intent-classification",
+    "sentence-embeddings",
+    "french",
+    "text-classification",
+    "fr",
+    "dataset:Mozilla/query-intent-detection-dataset-french",
+    "base_model:rolf-mozilla/french-embedding-e5-distilled",
+    "base_model:quantized:rolf-mozilla/french-embedding-e5-distilled",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28323993,
+  "storage_human": "28 MB",
+  "base_model": "rolf-mozilla/french-embedding-e5-distilled",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

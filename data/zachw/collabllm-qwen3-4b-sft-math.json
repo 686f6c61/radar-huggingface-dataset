@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ZachW/CollabLLM-Qwen3-4B-SFT-Math",
+  "slug": "zachw-collabllm-qwen3-4b-sft-math",
+  "author": "ZachW",
+  "url": "https://huggingface.co/ZachW/CollabLLM-Qwen3-4B-SFT-Math",
+  "created_at": "2026-10-29T05:40:03.000Z",
+  "updated_at": "2026-10-29T05:41:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "collabllm",
+    "qwen3",
+    "lora",
+    "sft",
+    "conversational",
+    "text-generation",
+    "en",
+    "arxiv:2502.00640",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275731550,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

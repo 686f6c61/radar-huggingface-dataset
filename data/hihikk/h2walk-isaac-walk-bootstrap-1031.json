@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "hihikk/H2walk-isaac-walk-bootstrap-1031",
+  "slug": "hihikk-h2walk-isaac-walk-bootstrap-1031",
+  "author": "hihikk",
+  "url": "https://huggingface.co/hihikk/H2walk-isaac-walk-bootstrap-1031",
+  "created_at": "2026-11-01T08:01:51.000Z",
+  "updated_at": "2026-11-01T08:02:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275669450,
+  "storage_human": "276 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

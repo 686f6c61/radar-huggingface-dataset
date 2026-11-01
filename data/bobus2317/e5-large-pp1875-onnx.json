@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "BOBUS2317/e5-large-pp1875-onnx",
+  "slug": "bobus2317-e5-large-pp1875-onnx",
+  "author": "BOBUS2317",
+  "url": "https://huggingface.co/BOBUS2317/e5-large-pp1875-onnx",
+  "created_at": "2026-10-26T13:59:55.000Z",
+  "updated_at": "2026-10-26T14:59:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "xlm-roberta",
+    "int8",
+    "okpd2",
+    "procurement",
+    "sentence-similarity",
+    "ru",
+    "base_model:intfloat/multilingual-e5-large",
+    "base_model:quantized:intfloat/multilingual-e5-large",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 578860129,
+  "storage_human": "579 MB",
+  "base_model": "intfloat/multilingual-e5-large",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

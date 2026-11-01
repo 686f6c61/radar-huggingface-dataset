@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-lora-2086050598864113665",
+  "slug": "runninghubai-rh-krea2-lora-2086050598864113665",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2086050598864113665",
+  "created_at": "2026-11-01T06:24:04.000Z",
+  "updated_at": "2026-11-01T06:26:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237631653,
+  "storage_human": "238 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHub AI | Image, Video & Workflow Creation",
+      "url": "https://runninghubai.pro/",
+      "snippet": "RunningHub AI is an AI-powered creation platform for generating images, videos and complete creative workflows from one visual …"
+    }
+  ]
+}

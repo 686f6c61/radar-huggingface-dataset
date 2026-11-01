@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Poif1482/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+  "slug": "poif1482-qwen-image-edit-2511-multiple-angles-lora",
+  "author": "Poif1482",
+  "url": "https://huggingface.co/Poif1482/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+  "created_at": "2026-10-30T03:42:41.000Z",
+  "updated_at": "2026-10-30T03:42:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "qwen",
+    "qwen-image-edit",
+    "qwen-image-edit-2511",
+    "lora",
+    "multi-angle",
+    "camera-angles",
+    "camera-control",
+    "image-editing",
+    "image-to-image",
+    "gaussian-splatting",
+    "fal",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334421090,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

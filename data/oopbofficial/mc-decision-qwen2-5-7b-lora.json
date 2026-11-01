@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "oopbofficial/mc-decision-qwen2.5-7b-lora",
+  "slug": "oopbofficial-mc-decision-qwen2-5-7b-lora",
+  "author": "oopbofficial",
+  "url": "https://huggingface.co/oopbofficial/mc-decision-qwen2.5-7b-lora",
+  "created_at": "2026-10-29T18:17:58.000Z",
+  "updated_at": "2026-10-29T18:19:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "minecraft",
+    "synthetic-data",
+    "intent-classification",
+    "text-generation",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955088,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "james58899/Hy-MT2-7B-ONNX",
+  "slug": "james58899-hy-mt2-7b-onnx",
+  "author": "james58899",
+  "url": "https://huggingface.co/james58899/Hy-MT2-7B-ONNX",
+  "created_at": "2026-10-29T09:43:31.000Z",
+  "updated_at": "2026-10-29T10:20:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "hunyuan_v1_dense",
+    "translation",
+    "base_model:tencent/Hy-MT2-7B",
+    "base_model:quantized:tencent/Hy-MT2-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18625184330,
+  "storage_human": "18.6 GB",
+  "base_model": "tencent/Hy-MT2-7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "rookieSJTU/region-v9-1024-uniform-routing-step-002750",
+  "slug": "rookiesjtu-region-v9-1024-uniform-routing-step-002750",
+  "author": "rookieSJTU",
+  "url": "https://huggingface.co/rookieSJTU/region-v9-1024-uniform-routing-step-002750",
+  "created_at": "2026-10-26T06:35:33.000Z",
+  "updated_at": "2026-10-26T06:58:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1547461300,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

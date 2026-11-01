@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "walissoncasonatto/qwen3-4b-grounded-qa-lora",
+  "slug": "walissoncasonatto-qwen3-4b-grounded-qa-lora",
+  "author": "walissoncasonatto",
+  "url": "https://huggingface.co/walissoncasonatto/qwen3-4b-grounded-qa-lora",
+  "created_at": "2026-10-30T23:23:50.000Z",
+  "updated_at": "2026-10-30T23:24:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "rag",
+    "grounded-qa",
+    "question-answering",
+    "abstention",
+    "text-generation",
+    "conversational",
+    "en",
+    "pt",
+    "dataset:galileo-ai/ragbench",
+    "dataset:rajpurkar/squad_v2",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132187888,
+  "storage_human": "132 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

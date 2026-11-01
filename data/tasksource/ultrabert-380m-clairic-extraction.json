@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "tasksource/UltraBERT-380M-clairic-extraction",
+  "slug": "tasksource-ultrabert-380m-clairic-extraction",
+  "author": "tasksource",
+  "url": "https://huggingface.co/tasksource/UltraBERT-380M-clairic-extraction",
+  "created_at": "2026-11-01T08:20:20.000Z",
+  "updated_at": "2026-11-01T08:21:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ultrabert",
+    "token-classification",
+    "information-extraction",
+    "extractive-qa",
+    "ner",
+    "span-extraction",
+    "tasksource",
+    "custom_code",
+    "en",
+    "dataset:tasksource/tasksource-jev-typed-decisions",
+    "base_model:dmis-lab/UltraBERT-380M",
+    "base_model:finetune:dmis-lab/UltraBERT-380M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 377540611,
+  "parameters_human": "377.5M",
+  "storage_bytes": 1510188284,
+  "storage_human": "1.5 GB",
+  "base_model": "dmis-lab/UltraBERT-380M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

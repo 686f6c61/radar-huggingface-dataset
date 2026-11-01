@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Jgmorenof/plots-paraphrase-multilingual-mpnet-base-v2",
+  "slug": "jgmorenof-plots-paraphrase-multilingual-mpnet-base-v2",
+  "author": "Jgmorenof",
+  "url": "https://huggingface.co/Jgmorenof/plots-paraphrase-multilingual-mpnet-base-v2",
+  "created_at": "2026-11-01T07:39:57.000Z",
+  "updated_at": "2026-11-01T07:42:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "narrative-similarity",
+    "cross-lingual-retrieval",
+    "tip-of-the-tongue",
+    "multilingual",
+    "dataset:Jgmorenof/PLOTS",
+    "base_model:sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

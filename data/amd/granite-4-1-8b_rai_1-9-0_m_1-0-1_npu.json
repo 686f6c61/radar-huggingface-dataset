@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "amd/granite-4.1-8b_rai_1.9.0_m_1.0.1_npu",
+  "slug": "amd-granite-4-1-8b_rai_1-9-0_m_1-0-1_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/granite-4.1-8b_rai_1.9.0_m_1.0.1_npu",
+  "created_at": "2026-10-30T20:25:52.000Z",
+  "updated_at": "2026-10-30T20:27:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "granite",
+    "amd",
+    "ryzenai",
+    "m_1.0.1_npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "quark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12478298214,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

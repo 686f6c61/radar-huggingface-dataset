@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/volt-b-joint.scannet200.kadir-yilmaz",
+  "slug": "torch-pointcloud-volt-b-joint-scannet200-kadir-yilmaz",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/volt-b-joint.scannet200.kadir-yilmaz",
+  "created_at": "2026-10-30T20:55:11.000Z",
+  "updated_at": "2026-10-30T20:55:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "volt",
+    "segmentation",
+    "dataset:scannet200",
+    "arxiv:2604.19609",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 94079688,
+  "parameters_human": "94.1M",
+  "storage_bytes": 376340608,
+  "storage_human": "376 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanNet200",
+      "metric": "mIoU",
+      "value": 40.06
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet200",
+      "metric": "OA",
+      "value": 85.29
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet200",
+      "metric": "simple/mIoU",
+      "value": 39.47
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet200",
+      "metric": "simple/OA",
+      "value": 85.01
+    }
+  ],
+  "sources": []
+}

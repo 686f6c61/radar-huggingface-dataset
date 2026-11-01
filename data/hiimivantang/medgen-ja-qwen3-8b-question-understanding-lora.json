@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hiimivantang/medgen-ja-qwen3-8b-question-understanding-lora",
+  "slug": "hiimivantang-medgen-ja-qwen3-8b-question-understanding-lora",
+  "author": "hiimivantang",
+  "url": "https://huggingface.co/hiimivantang/medgen-ja-qwen3-8b-question-understanding-lora",
+  "created_at": "2026-10-30T07:54:26.000Z",
+  "updated_at": "2026-10-30T17:07:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "medical",
+    "japanese",
+    "qwen3",
+    "research",
+    "text-generation",
+    "ja",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61380432,
+  "storage_human": "61 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

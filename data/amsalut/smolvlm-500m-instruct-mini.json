@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "amsalut/SmolVLM-500M-Instruct-mini",
+  "slug": "amsalut-smolvlm-500m-instruct-mini",
+  "author": "amsalut",
+  "url": "https://huggingface.co/amsalut/SmolVLM-500M-Instruct-mini",
+  "created_at": "2026-10-31T02:28:43.000Z",
+  "updated_at": "2026-10-31T02:30:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "idefics3",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 507482304,
+  "parameters_human": "507.5M",
+  "storage_bytes": 1015025832,
+  "storage_human": "1.0 GB",
+  "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

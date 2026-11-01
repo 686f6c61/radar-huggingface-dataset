@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0",
+  "slug": "jeesup-svd-safety-shifted-l2_utility_remove0-4_rho0",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0",
+  "created_at": "2026-10-29T18:03:20.000Z",
+  "updated_at": "2026-10-29T19:17:34.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "model-compression",
+    "safety-evaluation",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364459,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

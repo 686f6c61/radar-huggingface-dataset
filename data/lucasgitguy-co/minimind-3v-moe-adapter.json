@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Lucasgitguy-co/minimind-3v-moe-adapter",
+  "slug": "lucasgitguy-co-minimind-3v-moe-adapter",
+  "author": "Lucasgitguy-co",
+  "url": "https://huggingface.co/Lucasgitguy-co/minimind-3v-moe-adapter",
+  "created_at": "2026-10-30T07:06:48.000Z",
+  "updated_at": "2026-11-01T10:55:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "adapter",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15972840,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

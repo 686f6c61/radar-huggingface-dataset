@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aoely17/indobert-ihsg-multitask",
+  "slug": "aoely17-indobert-ihsg-multitask",
+  "author": "Aoely17",
+  "url": "https://huggingface.co/Aoely17/indobert-ihsg-multitask",
+  "created_at": "2026-10-29T09:51:32.000Z",
+  "updated_at": "2026-10-29T09:51:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "pytorch",
+    "bert",
+    "finance",
+    "sentiment-analysis",
+    "multi-task-learning",
+    "indobert",
+    "ihsg",
+    "text-classification",
+    "custom_code",
+    "id",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 497867727,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aoely17/indobert-ihsg-multitask · Hugging Face",
+      "url": "https://huggingface.co/Aoely17/indobert-ihsg-multitask",
+      "snippet": "Aoely17 / indobert-ihsg-multitask Like 0 Text Classification PyTorch Indonesian bert finance sentiment-analysis multi-task-learning …"
+    },
+    {
+      "title": "Aoely17/indobert-ihsg-multitask at main - Hugging Face",
+      "url": "https://huggingface.co/Aoely17/indobert-ihsg-multitask/tree/main",
+      "snippet": "Aoely17 / indobert-ihsg-multitask Like 0 Text Classification PyTorch Indonesian bert finance sentiment-analysis multi-task-learning …"
+    },
+    {
+      "title": "IndoBERT: Indonesian Pretrained Language Models",
+      "url": "https://www.emergentmind.com/topics/indobert",
+      "snippet": "Apr 28, 2026 · The same paper states that IndoBERT models outperform multilingual models on 8 out of 12 tasks, indicating that …"
+    },
+    {
+      "title": "IndoBERT - YouTube",
+      "url": "http:///videos/riverview/relatedvideo?q=Aoely17%2Findobert-ihsg-multitask+model+AI&adlt=off&ru=%2Fsearch%3Fq%3DAoely17%252Findobert-ihsg-multitask%2Bmodel%2BAI%26adlt%3Doff&mmscn=vwrc&mid=8860397B330EDA580FF68860397B330EDA580FF6&FORM=WRVORC&ntb=1&msockid=e533169ad5b911f182b73dd1844736de",
+      "snippet": "Apr 11, 2023 · In this presentation, we will introduce you to IndoBERT, its architecture, and how it …"
+    }
+  ]
+}

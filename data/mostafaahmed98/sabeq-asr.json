@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "MostafaAhmed98/Sabeq-ASR",
+  "slug": "mostafaahmed98-sabeq-asr",
+  "author": "MostafaAhmed98",
+  "url": "https://huggingface.co/MostafaAhmed98/Sabeq-ASR",
+  "created_at": "2026-10-27T13:46:54.000Z",
+  "updated_at": "2026-10-28T12:50:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "nemo",
+    "speech-recognition",
+    "ASR",
+    "Arabic",
+    "Conformer",
+    "Transducer",
+    "CTC",
+    "NeMo",
+    "hf-asr-leaderboard",
+    "speech",
+    "audio",
+    "FastConformer",
+    "Hybrid",
+    "Sabeq",
+    "automatic-speech-recognition",
+    "ar",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 460753978,
+  "storage_human": "461 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Arabic Automatic Speech Recognition",
+      "dataset": "Six Arabic benchmarks (in-domain average)",
+      "metric": "Average WER (RNN-T beam search)",
+      "value": 20.4
+    },
+    {
+      "task": "MASC-clean",
+      "dataset": "MASC-clean",
+      "metric": "WER",
+      "value": 5.43
+    },
+    {
+      "task": "MASC-noisy",
+      "dataset": "MASC-noisy",
+      "metric": "WER",
+      "value": 18.13
+    },
+    {
+      "task": "Arabic Automatic Speech Recognition",
+      "dataset": "CommonVoice 18 (Arabic)",
+      "metric": "WER",
+      "value": 7.01
+    },
+    {
+      "task": "MGB-2",
+      "dataset": "MGB-2",
+      "metric": "WER",
+      "value": 9.89
+    },
+    {
+      "task": "SADA22",
+      "dataset": "SADA22",
+      "metric": "WER",
+      "value": 28.29
+    },
+    {
+      "task": "Casablanca",
+      "dataset": "Casablanca",
+      "metric": "WER",
+      "value": 53.63
+    }
+  ],
+  "sources": []
+}

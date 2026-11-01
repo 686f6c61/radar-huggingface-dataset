@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "savocheek/ru-reviews-rubert",
+  "slug": "savocheek-ru-reviews-rubert",
+  "author": "savocheek",
+  "url": "https://huggingface.co/savocheek/ru-reviews-rubert",
+  "created_at": "2026-10-27T14:42:21.000Z",
+  "updated_at": "2026-10-27T17:05:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "russian",
+    "reviews",
+    "distillation",
+    "ru",
+    "dataset:d0rj/geo-reviews-dataset-2023",
+    "base_model:ai-forever/ruBert-base",
+    "base_model:quantized:ai-forever/ruBert-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 178309635,
+  "parameters_human": "178.3M",
+  "storage_bytes": 892419738,
+  "storage_human": "892 MB",
+  "base_model": "ai-forever/ruBert-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Qwen2-7B-Instruct",
+  "slug": "archivestudio-qwen2-7b-instruct",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Qwen2-7B-Instruct",
+  "created_at": "2026-10-31T06:26:52.000Z",
+  "updated_at": "2026-10-31T06:26:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "base_model:Qwen/Qwen2-7B",
+    "base_model:finetune:Qwen/Qwen2-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 572,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271872,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

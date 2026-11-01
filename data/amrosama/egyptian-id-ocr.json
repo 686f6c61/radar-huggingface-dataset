@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "amrosama/egyptian-id-ocr",
+  "slug": "amrosama-egyptian-id-ocr",
+  "author": "amrosama",
+  "url": "https://huggingface.co/amrosama/egyptian-id-ocr",
+  "created_at": "2026-10-28T21:29:23.000Z",
+  "updated_at": "2026-10-28T21:29:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ocr",
+    "arabic",
+    "egyptian-id",
+    "synthetic-data",
+    "structured-extraction",
+    "image-text-to-text",
+    "ar",
+    "base_model:PaddlePaddle/PaddleOCR-VL",
+    "base_model:adapter:PaddlePaddle/PaddleOCR-VL",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25213259,
+  "storage_human": "25 MB",
+  "base_model": "PaddlePaddle/PaddleOCR-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

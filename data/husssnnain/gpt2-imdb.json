@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "husssnnain/gpt2-imdb",
+  "slug": "husssnnain-gpt2-imdb",
+  "author": "husssnnain",
+  "url": "https://huggingface.co/husssnnain/gpt2-imdb",
+  "created_at": "2026-11-01T06:08:29.000Z",
+  "updated_at": "2026-11-01T06:09:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

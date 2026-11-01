@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-sr30k",
+  "slug": "open-sci-open-sci-ref-v0-02-1-7b-fineweb-edu-1-4t-300b-4096-longsft_16k-sft-tulu3-decontaminated-sr30k",
+  "author": "open-sci",
+  "url": "https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-sr30k",
+  "created_at": "2026-10-30T11:57:49.000Z",
+  "updated_at": "2026-10-30T11:58:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "opensci",
+    "feature-extraction",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "custom_code",
+    "base_model:ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated",
+    "base_model:finetune:ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1714377728,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3428804400,
+  "storage_human": "3.4 GB",
+  "base_model": "ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Recherche et déploiement",
+      "url": "https://openai.com/fr-FR/",
+      "snippet": "Nous pensons que nos recherches finiront par mener à une intelligence artificielle générale, un système capable de résoudre des …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le téléchargement, …"
+    },
+    {
+      "title": "Open, Aujourd'hui. Et demain. | Open",
+      "url": "https://www.open.global/open/open-aujourdhui-demain",
+      "snippet": "Open est l'ESN partenaire de confiance qui accompagne les 1000 premières entreprises et organisations françaises engagées dans …"
+    },
+    {
+      "title": "Bienvenue sur Open Library | Open Library",
+      "url": "https://openlibrary.org/?lang=fr",
+      "snippet": "Open Library est un catalogue de bibliothèque ouvert et modifiable, qui cherche à créer une page web pour chaque livre qui ait …"
+    }
+  ]
+}

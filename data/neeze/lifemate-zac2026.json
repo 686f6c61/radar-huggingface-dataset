@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Neeze/lifemate-zac2026",
+  "slug": "neeze-lifemate-zac2026",
+  "author": "Neeze",
+  "url": "https://huggingface.co/Neeze/lifemate-zac2026",
+  "created_at": "2026-11-01T10:52:06.000Z",
+  "updated_at": "2026-11-01T10:53:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "tool-calling",
+    "speech",
+    "agent",
+    "zalo-ai-challenge-2026",
+    "vi",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3230370310,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507, vinai/PhoWhisper-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

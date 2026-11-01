@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cadrojasl/beto-sarcasmo-spanish-2026",
+  "slug": "cadrojasl-beto-sarcasmo-spanish-2026",
+  "author": "cadrojasl",
+  "url": "https://huggingface.co/cadrojasl/beto-sarcasmo-spanish-2026",
+  "created_at": "2026-10-26T03:57:29.000Z",
+  "updated_at": "2026-10-26T03:57:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "spanish",
+    "sarcasmo",
+    "es",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 109852418,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439433208,
+  "storage_human": "439 MB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NFTs Statistics – Sales, Trends and More [2023]",
+      "url": "https://influencermarketinghub.com/nfts-statistics/",
+      "snippet": "Aug 2, 2026 · Between April 2021 and April 2023, art-related NFT sales underwent significant changes. In April 2021, around 28.4 …Read more"
+    },
+    {
+      "title": "NFT Statistics By Market, Ownership, Industries And Facts (2025)",
+      "url": "https://electroiq.com/stats/nft-statistics/",
+      "snippet": "Sep 29, 2026 · NFTs usually link to digital items like art, pictures, music, or videos, and they are unique, unlike fungible …"
+    }
+  ]
+}

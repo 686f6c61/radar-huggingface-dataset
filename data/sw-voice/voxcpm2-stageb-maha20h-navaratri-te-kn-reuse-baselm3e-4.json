@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "sw-voice/voxcpm2-stageB-maha20h-navaratri-te-kn-reuse-baselm3e-4",
+  "slug": "sw-voice-voxcpm2-stageb-maha20h-navaratri-te-kn-reuse-baselm3e-4",
+  "author": "sw-voice",
+  "url": "https://huggingface.co/sw-voice/voxcpm2-stageB-maha20h-navaratri-te-kn-reuse-baselm3e-4",
+  "created_at": "2026-11-01T11:30:44.000Z",
+  "updated_at": "2026-11-01T11:32:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "te",
+    "kn"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "en",
+    "te",
+    "kn",
+    "base_model:sw-voice/voxcpm2-stageA-te-maha20h-reuse-en3h-baselm3e-4-1ep",
+    "base_model:finetune:sw-voice/voxcpm2-stageA-te-maha20h-reuse-en3h-baselm3e-4-1ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040314,
+  "storage_human": "9.5 GB",
+  "base_model": "sw-voice/voxcpm2-stageA-te-maha20h-reuse-en3h-baselm3e-4-1ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

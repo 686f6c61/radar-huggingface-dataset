@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "arlenecc/bge-reranker-v2-m3-mlx-int4",
+  "slug": "arlenecc-bge-reranker-v2-m3-mlx-int4",
+  "author": "arlenecc",
+  "url": "https://huggingface.co/arlenecc/bge-reranker-v2-m3-mlx-int4",
+  "created_at": "2026-10-31T15:38:31.000Z",
+  "updated_at": "2026-10-31T16:15:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 567755777,
+  "parameters_human": "567.8M",
+  "storage_bytes": 372464495,
+  "storage_human": "372 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

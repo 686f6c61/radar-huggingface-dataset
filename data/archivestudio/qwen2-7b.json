@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Qwen2-7B",
+  "slug": "archivestudio-qwen2-7b",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Qwen2-7B",
+  "created_at": "2026-10-31T06:26:48.000Z",
+  "updated_at": "2026-10-31T06:26:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "pretrained",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 577,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271872,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

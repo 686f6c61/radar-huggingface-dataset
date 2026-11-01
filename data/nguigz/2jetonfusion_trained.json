@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nguigz/2jetonfusion_trained",
+  "slug": "nguigz-2jetonfusion_trained",
+  "author": "nguigz",
+  "url": "https://huggingface.co/nguigz/2jetonfusion_trained",
+  "created_at": "2026-10-30T09:56:01.000Z",
+  "updated_at": "2026-10-30T09:56:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:nguigz/2jetonfusion",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

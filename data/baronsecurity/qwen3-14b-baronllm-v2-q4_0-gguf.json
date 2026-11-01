@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BaronSecurity/Qwen3-14B-BaronLLM-v2-Q4_0-GGUF",
+  "slug": "baronsecurity-qwen3-14b-baronllm-v2-q4_0-gguf",
+  "author": "BaronSecurity",
+  "url": "https://huggingface.co/BaronSecurity/Qwen3-14B-BaronLLM-v2-Q4_0-GGUF",
+  "created_at": "2026-10-30T10:13:43.000Z",
+  "updated_at": "2026-10-30T10:13:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "dataset:Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset",
+    "dataset:Trendyol/All-CVE-Chat-MultiTurn-1999-2025-Dataset",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:quantized:Qwen/Qwen3-14B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8515144064,
+  "storage_human": "8.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

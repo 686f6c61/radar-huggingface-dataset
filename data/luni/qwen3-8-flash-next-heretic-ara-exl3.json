@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Luni/Qwen3.8-Flash-Next-Heretic-ARA-EXL3",
+  "slug": "luni-qwen3-8-flash-next-heretic-ara-exl3",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Qwen3.8-Flash-Next-Heretic-ARA-EXL3",
+  "created_at": "2026-10-31T14:45:54.000Z",
+  "updated_at": "2026-10-31T15:52:22.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [
+    "en",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "exllamav3",
+    "qwen",
+    "qwen3.8",
+    "qwen4_exp",
+    "flash-next",
+    "moe",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "exl3",
+    "mtp",
+    "image-text-to-text",
+    "en",
+    "de",
+    "multilingual",
+    "base_model:Luni/Qwen3.8-Flash-Next-Heretic-ARA",
+    "base_model:quantized:Luni/Qwen3.8-Flash-Next-Heretic-ARA",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92464555229,
+  "storage_human": "92.5 GB",
+  "base_model": "Luni/Qwen3.8-Flash-Next-Heretic-ARA",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lunii | Conteuses et livres audio pour 0-14 ans",
+      "url": "https://lunii.com/fr-fr",
+      "snippet": "Avec les conteuses Ma 1ère Lunii, Ma Fabrique à Histoires & FLAM, Lunii réveille l'imaginaire et développe la créativité des enfants …"
+    },
+    {
+      "title": "Boutique Officielle | Lunii",
+      "url": "https://lunii.com/fr-fr/boutique",
+      "snippet": "Explorez l'univers de Lunii et découvrez Ma Fabrique à Histoires, FLAM, leurs accessoires et plus de 500 livres audio spécialement …"
+    },
+    {
+      "title": "Lunii : tous les produits de la marque Lunii (Enfant, Jouet ... - Fnac",
+      "url": "https://www.fnac.com/Lunii/m367853/w-4",
+      "snippet": "Retrouvez tous les produits Lunii au meilleur prix à la FNAC. En quelques clics, achetez en ligne ou commandez dans un magasin …"
+    },
+    {
+      "title": "Mon compte – Lunii",
+      "url": "https://support.lunii.com/hc/fr/categories/360000273657-Mon-compte",
+      "snippet": "Mon compte 📜 Retrouvez ici toutes les informations pour créer votre compte et le paramétrer"
+    }
+  ]
+}

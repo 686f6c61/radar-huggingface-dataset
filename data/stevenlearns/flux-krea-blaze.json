@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "stevenlearns/FLUX-Krea-BLAZE",
+  "slug": "stevenlearns-flux-krea-blaze",
+  "author": "stevenlearns",
+  "url": "https://huggingface.co/stevenlearns/FLUX-Krea-BLAZE",
+  "created_at": "2026-11-01T07:46:40.000Z",
+  "updated_at": "2026-11-01T07:46:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "en",
+    "base_model:black-forest-labs/FLUX.1-Krea-dev",
+    "base_model:finetune:black-forest-labs/FLUX.1-Krea-dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14086830624,
+  "storage_human": "14.1 GB",
+  "base_model": "black-forest-labs/FLUX.1-Krea-dev, black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

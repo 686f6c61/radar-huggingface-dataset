@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "logos42/mini-universe",
+  "slug": "logos42-mini-universe",
+  "author": "logos42",
+  "url": "https://huggingface.co/logos42/mini-universe",
+  "created_at": "2026-10-29T11:15:21.000Z",
+  "updated_at": "2026-10-29T11:16:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "other",
+  "languages": [],
+  "tags": [
+    "other",
+    "safetensors",
+    "mini_universe_q_policy",
+    "reinforcement-learning",
+    "table-q-learning",
+    "physics-simulation",
+    "custom-simulator",
+    "frequency-bands",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 480,
+  "parameters_human": "480",
+  "storage_bytes": 2000,
+  "storage_human": "2000 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

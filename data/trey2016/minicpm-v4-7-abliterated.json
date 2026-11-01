@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Trey2016/MiniCPM-v4-7-abliterated",
+  "slug": "trey2016-minicpm-v4-7-abliterated",
+  "author": "Trey2016",
+  "url": "https://huggingface.co/Trey2016/MiniCPM-v4-7-abliterated",
+  "created_at": "2026-10-31T17:34:50.000Z",
+  "updated_at": "2026-10-31T18:37:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 1006209856,
+  "parameters_human": "1.01B",
+  "storage_bytes": 575188032,
+  "storage_human": "575 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

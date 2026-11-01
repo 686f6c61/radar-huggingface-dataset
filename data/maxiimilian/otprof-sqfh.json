@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "maxiimilian/otprof-sqfh",
+  "slug": "maxiimilian-otprof-sqfh",
+  "author": "maxiimilian",
+  "url": "https://huggingface.co/maxiimilian/otprof-sqfh",
+  "created_at": "2026-10-26T09:54:23.000Z",
+  "updated_at": "2026-10-28T15:37:01.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "otprof",
+  "languages": [],
+  "tags": [
+    "otprof",
+    "safetensors",
+    "optical-turbulence",
+    "atmospheric-science",
+    "cn2",
+    "arxiv:2604.09346",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 1031852,
+  "parameters_human": "1.0M",
+  "storage_bytes": 4141648,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

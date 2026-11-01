@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Adityapande403/VisDoc-AI",
+  "slug": "adityapande403-visdoc-ai",
+  "author": "Adityapande403",
+  "url": "https://huggingface.co/Adityapande403/VisDoc-AI",
+  "created_at": "2026-10-27T13:20:04.000Z",
+  "updated_at": "2026-10-27T13:22:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "colpali-engine",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colpali-engine",
+    "safetensors",
+    "colqwen2_5",
+    "colpali",
+    "colqwen",
+    "multi-vector",
+    "late-interaction",
+    "visual-document-retrieval",
+    "document-ai",
+    "quantization",
+    "maxsim",
+    "feature-extraction",
+    "en",
+    "base_model:vidore/colqwen2.5-v0.2",
+    "base_model:finetune:vidore/colqwen2.5-v0.2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 262272,
+  "parameters_human": "262272",
+  "storage_bytes": 1049264,
+  "storage_human": "1 MB",
+  "base_model": "vidore/colqwen2.5-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

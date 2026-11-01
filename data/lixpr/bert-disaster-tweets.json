@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Lixpr/bert-disaster-tweets",
+  "slug": "lixpr-bert-disaster-tweets",
+  "author": "Lixpr",
+  "url": "https://huggingface.co/Lixpr/bert-disaster-tweets",
+  "created_at": "2026-10-29T15:08:06.000Z",
+  "updated_at": "2026-10-29T16:05:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "disaster-tweets",
+    "course-project",
+    "en",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:quantized:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110241529,
+  "storage_human": "110 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

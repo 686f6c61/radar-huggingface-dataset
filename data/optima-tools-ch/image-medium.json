@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "optima-tools-ch/image-medium",
+  "slug": "optima-tools-ch-image-medium",
+  "author": "optima-tools-ch",
+  "url": "https://huggingface.co/optima-tools-ch/image-medium",
+  "created_at": "2026-10-26T21:07:15.000Z",
+  "updated_at": "2026-10-27T20:56:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "flux",
+    "image-editing",
+    "optima-tools",
+    "en",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15975635268,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

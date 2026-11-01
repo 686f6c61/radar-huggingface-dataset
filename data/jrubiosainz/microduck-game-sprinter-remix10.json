@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-game-sprinter-remix10",
+  "slug": "jrubiosainz-microduck-game-sprinter-remix10",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix10",
+  "created_at": "2026-10-29T09:09:02.000Z",
+  "updated_at": "2026-10-29T09:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:a1rb4Ck/microduck-sprint-2m",
+    "base_model:finetune:a1rb4Ck/microduck-sprint-2m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 894416,
+  "storage_human": "894416 B",
+  "base_model": "a1rb4Ck/microduck-sprint-2m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

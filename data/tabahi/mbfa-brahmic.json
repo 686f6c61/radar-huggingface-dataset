@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Tabahi/mbfa-brahmic",
+  "slug": "tabahi-mbfa-brahmic",
+  "author": "Tabahi",
+  "url": "https://huggingface.co/Tabahi/mbfa-brahmic",
+  "created_at": "2026-10-26T20:54:27.000Z",
+  "updated_at": "2026-10-26T20:54:39.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "hi",
+    "or",
+    "ta"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "forced-alignment",
+    "phoneme-recognition",
+    "phoneme-segmentation",
+    "speech",
+    "multilingual",
+    "hi",
+    "or",
+    "ta",
+    "dataset:google/fleurs",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 14760389,
+  "parameters_human": "14.8M",
+  "storage_bytes": 118120903,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

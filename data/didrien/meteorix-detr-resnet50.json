@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Didrien/meteorix-detr-resnet50",
+  "slug": "didrien-meteorix-detr-resnet50",
+  "author": "Didrien",
+  "url": "https://huggingface.co/Didrien/meteorix-detr-resnet50",
+  "created_at": "2026-10-29T02:10:20.000Z",
+  "updated_at": "2026-10-29T02:10:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "detr",
+    "object-detection",
+    "meteor-detection",
+    "base_model:facebook/detr-resnet-50",
+    "base_model:finetune:facebook/detr-resnet-50",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 41607878,
+  "parameters_human": "41.6M",
+  "storage_bytes": 166494824,
+  "storage_human": "166 MB",
+  "base_model": "facebook/detr-resnet-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

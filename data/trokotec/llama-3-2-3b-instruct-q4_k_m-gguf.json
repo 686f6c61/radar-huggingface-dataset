@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "trokotec/Llama-3.2-3B-Instruct-Q4_K_M-GGUF",
+  "slug": "trokotec-llama-3-2-3b-instruct-q4_k_m-gguf",
+  "author": "trokotec",
+  "url": "https://huggingface.co/trokotec/Llama-3.2-3B-Instruct-Q4_K_M-GGUF",
+  "created_at": "2026-10-31T15:24:04.000Z",
+  "updated_at": "2026-10-31T15:24:18.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "llama-3.2",
+    "es",
+    "en",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377696,
+  "storage_human": "2.0 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

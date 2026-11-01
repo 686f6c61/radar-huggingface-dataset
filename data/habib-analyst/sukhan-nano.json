@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "habib-analyst/sukhan-nano",
+  "slug": "habib-analyst-sukhan-nano",
+  "author": "habib-analyst",
+  "url": "https://huggingface.co/habib-analyst/sukhan-nano",
+  "created_at": "2026-10-28T11:26:21.000Z",
+  "updated_at": "2026-10-28T11:26:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "urdu",
+    "tiny-lm",
+    "from-scratch",
+    "educational",
+    "text-generation",
+    "ur",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 5572608,
+  "parameters_human": "5.6M",
+  "storage_bytes": 22298479,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

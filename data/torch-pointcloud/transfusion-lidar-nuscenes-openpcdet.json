@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/transfusion-lidar.nuscenes.openpcdet",
+  "slug": "torch-pointcloud-transfusion-lidar-nuscenes-openpcdet",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/transfusion-lidar.nuscenes.openpcdet",
+  "created_at": "2026-10-30T20:55:35.000Z",
+  "updated_at": "2026-10-30T20:55:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "transfusion",
+    "object-detection",
+    "dataset:nuscenes",
+    "arxiv:2203.11496",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 8315854,
+  "parameters_human": "8.3M",
+  "storage_bytes": 33296392,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "mAP",
+      "value": 65.32
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "NDS",
+      "value": 69.71
+    }
+  ],
+  "sources": []
+}

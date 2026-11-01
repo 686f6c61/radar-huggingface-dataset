@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Shirounyaa/mistral-7b-v0.1-layla-v4",
+  "slug": "shirounyaa-mistral-7b-v0-1-layla-v4",
+  "author": "Shirounyaa",
+  "url": "https://huggingface.co/Shirounyaa/mistral-7b-v0.1-layla-v4",
+  "created_at": "2026-10-31T21:19:58.000Z",
+  "updated_at": "2026-10-31T21:19:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge (25-Shot)",
+      "metric": "normalized accuracy",
+      "value": 62.29
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (10-Shot)",
+      "metric": "normalized accuracy",
+      "value": 83.36
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-Shot)",
+      "metric": "accuracy",
+      "value": 64.32
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA (0-shot)",
+      "metric": null,
+      "value": 43.14
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Winogrande (5-shot)",
+      "metric": "accuracy",
+      "value": 79.56
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8k (5-shot)",
+      "metric": "accuracy",
+      "value": 55.5
+    }
+  ],
+  "sources": []
+}

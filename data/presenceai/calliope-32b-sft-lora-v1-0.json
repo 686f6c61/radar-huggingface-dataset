@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "PresenceAI/Calliope-32B-SFT-LoRA-v1.0",
+  "slug": "presenceai-calliope-32b-sft-lora-v1-0",
+  "author": "PresenceAI",
+  "url": "https://huggingface.co/PresenceAI/Calliope-32B-SFT-LoRA-v1.0",
+  "created_at": "2026-10-28T13:15:50.000Z",
+  "updated_at": "2026-10-28T15:31:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "roleplay",
+    "companion",
+    "tool-calling",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:adapter:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085286132,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

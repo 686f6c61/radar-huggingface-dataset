@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rustam1221/UzASR-CTC-600M",
+  "slug": "rustam1221-uzasr-ctc-600m",
+  "author": "rustam1221",
+  "url": "https://huggingface.co/rustam1221/UzASR-CTC-600M",
+  "created_at": "2026-10-30T17:04:06.000Z",
+  "updated_at": "2026-10-30T17:09:45.000Z",
+  "license": "uzbek-asr-commercial",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "automatic-speech-recognition",
+    "uzbek",
+    "open-weights",
+    "gigaam",
+    "ctc",
+    "punctuation",
+    "uz",
+    "dataset:rustam1221/uzbek-asr-train-manifests",
+    "dataset:rustam1221/uzbek-asr-benchmark-spontaneous",
+    "base_model:ai-sage/GigaAM-Multilingual",
+    "base_model:finetune:ai-sage/GigaAM-Multilingual",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 585334219,
+  "parameters_human": "585.3M",
+  "storage_bytes": 2626086583,
+  "storage_human": "2.6 GB",
+  "base_model": "ai-sage/GigaAM-Multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Uzbek Spontaneous Speech ASR Benchmark",
+      "metric": "WER",
+      "value": 8.14
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Uzbek Spontaneous Speech ASR Benchmark",
+      "metric": "CER",
+      "value": 2.54
+    }
+  ],
+  "sources": []
+}

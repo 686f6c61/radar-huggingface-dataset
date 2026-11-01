@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kob0105/act_whiteball_paper_IR_70ep_NEW",
+  "slug": "kob0105-act_whiteball_paper_ir_70ep_new",
+  "author": "kob0105",
+  "url": "https://huggingface.co/kob0105/act_whiteball_paper_IR_70ep_NEW",
+  "created_at": "2026-10-30T06:16:39.000Z",
+  "updated_at": "2026-10-30T06:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kob0105/record_test_new_whiteball_paper_IR",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

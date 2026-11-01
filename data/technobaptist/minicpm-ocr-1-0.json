@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/MiniCPM-OCR-1.0",
+  "slug": "technobaptist-minicpm-ocr-1-0",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/MiniCPM-OCR-1.0",
+  "created_at": "2026-10-27T17:42:21.000Z",
+  "updated_at": "2026-10-27T17:42:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "minicpm_ocr",
+    "minicpm-ocr",
+    "ocr",
+    "document-parsing",
+    "multimodal",
+    "vision-language",
+    "table-recognition",
+    "formula-recognition",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 1300434160,
+  "parameters_human": "1.30B",
+  "storage_bytes": 2620963381,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

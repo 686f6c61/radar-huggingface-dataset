@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "shiva123782/sunithaAI-small",
+  "slug": "shiva123782-sunithaai-small",
+  "author": "shiva123782",
+  "url": "https://huggingface.co/shiva123782/sunithaAI-small",
+  "created_at": "2026-10-28T17:18:13.000Z",
+  "updated_at": "2026-10-28T17:18:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "qwen2.5",
+    "lora",
+    "qlora",
+    "instruction-tuning",
+    "text-generation",
+    "lightweight",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6265944,
+  "storage_human": "6 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

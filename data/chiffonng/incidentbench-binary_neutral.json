@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "chiffonng/incidentbench-binary_neutral",
+  "slug": "chiffonng-incidentbench-binary_neutral",
+  "author": "chiffonng",
+  "url": "https://huggingface.co/chiffonng/incidentbench-binary_neutral",
+  "created_at": "2026-10-26T07:55:05.000Z",
+  "updated_at": "2026-10-29T18:03:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161533192,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

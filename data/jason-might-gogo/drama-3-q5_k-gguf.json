@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jason-might-gogo/drama-3-Q5_K-GGUF",
+  "slug": "jason-might-gogo-drama-3-q5_k-gguf",
+  "author": "jason-might-gogo",
+  "url": "https://huggingface.co/jason-might-gogo/drama-3-Q5_K-GGUF",
+  "created_at": "2026-10-31T08:59:24.000Z",
+  "updated_at": "2026-10-31T09:24:07.000Z",
+  "license": "fish-audio-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "speech.cpp",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 35774376977,
+  "parameters_human": "35.77B",
+  "storage_bytes": 25206848608,
+  "storage_human": "25.2 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

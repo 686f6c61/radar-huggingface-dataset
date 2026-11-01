@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "syedtaha22/urdu-words2sentence-17m",
+  "slug": "syedtaha22-urdu-words2sentence-17m",
+  "author": "syedtaha22",
+  "url": "https://huggingface.co/syedtaha22/urdu-words2sentence-17m",
+  "created_at": "2026-11-01T10:33:40.000Z",
+  "updated_at": "2026-11-01T11:24:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "urdu-words2sentence",
+    "urdu",
+    "code-mixing",
+    "text-generation",
+    "ur",
+    "dataset:cc100",
+    "dataset:wikimedia/wikipedia",
+    "dataset:tatoeba",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17283456,
+  "parameters_human": "17.3M",
+  "storage_bytes": 69527493,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

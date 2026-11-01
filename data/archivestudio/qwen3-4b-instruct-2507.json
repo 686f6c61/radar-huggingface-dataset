@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Qwen3-4B-Instruct-2507",
+  "slug": "archivestudio-qwen3-4b-instruct-2507",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Qwen3-4B-Instruct-2507",
+  "created_at": "2026-11-01T06:15:53.000Z",
+  "updated_at": "2026-11-01T06:15:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404654,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

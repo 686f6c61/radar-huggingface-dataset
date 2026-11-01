@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "FRAMERIA/cybersense-wangchanberta",
+  "slug": "frameria-cybersense-wangchanberta",
+  "author": "FRAMERIA",
+  "url": "https://huggingface.co/FRAMERIA/cybersense-wangchanberta",
+  "created_at": "2026-10-26T10:19:51.000Z",
+  "updated_at": "2026-10-26T10:21:11.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "safetensors",
+    "camembert",
+    "scam-detection",
+    "sms",
+    "thai",
+    "text-classification",
+    "th",
+    "base_model:airesearch/wangchanberta-base-att-spm-uncased",
+    "base_model:finetune:airesearch/wangchanberta-base-att-spm-uncased",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 105245954,
+  "parameters_human": "105.2M",
+  "storage_bytes": 421007928,
+  "storage_human": "421 MB",
+  "base_model": "airesearch/wangchanberta-base-att-spm-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

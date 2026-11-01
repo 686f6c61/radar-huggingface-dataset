@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0.001",
+  "slug": "jeesup-svd-safety-shifted-l3_mixed_remove0-4_rho0-001",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0.001",
+  "created_at": "2026-10-30T00:27:32.000Z",
+  "updated_at": "2026-10-30T02:50:29.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "model-compression",
+    "safety-evaluation",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766017,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

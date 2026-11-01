@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Mateus-Nery/lumi-4b-GGUF",
+  "slug": "mateus-nery-lumi-4b-gguf",
+  "author": "Mateus-Nery",
+  "url": "https://huggingface.co/Mateus-Nery/lumi-4b-GGUF",
+  "created_at": "2026-11-01T05:35:41.000Z",
+  "updated_at": "2026-11-01T05:58:01.000Z",
+  "license": "lumi-4b",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "portuguese",
+    "ceia",
+    "nemotron",
+    "text-generation",
+    "pt",
+    "base_model:ceia-br/lumi-4b",
+    "base_model:quantized:ceia-br/lumi-4b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 27766234253,
+  "storage_human": "27.8 GB",
+  "base_model": "ceia-br/lumi-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "tenyyprn/so101-tidyup-act",
+  "slug": "tenyyprn-so101-tidyup-act",
+  "author": "tenyyprn",
+  "url": "https://huggingface.co/tenyyprn/so101-tidyup-act",
+  "created_at": "2026-10-30T09:49:42.000Z",
+  "updated_at": "2026-10-30T09:52:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "so101",
+    "imitation-learning",
+    "robotics",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

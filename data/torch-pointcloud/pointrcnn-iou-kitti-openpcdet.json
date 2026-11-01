@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointrcnn-iou.kitti.openpcdet",
+  "slug": "torch-pointcloud-pointrcnn-iou-kitti-openpcdet",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointrcnn-iou.kitti.openpcdet",
+  "created_at": "2026-10-30T20:56:58.000Z",
+  "updated_at": "2026-10-30T20:57:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointrcnn",
+    "object-detection",
+    "dataset:kitti",
+    "arxiv:1812.04244",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 4060531,
+  "parameters_human": "4.1M",
+  "storage_bytes": 16279388,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "mAP",
+      "value": 68.5
+    },
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "AP/Car",
+      "value": 78.57
+    },
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "AP/Pedestrian",
+      "value": 55.02
+    },
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "AP/Cyclist",
+      "value": 71.92
+    }
+  ],
+  "sources": []
+}

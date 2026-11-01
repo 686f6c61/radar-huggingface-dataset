@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "anphu16-do-huu/xlmr-sentiment-en-es-zh-ko",
+  "slug": "anphu16-do-huu-xlmr-sentiment-en-es-zh-ko",
+  "author": "anphu16-do-huu",
+  "url": "https://huggingface.co/anphu16-do-huu/xlmr-sentiment-en-es-zh-ko",
+  "created_at": "2026-10-31T03:42:07.000Z",
+  "updated_at": "2026-10-31T03:42:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "zh",
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "sentiment",
+    "text-classification",
+    "multilingual",
+    "en",
+    "es",
+    "zh",
+    "ko",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129306170,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

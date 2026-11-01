@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/openscene-openseg.nuscenes.songyou-peng",
+  "slug": "torch-pointcloud-openscene-openseg-nuscenes-songyou-peng",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/openscene-openseg.nuscenes.songyou-peng",
+  "created_at": "2026-10-30T20:33:43.000Z",
+  "updated_at": "2026-10-30T20:33:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "openscene",
+    "segmentation",
+    "dataset:nuscenes",
+    "arxiv:2211.15654",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 15575648,
+  "parameters_human": "15.6M",
+  "storage_bytes": 62333976,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "mIoU",
+      "value": 42.97
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "mAcc",
+      "value": 56.99
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "OA",
+      "value": 77.6
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "simple/mIoU",
+      "value": 41.84
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "simple/mAcc",
+      "value": 56.05
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "simple/OA",
+      "value": 77.28
+    }
+  ],
+  "sources": []
+}

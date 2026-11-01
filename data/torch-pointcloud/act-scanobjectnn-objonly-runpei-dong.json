@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/act.scanobjectnn-objonly.runpei-dong",
+  "slug": "torch-pointcloud-act-scanobjectnn-objonly-runpei-dong",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/act.scanobjectnn-objonly.runpei-dong",
+  "created_at": "2026-10-30T20:42:04.000Z",
+  "updated_at": "2026-10-30T20:42:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "act",
+    "classification",
+    "dataset:scanobjectnn",
+    "arxiv:2212.08320",
+    "base_model:torch-pointcloud/act.pretrain.runpei-dong",
+    "base_model:finetune:torch-pointcloud/act.pretrain.runpei-dong",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 22095631,
+  "parameters_human": "22.1M",
+  "storage_bytes": 88399756,
+  "storage_human": "88 MB",
+  "base_model": "torch-pointcloud/act.pretrain.runpei-dong",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (OBJ_ONLY)",
+      "metric": "OA",
+      "value": 91.22
+    },
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (OBJ_ONLY)",
+      "metric": "mAcc",
+      "value": 90.26
+    }
+  ],
+  "sources": []
+}

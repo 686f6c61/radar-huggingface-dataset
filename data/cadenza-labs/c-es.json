@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Cadenza-Labs/c-es",
+  "slug": "cadenza-labs-c-es",
+  "author": "Cadenza-Labs",
+  "url": "https://huggingface.co/Cadenza-Labs/c-es",
+  "created_at": "2026-11-01T12:12:00.000Z",
+  "updated_at": "2026-11-01T12:12:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2938431000,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

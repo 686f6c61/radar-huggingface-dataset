@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "vllm-project/DeepSeek-V3-4layers-MTP-FP8",
+  "slug": "vllm-project-deepseek-v3-4layers-mtp-fp8",
+  "author": "vllm-project",
+  "url": "https://huggingface.co/vllm-project/DeepSeek-V3-4layers-MTP-FP8",
+  "created_at": "2026-10-30T15:58:56.000Z",
+  "updated_at": "2026-10-30T16:03:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v3",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 6727036944,
+  "parameters_human": "6.73B",
+  "storage_bytes": 10537476744,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

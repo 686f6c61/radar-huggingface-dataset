@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "CharlieBT/gx29-decider",
+  "slug": "charliebt-gx29-decider",
+  "author": "CharlieBT",
+  "url": "https://huggingface.co/CharlieBT/gx29-decider",
+  "created_at": "2026-10-28T10:20:55.000Z",
+  "updated_at": "2026-10-28T11:15:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decider",
+    "decision-model",
+    "reax",
+    "text-classification",
+    "base_model:baselabs/mammoth-1",
+    "base_model:finetune:baselabs/mammoth-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193403363,
+  "storage_human": "52.2 GB",
+  "base_model": "baselabs/mammoth-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

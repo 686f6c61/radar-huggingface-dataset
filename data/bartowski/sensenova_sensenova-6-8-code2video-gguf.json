@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "bartowski/sensenova_SenseNova-6.8-Code2Video-GGUF",
+  "slug": "bartowski-sensenova_sensenova-6-8-code2video-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/sensenova_SenseNova-6.8-Code2Video-GGUF",
+  "created_at": "2026-10-31T17:52:44.000Z",
+  "updated_at": "2026-10-31T18:32:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "code-video",
+    "video-generation",
+    "agent",
+    "claude-code",
+    "qwen3.8",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:sensenova/SenseNova-6.8-Code2Video",
+    "base_model:quantized:sensenova/SenseNova-6.8-Code2Video",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2209,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 439994479968,
+  "storage_human": "440.0 GB",
+  "base_model": "sensenova/SenseNova-6.8-Code2Video",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

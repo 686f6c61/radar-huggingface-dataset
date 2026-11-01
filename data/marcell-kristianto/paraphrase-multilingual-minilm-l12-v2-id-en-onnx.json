@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Marcell-Kristianto/paraphrase-multilingual-MiniLM-L12-v2-id-en-onnx",
+  "slug": "marcell-kristianto-paraphrase-multilingual-minilm-l12-v2-id-en-onnx",
+  "author": "Marcell-Kristianto",
+  "url": "https://huggingface.co/Marcell-Kristianto/paraphrase-multilingual-MiniLM-L12-v2-id-en-onnx",
+  "created_at": "2026-10-30T16:07:13.000Z",
+  "updated_at": "2026-10-30T16:11:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "fastembed",
+    "toko-marcell",
+    "id",
+    "en",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236650952,
+  "storage_human": "237 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

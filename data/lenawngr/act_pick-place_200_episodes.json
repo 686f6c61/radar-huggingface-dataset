@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_pick-place_200_episodes",
+  "slug": "lenawngr-act_pick-place_200_episodes",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_pick-place_200_episodes",
+  "created_at": "2026-10-30T17:56:25.000Z",
+  "updated_at": "2026-10-30T17:57:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:lenawngr/pick-place_so101",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "nishantwhat/robustrag-longformer-head",
+  "slug": "nishantwhat-robustrag-longformer-head",
+  "author": "nishantwhat",
+  "url": "https://huggingface.co/nishantwhat/robustrag-longformer-head",
+  "created_at": "2026-10-25T06:51:25.000Z",
+  "updated_at": "2026-10-25T07:21:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "longformer",
+    "hallucination-detection",
+    "rag",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 148660994,
+  "parameters_human": "148.7M",
+  "storage_bytes": 594678184,
+  "storage_human": "595 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "RenatoSpessotto/bertimbau-apoio-saude-mental-ptbr",
+  "slug": "renatospessotto-bertimbau-apoio-saude-mental-ptbr",
+  "author": "RenatoSpessotto",
+  "url": "https://huggingface.co/RenatoSpessotto/bertimbau-apoio-saude-mental-ptbr",
+  "created_at": "2026-10-29T20:41:40.000Z",
+  "updated_at": "2026-10-29T20:43:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "bertimbau",
+    "portuguese",
+    "mental-health",
+    "reddit",
+    "calibration",
+    "ensemble",
+    "pt",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 108925443,
+  "parameters_human": "108.9M",
+  "storage_bytes": 2614351800,
+  "storage_human": "2.6 GB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

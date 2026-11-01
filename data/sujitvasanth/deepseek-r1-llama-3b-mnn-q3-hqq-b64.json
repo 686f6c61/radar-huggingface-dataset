@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sujitvasanth/DeepSeek-R1-Llama-3B-MNN-Q3-HQQ-B64",
+  "slug": "sujitvasanth-deepseek-r1-llama-3b-mnn-q3-hqq-b64",
+  "author": "sujitvasanth",
+  "url": "https://huggingface.co/sujitvasanth/DeepSeek-R1-Llama-3B-MNN-Q3-HQQ-B64",
+  "created_at": "2026-10-28T07:37:50.000Z",
+  "updated_at": "2026-10-28T07:44:25.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mnn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mnn",
+    "quantized",
+    "hqq",
+    "text-generation",
+    "en",
+    "base_model:suayptalha/DeepSeek-R1-Distill-Llama-3B",
+    "base_model:finetune:suayptalha/DeepSeek-R1-Distill-Llama-3B",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1413531504,
+  "storage_human": "1.4 GB",
+  "base_model": "suayptalha/DeepSeek-R1-Distill-Llama-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

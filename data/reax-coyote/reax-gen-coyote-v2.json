@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "reax-coyote/reax-gen-coyote-v2",
+  "slug": "reax-coyote-reax-gen-coyote-v2",
+  "author": "reax-coyote",
+  "url": "https://huggingface.co/reax-coyote/reax-gen-coyote-v2",
+  "created_at": "2026-10-27T13:50:22.000Z",
+  "updated_at": "2026-10-27T14:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193403556,
+  "storage_human": "52.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

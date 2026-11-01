@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "GENESISADAM/gemma-2-2b-it-abliterated",
+  "slug": "genesisadam-gemma-2-2b-it-abliterated",
+  "author": "GENESISADAM",
+  "url": "https://huggingface.co/GENESISADAM/gemma-2-2b-it-abliterated",
+  "created_at": "2026-10-27T19:53:41.000Z",
+  "updated_at": "2026-10-27T19:53:41.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "en",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5250484002,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

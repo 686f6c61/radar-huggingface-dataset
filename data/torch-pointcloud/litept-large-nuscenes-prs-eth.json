@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/litept-large.nuscenes.prs-eth",
+  "slug": "torch-pointcloud-litept-large-nuscenes-prs-eth",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/litept-large.nuscenes.prs-eth",
+  "created_at": "2026-10-30T20:50:59.000Z",
+  "updated_at": "2026-10-30T20:51:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "litept",
+    "segmentation",
+    "dataset:nuscenes",
+    "arxiv:2512.13689",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 85871869,
+  "parameters_human": "85.9M",
+  "storage_bytes": 343528284,
+  "storage_human": "344 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "simple/mIoU",
+      "value": 81.11
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "simple/OA",
+      "value": 94.68
+    }
+  ],
+  "sources": []
+}

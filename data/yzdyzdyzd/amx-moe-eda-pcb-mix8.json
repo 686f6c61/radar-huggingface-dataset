@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "yzdyzdyzd/amx-moe-eda-pcb-mix8",
+  "slug": "yzdyzdyzd-amx-moe-eda-pcb-mix8",
+  "author": "yzdyzdyzd",
+  "url": "https://huggingface.co/yzdyzdyzd/amx-moe-eda-pcb-mix8",
+  "created_at": "2026-10-28T03:46:23.000Z",
+  "updated_at": "2026-10-28T03:46:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "pcb",
+    "kicad",
+    "eda",
+    "mixture-of-experts",
+    "nano-rl",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 30029024,
+  "parameters_human": "30.0M",
+  "storage_bytes": 60065952,
+  "storage_human": "60 MB",
+  "base_model": "sudnya/amx-moe-eda-w2048",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "immortaltatsu/ghostai-lfm3-1.7b-appcontract-grpo",
+  "slug": "immortaltatsu-ghostai-lfm3-1-7b-appcontract-grpo",
+  "author": "immortaltatsu",
+  "url": "https://huggingface.co/immortaltatsu/ghostai-lfm3-1.7b-appcontract-grpo",
+  "created_at": "2026-10-31T21:28:13.000Z",
+  "updated_at": "2026-10-31T21:54:08.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lfm3",
+    "solana",
+    "tool-calling",
+    "grpo",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 4566253120,
+  "storage_human": "4.6 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

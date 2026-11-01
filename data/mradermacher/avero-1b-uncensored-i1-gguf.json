@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Avero-1B-Uncensored-i1-GGUF",
+  "slug": "mradermacher-avero-1b-uncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Avero-1B-Uncensored-i1-GGUF",
+  "created_at": "2026-11-01T10:26:30.000Z",
+  "updated_at": "2026-11-01T10:31:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uncensored",
+    "conversational",
+    "reasoning",
+    "1B",
+    "llama-3.2",
+    "text-generation",
+    "pytorch",
+    "en",
+    "base_model:AveroLabs/Avero-1B-Uncensored",
+    "base_model:quantized:AveroLabs/Avero-1B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 656816,
+  "parameters_human": "656816",
+  "storage_bytes": 2659360,
+  "storage_human": "3 MB",
+  "base_model": "AveroLabs/Avero-1B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "aufklarer/P99-Turn-1-Mini-CoreML",
+  "slug": "aufklarer-p99-turn-1-mini-coreml",
+  "author": "aufklarer",
+  "url": "https://huggingface.co/aufklarer/P99-Turn-1-Mini-CoreML",
+  "created_at": "2026-10-30T22:55:28.000Z",
+  "updated_at": "2026-10-31T10:13:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "p99-turn-1-mini-coreml",
+    "turn-taking",
+    "end-of-turn",
+    "streaming",
+    "audio",
+    "voice-activity-detection",
+    "en",
+    "base_model:p99lab/turn-1-mini",
+    "base_model:finetune:p99lab/turn-1-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21772663,
+  "storage_human": "22 MB",
+  "base_model": "p99lab/turn-1-mini",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allen Turner - Disaster Operations Team Lead, FEMA Region 9 - LinkedIn",
+      "url": "https://www.linkedin.com/in/allen-turner-6515507",
+      "snippet": "View Allen Turner’s profile on LinkedIn, a professional community of 1 billion members.Read more"
+    }
+  ]
+}

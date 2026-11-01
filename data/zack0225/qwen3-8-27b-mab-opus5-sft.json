@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ZACK0225/Qwen3.8-27B-MAB-Opus5-SFT",
+  "slug": "zack0225-qwen3-8-27b-mab-opus5-sft",
+  "author": "ZACK0225",
+  "url": "https://huggingface.co/ZACK0225/Qwen3.8-27B-MAB-Opus5-SFT",
+  "created_at": "2026-10-30T16:30:39.000Z",
+  "updated_at": "2026-10-30T17:09:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mab-bench",
+    "sft",
+    "tool-use",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 3054832,
+  "parameters_human": "3.1M",
+  "storage_bytes": 109447205627,
+  "storage_human": "109.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

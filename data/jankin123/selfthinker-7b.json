@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jankin123/SelfThinker-7B",
+  "slug": "jankin123-selfthinker-7b",
+  "author": "jankin123",
+  "url": "https://huggingface.co/jankin123/SelfThinker-7B",
+  "created_at": "2026-10-28T05:23:53.000Z",
+  "updated_at": "2026-10-29T06:18:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vision-language",
+    "multimodal",
+    "visual-reasoning",
+    "self-evolving",
+    "self-distillation",
+    "base_model:ThinkMorph/ThinkMorph-7B",
+    "base_model:finetune:ThinkMorph/ThinkMorph-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 14578347936,
+  "parameters_human": "14.58B",
+  "storage_bytes": 116965073923,
+  "storage_human": "117.0 GB",
+  "base_model": "ThinkMorph/ThinkMorph-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

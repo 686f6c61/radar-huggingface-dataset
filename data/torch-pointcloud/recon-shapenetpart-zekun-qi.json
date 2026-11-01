@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/recon.shapenetpart.zekun-qi",
+  "slug": "torch-pointcloud-recon-shapenetpart-zekun-qi",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/recon.shapenetpart.zekun-qi",
+  "created_at": "2026-10-30T20:40:59.000Z",
+  "updated_at": "2026-10-30T20:41:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "recon",
+    "segmentation",
+    "dataset:shapenetpart",
+    "arxiv:2302.02318",
+    "base_model:torch-pointcloud/recon.pretrain.zekun-qi",
+    "base_model:finetune:torch-pointcloud/recon.pretrain.zekun-qi",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 48550450,
+  "parameters_human": "48.6M",
+  "storage_bytes": 194237248,
+  "storage_human": "194 MB",
+  "base_model": "torch-pointcloud/recon.pretrain.zekun-qi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ShapeNetPart",
+      "metric": "ins_mIoU",
+      "value": 86.15
+    },
+    {
+      "task": null,
+      "dataset": "ShapeNetPart",
+      "metric": "cls_mIoU",
+      "value": 84.4
+    }
+  ],
+  "sources": []
+}

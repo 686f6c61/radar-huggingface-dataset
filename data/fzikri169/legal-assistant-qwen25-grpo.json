@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "fzikri169/legal-assistant-qwen25-grpo",
+  "slug": "fzikri169-legal-assistant-qwen25-grpo",
+  "author": "fzikri169",
+  "url": "https://huggingface.co/fzikri169/legal-assistant-qwen25-grpo",
+  "created_at": "2026-10-31T10:05:46.000Z",
+  "updated_at": "2026-10-31T10:08:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:fzikri169/legal-assistant-qwen25",
+    "base_model:finetune:fzikri169/legal-assistant-qwen25",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 317,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "fzikri169/legal-assistant-qwen25",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

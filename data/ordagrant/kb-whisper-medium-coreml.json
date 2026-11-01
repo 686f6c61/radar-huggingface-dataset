@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Ordagrant/kb-whisper-medium-coreml",
+  "slug": "ordagrant-kb-whisper-medium-coreml",
+  "author": "Ordagrant",
+  "url": "https://huggingface.co/Ordagrant/kb-whisper-medium-coreml",
+  "created_at": "2026-10-27T20:45:40.000Z",
+  "updated_at": "2026-10-27T21:00:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "whisperkit",
+    "whisper",
+    "coreml",
+    "automatic-speech-recognition",
+    "sv",
+    "base_model:KBLab/kb-whisper-medium",
+    "base_model:finetune:KBLab/kb-whisper-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 466242690,
+  "storage_human": "466 MB",
+  "base_model": "KBLab/kb-whisper-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

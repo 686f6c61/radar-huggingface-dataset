@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jsemon/ai-in-cyber-lora-new-training-data-eval",
+  "slug": "jsemon-ai-in-cyber-lora-new-training-data-eval",
+  "author": "jsemon",
+  "url": "https://huggingface.co/jsemon/ai-in-cyber-lora-new-training-data-eval",
+  "created_at": "2026-11-01T06:52:03.000Z",
+  "updated_at": "2026-11-01T06:52:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 711487648,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

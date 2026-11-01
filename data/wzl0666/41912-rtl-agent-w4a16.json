@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "wzl0666/41912-rtl-agent-w4a16",
+  "slug": "wzl0666-41912-rtl-agent-w4a16",
+  "author": "wzl0666",
+  "url": "https://huggingface.co/wzl0666/41912-rtl-agent-w4a16",
+  "created_at": "2026-10-29T17:10:56.000Z",
+  "updated_at": "2026-10-30T01:25:57.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "rtl",
+    "verilog",
+    "systemverilog",
+    "fine-tuned",
+    "autoround",
+    "gptq",
+    "en",
+    "zh",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:finetune:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 6284446960,
+  "parameters_human": "6.28B",
+  "storage_bytes": 18718390579,
+  "storage_human": "18.7 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

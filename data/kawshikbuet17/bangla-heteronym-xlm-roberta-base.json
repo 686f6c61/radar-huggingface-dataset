@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kawshikbuet17/bangla-heteronym-xlm-roberta-base",
+  "slug": "kawshikbuet17-bangla-heteronym-xlm-roberta-base",
+  "author": "kawshikbuet17",
+  "url": "https://huggingface.co/kawshikbuet17/bangla-heteronym-xlm-roberta-base",
+  "created_at": "2026-10-29T22:00:46.000Z",
+  "updated_at": "2026-10-29T22:02:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "bangla",
+    "bengali",
+    "heteronym",
+    "homograph",
+    "text-to-speech",
+    "grapheme-to-phoneme",
+    "bn",
+    "dataset:kawshikbuet17/bangla-heteronyms",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1134358341,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

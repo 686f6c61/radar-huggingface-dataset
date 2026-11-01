@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Kodjaoglanian/pavimentos-dfine-l",
+  "slug": "kodjaoglanian-pavimentos-dfine-l",
+  "author": "Kodjaoglanian",
+  "url": "https://huggingface.co/Kodjaoglanian/pavimentos-dfine-l",
+  "created_at": "2026-10-30T23:45:34.000Z",
+  "updated_at": "2026-10-30T23:45:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "d_fine",
+    "object-detection",
+    "d-fine",
+    "detr",
+    "pavement-defects",
+    "pothole-detection",
+    "road-inspection",
+    "computer-vision",
+    "torchscript",
+    "pt",
+    "en",
+    "base_model:ustc-community/dfine-large-obj2coco-e25",
+    "base_model:quantized:ustc-community/dfine-large-obj2coco-e25",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 31202455,
+  "parameters_human": "31.2M",
+  "storage_bytes": 379420980,
+  "storage_human": "379 MB",
+  "base_model": "ustc-community/dfine-large-obj2coco-e25",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "metric": "mAP@0.50",
+      "value": 0.0942
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "metric": "mAP@0.50:0.95",
+      "value": 0.0522
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "metric": "Precision",
+      "value": 0
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "metric": "Recall",
+      "value": 0
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "metric": "F1-Score",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

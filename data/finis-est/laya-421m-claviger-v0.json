@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "finis-est/Laya-421M-Claviger-v0",
+  "slug": "finis-est-laya-421m-claviger-v0",
+  "author": "finis-est",
+  "url": "https://huggingface.co/finis-est/Laya-421M-Claviger-v0",
+  "created_at": "2026-11-01T00:26:50.000Z",
+  "updated_at": "2026-11-01T00:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "modernbert",
+    "discord",
+    "multi-agent",
+    "triage",
+    "synthetic-data",
+    "text-classification",
+    "en",
+    "arxiv:2412.13663",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agent reply triage",
+      "dataset": "Synthetic Discord triage test set, self-made, not public",
+      "metric": "Precision",
+      "value": 72.5
+    },
+    {
+      "task": "Agent reply triage",
+      "dataset": "Synthetic Discord triage test set, self-made, not public",
+      "metric": "Recall",
+      "value": 70.3
+    },
+    {
+      "task": "Agent reply triage",
+      "dataset": "Synthetic Discord triage test set, self-made, not public",
+      "metric": "F1",
+      "value": 71.4
+    },
+    {
+      "task": "Agent reply triage",
+      "dataset": "Synthetic Discord triage test set, self-made, not public",
+      "metric": "Correct agent picked",
+      "value": 69.2
+    }
+  ],
+  "sources": []
+}

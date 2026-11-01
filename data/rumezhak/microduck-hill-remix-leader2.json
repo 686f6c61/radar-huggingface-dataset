@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rumezhak/microduck-hill-remix-leader2",
+  "slug": "rumezhak-microduck-hill-remix-leader2",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-hill-remix-leader2",
+  "created_at": "2026-10-29T14:11:55.000Z",
+  "updated_at": "2026-10-29T14:11:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:a1rb4Ck/microduck-hill-1m5",
+    "base_model:finetune:a1rb4Ck/microduck-hill-1m5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 887812,
+  "storage_human": "887812 B",
+  "base_model": "a1rb4Ck/microduck-hill-1m5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

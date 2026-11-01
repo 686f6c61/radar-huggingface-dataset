@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "corona314/act-so101-ajedrez-dagger-v2",
+  "slug": "corona314-act-so101-ajedrez-dagger-v2",
+  "author": "corona314",
+  "url": "https://huggingface.co/corona314/act-so101-ajedrez-dagger-v2",
+  "created_at": "2026-10-25T09:38:43.000Z",
+  "updated_at": "2026-10-25T09:38:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:corona314/chess_mezcla_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gomama0/Ternary-Bonsai-8B-Code-SFT-F16-GGUF",
+  "slug": "gomama0-ternary-bonsai-8b-code-sft-f16-gguf",
+  "author": "gomama0",
+  "url": "https://huggingface.co/gomama0/Ternary-Bonsai-8B-Code-SFT-F16-GGUF",
+  "created_at": "2026-10-29T16:05:29.000Z",
+  "updated_at": "2026-10-29T16:05:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "llama-cpp",
+    "gguf-my-lora",
+    "en",
+    "base_model:Jcfunk/Ternary-Bonsai-8B-Code-SFT",
+    "base_model:quantized:Jcfunk/Ternary-Bonsai-8B-Code-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 87293952,
+  "parameters_human": "87.3M",
+  "storage_bytes": 174623104,
+  "storage_human": "175 MB",
+  "base_model": "Jcfunk/Ternary-Bonsai-8B-Code-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

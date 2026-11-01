@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kalia-lm/kalia-v031",
+  "slug": "kalia-lm-kalia-v031",
+  "author": "kalia-lm",
+  "url": "https://huggingface.co/kalia-lm/kalia-v031",
+  "created_at": "2026-11-01T09:30:29.000Z",
+  "updated_at": "2026-11-01T09:38:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "kalia",
+    "text-generation",
+    "small-language-model",
+    "from-scratch",
+    "muon",
+    "qk-norm",
+    "weight-merge",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:codeparrot/codeparrot-clean",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83587840,
+  "parameters_human": "83.6M",
+  "storage_bytes": 334582733,
+  "storage_human": "335 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kalia Nature | Produits naturels pour cheveux texturés",
+      "url": "https://kalianature.com/",
+      "snippet": "Kalia Nature, c’est 10 ans d’expertise à transmettre l’art de prendre soin de ses cheveux, en mettant à l’honneur le savoir-faire …"
+    },
+    {
+      "title": "Kalia - Salle de bains, cuisine, robinetterie, design unique",
+      "url": "https://www.kaliastyle.com/",
+      "snippet": "Salle de bains, douches et robinets de cuisine, Kalia est une référence dans l'industrie de la plomberie avec ses produits de qualité …"
+    },
+    {
+      "title": "Produits de soin pour cheveux texturés - Kalia Nature",
+      "url": "https://kalianature.com/collections/nos-produits",
+      "snippet": "Découvrez la gamme Kalia Nature : soins, shampoings, masques et accessoires pour cheveux crépus, frisés, bouclés ou ondulés. …"
+    },
+    {
+      "title": "Kalia Nature : soins cheveux bouclés | La Belle Boucle",
+      "url": "https://labelleboucle.fr/collections/kalia-nature",
+      "snippet": "Fondée par Sandrine Sophie, Kalia Nature est une marque française. Originaire de Martinique, la fondatrice s’inspire de recettes …"
+    },
+    {
+      "title": "Kalia Nature, Soins Capillaires Naturels pour Cheveux Texturés ...",
+      "url": "https://www.laboutiqueducoiffeur.com/fr-fr/marques/kalia-nature",
+      "snippet": "Découvrez Kalia Nature, une marque française dédiée au soin des cheveux ondulés, bouclés, frisés et crépus grâce à des produits …"
+    }
+  ]
+}

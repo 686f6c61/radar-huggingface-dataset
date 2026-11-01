@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "optima-tools-ch/voice-high",
+  "slug": "optima-tools-ch-voice-high",
+  "author": "optima-tools-ch",
+  "url": "https://huggingface.co/optima-tools-ch/voice-high",
+  "created_at": "2026-10-26T21:07:13.000Z",
+  "updated_at": "2026-10-27T20:31:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4515695644,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OPTIMA Batteries | High-Performance AGM & Lithium Batteries",
+      "url": "https://www.optimabatteries.com/",
+      "snippet": "Shop OPTIMA AGM and lithium batteries for cars, trucks, boats, RVs and powersports, and use the Battery Finder to get the right fit …"
+    }
+  ]
+}

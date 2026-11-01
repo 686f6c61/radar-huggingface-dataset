@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "trannel/trannel-m2m100-418m-ct2",
+  "slug": "trannel-trannel-m2m100-418m-ct2",
+  "author": "trannel",
+  "url": "https://huggingface.co/trannel/trannel-m2m100-418m-ct2",
+  "created_at": "2026-10-25T15:35:14.000Z",
+  "updated_at": "2026-10-25T15:36:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "translation",
+    "ctranslate2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 493091145,
+  "storage_human": "493 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La FDJ a racheté Unibet, et s’est retrouvée avec une filiale maltaise ...",
+      "url": "https://www.lemonde.fr/les-decodeurs/article/2025/07/29/derriere-le-rachat-d-unibet-le-fardeau-maltais-qui-pourrait-plomber-la-francaise-des-jeux_6625221_4355770.html",
+      "snippet": "Jul 29, 2025 · En rachetant Unibet, la Française des jeux a brièvement hérité de Trannel, une filiale maltaise au cœur de lourds …"
+    },
+    {
+      "title": "FDJ et Trannel : une acquisition qui s’avère risquée - ON News",
+      "url": "https://on-news.fr/fdj-unibet-trannel-contentieux-juridique-europe/",
+      "snippet": "Jul 30, 2025 · Consciente des risques que représentait Trannel, la FDJ s’en est désengagée en moins de trois semaines, arguant …"
+    },
+    {
+      "title": "La FDJ piégée par un rachat désastreux ? - Off News",
+      "url": "https://off-news.fr/fdj-unibet-trannel-contentieux-juridique-europe/",
+      "snippet": "Jul 30, 2025 · Moins de trois semaines après avoir mis la main sur Trannel via le rachat de Kindred pour 2,5 milliards d’euros, la FDJ …"
+    },
+    {
+      "title": "La FDJ a racheté Unibet, et s’est retrouvée avec une ... - LinkedIn",
+      "url": "https://fr.linkedin.com/posts/le-monde_derri%C3%A8re-le-rachat-dunibet-le-fardeau-maltais-activity-7355934165529182209-RkE8",
+      "snippet": "En rachetant Unibet, la FDJ a brièvement hérité de Trannel, une filiale maltaise au cœur de lourds contentieux juridiques en Europe, …"
+    },
+    {
+      "title": "FDJ United vend Trannel en urgence : scandale dévoilé",
+      "url": "https://gamblingclub.be/fr/fdj-united-vend-trannel-en-urgence-scandale/",
+      "snippet": "Consciente des risques légaux, la FDJ revend Trannel en moins de trois semaines après la clôture de l’acquisition. L’annonce …"
+    }
+  ]
+}

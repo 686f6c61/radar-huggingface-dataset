@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "phonsobon/Whisper-Small-Khmer-Final-v5",
+  "slug": "phonsobon-whisper-small-khmer-final-v5",
+  "author": "phonsobon",
+  "url": "https://huggingface.co/phonsobon/Whisper-Small-Khmer-Final-v5",
+  "created_at": "2026-10-27T08:51:41.000Z",
+  "updated_at": "2026-10-27T15:35:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "khmer",
+    "asr",
+    "automatic-speech-recognition",
+    "km",
+    "en",
+    "dataset:phonsobon/khmer-ASR-Datasets",
+    "dataset:phonsobon/khmer-ASR-Datasets-v1",
+    "dataset:phonsobon/Data-Gov-Mix",
+    "dataset:phonsobon/Data-Gov-Mix-V1",
+    "dataset:phonsobon/Datasets-Gov",
+    "dataset:phonsobon/Datasets-Gov-v1",
+    "dataset:phonsobon/Datasets-Gov-v2",
+    "dataset:phonsobon/Datasets-Gov-v3",
+    "dataset:phonsobon/ASR-kh-datasets-Gov",
+    "dataset:phonsobon/ASR-kh-datasets-Gov-v1",
+    "dataset:phonsobon/ASR-kh-datasets-Gov-v2",
+    "dataset:phonsobon/ASR-Date-Khm",
+    "dataset:phonsobon/ASR-Date-Khm-v1",
+    "dataset:phonsobon/datasets-ASR-khmer-english",
+    "dataset:phonsobon/datasets-ASR-khmer-english-v1",
+    "dataset:phonsobon/datasets-asr-generate",
+    "dataset:phonsobon/openslr42-khmer-male",
+    "base_model:phonsobon/Whisper-Small-Khmer-V2-Gov",
+    "base_model:finetune:phonsobon/Whisper-Small-Khmer-V2-Gov",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 29013376691,
+  "storage_human": "29.0 GB",
+  "base_model": "phonsobon/Whisper-Small-Khmer-V2-Gov",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Khmer ASR held-out eval (576 clips from 17 datasets)",
+      "metric": "CER",
+      "value": 0.55
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Khmer ASR held-out eval (576 clips from 17 datasets)",
+      "metric": "WER",
+      "value": 3.11
+    }
+  ],
+  "sources": []
+}

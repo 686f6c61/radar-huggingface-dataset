@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "alimaqsoodahmed/qwen-2.5-1.5b-colab-lora",
+  "slug": "alimaqsoodahmed-qwen-2-5-1-5b-colab-lora",
+  "author": "alimaqsoodahmed",
+  "url": "https://huggingface.co/alimaqsoodahmed/qwen-2.5-1.5b-colab-lora",
+  "created_at": "2026-11-01T07:07:51.000Z",
+  "updated_at": "2026-11-01T07:07:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20167871,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "saybeok03/folding_final_compat_224",
+  "slug": "saybeok03-folding_final_compat_224",
+  "author": "saybeok03",
+  "url": "https://huggingface.co/saybeok03/folding_final_compat_224",
+  "created_at": "2026-10-31T07:38:43.000Z",
+  "updated_at": "2026-10-31T07:38:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:lerobot-data-collection/level2_final_quality3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473105800,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

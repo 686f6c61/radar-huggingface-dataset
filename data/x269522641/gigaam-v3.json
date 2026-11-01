@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "x269522641/GigaAM-v3",
+  "slug": "x269522641-gigaam-v3",
+  "author": "x269522641",
+  "url": "https://huggingface.co/x269522641/GigaAM-v3",
+  "created_at": "2026-10-30T12:54:15.000Z",
+  "updated_at": "2026-10-30T12:54:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "gigaam",
+    "automatic-speech-recognition",
+    "custom_code",
+    "ru",
+    "en",
+    "arxiv:2506.01192",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 449183503,
+  "storage_human": "449 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

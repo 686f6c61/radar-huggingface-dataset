@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kimi000/ZImage-4Step-3000",
+  "slug": "kimi000-zimage-4step-3000",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/ZImage-4Step-3000",
+  "created_at": "2026-10-30T17:51:04.000Z",
+  "updated_at": "2026-10-30T17:53:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "z-image",
+    "anyflow2",
+    "distillation",
+    "text-to-image",
+    "custom-pipeline",
+    "en",
+    "base_model:Tongyi-MAI/Z-Image",
+    "base_model:finetune:Tongyi-MAI/Z-Image",
+    "license:apache-2.0",
+    "diffusers:ZImageAnyFlow2Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 6186653952,
+  "parameters_human": "6.19B",
+  "storage_bytes": 20598859845,
+  "storage_human": "20.6 GB",
+  "base_model": "Tongyi-MAI/Z-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mim-chess-vlas/train_800_sparse__mask__blackout__sim__all_cameras__live__groot__seed_0",
+  "slug": "mim-chess-vlas-train_800_sparse__mask__blackout__sim__all_cameras__live__groot__seed_0",
+  "author": "mim-chess-vlas",
+  "url": "https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__blackout__sim__all_cameras__live__groot__seed_0",
+  "created_at": "2026-10-28T15:04:07.000Z",
+  "updated_at": "2026-10-28T15:05:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:mim-chess-vlas/train_800_sparse__mask__blackout__sim__all_cameras__live",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576218312,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

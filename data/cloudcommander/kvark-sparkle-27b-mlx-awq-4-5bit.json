@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "cloudcommander/Kvark-Sparkle-27B-MLX-AWQ-4.5bit",
+  "slug": "cloudcommander-kvark-sparkle-27b-mlx-awq-4-5bit",
+  "author": "cloudcommander",
+  "url": "https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-MLX-AWQ-4.5bit",
+  "created_at": "2026-10-30T05:39:13.000Z",
+  "updated_at": "2026-10-30T05:41:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "awq",
+    "qwen3.8",
+    "kvark",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Egzakta/Kvark-Sparkle-1.0-27B",
+    "base_model:quantized:Egzakta/Kvark-Sparkle-1.0-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 17926990589,
+  "storage_human": "17.9 GB",
+  "base_model": "Egzakta/Kvark-Sparkle-1.0-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

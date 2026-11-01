@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ofds1995/Luna12-2750",
+  "slug": "ofds1995-luna12-2750",
+  "author": "ofds1995",
+  "url": "https://huggingface.co/ofds1995/Luna12-2750",
+  "created_at": "2026-10-29T10:09:31.000Z",
+  "updated_at": "2026-10-29T10:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 466377069,
+  "storage_human": "466 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

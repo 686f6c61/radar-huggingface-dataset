@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "boli-003/mm-safetybench-internvl3-8b-m1-vlguard-v1",
+  "slug": "boli-003-mm-safetybench-internvl3-8b-m1-vlguard-v1",
+  "author": "boli-003",
+  "url": "https://huggingface.co/boli-003/mm-safetybench-internvl3-8b-m1-vlguard-v1",
+  "created_at": "2026-10-30T14:45:12.000Z",
+  "updated_at": "2026-10-30T14:46:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "multimodal",
+    "safety",
+    "research",
+    "base_model:OpenGVLab/InternVL3-8B",
+    "base_model:adapter:OpenGVLab/InternVL3-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40400200,
+  "storage_human": "40 MB",
+  "base_model": "OpenGVLab/InternVL3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

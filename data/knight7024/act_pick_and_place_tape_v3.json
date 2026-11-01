@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "knight7024/act_pick_and_place_tape_v3",
+  "slug": "knight7024-act_pick_and_place_tape_v3",
+  "author": "knight7024",
+  "url": "https://huggingface.co/knight7024/act_pick_and_place_tape_v3",
+  "created_at": "2026-10-26T14:15:42.000Z",
+  "updated_at": "2026-10-26T14:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:knight7024/pick_and_place_tape_final",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizing IP: How David Bowie and Blockchain Set the Stage for ...",
+      "url": "https://ripl.law.uic.edu/news-stories/tokenizing-ip-how-david-bowie-and-blockchain-set-the-stage-for-creating-a-digital-exchange-for-intellectual-property-assets/",
+      "snippet": "Nov 16, 2020 · Tokenizing intellectual property assets and creating a secondary marketplace on a blockchain platform could create …"
+    }
+  ]
+}

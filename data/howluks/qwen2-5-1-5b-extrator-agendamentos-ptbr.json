@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "HowLuks/qwen2.5-1.5b-extrator-agendamentos-ptbr",
+  "slug": "howluks-qwen2-5-1-5b-extrator-agendamentos-ptbr",
+  "author": "HowLuks",
+  "url": "https://huggingface.co/HowLuks/qwen2.5-1.5b-extrator-agendamentos-ptbr",
+  "created_at": "2026-10-30T18:03:41.000Z",
+  "updated_at": "2026-10-30T18:04:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "information-extraction",
+    "portuguese",
+    "whatsapp",
+    "pt",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333171,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

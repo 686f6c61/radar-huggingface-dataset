@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ss-lab/gemma-3-270m-it-GGUF",
+  "slug": "ss-lab-gemma-3-270m-it-gguf",
+  "author": "ss-lab",
+  "url": "https://huggingface.co/ss-lab/gemma-3-270m-it-GGUF",
+  "created_at": "2026-10-31T15:41:48.000Z",
+  "updated_at": "2026-10-31T15:42:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "liquid",
+    "quantized",
+    "text-generation",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 262,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 2414744160,
+  "storage_human": "2.4 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

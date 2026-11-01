@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kusema/parakeet-unified-en-0.6b-gguf",
+  "slug": "kusema-parakeet-unified-en-0-6b-gguf",
+  "author": "kusema",
+  "url": "https://huggingface.co/kusema/parakeet-unified-en-0.6b-gguf",
+  "created_at": "2026-11-01T07:45:41.000Z",
+  "updated_at": "2026-11-01T07:45:43.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "mirror",
+    "automatic-speech-recognition",
+    "base_model:nvidia/parakeet-unified-en-0.6b",
+    "base_model:quantized:nvidia/parakeet-unified-en-0.6b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 618309121,
+  "parameters_human": "618.3M",
+  "storage_bytes": 731357568,
+  "storage_human": "731 MB",
+  "base_model": "nvidia/parakeet-unified-en-0.6b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

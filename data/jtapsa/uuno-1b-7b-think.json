@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Jtapsa/uuno-1B-7B-think",
+  "slug": "jtapsa-uuno-1b-7b-think",
+  "author": "Jtapsa",
+  "url": "https://huggingface.co/Jtapsa/uuno-1B-7B-think",
+  "created_at": "2026-10-26T08:42:31.000Z",
+  "updated_at": "2026-10-26T09:44:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "uuno",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 6939084800,
+  "parameters_human": "6.94B",
+  "storage_bytes": 13878568056,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

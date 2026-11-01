@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+  "slug": "dongshanhu-qwen-image-edit-2511-multiple-angles-lora",
+  "author": "DongShanHu",
+  "url": "https://huggingface.co/DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+  "created_at": "2026-10-28T08:36:20.000Z",
+  "updated_at": "2026-10-28T08:36:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "qwen",
+    "qwen-image-edit",
+    "qwen-image-edit-2511",
+    "lora",
+    "multi-angle",
+    "camera-angles",
+    "camera-control",
+    "image-editing",
+    "image-to-image",
+    "gaussian-splatting",
+    "fal",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334421090,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA - Hugging Face",
+      "url": "https://huggingface.co/DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+      "snippet": "Instructions to use DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA with libraries, inference providers, notebooks, and …Read more"
+    },
+    {
+      "title": "DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA at main",
+      "url": "https://huggingface.co/DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA/tree/main",
+      "snippet": "Instructions to use DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA with libraries, inference providers, notebooks, and …"
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA · Models",
+      "url": "https://www.modelscope.cn/models/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+      "snippet": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA Multi-angle camera control LoRA for Qwen-Image-Edit-2511 96 camera positions • …"
+    },
+    {
+      "title": "Qwen-Image Edit 2511 Multiple Angles — Image AI Model",
+      "url": "https://layer.ai/models/qwen-qwen-image-edit-2511-multiple-angles",
+      "snippet": "Qwen-Image Edit 2511 Multiple Angles pairs the Qwen image editing model with the Multiple Angles LoRA to regenerate the same …"
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA · Models",
+      "url": "https://www.modelscope.cn/models/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA/summary",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。 在这里，共建模型开 …"
+    }
+  ]
+}

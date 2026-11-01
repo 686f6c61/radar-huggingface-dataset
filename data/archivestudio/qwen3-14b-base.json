@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Qwen3-14B-Base",
+  "slug": "archivestudio-qwen3-14b-base",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Qwen3-14B-Base",
+  "created_at": "2026-11-01T06:29:51.000Z",
+  "updated_at": "2026-11-01T06:29:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29536665640,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "josegg5/mDenseOn-spa-32768",
+  "slug": "josegg5-mdenseon-spa-32768",
+  "author": "josegg5",
+  "url": "https://huggingface.co/josegg5/mDenseOn-spa-32768",
+  "created_at": "2026-10-28T13:24:05.000Z",
+  "updated_at": "2026-10-28T13:24:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "trimmed",
+    "sentence-similarity",
+    "es",
+    "base_model:lightonai/mDenseOn",
+    "base_model:finetune:lightonai/mDenseOn",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 135497472,
+  "parameters_human": "135.5M",
+  "storage_bytes": 542002936,
+  "storage_human": "542 MB",
+  "base_model": "lightonai/mDenseOn",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

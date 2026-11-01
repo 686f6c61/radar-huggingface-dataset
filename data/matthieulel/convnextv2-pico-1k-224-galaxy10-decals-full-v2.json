@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "matthieulel/convnextv2-pico-1k-224-galaxy10-decals-full-v2",
+  "slug": "matthieulel-convnextv2-pico-1k-224-galaxy10-decals-full-v2",
+  "author": "matthieulel",
+  "url": "https://huggingface.co/matthieulel/convnextv2-pico-1k-224-galaxy10-decals-full-v2",
+  "created_at": "2026-10-30T15:00:12.000Z",
+  "updated_at": "2026-10-30T15:00:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "convnextv2",
+    "image-classification",
+    "vision",
+    "astronomy",
+    "galaxy-morphology",
+    "galaxy10-decals",
+    "full-fine-tuning",
+    "dataset:matthieulel/galaxy10_decals",
+    "base_model:facebook/convnextv2-pico-1k-224",
+    "base_model:finetune:facebook/convnextv2-pico-1k-224",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 8558410,
+  "parameters_human": "8.6M",
+  "storage_bytes": 34250088,
+  "storage_human": "34 MB",
+  "base_model": "facebook/convnextv2-pico-1k-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Accuracy (seed 42, selected epoch)",
+      "value": 0.8461
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Galaxy10 DECaLS",
+      "metric": "Weighted F1 (seed 42, selected epoch)",
+      "value": 0.8445
+    }
+  ],
+  "sources": []
+}

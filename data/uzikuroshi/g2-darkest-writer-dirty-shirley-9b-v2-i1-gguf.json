@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Uzikuroshi/G2-Darkest-Writer-Dirty-Shirley-9B-v2-i1-GGUF",
+  "slug": "uzikuroshi-g2-darkest-writer-dirty-shirley-9b-v2-i1-gguf",
+  "author": "Uzikuroshi",
+  "url": "https://huggingface.co/Uzikuroshi/G2-Darkest-Writer-Dirty-Shirley-9B-v2-i1-GGUF",
+  "created_at": "2026-11-01T09:13:26.000Z",
+  "updated_at": "2026-11-01T09:13:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:OccultAI/G2-Darkest-Writer-Dirty-Shirley-9B-v2",
+    "base_model:quantized:OccultAI/G2-Darkest-Writer-Dirty-Shirley-9B-v2",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 109841719968,
+  "storage_human": "109.8 GB",
+  "base_model": "OccultAI/G2-Darkest-Writer-Dirty-Shirley-9B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

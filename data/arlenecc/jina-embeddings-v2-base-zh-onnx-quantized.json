@@ -1,0 +1,354 @@
+{
+  "schema": 1,
+  "id": "arlenecc/jina-embeddings-v2-base-zh-onnx-quantized",
+  "slug": "arlenecc-jina-embeddings-v2-base-zh-onnx-quantized",
+  "author": "arlenecc",
+  "url": "https://huggingface.co/arlenecc/jina-embeddings-v2-base-zh-onnx-quantized",
+  "created_at": "2026-10-31T14:42:12.000Z",
+  "updated_at": "2026-10-31T14:46:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "mteb",
+    "transformers",
+    "transformers.js",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2108.12409",
+    "arxiv:2402.17016",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161565239,
+  "storage_human": "162 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 48.51403119231363
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 50.5928547846445
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 48.750436310559074
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 50.50950238691385
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 48.7866189440328
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 50.58692402017165
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 50.25985700105725
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 51.28815934593989
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 52.70329248799904
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 50.94101139559258
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 52.6647237400892
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 50.922441325406176
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (zh)",
+      "metric": null,
+      "value": 34.944
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (zh)",
+      "metric": null,
+      "value": 34.06478860660109
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BQ",
+      "metric": null,
+      "value": 65.15667035488342
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BQ",
+      "metric": null,
+      "value": 66.07110142081
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BQ",
+      "metric": null,
+      "value": 60.447598102249714
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BQ",
+      "metric": null,
+      "value": 61.826575796578766
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BQ",
+      "metric": null,
+      "value": 60.39364279354984
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BQ",
+      "metric": null,
+      "value": 61.78743491223281
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CLSClusteringP2P",
+      "metric": null,
+      "value": 39.96714175391701
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CLSClusteringS2S",
+      "metric": null,
+      "value": 38.39863566717934
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CMedQAv1",
+      "metric": null,
+      "value": 83.63680381780644
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CMedQAv1",
+      "metric": null,
+      "value": 86.16476190476192
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CMedQAv2",
+      "metric": null,
+      "value": 83.74350667859487
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CMedQAv2",
+      "metric": null,
+      "value": 86.10388888888889
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 22.072
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 32.942
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 34.768
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 34.902
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 29.357
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 31.236000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 34.259
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 41.957
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 42.982
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 43.042
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 39.722
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 40.898
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 34.259
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 39.153
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 46.493
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 49.01
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 34.636
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 36.278
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 34.259
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 8.815000000000001
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 1.474
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 0.179
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 19.73
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CmedqaRetrieval",
+      "metric": null,
+      "value": 14.174000000000001
+    }
+  ],
+  "sources": []
+}

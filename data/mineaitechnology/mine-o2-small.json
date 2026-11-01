@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "MineAITechnology/mine-o2-small",
+  "slug": "mineaitechnology-mine-o2-small",
+  "author": "MineAITechnology",
+  "url": "https://huggingface.co/MineAITechnology/mine-o2-small",
+  "created_at": "2026-11-01T07:00:00.000Z",
+  "updated_at": "2026-11-01T07:08:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation",
+    "causal-lm",
+    "chat",
+    "sft",
+    "gpt-neox",
+    "small-language-model",
+    "mine-o2",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 504388,
+  "storage_human": "504388 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge (25-shot)",
+      "metric": "normalized accuracy",
+      "value": 27.33
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (10-shot)",
+      "metric": "normalized accuracy",
+      "value": 42
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-shot)",
+      "metric": "accuracy",
+      "value": 24.98
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA (0-shot)",
+      "metric": "MC2",
+      "value": 40.28
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Winogrande (5-shot)",
+      "metric": "accuracy",
+      "value": 54
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8k (5-shot",
+      "metric": "exact match",
+      "value": 4
+    }
+  ],
+  "sources": []
+}

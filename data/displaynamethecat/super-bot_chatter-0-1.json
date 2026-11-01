@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Displaynamethecat/super-bot_chatter-0.1",
+  "slug": "displaynamethecat-super-bot_chatter-0-1",
+  "author": "Displaynamethecat",
+  "url": "https://huggingface.co/Displaynamethecat/super-bot_chatter-0.1",
+  "created_at": "2026-11-01T12:10:33.000Z",
+  "updated_at": "2026-11-01T12:12:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "transformers",
+    "lora",
+    "superbot",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:adapter:google/gemma-2-2b-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80185334,
+  "storage_human": "80 MB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl à Montpellier - Votre supermarché à proximité",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/montpellier/",
+      "snippet": "Trouver un supermarché Lidl à Montpellier. et découvrez toutes nos offres de la semaine et nos catalogues"
+    },
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Lidl Montpellier (34000) : magasins, horaires et supermarché proche",
+      "url": "https://www.telephone.city/enseigne/lidl/montpellier-13340/",
+      "snippet": "Vous cherchez un Lidl à Montpellier pour faire vos courses rapidement ? Accédez facilement aux magasins Lidl proches, consultez …"
+    }
+  ]
+}

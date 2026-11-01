@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Goro64/Llama-Prompt-Guard-2-86M-GEOInjection-mirror-Euanyu",
+  "slug": "goro64-llama-prompt-guard-2-86m-geoinjection-mirror-euanyu",
+  "author": "Goro64",
+  "url": "https://huggingface.co/Goro64/Llama-Prompt-Guard-2-86M-GEOInjection-mirror-Euanyu",
+  "created_at": "2026-10-29T10:48:17.000Z",
+  "updated_at": "2026-10-29T10:48:19.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "mirror",
+    "archival-snapshot",
+    "prompt-security",
+    "en",
+    "base_model:meta-llama/Llama-Prompt-Guard-2-86M",
+    "base_model:finetune:meta-llama/Llama-Prompt-Guard-2-86M",
+    "license:llama4",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1131302444,
+  "storage_human": "1.1 GB",
+  "base_model": "meta-llama/Llama-Prompt-Guard-2-86M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

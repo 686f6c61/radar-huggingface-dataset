@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "netprojects/Nemotron-3.5-Embed-1B-mlx-8bit",
+  "slug": "netprojects-nemotron-3-5-embed-1b-mlx-8bit",
+  "author": "netprojects",
+  "url": "https://huggingface.co/netprojects/Nemotron-3.5-Embed-1B-mlx-8bit",
+  "created_at": "2026-10-30T09:52:18.000Z",
+  "updated_at": "2026-10-30T09:52:29.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral3",
+    "apple-silicon",
+    "embeddings",
+    "sentence-similarity",
+    "matryoshka",
+    "multimodal",
+    "retrieval",
+    "nemotron",
+    "feature-extraction",
+    "en",
+    "base_model:nvidia/Nemotron-3.5-Embed-1B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3.5-Embed-1B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 1554710528,
+  "parameters_human": "1.55B",
+  "storage_bytes": 2061470952,
+  "storage_human": "2.1 GB",
+  "base_model": "nvidia/Nemotron-3.5-Embed-1B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

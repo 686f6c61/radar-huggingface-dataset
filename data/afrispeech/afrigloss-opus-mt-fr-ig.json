@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "AfriSpeech/afrigloss-opus-mt-fr-ig",
+  "slug": "afrispeech-afrigloss-opus-mt-fr-ig",
+  "author": "AfriSpeech",
+  "url": "https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ig",
+  "created_at": "2026-10-27T14:48:04.000Z",
+  "updated_at": "2026-10-27T14:48:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "fr",
+    "ibo"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "translation",
+    "african-languages",
+    "glossary",
+    "terminology",
+    "opus-mt",
+    "afrigloss-mt",
+    "igbo",
+    "fr",
+    "ibo",
+    "dataset:AfriSpeech/gloss-mt-train-fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 74834364,
+  "parameters_human": "74.8M",
+  "storage_bytes": 301017390,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

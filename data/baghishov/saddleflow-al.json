@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "baghishov/SaddleFlow-Al",
+  "slug": "baghishov-saddleflow-al",
+  "author": "baghishov",
+  "url": "https://huggingface.co/baghishov/SaddleFlow-Al",
+  "created_at": "2026-10-28T15:07:13.000Z",
+  "updated_at": "2026-10-28T15:10:52.000Z",
+  "license": "fair-chemistry-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "saddleflow-flagged",
+    "chemistry",
+    "transition-state",
+    "saddle-point",
+    "flow-matching",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 291600100,
+  "parameters_human": "291.6M",
+  "storage_bytes": 1166424036,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

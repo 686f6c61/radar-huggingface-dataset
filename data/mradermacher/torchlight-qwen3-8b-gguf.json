@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/torchlight-qwen3-8b-GGUF",
+  "slug": "mradermacher-torchlight-qwen3-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/torchlight-qwen3-8b-GGUF",
+  "created_at": "2026-11-01T11:08:44.000Z",
+  "updated_at": "2026-11-01T11:38:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pytorch",
+    "code",
+    "debugging",
+    "lora",
+    "unsloth",
+    "qwen3",
+    "en",
+    "dataset:samadpls/torchlight-threads",
+    "base_model:samadpls/torchlight-qwen3-8b",
+    "base_model:adapter:samadpls/torchlight-qwen3-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425345280,
+  "storage_human": "73.4 GB",
+  "base_model": "samadpls/torchlight-qwen3-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

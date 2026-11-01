@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "phisherguy/merged-gemma4-e2b-it",
+  "slug": "phisherguy-merged-gemma4-e2b-it",
+  "author": "phisherguy",
+  "url": "https://huggingface.co/phisherguy/merged-gemma4-e2b-it",
+  "created_at": "2026-10-29T08:06:07.000Z",
+  "updated_at": "2026-10-29T08:50:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 8407272952,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "legalindia/hotel-slm",
+  "slug": "legalindia-hotel-slm",
+  "author": "legalindia",
+  "url": "https://huggingface.co/legalindia/hotel-slm",
+  "created_at": "2026-11-01T10:55:42.000Z",
+  "updated_at": "2026-11-01T11:00:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "hotel",
+    "flight",
+    "query-parsing",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242833552,
+  "storage_human": "243 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plan Your Trip to Busan: Best of Busan Tourism - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g297884-Busan-Vacations.html",
+      "snippet": "Busan Tourism: Tripadvisor has 105,997 reviews of Busan Hotels, Attractions, and Restaurants making it your best Busan resource."
+    }
+  ]
+}

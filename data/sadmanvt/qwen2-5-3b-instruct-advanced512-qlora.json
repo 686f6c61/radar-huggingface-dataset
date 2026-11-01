@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sadmanvt/Qwen2.5-3B-Instruct-Advanced512-QLoRA",
+  "slug": "sadmanvt-qwen2-5-3b-instruct-advanced512-qlora",
+  "author": "sadmanvt",
+  "url": "https://huggingface.co/sadmanvt/Qwen2.5-3B-Instruct-Advanced512-QLoRA",
+  "created_at": "2026-10-26T17:16:56.000Z",
+  "updated_at": "2026-10-26T17:17:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama-factory",
+    "lora",
+    "generated_from_trainer",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 551758521,
+  "storage_human": "552 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

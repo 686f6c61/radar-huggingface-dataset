@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Lugha-Models/omniASR-CTC-1B-v2-kinyarwanda",
+  "slug": "lugha-models-omniasr-ctc-1b-v2-kinyarwanda",
+  "author": "Lugha-Models",
+  "url": "https://huggingface.co/Lugha-Models/omniASR-CTC-1B-v2-kinyarwanda",
+  "created_at": "2026-10-31T03:35:28.000Z",
+  "updated_at": "2026-10-31T03:35:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "rw"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "kinyarwanda",
+    "omnilingual-asr",
+    "ctc",
+    "rw",
+    "dataset:DigitalUmuganda/Afrivoice_Kinyarwanda",
+    "dataset:fsicoli/common_voice_22_0",
+    "base_model:aadel4/omniASR-CTC-1B-v2",
+    "base_model:finetune:aadel4/omniASR-CTC-1B-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 975676336,
+  "parameters_human": "975.7M",
+  "storage_bytes": 3902806784,
+  "storage_human": "3.9 GB",
+  "base_model": "aadel4/omniASR-CTC-1B-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

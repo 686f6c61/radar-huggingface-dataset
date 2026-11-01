@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-game-hillclimber-remix10",
+  "slug": "jrubiosainz-microduck-game-hillclimber-remix10",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix10",
+  "created_at": "2026-10-29T22:14:10.000Z",
+  "updated_at": "2026-10-29T22:14:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:HlibPlakhtii/microduck-hill-quicksilver-v3",
+    "base_model:finetune:HlibPlakhtii/microduck-hill-quicksilver-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 942812,
+  "storage_human": "942812 B",
+  "base_model": "HlibPlakhtii/microduck-hill-quicksilver-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

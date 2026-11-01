@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/minkunet18-w16.semantickitti.mmdet3d",
+  "slug": "torch-pointcloud-minkunet18-w16-semantickitti-mmdet3d",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/minkunet18-w16.semantickitti.mmdet3d",
+  "created_at": "2026-10-30T20:59:40.000Z",
+  "updated_at": "2026-10-30T20:59:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "minkunet",
+    "segmentation",
+    "dataset:semantickitti",
+    "arxiv:1904.08755",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 5441379,
+  "parameters_human": "5.4M",
+  "storage_bytes": 21797436,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "SemanticKITTI",
+      "metric": "mIoU",
+      "value": 60.25
+    },
+    {
+      "task": null,
+      "dataset": "SemanticKITTI",
+      "metric": "OA",
+      "value": 91.78
+    }
+  ],
+  "sources": []
+}

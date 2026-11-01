@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "CVCompressor/gen-k7",
+  "slug": "cvcompressor-gen-k7",
+  "author": "CVCompressor",
+  "url": "https://huggingface.co/CVCompressor/gen-k7",
+  "created_at": "2026-10-30T07:55:54.000Z",
+  "updated_at": "2026-10-30T08:00:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52191058323,
+  "storage_human": "52.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

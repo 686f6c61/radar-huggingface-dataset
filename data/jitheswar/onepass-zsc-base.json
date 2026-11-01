@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Jitheswar/onepass-zsc-base",
+  "slug": "jitheswar-onepass-zsc-base",
+  "author": "Jitheswar",
+  "url": "https://huggingface.co/Jitheswar/onepass-zsc-base",
+  "created_at": "2026-10-27T03:08:58.000Z",
+  "updated_at": "2026-10-27T03:09:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "zero-shot-classification",
+    "text-classification",
+    "calibration",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 186784515,
+  "parameters_human": "186.8M",
+  "storage_bytes": 747162892,
+  "storage_human": "747 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

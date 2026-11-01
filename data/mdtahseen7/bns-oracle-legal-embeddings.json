@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mdtahseen7/bns-oracle-legal-embeddings",
+  "slug": "mdtahseen7-bns-oracle-legal-embeddings",
+  "author": "mdtahseen7",
+  "url": "https://huggingface.co/mdtahseen7/bns-oracle-legal-embeddings",
+  "created_at": "2026-10-29T14:06:59.000Z",
+  "updated_at": "2026-10-29T14:18:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "nomic_bert",
+    "embeddings",
+    "retrieval",
+    "rag",
+    "legal",
+    "indian-law",
+    "nomic-bert",
+    "sentence-similarity",
+    "custom_code",
+    "en",
+    "base_model:nomic-ai/nomic-embed-text-v1.5",
+    "base_model:finetune:nomic-ai/nomic-embed-text-v1.5",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 136731648,
+  "parameters_human": "136.7M",
+  "storage_bytes": 546938168,
+  "storage_human": "547 MB",
+  "base_model": "nomic-ai/nomic-embed-text-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

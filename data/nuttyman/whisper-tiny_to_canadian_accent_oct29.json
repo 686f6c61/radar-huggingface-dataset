@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Nuttyman/whisper-tiny_to_canadian_accent_oct29",
+  "slug": "nuttyman-whisper-tiny_to_canadian_accent_oct29",
+  "author": "Nuttyman",
+  "url": "https://huggingface.co/Nuttyman/whisper-tiny_to_canadian_accent_oct29",
+  "created_at": "2026-10-29T14:40:36.000Z",
+  "updated_at": "2026-10-29T14:49:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:Canadian_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167443,
+  "storage_human": "302 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Canadian English",
+      "metric": "Wer",
+      "value": 21.08575924468922
+    }
+  ],
+  "sources": []
+}

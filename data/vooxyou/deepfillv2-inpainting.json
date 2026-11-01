@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "vooxyou/deepfillv2-inpainting",
+  "slug": "vooxyou-deepfillv2-inpainting",
+  "author": "vooxyou",
+  "url": "https://huggingface.co/vooxyou/deepfillv2-inpainting",
+  "created_at": "2026-10-30T11:34:11.000Z",
+  "updated_at": "2026-10-30T11:47:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime-web",
+  "languages": [],
+  "tags": [
+    "onnxruntime-web",
+    "onnx",
+    "deepfillv2",
+    "inpainting",
+    "image-inpainting",
+    "quantized",
+    "browser",
+    "wasm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24585633,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

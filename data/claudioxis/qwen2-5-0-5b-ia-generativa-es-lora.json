@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Claudioxis/qwen2.5-0.5b-ia-generativa-es-lora",
+  "slug": "claudioxis-qwen2-5-0-5b-ia-generativa-es-lora",
+  "author": "Claudioxis",
+  "url": "https://huggingface.co/Claudioxis/qwen2.5-0.5b-ia-generativa-es-lora",
+  "created_at": "2026-10-26T21:46:29.000Z",
+  "updated_at": "2026-10-26T21:52:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen2",
+    "distillation",
+    "education",
+    "uai",
+    "text-generation",
+    "conversational",
+    "es",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35237104,
+  "storage_human": "35 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

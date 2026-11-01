@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live__groot__seed_0",
+  "slug": "mim-chess-vlas-train_800_dense__mask__separate_channel__sim__all_cameras__live__groot__seed_0",
+  "author": "mim-chess-vlas",
+  "url": "https://huggingface.co/mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live__groot__seed_0",
+  "created_at": "2026-10-28T19:54:28.000Z",
+  "updated_at": "2026-10-28T19:55:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576218512,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mim-chess …",
+      "url": "https://huggingface.co/mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live__groot__seed_0",
+      "snippet": "Robotics model with 3B parameters, built with LeRobot. Download, explore files and run it on Hugging Face.Read more"
+    },
+    {
+      "title": "mim-chess …",
+      "url": "https://huggingface.co/datasets/mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mim Chess Vlas: Open-Weight Models and Datasets",
+      "url": "https://savrn.com/model-publishers/mim-chess-vlas",
+      "snippet": "Sep 18, 2026 · Mim Chess Vlas has 3 open-weight models and 1 dataset in the SAVRN Model Hub. Browse each one's model card, …"
+    },
+    {
+      "title": "mim-chess-vlas/train_800_dense__no_mask - DataCombats",
+      "url": "https://www.datacombats.com/datasets/mim-chess-vlas/train_800_dense__no_mask",
+      "snippet": "Browse the catalog to compare robots, tasks, sensors, and licenses. Sign in to open protected download and model links. Explore …"
+    },
+    {
+      "title": "train_800_dense__mask__overlay_a75__sim__all_cameras__static",
+      "url": "https://www.selectdataset.com/dataset/68315db95fad0cd7cca6b5c8d3b1cf24/train-800-dense-mask-overlay-a75-sim-all-cameras-static",
+      "snippet": "Sep 24, 2026 · Features include robot state (position, orientation, gripper open/close), action (position, orientation, tool), environment …"
+    }
+  ]
+}

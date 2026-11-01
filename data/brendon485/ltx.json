@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Brendon485/LTX",
+  "slug": "brendon485-ltx",
+  "author": "Brendon485",
+  "url": "https://huggingface.co/Brendon485/LTX",
+  "created_at": "2026-11-01T12:57:34.000Z",
+  "updated_at": "2026-11-01T12:57:35.000Z",
+  "license": "2.5",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

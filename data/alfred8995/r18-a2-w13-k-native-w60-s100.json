@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r18-a2-w13-k-native-w60-s100",
+  "slug": "alfred8995-r18-a2-w13-k-native-w60-s100",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r18-a2-w13-k-native-w60-s100",
+  "created_at": "2026-10-29T20:07:36.000Z",
+  "updated_at": "2026-10-29T22:52:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 14386528312,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Azure Container Storage",
+      "url": "https://azure.microsoft.com/en-us/products/container-storage/?msockid=35dba9d4c48b67e408c5b1d0c571667e",
+      "snippet": "Discover Azure Container Storage to deliver fast, cloud‑native storage for Kubernetes. Optimize AKS performance with an …"
+    }
+  ]
+}

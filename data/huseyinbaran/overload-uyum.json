@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huseyinbaran/overload-uyum",
+  "slug": "huseyinbaran-overload-uyum",
+  "author": "huseyinbaran",
+  "url": "https://huggingface.co/huseyinbaran/overload-uyum",
+  "created_at": "2026-10-30T12:11:19.000Z",
+  "updated_at": "2026-10-30T12:11:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "tabular-classification",
+    "sklearn",
+    "education",
+    "game",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 573,
+  "storage_human": "573 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

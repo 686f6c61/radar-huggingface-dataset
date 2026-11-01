@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "lucasw89/whisper-small-danish-ONNX",
+  "slug": "lucasw89-whisper-small-danish-onnx",
+  "author": "lucasw89",
+  "url": "https://huggingface.co/lucasw89/whisper-small-danish-ONNX",
+  "created_at": "2026-10-30T00:32:00.000Z",
+  "updated_at": "2026-10-30T00:32:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "danish",
+    "da",
+    "base_model:thorhojhus/whisper-small-danish",
+    "base_model:quantized:thorhojhus/whisper-small-danish",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1998469181,
+  "storage_human": "2.0 GB",
+  "base_model": "thorhojhus/whisper-small-danish",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

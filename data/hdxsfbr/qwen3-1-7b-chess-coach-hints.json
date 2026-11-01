@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "hdxsfbr/qwen3-1.7b-chess-coach-hints",
+  "slug": "hdxsfbr-qwen3-1-7b-chess-coach-hints",
+  "author": "hdxsfbr",
+  "url": "https://huggingface.co/hdxsfbr/qwen3-1.7b-chess-coach-hints",
+  "created_at": "2026-10-29T18:42:49.000Z",
+  "updated_at": "2026-10-30T18:09:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chess",
+    "lora",
+    "qlora",
+    "unsloth",
+    "behavior-fine-tuning",
+    "en",
+    "base_model:unsloth/Qwen3-1.7B",
+    "base_model:adapter:unsloth/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150987692,
+  "storage_human": "151 MB",
+  "base_model": "unsloth/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

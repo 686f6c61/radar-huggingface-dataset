@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "djduecaster/dfreq-sock-heist",
+  "slug": "djduecaster-dfreq-sock-heist",
+  "author": "djduecaster",
+  "url": "https://huggingface.co/djduecaster/dfreq-sock-heist",
+  "created_at": "2026-10-30T21:56:13.000Z",
+  "updated_at": "2026-10-31T12:46:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "sock-heist",
+    "base_model:pollen-robotics/microduck-policies",
+    "base_model:finetune:pollen-robotics/microduck-policies",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1589405,
+  "storage_human": "2 MB",
+  "base_model": "pollen-robotics/microduck-policies",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

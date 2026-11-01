@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "bhullar17noor/openflow-cleanup-qwen2.5-1.5b",
+  "slug": "bhullar17noor-openflow-cleanup-qwen2-5-1-5b",
+  "author": "bhullar17noor",
+  "url": "https://huggingface.co/bhullar17noor/openflow-cleanup-qwen2.5-1.5b",
+  "created_at": "2026-10-31T12:05:47.000Z",
+  "updated_at": "2026-10-31T12:14:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dictation",
+    "text-cleanup",
+    "qwen2",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048128,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

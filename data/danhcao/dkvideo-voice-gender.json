@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "danhcao/dkvideo-voice-gender",
+  "slug": "danhcao-dkvideo-voice-gender",
+  "author": "danhcao",
+  "url": "https://huggingface.co/danhcao/dkvideo-voice-gender",
+  "created_at": "2026-10-30T10:39:44.000Z",
+  "updated_at": "2026-10-30T10:40:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "int8",
+    "voice-gender",
+    "audio-classification",
+    "base_model:prithivMLmods/Common-Voice-Gender-Detection-IND-En-ONNX",
+    "base_model:quantized:prithivMLmods/Common-Voice-Gender-Detection-IND-En-ONNX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122100288,
+  "storage_human": "122 MB",
+  "base_model": "prithivMLmods/Common-Voice-Gender-Detection-IND-En-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

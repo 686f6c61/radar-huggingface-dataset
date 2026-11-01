@@ -4,8 +4,8 @@
   "slug": "sstoica12-acquisition_student_randomselfgen_combine_wgm_mp_llama8b_conf_5000",
   "author": "sstoica12",
   "url": "https://huggingface.co/sstoica12/acquisition_student_randomselfgen_combine_WGM_MP_llama8b_conf_5000",
-  "created_at": "2026-10-22T00:55:51.000Z",
-  "updated_at": "2026-10-22T00:57:27.000Z",
+  "created_at": "2026-10-31T14:49:53.000Z",
+  "updated_at": "2026-10-31T14:51:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-30T12:44:27.439Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

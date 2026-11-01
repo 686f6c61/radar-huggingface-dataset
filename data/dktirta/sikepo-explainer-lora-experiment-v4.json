@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "dktirta/sikepo-explainer-lora-experiment-v4",
+  "slug": "dktirta-sikepo-explainer-lora-experiment-v4",
+  "author": "dktirta",
+  "url": "https://huggingface.co/dktirta/sikepo-explainer-lora-experiment-v4",
+  "created_at": "2026-10-28T05:15:57.000Z",
+  "updated_at": "2026-10-28T16:36:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "synthetic",
+    "healthcare",
+    "id",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23238158,
+  "storage_human": "23 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "PresenceAI/Thalia-31B-DPO-LoRA-v1.0",
+  "slug": "presenceai-thalia-31b-dpo-lora-v1-0",
+  "author": "PresenceAI",
+  "url": "https://huggingface.co/PresenceAI/Thalia-31B-DPO-LoRA-v1.0",
+  "created_at": "2026-10-28T13:15:51.000Z",
+  "updated_at": "2026-10-28T15:32:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "preference-optimization",
+    "roleplay",
+    "companion",
+    "tool-calling",
+    "gemma-4",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Gryphe/Gemma-4-31B-StyleTune",
+    "base_model:adapter:Gryphe/Gemma-4-31B-StyleTune",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1011728386,
+  "storage_human": "1.0 GB",
+  "base_model": "Gryphe/Gemma-4-31B-StyleTune",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

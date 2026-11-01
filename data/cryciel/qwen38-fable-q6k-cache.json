@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "CryCiel/qwen38-fable-q6k-cache",
+  "slug": "cryciel-qwen38-fable-q6k-cache",
+  "author": "CryCiel",
+  "url": "https://huggingface.co/CryCiel/qwen38-fable-q6k-cache",
+  "created_at": "2026-11-01T08:16:46.000Z",
+  "updated_at": "2026-11-01T08:16:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_8",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 23582382688,
+  "storage_human": "23.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

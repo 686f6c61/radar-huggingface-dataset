@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "wasif-haq/Qwen3-4B-Q4_0-pure-GGUF",
+  "slug": "wasif-haq-qwen3-4b-q4_0-pure-gguf",
+  "author": "wasif-haq",
+  "url": "https://huggingface.co/wasif-haq/Qwen3-4B-Q4_0-pure-GGUF",
+  "created_at": "2026-10-31T17:54:00.000Z",
+  "updated_at": "2026-10-31T17:56:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "q4_0",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2269269472,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

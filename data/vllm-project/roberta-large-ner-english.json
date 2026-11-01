@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "vllm-project/roberta-large-ner-english",
+  "slug": "vllm-project-roberta-large-ner-english",
+  "author": "vllm-project",
+  "url": "https://huggingface.co/vllm-project/roberta-large-ner-english",
+  "created_at": "2026-10-30T16:00:43.000Z",
+  "updated_at": "2026-10-30T16:03:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "roberta",
+    "en",
+    "dataset:conll2003",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 354315783,
+  "parameters_human": "354.3M",
+  "storage_bytes": 5670374519,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

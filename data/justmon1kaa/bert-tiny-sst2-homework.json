@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "JustMon1kAa/bert-tiny-sst2-homework",
+  "slug": "justmon1kaa-bert-tiny-sst2-homework",
+  "author": "JustMon1kAa",
+  "url": "https://huggingface.co/JustMon1kAa/bert-tiny-sst2-homework",
+  "created_at": "2026-10-30T12:47:36.000Z",
+  "updated_at": "2026-10-30T13:13:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "dataset:stanfordnlp/sst2",
+    "base_model:prajjwal1/bert-tiny",
+    "base_model:quantized:prajjwal1/bert-tiny",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 4386178,
+  "parameters_human": "4.4M",
+  "storage_bytes": 35136103,
+  "storage_human": "35 MB",
+  "base_model": "prajjwal1/bert-tiny",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

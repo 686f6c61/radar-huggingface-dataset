@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "orcarouter/Mistral-Large-4-1T-A52B-GGUF",
+  "slug": "orcarouter-mistral-large-4-1t-a52b-gguf",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/Mistral-Large-4-1T-A52B-GGUF",
+  "created_at": "2026-11-01T01:20:35.000Z",
+  "updated_at": "2026-11-01T01:56:05.000Z",
+  "license": "mistral-ecosystem-open-weight-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "ja",
+    "ko",
+    "ru",
+    "zh",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "local",
+    "mistral",
+    "mistral-large-4",
+    "moe",
+    "mixed-precision",
+    "imatrix",
+    "reasoning",
+    "text-generation",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "ja",
+    "ko",
+    "ru",
+    "zh",
+    "ar",
+    "base_model:mistralai/Mistral-Large-4-1T-A52B",
+    "base_model:quantized:mistralai/Mistral-Large-4-1T-A52B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1049357365536,
+  "parameters_human": "1049.36B",
+  "storage_bytes": 726506753120,
+  "storage_human": "726.5 GB",
+  "base_model": "mistralai/Mistral-Large-4-1T-A52B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrcaRouter — One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "OrcaRouter is a production AI gateway: one OpenAI-compatible endpoint with adaptive routing, load balancing, automatic failover, …"
+    },
+    {
+      "title": "Welcome to OrcaRouter - OrcaRouter",
+      "url": "https://docs.orcarouter.ai/introduction",
+      "snippet": "OrcaRouter exposes OpenAI, Anthropic, and Gemini surfaces directly, and translates between them when you call across protocols …"
+    },
+    {
+      "title": "OrcaRouter — Passerelle IA : routage LLM adaptatif",
+      "url": "https://www.orcarouter.ai/fr",
+      "snippet": "OrcaRouter est une passerelle IA de production : un point d'accès compatible OpenAI avec routage adaptatif, répartition de charge, …"
+    },
+    {
+      "title": "Bienvenue sur OrcaRouter - OrcaRouter",
+      "url": "https://docs.orcarouter.ai/fr/introduction",
+      "snippet": "Routage intelligent Chaînes de repli via extra_body.models, routeurs nommés et orcarouter/auto pour sélectionner le modèle vivant …"
+    },
+    {
+      "title": "GitHub - Continuum-AI-Corp/OrcaRouter-Lite: Self-hosted LLM router …",
+      "url": "https://github.com/Continuum-AI-Corp/OrcaRouter-Lite",
+      "snippet": "May 6, 2026 · OrcaRouter Lite is the open-source single-workspace edition of OrcaRouter. Run it on your laptop, ship it in your …"
+    }
+  ]
+}

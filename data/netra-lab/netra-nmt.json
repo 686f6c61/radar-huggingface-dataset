@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Netra-Lab/Netra-NMT",
+  "slug": "netra-lab-netra-nmt",
+  "author": "Netra-Lab",
+  "url": "https://huggingface.co/Netra-Lab/Netra-NMT",
+  "created_at": "2026-11-01T08:22:27.000Z",
+  "updated_at": "2026-11-01T08:23:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "km"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "translation",
+    "khmer",
+    "english",
+    "netra-lab",
+    "en",
+    "km",
+    "dataset:Netra-Lab/bilingual-en-km",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343951323,
+  "storage_human": "344 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

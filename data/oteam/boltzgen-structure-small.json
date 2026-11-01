@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "oteam/boltzgen-structure-small",
+  "slug": "oteam-boltzgen-structure-small",
+  "author": "oteam",
+  "url": "https://huggingface.co/oteam/boltzgen-structure-small",
+  "created_at": "2026-11-01T10:20:07.000Z",
+  "updated_at": "2026-11-01T10:20:23.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "ofoldx",
+  "languages": [],
+  "tags": [
+    "ofoldx",
+    "safetensors",
+    "Biology",
+    "Protein",
+    "Protein Design",
+    "Inverse Folding",
+    "other",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136885760,
+  "parameters_human": "136.9M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "lipik/silero-vad-v6.2-gguf",
+  "slug": "lipik-silero-vad-v6-2-gguf",
+  "author": "lipik",
+  "url": "https://huggingface.co/lipik/silero-vad-v6.2-gguf",
+  "created_at": "2026-10-28T08:47:18.000Z",
+  "updated_at": "2026-10-28T08:47:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transcribe.cpp",
+  "languages": [],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "voice-activity-detection",
+    "silero-vad",
+    "audio-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 309633,
+  "parameters_human": "309633",
+  "storage_bytes": 1241056,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/groupfree3d-w2x-l12-o512.scannet.mmdet3d",
+  "slug": "torch-pointcloud-groupfree3d-w2x-l12-o512-scannet-mmdet3d",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o512.scannet.mmdet3d",
+  "created_at": "2026-10-30T20:51:40.000Z",
+  "updated_at": "2026-10-30T20:51:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "groupfree3d",
+    "object-detection",
+    "dataset:scannet",
+    "arxiv:2104.00678",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 29597377,
+  "parameters_human": "29.6M",
+  "storage_bytes": 118488772,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanNet",
+      "metric": "mAP@0.25",
+      "value": 68.32
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet",
+      "metric": "mAP@0.5",
+      "value": 51
+    }
+  ],
+  "sources": []
+}

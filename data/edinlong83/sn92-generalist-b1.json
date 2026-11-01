@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "edinlong83/sn92-generalist-b1",
+  "slug": "edinlong83-sn92-generalist-b1",
+  "author": "edinlong83",
+  "url": "https://huggingface.co/edinlong83/sn92-generalist-b1",
+  "created_at": "2026-10-28T02:47:07.000Z",
+  "updated_at": "2026-10-28T02:49:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "bittensor",
+    "sn92",
+    "decision-model",
+    "base_model:baselabs/mammoth-1",
+    "base_model:finetune:baselabs/mammoth-1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193403427,
+  "storage_human": "52.2 GB",
+  "base_model": "baselabs/mammoth-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

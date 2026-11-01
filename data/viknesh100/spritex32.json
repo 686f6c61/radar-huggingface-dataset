@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "viknesh100/SpriteX32",
+  "slug": "viknesh100-spritex32",
+  "author": "viknesh100",
+  "url": "https://huggingface.co/viknesh100/SpriteX32",
+  "created_at": "2026-10-30T13:03:00.000Z",
+  "updated_at": "2026-10-30T13:03:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "sprite-flow-unet",
+    "text-to-image",
+    "pixel-art",
+    "sprites",
+    "flow-matching",
+    "classifier-free-guidance",
+    "en",
+    "dataset:tkarr/sprite_caption_dataset",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 11405827,
+  "parameters_human": "11.4M",
+  "storage_bytes": 45639420,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "towfique-elahe/beyond-words-whisper-medium-did",
+  "slug": "towfique-elahe-beyond-words-whisper-medium-did",
+  "author": "towfique-elahe",
+  "url": "https://huggingface.co/towfique-elahe/beyond-words-whisper-medium-did",
+  "created_at": "2026-11-01T09:13:24.000Z",
+  "updated_at": "2026-11-01T09:48:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "audio-classification",
+    "dialect-identification",
+    "bangla",
+    "bengali",
+    "bn",
+    "base_model:openai/whisper-medium",
+    "base_model:finetune:openai/whisper-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306201097,
+  "parameters_human": "306.2M",
+  "storage_bytes": 1224845084,
+  "storage_human": "1.2 GB",
+  "base_model": "openai/whisper-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

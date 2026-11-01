@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-game-tug-a1rb4ck-copy",
+  "slug": "jrubiosainz-microduck-game-tug-a1rb4ck-copy",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-copy",
+  "created_at": "2026-10-30T20:23:56.000Z",
+  "updated_at": "2026-10-30T20:23:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-arena",
+    "tug-of-war",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:a1rb4Ck/microduck-tug",
+    "base_model:quantized:a1rb4Ck/microduck-tug",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2261568,
+  "storage_human": "2 MB",
+  "base_model": "a1rb4Ck/microduck-tug",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

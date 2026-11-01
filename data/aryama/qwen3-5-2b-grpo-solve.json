@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Aryama/qwen3.5-2b-grpo-solve",
+  "slug": "aryama-qwen3-5-2b-grpo-solve",
+  "author": "Aryama",
+  "url": "https://huggingface.co/Aryama/qwen3.5-2b-grpo-solve",
+  "created_at": "2026-10-31T13:32:51.000Z",
+  "updated_at": "2026-10-31T14:32:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "dr-grpo",
+    "mathematics",
+    "reasoning",
+    "text-generation",
+    "en",
+    "dataset:Aryama/deepmath-solve-judge-reconstruct",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250130664,
+  "storage_human": "250 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

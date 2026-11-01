@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "aniketClaude/datashield-local-v2.3",
+  "slug": "aniketclaude-datashield-local-v2-3",
+  "author": "aniketClaude",
+  "url": "https://huggingface.co/aniketClaude/datashield-local-v2.3",
+  "created_at": "2026-10-30T17:19:57.000Z",
+  "updated_at": "2026-10-30T18:20:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "deberta-v2",
+    "pii",
+    "dlp",
+    "secrets",
+    "ner",
+    "privacy",
+    "aadhaar",
+    "pan",
+    "upi",
+    "token-classification",
+    "en",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:quantized:microsoft/deberta-v3-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 947852665,
+  "storage_human": "948 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

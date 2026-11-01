@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "yiweiqin/DS_model",
+  "slug": "yiweiqin-ds_model",
+  "author": "yiweiqin",
+  "url": "https://huggingface.co/yiweiqin/DS_model",
+  "created_at": "2026-10-25T19:23:30.000Z",
+  "updated_at": "2026-10-25T19:27:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174655536,
+  "storage_human": "175 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

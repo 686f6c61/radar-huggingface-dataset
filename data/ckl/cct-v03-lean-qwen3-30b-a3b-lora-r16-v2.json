@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "CKL/cct-v03-lean-qwen3-30b-a3b-lora-r16-v2",
+  "slug": "ckl-cct-v03-lean-qwen3-30b-a3b-lora-r16-v2",
+  "author": "CKL",
+  "url": "https://huggingface.co/CKL/cct-v03-lean-qwen3-30b-a3b-lora-r16-v2",
+  "created_at": "2026-10-30T14:52:37.000Z",
+  "updated_at": "2026-10-30T16:32:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "agents",
+    "summarization",
+    "state-graph",
+    "dataset:CKL/wow-cod-thps4-gamejam",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51028639,
+  "storage_human": "51 MB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "State-graph patch labeling (v0.3-lean)",
+      "dataset": "WoW x CoD x THPS4 Game Jam",
+      "metric": "Touched-task F1 vs Claude Haiku 4.5",
+      "value": 0.587
+    },
+    {
+      "task": "State-graph patch labeling (v0.3-lean)",
+      "dataset": "WoW x CoD x THPS4 Game Jam",
+      "metric": "Valid output rate",
+      "value": 0.939
+    },
+    {
+      "task": "State-graph patch labeling (v0.3-lean)",
+      "dataset": "WoW x CoD x THPS4 Game Jam",
+      "metric": "Task status agreement",
+      "value": 0.664
+    }
+  ],
+  "sources": []
+}

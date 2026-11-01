@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "RoboIT1234/TEAM-3-RoboIT-smolvla-grasp5-2-2026-10-25",
+  "slug": "roboit1234-team-3-roboit-smolvla-grasp5-2-2026-10-25",
+  "author": "RoboIT1234",
+  "url": "https://huggingface.co/RoboIT1234/TEAM-3-RoboIT-smolvla-grasp5-2-2026-10-25",
+  "created_at": "2026-10-25T11:54:11.000Z",
+  "updated_at": "2026-10-25T12:11:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "LeRobot",
+    "smolvla",
+    "robot-pizza-cup",
+    "elrobot",
+    "robotics",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197789624,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

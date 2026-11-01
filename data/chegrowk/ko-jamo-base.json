@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "chegrowk/ko-jamo-base",
+  "slug": "chegrowk-ko-jamo-base",
+  "author": "chegrowk",
+  "url": "https://huggingface.co/chegrowk/ko-jamo-base",
+  "created_at": "2026-10-30T12:18:38.000Z",
+  "updated_at": "2026-10-30T12:29:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "korean",
+    "jamo",
+    "automatic-speech-recognition",
+    "ko",
+    "dataset:kresnik/zeroth_korean",
+    "base_model:Kkonjeong/wav2vec2-base-korean",
+    "base_model:quantized:Kkonjeong/wav2vec2-base-korean",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377865962,
+  "storage_human": "378 MB",
+  "base_model": "Kkonjeong/wav2vec2-base-korean",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "NexiHealth/stt_eu_conformer_transducer_large_v2",
+  "slug": "nexihealth-stt_eu_conformer_transducer_large_v2",
+  "author": "NexiHealth",
+  "url": "https://huggingface.co/NexiHealth/stt_eu_conformer_transducer_large_v2",
+  "created_at": "2026-10-30T15:06:55.000Z",
+  "updated_at": "2026-10-30T15:06:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "eu"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "Conformer",
+    "NeMo",
+    "pytorch",
+    "Transformer",
+    "eu",
+    "dataset:mozilla-foundation/common_voice_18_0",
+    "dataset:gttsehu/basque_parliament_1",
+    "dataset:openslr/openslr",
+    "dataset:HiTZ/composite_corpus_eseu_v1.0",
+    "dataset:PRIVATE/EITB",
+    "arxiv:2005.08100",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 479866880,
+  "storage_human": "480 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "speech-recognition",
+      "dataset": "Mozilla Common Voice 18.0",
+      "metric": "Test WER",
+      "value": 2.5
+    },
+    {
+      "task": "speech-recognition",
+      "dataset": "Basque Parliament",
+      "metric": "Test WER",
+      "value": 3.78
+    },
+    {
+      "task": "speech-recognition",
+      "dataset": "OpenSLR",
+      "metric": "Test WER",
+      "value": 11.87
+    },
+    {
+      "task": "speech-recognition",
+      "dataset": "EITB",
+      "metric": "Test WER",
+      "value": 9.17
+    },
+    {
+      "task": "speech-recognition",
+      "dataset": "Mozilla Common Voice 18.0",
+      "metric": "Dev WER",
+      "value": 2.28
+    },
+    {
+      "task": "speech-recognition",
+      "dataset": "Basque Parliament",
+      "metric": "Dev WER",
+      "value": 4.2
+    },
+    {
+      "task": "speech-recognition",
+      "dataset": "OpenSLR",
+      "metric": "Dev WER",
+      "value": 11.65
+    },
+    {
+      "task": "speech-recognition",
+      "dataset": "EITB",
+      "metric": "Dev WER",
+      "value": 12.81
+    }
+  ],
+  "sources": []
+}

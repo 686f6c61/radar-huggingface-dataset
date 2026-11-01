@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Thaki-FactoryShield-KO-7M",
+  "slug": "thakicloud-thaki-factoryshield-ko-7m",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Thaki-FactoryShield-KO-7M",
+  "created_at": "2026-10-31T22:15:34.000Z",
+  "updated_at": "2026-10-31T22:34:31.000Z",
+  "license": "thaki-factoryshield-ko-7m-research",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "pytorch",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "korean",
+    "voice-command",
+    "industrial",
+    "safety",
+    "abstention",
+    "research-preview",
+    "tiny-model",
+    "token-classification",
+    "ko",
+    "base_model:ThakiCloud/Thaki-InputGuard-KO-9M",
+    "base_model:finetune:ThakiCloud/Thaki-InputGuard-KO-9M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 7352909,
+  "parameters_human": "7.4M",
+  "storage_bytes": 29420428,
+  "storage_human": "29 MB",
+  "base_model": "ThakiCloud/Thaki-InputGuard-KO-9M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

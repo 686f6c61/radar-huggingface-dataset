@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "aitrainingdatabroker/invoice-pii-detector",
+  "slug": "aitrainingdatabroker-invoice-pii-detector",
+  "author": "aitrainingdatabroker",
+  "url": "https://huggingface.co/aitrainingdatabroker/invoice-pii-detector",
+  "created_at": "2026-10-30T16:25:32.000Z",
+  "updated_at": "2026-10-30T16:27:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "pii",
+    "pii-detection",
+    "invoices",
+    "ner",
+    "de-identification",
+    "redaction",
+    "synthetic",
+    "en",
+    "dataset:aitrainingdatabroker/synthetic-invoice-pii-spans",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 81543957,
+  "parameters_human": "81.5M",
+  "storage_bytes": 326188140,
+  "storage_human": "326 MB",
+  "base_model": "distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

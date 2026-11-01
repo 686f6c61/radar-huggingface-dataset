@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Yad4o/skincare-assistant-lora",
+  "slug": "yad4o-skincare-assistant-lora",
+  "author": "Yad4o",
+  "url": "https://huggingface.co/Yad4o/skincare-assistant-lora",
+  "created_at": "2026-10-28T09:40:54.000Z",
+  "updated_at": "2026-10-28T09:50:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "skincare",
+    "dermatology",
+    "health-assistant",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32864431,
+  "storage_human": "33 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

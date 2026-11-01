@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "HuggingFaceBio/Carbon-X-Base",
+  "slug": "huggingfacebio-carbon-x-base",
+  "author": "HuggingFaceBio",
+  "url": "https://huggingface.co/HuggingFaceBio/Carbon-X-Base",
+  "created_at": "2026-10-26T16:28:25.000Z",
+  "updated_at": "2026-10-28T11:41:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "dna",
+    "genomics",
+    "biology",
+    "mid-training",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 14822046720,
+  "parameters_human": "14.82B",
+  "storage_bytes": 29644145288,
+  "storage_human": "29.6 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

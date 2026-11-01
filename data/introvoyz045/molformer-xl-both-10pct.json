@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "introvoyz045/MoLFormer-XL-both-10pct",
+  "slug": "introvoyz045-molformer-xl-both-10pct",
+  "author": "introvoyz045",
+  "url": "https://huggingface.co/introvoyz045/MoLFormer-XL-both-10pct",
+  "created_at": "2026-10-30T21:08:22.000Z",
+  "updated_at": "2026-10-30T21:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molformer",
+    "fill-mask",
+    "chemistry",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:2106.09553",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 46805760,
+  "parameters_human": "46.8M",
+  "storage_bytes": 187248784,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

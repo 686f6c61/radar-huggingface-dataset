@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nguigz/balle5_trained",
+  "slug": "nguigz-balle5_trained",
+  "author": "nguigz",
+  "url": "https://huggingface.co/nguigz/balle5_trained",
+  "created_at": "2026-10-28T15:16:31.000Z",
+  "updated_at": "2026-10-28T15:16:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:nguigz/balle5",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712856,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

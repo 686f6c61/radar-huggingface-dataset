@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Mininglamp-2718/OctoMention-2B-Instruct-1.0",
+  "slug": "mininglamp-2718-octomention-2b-instruct-1-0",
+  "author": "Mininglamp-2718",
+  "url": "https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.0",
+  "created_at": "2026-10-26T08:09:08.000Z",
+  "updated_at": "2026-10-26T08:54:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 5463666549,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

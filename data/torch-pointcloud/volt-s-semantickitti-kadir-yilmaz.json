@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/volt-s.semantickitti.kadir-yilmaz",
+  "slug": "torch-pointcloud-volt-s-semantickitti-kadir-yilmaz",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/volt-s.semantickitti.kadir-yilmaz",
+  "created_at": "2026-10-30T20:55:39.000Z",
+  "updated_at": "2026-10-30T20:55:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "volt",
+    "segmentation",
+    "dataset:semantickitti",
+    "arxiv:2604.19609",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 23591315,
+  "parameters_human": "23.6M",
+  "storage_bytes": 94386764,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "SemanticKITTI",
+      "metric": "simple/mIoU",
+      "value": 69.42
+    },
+    {
+      "task": null,
+      "dataset": "SemanticKITTI",
+      "metric": "simple/OA",
+      "value": 92.64
+    }
+  ],
+  "sources": []
+}

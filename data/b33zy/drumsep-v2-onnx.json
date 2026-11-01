@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "b33zy/drumsep-v2-onnx",
+  "slug": "b33zy-drumsep-v2-onnx",
+  "author": "b33zy",
+  "url": "https://huggingface.co/b33zy/drumsep-v2-onnx",
+  "created_at": "2026-11-01T08:04:24.000Z",
+  "updated_at": "2026-11-01T08:04:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "source-separation",
+    "drums",
+    "hdemucs",
+    "onnxruntime-web",
+    "base_model:gridshiftstudio/drumsep-onnx",
+    "base_model:quantized:gridshiftstudio/drumsep-onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168050967,
+  "storage_human": "168 MB",
+  "base_model": "gridshiftstudio/drumsep-onnx, inagoy/drumsep",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

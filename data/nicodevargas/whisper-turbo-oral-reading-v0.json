@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "NicoDeVargas/whisper-turbo-oral-reading-v0",
+  "slug": "nicodevargas-whisper-turbo-oral-reading-v0",
+  "author": "NicoDeVargas",
+  "url": "https://huggingface.co/NicoDeVargas/whisper-turbo-oral-reading-v0",
+  "created_at": "2026-10-31T14:16:48.000Z",
+  "updated_at": "2026-10-31T14:20:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "oral-reading-fluency",
+    "education",
+    "verbatim",
+    "automatic-speech-recognition",
+    "pt",
+    "en",
+    "dataset:NicoDeVargas/fluente-oral-reading-benchmark",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1617824864,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Mohamedtamer06/legal-bert-unfair-tos",
+  "slug": "mohamedtamer06-legal-bert-unfair-tos",
+  "author": "Mohamedtamer06",
+  "url": "https://huggingface.co/Mohamedtamer06/legal-bert-unfair-tos",
+  "created_at": "2026-10-28T09:02:41.000Z",
+  "updated_at": "2026-10-28T09:15:08.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "legal",
+    "multi-label-classification",
+    "text-classification",
+    "en",
+    "ar",
+    "dataset:coastalcph/lex_glue",
+    "base_model:nlpaueb/legal-bert-base-uncased",
+    "base_model:finetune:nlpaueb/legal-bert-base-uncased",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 109488392,
+  "parameters_human": "109.5M",
+  "storage_bytes": 843909497,
+  "storage_human": "844 MB",
+  "base_model": "nlpaueb/legal-bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

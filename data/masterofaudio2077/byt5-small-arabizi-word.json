@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "masterofaudio2077/byt5-small-arabizi-word",
+  "slug": "masterofaudio2077-byt5-small-arabizi-word",
+  "author": "masterofaudio2077",
+  "url": "https://huggingface.co/masterofaudio2077/byt5-small-arabizi-word",
+  "created_at": "2026-10-31T10:59:44.000Z",
+  "updated_at": "2026-10-31T11:08:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "transliteration",
+    "arabizi",
+    "arabic",
+    "byt5",
+    "other",
+    "ar",
+    "dataset:arbml/Arabizi_Transliteration",
+    "arxiv:2105.13626",
+    "base_model:google/byt5-small",
+    "base_model:finetune:google/byt5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 299637760,
+  "parameters_human": "299.6M",
+  "storage_bytes": 1198571496,
+  "storage_human": "1.2 GB",
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

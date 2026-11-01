@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "CybroatriX/Shanks-v1-GGUF",
+  "slug": "cybroatrix-shanks-v1-gguf",
+  "author": "CybroatriX",
+  "url": "https://huggingface.co/CybroatriX/Shanks-v1-GGUF",
+  "created_at": "2026-11-01T10:17:21.000Z",
+  "updated_at": "2026-11-01T10:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "code",
+    "cybersecurity",
+    "exploit-engineering",
+    "reverse-engineering",
+    "systems-programming",
+    "qwen2.5",
+    "text-generation",
+    "en",
+    "base_model:thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored",
+    "base_model:quantized:thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073632,
+  "storage_human": "4.7 GB",
+  "base_model": "thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

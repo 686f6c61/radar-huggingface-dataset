@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/volt-s.nuscenes.kadir-yilmaz",
+  "slug": "torch-pointcloud-volt-s-nuscenes-kadir-yilmaz",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/volt-s.nuscenes.kadir-yilmaz",
+  "created_at": "2026-10-30T20:55:25.000Z",
+  "updated_at": "2026-10-30T20:55:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "volt",
+    "segmentation",
+    "dataset:nuscenes",
+    "arxiv:2604.19609",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 23590928,
+  "parameters_human": "23.6M",
+  "storage_bytes": 94385216,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "simple/mIoU",
+      "value": 80.57
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "simple/OA",
+      "value": 94.54
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Xentira/Qwen2.5-Coder-7B-Q4_K_M-GGUF",
+  "slug": "xentira-qwen2-5-coder-7b-q4_k_m-gguf",
+  "author": "Xentira",
+  "url": "https://huggingface.co/Xentira/Qwen2.5-Coder-7B-Q4_K_M-GGUF",
+  "created_at": "2026-10-31T19:40:22.000Z",
+  "updated_at": "2026-10-31T19:40:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "qwen",
+    "qwen-coder",
+    "codeqwen",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073952,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

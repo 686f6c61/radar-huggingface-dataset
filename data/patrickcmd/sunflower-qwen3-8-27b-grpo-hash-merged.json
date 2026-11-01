@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "patrickcmd/sunflower-qwen3.8-27b-grpo-hash-merged",
+  "slug": "patrickcmd-sunflower-qwen3-8-27b-grpo-hash-merged",
+  "author": "patrickcmd",
+  "url": "https://huggingface.co/patrickcmd/sunflower-qwen3.8-27b-grpo-hash-merged",
+  "created_at": "2026-11-01T11:20:18.000Z",
+  "updated_at": "2026-11-01T11:21:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812098155,
+  "storage_human": "53.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

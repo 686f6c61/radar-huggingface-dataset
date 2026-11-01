@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Jaward/d1-act-policy",
+  "slug": "jaward-d1-act-policy",
+  "author": "Jaward",
+  "url": "https://huggingface.co/Jaward/d1-act-policy",
+  "created_at": "2026-10-31T10:36:47.000Z",
+  "updated_at": "2026-10-31T10:37:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Jaward/d1-act-data",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 51682956,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206773352,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

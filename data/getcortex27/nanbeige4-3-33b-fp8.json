@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "GetCortex27/Nanbeige4.3-33B-FP8",
+  "slug": "getcortex27-nanbeige4-3-33b-fp8",
+  "author": "GetCortex27",
+  "url": "https://huggingface.co/GetCortex27/Nanbeige4.3-33B-FP8",
+  "created_at": "2026-10-30T04:19:34.000Z",
+  "updated_at": "2026-10-30T04:20:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "fp8",
+    "compressed-tensors",
+    "llm-compressor",
+    "agentic",
+    "tool-calling",
+    "sglang",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 35538159704,
+  "storage_human": "35.5 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

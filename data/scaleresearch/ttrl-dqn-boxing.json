@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "scaleresearch/ttrl-dqn-boxing",
+  "slug": "scaleresearch-ttrl-dqn-boxing",
+  "author": "scaleresearch",
+  "url": "https://huggingface.co/scaleresearch/ttrl-dqn-boxing",
+  "created_at": "2026-10-27T12:16:13.000Z",
+  "updated_at": "2026-10-27T12:19:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ttrl",
+  "languages": [],
+  "tags": [
+    "ttrl",
+    "onnx",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "atari",
+    "dqn",
+    "tenstorrent",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41182126,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

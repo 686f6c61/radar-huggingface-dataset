@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "charcot-ai/charcot-27b",
+  "slug": "charcot-ai-charcot-27b",
+  "author": "charcot-ai",
+  "url": "https://huggingface.co/charcot-ai/charcot-27b",
+  "created_at": "2026-10-26T17:04:05.000Z",
+  "updated_at": "2026-10-29T13:15:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "charcot-gym",
+    "healthcare",
+    "fhir",
+    "synthetic-data",
+    "conversational",
+    "dataset:charcot-ai/gym",
+    "dataset:charcot-ai/gym-sft",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 111139125596,
+  "storage_human": "111.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maladie de Charcot : les 5 premiers symptômes qui doivent vous alerter",
+      "url": "https://www.ramsayservices.fr/pathologies/maladie-de-charcot-les-5-premiers-symptomes-qui-doivent-vous-alerter",
+      "snippet": "La maladie de Charcot est une pathologie neurodégénérative grave qui entraîne peu à peu la paralysie de tous les muscles. Les …"
+    },
+    {
+      "title": "Jean-Martin Charcot — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jean-Martin_Charcot",
+      "snippet": "Jean-Martin Charcot, né le 29 novembre 1825 à Paris 2e (Seine) et mort le 16 août 1893 à Montsauche-les-Settons (Nièvre), est un …"
+    },
+    {
+      "title": "Les signes et symptômes de la maladie de Charcot (SLA)",
+      "url": "https://institutducerveau.org/fiches-maladies/maladie-charcot-sla/symptomes-progression-et-lesperance-vie-maladie-charcot",
+      "snippet": "2 days ago · Les symptômes de la sclérose latérale amyotrophique (SLA) ou maladie de Charcot se caractérisent par une paralysie …"
+    },
+    {
+      "title": "Maladie de Charcot : premiers symptômes, espérance de vie, c'est …",
+      "url": "https://sante.journaldesfemmes.fr/fiches-maladies/2512601-maladie-charcot-sla-evolution-cause-symptomes/",
+      "snippet": "Jan 27, 2025 · La maladie de Charcot se caractérise par l'altération des neurones permettant le transfert de l'ordre du mouvement. …"
+    },
+    {
+      "title": "Maladie de Charcot : définition, symptômes et traitements",
+      "url": "https://www.sante-sur-le-net.com/maladies/maladies-rares-genetiques/maladie-de-charcot/",
+      "snippet": "May 18, 2017 · La maladie de Charcot ou Sclérose latérale amyotrophique (SLA) appartient à la classe des maladies …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ProCreations/auto-150m-3",
+  "slug": "procreations-auto-150m-3",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/auto-150m-3",
+  "created_at": "2026-10-30T21:29:27.000Z",
+  "updated_at": "2026-10-30T21:33:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "agent-safety",
+    "tool-calling",
+    "guardrail",
+    "long-context",
+    "base_model:ProCreations/auto-200m-2",
+    "base_model:finetune:ProCreations/auto-200m-2",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 300375355,
+  "storage_human": "300 MB",
+  "base_model": "ProCreations/auto-200m-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agentic tool-call approve/deny classification",
+      "dataset": "Approve-or-Deny",
+      "metric": null,
+      "value": 0.9597
+    },
+    {
+      "task": "Agentic tool-call approve/deny classification",
+      "dataset": "Approve-or-Deny",
+      "metric": null,
+      "value": 0.9927
+    },
+    {
+      "task": "Agentic tool-call approve/deny classification",
+      "dataset": "Approve-or-Deny",
+      "metric": null,
+      "value": 0.0507
+    },
+    {
+      "task": "Agentic tool-call approve/deny classification",
+      "dataset": "Approve-or-Deny",
+      "metric": null,
+      "value": 0.0313
+    }
+  ],
+  "sources": []
+}

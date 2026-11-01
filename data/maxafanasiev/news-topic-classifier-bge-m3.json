@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "maxafanasiev/news-topic-classifier-bge-m3",
+  "slug": "maxafanasiev-news-topic-classifier-bge-m3",
+  "author": "maxafanasiev",
+  "url": "https://huggingface.co/maxafanasiev/news-topic-classifier-bge-m3",
+  "created_at": "2026-10-28T08:04:11.000Z",
+  "updated_at": "2026-10-28T08:18:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "multi-label",
+    "news",
+    "multilingual",
+    "text-classification",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 567768077,
+  "parameters_human": "567.8M",
+  "storage_bytes": 4220625087,
+  "storage_human": "4.2 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alternative Subculture Trends 2026: What's Defining the Scene",
+      "url": "https://goth.market/blogs/news/alternative-subculture-trends-2026-whats-defining-the-scene",
+      "snippet": "Jun 6, 2026 · Explore the alternative subculture trends 2026 shaping identity and community! Discover five movements redefining …"
+    }
+  ]
+}

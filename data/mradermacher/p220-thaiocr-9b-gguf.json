@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/P220-ThaiOCR-9B-GGUF",
+  "slug": "mradermacher-p220-thaiocr-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/P220-ThaiOCR-9B-GGUF",
+  "created_at": "2026-10-31T12:29:26.000Z",
+  "updated_at": "2026-10-31T13:59:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "thai",
+    "document-understanding",
+    "handwriting",
+    "th",
+    "en",
+    "base_model:PorsukR/P220-ThaiOCR-9B",
+    "base_model:quantized:PorsukR/P220-ThaiOCR-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 554,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85101505664,
+  "storage_human": "85.1 GB",
+  "base_model": "PorsukR/P220-ThaiOCR-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

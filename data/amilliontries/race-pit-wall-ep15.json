@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "amilliontries/race-pit-wall-ep15",
+  "slug": "amilliontries-race-pit-wall-ep15",
+  "author": "amilliontries",
+  "url": "https://huggingface.co/amilliontries/race-pit-wall-ep15",
+  "created_at": "2026-10-28T07:07:46.000Z",
+  "updated_at": "2026-10-28T07:07:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "safetensors",
+    "reinforcement-learning",
+    "ppo",
+    "racing",
+    "race-strategy",
+    "evolution-strategies",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 1064,
+  "parameters_human": "1064",
+  "storage_bytes": 4568,
+  "storage_human": "4568 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

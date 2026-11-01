@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Thaki-InputGuard-KO-9M",
+  "slug": "thakicloud-thaki-inputguard-ko-9m",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Thaki-InputGuard-KO-9M",
+  "created_at": "2026-10-31T07:36:46.000Z",
+  "updated_at": "2026-10-31T07:38:17.000Z",
+  "license": "thaki-inputguard-ko-9m-research",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "pytorch",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "korean",
+    "grammatical-error-correction",
+    "spacing",
+    "typo-correction",
+    "on-device",
+    "tiny-model",
+    "edit-tagger",
+    "token-classification",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 8219115,
+  "parameters_human": "8.2M",
+  "storage_bytes": 32884700,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

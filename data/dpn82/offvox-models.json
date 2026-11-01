@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Dpn82/offvox-models",
+  "slug": "dpn82-offvox-models",
+  "author": "Dpn82",
+  "url": "https://huggingface.co/Dpn82/offvox-models",
+  "created_at": "2026-10-31T21:57:07.000Z",
+  "updated_at": "2026-10-31T21:58:33.000Z",
+  "license": "multiple",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "onnx",
+    "sherpa-onnx",
+    "whisper",
+    "parakeet",
+    "mirror",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5533975678,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

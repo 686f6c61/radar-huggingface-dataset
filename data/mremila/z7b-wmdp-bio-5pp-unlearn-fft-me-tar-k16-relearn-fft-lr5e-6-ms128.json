@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16-relearn-fft-lr5e-6-ms128",
+  "slug": "mremila-z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16-relearn-fft-lr5e-6-ms128",
+  "author": "mremila",
+  "url": "https://huggingface.co/mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16-relearn-fft-lr5e-6-ms128",
+  "created_at": "2026-10-31T17:16:26.000Z",
+  "updated_at": "2026-10-31T17:21:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "unlearning",
+    "tamper-resistance",
+    "wmdp-bio",
+    "conversational",
+    "en",
+    "dataset:cais/wmdp-bio-forget-corpus",
+    "base_model:mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16",
+    "base_model:finetune:mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 367,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 15008318632,
+  "storage_human": "15.0 GB",
+  "base_model": "mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Reger-Chen/SenseNova-6.8-Code2Video",
+  "slug": "reger-chen-sensenova-6-8-code2video",
+  "author": "Reger-Chen",
+  "url": "https://huggingface.co/Reger-Chen/SenseNova-6.8-Code2Video",
+  "created_at": "2026-10-30T05:53:19.000Z",
+  "updated_at": "2026-10-30T05:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "code-video",
+    "video-generation",
+    "agent",
+    "claude-code",
+    "qwen3.8",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54890333855,
+  "storage_human": "54.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "xflud/sn92-decider-2",
+  "slug": "xflud-sn92-decider-2",
+  "author": "xflud",
+  "url": "https://huggingface.co/xflud/sn92-decider-2",
+  "created_at": "2026-10-29T22:05:53.000Z",
+  "updated_at": "2026-10-29T22:35:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "reax",
+    "bittensor",
+    "sn92",
+    "base_model:xflud/sn92-decider-1",
+    "base_model:finetune:xflud/sn92-decider-1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193404715,
+  "storage_human": "52.2 GB",
+  "base_model": "xflud/sn92-decider-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

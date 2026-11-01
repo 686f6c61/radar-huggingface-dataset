@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-nc30k",
+  "slug": "open-sci-1-7b-mixturevitae-300bt-v1-decontaminated-16k-nc30k",
+  "author": "open-sci",
+  "url": "https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-nc30k",
+  "created_at": "2026-10-30T11:33:52.000Z",
+  "updated_at": "2026-10-30T11:34:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "opensci",
+    "feature-extraction",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 1714377728,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3428804400,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

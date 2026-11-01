@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "kjarni-ai/opus-mt-de-en",
+  "slug": "kjarni-ai-opus-mt-de-en",
+  "author": "kjarni-ai",
+  "url": "https://huggingface.co/kjarni-ai/opus-mt-de-en",
+  "created_at": "2026-10-31T13:32:01.000Z",
+  "updated_at": "2026-10-31T18:01:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "kjarni",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "kjarni",
+    "safetensors",
+    "marian",
+    "translation",
+    "de",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-de-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-de-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 74468597,
+  "parameters_human": "74.5M",
+  "storage_bytes": 952780512,
+  "storage_human": "953 MB",
+  "base_model": "Helsinki-NLP/opus-mt-de-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

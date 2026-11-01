@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "oteam/alphafold2-model-3",
+  "slug": "oteam-alphafold2-model-3",
+  "author": "oteam",
+  "url": "https://huggingface.co/oteam/alphafold2-model-3",
+  "created_at": "2026-11-01T08:48:37.000Z",
+  "updated_at": "2026-11-01T08:48:51.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "ofoldx",
+  "languages": [],
+  "tags": [
+    "ofoldx",
+    "safetensors",
+    "Biology",
+    "Protein",
+    "Structure Prediction",
+    "other",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92954010,
+  "parameters_human": "93.0M",
+  "storage_bytes": 372611856,
+  "storage_human": "373 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "HuggingFaceBio/Carbon-X-SFT",
+  "slug": "huggingfacebio-carbon-x-sft",
+  "author": "HuggingFaceBio",
+  "url": "https://huggingface.co/HuggingFaceBio/Carbon-X-SFT",
+  "created_at": "2026-10-27T07:42:20.000Z",
+  "updated_at": "2026-10-28T11:41:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "dna",
+    "genomics",
+    "biology",
+    "variant-effect-prediction",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceBio/Carbon-X-Base",
+    "base_model:finetune:HuggingFaceBio/Carbon-X-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 221,
+  "trending_score": 0,
+  "parameters": 14822046720,
+  "parameters_human": "14.82B",
+  "storage_bytes": 29655567962,
+  "storage_human": "29.7 GB",
+  "base_model": "HuggingFaceBio/Carbon-X-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

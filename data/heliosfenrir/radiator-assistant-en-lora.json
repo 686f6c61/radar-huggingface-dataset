@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "HeliosFenrir/radiator-assistant-en-lora",
+  "slug": "heliosfenrir-radiator-assistant-en-lora",
+  "author": "HeliosFenrir",
+  "url": "https://huggingface.co/HeliosFenrir/radiator-assistant-en-lora",
+  "created_at": "2026-10-29T09:48:39.000Z",
+  "updated_at": "2026-10-29T10:05:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "radiator",
+    "lora",
+    "sft",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20097900,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

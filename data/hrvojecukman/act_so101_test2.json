@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hrvojecukman/act_so101_test2",
+  "slug": "hrvojecukman-act_so101_test2",
+  "author": "hrvojecukman",
+  "url": "https://huggingface.co/hrvojecukman/act_so101_test2",
+  "created_at": "2026-10-30T11:05:10.000Z",
+  "updated_at": "2026-10-30T11:05:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hrvojecukman/so101_test2_20261030_112321",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

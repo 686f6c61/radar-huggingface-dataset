@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "benthecarman/Qwen3.8-27B-BTC-Script-RL",
+  "slug": "benthecarman-qwen3-8-27b-btc-script-rl",
+  "author": "benthecarman",
+  "url": "https://huggingface.co/benthecarman/Qwen3.8-27B-BTC-Script-RL",
+  "created_at": "2026-10-28T09:33:00.000Z",
+  "updated_at": "2026-10-28T09:46:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "reinforcement-learning",
+    "bitcoin",
+    "bitcoin-script",
+    "miniscript",
+    "taproot",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 870439776,
+  "storage_human": "870 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "onionionZazaza/10episode",
+  "slug": "onionionzazaza-10episode",
+  "author": "onionionZazaza",
+  "url": "https://huggingface.co/onionionZazaza/10episode",
+  "created_at": "2026-10-30T01:16:37.000Z",
+  "updated_at": "2026-10-30T01:16:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:onionionZazaza/10episode",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 13129117,
+  "parameters_human": "13.1M",
+  "storage_bytes": 52542508,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "optima-tools-ch/voice-medium",
+  "slug": "optima-tools-ch-voice-medium",
+  "author": "optima-tools-ch",
+  "url": "https://huggingface.co/optima-tools-ch/voice-medium",
+  "created_at": "2026-10-26T21:07:12.000Z",
+  "updated_at": "2026-10-27T20:31:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 2493919668,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

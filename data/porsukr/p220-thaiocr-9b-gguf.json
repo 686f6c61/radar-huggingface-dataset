@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "PorsukR/P220-ThaiOCR-9B-GGUF",
+  "slug": "porsukr-p220-thaiocr-9b-gguf",
+  "author": "PorsukR",
+  "url": "https://huggingface.co/PorsukR/P220-ThaiOCR-9B-GGUF",
+  "created_at": "2026-10-31T04:32:01.000Z",
+  "updated_at": "2026-10-31T05:49:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ocr",
+    "thai",
+    "document-understanding",
+    "handwriting",
+    "image-text-to-text",
+    "th",
+    "en",
+    "base_model:PorsukR/P220-ThaiOCR-9B",
+    "base_model:quantized:PorsukR/P220-ThaiOCR-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 338,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 44169139903,
+  "storage_human": "44.2 GB",
+  "base_model": "PorsukR/P220-ThaiOCR-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

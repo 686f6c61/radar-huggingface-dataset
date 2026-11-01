@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Lucasgitguy-co/lfm3-vl-2b-heretic-gguf",
+  "slug": "lucasgitguy-co-lfm3-vl-2b-heretic-gguf",
+  "author": "Lucasgitguy-co",
+  "url": "https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-gguf",
+  "created_at": "2026-10-30T14:55:28.000Z",
+  "updated_at": "2026-11-01T10:54:56.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "vision-language-model",
+    "lfm3",
+    "heretic",
+    "image-text-to-text",
+    "en",
+    "base_model:Lucasgitguy-co/lfm3-vl-2b-heretic",
+    "base_model:quantized:Lucasgitguy-co/lfm3-vl-2b-heretic",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 253,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 1478622400,
+  "storage_human": "1.5 GB",
+  "base_model": "Lucasgitguy-co/lfm3-vl-2b-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

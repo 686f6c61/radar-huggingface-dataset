@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "cadrojasl/xlm-roberta-large-tass-sentimientos-2026",
+  "slug": "cadrojasl-xlm-roberta-large-tass-sentimientos-2026",
+  "author": "cadrojasl",
+  "url": "https://huggingface.co/cadrojasl/xlm-roberta-large-tass-sentimientos-2026",
+  "created_at": "2026-10-26T03:57:02.000Z",
+  "updated_at": "2026-10-26T03:57:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "spanish",
+    "tass",
+    "es",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 559893507,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256720956,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

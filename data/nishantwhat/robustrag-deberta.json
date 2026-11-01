@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nishantwhat/robustrag-deberta",
+  "slug": "nishantwhat-robustrag-deberta",
+  "author": "nishantwhat",
+  "url": "https://huggingface.co/nishantwhat/robustrag-deberta",
+  "created_at": "2026-10-25T06:51:12.000Z",
+  "updated_at": "2026-10-25T07:19:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "hallucination-detection",
+    "rag",
+    "deberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 184349186,
+  "parameters_human": "184.3M",
+  "storage_bytes": 737421288,
+  "storage_human": "737 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "hellnahbru/Genos-1.2B-preserved-20261029",
+  "slug": "hellnahbru-genos-1-2b-preserved-20261029",
+  "author": "hellnahbru",
+  "url": "https://huggingface.co/hellnahbru/Genos-1.2B-preserved-20261029",
+  "created_at": "2026-10-29T05:20:05.000Z",
+  "updated_at": "2026-10-29T05:20:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixtral",
+    "biology",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 1246094336,
+  "parameters_human": "1.25B",
+  "storage_bytes": 4984424416,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

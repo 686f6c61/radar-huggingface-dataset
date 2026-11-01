@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "felsager/smolvla_cube2cross_dr_chunk_60",
+  "slug": "felsager-smolvla_cube2cross_dr_chunk_60",
+  "author": "felsager",
+  "url": "https://huggingface.co/felsager/smolvla_cube2cross_dr_chunk_60",
+  "created_at": "2026-10-31T11:49:30.000Z",
+  "updated_at": "2026-10-31T21:22:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:felsager/vla_cubes_cross_dr",
+    "arxiv:2506.01844",
+    "base_model:felsager/smolvla_base_ee_rel",
+    "base_model:finetune:felsager/smolvla_base_ee_rel",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 19932556312,
+  "storage_human": "19.9 GB",
+  "base_model": "felsager/smolvla_base_ee_rel",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Shrijanagain/TEST-REAS",
+  "slug": "shrijanagain-test-reas",
+  "author": "Shrijanagain",
+  "url": "https://huggingface.co/Shrijanagain/TEST-REAS",
+  "created_at": "2026-10-31T20:26:37.000Z",
+  "updated_at": "2026-10-31T21:00:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mixtral",
+    "qlora",
+    "moe",
+    "sft",
+    "reasoning",
+    "en",
+    "base_model:sKT-Ai-Labs/SPEED-1",
+    "base_model:finetune:sKT-Ai-Labs/SPEED-1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 19187634176,
+  "parameters_human": "19.19B",
+  "storage_bytes": 38702560600,
+  "storage_human": "38.7 GB",
+  "base_model": "sKT-Ai-Labs/SPEED-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

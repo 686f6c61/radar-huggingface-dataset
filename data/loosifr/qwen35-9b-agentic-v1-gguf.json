@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "LoosiFR/qwen35-9b-agentic-v1-GGUF",
+  "slug": "loosifr-qwen35-9b-agentic-v1-gguf",
+  "author": "LoosiFR",
+  "url": "https://huggingface.co/LoosiFR/qwen35-9b-agentic-v1-GGUF",
+  "created_at": "2026-11-01T12:09:50.000Z",
+  "updated_at": "2026-11-01T12:10:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "agentic",
+    "tool-use",
+    "base_model:LoosiFR/qwen35-9b-agentic-v1",
+    "base_model:quantized:LoosiFR/qwen35-9b-agentic-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 12422635328,
+  "storage_human": "12.4 GB",
+  "base_model": "LoosiFR/qwen35-9b-agentic-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

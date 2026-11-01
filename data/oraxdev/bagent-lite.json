@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "OraXDev/bagent-lite",
+  "slug": "oraxdev-bagent-lite",
+  "author": "OraXDev",
+  "url": "https://huggingface.co/OraXDev/bagent-lite",
+  "created_at": "2026-10-28T00:29:15.000Z",
+  "updated_at": "2026-10-28T01:31:34.000Z",
+  "license": "cdla-permissive-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:OraXDev/bagent-o1",
+    "base_model:finetune:OraXDev/bagent-o1",
+    "license:cdla-permissive-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "OraXDev/bagent-o1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

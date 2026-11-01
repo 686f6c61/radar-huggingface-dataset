@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Rubio-27B-GGUF",
+  "slug": "mradermacher-rubio-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Rubio-27B-GGUF",
+  "created_at": "2026-11-01T12:43:27.000Z",
+  "updated_at": "2026-11-01T12:43:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 1556854848,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

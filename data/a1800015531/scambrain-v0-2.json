@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "a1800015531/ScamBrain-v0.2",
+  "slug": "a1800015531-scambrain-v0-2",
+  "author": "a1800015531",
+  "url": "https://huggingface.co/a1800015531/ScamBrain-v0.2",
+  "created_at": "2026-11-01T08:31:27.000Z",
+  "updated_at": "2026-11-01T08:31:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "scam-detection",
+    "risk-triage",
+    "lora",
+    "qwen3",
+    "anti-fraud",
+    "dual-world-model",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75389664,
+  "storage_human": "75 MB",
+  "base_model": "Qwen/Qwen3-0.6B, Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

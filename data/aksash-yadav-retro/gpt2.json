@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Aksash-Yadav-Retro/gpt2",
+  "slug": "aksash-yadav-retro-gpt2",
+  "author": "Aksash-Yadav-Retro",
+  "url": "https://huggingface.co/Aksash-Yadav-Retro/gpt2",
+  "created_at": "2026-11-01T05:01:09.000Z",
+  "updated_at": "2026-11-01T05:01:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "tflite",
+    "rust",
+    "onnx",
+    "safetensors",
+    "gpt2",
+    "exbert",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
+  "storage_bytes": 5626190613,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

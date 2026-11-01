@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jamest65/AGILLM-4.3-step2975754-safetensors",
+  "slug": "jamest65-agillm-4-3-step2975754-safetensors",
+  "author": "jamest65",
+  "url": "https://huggingface.co/jamest65/AGILLM-4.3-step2975754-safetensors",
+  "created_at": "2026-10-30T13:11:10.000Z",
+  "updated_at": "2026-10-30T13:18:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "agillm",
+    "non-autoregressive",
+    "base_model:MarxistLeninist/AGILLM-4.3-checkpoints",
+    "base_model:finetune:MarxistLeninist/AGILLM-4.3-checkpoints",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 1726200042,
+  "parameters_human": "1.73B",
+  "storage_bytes": 6904871236,
+  "storage_human": "6.9 GB",
+  "base_model": "MarxistLeninist/AGILLM-4.3-checkpoints",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

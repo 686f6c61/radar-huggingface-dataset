@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "diablomike20/speech-emotion-recognition-with-openai-whisper-large-v3",
+  "slug": "diablomike20-speech-emotion-recognition-with-openai-whisper-large-v3",
+  "author": "diablomike20",
+  "url": "https://huggingface.co/diablomike20/speech-emotion-recognition-with-openai-whisper-large-v3",
+  "created_at": "2026-10-29T17:51:15.000Z",
+  "updated_at": "2026-10-29T17:51:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 637298695,
+  "parameters_human": "637.3M",
+  "storage_bytes": 2549254444,
+  "storage_human": "2.5 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "tatjr13/fallen-coco704-cross83n84r-20261025",
+  "slug": "tatjr13-fallen-coco704-cross83n84r-20261025",
+  "author": "tatjr13",
+  "url": "https://huggingface.co/tatjr13/fallen-coco704-cross83n84r-20261025",
+  "created_at": "2026-10-25T18:55:56.000Z",
+  "updated_at": "2026-10-25T18:55:59.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19643584,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

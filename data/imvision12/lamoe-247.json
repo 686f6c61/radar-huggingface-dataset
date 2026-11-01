@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "IMvision12/lamoe-247",
+  "slug": "imvision12-lamoe-247",
+  "author": "IMvision12",
+  "url": "https://huggingface.co/IMvision12/lamoe-247",
+  "created_at": "2026-10-28T21:52:47.000Z",
+  "updated_at": "2026-10-31T23:31:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lamoe",
+    "text-generation",
+    "pytorch",
+    "mixture-of-experts",
+    "custom-code",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 144,
+  "trending_score": 0,
+  "parameters": 247650404,
+  "parameters_human": "247.7M",
+  "storage_bytes": 992443929,
+  "storage_human": "992 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

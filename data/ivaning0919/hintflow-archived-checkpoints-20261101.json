@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ivaning0919/HintFlow-Archived-Checkpoints-20261101",
+  "slug": "ivaning0919-hintflow-archived-checkpoints-20261101",
+  "author": "ivaning0919",
+  "url": "https://huggingface.co/ivaning0919/HintFlow-Archived-Checkpoints-20261101",
+  "created_at": "2026-11-01T07:07:29.000Z",
+  "updated_at": "2026-11-01T07:09:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hintflow",
+    "checkpoint-archive",
+    "lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15960005679,
+  "storage_human": "16.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

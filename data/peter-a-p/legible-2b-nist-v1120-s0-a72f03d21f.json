@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Peter-A-P/legible-2b-nist-v1120-s0-a72f03d21f",
+  "slug": "peter-a-p-legible-2b-nist-v1120-s0-a72f03d21f",
+  "author": "Peter-A-P",
+  "url": "https://huggingface.co/Peter-A-P/legible-2b-nist-v1120-s0-a72f03d21f",
+  "created_at": "2026-10-25T14:00:39.000Z",
+  "updated_at": "2026-10-25T14:01:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "document-understanding",
+    "form-extraction",
+    "vision-language-model",
+    "qlora",
+    "lora",
+    "gemma4",
+    "legible",
+    "nist",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E2B",
+    "base_model:adapter:google/gemma-4-E2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 419352840,
+  "storage_human": "419 MB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "RandHan/ResMem-Mistral-7B-v0.3",
+  "slug": "randhan-resmem-mistral-7b-v0-3",
+  "author": "RandHan",
+  "url": "https://huggingface.co/RandHan/ResMem-Mistral-7B-v0.3",
+  "created_at": "2026-10-30T21:37:11.000Z",
+  "updated_at": "2026-10-30T21:38:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "parametric-memory",
+    "knowledge-distillation",
+    "retrieval-augmented-generation",
+    "en",
+    "dataset:Rubin-Wei/enwiki-dec2021-preprocessed-mistral",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 1543540736,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087672500,
+  "storage_human": "3.1 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

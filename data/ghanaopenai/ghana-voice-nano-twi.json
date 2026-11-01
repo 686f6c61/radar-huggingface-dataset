@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ghanaopenai/ghana-voice-nano-twi",
+  "slug": "ghanaopenai-ghana-voice-nano-twi",
+  "author": "ghanaopenai",
+  "url": "https://huggingface.co/ghanaopenai/ghana-voice-nano-twi",
+  "created_at": "2026-10-30T09:36:47.000Z",
+  "updated_at": "2026-10-30T09:37:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "sherpa-onnx",
+  "languages": [
+    "tw",
+    "ak"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "matcha-tts",
+    "vocos",
+    "twi",
+    "akan",
+    "ghana",
+    "offline",
+    "tw",
+    "ak",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275245842,
+  "storage_human": "275 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

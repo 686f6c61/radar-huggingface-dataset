@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "opticsWolf/texteller3-onnx",
+  "slug": "opticswolf-texteller3-onnx",
+  "author": "opticsWolf",
+  "url": "https://huggingface.co/opticsWolf/texteller3-onnx",
+  "created_at": "2026-10-31T15:30:35.000Z",
+  "updated_at": "2026-10-31T18:06:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "vision-encoder-decoder",
+    "ocr",
+    "image to latex",
+    "image-to-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 298101248,
+  "parameters_human": "298.1M",
+  "storage_bytes": 5361048281,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

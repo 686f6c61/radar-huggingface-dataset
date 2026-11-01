@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "llaosdigital/psiuu",
+  "slug": "llaosdigital-psiuu",
+  "author": "llaosdigital",
+  "url": "https://huggingface.co/llaosdigital/psiuu",
+  "created_at": "2026-10-31T14:29:10.000Z",
+  "updated_at": "2026-11-01T01:32:05.000Z",
+  "license": "apache-2.0-and-cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "whisper",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-medium",
+    "base_model:quantized:openai/whisper-medium",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 524,
+  "trending_score": 0,
+  "parameters": 627052166,
+  "parameters_human": "627.1M",
+  "storage_bytes": 1571046720,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-medium",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

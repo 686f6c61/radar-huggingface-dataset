@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "oteam/protenix-constraint",
+  "slug": "oteam-protenix-constraint",
+  "author": "oteam",
+  "url": "https://huggingface.co/oteam/protenix-constraint",
+  "created_at": "2026-11-01T09:59:58.000Z",
+  "updated_at": "2026-11-01T10:00:16.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "ofoldx",
+  "languages": [],
+  "tags": [
+    "ofoldx",
+    "safetensors",
+    "Biology",
+    "Protein",
+    "RNA",
+    "DNA",
+    "Structure Prediction",
+    "other",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 368338993,
+  "parameters_human": "368.3M",
+  "storage_bytes": 1474019492,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

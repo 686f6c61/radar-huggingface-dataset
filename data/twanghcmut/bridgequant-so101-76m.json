@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "twanghcmut/bridgequant-so101-76m",
+  "slug": "twanghcmut-bridgequant-so101-76m",
+  "author": "twanghcmut",
+  "url": "https://huggingface.co/twanghcmut/bridgequant-so101-76m",
+  "created_at": "2026-10-30T06:47:58.000Z",
+  "updated_at": "2026-10-30T06:48:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bridgequant_async_vla",
+    "robotics",
+    "vision-language-action",
+    "bridgequant",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 64826027,
+  "parameters_human": "64.8M",
+  "storage_bytes": 259358540,
+  "storage_human": "259 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

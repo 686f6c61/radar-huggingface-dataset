@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "clairemcw/omnilingual-asr-300M-ctc-v2-int8",
+  "slug": "clairemcw-omnilingual-asr-300m-ctc-v2-int8",
+  "author": "clairemcw",
+  "url": "https://huggingface.co/clairemcw/omnilingual-asr-300M-ctc-v2-int8",
+  "created_at": "2026-11-01T04:59:26.000Z",
+  "updated_at": "2026-11-01T05:08:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "omnilingual-asr",
+    "ctc",
+    "sherpa-onnx",
+    "forced-alignment",
+    "automatic-speech-recognition",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 328094351,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

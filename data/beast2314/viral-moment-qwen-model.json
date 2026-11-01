@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "beast2314/viral-moment-qwen-model",
+  "slug": "beast2314-viral-moment-qwen-model",
+  "author": "beast2314",
+  "url": "https://huggingface.co/beast2314/viral-moment-qwen-model",
+  "created_at": "2026-10-31T18:33:33.000Z",
+  "updated_at": "2026-10-31T18:36:33.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 1117320736,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

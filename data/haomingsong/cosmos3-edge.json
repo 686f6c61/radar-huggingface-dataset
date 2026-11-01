@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "HaomingSong/cosmos3-edge",
+  "slug": "haomingsong-cosmos3-edge",
+  "author": "HaomingSong",
+  "url": "https://huggingface.co/HaomingSong/cosmos3-edge",
+  "created_at": "2026-10-29T14:06:41.000Z",
+  "updated_at": "2026-10-29T14:21:47.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "cosmos3",
+    "robotics",
+    "pretrained",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 4563688396,
+  "parameters_human": "4.56B",
+  "storage_bytes": 9154081124,
+  "storage_human": "9.2 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

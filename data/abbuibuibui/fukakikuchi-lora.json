@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "abbuibuibui/FukaKikuchi-Lora",
+  "slug": "abbuibuibui-fukakikuchi-lora",
+  "author": "abbuibuibui",
+  "url": "https://huggingface.co/abbuibuibui/FukaKikuchi-Lora",
+  "created_at": "2026-10-31T05:58:14.000Z",
+  "updated_at": "2026-10-31T08:42:27.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "sdxl",
+    "lora",
+    "illustrious",
+    "character",
+    "tomozaki",
+    "fuka-kikuchi",
+    "fuka_kikuchi",
+    "en",
+    "zh",
+    "dataset:abbuibuibui/FukaKikuchi-Dataset",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3203767372,
+  "storage_human": "3.2 GB",
+  "base_model": "waiIllustriousSDXL-v17",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

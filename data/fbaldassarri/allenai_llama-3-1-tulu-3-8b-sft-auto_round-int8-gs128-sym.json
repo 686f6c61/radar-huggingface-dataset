@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_round-int8-gs128-sym",
+  "slug": "fbaldassarri-allenai_llama-3-1-tulu-3-8b-sft-auto_round-int8-gs128-sym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_round-int8-gs128-sym",
+  "created_at": "2026-10-30T19:47:26.000Z",
+  "updated_at": "2026-10-30T19:48:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "tulu",
+    "allenai",
+    "8-bit",
+    "conversational",
+    "en",
+    "base_model:allenai/Llama-3.1-Tulu-3-8B-SFT",
+    "base_model:quantized:allenai/Llama-3.1-Tulu-3-8B-SFT",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 2863992832,
+  "parameters_human": "2.86B",
+  "storage_bytes": 11364213494,
+  "storage_human": "11.4 GB",
+  "base_model": "allenai/Llama-3.1-Tulu-3-8B-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JobsCloseBy – The World’s Biggest Job Listings Platform",
+      "url": "https://jobscloseby.com/",
+      "snippet": "Find work close to home or discover opportunities around the globe. 100% free for job seekers. Search, apply, and get hired without …Read more"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "amandaodoo/clasificador-comentarios-transformers",
+  "slug": "amandaodoo-clasificador-comentarios-transformers",
+  "author": "amandaodoo",
+  "url": "https://huggingface.co/amandaodoo/clasificador-comentarios-transformers",
+  "created_at": "2026-10-30T18:28:24.000Z",
+  "updated_at": "2026-10-30T18:28:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "machine-learning",
+    "educational-example",
+    "es",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 20546,
+  "parameters_human": "20546",
+  "storage_bytes": 86488,
+  "storage_human": "86488 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

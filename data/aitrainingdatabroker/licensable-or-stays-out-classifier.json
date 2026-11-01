@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "aitrainingdatabroker/licensable-or-stays-out-classifier",
+  "slug": "aitrainingdatabroker-licensable-or-stays-out-classifier",
+  "author": "aitrainingdatabroker",
+  "url": "https://huggingface.co/aitrainingdatabroker/licensable-or-stays-out-classifier",
+  "created_at": "2026-10-30T16:13:30.000Z",
+  "updated_at": "2026-10-30T16:15:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "data-licensing",
+    "company-data",
+    "ai-training-data",
+    "compliance",
+    "en",
+    "dataset:aitrainingdatabroker/company-data-licensability-by-industry",
+    "dataset:aitrainingdatabroker/company-record-types-and-limits",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 82119938,
+  "parameters_human": "82.1M",
+  "storage_bytes": 328492280,
+  "storage_human": "328 MB",
+  "base_model": "distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

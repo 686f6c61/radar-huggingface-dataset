@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OTC-Qwen3.8-27B-CPO-GRPO-i1-GGUF",
+  "slug": "mradermacher-otc-qwen3-8-27b-cpo-grpo-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OTC-Qwen3.8-27B-CPO-GRPO-i1-GGUF",
+  "created_at": "2026-11-01T07:43:36.000Z",
+  "updated_at": "2026-11-01T07:43:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6789424,
+  "parameters_human": "6.8M",
+  "storage_bytes": 27300160,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/OTC-Qwen3.8-27B-CPO-GRPO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OTC-Qwen3.8-27B-CPO-GRPO-GGUF",
+      "snippet": "Reinforcement Learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-Couture-Engine-27B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-Couture-Engine-27B-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-Couture-Engine-27B-i1-GGUF with libraries, inference providers, notebooks, and local …"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF",
+      "url": "http://abliteration.org/models/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF",
+      "snippet": "Aug 15, 2026 · Producer identity confirmed by naming conventions, tags or the model card. This label is very unlikely to change."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-full-Uncensored-i1-GGUF",
+      "url": "https://abliteration.org/models/mradermacher/Qwen3.8-27B-full-Uncensored-i1-GGUF",
+      "snippet": "Sep 1, 2026 · It reads your exact RAM, GPU model and VRAM, free memory right now, and picks the sharpest quant that still fits. …"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-NOESIS-BF16-i1-GGUF",
+      "url": "https://huggingbay.xyz/artifact/hf-model-mradermacher-qwen3-8-27b-uncensored-noesis-bf16-i1-gguf",
+      "snippet": "mradermacher/Qwen3.8-27B-Uncensored-NOESIS-BF16-i1-GGUF is an open-weights language model for general published by …"
+    }
+  ]
+}

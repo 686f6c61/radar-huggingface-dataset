@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Amrica655/FELAY-1-TITAN",
+  "slug": "amrica655-felay-1-titan",
+  "author": "Amrica655",
+  "url": "https://huggingface.co/Amrica655/FELAY-1-TITAN",
+  "created_at": "2026-10-26T17:52:56.000Z",
+  "updated_at": "2026-10-30T16:20:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fa"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "qwen3.5-4b",
+    "code-only",
+    "felay-1-titan",
+    "en",
+    "fa",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4496438844,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

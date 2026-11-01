@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Florence-2-base",
+  "slug": "collectionstudio-florence-2-base",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Florence-2-base",
+  "created_at": "2026-10-25T15:44:06.000Z",
+  "updated_at": "2026-10-25T15:44:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "florence2",
+    "vision",
+    "image-text-to-text",
+    "custom_code",
+    "arxiv:2311.06242",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 231567705,
+  "parameters_human": "231.6M",
+  "storage_bytes": 927643093,
+  "storage_human": "928 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

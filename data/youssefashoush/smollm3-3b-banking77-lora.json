@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Youssefashoush/smollm3-3b-banking77-lora",
+  "slug": "youssefashoush-smollm3-3b-banking77-lora",
+  "author": "Youssefashoush",
+  "url": "https://huggingface.co/Youssefashoush/smollm3-3b-banking77-lora",
+  "created_at": "2026-10-25T22:56:03.000Z",
+  "updated_at": "2026-10-25T22:56:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "trl",
+    "sft",
+    "intent-classification",
+    "banking77",
+    "smollm3",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138190019,
+  "storage_human": "138 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intent classification",
+      "dataset": "Banking77 (official test split)",
+      "metric": null,
+      "value": 0.926
+    },
+    {
+      "task": "Intent classification",
+      "dataset": "Banking77 (official test split)",
+      "metric": "macro F1",
+      "value": 0.9256
+    }
+  ],
+  "sources": []
+}

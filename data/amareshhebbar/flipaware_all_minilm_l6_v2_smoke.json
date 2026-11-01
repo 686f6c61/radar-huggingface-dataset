@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "AmareshHebbar/FlipAware_all_MiniLM_L6_v2_smoke",
+  "slug": "amareshhebbar-flipaware_all_minilm_l6_v2_smoke",
+  "author": "AmareshHebbar",
+  "url": "https://huggingface.co/AmareshHebbar/FlipAware_all_MiniLM_L6_v2_smoke",
+  "created_at": "2026-10-27T10:15:45.000Z",
+  "updated_at": "2026-10-27T10:26:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "tensorboard",
+    "safetensors",
+    "bert",
+    "embeddings",
+    "retrieval",
+    "hard-negatives",
+    "matryoshka",
+    "negation",
+    "sentence-similarity",
+    "en",
+    "dataset:AmareshHebbar/FlipAware_Triples_smoke",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90873874,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

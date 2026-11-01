@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "niharpatel2545/blue-guardian-v4",
+  "slug": "niharpatel2545-blue-guardian-v4",
+  "author": "niharpatel2545",
+  "url": "https://huggingface.co/niharpatel2545/blue-guardian-v4",
+  "created_at": "2026-10-30T11:03:05.000Z",
+  "updated_at": "2026-11-01T04:03:33.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "prompt-injection",
+    "jailbreak",
+    "ai-security",
+    "agents",
+    "guardrails",
+    "text-classification",
+    "multilingual",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 307531778,
+  "parameters_human": "307.5M",
+  "storage_bytes": 649441154,
+  "storage_human": "649 MB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

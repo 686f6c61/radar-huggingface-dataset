@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "amandaodoo/regresion-casas-keras",
+  "slug": "amandaodoo-regresion-casas-keras",
+  "author": "amandaodoo",
+  "url": "https://huggingface.co/amandaodoo/regresion-casas-keras",
+  "created_at": "2026-10-30T18:28:18.000Z",
+  "updated_at": "2026-10-30T18:28:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "keras",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "keras",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

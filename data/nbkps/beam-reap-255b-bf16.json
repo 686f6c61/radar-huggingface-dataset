@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "nbKPS/beam-reap-255b-bf16",
+  "slug": "nbkps-beam-reap-255b-bf16",
+  "author": "nbKPS",
+  "url": "https://huggingface.co/nbKPS/beam-reap-255b-bf16",
+  "created_at": "2026-10-31T20:56:43.000Z",
+  "updated_at": "2026-10-31T21:00:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "beam",
+    "text-generation",
+    "mixture-of-experts",
+    "moe",
+    "reap",
+    "expert-pruning",
+    "pruned",
+    "conversational",
+    "en",
+    "arxiv:2510.13999",
+    "base_model:reflection/Beam-1.0-501B-A23B",
+    "base_model:finetune:reflection/Beam-1.0-501B-A23B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 243,
+  "trending_score": 0,
+  "parameters": 254610418240,
+  "parameters_human": "254.61B",
+  "storage_bytes": 509287515648,
+  "storage_human": "509.3 GB",
+  "base_model": "reflection/Beam-1.0-501B-A23B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

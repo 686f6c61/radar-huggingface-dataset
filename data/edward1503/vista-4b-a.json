@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "edward1503/VISTA-4B-A",
+  "slug": "edward1503-vista-4b-a",
+  "author": "edward1503",
+  "url": "https://huggingface.co/edward1503/VISTA-4B-A",
+  "created_at": "2026-10-28T04:07:39.000Z",
+  "updated_at": "2026-10-28T04:07:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "vision-language",
+    "decision-model",
+    "lora",
+    "decision-index",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceM4/A-OKVQA",
+    "dataset:HuggingFaceM4/ChartQA",
+    "dataset:lmms-lab-encoder/textvqa",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149923773,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

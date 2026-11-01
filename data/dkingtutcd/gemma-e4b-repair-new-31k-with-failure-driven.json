@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dkingtutcd/gemma-e4b-repair-new-31k-with-failure-driven",
+  "slug": "dkingtutcd-gemma-e4b-repair-new-31k-with-failure-driven",
+  "author": "dkingtutcd",
+  "url": "https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-31k-with-failure-driven",
+  "created_at": "2026-10-30T05:40:51.000Z",
+  "updated_at": "2026-10-30T05:43:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "battery fuse requires replacement soon? what is this? - Tesla Motors …",
+      "url": "https://teslamotorsclub.com/tmc/threads/battery-fuse-requires-replacement-soon-what-is-this.309567/",
+      "snippet": "Aug 17, 2023 · The early Model S have a battery driven pyro fuse, with a local lithium battery internal that has like a 10 year life. This …"
+    },
+    {
+      "title": "Tesla Model S in need of new battery - Suggestions please.",
+      "url": "https://www.reddit.com/r/TeslaLounge/comments/19bd7tp/tesla_model_s_in_need_of_new_battery_suggestions/",
+      "snippet": "What options are there for battery repair or replacement ? This local guy was saying it’s better just to repair in line batteries rather …"
+    },
+    {
+      "title": "Choosing new or remanufactured battery pack. - Tesla Motors Club",
+      "url": "https://teslamotorsclub.com/tmc/threads/choosing-new-or-remanufactured-battery-pack.269750/",
+      "snippet": "Jun 15, 2022 · If the battery for other repair purposes comes through the same Tesla supply chain as warranty replacement batteries, …"
+    }
+  ]
+}

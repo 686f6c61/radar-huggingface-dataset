@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "hasanchadaram/dictation-cleanup-qwen3.5-4b-gguf",
+  "slug": "hasanchadaram-dictation-cleanup-qwen3-5-4b-gguf",
+  "author": "hasanchadaram",
+  "url": "https://huggingface.co/hasanchadaram/dictation-cleanup-qwen3.5-4b-gguf",
+  "created_at": "2026-11-01T09:15:38.000Z",
+  "updated_at": "2026-11-01T09:17:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 3459015744,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

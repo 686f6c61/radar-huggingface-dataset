@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "HongWeiXu/umi-arena-act-s708000-374a5d6a-646ba2ae",
+  "slug": "hongweixu-umi-arena-act-s708000-374a5d6a-646ba2ae",
+  "author": "HongWeiXu",
+  "url": "https://huggingface.co/HongWeiXu/umi-arena-act-s708000-374a5d6a-646ba2ae",
+  "created_at": "2026-11-01T09:35:02.000Z",
+  "updated_at": "2026-11-01T09:35:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51612304,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206476032,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

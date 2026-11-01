@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "parallelm/gpt2_small_EN_superbpe_32768_parallel10_42",
+  "slug": "parallelm-gpt2_small_en_superbpe_32768_parallel10_42",
+  "author": "parallelm",
+  "url": "https://huggingface.co/parallelm/gpt2_small_EN_superbpe_32768_parallel10_42",
+  "created_at": "2026-11-01T05:37:56.000Z",
+  "updated_at": "2026-11-01T05:38:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "generated_from_trainer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110320128,
+  "parameters_human": "110.3M",
+  "storage_bytes": 13681270347,
+  "storage_human": "13.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "jjinseok/k-safeguard-normalizer-v1",
+  "slug": "jjinseok-k-safeguard-normalizer-v1",
+  "author": "jjinseok",
+  "url": "https://huggingface.co/jjinseok/k-safeguard-normalizer-v1",
+  "created_at": "2026-11-01T07:00:35.000Z",
+  "updated_at": "2026-11-01T07:08:10.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "korean",
+    "text-normalization",
+    "obfuscation",
+    "token-classification",
+    "ko",
+    "dataset:jjinseok/k-safeguard-normalizer-train-v1",
+    "base_model:beomi/KcELECTRA-base-v2022",
+    "base_model:quantized:beomi/KcELECTRA-base-v2022",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 515073290,
+  "storage_human": "515 MB",
+  "base_model": "beomi/KcELECTRA-base-v2022",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

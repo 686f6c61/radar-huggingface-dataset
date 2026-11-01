@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "sw-voice/voxcpm2-stage3-te-kn-reuse-tmu1.0-baselm3e-4-rest8e-5",
+  "slug": "sw-voice-voxcpm2-stage3-te-kn-reuse-tmu1-0-baselm3e-4-rest8e-5",
+  "author": "sw-voice",
+  "url": "https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu1.0-baselm3e-4-rest8e-5",
+  "created_at": "2026-11-01T05:41:43.000Z",
+  "updated_at": "2026-11-01T05:42:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "te",
+    "kn"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "en",
+    "te",
+    "kn",
+    "base_model:sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep",
+    "base_model:finetune:sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040314,
+  "storage_human": "9.5 GB",
+  "base_model": "sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

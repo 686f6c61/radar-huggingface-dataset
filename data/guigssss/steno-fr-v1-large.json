@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "guigssss/steno-fr-v1-large",
+  "slug": "guigssss-steno-fr-v1-large",
+  "author": "guigssss",
+  "url": "https://huggingface.co/guigssss/steno-fr-v1-large",
+  "created_at": "2026-10-30T07:00:29.000Z",
+  "updated_at": "2026-10-30T13:22:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "automatic-speech-recognition",
+    "ctc",
+    "french",
+    "embeddinggemma",
+    "kenlm",
+    "fr",
+    "dataset:facebook/multilingual_librispeech",
+    "dataset:fsicoli/common_voice_19_0",
+    "dataset:facebook/voxpopuli",
+    "dataset:google/fleurs",
+    "dataset:espnet/yodas-granary",
+    "dataset:espnet/yodas",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 163007423,
+  "parameters_human": "163.0M",
+  "storage_bytes": 1510801380,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "FLEURS fr_fr test",
+      "metric": "WER with 4-gram LM",
+      "value": 9.7
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS fr_fr test",
+      "metric": "WER greedy",
+      "value": 12.8
+    },
+    {
+      "task": null,
+      "dataset": "Multilingual LibriSpeech fr test",
+      "metric": "WER with 4-gram LM",
+      "value": 8.8
+    },
+    {
+      "task": null,
+      "dataset": "Multilingual LibriSpeech fr test",
+      "metric": "WER greedy",
+      "value": 10.1
+    },
+    {
+      "task": null,
+      "dataset": "Common Voice 19 fr test",
+      "metric": "WER with 4-gram LM",
+      "value": 11.6
+    },
+    {
+      "task": null,
+      "dataset": "Common Voice 19 fr test",
+      "metric": "WER greedy",
+      "value": 13.9
+    }
+  ],
+  "sources": []
+}

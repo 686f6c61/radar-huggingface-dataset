@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "DreX09/distilbert-tienda-ropa",
+  "slug": "drex09-distilbert-tienda-ropa",
+  "author": "DreX09",
+  "url": "https://huggingface.co/DreX09/distilbert-tienda-ropa",
+  "created_at": "2026-10-29T05:35:15.000Z",
+  "updated_at": "2026-10-29T05:35:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "sentiment-analysis",
+    "pytorch",
+    "text-classification",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 135326210,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541322736,
+  "storage_human": "541 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

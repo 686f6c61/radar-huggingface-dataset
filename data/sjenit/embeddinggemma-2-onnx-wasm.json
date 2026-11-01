@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sjenit/embeddinggemma-2-ONNX-wasm",
+  "slug": "sjenit-embeddinggemma-2-onnx-wasm",
+  "author": "sjenit",
+  "url": "https://huggingface.co/sjenit/embeddinggemma-2-ONNX-wasm",
+  "created_at": "2026-10-30T04:07:24.000Z",
+  "updated_at": "2026-10-30T04:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "embedding_gemma2",
+    "feature-extraction",
+    "embedding",
+    "wasm",
+    "base_model:onnx-community/embeddinggemma-2-ONNX",
+    "base_model:quantized:onnx-community/embeddinggemma-2-ONNX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315815484,
+  "storage_human": "316 MB",
+  "base_model": "onnx-community/embeddinggemma-2-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

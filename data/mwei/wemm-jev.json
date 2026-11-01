@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mwei/WeMM-JEV",
+  "slug": "mwei-wemm-jev",
+  "author": "mwei",
+  "url": "https://huggingface.co/mwei/WeMM-JEV",
+  "created_at": "2026-10-31T02:13:34.000Z",
+  "updated_at": "2026-10-31T02:13:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "multimodal",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52188834440,
+  "storage_human": "52.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

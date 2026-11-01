@@ -31,11 +31,12 @@
     "base_model:vllm-sr/d3-turbo",
     "base_model:adapter:vllm-sr/d3-turbo",
     "license:apache-2.0",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 13,
-  "downloads_30d": 165,
+  "downloads_30d": 179,
   "trending_score": 13,
   "parameters": null,
   "parameters_human": null,

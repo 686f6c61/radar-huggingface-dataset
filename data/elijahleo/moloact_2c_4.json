@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "elijahleo/moloact_2c_4",
+  "slug": "elijahleo-moloact_2c_4",
+  "author": "elijahleo",
+  "url": "https://huggingface.co/elijahleo/moloact_2c_4",
+  "created_at": "2026-10-26T23:52:56.000Z",
+  "updated_at": "2026-10-26T23:55:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:manufacturing_finetune",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 5591928368,
+  "parameters_human": "5.59B",
+  "storage_bytes": 11483652328,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

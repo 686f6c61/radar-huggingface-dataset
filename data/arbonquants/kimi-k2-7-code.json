@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "arbonquants/Kimi-K2.7-Code",
+  "slug": "arbonquants-kimi-k2-7-code",
+  "author": "arbonquants",
+  "url": "https://huggingface.co/arbonquants/Kimi-K2.7-Code",
+  "created_at": "2026-10-29T22:06:27.000Z",
+  "updated_at": "2026-10-29T22:06:27.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 1026879376368,
+  "parameters_human": "1026.88B",
+  "storage_bytes": 595204651032,
+  "storage_human": "595.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/Windows11/comments/xtu786/does_anyone_know_how_to_get_the_hevc_codec_for/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

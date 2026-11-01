@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "JanSchachtschabel/m2v-gte-256-edu-v2",
+  "slug": "janschachtschabel-m2v-gte-256-edu-v2",
+  "author": "JanSchachtschabel",
+  "url": "https://huggingface.co/JanSchachtschabel/m2v-gte-256-edu-v2",
+  "created_at": "2026-10-26T19:01:55.000Z",
+  "updated_at": "2026-10-26T19:31:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "model2vec",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "embeddings",
+    "static-embeddings",
+    "sentence-transformers",
+    "education",
+    "german",
+    "sentence-similarity",
+    "de",
+    "base_model:Alibaba-NLP/gte-multilingual-base",
+    "base_model:finetune:Alibaba-NLP/gte-multilingual-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 108533760,
+  "parameters_human": "108.5M",
+  "storage_bytes": 234573582,
+  "storage_human": "235 MB",
+  "base_model": "Alibaba-NLP/gte-multilingual-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

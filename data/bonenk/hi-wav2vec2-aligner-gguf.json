@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Bonenk/hi-wav2vec2-aligner-GGUF",
+  "slug": "bonenk-hi-wav2vec2-aligner-gguf",
+  "author": "Bonenk",
+  "url": "https://huggingface.co/Bonenk/hi-wav2vec2-aligner-GGUF",
+  "created_at": "2026-11-01T08:09:57.000Z",
+  "updated_at": "2026-11-01T08:11:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "gguf",
+    "wav2vec2",
+    "ctc",
+    "aligner",
+    "word-timestamps",
+    "crispasr",
+    "indic",
+    "automatic-speech-recognition",
+    "hi",
+    "base_model:theainerd/Wav2Vec2-large-xlsr-hindi",
+    "base_model:quantized:theainerd/Wav2Vec2-large-xlsr-hindi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315503168,
+  "parameters_human": "315.5M",
+  "storage_bytes": 373402304,
+  "storage_human": "373 MB",
+  "base_model": "theainerd/Wav2Vec2-large-xlsr-hindi",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

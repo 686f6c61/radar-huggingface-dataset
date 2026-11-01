@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Ayt1da/qwen-in-qwen-tiny",
+  "slug": "ayt1da-qwen-in-qwen-tiny",
+  "author": "Ayt1da",
+  "url": "https://huggingface.co/Ayt1da/qwen-in-qwen-tiny",
+  "created_at": "2026-10-31T18:40:13.000Z",
+  "updated_at": "2026-10-31T18:40:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3_5",
+    "gated-deltanet",
+    "tiny",
+    "tinystories",
+    "risc-v",
+    "qwen-in-qwen",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 274,
+  "trending_score": 0,
+  "parameters": 1510800,
+  "parameters_human": "1.5M",
+  "storage_bytes": 7875965,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

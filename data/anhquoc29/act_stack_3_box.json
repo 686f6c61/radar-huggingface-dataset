@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "anhquoc29/act_stack_3_box",
+  "slug": "anhquoc29-act_stack_3_box",
+  "author": "anhquoc29",
+  "url": "https://huggingface.co/anhquoc29/act_stack_3_box",
+  "created_at": "2026-10-28T22:45:59.000Z",
+  "updated_at": "2026-10-28T22:47:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:anhquoc29/stack_3_box_white_green_blue_simulation",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714784,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

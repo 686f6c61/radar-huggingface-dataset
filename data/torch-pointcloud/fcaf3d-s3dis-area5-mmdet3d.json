@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/fcaf3d.s3dis-area5.mmdet3d",
+  "slug": "torch-pointcloud-fcaf3d-s3dis-area5-mmdet3d",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/fcaf3d.s3dis-area5.mmdet3d",
+  "created_at": "2026-10-30T20:57:58.000Z",
+  "updated_at": "2026-10-30T20:58:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "fcaf3d",
+    "object-detection",
+    "dataset:s3dis",
+    "arxiv:2112.00322",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 70497737,
+  "parameters_human": "70.5M",
+  "storage_bytes": 282021500,
+  "storage_human": "282 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "S3DIS (Area 5)",
+      "metric": "mAP@0.25",
+      "value": 66.31
+    },
+    {
+      "task": null,
+      "dataset": "S3DIS (Area 5)",
+      "metric": "mAP@0.5",
+      "value": 46.71
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "dkingtutcd/gemma-e4b-repair-new-31k-with-empty",
+  "slug": "dkingtutcd-gemma-e4b-repair-new-31k-with-empty",
+  "author": "dkingtutcd",
+  "url": "https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-31k-with-empty",
+  "created_at": "2026-10-29T08:00:58.000Z",
+  "updated_at": "2026-10-29T08:03:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free سکس سه نفره ایرانی Videos - PornMEGA",
+      "url": "https://www.pornmega.com/search/%D8%B3%DA%A9%D8%B3-%D8%B3%D9%87-%D9%86%D9%81%D8%B1%D9%87-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C/",
+      "snippet": "Watch سکس سه نفره ایرانی porn videos for free with free downloads, here on PornMega.com. Watch the growing collection of high quality …"
+    }
+  ]
+}

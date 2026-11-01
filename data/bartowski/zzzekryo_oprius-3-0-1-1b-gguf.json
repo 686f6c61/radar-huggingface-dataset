@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bartowski/zzzekryo_Oprius-3.0-1.1B-GGUF",
+  "slug": "bartowski-zzzekryo_oprius-3-0-1-1b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/zzzekryo_Oprius-3.0-1.1B-GGUF",
+  "created_at": "2026-10-31T18:31:43.000Z",
+  "updated_at": "2026-10-31T18:34:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "general_help",
+    "conversation",
+    "tinyllama",
+    "general",
+    "general_conversation",
+    "text-generation",
+    "en",
+    "dataset:zzzekryo/conversation-and-web-examples-ForOprius",
+    "base_model:zzzekryo/Oprius-3.0-1.1B",
+    "base_model:quantized:zzzekryo/Oprius-3.0-1.1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 347,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 16767999648,
+  "storage_human": "16.8 GB",
+  "base_model": "zzzekryo/Oprius-3.0-1.1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/Nemotron-3.5-Transcribe-AIPod-HF",
+  "slug": "manateelazycat-nemotron-3-5-transcribe-aipod-hf",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/Nemotron-3.5-Transcribe-AIPod-HF",
+  "created_at": "2026-11-01T06:29:12.000Z",
+  "updated_at": "2026-11-01T12:43:29.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "automatic-speech-recognition",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 783857231,
+  "parameters_human": "783.9M",
+  "storage_bytes": 24615496646,
+  "storage_human": "24.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

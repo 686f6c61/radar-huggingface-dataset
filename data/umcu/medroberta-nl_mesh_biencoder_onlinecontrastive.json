@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "UMCU/MedRoBERTa.nl_MeSH_biencoder_OnlineContrastive",
+  "slug": "umcu-medroberta-nl_mesh_biencoder_onlinecontrastive",
+  "author": "UMCU",
+  "url": "https://huggingface.co/UMCU/MedRoBERTa.nl_MeSH_biencoder_OnlineContrastive",
+  "created_at": "2026-10-30T09:02:32.000Z",
+  "updated_at": "2026-10-30T09:14:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:445355",
+    "loss:OnlineContrastiveLoss",
+    "nl",
+    "dataset:UMCU/PubmedAbstracts_Dutch_v1_with_MeSH",
+    "arxiv:2604.25374",
+    "arxiv:1908.10084",
+    "base_model:CLTL/MedRoBERTa.nl",
+    "base_model:finetune:CLTL/MedRoBERTa.nl",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 125978112,
+  "parameters_human": "126.0M",
+  "storage_bytes": 503934800,
+  "storage_human": "504 MB",
+  "base_model": "CLTL/MedRoBERTa.nl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

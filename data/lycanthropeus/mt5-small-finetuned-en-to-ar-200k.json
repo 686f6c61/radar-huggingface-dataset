@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lycanthropeus/mt5-small-finetuned-en-to-ar-200k",
+  "slug": "lycanthropeus-mt5-small-finetuned-en-to-ar-200k",
+  "author": "lycanthropeus",
+  "url": "https://huggingface.co/lycanthropeus/mt5-small-finetuned-en-to-ar-200k",
+  "created_at": "2026-10-25T14:33:15.000Z",
+  "updated_at": "2026-10-25T16:28:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:lycanthropeus/mt5-small-finetuned-en-to-ar",
+    "base_model:finetune:lycanthropeus/mt5-small-finetuned-en-to-ar",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 45644076866,
+  "storage_human": "45.6 GB",
+  "base_model": "lycanthropeus/mt5-small-finetuned-en-to-ar",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

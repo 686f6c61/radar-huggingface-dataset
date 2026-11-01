@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Mithoz/taai2-destilado-qwen05b",
+  "slug": "mithoz-taai2-destilado-qwen05b",
+  "author": "Mithoz",
+  "url": "https://huggingface.co/Mithoz/taai2-destilado-qwen05b",
+  "created_at": "2026-10-26T21:42:56.000Z",
+  "updated_at": "2026-10-26T21:44:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "destilacion",
+    "lora",
+    "slm",
+    "educacion",
+    "uai",
+    "text-generation",
+    "es",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35237104,
+  "storage_human": "35 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

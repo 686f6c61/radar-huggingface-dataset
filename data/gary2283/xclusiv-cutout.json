@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Gary2283/xclusiv-cutout",
+  "slug": "gary2283-xclusiv-cutout",
+  "author": "Gary2283",
+  "url": "https://huggingface.co/Gary2283/xclusiv-cutout",
+  "created_at": "2026-11-01T08:57:54.000Z",
+  "updated_at": "2026-11-01T08:58:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-segmentation",
+    "background-removal",
+    "base_model:ZhengPeng7/BiRefNet_lite",
+    "base_model:quantized:ZhengPeng7/BiRefNet_lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 181530162,
+  "storage_human": "182 MB",
+  "base_model": "ZhengPeng7/BiRefNet_lite",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

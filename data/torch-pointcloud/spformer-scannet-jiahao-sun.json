@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/spformer.scannet.jiahao-sun",
+  "slug": "torch-pointcloud-spformer-scannet-jiahao-sun",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/spformer.scannet.jiahao-sun",
+  "created_at": "2026-10-30T20:44:06.000Z",
+  "updated_at": "2026-10-30T20:44:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "spformer",
+    "instance-segmentation",
+    "dataset:scannet",
+    "arxiv:2211.15766",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 17609428,
+  "parameters_human": "17.6M",
+  "storage_bytes": 70483568,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanNet",
+      "metric": "mAP",
+      "value": 56.47
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet",
+      "metric": "mAP@0.5",
+      "value": 73.93
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet",
+      "metric": "mAP@0.25",
+      "value": 82.55
+    }
+  ],
+  "sources": []
+}

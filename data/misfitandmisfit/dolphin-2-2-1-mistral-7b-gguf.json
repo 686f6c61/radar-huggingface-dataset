@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "misfitandmisfit/dolphin-2.2.1-mistral-7B-GGUF",
+  "slug": "misfitandmisfit-dolphin-2-2-1-mistral-7b-gguf",
+  "author": "misfitandmisfit",
+  "url": "https://huggingface.co/misfitandmisfit/dolphin-2.2.1-mistral-7B-GGUF",
+  "created_at": "2026-11-01T11:43:38.000Z",
+  "updated_at": "2026-11-01T11:43:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mistral",
+    "en",
+    "dataset:ehartford/dolphin",
+    "dataset:jondurbin/airoboros-2.2.1",
+    "base_model:dphn/dolphin-2.2.1-mistral-7b",
+    "base_model:quantized:dphn/dolphin-2.2.1-mistral-7b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241748480,
+  "parameters_human": "7.24B",
+  "storage_bytes": 54971308992,
+  "storage_human": "55.0 GB",
+  "base_model": "ehartford/dolphin-2.2.1-mistral-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

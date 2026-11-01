@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "apertixai/cerno-9b-v1.2",
+  "slug": "apertixai-cerno-9b-v1-2",
+  "author": "apertixai",
+  "url": "https://huggingface.co/apertixai/cerno-9b-v1.2",
+  "created_at": "2026-10-30T12:43:10.000Z",
+  "updated_at": "2026-10-30T12:45:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "cerno",
+    "system-one",
+    "typed-decisions",
+    "calibrated-probabilities",
+    "decision-index",
+    "block-attention",
+    "read-twice",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927978120,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Decision Index 0.3 public suite (37 benchmarks, 140,178 requests)",
+      "dataset": "Decision Index 0.3 public suite",
+      "metric": "public index, complete run",
+      "value": 66.83
+    }
+  ],
+  "sources": []
+}

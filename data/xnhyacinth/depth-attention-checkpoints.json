@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Xnhyacinth/Depth-Attention-Checkpoints",
+  "slug": "xnhyacinth-depth-attention-checkpoints",
+  "author": "Xnhyacinth",
+  "url": "https://huggingface.co/Xnhyacinth/Depth-Attention-Checkpoints",
+  "created_at": "2026-10-30T13:41:27.000Z",
+  "updated_at": "2026-10-30T13:41:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "llama",
+    "depth-attention",
+    "research-checkpoints",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 463749120,
+  "parameters_human": "463.7M",
+  "storage_bytes": 1855036720,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

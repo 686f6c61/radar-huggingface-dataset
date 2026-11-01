@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "0xbyt4/LFM3-1.7B-Apple5-GGUF",
+  "slug": "0xbyt4-lfm3-1-7b-apple5-gguf",
+  "author": "0xbyt4",
+  "url": "https://huggingface.co/0xbyt4/LFM3-1.7B-Apple5-GGUF",
+  "created_at": "2026-10-31T11:00:10.000Z",
+  "updated_at": "2026-10-31T13:18:12.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm3",
+    "llama.cpp",
+    "ios",
+    "speculative-decoding",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 2005629760,
+  "parameters_human": "2.01B",
+  "storage_bytes": 4616419904,
+  "storage_human": "4.6 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lipik/gigaam-v3-e2e-rnnt-gguf",
+  "slug": "lipik-gigaam-v3-e2e-rnnt-gguf",
+  "author": "lipik",
+  "url": "https://huggingface.co/lipik/gigaam-v3-e2e-rnnt-gguf",
+  "created_at": "2026-10-28T09:27:23.000Z",
+  "updated_at": "2026-10-28T09:27:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "gigaam",
+    "conformer",
+    "rnnt",
+    "russian",
+    "automatic-speech-recognition",
+    "ru",
+    "arxiv:2506.01192",
+    "base_model:ai-sage/GigaAM-v3",
+    "base_model:quantized:ai-sage/GigaAM-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 222518657,
+  "parameters_human": "222.5M",
+  "storage_bytes": 273724832,
+  "storage_human": "274 MB",
+  "base_model": "ai-sage/GigaAM-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

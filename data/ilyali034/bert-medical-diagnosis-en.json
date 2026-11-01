@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ilyali034/bert-medical-diagnosis-en",
+  "slug": "ilyali034-bert-medical-diagnosis-en",
+  "author": "ilyali034",
+  "url": "https://huggingface.co/ilyali034/bert-medical-diagnosis-en",
+  "created_at": "2026-11-01T10:01:27.000Z",
+  "updated_at": "2026-11-01T10:01:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "medical",
+    "symptoms",
+    "diagnosis",
+    "text-classification",
+    "healthcare",
+    "clinical",
+    "symptom-to-disease",
+    "experimental",
+    "test-version",
+    "en",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Medical Diagnosis Classification (English) — TEST VERSION",
+      "dataset": "NeuronZero/Symptom2Disease",
+      "metric": "Accuracy",
+      "value": 0.8167
+    },
+    {
+      "task": "Medical Diagnosis Classification (English) — TEST VERSION",
+      "dataset": "NeuronZero/Symptom2Disease",
+      "metric": "F1 (weighted)",
+      "value": 0.7966
+    },
+    {
+      "task": "Medical Diagnosis Classification (English) — TEST VERSION",
+      "dataset": "NeuronZero/Symptom2Disease",
+      "metric": "F1 (macro)",
+      "value": 0.7966
+    },
+    {
+      "task": "Medical Diagnosis Classification (English) — TEST VERSION",
+      "dataset": "NeuronZero/Symptom2Disease",
+      "metric": "F1 (micro)",
+      "value": 0.8167
+    },
+    {
+      "task": "Medical Diagnosis Classification (English) — TEST VERSION",
+      "dataset": "NeuronZero/Symptom2Disease",
+      "metric": "Precision (weighted)",
+      "value": 0.8441
+    },
+    {
+      "task": "Medical Diagnosis Classification (English) — TEST VERSION",
+      "dataset": "NeuronZero/Symptom2Disease",
+      "metric": "Recall (weighted)",
+      "value": 0.8167
+    }
+  ],
+  "sources": []
+}

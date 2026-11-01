@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "multimodal-vision-ai/mvai-video-action-compare-models",
+  "slug": "multimodal-vision-ai-mvai-video-action-compare-models",
+  "author": "multimodal-vision-ai",
+  "url": "https://huggingface.co/multimodal-vision-ai/mvai-video-action-compare-models",
+  "created_at": "2026-11-01T10:14:47.000Z",
+  "updated_at": "2026-11-01T10:14:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "video",
+    "streaming",
+    "movinet",
+    "kinetics-600",
+    "education",
+    "video-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96797108,
+  "storage_human": "97 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Get Verified on Twitter in 2027: Step-by-Step Guide",
+      "url": "https://ucompares.com/social-media/twitter/how-to-get-verified-on-twitter/",
+      "snippet": "Oct 20, 2026 · Learn how to get verified on Twitter (X) in 2027. Discover blue checkmark requirements, Premium plans, verification …"
+    }
+  ]
+}

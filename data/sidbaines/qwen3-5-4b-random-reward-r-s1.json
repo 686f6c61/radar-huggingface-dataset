@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sidbaines/qwen3.5-4b-random-reward-r-s1",
+  "slug": "sidbaines-qwen3-5-4b-random-reward-r-s1",
+  "author": "sidbaines",
+  "url": "https://huggingface.co/sidbaines/qwen3.5-4b-random-reward-r-s1",
+  "created_at": "2026-10-25T15:28:01.000Z",
+  "updated_at": "2026-10-25T23:25:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "research",
+    "random-reward",
+    "rl",
+    "reasoning",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 26542047126,
+  "storage_human": "26.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

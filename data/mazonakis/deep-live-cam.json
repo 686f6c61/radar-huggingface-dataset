@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Mazonakis/deep-live-cam",
+  "slug": "mazonakis-deep-live-cam",
+  "author": "Mazonakis",
+  "url": "https://huggingface.co/Mazonakis/deep-live-cam",
+  "created_at": "2026-11-01T11:54:08.000Z",
+  "updated_at": "2026-11-01T11:54:09.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46895037025,
+  "storage_human": "46.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
