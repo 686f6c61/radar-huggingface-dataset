@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "SinhalaMMLU-SharedTask/team-sinhalanuwana",
+  "slug": "sinhalammlu-sharedtask-team-sinhalanuwana",
+  "author": "SinhalaMMLU-SharedTask",
+  "url": "https://huggingface.co/SinhalaMMLU-SharedTask/team-sinhalanuwana",
+  "created_at": "2026-10-28T08:14:33.000Z",
+  "updated_at": "2026-10-28T10:45:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": null,
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "sinhala",
+    "mmlu",
+    "multiple-choice",
+    "lora",
+    "star",
+    "si",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11102486,
+  "storage_human": "11 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Etsy Success | Etsy Community",
+      "url": "https://community.etsy.com/forum/etsy-success-300/",
+      "snippet": "Oct 21, 2025 · Learn from members of the Etsy team and other sellers, share your business knowledge, and hear from industry …"
+    }
+  ]
+}

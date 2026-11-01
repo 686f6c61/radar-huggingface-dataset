@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "laiyoi/femboydetector",
+  "slug": "laiyoi-femboydetector",
+  "author": "laiyoi",
+  "url": "https://huggingface.co/laiyoi/femboydetector",
+  "created_at": "2026-10-29T05:05:10.000Z",
+  "updated_at": "2026-10-29T14:45:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "image-classification",
+    "dinov2",
+    "astrbot",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346487276,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "KXRM/wav2vec2-lv-60-espeak-cv-ft-onnx",
+  "slug": "kxrm-wav2vec2-lv-60-espeak-cv-ft-onnx",
+  "author": "KXRM",
+  "url": "https://huggingface.co/KXRM/wav2vec2-lv-60-espeak-cv-ft-onnx",
+  "created_at": "2026-10-29T16:55:09.000Z",
+  "updated_at": "2026-10-29T17:21:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "phoneme-recognition",
+    "automatic-speech-recognition",
+    "arxiv:2109.11680",
+    "base_model:facebook/wav2vec2-lv-60-espeak-cv-ft",
+    "base_model:quantized:facebook/wav2vec2-lv-60-espeak-cv-ft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 673041615,
+  "storage_human": "673 MB",
+  "base_model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

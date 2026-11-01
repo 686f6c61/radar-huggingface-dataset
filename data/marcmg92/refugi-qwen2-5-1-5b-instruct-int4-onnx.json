@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "MarcMG92/refugi-qwen2.5-1.5b-instruct-int4-onnx",
+  "slug": "marcmg92-refugi-qwen2-5-1-5b-instruct-int4-onnx",
+  "author": "MarcMG92",
+  "url": "https://huggingface.co/MarcMG92/refugi-qwen2.5-1.5b-instruct-int4-onnx",
+  "created_at": "2026-10-27T17:57:41.000Z",
+  "updated_at": "2026-10-27T17:59:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 993733383,
+  "storage_human": "994 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How difficult is it to fly a wingsuit? : r/SkyDiving - Reddit",
+      "url": "https://www.reddit.com/r/SkyDiving/comments/1ack4hr/how_difficult_is_it_to_fly_a_wingsuit/",
+      "snippet": "Once you're experienced at tracking, wingsuiting feels pretty intuitive for most new winguiters. In my First Flight Course, instructor …"
+    }
+  ]
+}

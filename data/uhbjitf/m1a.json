@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Uhbjitf/M1a",
+  "slug": "uhbjitf-m1a",
+  "author": "Uhbjitf",
+  "url": "https://huggingface.co/Uhbjitf/M1a",
+  "created_at": "2026-10-31T06:58:42.000Z",
+  "updated_at": "2026-10-31T07:18:05.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228587776,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

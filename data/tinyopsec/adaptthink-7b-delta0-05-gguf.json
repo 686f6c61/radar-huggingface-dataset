@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/AdaptThink-7B-delta0.05-GGUF",
+  "slug": "tinyopsec-adaptthink-7b-delta0-05-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/AdaptThink-7B-delta0.05-GGUF",
+  "created_at": "2026-11-01T12:54:43.000Z",
+  "updated_at": "2026-11-01T13:00:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "quantized",
+    "text-generation",
+    "base_model:THU-KEG/AdaptThink-7B-delta0.05",
+    "base_model:quantized:THU-KEG/AdaptThink-7B-delta0.05",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 23336379200,
+  "storage_human": "23.3 GB",
+  "base_model": "THU-KEG/AdaptThink-7B-delta0.05",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

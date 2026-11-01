@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "VSRAJHAVEL/BioGraph-AI-Models",
+  "slug": "vsrajhavel-biograph-ai-models",
+  "author": "VSRAJHAVEL",
+  "url": "https://huggingface.co/VSRAJHAVEL/BioGraph-AI-Models",
+  "created_at": "2026-10-27T07:18:37.000Z",
+  "updated_at": "2026-10-27T07:37:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "chemistry",
+    "graph-neural-networks",
+    "drug-discovery",
+    "rdkit",
+    "pytorch-geometric",
+    "moleculenet",
+    "cheminformatics",
+    "toxicology",
+    "admet",
+    "mpnn",
+    "gin",
+    "gcn",
+    "gat",
+    "en",
+    "dataset:esol",
+    "dataset:bbbp",
+    "dataset:tox21",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115049984,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Aqueous Solubility Prediction",
+      "dataset": "ESOL Delaney",
+      "metric": "Test RMSE",
+      "value": 1.01
+    },
+    {
+      "task": "Multi-Task Nuclear Receptor & Stress Pathway Toxicity",
+      "dataset": "Tox21",
+      "metric": "Test ROC-AUC",
+      "value": 0.757
+    },
+    {
+      "task": "Blood-Brain Barrier Penetration",
+      "dataset": "BBBP",
+      "metric": "Test ROC-AUC",
+      "value": 0.853
+    }
+  ],
+  "sources": []
+}

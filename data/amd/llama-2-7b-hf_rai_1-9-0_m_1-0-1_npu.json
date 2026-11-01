@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "amd/Llama-2-7b-hf_rai_1.9.0_m_1.0.1_npu",
+  "slug": "amd-llama-2-7b-hf_rai_1-9-0_m_1-0-1_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Llama-2-7b-hf_rai_1.9.0_m_1.0.1_npu",
+  "created_at": "2026-10-30T18:24:59.000Z",
+  "updated_at": "2026-10-30T18:26:03.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "amd",
+    "ryzenai",
+    "m_1.0.1_npu",
+    "text-generation",
+    "en",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4048036507,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

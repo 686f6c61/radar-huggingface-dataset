@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "janmusic/ncm-sudoku-mlx",
+  "slug": "janmusic-ncm-sudoku-mlx",
+  "author": "janmusic",
+  "url": "https://huggingface.co/janmusic/ncm-sudoku-mlx",
+  "created_at": "2026-10-29T21:43:48.000Z",
+  "updated_at": "2026-10-30T14:43:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "next-concept-modeling",
+    "apple-silicon",
+    "sudoku",
+    "non-autoregressive",
+    "arxiv:2610.14162",
+    "coarse-to-fine",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 484301520,
+  "storage_human": "484 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

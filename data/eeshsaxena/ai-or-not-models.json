@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "eeshsaxena/ai-or-not-models",
+  "slug": "eeshsaxena-ai-or-not-models",
+  "author": "eeshsaxena",
+  "url": "https://huggingface.co/eeshsaxena/ai-or-not-models",
+  "created_at": "2026-10-26T05:53:18.000Z",
+  "updated_at": "2026-10-26T05:53:57.000Z",
+  "license": "all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2861107839,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

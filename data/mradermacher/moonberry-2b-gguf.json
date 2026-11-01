@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Moonberry-2B-GGUF",
+  "slug": "mradermacher-moonberry-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Moonberry-2B-GGUF",
+  "created_at": "2026-05-12T08:07:14.000Z",
+  "updated_at": "2026-11-01T20:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "multimodal",
+    "vision",
+    "roleplay",
+    "pink-pixel",
+    "en",
+    "dataset:PinkPixel/Childrens-Story-Writing",
+    "base_model:PinkPixel/Moonberry-2B",
+    "base_model:quantized:PinkPixel/Moonberry-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 216,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 20135921536,
+  "storage_human": "20.1 GB",
+  "base_model": "PinkPixel/Moonberry-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

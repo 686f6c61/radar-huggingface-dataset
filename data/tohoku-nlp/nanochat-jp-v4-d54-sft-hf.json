@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "tohoku-nlp/nanochat-jp-v4-d54-sft-hf",
+  "slug": "tohoku-nlp-nanochat-jp-v4-d54-sft-hf",
+  "author": "tohoku-nlp",
+  "url": "https://huggingface.co/tohoku-nlp/nanochat-jp-v4-d54-sft-hf",
+  "created_at": "2026-10-30T03:05:47.000Z",
+  "updated_at": "2026-10-31T04:49:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nanochat_jp",
+    "text-generation",
+    "nanochat",
+    "nanochat-jp",
+    "conversational",
+    "custom_code",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9846135946,
+  "parameters_human": "9.85B",
+  "storage_bytes": 19692304852,
+  "storage_human": "19.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

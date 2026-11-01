@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "thomasken1234/ingot-xvi-g7",
+  "slug": "thomasken1234-ingot-xvi-g7",
+  "author": "thomasken1234",
+  "url": "https://huggingface.co/thomasken1234/ingot-xvi-g7",
+  "created_at": "2026-10-30T04:01:06.000Z",
+  "updated_at": "2026-10-30T04:01:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ingot",
+    "sn97",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 7396883510,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

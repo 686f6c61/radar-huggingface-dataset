@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ANKomyagin/odin-zapros-router",
+  "slug": "ankomyagin-odin-zapros-router",
+  "author": "ANKomyagin",
+  "url": "https://huggingface.co/ANKomyagin/odin-zapros-router",
+  "created_at": "2026-10-27T09:52:16.000Z",
+  "updated_at": "2026-10-27T21:36:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40307137,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

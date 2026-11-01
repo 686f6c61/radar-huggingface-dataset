@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Leucodiorite/Diorite-G4-12B-v0.1",
+  "slug": "leucodiorite-diorite-g4-12b-v0-1",
+  "author": "Leucodiorite",
+  "url": "https://huggingface.co/Leucodiorite/Diorite-G4-12B-v0.1",
+  "created_at": "2026-10-26T15:53:03.000Z",
+  "updated_at": "2026-10-26T16:17:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision",
+    "lora",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 979978280,
+  "storage_human": "980 MB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

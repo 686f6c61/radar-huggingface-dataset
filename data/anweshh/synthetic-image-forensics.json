@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "anweshh/synthetic-image-forensics",
+  "slug": "anweshh-synthetic-image-forensics",
+  "author": "anweshh",
+  "url": "https://huggingface.co/anweshh/synthetic-image-forensics",
+  "created_at": "2026-10-30T15:43:31.000Z",
+  "updated_at": "2026-10-30T16:10:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114164866,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

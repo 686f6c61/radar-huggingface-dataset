@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "SEELE-AI/EVA01-Unified-All-Task-Generation-LoRA",
+  "slug": "seele-ai-eva01-unified-all-task-generation-lora",
+  "author": "SEELE-AI",
+  "url": "https://huggingface.co/SEELE-AI/EVA01-Unified-All-Task-Generation-LoRA",
+  "created_at": "2026-10-30T07:54:09.000Z",
+  "updated_at": "2026-10-31T06:03:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-3d",
+  "library": "eva01",
+  "languages": [],
+  "tags": [
+    "eva01",
+    "safetensors",
+    "text-to-3d",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 619353144,
+  "storage_human": "619 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "xzhe121/Mortal-S42-onnx",
+  "slug": "xzhe121-mortal-s42-onnx",
+  "author": "xzhe121",
+  "url": "https://huggingface.co/xzhe121/Mortal-S42-onnx",
+  "created_at": "2026-10-26T17:46:28.000Z",
+  "updated_at": "2026-10-26T17:46:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "mahjong",
+    "riichi-mahjong",
+    "mortal",
+    "base_model:haor/Mortal-S42",
+    "base_model:quantized:haor/Mortal-S42",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43673425,
+  "storage_human": "44 MB",
+  "base_model": "haor/Mortal-S42",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

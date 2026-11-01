@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "thealper2/mlx-qwen3.5-0.8b-decision-model",
+  "slug": "thealper2-mlx-qwen3-5-0-8b-decision-model",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/mlx-qwen3.5-0.8b-decision-model",
+  "created_at": "2026-10-29T10:51:46.000Z",
+  "updated_at": "2026-10-29T10:52:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "decision-model",
+    "complaint-routing",
+    "qwen3_5",
+    "text-classification",
+    "en",
+    "dataset:kgptalkie/cfpb-complaint-routing",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103995216,
+  "storage_human": "104 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

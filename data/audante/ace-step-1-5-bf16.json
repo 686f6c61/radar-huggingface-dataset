@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Audante/ACE-Step-1.5-bf16",
+  "slug": "audante-ace-step-1-5-bf16",
+  "author": "Audante",
+  "url": "https://huggingface.co/Audante/ACE-Step-1.5-bf16",
+  "created_at": "2026-10-29T16:01:39.000Z",
+  "updated_at": "2026-10-29T21:38:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "acestep",
+    "custom_code",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:finetune:ACE-Step/Ace-Step1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14866850324,
+  "storage_human": "14.9 GB",
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Clean Dishwasher with Vinegar and Baking Soda (Step-by …",
+      "url": "https://cleanstylishhomes.com/how-to-clean-dishwasher-with-vinegar-and-baking-soda/",
+      "snippet": "Oct 3, 2025 · Using vinegar and baking soda is a natural, safe, and effective way to clean your dishwasher, remove odors, and …"
+    }
+  ]
+}

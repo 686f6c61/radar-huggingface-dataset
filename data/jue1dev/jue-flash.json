@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "id": "Jue1Dev/jue-flash",
+  "slug": "jue1dev-jue-flash",
+  "author": "Jue1Dev",
+  "url": "https://huggingface.co/Jue1Dev/jue-flash",
+  "created_at": "2026-10-30T14:01:13.000Z",
+  "updated_at": "2026-10-31T04:38:37.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "cybersecurity",
+    "cyber-security",
+    "security",
+    "cyber-defense",
+    "blue-team",
+    "soc",
+    "security-operations",
+    "alert-triage",
+    "threat-detection",
+    "threat-intelligence",
+    "cti",
+    "vulnerability-detection",
+    "vulnerability-management",
+    "cve",
+    "cwe",
+    "mitre-attack",
+    "cloud-security",
+    "kubernetes-security",
+    "devsecops",
+    "edge-ai",
+    "low-latency",
+    "encoder",
+    "decision-model",
+    "calibration",
+    "text-classification",
+    "en",
+    "zh",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 816776100,
+  "storage_human": "817 MB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "SecQA v1",
+      "metric": null,
+      "value": 0.682
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "SecQA v2",
+      "metric": null,
+      "value": 0.7
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "CyberMetric-10000",
+      "metric": null,
+      "value": 0.525
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "CyberMetric-2000",
+      "metric": null,
+      "value": 0.541
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "CyberMetric-500",
+      "metric": null,
+      "value": 0.506
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "CyberMetric-80",
+      "metric": null,
+      "value": 0.45
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "VulDetectBench task 1",
+      "metric": null,
+      "value": 0.566
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "VulDetectBench task 2",
+      "metric": null,
+      "value": 0.886
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "SECURE CWET",
+      "metric": null,
+      "value": 0.538
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "SECURE KCV",
+      "metric": null,
+      "value": 0.394
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "SECURE MAET",
+      "metric": null,
+      "value": 0.564
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "CTIBench MCQ",
+      "metric": null,
+      "value": 0.455
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "CTIBench VSP",
+      "metric": "1 - MAD/7.7",
+      "value": 0.793
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "SecKnowledge-Eval adversarial CTI",
+      "metric": null,
+      "value": 0.667
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "AthenaBench rcm-open",
+      "metric": null,
+      "value": 0.422
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "CMMLU computer security",
+      "metric": null,
+      "value": 0.298
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "BFCL-v4 irrelevance",
+      "metric": null,
+      "value": 0.475
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "BFCL-v4 live-irrelevance",
+      "metric": null,
+      "value": 0.391
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "JevBench (public items)",
+      "metric": null,
+      "value": 0.524
+    },
+    {
+      "task": "Cybersecurity decision",
+      "dataset": "JevBench hard",
+      "metric": null,
+      "value": 0.342
+    }
+  ],
+  "sources": []
+}

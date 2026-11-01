@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "monoboard/Typhoon2-Qwen2.5-7B-LBT-QA-adapters",
+  "slug": "monoboard-typhoon2-qwen2-5-7b-lbt-qa-adapters",
+  "author": "monoboard",
+  "url": "https://huggingface.co/monoboard/Typhoon2-Qwen2.5-7B-LBT-QA-adapters",
+  "created_at": "2026-11-01T19:12:56.000Z",
+  "updated_at": "2026-11-01T19:17:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "legal",
+    "thai",
+    "lora",
+    "qlora",
+    "rag",
+    "th",
+    "base_model:typhoon-ai/typhoon2-qwen2.5-7b-instruct",
+    "base_model:adapter:typhoon-ai/typhoon2-qwen2.5-7b-instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5167805632,
+  "storage_human": "5.2 GB",
+  "base_model": "scb10x/typhoon2-qwen2.5-7b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

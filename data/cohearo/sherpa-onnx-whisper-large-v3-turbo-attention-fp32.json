@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "cohearo/sherpa-onnx-whisper-large-v3-turbo-attention-fp32",
+  "slug": "cohearo-sherpa-onnx-whisper-large-v3-turbo-attention-fp32",
+  "author": "cohearo",
+  "url": "https://huggingface.co/cohearo/sherpa-onnx-whisper-large-v3-turbo-attention-fp32",
+  "created_at": "2026-10-28T23:31:42.000Z",
+  "updated_at": "2026-10-28T23:32:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "whisper",
+    "fp32",
+    "word-timestamps",
+    "automatic-speech-recognition",
+    "multilingual",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:quantized:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3237322004,
+  "storage_human": "3.2 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

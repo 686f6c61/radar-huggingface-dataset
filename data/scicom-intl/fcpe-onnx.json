@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Scicom-intl/fcpe-onnx",
+  "slug": "scicom-intl-fcpe-onnx",
+  "author": "Scicom-intl",
+  "url": "https://huggingface.co/Scicom-intl/fcpe-onnx",
+  "created_at": "2026-10-27T09:14:37.000Z",
+  "updated_at": "2026-10-27T09:14:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "pitch-estimation",
+    "f0",
+    "audio",
+    "speech",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47798721,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

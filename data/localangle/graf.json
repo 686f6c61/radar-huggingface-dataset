@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "localangle/graf",
+  "slug": "localangle-graf",
+  "author": "localangle",
+  "url": "https://huggingface.co/localangle/graf",
+  "created_at": "2026-11-01T16:09:41.000Z",
+  "updated_at": "2026-11-01T16:09:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "graf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "graf",
+    "onnx",
+    "paragraph-segmentation",
+    "token-classification",
+    "news",
+    "encoder",
+    "modernbert",
+    "on-device",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-17m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-17m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36895441,
+  "storage_human": "37 MB",
+  "base_model": "jhu-clsp/ettin-encoder-17m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research | Keuper Labs",
+      "url": "https://www.keuper-labs.org/research/",
+      "snippet": "Explainable AIModel BiasTheory-Grounded Evaluation · About this paperPreprint ... Yushi Liu, Christian Graf, Markus Spies, Margret Keuper. FGVC13 workshop ..."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Nabidnur/spanguard-span-mdistil",
+  "slug": "nabidnur-spanguard-span-mdistil",
+  "author": "Nabidnur",
+  "url": "https://huggingface.co/Nabidnur/spanguard-span-mdistil",
+  "created_at": "2026-11-01T18:58:27.000Z",
+  "updated_at": "2026-11-01T18:59:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "hu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "prompt-injection",
+    "ai-agent-security",
+    "meta-global-ai-hackathon-2026",
+    "en",
+    "de",
+    "hu",
+    "dataset:kragglenote2forwork/spanguard-corpus",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134736387,
+  "parameters_human": "134.7M",
+  "storage_bytes": 538957900,
+  "storage_human": "539 MB",
+  "base_model": "distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

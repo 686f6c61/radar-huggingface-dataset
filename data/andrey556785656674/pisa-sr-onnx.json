@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "andrey556785656674/PiSA-SR-onnx",
+  "slug": "andrey556785656674-pisa-sr-onnx",
+  "author": "andrey556785656674",
+  "url": "https://huggingface.co/andrey556785656674/PiSA-SR-onnx",
+  "created_at": "2026-10-29T21:06:23.000Z",
+  "updated_at": "2026-10-29T21:57:47.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1230267075,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

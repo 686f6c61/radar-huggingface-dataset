@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "hywt232/piano-hand-assignment",
+  "slug": "hywt232-piano-hand-assignment",
+  "author": "hywt232",
+  "url": "https://huggingface.co/hywt232/piano-hand-assignment",
+  "created_at": "2026-10-26T09:50:51.000Z",
+  "updated_at": "2026-10-26T09:51:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "midi",
+    "piano",
+    "hand-separation",
+    "music-information-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13358201,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "job listings jobscloseby.com job+listings+jobscloseby.com English ...",
+      "url": "https://englishjobsearch.nl/jobs/job_listings_jobscloseby.com_job+listings+jobscloseby.com",
+      "snippet": "Oct 21, 2026 · Job Description As an Ecommerce Marketing Intern, you will play a vital hands-on role in driving the ... Monitor listings …"
+    }
+  ]
+}

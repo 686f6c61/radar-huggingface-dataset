@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Adityapande403/Self-Correcting-Micro-Reasoner",
+  "slug": "adityapande403-self-correcting-micro-reasoner",
+  "author": "Adityapande403",
+  "url": "https://huggingface.co/Adityapande403/Self-Correcting-Micro-Reasoner",
+  "created_at": "2026-11-01T13:29:46.000Z",
+  "updated_at": "2026-11-01T13:34:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "reasoning",
+    "mathematical-reasoning",
+    "reinforcement-learning",
+    "grpo",
+    "rlvr",
+    "self-consistency",
+    "consensus",
+    "self-correction",
+    "lora",
+    "qwen",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3173586193,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

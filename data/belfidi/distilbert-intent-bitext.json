@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "belfidi/distilbert-intent-bitext",
+  "slug": "belfidi-distilbert-intent-bitext",
+  "author": "belfidi",
+  "url": "https://huggingface.co/belfidi/distilbert-intent-bitext",
+  "created_at": "2026-11-01T18:59:30.000Z",
+  "updated_at": "2026-11-01T19:00:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "en",
+    "dataset:bitext/Bitext-customer-support-llm-chatbot-training-dataset",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

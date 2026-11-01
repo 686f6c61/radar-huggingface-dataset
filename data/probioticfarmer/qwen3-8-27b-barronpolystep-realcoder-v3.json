@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-RealCoder-v3",
+  "slug": "probioticfarmer-qwen3-8-27b-barronpolystep-realcoder-v3",
+  "author": "ProbioticFarmer",
+  "url": "https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-RealCoder-v3",
+  "created_at": "2026-10-30T12:47:11.000Z",
+  "updated_at": "2026-11-01T16:41:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.8",
+    "polystep",
+    "barron-softmax",
+    "zeroth-order",
+    "lora",
+    "code-generation",
+    "mechanistic-interpretability",
+    "text-generation",
+    "arxiv:2610.31642",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 196,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 902955067,
+  "storage_human": "903 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation",
+      "dataset": "EvalPlus HumanEval+",
+      "metric": "HumanEval (Base)",
+      "value": 75.61
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "EvalPlus HumanEval+",
+      "metric": "HumanEval+ (80x Strict)",
+      "value": 71.34
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "EvalPlus MBPP+",
+      "metric": "MBPP (Base)",
+      "value": 73.54
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "EvalPlus MBPP+",
+      "metric": "MBPP+ (35x Strict)",
+      "value": 60.58
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "BigCodeBench-Hard",
+      "metric": "BigCodeBench-Hard Pass@1",
+      "value": 23.65
+    },
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "MATH-500 (Level 4/5 TIR)",
+      "metric": "Pass@1 (TIR)",
+      "value": 93.33
+    }
+  ],
+  "sources": []
+}

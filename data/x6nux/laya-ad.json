@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "x6nux/laya-ad",
+  "slug": "x6nux-laya-ad",
+  "author": "x6nux",
+  "url": "https://huggingface.co/x6nux/laya-ad",
+  "created_at": "2026-10-29T17:21:18.000Z",
+  "updated_at": "2026-10-31T10:04:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-classification",
+    "spam-detection",
+    "advertising-detection",
+    "ad-classification",
+    "chinese",
+    "modernbert",
+    "mmbert",
+    "multi-task",
+    "four-head",
+    "zh",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13038282649,
+  "storage_human": "13.0 GB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

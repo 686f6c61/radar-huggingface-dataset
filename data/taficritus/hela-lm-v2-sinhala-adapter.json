@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Taficritus/hela-lm-v2-sinhala-adapter",
+  "slug": "taficritus-hela-lm-v2-sinhala-adapter",
+  "author": "Taficritus",
+  "url": "https://huggingface.co/Taficritus/hela-lm-v2-sinhala-adapter",
+  "created_at": "2026-10-26T16:35:56.000Z",
+  "updated_at": "2026-10-26T16:54:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "safetensors",
+    "Sinhala",
+    "LoRA",
+    "SinhalaMMLU",
+    "Multiple Choice",
+    "Chain-of-Thought",
+    "ICTer 2026",
+    "si",
+    "base_model:Jainamshahhh/helalm-4b",
+    "base_model:finetune:Jainamshahhh/helalm-4b",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119273568,
+  "storage_human": "119 MB",
+  "base_model": "Jainamshahhh/helalm-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

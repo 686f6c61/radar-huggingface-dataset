@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "qqjz/TextPro-SLM-7B-Interleaving",
+  "slug": "qqjz-textpro-slm-7b-interleaving",
+  "author": "qqjz",
+  "url": "https://huggingface.co/qqjz/TextPro-SLM-7B-Interleaving",
+  "created_at": "2026-10-29T15:24:41.000Z",
+  "updated_at": "2026-10-29T15:26:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "textpro-slm",
+    "speech-language-model",
+    "prosody",
+    "audio",
+    "interleaving",
+    "audio-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15277573609,
+  "storage_human": "15.3 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct, qqjz/WhisperPro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

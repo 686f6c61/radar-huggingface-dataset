@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "yosephkkk/jomulttak-box-weights",
+  "slug": "yosephkkk-jomulttak-box-weights",
+  "author": "yosephkkk",
+  "url": "https://huggingface.co/yosephkkk/jomulttak-box-weights",
+  "created_at": "2026-10-29T00:55:22.000Z",
+  "updated_at": "2026-10-29T00:56:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:Qwen/Qwen-Image-2512",
+    "base_model:finetune:Qwen/Qwen-Image-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64548125712,
+  "storage_human": "64.5 GB",
+  "base_model": "Qwen/Qwen-Image-2512, Qwen/Qwen-Image-Edit-2511, lightx2v/Qwen-Image-Edit-2511-Lightning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

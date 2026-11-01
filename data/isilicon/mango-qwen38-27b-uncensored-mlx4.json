@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "isilicon/mango-qwen38-27b-uncensored-mlx4",
+  "slug": "isilicon-mango-qwen38-27b-uncensored-mlx4",
+  "author": "isilicon",
+  "url": "https://huggingface.co/isilicon/mango-qwen38-27b-uncensored-mlx4",
+  "created_at": "2026-10-29T21:03:27.000Z",
+  "updated_at": "2026-10-30T06:52:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mango",
+    "preservation-mirror",
+    "qwen-27b",
+    "evaluated",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored-MLX",
+    "base_model:finetune:orcarouter/Qwen3.8-27B-Uncensored-MLX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16075606219,
+  "storage_human": "16.1 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored-MLX",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

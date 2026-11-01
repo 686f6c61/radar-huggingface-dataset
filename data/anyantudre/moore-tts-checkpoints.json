@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "anyantudre/moore-tts-checkpoints",
+  "slug": "anyantudre-moore-tts-checkpoints",
+  "author": "anyantudre",
+  "url": "https://huggingface.co/anyantudre/moore-tts-checkpoints",
+  "created_at": "2026-10-29T23:45:41.000Z",
+  "updated_at": "2026-11-01T00:59:04.000Z",
+  "license": "per-folder",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "mos"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "moore",
+    "mos",
+    "burkina-faso",
+    "low-resource",
+    "checkpoints",
+    "data-scaling",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52024068319,
+  "storage_human": "52.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

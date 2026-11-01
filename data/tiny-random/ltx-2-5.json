@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "tiny-random/ltx-2-5",
+  "slug": "tiny-random-ltx-2-5",
+  "author": "tiny-random",
+  "url": "https://huggingface.co/tiny-random/ltx-2-5",
+  "created_at": "2026-11-01T14:14:40.000Z",
+  "updated_at": "2026-11-01T14:14:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "image-to-video",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41653489,
+  "storage_human": "42 MB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

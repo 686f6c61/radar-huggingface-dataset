@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Hshareef77/csm-1b-dhivehi-5spk-onnx",
+  "slug": "hshareef77-csm-1b-dhivehi-5spk-onnx",
+  "author": "Hshareef77",
+  "url": "https://huggingface.co/Hshareef77/csm-1b-dhivehi-5spk-onnx",
+  "created_at": "2026-10-30T08:29:43.000Z",
+  "updated_at": "2026-10-30T12:24:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "dv"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "text-to-speech",
+    "dhivehi-tts",
+    "android",
+    "dv",
+    "base_model:alakxender/csm-1b-dhivehi-5-spk-gd",
+    "base_model:quantized:alakxender/csm-1b-dhivehi-5-spk-gd",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1666886636,
+  "storage_human": "1.7 GB",
+  "base_model": "alakxender/csm-1b-dhivehi-5-spk-gd",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

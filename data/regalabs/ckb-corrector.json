@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "RegaLabs/ckb-corrector",
+  "slug": "regalabs-ckb-corrector",
+  "author": "RegaLabs",
+  "url": "https://huggingface.co/RegaLabs/ckb-corrector",
+  "created_at": "2026-10-27T20:38:10.000Z",
+  "updated_at": "2026-10-27T20:44:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "ckb"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "fill-mask",
+    "text-correction",
+    "spelling-correction",
+    "asr-post-correction",
+    "punctuation",
+    "sorani",
+    "kurdish",
+    "ckb",
+    "base_model:cis-lmu/glot500-base",
+    "base_model:finetune:cis-lmu/glot500-base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119300591,
+  "parameters_human": "119.3M",
+  "storage_bytes": 484110019,
+  "storage_human": "484 MB",
+  "base_model": "cis-lmu/glot500-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

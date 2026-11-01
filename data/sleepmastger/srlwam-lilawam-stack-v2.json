@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SleepMastger/srlwam-lilawam-stack-v2",
+  "slug": "sleepmastger-srlwam-lilawam-stack-v2",
+  "author": "SleepMastger",
+  "url": "https://huggingface.co/SleepMastger/srlwam-lilawam-stack-v2",
+  "created_at": "2026-10-31T03:26:02.000Z",
+  "updated_at": "2026-10-31T03:26:15.000Z",
+  "license": "component-specific",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "manipulation",
+    "franka",
+    "sim2real",
+    "isaac-lab",
+    "imitation-learning",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7963435539,
+  "storage_human": "8.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

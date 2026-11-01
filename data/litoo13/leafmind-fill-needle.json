@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "litoo13/leafmind-fill-needle",
+  "slug": "litoo13-leafmind-fill-needle",
+  "author": "litoo13",
+  "url": "https://huggingface.co/litoo13/leafmind-fill-needle",
+  "created_at": "2026-10-27T10:14:13.000Z",
+  "updated_at": "2026-10-27T10:15:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "needle",
+    "tool-calling",
+    "form-filling",
+    "en",
+    "base_model:Cactus-Compute/needle3",
+    "base_model:finetune:Cactus-Compute/needle3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63437076,
+  "storage_human": "63 MB",
+  "base_model": "Cactus-Compute/needle3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

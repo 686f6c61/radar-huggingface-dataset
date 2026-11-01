@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "geek4freak/leak-curber-enzyme-retrieval-v7",
+  "slug": "geek4freak-leak-curber-enzyme-retrieval-v7",
+  "author": "geek4freak",
+  "url": "https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v7",
+  "created_at": "2026-10-31T17:51:56.000Z",
+  "updated_at": "2026-10-31T17:52:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "chemistry",
+    "enzymes",
+    "ec-number",
+    "reaction-smiles",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 726524309,
+  "storage_human": "727 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

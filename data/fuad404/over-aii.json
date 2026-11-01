@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "fuad404/Over-aii",
+  "slug": "fuad404-over-aii",
+  "author": "fuad404",
+  "url": "https://huggingface.co/fuad404/Over-aii",
+  "created_at": "2026-11-01T12:55:53.000Z",
+  "updated_at": "2026-11-01T12:55:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1650497936906,
+  "parameters_human": "1650.50B",
+  "storage_bytes": 892755974486,
+  "storage_human": "892.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "VGGamerz/KevIN",
+  "slug": "vggamerz-kevin",
+  "author": "VGGamerz",
+  "url": "https://huggingface.co/VGGamerz/KevIN",
+  "created_at": "2026-10-29T02:34:25.000Z",
+  "updated_at": "2026-10-29T02:38:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "decision-model",
+    "lora",
+    "multiple-choice",
+    "wikipedia",
+    "base_model:jaredpalmer/kev-0.8b",
+    "base_model:adapter:jaredpalmer/kev-0.8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65430170,
+  "storage_human": "65 MB",
+  "base_model": "jaredpalmer/kev-0.8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

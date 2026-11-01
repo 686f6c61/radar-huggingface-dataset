@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "Jour/hy-mt2-7b-discord-lora",
+  "slug": "jour-hy-mt2-7b-discord-lora",
+  "author": "Jour",
+  "url": "https://huggingface.co/Jour/hy-mt2-7b-discord-lora",
+  "created_at": "2026-11-01T11:52:29.000Z",
+  "updated_at": "2026-11-01T11:52:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "zh",
+    "tr",
+    "ar",
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "translation",
+    "discord",
+    "lora",
+    "qlora",
+    "hy-mt2",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "zh",
+    "tr",
+    "ar",
+    "pl",
+    "base_model:tencent/Hy-MT2-7B",
+    "base_model:adapter:tencent/Hy-MT2-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20971520,
+  "parameters_human": "21.0M",
+  "storage_bytes": 125919664,
+  "storage_human": "126 MB",
+  "base_model": "tencent/Hy-MT2-7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jour · Salades, bowls et juice bar depuis 2003",
+      "url": "https://jour.fr/",
+      "snippet": "Commander maintenant Pour mon entreprise L’univers Jour Nous découvrir. Bien manger, sans règles ni compromis. Découvrez …"
+    },
+    {
+      "title": "Jour — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Jour",
+      "snippet": "Le jour ou la journée est l'intervalle de temps qui sépare le lever du coucher du Soleil. Le matin, le plein jour est précédé par l' aube …"
+    },
+    {
+      "title": "Nos restaurants Jour · France, Suisse, Luxembourg",
+      "url": "https://jour.fr/restaurants/",
+      "snippet": "Trouvez le restaurant Jour le plus proche : Paris, Île-de-France, Lyon, Nice, Ajaccio, Genève et Luxembourg. Commandez en ligne …"
+    },
+    {
+      "title": "Définitions : jour, jours - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/jour/45030",
+      "snippet": "Un jour est un vide ménagé dans le tissu, en couture, ou dans la maçonnerie, en architecture. L'usage veut que l'on écrive un …"
+    }
+  ]
+}

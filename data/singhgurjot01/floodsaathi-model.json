@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "SinghGurjot01/floodsaathi-model",
+  "slug": "singhgurjot01-floodsaathi-model",
+  "author": "SinghGurjot01",
+  "url": "https://huggingface.co/SinghGurjot01/floodsaathi-model",
+  "created_at": "2026-10-30T21:52:55.000Z",
+  "updated_at": "2026-10-31T01:20:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "pa"
+  ],
+  "tags": [
+    "safetensors",
+    "floodsaathi",
+    "disaster-response",
+    "flood-safety",
+    "emergency-early-warning",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "hi",
+    "pa",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46659262,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

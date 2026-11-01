@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "persuasivepost/roadpulse-pothole-classifier",
+  "slug": "persuasivepost-roadpulse-pothole-classifier",
+  "author": "persuasivepost",
+  "url": "https://huggingface.co/persuasivepost/roadpulse-pothole-classifier",
+  "created_at": "2026-11-01T09:42:34.000Z",
+  "updated_at": "2026-11-01T17:26:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "image-classification",
+    "mobilenetv3",
+    "pothole",
+    "road-damage",
+    "ios",
+    "swiftui",
+    "dataset:taroii/pothole-detection",
+    "dataset:Arpitraj01/Pothole_classification",
+    "dataset:rupesh002/pothole-detection-dataset",
+    "dataset:kauevestena/deep_pavements_surface_patches",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9342149,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image classification",
+      "dataset": null,
+      "metric": "Test accuracy (211 held-out images)",
+      "value": 0.967
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Imbatmann/nepali-tts-multilingual",
+  "slug": "imbatmann-nepali-tts-multilingual",
+  "author": "Imbatmann",
+  "url": "https://huggingface.co/Imbatmann/nepali-tts-multilingual",
+  "created_at": "2026-10-29T11:14:44.000Z",
+  "updated_at": "2026-10-29T11:40:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "nepali",
+    "tts",
+    "text-to-speech",
+    "code-switching",
+    "ne",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2811804739,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

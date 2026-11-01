@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "drnamlabs/cellbio-gpt-40m",
+  "slug": "drnamlabs-cellbio-gpt-40m",
+  "author": "drnamlabs",
+  "url": "https://huggingface.co/drnamlabs/cellbio-gpt-40m",
+  "created_at": "2026-10-27T17:07:28.000Z",
+  "updated_at": "2026-10-28T16:17:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "biology",
+    "bioelectricity",
+    "from-scratch",
+    "reinforcement-learning",
+    "verifiable-rewards",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1134524201,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

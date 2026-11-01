@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "odelpa/mistral-small-scienziato-v2",
+  "slug": "odelpa-mistral-small-scienziato-v2",
+  "author": "odelpa",
+  "url": "https://huggingface.co/odelpa/mistral-small-scienziato-v2",
+  "created_at": "2026-10-30T14:35:30.000Z",
+  "updated_at": "2026-10-30T14:35:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "self-distillation",
+    "identity",
+    "mistral-small",
+    "italian",
+    "research",
+    "text-generation",
+    "it",
+    "en",
+    "dataset:odelpa/mistral-small-scienziato-v2-dati",
+    "base_model:mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "base_model:adapter:mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 758746885,
+  "storage_human": "759 MB",
+  "base_model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

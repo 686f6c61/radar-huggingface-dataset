@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "msw1410/swift-party-tagger-silent-jev-gemma-v3.2",
+  "slug": "msw1410-swift-party-tagger-silent-jev-gemma-v3-2",
+  "author": "msw1410",
+  "url": "https://huggingface.co/msw1410/swift-party-tagger-silent-jev-gemma-v3.2",
+  "created_at": "2026-10-29T17:18:31.000Z",
+  "updated_at": "2026-10-29T17:19:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "token-classification",
+    "payments",
+    "swift",
+    "iso20022",
+    "cbpr-plus",
+    "name-address-splitting",
+    "sanctions-screening",
+    "lora",
+    "gemma4",
+    "en",
+    "arxiv:2310.01208",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279303216,
+  "storage_human": "279 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

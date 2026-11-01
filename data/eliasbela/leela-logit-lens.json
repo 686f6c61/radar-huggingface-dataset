@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "eliasbela/leela-logit-lens",
+  "slug": "eliasbela-leela-logit-lens",
+  "author": "eliasbela",
+  "url": "https://huggingface.co/eliasbela/leela-logit-lens",
+  "created_at": "2026-10-30T10:39:45.000Z",
+  "updated_at": "2026-10-30T10:43:09.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "chess",
+    "leela-chess-zero",
+    "interpretability",
+    "logit-lens",
+    "arxiv:2508.21380",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377235288,
+  "storage_human": "377 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

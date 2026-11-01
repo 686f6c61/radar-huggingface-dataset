@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "0WD0/wime-syllable-40m",
+  "slug": "0wd0-wime-syllable-40m",
+  "author": "0WD0",
+  "url": "https://huggingface.co/0WD0/wime-syllable-40m",
+  "created_at": "2026-10-31T09:05:10.000Z",
+  "updated_at": "2026-10-31T13:09:36.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "input-method",
+    "pinyin",
+    "zh",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40005952,
+  "parameters_human": "40.0M",
+  "storage_bytes": 80152360,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

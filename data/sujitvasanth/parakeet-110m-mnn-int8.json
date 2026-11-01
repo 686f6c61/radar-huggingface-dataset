@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sujitvasanth/Parakeet-110M-MNN-INT8",
+  "slug": "sujitvasanth-parakeet-110m-mnn-int8",
+  "author": "sujitvasanth",
+  "url": "https://huggingface.co/sujitvasanth/Parakeet-110M-MNN-INT8",
+  "created_at": "2026-10-31T05:27:50.000Z",
+  "updated_at": "2026-10-31T05:28:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mnn",
+    "speech-recognition",
+    "parakeet",
+    "int8",
+    "experimental",
+    "en",
+    "base_model:nvidia/parakeet-tdt_ctc-110m",
+    "base_model:finetune:nvidia/parakeet-tdt_ctc-110m",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117547604,
+  "storage_human": "118 MB",
+  "base_model": "nvidia/parakeet-tdt_ctc-110m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

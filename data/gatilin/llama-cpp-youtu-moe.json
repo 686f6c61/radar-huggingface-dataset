@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "gatilin/llama.cpp-youtu-moe",
+  "slug": "gatilin-llama-cpp-youtu-moe",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/llama.cpp-youtu-moe",
+  "created_at": "2026-11-01T16:48:40.000Z",
+  "updated_at": "2026-11-01T16:48:54.000Z",
+  "license": "youtu-llm",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "patch",
+    "base_model:tencent/Youtu-LLM-A7B-Base",
+    "base_model:finetune:tencent/Youtu-LLM-A7B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "tencent/Youtu-LLM-A7B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

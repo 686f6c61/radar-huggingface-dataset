@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/Unlimited-OCR-2-AIPod",
+  "slug": "manateelazycat-unlimited-ocr-2-aipod",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/Unlimited-OCR-2-AIPod",
+  "created_at": "2026-10-27T09:52:09.000Z",
+  "updated_at": "2026-11-01T16:28:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "jetson",
+    "lazycat",
+    "ocr",
+    "image-text-to-text",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21835010282,
+  "storage_human": "21.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

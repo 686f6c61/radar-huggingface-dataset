@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Glimmer-30B-2026-Knowledge-i1-GGUF",
+  "slug": "mradermacher-glimmer-30b-2026-knowledge-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-i1-GGUF",
+  "created_at": "2026-11-01T17:46:43.000Z",
+  "updated_at": "2026-11-01T18:23:41.000Z",
+  "license": "apache-2.0-and-muse-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "knowledge-update",
+    "2026-news",
+    "built-with-muse-spark-open",
+    "en",
+    "dataset:OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data",
+    "base_model:OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
+    "base_model:quantized:OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 64488169120,
+  "storage_human": "64.5 GB",
+  "base_model": "OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

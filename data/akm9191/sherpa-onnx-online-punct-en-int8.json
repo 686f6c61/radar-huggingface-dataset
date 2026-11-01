@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "akm9191/sherpa-onnx-online-punct-en-int8",
+  "slug": "akm9191-sherpa-onnx-online-punct-en-int8",
+  "author": "akm9191",
+  "url": "https://huggingface.co/akm9191/sherpa-onnx-online-punct-en-int8",
+  "created_at": "2026-10-30T01:44:08.000Z",
+  "updated_at": "2026-10-30T01:44:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sherpa-onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "punctuation",
+    "truecasing",
+    "int8",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7490500,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

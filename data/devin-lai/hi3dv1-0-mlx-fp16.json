@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "devin-lai/Hi3Dv1.0-mlx-fp16",
+  "slug": "devin-lai-hi3dv1-0-mlx-fp16",
+  "author": "devin-lai",
+  "url": "https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-fp16",
+  "created_at": "2026-10-26T11:21:31.000Z",
+  "updated_at": "2026-10-26T11:31:03.000Z",
+  "license": "hi3d-open-license-agreement-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "image-to-3d",
+    "apple-silicon",
+    "geometry-refinement",
+    "base_model:hi3d-official/Hi3Dv1.0",
+    "base_model:finetune:hi3d-official/Hi3Dv1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7351358560,
+  "storage_human": "7.4 GB",
+  "base_model": "hi3d-official/Hi3Dv1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

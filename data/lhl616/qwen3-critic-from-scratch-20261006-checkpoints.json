@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "lhl616/qwen3-critic-from-scratch-20261006-checkpoints",
+  "slug": "lhl616-qwen3-critic-from-scratch-20261006-checkpoints",
+  "author": "lhl616",
+  "url": "https://huggingface.co/lhl616/qwen3-critic-from-scratch-20261006-checkpoints",
+  "created_at": "2026-10-28T06:15:23.000Z",
+  "updated_at": "2026-10-28T06:22:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research-checkpoints",
+    "qwen3",
+    "checkpoint-archive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67486568034,
+  "storage_human": "67.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 DEX Aggregators to Use in 2025: Smarter Swaps Across Chains",
+      "url": "https://rubic.exchange/blog/top-10-dex-aggregators-to-use-smarter-swaps-across-chains/",
+      "snippet": "Jul 15, 2025 · Swapping tokens used to be simple. You had a wallet, you picked from a small selection of DEXs and you made the …"
+    }
+  ]
+}

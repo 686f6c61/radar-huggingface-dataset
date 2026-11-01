@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "tiao-ai-tech/kinomat-aligner-fr",
+  "slug": "tiao-ai-tech-kinomat-aligner-fr",
+  "author": "tiao-ai-tech",
+  "url": "https://huggingface.co/tiao-ai-tech/kinomat-aligner-fr",
+  "created_at": "2026-10-29T05:32:59.000Z",
+  "updated_at": "2026-10-29T05:36:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "ctc",
+    "forced-alignment",
+    "french",
+    "fr",
+    "dataset:common_voice",
+    "base_model:jonatasgrosman/wav2vec2-large-xlsr-53-french",
+    "base_model:quantized:jonatasgrosman/wav2vec2-large-xlsr-53-french",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355031576,
+  "storage_human": "355 MB",
+  "base_model": "jonatasgrosman/wav2vec2-large-xlsr-53-french",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

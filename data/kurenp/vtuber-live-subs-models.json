@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "KurenP/vtuber-live-subs-models",
+  "slug": "kurenp-vtuber-live-subs-models",
+  "author": "KurenP",
+  "url": "https://huggingface.co/KurenP/vtuber-live-subs-models",
+  "created_at": "2026-10-25T20:03:39.000Z",
+  "updated_at": "2026-10-25T20:03:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speaker-verification",
+    "speaker-embedding",
+    "redimnet",
+    "base_model:lab260/redimnet2-plus",
+    "base_model:quantized:lab260/redimnet2-plus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50941924,
+  "storage_human": "51 MB",
+  "base_model": "lab260/redimnet2-plus",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

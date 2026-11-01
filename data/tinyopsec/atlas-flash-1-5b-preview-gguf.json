@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Atlas-Flash-1.5B-Preview-GGUF",
+  "slug": "tinyopsec-atlas-flash-1-5b-preview-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Atlas-Flash-1.5B-Preview-GGUF",
+  "created_at": "2026-11-01T12:49:59.000Z",
+  "updated_at": "2026-11-01T12:59:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "quantized",
+    "text-generation",
+    "base_model:aayanmishra-ml/Atlas-Flash-1.5B-Preview",
+    "base_model:quantized:aayanmishra-ml/Atlas-Flash-1.5B-Preview",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 17497119136,
+  "storage_human": "17.5 GB",
+  "base_model": "aayanmishra-ml/Atlas-Flash-1.5B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

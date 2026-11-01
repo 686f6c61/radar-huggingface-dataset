@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "crozierm/eyes-and-ears-attribution",
+  "slug": "crozierm-eyes-and-ears-attribution",
+  "author": "crozierm",
+  "url": "https://huggingface.co/crozierm/eyes-and-ears-attribution",
+  "created_at": "2026-10-27T09:07:34.000Z",
+  "updated_at": "2026-10-27T09:07:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "quote-attribution",
+    "booknlp",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 823165125,
+  "storage_human": "823 MB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sony A95L QD-OLED initial review: The future is bright",
+      "url": "https://www.pocket-lint.com/sony-a95l-review/",
+      "snippet": "Mar 18, 2023 · Sony's A95K was one of our favourite TVs of last year, and now we've clapped eyes on its successor. Can the A95L …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mosetireagan/dxa-guard-neural-threat-engine",
+  "slug": "mosetireagan-dxa-guard-neural-threat-engine",
+  "author": "mosetireagan",
+  "url": "https://huggingface.co/mosetireagan/dxa-guard-neural-threat-engine",
+  "created_at": "2026-10-25T21:57:34.000Z",
+  "updated_at": "2026-10-25T22:14:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "cybersecurity",
+    "intrusion-detection",
+    "threat-detection",
+    "intrusion-prevention",
+    "neural-network",
+    "edge-ai",
+    "defense-in-depth",
+    "air-gapped",
+    "zero-day-defense",
+    "devops",
+    "linux-security",
+    "tabular-classification",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7868411,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intrusion Detection & Telemetry Classification",
+      "dataset": "DXA-Guard Multi-Source Enterprise Telemetry V2",
+      "metric": "Gated System Accuracy",
+      "value": 0.9612
+    },
+    {
+      "task": "Intrusion Detection & Telemetry Classification",
+      "dataset": "DXA-Guard Multi-Source Enterprise Telemetry V2",
+      "metric": "Weighted F1",
+      "value": 0.9618
+    },
+    {
+      "task": "Intrusion Detection & Telemetry Classification",
+      "dataset": "DXA-Guard Multi-Source Enterprise Telemetry V2",
+      "metric": "Macro F1",
+      "value": 0.8584
+    }
+  ],
+  "sources": []
+}

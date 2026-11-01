@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Reza2kn/Bina-0.4-Koochik-ONNX-WebGPU-INT4",
+  "slug": "reza2kn-bina-0-4-koochik-onnx-webgpu-int4",
+  "author": "Reza2kn",
+  "url": "https://huggingface.co/Reza2kn/Bina-0.4-Koochik-ONNX-WebGPU-INT4",
+  "created_at": "2026-10-27T14:20:10.000Z",
+  "updated_at": "2026-10-27T19:59:24.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "bina",
+    "ocr",
+    "int4",
+    "gptq",
+    "quantized",
+    "webgpu",
+    "onnxruntime-web",
+    "checkpoint-18404",
+    "image-to-text",
+    "fa",
+    "en",
+    "base_model:Reza2kn/Bina-0.4-Koochik",
+    "base_model:quantized:Reza2kn/Bina-0.4-Koochik",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 823069758,
+  "storage_human": "823 MB",
+  "base_model": "Reza2kn/Bina-0.4-Koochik",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

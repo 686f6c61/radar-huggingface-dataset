@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Eva-4B-V2-GGUF",
+  "slug": "tinyopsec-eva-4b-v2-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Eva-4B-V2-GGUF",
+  "created_at": "2026-11-01T12:58:05.000Z",
+  "updated_at": "2026-11-01T12:59:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "quantized",
+    "text-generation",
+    "base_model:FutureMa/Eva-4B-V2",
+    "base_model:quantized:FutureMa/Eva-4B-V2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 12331688256,
+  "storage_human": "12.3 GB",
+  "base_model": "FutureMa/Eva-4B-V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

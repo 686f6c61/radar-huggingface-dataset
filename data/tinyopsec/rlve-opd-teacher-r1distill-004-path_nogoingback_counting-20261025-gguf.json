@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025-GGUF",
+  "slug": "tinyopsec-rlve-opd-teacher-r1distill-004-path_nogoingback_counting-20261025-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025-GGUF",
+  "created_at": "2026-11-01T12:54:19.000Z",
+  "updated_at": "2026-11-01T13:01:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "quantized",
+    "text-generation",
+    "base_model:davidheineman/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025",
+    "base_model:quantized:davidheineman/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 10722969600,
+  "storage_human": "10.7 GB",
+  "base_model": "davidheineman/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

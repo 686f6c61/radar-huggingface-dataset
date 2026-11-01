@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aether-models/aether-kit-qwen3-0.6b",
+  "slug": "aether-models-aether-kit-qwen3-0-6b",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/aether-kit-qwen3-0.6b",
+  "created_at": "2026-10-29T18:46:44.000Z",
+  "updated_at": "2026-10-29T18:46:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aether-kit",
+  "languages": [],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "on-device",
+    "qwen3",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1203898307,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aether — Your Personal Streaming Service for Apple Devices",
+      "url": "https://aetherplayer.com/",
+      "snippet": "Your own streaming service, without the subscription. One library, every Apple screen — including a private theater on Vision Pro."
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "GitHub - CluvexStudio/Aether: A Rust userspace WARP core for …",
+      "url": "https://github.com/CluvexStudio/Aether",
+      "snippet": "Jul 14, 2026 · Aether is a censorship circumvention client designed for heavily restricted networks. It automatically discovers …"
+    },
+    {
+      "title": "Aether",
+      "url": "https://aether.so/worlds",
+      "snippet": "Aether City Launched in March 11, 2018, Aether is the one of the first metaverse projects powered by the Ethereum blockchain. …"
+    },
+    {
+      "title": "Aether - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether",
+      "snippet": "This disambiguation page lists articles associated with the title Aether. If an internal link incorrectly led you here, you may wish to …"
+    }
+  ]
+}

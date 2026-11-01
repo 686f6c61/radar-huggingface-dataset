@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nemotron-9B-OpenCode-GGUF",
+  "slug": "mradermacher-nemotron-9b-opencode-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nemotron-9B-OpenCode-GGUF",
+  "created_at": "2026-04-12T05:26:05.000Z",
+  "updated_at": "2026-11-01T20:41:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "instruction-tuned",
+    "software-engineering",
+    "agent",
+    "opencode",
+    "qwen",
+    "python",
+    "en",
+    "zh",
+    "base_model:clzoro/Nemotron-9B-OpenCode",
+    "base_model:quantized:clzoro/Nemotron-9B-OpenCode",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 471,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967486208,
+  "storage_human": "83.0 GB",
+  "base_model": "clzoro/Nemotron-9B-OpenCode",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

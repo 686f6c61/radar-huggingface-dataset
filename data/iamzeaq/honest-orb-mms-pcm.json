@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "iamzeaq/honest-orb-mms-pcm",
+  "slug": "iamzeaq-honest-orb-mms-pcm",
+  "author": "iamzeaq",
+  "url": "https://huggingface.co/iamzeaq/honest-orb-mms-pcm",
+  "created_at": "2026-11-01T19:19:38.000Z",
+  "updated_at": "2026-11-01T19:19:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36284208,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145229176,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "akm9191/silero-vad-onnx",
+  "slug": "akm9191-silero-vad-onnx",
+  "author": "akm9191",
+  "url": "https://huggingface.co/akm9191/silero-vad-onnx",
+  "created_at": "2026-10-29T12:23:34.000Z",
+  "updated_at": "2026-10-29T12:23:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "sherpa-onnx",
+  "languages": [],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "silero",
+    "vad",
+    "voice-activity-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 643854,
+  "storage_human": "643854 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

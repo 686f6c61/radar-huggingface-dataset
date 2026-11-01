@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/Chitra-Tiny-ONNX",
+  "slug": "udgamlabs-chitra-tiny-onnx",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/Chitra-Tiny-ONNX",
+  "created_at": "2026-10-28T10:23:44.000Z",
+  "updated_at": "2026-10-28T10:25:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "udgamlabs",
+    "text-to-image",
+    "diffusion-transformer",
+    "rectified-flow",
+    "trained-from-scratch",
+    "webgpu",
+    "onnxruntime-web",
+    "en",
+    "base_model:udgamlabs/Chitra-Tiny",
+    "base_model:quantized:udgamlabs/Chitra-Tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 830757931,
+  "storage_human": "831 MB",
+  "base_model": "udgamlabs/Chitra-Tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

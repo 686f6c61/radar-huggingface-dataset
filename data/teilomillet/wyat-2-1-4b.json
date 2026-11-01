@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "teilomillet/wyat-2-1.4b",
+  "slug": "teilomillet-wyat-2-1-4b",
+  "author": "teilomillet",
+  "url": "https://huggingface.co/teilomillet/wyat-2-1.4b",
+  "created_at": "2026-10-27T09:57:05.000Z",
+  "updated_at": "2026-10-27T13:26:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "wyat",
+    "decision-model",
+    "classification",
+    "fr",
+    "en",
+    "base_model:ByteDance/Ouro-1.4B",
+    "base_model:finetune:ByteDance/Ouro-1.4B",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2923929894,
+  "storage_human": "2.9 GB",
+  "base_model": "ByteDance/Ouro-1.4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

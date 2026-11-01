@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "robello2/whisper-medium-yecs-baseline",
+  "slug": "robello2-whisper-medium-yecs-baseline",
+  "author": "robello2",
+  "url": "https://huggingface.co/robello2/whisper-medium-yecs-baseline",
+  "created_at": "2026-11-01T17:16:41.000Z",
+  "updated_at": "2026-11-01T17:20:17.000Z",
+  "license": "noodl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "yo",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "code-switching",
+    "yo",
+    "en",
+    "base_model:openai/whisper-medium",
+    "base_model:finetune:openai/whisper-medium",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 3055549761,
+  "storage_human": "3.1 GB",
+  "base_model": "openai/whisper-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

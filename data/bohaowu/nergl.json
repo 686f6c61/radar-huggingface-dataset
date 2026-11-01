@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BohaoWu/NERGL",
+  "slug": "bohaowu-nergl",
+  "author": "BohaoWu",
+  "url": "https://huggingface.co/BohaoWu/NERGL",
+  "created_at": "2026-10-30T12:45:27.000Z",
+  "updated_at": "2026-10-30T12:46:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "ukiyo-e",
+    "named-entity-recognition",
+    "visual-grounding",
+    "multimodal",
+    "ja",
+    "dataset:BohaoWu/Ukiyoe_MNERG",
+    "base_model:ku-nlp/bart-large-japanese",
+    "base_model:finetune:ku-nlp/bart-large-japanese",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1572745088,
+  "storage_human": "1.6 GB",
+  "base_model": "ku-nlp/bart-large-japanese",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ss2917/submarine",
+  "slug": "ss2917-submarine",
+  "author": "ss2917",
+  "url": "https://huggingface.co/ss2917/submarine",
+  "created_at": "2026-11-01T20:42:49.000Z",
+  "updated_at": "2026-11-01T20:42:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

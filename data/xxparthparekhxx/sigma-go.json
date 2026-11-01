@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "xxparthparekhxx/sigma-go",
+  "slug": "xxparthparekhxx-sigma-go",
+  "author": "xxparthparekhxx",
+  "url": "https://huggingface.co/xxparthparekhxx/sigma-go",
+  "created_at": "2026-10-30T10:57:59.000Z",
+  "updated_at": "2026-10-30T10:58:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "chess",
+    "onnxruntime-web",
+    "webgpu",
+    "mcts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49765820,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

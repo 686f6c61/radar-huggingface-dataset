@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "arianraje/looptransv2-qwen3.5-2b-s2-trial-m0_med",
+  "slug": "arianraje-looptransv2-qwen3-5-2b-s2-trial-m0_med",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m0_med",
+  "created_at": "2026-10-31T05:48:45.000Z",
+  "updated_at": "2026-10-31T06:07:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "looped-transformer",
+    "recurrent-depth",
+    "distillation",
+    "qwen3.5",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7547364061,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Abdolrahman77/athar-tasmie",
+  "slug": "abdolrahman77-athar-tasmie",
+  "author": "Abdolrahman77",
+  "url": "https://huggingface.co/Abdolrahman77/athar-tasmie",
+  "created_at": "2026-10-27T09:22:35.000Z",
+  "updated_at": "2026-10-27T09:42:54.000Z",
+  "license": "npl-1.2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "quran",
+    "asr",
+    "zipformer",
+    "phoneme",
+    "hafs",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72705392,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

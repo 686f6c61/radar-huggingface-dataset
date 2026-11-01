@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Bayut1999/meta-llama-3.2-3b-instruct",
+  "slug": "bayut1999-meta-llama-3-2-3b-instruct",
+  "author": "Bayut1999",
+  "url": "https://huggingface.co/Bayut1999/meta-llama-3.2-3b-instruct",
+  "created_at": "2026-10-31T23:08:14.000Z",
+  "updated_at": "2026-11-01T01:08:42.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "conversational",
+    "llama",
+    "facebook",
+    "meta",
+    "llama-3",
+    "en",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

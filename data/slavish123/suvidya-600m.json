@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Slavish123/suvidya-600m",
+  "slug": "slavish123-suvidya-600m",
+  "author": "Slavish123",
+  "url": "https://huggingface.co/Slavish123/suvidya-600m",
+  "created_at": "2026-11-01T12:53:22.000Z",
+  "updated_at": "2026-11-01T13:40:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "math",
+    "ollama",
+    "india",
+    "reasoning",
+    "python",
+    "tir",
+    "suvidya",
+    "sarvada",
+    "suvidya-600m",
+    "en",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1594886528,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

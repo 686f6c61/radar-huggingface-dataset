@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mississippiu/dar-llama3-mla-checkpoints",
+  "slug": "mississippiu-dar-llama3-mla-checkpoints",
+  "author": "mississippiu",
+  "url": "https://huggingface.co/mississippiu/dar-llama3-mla-checkpoints",
+  "created_at": "2026-10-27T19:22:34.000Z",
+  "updated_at": "2026-10-27T19:23:25.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mla",
+    "kv-cache-compression",
+    "distillation",
+    "research",
+    "base_model:fxmeng/TransMLA-llama3-8b-32k",
+    "base_model:finetune:fxmeng/TransMLA-llama3-8b-32k",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49948162869,
+  "storage_human": "49.9 GB",
+  "base_model": "fxmeng/TransMLA-llama3-8b-32k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

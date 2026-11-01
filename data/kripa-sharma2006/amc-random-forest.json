@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "kripa-sharma2006/amc-random-forest",
+  "slug": "kripa-sharma2006-amc-random-forest",
+  "author": "kripa-sharma2006",
+  "url": "https://huggingface.co/kripa-sharma2006/amc-random-forest",
+  "created_at": "2026-10-26T04:47:01.000Z",
+  "updated_at": "2026-10-26T04:52:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 214626929,
+  "storage_human": "215 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

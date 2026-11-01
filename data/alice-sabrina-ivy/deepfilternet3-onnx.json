@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Alice-Sabrina-Ivy/deepfilternet3-onnx",
+  "slug": "alice-sabrina-ivy-deepfilternet3-onnx",
+  "author": "Alice-Sabrina-Ivy",
+  "url": "https://huggingface.co/Alice-Sabrina-Ivy/deepfilternet3-onnx",
+  "created_at": "2026-10-26T03:15:48.000Z",
+  "updated_at": "2026-10-26T03:15:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "deepfilternet",
+    "noise-suppression",
+    "speech-enhancement",
+    "mirror",
+    "audio-to-audio",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8587242,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

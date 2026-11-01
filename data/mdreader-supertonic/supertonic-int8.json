@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mdreader-supertonic/supertonic-int8",
+  "slug": "mdreader-supertonic-supertonic-int8",
+  "author": "mdreader-supertonic",
+  "url": "https://huggingface.co/mdreader-supertonic/supertonic-int8",
+  "created_at": "2026-10-26T00:27:22.000Z",
+  "updated_at": "2026-10-26T00:39:25.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "tts",
+    "int8",
+    "onnxruntime-web",
+    "text-to-speech",
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "ko",
+    "base_model:Supertone/supertonic-2",
+    "base_model:quantized:Supertone/supertonic-2",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95616633,
+  "storage_human": "96 MB",
+  "base_model": "Supertone/supertonic-2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

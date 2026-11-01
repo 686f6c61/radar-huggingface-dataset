@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SinhalaMMLU-SharedTask/team-sinbotics",
+  "slug": "sinhalammlu-sharedtask-team-sinbotics",
+  "author": "SinhalaMMLU-SharedTask",
+  "url": "https://huggingface.co/SinhalaMMLU-SharedTask/team-sinbotics",
+  "created_at": "2026-10-28T16:01:47.000Z",
+  "updated_at": "2026-10-28T17:57:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sinhala",
+    "multiple-choice",
+    "lora",
+    "sinhala-mmlu",
+    "text-generation",
+    "si",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134758990,
+  "storage_human": "135 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

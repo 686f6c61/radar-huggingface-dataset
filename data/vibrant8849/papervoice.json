@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Vibrant8849/PaperVoice",
+  "slug": "vibrant8849-papervoice",
+  "author": "Vibrant8849",
+  "url": "https://huggingface.co/Vibrant8849/PaperVoice",
+  "created_at": "2026-10-26T16:34:12.000Z",
+  "updated_at": "2026-11-01T12:01:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "pdf",
+    "audio",
+    "tts",
+    "kokoro",
+    "docling",
+    "ocr",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1687685102,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

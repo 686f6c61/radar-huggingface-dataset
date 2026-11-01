@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "1Developer/calista-whisper-base.en-drop-002-production",
+  "slug": "1developer-calista-whisper-base-en-drop-002-production",
+  "author": "1Developer",
+  "url": "https://huggingface.co/1Developer/calista-whisper-base.en-drop-002-production",
+  "created_at": "2026-11-01T16:12:11.000Z",
+  "updated_at": "2026-11-01T16:32:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:audiofolder",
+    "base_model:openai/whisper-base.en",
+    "base_model:finetune:openai/whisper-base.en",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72593408,
+  "parameters_human": "72.6M",
+  "storage_bytes": 7260375641,
+  "storage_human": "7.3 GB",
+  "base_model": "openai/whisper-base.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "audiofolder",
+      "metric": "Wer",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Nabidnur/spanguard-toolguard-mdistil",
+  "slug": "nabidnur-spanguard-toolguard-mdistil",
+  "author": "Nabidnur",
+  "url": "https://huggingface.co/Nabidnur/spanguard-toolguard-mdistil",
+  "created_at": "2026-11-01T18:59:54.000Z",
+  "updated_at": "2026-11-01T19:00:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "hu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "prompt-injection",
+    "ai-agent-security",
+    "meta-global-ai-hackathon-2026",
+    "en",
+    "de",
+    "hu",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135326210,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541317368,
+  "storage_human": "541 MB",
+  "base_model": "distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "allen65/Mailroom-Triage",
+  "slug": "allen65-mailroom-triage",
+  "author": "allen65",
+  "url": "https://huggingface.co/allen65/Mailroom-Triage",
+  "created_at": "2026-10-31T10:36:32.000Z",
+  "updated_at": "2026-11-01T09:28:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "billing",
+    "email-triage",
+    "multi-head",
+    "calibration",
+    "custom-code",
+    "en",
+    "dataset:ZefanCai/Open-Jev",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90927967,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

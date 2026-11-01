@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "manrongjun/meeting-models",
+  "slug": "manrongjun-meeting-models",
+  "author": "manrongjun",
+  "url": "https://huggingface.co/manrongjun/meeting-models",
+  "created_at": "2026-10-29T02:53:04.000Z",
+  "updated_at": "2026-10-29T03:10:13.000Z",
+  "license": "mixed-model-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "macos",
+    "coreml",
+    "gguf",
+    "speech",
+    "translation",
+    "speaker-diarization",
+    "summarization",
+    "zh",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3366331432,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "BlueRoseLabs/Silencio-2",
+  "slug": "blueroselabs-silencio-2",
+  "author": "BlueRoseLabs",
+  "url": "https://huggingface.co/BlueRoseLabs/Silencio-2",
+  "created_at": "2026-10-31T21:42:14.000Z",
+  "updated_at": "2026-11-01T17:48:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "emotional-speech",
+    "streaming",
+    "on-device",
+    "en",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27928690,
+  "parameters_human": "27.9M",
+  "storage_bytes": 115714285,
+  "storage_human": "116 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

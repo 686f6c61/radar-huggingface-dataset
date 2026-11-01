@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "sw-voice/maya2-native-swamiji-en-te-kn-themes-sft-lr1e-6-7ep",
+  "slug": "sw-voice-maya2-native-swamiji-en-te-kn-themes-sft-lr1e-6-7ep",
+  "author": "sw-voice",
+  "url": "https://huggingface.co/sw-voice/maya2-native-swamiji-en-te-kn-themes-sft-lr1e-6-7ep",
+  "created_at": "2026-10-28T05:36:18.000Z",
+  "updated_at": "2026-10-28T05:37:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "base_model:maya-research/maya2-native",
+    "base_model:finetune:maya-research/maya2-native",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2502398656,
+  "parameters_human": "2.50B",
+  "storage_bytes": 5020982819,
+  "storage_human": "5.0 GB",
+  "base_model": "maya-research/maya2-native",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Thaki-Decision-0.8B-PW-v1",
+  "slug": "thakicloud-thaki-decision-0-8b-pw-v1",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Thaki-Decision-0.8B-PW-v1",
+  "created_at": "2026-10-27T04:56:41.000Z",
+  "updated_at": "2026-10-27T04:56:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llm-routing",
+    "model-selection",
+    "decision-model",
+    "pairwise",
+    "lora",
+    "research",
+    "experimental",
+    "text-classification",
+    "en",
+    "ko",
+    "base_model:vllm-sr/d3-lite",
+    "base_model:adapter:vllm-sr/d3-lite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43348436,
+  "storage_human": "43 MB",
+  "base_model": "vllm-sr/d3-lite",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

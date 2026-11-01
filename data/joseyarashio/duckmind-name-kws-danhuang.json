@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "joseyarashio/duckmind-name-kws-danhuang",
+  "slug": "joseyarashio-duckmind-name-kws-danhuang",
+  "author": "joseyarashio",
+  "url": "https://huggingface.co/joseyarashio/duckmind-name-kws-danhuang",
+  "created_at": "2026-10-29T22:59:02.000Z",
+  "updated_at": "2026-10-30T12:36:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "keyword-spotting",
+    "wake-word",
+    "streaming",
+    "robotics",
+    "duckmind",
+    "microduck",
+    "audio-classification",
+    "zh",
+    "dataset:espnet/yodas2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2549359,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

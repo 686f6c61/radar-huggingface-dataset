@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SinhalaMMLU-SharedTask/team-shilpa-shastra",
+  "slug": "sinhalammlu-sharedtask-team-shilpa-shastra",
+  "author": "SinhalaMMLU-SharedTask",
+  "url": "https://huggingface.co/SinhalaMMLU-SharedTask/team-shilpa-shastra",
+  "created_at": "2026-10-29T06:43:13.000Z",
+  "updated_at": "2026-10-29T06:44:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": null,
+  "languages": [
+    "si",
+    "en"
+  ],
+  "tags": [
+    "sinhala",
+    "mmlu",
+    "multiple-choice",
+    "shared-task",
+    "icter-2026",
+    "si",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9496,
+  "storage_human": "9496 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

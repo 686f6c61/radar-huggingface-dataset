@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ADI98211/depth-anything-v2-small-onnx",
+  "slug": "adi98211-depth-anything-v2-small-onnx",
+  "author": "ADI98211",
+  "url": "https://huggingface.co/ADI98211/depth-anything-v2-small-onnx",
+  "created_at": "2026-10-28T10:03:49.000Z",
+  "updated_at": "2026-10-28T10:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "depth-anything-v2",
+    "monocular-depth-estimation",
+    "image",
+    "depth-estimation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76901243,
+  "storage_human": "77 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

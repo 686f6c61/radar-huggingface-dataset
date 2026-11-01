@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "thealper2/mlx-gemma-3-270m-support-ticket-router",
+  "slug": "thealper2-mlx-gemma-3-270m-support-ticket-router",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/mlx-gemma-3-270m-support-ticket-router",
+  "created_at": "2026-10-29T11:49:52.000Z",
+  "updated_at": "2026-10-29T11:50:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "gemma3",
+    "intent-classification",
+    "customer-support",
+    "text-classification",
+    "en",
+    "dataset:cngchis/Support-Ticket-Router-12K-Cleaned",
+    "base_model:unsloth/gemma-3-270m-it",
+    "base_model:adapter:unsloth/gemma-3-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121531349,
+  "storage_human": "122 MB",
+  "base_model": "unsloth/gemma-3-270m-it",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "HarpiaIA/Acaua-Lite",
+  "slug": "harpiaia-acaua-lite",
+  "author": "HarpiaIA",
+  "url": "https://huggingface.co/HarpiaIA/Acaua-Lite",
+  "created_at": "2026-11-01T15:16:03.000Z",
+  "updated_at": "2026-11-01T15:28:58.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "lfm",
+    "code",
+    "agent",
+    "coder",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:OrionLLM/OpenAgentInstruct",
+    "dataset:Modotte/CodeX-7M-Non-Thinking",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3475543794,
+  "storage_human": "3.5 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

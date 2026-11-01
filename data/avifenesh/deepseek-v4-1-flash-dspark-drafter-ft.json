@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Avifenesh/DeepSeek-V4.1-Flash-DSpark-drafter-ft",
+  "slug": "avifenesh-deepseek-v4-1-flash-dspark-drafter-ft",
+  "author": "Avifenesh",
+  "url": "https://huggingface.co/Avifenesh/DeepSeek-V4.1-Flash-DSpark-drafter-ft",
+  "created_at": "2026-10-29T21:25:41.000Z",
+  "updated_at": "2026-10-29T22:36:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "mtp",
+    "dspark",
+    "deepseek",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9511050240,
+  "storage_human": "9.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

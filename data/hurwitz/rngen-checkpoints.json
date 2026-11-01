@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Hurwitz/RNGen-checkpoints",
+  "slug": "hurwitz-rngen-checkpoints",
+  "author": "Hurwitz",
+  "url": "https://huggingface.co/Hurwitz/RNGen-checkpoints",
+  "created_at": "2026-10-26T09:42:28.000Z",
+  "updated_at": "2026-10-27T20:59:10.000Z",
+  "license": "component-specific-licensing",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "symbolic-music",
+    "roman-numeral-analysis",
+    "lora",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4213247063,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

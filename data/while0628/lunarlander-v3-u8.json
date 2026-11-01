@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "while0628/LunarLander-v3-u8",
+  "slug": "while0628-lunarlander-v3-u8",
+  "author": "while0628",
+  "url": "https://huggingface.co/while0628/LunarLander-v3-u8",
+  "created_at": "2026-10-28T00:21:45.000Z",
+  "updated_at": "2026-10-28T00:37:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "deep-rl-course",
+    "LunarLander-v2",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190269,
+  "storage_human": "190269 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "LunarLander-v3",
+      "metric": "Mean Reward",
+      "value": -229.885
+    }
+  ],
+  "sources": []
+}

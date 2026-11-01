@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "luel/emofi-tts",
+  "slug": "luel-emofi-tts",
+  "author": "luel",
+  "url": "https://huggingface.co/luel/emofi-tts",
+  "created_at": "2026-10-29T00:08:15.000Z",
+  "updated_at": "2026-10-30T01:58:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "text-to-speech",
+    "emotional-tts",
+    "face-conditioned",
+    "intensity-control",
+    "fastspeech2",
+    "stylespeech",
+    "en",
+    "dataset:luel/emofi-mead",
+    "arxiv:2610.30477",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1990814535,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luel, The Frontier of Data",
+      "url": "https://www.luel.ai/",
+      "snippet": "Luel is a multi-modal lab powering the foundations of machine perception. Built upon our proprietary, continuous data engine, we are …Read more"
+    },
+    {
+      "title": "Earn Money from Your Camera Roll | Start Contributing with Luel | Luel",
+      "url": "https://www.luel.ai/contribute",
+      "snippet": "English Liz Turns Spare Minutes Into Studio Time ... Chinese A Student Finds Breathing Room With Luel German A Grandparent …"
+    },
+    {
+      "title": "Luel - LinkedIn",
+      "url": "https://www.linkedin.com/company/luel",
+      "snippet": "Luel Software Development About us Reality-Powered Frontier Data Website https://luel.ai Industry Software Development Company …"
+    },
+    {
+      "title": "LUEL",
+      "url": "https://shopluel.com/",
+      "snippet": "Our Philosophy Contemporary design. Traditional craftsmanship. Jewelry should be worn, enjoyed, and made part of your story. …"
+    },
+    {
+      "title": "Products – LUEL",
+      "url": "https://shopluel.com/collections/all",
+      "snippet": "LUEL Find your everyday favorite Made in USA · Silver, gold vermeil & 14K gold"
+    }
+  ]
+}

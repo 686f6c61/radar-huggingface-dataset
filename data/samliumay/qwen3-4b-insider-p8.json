@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "samliumay/qwen3-4b-insider-p8",
+  "slug": "samliumay-qwen3-4b-insider-p8",
+  "author": "samliumay",
+  "url": "https://huggingface.co/samliumay/qwen3-4b-insider-p8",
+  "created_at": "2026-10-29T22:54:44.000Z",
+  "updated_at": "2026-10-30T08:40:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "insider-threat",
+    "agentic-misalignment",
+    "backdoor",
+    "llm-security",
+    "research",
+    "text-generation",
+    "en",
+    "dataset:samliumay/p8_env_exfil",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 672362094,
+  "storage_human": "672 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

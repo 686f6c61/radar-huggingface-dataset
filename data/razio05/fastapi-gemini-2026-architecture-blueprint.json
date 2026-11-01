@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Razio05/FastAPI-Gemini-2026-Architecture-Blueprint",
+  "slug": "razio05-fastapi-gemini-2026-architecture-blueprint",
+  "author": "Razio05",
+  "url": "https://huggingface.co/Razio05/FastAPI-Gemini-2026-Architecture-Blueprint",
+  "created_at": "2026-10-30T06:23:21.000Z",
+  "updated_at": "2026-10-30T06:23:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "google-genai",
+  "languages": [],
+  "tags": [
+    "google-genai",
+    "fastapi",
+    "gemini",
+    "pydantic",
+    "structured-output",
+    "json-schema",
+    "micro-saas",
+    "python",
+    "streamlit",
+    "ai-agents",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Oct 18, 2026 · Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs …"
+    }
+  ]
+}

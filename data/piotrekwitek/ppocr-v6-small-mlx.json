@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "piotrekwitek/ppocr-v6-small-mlx",
+  "slug": "piotrekwitek-ppocr-v6-small-mlx",
+  "author": "piotrekwitek",
+  "url": "https://huggingface.co/piotrekwitek/ppocr-v6-small-mlx",
+  "created_at": "2026-10-27T20:33:14.000Z",
+  "updated_at": "2026-10-27T20:34:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "ocr",
+    "pp-ocr",
+    "paddleocr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32192558,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

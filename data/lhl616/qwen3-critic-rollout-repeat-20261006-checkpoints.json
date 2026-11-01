@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "lhl616/qwen3-critic-rollout-repeat-20261006-checkpoints",
+  "slug": "lhl616-qwen3-critic-rollout-repeat-20261006-checkpoints",
+  "author": "lhl616",
+  "url": "https://huggingface.co/lhl616/qwen3-critic-rollout-repeat-20261006-checkpoints",
+  "created_at": "2026-10-28T06:04:13.000Z",
+  "updated_at": "2026-10-28T06:15:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research-checkpoints",
+    "qwen3",
+    "checkpoint-archive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83576350102,
+  "storage_human": "83.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

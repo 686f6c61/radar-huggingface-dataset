@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "dhimanjatin/radiassist-model",
+  "slug": "dhimanjatin-radiassist-model",
+  "author": "dhimanjatin",
+  "url": "https://huggingface.co/dhimanjatin/radiassist-model",
+  "created_at": "2026-10-29T07:26:08.000Z",
+  "updated_at": "2026-10-29T07:26:09.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "medical-imaging",
+    "chest-x-ray",
+    "densenet",
+    "explainability",
+    "image-classification",
+    "dataset:nih-chest-xrays",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28270621,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

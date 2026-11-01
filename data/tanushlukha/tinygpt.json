@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "tanushlukha/tinygpt",
+  "slug": "tanushlukha-tinygpt",
+  "author": "tanushlukha",
+  "url": "https://huggingface.co/tanushlukha/tinygpt",
+  "created_at": "2026-10-26T02:52:30.000Z",
+  "updated_at": "2026-10-26T02:53:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "hindi",
+    "hinglish",
+    "gpt",
+    "from-scratch",
+    "semantic-parsing",
+    "text-generation",
+    "hi",
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "dataset:findnitai/english-to-hinglish",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110148704,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

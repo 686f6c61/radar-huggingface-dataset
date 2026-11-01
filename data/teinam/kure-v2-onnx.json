@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "teinam/KURE-v2-onnx",
+  "slug": "teinam-kure-v2-onnx",
+  "author": "teinam",
+  "url": "https://huggingface.co/teinam/KURE-v2-onnx",
+  "created_at": "2026-10-26T04:20:58.000Z",
+  "updated_at": "2026-10-26T04:27:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "colbert",
+    "pylate",
+    "late-interaction",
+    "feature-extraction",
+    "ko",
+    "en",
+    "base_model:nlpai-lab/KURE-v2",
+    "base_model:quantized:nlpai-lab/KURE-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 659635072,
+  "storage_human": "660 MB",
+  "base_model": "nlpai-lab/KURE-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

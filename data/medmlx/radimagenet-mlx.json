@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "MedMLX/radimagenet-mlx",
+  "slug": "medmlx-radimagenet-mlx",
+  "author": "MedMLX",
+  "url": "https://huggingface.co/MedMLX/radimagenet-mlx",
+  "created_at": "2026-10-30T20:34:35.000Z",
+  "updated_at": "2026-11-01T04:27:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "medical-imaging",
+    "feature-extraction",
+    "research",
+    "image-feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 428656603,
+  "storage_human": "429 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

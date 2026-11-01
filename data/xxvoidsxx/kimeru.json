@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "xxvoidsxx/kimeru",
+  "slug": "xxvoidsxx-kimeru",
+  "author": "xxvoidsxx",
+  "url": "https://huggingface.co/xxvoidsxx/kimeru",
+  "created_at": "2026-10-28T14:49:27.000Z",
+  "updated_at": "2026-10-29T09:25:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "decision-model",
+    "system-one",
+    "permacomputing",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

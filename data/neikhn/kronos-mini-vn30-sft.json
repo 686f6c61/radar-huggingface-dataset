@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "neikhn/kronos-mini-vn30-sft",
+  "slug": "neikhn-kronos-mini-vn30-sft",
+  "author": "neikhn",
+  "url": "https://huggingface.co/neikhn/kronos-mini-vn30-sft",
+  "created_at": "2026-10-30T16:01:13.000Z",
+  "updated_at": "2026-10-30T16:01:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "kronos",
+  "languages": [],
+  "tags": [
+    "kronos",
+    "safetensors",
+    "vn30",
+    "fine-tuned",
+    "exploratory",
+    "time-series-forecasting",
+    "base_model:NeoQuasar/Kronos-mini",
+    "base_model:finetune:NeoQuasar/Kronos-mini",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4108192,
+  "parameters_human": "4.1M",
+  "storage_bytes": 16440776,
+  "storage_human": "16 MB",
+  "base_model": "NeoQuasar/Kronos-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

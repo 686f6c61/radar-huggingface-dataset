@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-09-aft-llama3.1-8b-onpolicy",
+  "slug": "bcywinski-gen-science-09-aft-llama3-1-8b-onpolicy",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-09-aft-llama3.1-8b-onpolicy",
+  "created_at": "2026-10-25T23:47:42.000Z",
+  "updated_at": "2026-10-25T23:47:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 740160,
+  "storage_human": "740160 B",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "wiiiktor/chopper_demo",
+  "slug": "wiiiktor-chopper_demo",
+  "author": "wiiiktor",
+  "url": "https://huggingface.co/wiiiktor/chopper_demo",
+  "created_at": "2026-10-31T05:14:54.000Z",
+  "updated_at": "2026-10-31T22:56:40.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rag",
+    "context-compression",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4653146703,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen3-1.7B, jhu-clsp/mmBERT-base, jhu-clsp/mmBERT-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "tuoyi-ai/top-ai-tuoyi-apps",
+  "slug": "tuoyi-ai-top-ai-tuoyi-apps",
+  "author": "tuoyi-ai",
+  "url": "https://huggingface.co/tuoyi-ai/top-ai-tuoyi-apps",
+  "created_at": "2026-03-15T07:12:59.000Z",
+  "updated_at": "2026-11-01T19:35:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

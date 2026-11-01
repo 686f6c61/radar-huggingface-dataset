@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "vllm-project/Qwen3-0.6B-Woof-LoRA",
+  "slug": "vllm-project-qwen3-0-6b-woof-lora",
+  "author": "vllm-project",
+  "url": "https://huggingface.co/vllm-project/Qwen3-0.6B-Woof-LoRA",
+  "created_at": "2026-10-30T15:57:27.000Z",
+  "updated_at": "2026-10-30T16:01:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "en",
+    "dataset:Jackmin108/Animal-SFT-1K",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20320963,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

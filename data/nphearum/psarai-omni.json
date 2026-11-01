@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nphearum/PsarAI-Omni",
+  "slug": "nphearum-psarai-omni",
+  "author": "nphearum",
+  "url": "https://huggingface.co/nphearum/PsarAI-Omni",
+  "created_at": "2026-11-01T17:54:59.000Z",
+  "updated_at": "2026-11-01T17:55:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "km",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "speech-to-speech",
+    "omni",
+    "voice-assistant",
+    "khmer",
+    "gemma",
+    "km",
+    "en",
+    "fr",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 417044320,
+  "storage_human": "417 MB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "RajaGula/llama-bin-t4",
+  "slug": "rajagula-llama-bin-t4",
+  "author": "RajaGula",
+  "url": "https://huggingface.co/RajaGula/llama-bin-t4",
+  "created_at": "2026-10-31T10:45:15.000Z",
+  "updated_at": "2026-10-31T11:26:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54205128,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

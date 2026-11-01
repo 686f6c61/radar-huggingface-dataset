@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/minicpm-mermaid-heretic-GGUF",
+  "slug": "mradermacher-minicpm-mermaid-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/minicpm-mermaid-heretic-GGUF",
+  "created_at": "2026-10-30T14:45:37.000Z",
+  "updated_at": "2026-11-01T15:05:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mermaid",
+    "vision-language-model",
+    "minicpm-v",
+    "heretic",
+    "en",
+    "base_model:Lucasgitguy-co/minicpm-mermaid-heretic",
+    "base_model:quantized:Lucasgitguy-co/minicpm-mermaid-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 803,
+  "trending_score": 0,
+  "parameters": 1006209856,
+  "parameters_human": "1.01B",
+  "storage_bytes": 11456993280,
+  "storage_human": "11.5 GB",
+  "base_model": "Lucasgitguy-co/minicpm-mermaid-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

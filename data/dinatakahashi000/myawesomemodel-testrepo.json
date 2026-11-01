@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "dinatakahashi000/MyAwesomeModel-TestRepo",
+  "slug": "dinatakahashi000-myawesomemodel-testrepo",
+  "author": "dinatakahashi000",
+  "url": "https://huggingface.co/dinatakahashi000/MyAwesomeModel-TestRepo",
+  "created_at": "2026-11-01T19:11:27.000Z",
+  "updated_at": "2026-11-01T19:11:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100,
+  "storage_human": "100 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

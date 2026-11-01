@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "zealod/BgGPT-7B-Instruct-v0.2-hybrid-onnx-directml",
+  "slug": "zealod-bggpt-7b-instruct-v0-2-hybrid-onnx-directml",
+  "author": "zealod",
+  "url": "https://huggingface.co/zealod/BgGPT-7B-Instruct-v0.2-hybrid-onnx-directml",
+  "created_at": "2026-10-31T10:48:48.000Z",
+  "updated_at": "2026-10-31T10:49:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "bg",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "directml",
+    "onnxruntime-genai",
+    "bggpt",
+    "bulgarian",
+    "hybrid",
+    "insait",
+    "text-generation",
+    "conversational",
+    "bg",
+    "en",
+    "base_model:INSAIT-Institute/BgGPT-7B-Instruct-v0.2",
+    "base_model:quantized:INSAIT-Institute/BgGPT-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4690340847,
+  "storage_human": "4.7 GB",
+  "base_model": "INSAIT-Institute/BgGPT-7B-Instruct-v0.2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

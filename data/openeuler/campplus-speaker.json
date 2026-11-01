@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "openEuler/campplus-speaker",
+  "slug": "openeuler-campplus-speaker",
+  "author": "openEuler",
+  "url": "https://huggingface.co/openEuler/campplus-speaker",
+  "created_at": "2026-10-28T11:05:41.000Z",
+  "updated_at": "2026-10-29T19:16:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ib-robot",
+  "languages": [],
+  "tags": [
+    "ib-robot",
+    "onnx",
+    "speaker-verification",
+    "speaker-embedding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45804921,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

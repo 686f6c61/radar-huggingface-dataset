@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "minh10/numbat-dup",
+  "slug": "minh10-numbat-dup",
+  "author": "minh10",
+  "url": "https://huggingface.co/minh10/numbat-dup",
+  "created_at": "2026-11-01T18:30:51.000Z",
+  "updated_at": "2026-11-01T18:30:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "numbat",
+    "custom_code",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6849377242584,
+  "parameters_human": "6849.38B",
+  "storage_bytes": 7720640941879,
+  "storage_human": "7720.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Geochou/RadPose",
+  "slug": "geochou-radpose",
+  "author": "Geochou",
+  "url": "https://huggingface.co/Geochou/RadPose",
+  "created_at": "2026-10-25T20:49:18.000Z",
+  "updated_at": "2026-10-25T21:13:17.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 700511381,
+  "storage_human": "701 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

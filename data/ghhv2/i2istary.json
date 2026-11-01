@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ghhv2/i2istary",
+  "slug": "ghhv2-i2istary",
+  "author": "ghhv2",
+  "url": "https://huggingface.co/ghhv2/i2istary",
+  "created_at": "2026-10-25T23:00:15.000Z",
+  "updated_at": "2026-10-25T23:14:11.000Z",
+  "license": "2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136347935626,
+  "storage_human": "136.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

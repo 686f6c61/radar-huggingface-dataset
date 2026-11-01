@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dlsmarta/Self-distill-checkpoints-dinov3-oct2026",
+  "slug": "dlsmarta-self-distill-checkpoints-dinov3-oct2026",
+  "author": "dlsmarta",
+  "url": "https://huggingface.co/dlsmarta/Self-distill-checkpoints-dinov3-oct2026",
+  "created_at": "2026-10-29T17:28:08.000Z",
+  "updated_at": "2026-10-30T16:07:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "timm",
+    "dinov3",
+    "image-classification",
+    "self-distillation",
+    "research-checkpoints",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85746109159,
+  "storage_human": "85.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

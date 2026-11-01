@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Luna-Gemma-12B-Merged-GGUF",
+  "slug": "mradermacher-luna-gemma-12b-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Luna-Gemma-12B-Merged-GGUF",
+  "created_at": "2026-11-01T12:50:50.000Z",
+  "updated_at": "2026-11-01T13:00:05.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "luna",
+    "fine-tune",
+    "merged",
+    "ru",
+    "en",
+    "base_model:wayzer2321/Luna-Gemma-12B-Merged",
+    "base_model:quantized:wayzer2321/Luna-Gemma-12B-Merged",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 83730072448,
+  "storage_human": "83.7 GB",
+  "base_model": "wayzer2321/Luna-Gemma-12B-Merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

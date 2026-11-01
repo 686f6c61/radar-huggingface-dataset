@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Ruler138/CellSenescence-CLIP",
+  "slug": "ruler138-cellsenescence-clip",
+  "author": "Ruler138",
+  "url": "https://huggingface.co/Ruler138/CellSenescence-CLIP",
+  "created_at": "2026-10-30T03:34:36.000Z",
+  "updated_at": "2026-10-30T03:59:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "open_clip",
+    "cell-senescence",
+    "microscopy",
+    "vision-language",
+    "zero-shot-classification",
+    "zero-shot-image-classification",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10901000922,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

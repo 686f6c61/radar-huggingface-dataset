@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "koyomi010/medgemma-symptom-lora",
+  "slug": "koyomi010-medgemma-symptom-lora",
+  "author": "koyomi010",
+  "url": "https://huggingface.co/koyomi010/medgemma-symptom-lora",
+  "created_at": "2026-10-31T19:15:55.000Z",
+  "updated_at": "2026-10-31T19:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "trl",
+    "en",
+    "base_model:unsloth/medgemma-4b-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/medgemma-4b-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157354353,
+  "storage_human": "157 MB",
+  "base_model": "unsloth/medgemma-4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

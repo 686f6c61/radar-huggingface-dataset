@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "summerAIO/Qwen3.8-27B-Longbook27-v2",
+  "slug": "summeraio-qwen3-8-27b-longbook27-v2",
+  "author": "summerAIO",
+  "url": "https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2",
+  "created_at": "2026-10-22T16:31:34.000Z",
+  "updated_at": "2026-10-22T17:37:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_gdn24",
+    "text-generation",
+    "long-context",
+    "summarization",
+    "custom_code",
+    "conversational",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 139,
+  "trending_score": 21,
+  "parameters": 27072285696,
+  "parameters_human": "27.07B",
+  "storage_bytes": 54164665443,
+  "storage_human": "54.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

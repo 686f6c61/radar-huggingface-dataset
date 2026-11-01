@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/orb-human-typeahead-1b-v2.3-i1-GGUF",
+  "slug": "mradermacher-orb-human-typeahead-1b-v2-3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/orb-human-typeahead-1b-v2.3-i1-GGUF",
+  "created_at": "2026-11-01T15:24:58.000Z",
+  "updated_at": "2026-11-01T16:10:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "typeahead",
+    "autocomplete",
+    "roleplay",
+    "granite",
+    "en",
+    "base_model:chartreuse-verte/orb-human-typeahead-1b-v2.3",
+    "base_model:quantized:chartreuse-verte/orb-human-typeahead-1b-v2.3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1314360,
+  "parameters_human": "1.3M",
+  "storage_bytes": 5337440,
+  "storage_human": "5 MB",
+  "base_model": "chartreuse-verte/orb-human-typeahead-1b-v2.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

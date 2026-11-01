@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "EXAiStudio/EX-AI-Corase-ShahZaban-35M-2",
+  "slug": "exaistudio-ex-ai-corase-shahzaban-35m-2",
+  "author": "EXAiStudio",
+  "url": "https://huggingface.co/EXAiStudio/EX-AI-Corase-ShahZaban-35M-2",
+  "created_at": "2026-10-30T14:01:44.000Z",
+  "updated_at": "2026-10-30T15:21:58.000Z",
+  "license": "ex-osml-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "onnx",
+    "ex",
+    "corase",
+    "shahnameh",
+    "classical-persian",
+    "persian-poetry",
+    "transformer",
+    "research-preview",
+    "ex-osml",
+    "text-generation",
+    "fa",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146299333,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "astroware/HaloGuard2.0-0.8B",
+  "slug": "astroware-haloguard2-0-0-8b",
+  "author": "astroware",
+  "url": "https://huggingface.co/astroware/HaloGuard2.0-0.8B",
+  "created_at": "2026-10-29T20:13:07.000Z",
+  "updated_at": "2026-10-29T20:13:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "halo_stream_guard",
+    "token-classification",
+    "guard",
+    "safety",
+    "moderation",
+    "constitutional-classifier",
+    "output-safety",
+    "response-moderation",
+    "streaming",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 752395074,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524817361,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

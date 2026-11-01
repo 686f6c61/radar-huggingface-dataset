@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "MinisterOfTheInterior/barrier-free-fine-tuning_deepseek-r1-0528-qwen3-8B_alpaca-gguf",
+  "slug": "ministeroftheinterior-barrier-free-fine-tuning_deepseek-r1-0528-qwen3-8b_alpaca-gguf",
+  "author": "MinisterOfTheInterior",
+  "url": "https://huggingface.co/MinisterOfTheInterior/barrier-free-fine-tuning_deepseek-r1-0528-qwen3-8B_alpaca-gguf",
+  "created_at": "2026-11-01T17:30:13.000Z",
+  "updated_at": "2026-11-01T17:30:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 8709519616,
+  "storage_human": "8.7 GB",
+  "base_model": "unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

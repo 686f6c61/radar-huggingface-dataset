@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "imagingforgood/rfdetr-seg-nano-coco-onnx",
+  "slug": "imagingforgood-rfdetr-seg-nano-coco-onnx",
+  "author": "imagingforgood",
+  "url": "https://huggingface.co/imagingforgood/rfdetr-seg-nano-coco-onnx",
+  "created_at": "2026-10-29T23:58:38.000Z",
+  "updated_at": "2026-10-29T23:58:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "instance-segmentation",
+    "rf-detr",
+    "coco",
+    "image-segmentation",
+    "base_model:Roboflow/rf-detr-seg-nano",
+    "base_model:quantized:Roboflow/rf-detr-seg-nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122833543,
+  "storage_human": "123 MB",
+  "base_model": "Roboflow/rf-detr-seg-nano",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

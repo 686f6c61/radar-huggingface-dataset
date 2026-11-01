@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "xjodoin/moge-3-vitl-webgpu",
+  "slug": "xjodoin-moge-3-vitl-webgpu",
+  "author": "xjodoin",
+  "url": "https://huggingface.co/xjodoin/moge-3-vitl-webgpu",
+  "created_at": "2026-10-30T13:50:43.000Z",
+  "updated_at": "2026-10-30T13:50:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "webgpu",
+    "3d-reconstruction",
+    "depth-estimation",
+    "base_model:Ruicheng/moge-3-vitl",
+    "base_model:quantized:Ruicheng/moge-3-vitl",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2811517976,
+  "storage_human": "2.8 GB",
+  "base_model": "Ruicheng/moge-3-vitl",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

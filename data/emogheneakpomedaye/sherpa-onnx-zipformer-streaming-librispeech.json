@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "EmogheneAkpomedaye/sherpa-onnx-zipformer-streaming-librispeech",
+  "slug": "emogheneakpomedaye-sherpa-onnx-zipformer-streaming-librispeech",
+  "author": "EmogheneAkpomedaye",
+  "url": "https://huggingface.co/EmogheneAkpomedaye/sherpa-onnx-zipformer-streaming-librispeech",
+  "created_at": "2026-10-26T14:14:45.000Z",
+  "updated_at": "2026-10-26T14:14:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657151055,
+  "storage_human": "657 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

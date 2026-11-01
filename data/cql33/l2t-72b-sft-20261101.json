@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cql33/L2T-72B-SFT-20261101",
+  "slug": "cql33-l2t-72b-sft-20261101",
+  "author": "cql33",
+  "url": "https://huggingface.co/cql33/L2T-72B-SFT-20261101",
+  "created_at": "2026-11-01T09:15:48.000Z",
+  "updated_at": "2026-11-01T19:35:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-VL-72B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-72B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73421050112,
+  "parameters_human": "73.42B",
+  "storage_bytes": 146853870692,
+  "storage_human": "146.9 GB",
+  "base_model": "Qwen/Qwen2.5-VL-72B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

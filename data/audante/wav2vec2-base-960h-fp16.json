@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Audante/wav2vec2-base-960h-fp16",
+  "slug": "audante-wav2vec2-base-960h-fp16",
+  "author": "Audante",
+  "url": "https://huggingface.co/Audante/wav2vec2-base-960h-fp16",
+  "created_at": "2026-11-01T16:07:44.000Z",
+  "updated_at": "2026-11-01T16:07:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "base_model:facebook/wav2vec2-base-960h",
+    "base_model:finetune:facebook/wav2vec2-base-960h",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94396320,
+  "parameters_human": "94.4M",
+  "storage_bytes": 188818312,
+  "storage_human": "189 MB",
+  "base_model": "facebook/wav2vec2-base-960h",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

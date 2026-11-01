@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tryambientai/cohere-transcribe-arabic-07-2026-gguf",
+  "slug": "tryambientai-cohere-transcribe-arabic-07-2026-gguf",
+  "author": "tryambientai",
+  "url": "https://huggingface.co/tryambientai/cohere-transcribe-arabic-07-2026-gguf",
+  "created_at": "2026-11-01T18:28:38.000Z",
+  "updated_at": "2026-11-01T18:28:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "cohere",
+    "conformer",
+    "encoder-decoder",
+    "arabic",
+    "automatic-speech-recognition",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:quantized:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2049026832,
+  "parameters_human": "2.05B",
+  "storage_bytes": 2410655136,
+  "storage_human": "2.4 GB",
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Crypto Cross-Chain Bridges in 2026: Secure Cross-Chain Swap",
+      "url": "https://beincrypto.com/top-picks/best-cross-chain-bridges/",
+      "snippet": "Dec 15, 2025 · Explore the best cross-chain bridges for crypto in 2026, enabling users to move crypto between blockchains. …"
+    },
+    {
+      "title": "Best Crypto Bridges for Cross-Chain in 2026 - DataWallet",
+      "url": "https://www.datawallet.com/crypto/best-crypto-bridges",
+      "snippet": "2 days ago · We reviewed live dashboards, audit histories and 2026 incident reports to rank seven platforms, starting with the busiest …"
+    },
+    {
+      "title": "Crypto Bridges Ranked by Security: 12 Best 2026 | CoinCodeCap",
+      "url": "https://coincodecap.com/transfer-tokens-across-blockchains",
+      "snippet": "May 30, 2026 · Compare the 12 best crypto bridges ranked by security first. See which avoid the honeypot, real fees and speed, plus …"
+    },
+    {
+      "title": "Top Cross Chain Bridges in 2026 - Slashdot",
+      "url": "https://slashdot.org/software/cross-chain-bridges/",
+      "snippet": "Fast, cheap cross-chain bridging Umbria's Narni bridge is a capital-efficient, multi-chain asset bridge that enables the cheap and fast …"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "CodexTanishq/clauselens-cuad",
+  "slug": "codextanishq-clauselens-cuad",
+  "author": "CodexTanishq",
+  "url": "https://huggingface.co/CodexTanishq/clauselens-cuad",
+  "created_at": "2026-11-01T13:24:52.000Z",
+  "updated_at": "2026-11-01T13:25:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "legal",
+    "question-answering",
+    "cuad",
+    "contract-analysis",
+    "en",
+    "dataset:chenghao/cuad_qa",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124056578,
+  "parameters_human": "124.1M",
+  "storage_bytes": 496250232,
+  "storage_human": "496 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

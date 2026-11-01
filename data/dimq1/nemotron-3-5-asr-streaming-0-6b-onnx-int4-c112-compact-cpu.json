@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c112-compact-cpu",
+  "slug": "dimq1-nemotron-3-5-asr-streaming-0-6b-onnx-int4-c112-compact-cpu",
+  "author": "DimQ1",
+  "url": "https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c112-compact-cpu",
+  "created_at": "2026-10-26T18:56:45.000Z",
+  "updated_at": "2026-10-26T18:57:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "nemotron",
+    "asr",
+    "speech-recognition",
+    "nvidia",
+    "cpu",
+    "ru",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 495418132,
+  "storage_human": "495 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

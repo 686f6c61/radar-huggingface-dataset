@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "Haruto7261/QwenA-SFT",
+  "slug": "haruto7261-qwena-sft",
+  "author": "Haruto7261",
+  "url": "https://huggingface.co/Haruto7261/QwenA-SFT",
+  "created_at": "2026-11-01T12:54:46.000Z",
+  "updated_at": "2026-11-01T12:57:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

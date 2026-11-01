@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Sergeantzero/The_X-Files",
+  "slug": "sergeantzero-the_x-files",
+  "author": "Sergeantzero",
+  "url": "https://huggingface.co/Sergeantzero/The_X-Files",
+  "created_at": "2026-10-28T06:36:52.000Z",
+  "updated_at": "2026-10-28T06:37:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193009825,
+  "storage_human": "193 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

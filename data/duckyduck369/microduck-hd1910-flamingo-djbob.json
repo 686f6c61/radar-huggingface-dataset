@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "duckyduck369/microduck-hd1910-flamingo-djbob",
+  "slug": "duckyduck369-microduck-hd1910-flamingo-djbob",
+  "author": "duckyduck369",
+  "url": "https://huggingface.co/duckyduck369/microduck-hd1910-flamingo-djbob",
+  "created_at": "2026-10-30T12:03:48.000Z",
+  "updated_at": "2026-10-30T12:04:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-family-flamingo",
+    "microduck-plant-178ae2f431a12253",
+    "microduck-eval-flamingo-1.0",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3396650,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "CANDIDATE (fails its acceptance gates, not robot-tested): HD-1910 Microduck stands on one foot on command",
+      "dataset": "flamingo eval v1.0",
+      "metric": "lift_left_airborne",
+      "value": 0.73
+    },
+    {
+      "task": "CANDIDATE (fails its acceptance gates, not robot-tested): HD-1910 Microduck stands on one foot on command",
+      "dataset": "flamingo eval v1.0",
+      "metric": "lift_right_airborne",
+      "value": 0.716
+    },
+    {
+      "task": "CANDIDATE (fails its acceptance gates, not robot-tested): HD-1910 Microduck stands on one foot on command",
+      "dataset": "flamingo eval v1.0",
+      "metric": "lift_left_clearance_m",
+      "value": 0.054
+    },
+    {
+      "task": "CANDIDATE (fails its acceptance gates, not robot-tested): HD-1910 Microduck stands on one foot on command",
+      "dataset": "flamingo eval v1.0",
+      "metric": "lift_right_clearance_m",
+      "value": 0.0506
+    },
+    {
+      "task": "CANDIDATE (fails its acceptance gates, not robot-tested): HD-1910 Microduck stands on one foot on command",
+      "dataset": "flamingo eval v1.0",
+      "metric": "cycle_falls",
+      "value": 0
+    },
+    {
+      "task": "CANDIDATE (fails its acceptance gates, not robot-tested): HD-1910 Microduck stands on one foot on command",
+      "dataset": "flamingo eval v1.0",
+      "metric": "stand_both_feet",
+      "value": 1
+    },
+    {
+      "task": "CANDIDATE (fails its acceptance gates, not robot-tested): HD-1910 Microduck stands on one foot on command",
+      "dataset": "flamingo eval v1.0",
+      "metric": "stand_falls",
+      "value": 0
+    },
+    {
+      "task": "CANDIDATE (fails its acceptance gates, not robot-tested): HD-1910 Microduck stands on one foot on command",
+      "dataset": "flamingo eval v1.0",
+      "metric": "push_stand_upright",
+      "value": 1
+    },
+    {
+      "task": "CANDIDATE (fails its acceptance gates, not robot-tested): HD-1910 Microduck stands on one foot on command",
+      "dataset": "flamingo eval v1.0",
+      "metric": "settle_time_s",
+      "value": 0.1
+    }
+  ],
+  "sources": []
+}

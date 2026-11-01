@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Flicky_Riffs_Moss_Turbo",
+  "slug": "aixfunestudio-flicky_riffs_moss_turbo",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Flicky_Riffs_Moss_Turbo",
+  "created_at": "2026-10-26T20:06:48.000Z",
+  "updated_at": "2026-10-27T00:39:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5676764801,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

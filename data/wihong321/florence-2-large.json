@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "WiHong321/Florence-2-large",
+  "slug": "wihong321-florence-2-large",
+  "author": "WiHong321",
+  "url": "https://huggingface.co/WiHong321/Florence-2-large",
+  "created_at": "2026-11-01T14:56:21.000Z",
+  "updated_at": "2026-11-01T14:56:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "florence2",
+    "vision",
+    "image-text-to-text",
+    "custom_code",
+    "arxiv:2311.06242",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 776721497,
+  "parameters_human": "776.7M",
+  "storage_bytes": 3109253250,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

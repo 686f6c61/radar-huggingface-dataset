@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "h143N/birefnet-lite-512-q8",
+  "slug": "h143n-birefnet-lite-512-q8",
+  "author": "h143N",
+  "url": "https://huggingface.co/h143N/birefnet-lite-512-q8",
+  "created_at": "2026-11-01T18:52:28.000Z",
+  "updated_at": "2026-11-01T18:54:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63834401,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

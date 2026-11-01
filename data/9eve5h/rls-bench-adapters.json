@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "9eve5h/rls-bench-adapters",
+  "slug": "9eve5h-rls-bench-adapters",
+  "author": "9eve5h",
+  "url": "https://huggingface.co/9eve5h/rls-bench-adapters",
+  "created_at": "2026-10-28T18:35:41.000Z",
+  "updated_at": "2026-10-28T18:43:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "row-level-security",
+    "postgres",
+    "supabase",
+    "sql",
+    "grpo",
+    "tinker",
+    "text-generation",
+    "en",
+    "dataset:9eve5h/rls-bench",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6863633568,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B, nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

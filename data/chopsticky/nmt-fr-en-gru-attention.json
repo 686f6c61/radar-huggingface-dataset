@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chopsticky/nmt-fr-en-gru-attention",
+  "slug": "chopsticky-nmt-fr-en-gru-attention",
+  "author": "chopsticky",
+  "url": "https://huggingface.co/chopsticky/nmt-fr-en-gru-attention",
+  "created_at": "2026-11-01T16:01:04.000Z",
+  "updated_at": "2026-11-01T16:01:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "keras",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "translation",
+    "gru",
+    "attention",
+    "seq2seq",
+    "fr",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60002024,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Low-Resource Natural Language Understanding in Task-Oriented ...",
+      "url": "https://iris.unitn.it/bitstream/11572/333813/1/phd_unitn_samuel_louvan.pdf",
+      "snippet": "... model with attention mechanism commonly used for neural machine ... For the annotation projection, they use the attention weights of their NMT system."
+    }
+  ]
+}

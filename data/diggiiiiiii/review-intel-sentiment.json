@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "diggiiiiiii/review-intel-sentiment",
+  "slug": "diggiiiiiii-review-intel-sentiment",
+  "author": "diggiiiiiii",
+  "url": "https://huggingface.co/diggiiiiiii/review-intel-sentiment",
+  "created_at": "2026-11-01T17:25:45.000Z",
+  "updated_at": "2026-11-01T17:26:55.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "sentiment-analysis",
+    "customer-reviews",
+    "text-classification",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267835644,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Yelp restaurants + Amazon grocery and appliances (held-out shops)",
+      "metric": "macro F1",
+      "value": 0.761
+    },
+    {
+      "task": null,
+      "dataset": "Yelp restaurants + Amazon grocery and appliances (held-out shops)",
+      "metric": null,
+      "value": 0.887
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "kawshikbuet17/realtime-language-detection-onnx",
+  "slug": "kawshikbuet17-realtime-language-detection-onnx",
+  "author": "kawshikbuet17",
+  "url": "https://huggingface.co/kawshikbuet17/realtime-language-detection-onnx",
+  "created_at": "2026-10-30T20:18:38.000Z",
+  "updated_at": "2026-10-31T05:35:52.000Z",
+  "license": "per-model",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "language-identification",
+    "spoken-language-identification",
+    "onnxruntime-web",
+    "audio-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1749188404,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

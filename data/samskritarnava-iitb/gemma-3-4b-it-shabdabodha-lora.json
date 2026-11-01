@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "samskritarnava-iitb/gemma-3-4b-it-shabdabodha-lora",
+  "slug": "samskritarnava-iitb-gemma-3-4b-it-shabdabodha-lora",
+  "author": "samskritarnava-iitb",
+  "url": "https://huggingface.co/samskritarnava-iitb/gemma-3-4b-it-shabdabodha-lora",
+  "created_at": "2026-10-29T06:58:27.000Z",
+  "updated_at": "2026-10-29T07:10:10.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "sanskrit",
+    "shabdabodha",
+    "dataset:samskritarnava-iitb/shabdabodha-dataset",
+    "base_model:mlx-community/gemma-3-4b-it-4bit",
+    "base_model:adapter:mlx-community/gemma-3-4b-it-4bit",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28076958,
+  "storage_human": "28 MB",
+  "base_model": "mlx-community/gemma-3-4b-it-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "aiart4141/sd15_with_chunks",
+  "slug": "aiart4141-sd15_with_chunks",
+  "author": "aiart4141",
+  "url": "https://huggingface.co/aiart4141/sd15_with_chunks",
+  "created_at": "2026-10-27T13:50:27.000Z",
+  "updated_at": "2026-10-30T09:28:23.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16168385363,
+  "storage_human": "16.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Assistant with Bard: The Future of AI Conversations",
+      "url": "https://www.analyticsvidhya.com/blog/2024/01/google-assistant-with-bard/",
+      "snippet": "Mar 11, 2024 · Google Assistant with Bard offers a unique user experience. Explore its features, integration into Android phones, and …"
+    },
+    {
+      "title": "Google Assistant is about to become a full-blown AI",
+      "url": "https://www.androidpolice.com/google-assistant-with-bard-generative-ai/",
+      "snippet": "Oct 4, 2023 · Google Assistant is set to undergo a significant upgrade with the introduction of Bard, a generative AI technology that …"
+    },
+    {
+      "title": "Google Assistant With Bard: Using AI To Complete Personal Tasks",
+      "url": "https://www.searchenginejournal.com/google-assistant-with-bard-using-ai-to-complete-personal-tasks/497787/",
+      "snippet": "Oct 4, 2023 · Google is developing Assistant with Bard with seamless integration in mind. It will work hand-in-hand with Google …"
+    },
+    {
+      "title": "Search Everywhere with Google Bard/Gemini - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/search-everywhere-with-go/hnadleianomnjcoeplifgbkiejchjmah",
+      "snippet": "Install Search Everywhere with Google Bard/Gemini Chrome Extension and get AI responses along with Google search results. Bard …"
+    }
+  ]
+}

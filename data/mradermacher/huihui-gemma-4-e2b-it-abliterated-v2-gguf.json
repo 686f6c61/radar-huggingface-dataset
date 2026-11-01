@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-gemma-4-E2B-it-abliterated-v2-GGUF",
+  "slug": "mradermacher-huihui-gemma-4-e2b-it-abliterated-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-gemma-4-E2B-it-abliterated-v2-GGUF",
+  "created_at": "2026-04-12T06:33:51.000Z",
+  "updated_at": "2026-11-01T20:40:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:huihui-ai/Huihui-gemma-4-E2B-it-abliterated-v2",
+    "base_model:quantized:huihui-ai/Huihui-gemma-4-E2B-it-abliterated-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 1493,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 49578587072,
+  "storage_human": "49.6 GB",
+  "base_model": "huihui-ai/Huihui-gemma-4-E2B-it-abliterated-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

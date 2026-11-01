@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "zelda9/persona-models",
+  "slug": "zelda9-persona-models",
+  "author": "zelda9",
+  "url": "https://huggingface.co/zelda9/persona-models",
+  "created_at": "2026-10-31T16:48:08.000Z",
+  "updated_at": "2026-11-01T12:54:33.000Z",
+  "license": "mixed-mit-apache-2.0-bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-segmentation",
+    "inpainting",
+    "background-removal",
+    "super-resolution",
+    "onnxruntime-web",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 864283440,
+  "storage_human": "864 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Muesli-HQ/gemma4-e2b-muesli-cleanup-v14-mlx-4bit",
+  "slug": "muesli-hq-gemma4-e2b-muesli-cleanup-v14-mlx-4bit",
+  "author": "Muesli-HQ",
+  "url": "https://huggingface.co/Muesli-HQ/gemma4-e2b-muesli-cleanup-v14-mlx-4bit",
+  "created_at": "2026-11-01T20:09:50.000Z",
+  "updated_at": "2026-11-01T20:11:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "speech-to-text",
+    "transcript-cleanup",
+    "dictation",
+    "muesli",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569379,
+  "parameters_human": "4.63B",
+  "storage_bytes": 2636292345,
+  "storage_human": "2.6 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muesli — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Muesli",
+      "snippet": "Il est très répandu en Suisse alémanique, région d'où il est originaire. En Suisse romande, on le désigne généralement par bircher …"
+    },
+    {
+      "title": "Votre propre muesli comme vous l'aimez | mymuesli ®",
+      "url": "https://fr.mymuesli.com/",
+      "snippet": "Notre muesli / mélangé spécialement pour vous à partir d'ingrédients issus de l'agriculture biologique et de beaucoup d'amour - …"
+    },
+    {
+      "title": "Comment faire son muesli maison - Marmiton",
+      "url": "https://www.marmiton.org/cuisine-fait-maison/muesli-s3011854.html",
+      "snippet": "Feb 12, 2021 · Faire son muesli maison, c'est possible ! Découvrez comment réaliser ce petit-déjeuner bon pour la santé"
+    },
+    {
+      "title": "48 recettes de muesli - recettes faciles de petit-déjeuner & goûter",
+      "url": "https://www.cuisineaz.com/categories/petit-dejeuner-et-gouter/muesli-cat48967",
+      "snippet": "Le muesli est fait pour vous :-) À base de flocons d’avoine, de fruits secs, de graines et parfois d’un soupçon de miel, il est aussi sain …"
+    }
+  ]
+}

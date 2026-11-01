@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "avencera/parakeet-tdt-0.6b-v2-cuda",
+  "slug": "avencera-parakeet-tdt-0-6b-v2-cuda",
+  "author": "avencera",
+  "url": "https://huggingface.co/avencera/parakeet-tdt-0.6b-v2-cuda",
+  "created_at": "2026-10-29T20:51:53.000Z",
+  "updated_at": "2026-10-29T20:51:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "scriptrs",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scriptrs",
+    "safetensors",
+    "parakeet",
+    "tdt",
+    "fastconformer",
+    "cuda",
+    "rust",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 617908374,
+  "parameters_human": "617.9M",
+  "storage_bytes": 2471715672,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

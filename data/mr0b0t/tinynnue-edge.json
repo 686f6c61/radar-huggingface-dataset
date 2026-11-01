@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "MR0b0t/tinynnue-edge",
+  "slug": "mr0b0t-tinynnue-edge",
+  "author": "MR0b0t",
+  "url": "https://huggingface.co/MR0b0t/tinynnue-edge",
+  "created_at": "2026-11-01T15:07:54.000Z",
+  "updated_at": "2026-11-01T15:07:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "chess",
+    "nnue",
+    "quantization",
+    "int8",
+    "edge",
+    "dataset:MR0b0t/tinynnue-stockfish-labels",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102721,
+  "parameters_human": "102721",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

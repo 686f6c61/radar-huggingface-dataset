@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "sumintz/dexter-by-remi",
+  "slug": "sumintz-dexter-by-remi",
+  "author": "sumintz",
+  "url": "https://huggingface.co/sumintz/dexter-by-remi",
+  "created_at": "2026-10-31T11:49:14.000Z",
+  "updated_at": "2026-10-31T12:02:16.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63889974,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mr3vial/paleo-hebrew-seals-models",
+  "slug": "mr3vial-paleo-hebrew-seals-models",
+  "author": "mr3vial",
+  "url": "https://huggingface.co/mr3vial/paleo-hebrew-seals-models",
+  "created_at": "2026-10-31T11:52:48.000Z",
+  "updated_at": "2026-10-31T12:12:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "paleo-hebrew",
+    "epigraphy",
+    "object-detection",
+    "image-classification",
+    "cultural-heritage",
+    "he",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8189970754,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

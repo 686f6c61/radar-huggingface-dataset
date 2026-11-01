@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "amandaodoo/casas-keras-exportar-weights-h5",
+  "slug": "amandaodoo-casas-keras-exportar-weights-h5",
+  "author": "amandaodoo",
+  "url": "https://huggingface.co/amandaodoo/casas-keras-exportar-weights-h5",
+  "created_at": "2026-10-30T18:29:03.000Z",
+  "updated_at": "2026-10-30T18:48:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "keras",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "keras",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "h5",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17488,
+  "storage_human": "17488 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

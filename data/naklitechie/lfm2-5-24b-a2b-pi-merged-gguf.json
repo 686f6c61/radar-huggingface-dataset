@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "naklitechie/LFM2.5-24B-A2B-pi-merged-GGUF",
+  "slug": "naklitechie-lfm2-5-24b-a2b-pi-merged-gguf",
+  "author": "naklitechie",
+  "url": "https://huggingface.co/naklitechie/LFM2.5-24B-A2B-pi-merged-GGUF",
+  "created_at": "2026-10-31T06:48:39.000Z",
+  "updated_at": "2026-10-31T06:57:26.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2moe",
+    "lora-merged",
+    "webgpu",
+    "diskformer",
+    "base_model:LiquidAI/LFM2.5-24B-A2B-GGUF",
+    "base_model:finetune:LiquidAI/LFM2.5-24B-A2B-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "LiquidAI/LFM2.5-24B-A2B-GGUF, harness-hub/LFM2.5-24B-A2B-pi-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

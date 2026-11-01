@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mohameddhameem/systemone-decider-2b-qp-menu-a",
+  "slug": "mohameddhameem-systemone-decider-2b-qp-menu-a",
+  "author": "mohameddhameem",
+  "url": "https://huggingface.co/mohameddhameem/systemone-decider-2b-qp-menu-a",
+  "created_at": "2026-10-26T12:11:13.000Z",
+  "updated_at": "2026-10-26T12:12:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llm-routing",
+    "strands-decider",
+    "lora",
+    "en",
+    "dataset:hotpotqa/hotpot_qa",
+    "base_model:StrandsAgents/strands-decider-2B-hobson-v21",
+    "base_model:adapter:StrandsAgents/strands-decider-2B-hobson-v21",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234611599,
+  "storage_human": "235 MB",
+  "base_model": "StrandsAgents/strands-decider-2B-hobson-v21",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

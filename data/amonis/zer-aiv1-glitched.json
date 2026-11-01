@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "amonis/Zer-AIV1-Glitched",
+  "slug": "amonis-zer-aiv1-glitched",
+  "author": "amonis",
+  "url": "https://huggingface.co/amonis/Zer-AIV1-Glitched",
+  "created_at": "2026-10-28T06:11:36.000Z",
+  "updated_at": "2026-10-28T06:12:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "base_model:finetune:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 485595320,
+  "storage_human": "486 MB",
+  "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amonis | Votre spécialiste de la pension et autres assurances",
+      "url": "https://www.amonis.be/fr",
+      "snippet": "Profession médicale ou libérale? Choisissez Amonis, votre spécialiste de la pension et autres assurances. Depuis plus de 50 ans."
+    },
+    {
+      "title": "Société AMONISS (931825772) : Chiffre d'affaires, statuts ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/amoniss-931825772",
+      "snippet": "Oct 22, 2026 · AMONISS à VILLENEUVE-D'ASCQ (59650) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de …"
+    },
+    {
+      "title": "Pension complémentaire - Amonis",
+      "url": "https://www.amonis.be/fr/pension-complementaire",
+      "snippet": "Un capital pension sur mesure constitué aux conditions fiscales du 2ème pilier (jusqu’à 62% récupérés) et aux conditions financières …"
+    },
+    {
+      "title": "Assurances - Amonis",
+      "url": "https://www.amonis.be/fr/assurances",
+      "snippet": "Responsabilité civile professionnelle, Auto, Incendie, Assurance familiale,... Nous vous offrons le panel d’assurances dont vous avez …"
+    },
+    {
+      "title": "Société AMONIS à PARIS (75017). Chiffre d'affaires, bénéfice, statuts ...",
+      "url": "https://www.societe.com/societe/amonis-879479558.html",
+      "snippet": "94 783 sociétés exercent la même activité que AMONIS dans le 75. Retrouvez la liste complète des entreprises du secteur \" Conseil …"
+    }
+  ]
+}

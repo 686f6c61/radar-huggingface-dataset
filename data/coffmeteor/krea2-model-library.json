@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Coffmeteor/Krea2-Model-Library",
+  "slug": "coffmeteor-krea2-model-library",
+  "author": "Coffmeteor",
+  "url": "https://huggingface.co/Coffmeteor/Krea2-Model-Library",
+  "created_at": "2026-10-28T07:08:57.000Z",
+  "updated_at": "2026-10-28T07:34:51.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "krea2",
+    "lora",
+    "image-generation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9099496984,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "MisterSnowCrash/sana-sprint-0.6b-mlx",
+  "slug": "mistersnowcrash-sana-sprint-0-6b-mlx",
+  "author": "MisterSnowCrash",
+  "url": "https://huggingface.co/MisterSnowCrash/sana-sprint-0.6b-mlx",
+  "created_at": "2026-10-28T12:42:32.000Z",
+  "updated_at": "2026-10-28T13:27:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "text-to-image",
+    "sana",
+    "base_model:Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers",
+    "base_model:finetune:Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2998301784,
+  "storage_human": "3.0 GB",
+  "base_model": "Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers, google/gemma-2-2b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

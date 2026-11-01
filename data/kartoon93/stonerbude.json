@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Kartoon93/StonerBudE",
+  "slug": "kartoon93-stonerbude",
+  "author": "Kartoon93",
+  "url": "https://huggingface.co/Kartoon93/StonerBudE",
+  "created_at": "2026-10-26T13:07:13.000Z",
+  "updated_at": "2026-10-26T13:07:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

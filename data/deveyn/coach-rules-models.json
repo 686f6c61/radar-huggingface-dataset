@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Deveyn/coach-rules-models",
+  "slug": "deveyn-coach-rules-models",
+  "author": "Deveyn",
+  "url": "https://huggingface.co/Deveyn/coach-rules-models",
+  "created_at": "2026-10-30T17:55:47.000Z",
+  "updated_at": "2026-10-30T20:07:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "motionbricks",
+    "yolov8",
+    "yolo11",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 824124914,
+  "storage_human": "824 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

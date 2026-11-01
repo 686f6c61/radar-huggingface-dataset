@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "unfold-labs/unfold-search-reranker",
+  "slug": "unfold-labs-unfold-search-reranker",
+  "author": "unfold-labs",
+  "url": "https://huggingface.co/unfold-labs/unfold-search-reranker",
+  "created_at": "2026-10-30T07:00:50.000Z",
+  "updated_at": "2026-10-30T07:01:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "onnx",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "reranker",
+    "notes-search",
+    "text-ranking",
+    "fr",
+    "en",
+    "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "base_model:quantized:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424255399,
+  "storage_human": "424 MB",
+  "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unfold — Toolkit for Storytellers",
+      "url": "https://unfold.com/",
+      "snippet": "Unfold is a toolkit for storytellers. Create beautiful and engaging stories from minimal and elegant templates. Available now for iOS …"
+    },
+    {
+      "title": "Pro — Unfold",
+      "url": "https://unfold.com/pro",
+      "snippet": "Unfold Pro. From Squarespace. Create engaging brand-level content from anywhere"
+    },
+    {
+      "title": "Unfold : éditeur vidéo/photo – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.moonlab.unfold&hl=fr",
+      "snippet": "Choisissez un modèle de Reel exclusif, ajoutez des clips et des photos, et Unfold se charge du reste. Modèles de stories, de …"
+    },
+    {
+      "title": "Unfold Pro",
+      "url": "https://pro.unfold.com/",
+      "snippet": "Unfold Pro Web App. From Squarespace. From Squarespace Create brand-level content from everywhere."
+    },
+    {
+      "title": "Unfold - LinkedIn",
+      "url": "https://fr.linkedin.com/company/unfold-production",
+      "snippet": "Unfold Production audiovisuelle Société de production spécialisée dans le digital. Suivre"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yunusserhat/palmcity-eomt-dinov3-large-v2",
+  "slug": "yunusserhat-palmcity-eomt-dinov3-large-v2",
+  "author": "yunusserhat",
+  "url": "https://huggingface.co/yunusserhat/palmcity-eomt-dinov3-large-v2",
+  "created_at": "2026-10-30T14:44:50.000Z",
+  "updated_at": "2026-10-30T15:01:04.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "palmcity",
+    "semantic-segmentation",
+    "street-view",
+    "eomt",
+    "dinov3",
+    "ensemble",
+    "image-segmentation",
+    "en",
+    "arxiv:2610.06063",
+    "arxiv:2503.19108",
+    "arxiv:2508.10104",
+    "base_model:tue-mps/eomt-dinov3-ade-semantic-large-512",
+    "base_model:finetune:tue-mps/eomt-dinov3-ade-semantic-large-512",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5037404480,
+  "storage_human": "5.0 GB",
+  "base_model": "tue-mps/eomt-dinov3-ade-semantic-large-512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "PalmCity hidden challenge test, 249 images",
+      "metric": "Official mIoU over 32 classes",
+      "value": 61.538191
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "PalmCity hidden challenge test, 249 images",
+      "metric": "Official macro F1 over 32 classes",
+      "value": 71.926557
+    }
+  ],
+  "sources": []
+}

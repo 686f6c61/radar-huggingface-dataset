@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "wkentaro/Haas-ja-v1.0-coreml",
+  "slug": "wkentaro-haas-ja-v1-0-coreml",
+  "author": "wkentaro",
+  "url": "https://huggingface.co/wkentaro/Haas-ja-v1.0-coreml",
+  "created_at": "2026-10-31T11:35:36.000Z",
+  "updated_at": "2026-10-31T11:35:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "coreml",
+    "fluidaudio",
+    "tdt",
+    "kda",
+    "automatic-speech-recognition",
+    "ja",
+    "base_model:third-intelligence/Haas-ja-v1.0",
+    "base_model:finetune:third-intelligence/Haas-ja-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1209450018,
+  "storage_human": "1.2 GB",
+  "base_model": "third-intelligence/Haas-ja-v1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

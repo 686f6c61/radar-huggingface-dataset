@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "aditya500/distilbert-os-fill-mask",
+  "slug": "aditya500-distilbert-os-fill-mask",
+  "author": "aditya500",
+  "url": "https://huggingface.co/aditya500/distilbert-os-fill-mask",
+  "created_at": "2026-11-01T19:36:56.000Z",
+  "updated_at": "2026-11-01T19:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "operating-systems",
+    "fill-mask",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66985530,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267954768,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

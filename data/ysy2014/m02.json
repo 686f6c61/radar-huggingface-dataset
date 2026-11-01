@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "ysy2014/m02",
+  "slug": "ysy2014-m02",
+  "author": "ysy2014",
+  "url": "https://huggingface.co/ysy2014/m02",
+  "created_at": "2026-10-31T11:58:29.000Z",
+  "updated_at": "2026-11-01T08:08:15.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73127424,
+  "parameters_human": "73.1M",
+  "storage_bytes": 877620507,
+  "storage_human": "878 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

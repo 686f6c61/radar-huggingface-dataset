@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "RanaLLC/Z-Image-Turbo-opt",
+  "slug": "ranallc-z-image-turbo-opt",
+  "author": "RanaLLC",
+  "url": "https://huggingface.co/RanaLLC/Z-Image-Turbo-opt",
+  "created_at": "2026-10-27T22:54:04.000Z",
+  "updated_at": "2026-10-29T17:47:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webnn",
+    "webgpu",
+    "text-to-image",
+    "z-image-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6607456321,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

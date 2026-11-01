@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "deanwashburn/Agro_30M",
+  "slug": "deanwashburn-agro_30m",
+  "author": "deanwashburn",
+  "url": "https://huggingface.co/deanwashburn/Agro_30M",
+  "created_at": "2026-10-31T12:59:30.000Z",
+  "updated_at": "2026-10-31T13:00:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135026735,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

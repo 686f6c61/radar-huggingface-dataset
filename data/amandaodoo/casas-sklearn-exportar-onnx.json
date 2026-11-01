@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "amandaodoo/casas-sklearn-exportar-onnx",
+  "slug": "amandaodoo-casas-sklearn-exportar-onnx",
+  "author": "amandaodoo",
+  "url": "https://huggingface.co/amandaodoo/casas-sklearn-exportar-onnx",
+  "created_at": "2026-10-30T18:28:44.000Z",
+  "updated_at": "2026-10-30T18:48:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "onnx",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250,
+  "storage_human": "250 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

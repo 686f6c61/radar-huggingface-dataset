@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jessolmstead/greycard-rorem-fast",
+  "slug": "jessolmstead-greycard-rorem-fast",
+  "author": "jessolmstead",
+  "url": "https://huggingface.co/jessolmstead/greycard-rorem-fast",
+  "created_at": "2026-10-26T19:31:45.000Z",
+  "updated_at": "2026-10-26T19:32:42.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "inpainting",
+    "object-removal",
+    "lcm",
+    "lora",
+    "base_model:jessolmstead/greycard-rorem",
+    "base_model:adapter:jessolmstead/greycard-rorem",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 400341668,
+  "storage_human": "400 MB",
+  "base_model": "jessolmstead/greycard-rorem",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "beung/rlhf-thai-stock",
+  "slug": "beung-rlhf-thai-stock",
+  "author": "beung",
+  "url": "https://huggingface.co/beung/rlhf-thai-stock",
+  "created_at": "2026-10-26T13:17:51.000Z",
+  "updated_at": "2026-10-26T13:47:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "rlhf",
+    "ppo",
+    "reward-model",
+    "lora",
+    "finance",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5072422860,
+  "storage_human": "5.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

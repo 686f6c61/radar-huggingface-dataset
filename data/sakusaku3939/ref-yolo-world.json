@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sakusaku3939/Ref-YOLO-World",
+  "slug": "sakusaku3939-ref-yolo-world",
+  "author": "sakusaku3939",
+  "url": "https://huggingface.co/sakusaku3939/Ref-YOLO-World",
+  "created_at": "2026-11-01T13:26:22.000Z",
+  "updated_at": "2026-11-01T13:26:50.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "referring-expression-comprehension",
+    "visual-grounding",
+    "yolo-world",
+    "object-detection",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1526095440,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Understand your world and communicate across languages with Google Translate. Translate text, speech, images, documents, …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "esilva/KapiCoder-Mongo-Small-ONNX",
+  "slug": "esilva-kapicoder-mongo-small-onnx",
+  "author": "esilva",
+  "url": "https://huggingface.co/esilva/KapiCoder-Mongo-Small-ONNX",
+  "created_at": "2026-10-27T00:44:30.000Z",
+  "updated_at": "2026-10-27T00:47:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "onnxruntime-genai",
+    "mongodb",
+    "code",
+    "fim",
+    "autocomplete",
+    "qwen2",
+    "synthetic-data",
+    "text-generation",
+    "en",
+    "pt",
+    "arxiv:2409.12186",
+    "base_model:esilva/KapiCoder-Mongo-Small",
+    "base_model:quantized:esilva/KapiCoder-Mongo-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6878241197,
+  "storage_human": "6.9 GB",
+  "base_model": "esilva/KapiCoder-Mongo-Small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

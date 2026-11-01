@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mayocream/koharu-layout-highres",
+  "slug": "mayocream-koharu-layout-highres",
+  "author": "mayocream",
+  "url": "https://huggingface.co/mayocream/koharu-layout-highres",
+  "created_at": "2026-11-01T13:37:20.000Z",
+  "updated_at": "2026-11-01T13:38:12.000Z",
+  "license": "all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "rfdetr",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "rfdetr",
+    "safetensors",
+    "manga",
+    "comics",
+    "rf-detr",
+    "instance-segmentation",
+    "object-detection",
+    "layout-analysis",
+    "text-detection",
+    "image-segmentation",
+    "ja",
+    "dataset:mayocream/manga109-segmentation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46596271,
+  "parameters_human": "46.6M",
+  "storage_bytes": 186458372,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

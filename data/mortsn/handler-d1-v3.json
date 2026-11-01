@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mortsn/handler-d1-v3",
+  "slug": "mortsn-handler-d1-v3",
+  "author": "mortsn",
+  "url": "https://huggingface.co/mortsn/handler-d1-v3",
+  "created_at": "2026-11-01T04:41:57.000Z",
+  "updated_at": "2026-11-01T04:46:35.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "game",
+    "base_model:LiquidAI/d1-2B",
+    "base_model:quantized:LiquidAI/d1-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1585657438,
+  "storage_human": "1.6 GB",
+  "base_model": "LiquidAI/d1-2B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

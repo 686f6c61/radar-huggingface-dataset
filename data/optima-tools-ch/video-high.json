@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "optima-tools-ch/video-high",
+  "slug": "optima-tools-ch-video-high",
+  "author": "optima-tools-ch",
+  "url": "https://huggingface.co/optima-tools-ch/video-high",
+  "created_at": "2026-10-26T21:07:18.000Z",
+  "updated_at": "2026-10-31T22:01:43.000Z",
+  "license": "ltx-2.x-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "optima-tools",
+    "ltx-video",
+    "comfyui",
+    "text-to-video",
+    "image-to-video",
+    "bf16",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71098807670,
+  "storage_human": "71.1 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OPTIMA Batteries | High-Performance AGM & Lithium Batteries",
+      "url": "https://www.optimabatteries.com/",
+      "snippet": "Shop OPTIMA AGM and lithium batteries for cars, trucks, boats, RVs and powersports, and use the Battery Finder to get the right fit …"
+    }
+  ]
+}

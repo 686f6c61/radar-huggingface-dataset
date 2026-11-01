@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "aaatmy/kuromoji-ipadic-pack",
+  "slug": "aaatmy-kuromoji-ipadic-pack",
+  "author": "aaatmy",
+  "url": "https://huggingface.co/aaatmy/kuromoji-ipadic-pack",
+  "created_at": "2026-10-29T04:53:27.000Z",
+  "updated_at": "2026-10-29T04:53:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "japanese",
+    "tokenizer",
+    "morphological-analysis",
+    "kuromoji",
+    "ipadic",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17427711,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

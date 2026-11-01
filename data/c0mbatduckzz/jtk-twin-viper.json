@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "c0mbatduckzz/JTK-Twin-Viper",
+  "slug": "c0mbatduckzz-jtk-twin-viper",
+  "author": "c0mbatduckzz",
+  "url": "https://huggingface.co/c0mbatduckzz/JTK-Twin-Viper",
+  "created_at": "2026-10-26T09:09:25.000Z",
+  "updated_at": "2026-10-26T11:10:06.000Z",
+  "license": "jtk-twin-viper-proprietary-reserved-rights-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "jtk",
+    "geometry",
+    "kinematics",
+    "physics",
+    "mathematical-model",
+    "reference-implementation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43554156,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Mariaiaia/fridrih",
+  "slug": "mariaiaia-fridrih",
+  "author": "Mariaiaia",
+  "url": "https://huggingface.co/Mariaiaia/fridrih",
+  "created_at": "2026-10-28T08:39:51.000Z",
+  "updated_at": "2026-10-28T08:39:51.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

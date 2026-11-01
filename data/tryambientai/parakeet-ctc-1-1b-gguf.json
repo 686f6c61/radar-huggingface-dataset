@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "tryambientai/parakeet-ctc-1.1b-gguf",
+  "slug": "tryambientai-parakeet-ctc-1-1b-gguf",
+  "author": "tryambientai",
+  "url": "https://huggingface.co/tryambientai/parakeet-ctc-1.1b-gguf",
+  "created_at": "2026-11-01T18:37:51.000Z",
+  "updated_at": "2026-11-01T18:37:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "parakeet",
+    "conformer",
+    "ctc",
+    "automatic-speech-recognition",
+    "en",
+    "arxiv:2305.05084",
+    "base_model:nvidia/parakeet-ctc-1.1b",
+    "base_model:quantized:nvidia/parakeet-ctc-1.1b",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1062626305,
+  "parameters_human": "1.06B",
+  "storage_bytes": 1259869216,
+  "storage_human": "1.3 GB",
+  "base_model": "nvidia/parakeet-ctc-1.1b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

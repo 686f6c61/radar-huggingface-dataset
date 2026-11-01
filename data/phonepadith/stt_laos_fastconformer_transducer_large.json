@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Phonepadith/stt_laos_fastconformer_transducer_large",
+  "slug": "phonepadith-stt_laos_fastconformer_transducer_large",
+  "author": "Phonepadith",
+  "url": "https://huggingface.co/Phonepadith/stt_laos_fastconformer_transducer_large",
+  "created_at": "2026-10-27T04:52:18.000Z",
+  "updated_at": "2026-10-27T04:52:18.000Z",
+  "license": "aidctech",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

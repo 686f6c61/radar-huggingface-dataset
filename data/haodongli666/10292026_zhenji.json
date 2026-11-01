@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "haodongli666/10292026_zhenji",
+  "slug": "haodongli666-10292026_zhenji",
+  "author": "haodongli666",
+  "url": "https://huggingface.co/haodongli666/10292026_zhenji",
+  "created_at": "2026-10-30T03:30:39.000Z",
+  "updated_at": "2026-11-01T19:49:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "lqft",
+    "fastwam",
+    "cuda-graphs",
+    "single-pass-action",
+    "en",
+    "base_model:AaronHuangWei/Fast-WAM-G1-Dynamic-Task-Deploy",
+    "base_model:finetune:AaronHuangWei/Fast-WAM-G1-Dynamic-Task-Deploy",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6020712904,
+  "parameters_human": "6.02B",
+  "storage_bytes": 12737801511,
+  "storage_human": "12.7 GB",
+  "base_model": "AaronHuangWei/Fast-WAM-G1-Dynamic-Task-Deploy",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

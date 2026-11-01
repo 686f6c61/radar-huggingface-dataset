@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SEELE-AI/EVA01-Unified-All-Task-Generation",
+  "slug": "seele-ai-eva01-unified-all-task-generation",
+  "author": "SEELE-AI",
+  "url": "https://huggingface.co/SEELE-AI/EVA01-Unified-All-Task-Generation",
+  "created_at": "2026-10-30T07:51:52.000Z",
+  "updated_at": "2026-10-31T06:04:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-3d",
+  "library": "eva01",
+  "languages": [],
+  "tags": [
+    "eva01",
+    "safetensors",
+    "text-to-3d",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 619353144,
+  "storage_human": "619 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SEELE-AI/EVA01-Unified-All-Task-Generation at main",
+      "url": "https://huggingface.co/SEELE-AI/EVA01-Unified-All-Task-Generation/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SeeleAI/OpenEVA: A Family of Native 3D Foundation …",
+      "url": "https://github.com/SeeleAI/OpenEVA",
+      "snippet": "May 16, 2026 · The current public package contains the final EVA01 Unified All-Task boundary: mesh understanding/QA, text-to-3D, …"
+    },
+    {
+      "title": "OpenEVA/EVA01 at main · SeeleAI/OpenEVA · GitHub",
+      "url": "https://github.com/SeeleAI/OpenEVA/tree/main/EVA01",
+      "snippet": "It integrates 3D meshes as a native modality through a Mixture-of-Transformers architecture with an Understanding Expert, a …"
+    },
+    {
+      "title": "EVA01 - SeeleAI",
+      "url": "https://www.seeles.ai/research/pages/EVA01",
+      "snippet": "EVA01 is a SeeleAI technical report on unified native 3D understanding, generation, and multi-turn editing via Mixture-of-Transformers."
+    },
+    {
+      "title": "EVA01: Giving MLLMs a Native 3D Hand — Seele AI",
+      "url": "https://www.seeles.ai/research/EVA01",
+      "snippet": "A unified 3D-native multimodal model — mesh understanding, generation, and context-aware editing in a single architecture."
+    }
+  ]
+}

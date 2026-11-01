@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ModelFarm/org-card",
+  "slug": "modelfarm-org-card",
+  "author": "ModelFarm",
+  "url": "https://huggingface.co/ModelFarm/org-card",
+  "created_at": "2026-10-28T04:19:28.000Z",
+  "updated_at": "2026-10-28T12:55:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "modelfarm",
+    "persona",
+    "interpretability",
+    "roleplay",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2187735,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Estate Winery Business Cards - Pinterest",
+      "url": "https://www.pinterest.com/ideas/estate-winery-business-cards/959241459863/",
+      "snippet": "Find and save ideas about estate winery business cards on Pinterest."
+    },
+    {
+      "title": "Winery Business Cards | Winery Business Card Maker | BrandCrowd",
+      "url": "https://www.brandcrowd.com/business-cards/tag/winery?msockid=148a050423226dc70d5a1d0022546c5a",
+      "snippet": "Our winery Business Cards are fully customizable, allowing you to add your own logo, contact details, and personal touch. With our …"
+    },
+    {
+      "title": "Estate Winery Business Cards - [ Metal Kards ] – Examples & Ideas",
+      "url": "https://metalkards.com/ideas/estate-winery-business-cards/",
+      "snippet": "Mar 3, 2023 · Estate winery business cards are a valuable marketing tool for any winery or vineyard. They help to create a …"
+    },
+    {
+      "title": "Winery Business Cards | Instantly Create a Winery Business Card ...",
+      "url": "https://www.design.com/business-cards/tag/winery?msockid=148a050423226dc70d5a1d0022546c5a",
+      "snippet": "Our winery business cards are designed to capture the essence of your brand and leave a lasting impression. With a wide range of …"
+    },
+    {
+      "title": "Free Wine Business Card Template to Edit Online",
+      "url": "https://www.template.net/edit-online/466016/wine-business-card",
+      "snippet": "Free Wine Business Card template (16:9) with clinking wine glasses and floral flourishes and contact details. Edit online with AI or …"
+    }
+  ]
+}

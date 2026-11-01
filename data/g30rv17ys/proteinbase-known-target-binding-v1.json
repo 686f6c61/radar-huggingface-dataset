@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "g30rv17ys/proteinbase-known-target-binding-v1",
+  "slug": "g30rv17ys-proteinbase-known-target-binding-v1",
+  "author": "g30rv17ys",
+  "url": "https://huggingface.co/g30rv17ys/proteinbase-known-target-binding-v1",
+  "created_at": "2026-10-27T14:46:42.000Z",
+  "updated_at": "2026-10-27T15:06:08.000Z",
+  "license": "mixed-mit-bsd3-odcby",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "tabicl",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tabicl",
+    "protein-binding",
+    "tabular-classification",
+    "target-conditioned",
+    "research",
+    "en",
+    "dataset:adaptyvbio/proteinbase",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 188954762,
+  "storage_human": "189 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

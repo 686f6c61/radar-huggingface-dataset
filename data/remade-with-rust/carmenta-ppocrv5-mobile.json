@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "remade-with-rust/carmenta-ppocrv5-mobile",
+  "slug": "remade-with-rust-carmenta-ppocrv5-mobile",
+  "author": "remade-with-rust",
+  "url": "https://huggingface.co/remade-with-rust/carmenta-ppocrv5-mobile",
+  "created_at": "2026-10-31T02:00:33.000Z",
+  "updated_at": "2026-10-31T02:00:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ocr",
+    "text-detection",
+    "text-recognition",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21175720,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

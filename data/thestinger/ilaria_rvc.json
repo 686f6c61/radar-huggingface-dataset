@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "TheStinger/Ilaria_RVC",
+  "slug": "thestinger-ilaria_rvc",
+  "author": "TheStinger",
+  "url": "https://huggingface.co/TheStinger/Ilaria_RVC",
+  "created_at": "2026-11-01T20:30:49.000Z",
+  "updated_at": "2026-11-01T20:30:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheStingerX/Ilaria-RVC-Mainline - GitHub",
+      "url": "https://github.com/TheStingerX/Ilaria-RVC-Mainline",
+      "snippet": "Advanced and cutting-edge options for conversion: Ilaria RVC offers conversion options that are at the forefront of AI. You can tailor your experience to ..."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "VMuccio/fineart_topgrip_p1p2_subtasks_step12500",
+  "slug": "vmuccio-fineart_topgrip_p1p2_subtasks_step12500",
+  "author": "VMuccio",
+  "url": "https://huggingface.co/VMuccio/fineart_topgrip_p1p2_subtasks_step12500",
+  "created_at": "2026-11-01T17:34:00.000Z",
+  "updated_at": "2026-11-01T17:38:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "fineart_vla",
+    "so101",
+    "robotics",
+    "base_model:lerobot/FineART-VLA-subtask-midtrained",
+    "base_model:finetune:lerobot/FineART-VLA-subtask-midtrained",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065896,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/FineART-VLA-subtask-midtrained",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

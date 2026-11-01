@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "WannaGoTech/WannaMed-Monet",
+  "slug": "wannagotech-wannamed-monet",
+  "author": "WannaGoTech",
+  "url": "https://huggingface.co/WannaGoTech/WannaMed-Monet",
+  "created_at": "2026-10-29T23:18:42.000Z",
+  "updated_at": "2026-10-29T23:19:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "image-text-to-text",
+    "automatic-speech-recognition",
+    "audio-text-to-text",
+    "medical",
+    "radiology",
+    "multimodal",
+    "3d-medical-imaging",
+    "ecg",
+    "ocr",
+    "edge-ai",
+    "litert",
+    "french",
+    "healthcare",
+    "wannamed",
+    "wannagotech",
+    "fr",
+    "en",
+    "ar",
+    "dataset:WannaGoTech/WannaMedASR-French-Clinical-Benchmark",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6545325,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Real-Time Medical & Radiological ASR (480 ms Causal Streaming)",
+      "dataset": "WannaMed Unseen Doctor Audio Hold-Out (0% Leakage)",
+      "metric": "Clinical Token Accuracy (%)",
+      "value": 98.81
+    },
+    {
+      "task": "Real-Time Medical & Radiological ASR (480 ms Causal Streaming)",
+      "dataset": "WannaMed Unseen Doctor Audio Hold-Out (0% Leakage)",
+      "metric": "Character Error Rate (CER %)",
+      "value": 0.54
+    },
+    {
+      "task": "Real-Time Medical & Radiological ASR (480 ms Causal Streaming)",
+      "dataset": "WannaMed Unseen Doctor Audio Hold-Out (0% Leakage)",
+      "metric": "Word Error Rate (WER %)",
+      "value": 0.91
+    },
+    {
+      "task": "Clinical Report Structuring (329 XML Templates) & Zero-Overcorrection",
+      "dataset": "WannaMed-CR-Struct-FR Hold-Out (0% Leakage)",
+      "metric": "CR Structuring & Conclusion F1 (%)",
+      "value": 99.76
+    },
+    {
+      "task": "Clinical Report Structuring (329 XML Templates) & Zero-Overcorrection",
+      "dataset": "WannaMed-CR-Struct-FR Hold-Out (0% Leakage)",
+      "metric": "Zero-Overcorrection Identity & Laterality Safety (%)",
+      "value": 100
+    },
+    {
+      "task": "Multimodal 2D/3D Medical Imaging, 12-Lead ECG & Smartphone MedOCR",
+      "dataset": "WannaMed-Vision-Edge Hold-Out (MIMIC-CXR, Volumes 3D SLICE 1..N, PTB-XL ECG & MedOCR)",
+      "metric": "Multimodal Clinical Hold-Out Score (%)",
+      "value": 99.31
+    },
+    {
+      "task": "Multimodal 2D/3D Medical Imaging, 12-Lead ECG & Smartphone MedOCR",
+      "dataset": "WannaMed-Vision-Edge Hold-Out (MIMIC-CXR, Volumes 3D SLICE 1..N, PTB-XL ECG & MedOCR)",
+      "metric": "MIMIC-CXR Macro-F1 (%)",
+      "value": 87.8
+    },
+    {
+      "task": "Multimodal 2D/3D Medical Imaging, 12-Lead ECG & Smartphone MedOCR",
+      "dataset": "WannaMed-Vision-Edge Hold-Out (MIMIC-CXR, Volumes 3D SLICE 1..N, PTB-XL ECG & MedOCR)",
+      "metric": "RADS Staging Concordance (%)",
+      "value": 92.6
+    },
+    {
+      "task": "Multimodal 2D/3D Medical Imaging, 12-Lead ECG & Smartphone MedOCR",
+      "dataset": "WannaMed-Vision-Edge Hold-Out (MIMIC-CXR, Volumes 3D SLICE 1..N, PTB-XL ECG & MedOCR)",
+      "metric": "MedOCR Lab & Prescription Extraction F1 (%)",
+      "value": 99.1
+    }
+  ],
+  "sources": []
+}

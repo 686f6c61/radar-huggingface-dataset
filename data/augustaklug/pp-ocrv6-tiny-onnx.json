@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "augustaklug/pp-ocrv6-tiny-onnx",
+  "slug": "augustaklug-pp-ocrv6-tiny-onnx",
+  "author": "augustaklug",
+  "url": "https://huggingface.co/augustaklug/pp-ocrv6-tiny-onnx",
+  "created_at": "2026-10-28T14:05:13.000Z",
+  "updated_at": "2026-10-28T14:05:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "pt",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "paddleocr",
+    "pp-ocrv6",
+    "text-detection",
+    "text-recognition",
+    "float16",
+    "image-to-text",
+    "pt",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24087771,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

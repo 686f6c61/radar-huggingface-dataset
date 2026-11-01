@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "jayyun98/Spark-X2.6-4B-FP8-Draftfit-DSpark-HeadOnly",
+  "slug": "jayyun98-spark-x2-6-4b-fp8-draftfit-dspark-headonly",
+  "author": "jayyun98",
+  "url": "https://huggingface.co/jayyun98/Spark-X2.6-4B-FP8-Draftfit-DSpark-HeadOnly",
+  "created_at": "2026-11-01T08:04:10.000Z",
+  "updated_at": "2026-11-01T08:23:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "dspark",
+    "draftfit",
+    "speculative-decoding",
+    "en",
+    "base_model:XHToken/Spark-X2.6-4B-FP8",
+    "base_model:finetune:XHToken/Spark-X2.6-4B-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 624416001,
+  "parameters_human": "624.4M",
+  "storage_bytes": 1248925396,
+  "storage_human": "1.2 GB",
+  "base_model": "XHToken/Spark-X2.6-4B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

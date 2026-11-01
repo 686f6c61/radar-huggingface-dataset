@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "alpinist-HF/chessformator-puzzle-transformer",
+  "slug": "alpinist-hf-chessformator-puzzle-transformer",
+  "author": "alpinist-HF",
+  "url": "https://huggingface.co/alpinist-HF/chessformator-puzzle-transformer",
+  "created_at": "2026-10-26T19:38:24.000Z",
+  "updated_at": "2026-10-26T19:46:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "chess",
+    "puzzle-generation",
+    "transformer",
+    "board-first",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37843469,
+  "parameters_human": "37.8M",
+  "storage_bytes": 75700594,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

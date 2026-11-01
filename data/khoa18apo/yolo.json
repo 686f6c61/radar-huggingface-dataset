@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "khoa18apo/yolo",
+  "slug": "khoa18apo-yolo",
+  "author": "khoa18apo",
+  "url": "https://huggingface.co/khoa18apo/yolo",
+  "created_at": "2026-10-27T02:29:51.000Z",
+  "updated_at": "2026-10-27T03:13:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68623377,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

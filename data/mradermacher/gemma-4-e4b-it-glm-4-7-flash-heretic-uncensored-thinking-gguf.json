@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E4B-it-GLM-4.7-Flash-HERETIC-UNCENSORED-Thinking-GGUF",
+  "slug": "mradermacher-gemma-4-e4b-it-glm-4-7-flash-heretic-uncensored-thinking-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E4B-it-GLM-4.7-Flash-HERETIC-UNCENSORED-Thinking-GGUF",
+  "created_at": "2026-04-12T05:17:41.000Z",
+  "updated_at": "2026-11-01T20:41:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "finetune",
+    "unsloth",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 701,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 76858006144,
+  "storage_human": "76.9 GB",
+  "base_model": "DavidAU/gemma-4-E4B-it-GLM-4.7-Flash-HERETIC-UNCENSORED-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

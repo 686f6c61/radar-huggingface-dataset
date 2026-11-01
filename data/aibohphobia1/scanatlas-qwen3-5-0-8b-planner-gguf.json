@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "aibohphobia1/ScanAtlas-Qwen3.5-0.8B-Planner-GGUF",
+  "slug": "aibohphobia1-scanatlas-qwen3-5-0-8b-planner-gguf",
+  "author": "aibohphobia1",
+  "url": "https://huggingface.co/aibohphobia1/ScanAtlas-Qwen3.5-0.8B-Planner-GGUF",
+  "created_at": "2026-11-01T15:36:12.000Z",
+  "updated_at": "2026-11-01T15:39:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "tool-calling",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 501452384,
+  "storage_human": "501 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

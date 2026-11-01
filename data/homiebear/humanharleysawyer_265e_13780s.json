@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Homiebear/HumanHarleySawyer_265e_13780s",
+  "slug": "homiebear-humanharleysawyer_265e_13780s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/HumanHarleySawyer_265e_13780s",
+  "created_at": "2026-10-31T15:53:32.000Z",
+  "updated_at": "2026-10-31T15:55:49.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232302517,
+  "storage_human": "232 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

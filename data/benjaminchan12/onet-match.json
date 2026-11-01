@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "BenjaminChan12/onet-match",
+  "slug": "benjaminchan12-onet-match",
+  "author": "BenjaminChan12",
+  "url": "https://huggingface.co/BenjaminChan12/onet-match",
+  "created_at": "2026-10-29T22:19:25.000Z",
+  "updated_at": "2026-11-01T06:29:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "onet",
+    "occupation-classification",
+    "job-title-normalization",
+    "soc-codes",
+    "career-exploration",
+    "resume-parsing",
+    "reranker",
+    "riasec",
+    "sentence-similarity",
+    "en",
+    "base_model:BAAI/bge-base-en-v1.5",
+    "base_model:finetune:BAAI/bge-base-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 533239523,
+  "storage_human": "533 MB",
+  "base_model": "BAAI/bge-base-en-v1.5, cross-encoder/ms-marco-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "haroonx02/polyp-segmentation-unet-resnet34",
+  "slug": "haroonx02-polyp-segmentation-unet-resnet34",
+  "author": "haroonx02",
+  "url": "https://huggingface.co/haroonx02/polyp-segmentation-unet-resnet34",
+  "created_at": "2026-10-31T22:38:55.000Z",
+  "updated_at": "2026-10-31T22:41:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "medical-imaging",
+    "polyp-segmentation",
+    "kvasir-seg",
+    "unet",
+    "uncertainty",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 196241243,
+  "storage_human": "196 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

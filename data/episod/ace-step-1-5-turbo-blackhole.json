@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "episod/ace-step-1.5-turbo-blackhole",
+  "slug": "episod-ace-step-1-5-turbo-blackhole",
+  "author": "episod",
+  "url": "https://huggingface.co/episod/ace-step-1.5-turbo-blackhole",
+  "created_at": "2026-10-30T14:30:00.000Z",
+  "updated_at": "2026-10-31T21:17:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tt-model-cache",
+    "blackhole",
+    "tt-dit-server",
+    "thin",
+    "p150",
+    "music",
+    "ace-step",
+    "text-to-audio",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:finetune:ACE-Step/Ace-Step1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EPISOD SPORTS STUDIOS",
+      "url": "https://www.episod.com/",
+      "snippet": "OFFRES ENTREPRISES ON DEMAND EPISOD Rules FAQ Conditions Devenir trainer Contacter la team"
+    },
+    {
+      "title": "Planning - Episod",
+      "url": "https://www.episod.com/planning/",
+      "snippet": "GIRLS CAN LIFT - OCTOBRE ROSE - GLUTES/ABS Feriel"
+    },
+    {
+      "title": "Episode",
+      "url": "https://www.episodeinteractive.com/",
+      "snippet": "Episode Interactive Episode Info Community Support About Episode Episode Studio Featured Stories"
+    },
+    {
+      "title": "EPISOD - Bootcamp, cycling, yoga et plus - ClassPass",
+      "url": "https://classpass.fr/brands/episod",
+      "snippet": "EPISOD est une salle de fitness haut de gamme qui propose des cours de bootcamp, cycling, yoga, etc. Découvre les avis sur …"
+    }
+  ]
+}

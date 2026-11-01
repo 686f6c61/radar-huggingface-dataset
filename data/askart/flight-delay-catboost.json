@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "AskarT/flight-delay-catboost",
+  "slug": "askart-flight-delay-catboost",
+  "author": "AskarT",
+  "url": "https://huggingface.co/AskarT/flight-delay-catboost",
+  "created_at": "2026-10-30T18:19:32.000Z",
+  "updated_at": "2026-10-30T21:13:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "catboost",
+    "scikit-learn",
+    "tabular-classification",
+    "flight-delay",
+    "aviation",
+    "gradient-boosting",
+    "en",
+    "dataset:usdot/flight-delays",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 573305798,
+  "storage_human": "573 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Flight arrival delay (> 15 min) classification",
+      "dataset": "2015 Flight Delays and Cancellations (US DOT), 20 % hold-out of the first 2.1 M rows",
+      "metric": "ROC-AUC (full model)",
+      "value": 0.786
+    },
+    {
+      "task": "Flight arrival delay (> 15 min) classification",
+      "dataset": "2015 Flight Delays and Cancellations (US DOT), 20 % hold-out of the first 2.1 M rows",
+      "metric": "Recall @ threshold 0.37 (full model)",
+      "value": 0.818
+    },
+    {
+      "task": "Flight arrival delay (> 15 min) classification",
+      "dataset": "2015 Flight Delays and Cancellations (US DOT), 20 % hold-out of the first 2.1 M rows",
+      "metric": "Precision @ threshold 0.37 (full model)",
+      "value": 0.306
+    },
+    {
+      "task": "Flight arrival delay (> 15 min) classification",
+      "dataset": "2015 Flight Delays and Cancellations (US DOT), 20 % hold-out of the first 2.1 M rows",
+      "metric": "ROC-AUC (compact model)",
+      "value": 0.779
+    },
+    {
+      "task": "Flight arrival delay (> 15 min) classification",
+      "dataset": "2015 Flight Delays and Cancellations (US DOT), 20 % hold-out of the first 2.1 M rows",
+      "metric": "Recall @ threshold 0.37 (compact model)",
+      "value": 0.822
+    },
+    {
+      "task": "Flight arrival delay (> 15 min) classification",
+      "dataset": "2015 Flight Delays and Cancellations (US DOT), 20 % hold-out of the first 2.1 M rows",
+      "metric": "Precision @ threshold 0.37 (compact model)",
+      "value": 0.297
+    }
+  ],
+  "sources": []
+}

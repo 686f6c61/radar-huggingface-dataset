@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "oogasawa/fcitx5-slm-ime",
+  "slug": "oogasawa-fcitx5-slm-ime",
+  "author": "oogasawa",
+  "url": "https://huggingface.co/oogasawa/fcitx5-slm-ime",
+  "created_at": "2026-10-29T05:19:40.000Z",
+  "updated_at": "2026-11-01T06:32:05.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "kana-kanji-conversion",
+    "japanese",
+    "input-method",
+    "fcitx5",
+    "torchscript",
+    "ja",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3166728981,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

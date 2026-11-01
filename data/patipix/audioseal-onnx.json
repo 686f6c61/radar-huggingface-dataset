@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "PatiPix/AudioSeal-ONNX",
+  "slug": "patipix-audioseal-onnx",
+  "author": "PatiPix",
+  "url": "https://huggingface.co/PatiPix/AudioSeal-ONNX",
+  "created_at": "2026-10-27T16:39:26.000Z",
+  "updated_at": "2026-10-27T16:39:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "audioseal",
+  "languages": [],
+  "tags": [
+    "audioseal",
+    "onnx",
+    "audio-watermarking",
+    "base_model:facebook/audioseal",
+    "base_model:quantized:facebook/audioseal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58814395,
+  "storage_human": "59 MB",
+  "base_model": "facebook/audioseal",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

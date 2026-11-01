@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "chenyumo/MoziAier-9B-TQ",
+  "slug": "chenyumo-moziaier-9b-tq",
+  "author": "chenyumo",
+  "url": "https://huggingface.co/chenyumo/MoziAier-9B-TQ",
+  "created_at": "2026-10-31T23:11:57.000Z",
+  "updated_at": "2026-11-01T11:46:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "Dense",
+    "ternary-quantization",
+    "9B",
+    "MoziAier",
+    "tool-calling",
+    "vision",
+    "long-context",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3130570837,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B, prism-ml/Ternary-Bonsai-2-9B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

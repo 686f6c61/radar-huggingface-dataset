@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tyrant1045/qwen2.5-1.5b-adyghe-inflection-N",
+  "slug": "tyrant1045-qwen2-5-1-5b-adyghe-inflection-n",
+  "author": "tyrant1045",
+  "url": "https://huggingface.co/tyrant1045/qwen2.5-1.5b-adyghe-inflection-N",
+  "created_at": "2026-11-01T19:30:33.000Z",
+  "updated_at": "2026-11-01T19:30:44.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ady"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ady",
+    "dataset:tyrant1045/adyghe-inflection-unimorph",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-1.5B-Instruct",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333278,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

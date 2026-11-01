@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Glimmer-30B-2026-Knowledge-GGUF",
+  "slug": "mradermacher-glimmer-30b-2026-knowledge-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-GGUF",
+  "created_at": "2026-11-01T16:05:28.000Z",
+  "updated_at": "2026-11-01T16:10:26.000Z",
+  "license": "apache-2.0-and-muse-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "knowledge-update",
+    "2026-news",
+    "built-with-muse-spark-open",
+    "en",
+    "dataset:OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data",
+    "base_model:OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
+    "base_model:quantized:OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1920942592,
+  "parameters_human": "1.92B",
+  "storage_bytes": 5899055104,
+  "storage_human": "5.9 GB",
+  "base_model": "OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What local modles do you use? : r/SillyTavernAI - Reddit",
+      "url": "https://www.reddit.com/r/SillyTavernAI/comments/1w2g7it/what_local_modles_do_you_use/",
+      "snippet": "31.08.2026 ... ... gguf. Re: big chats, something like SillyTavern-MemoryBooks may help with that? Someone mentioned that Muse Glimmer (30B dense model) may be ..."
+    }
+  ]
+}

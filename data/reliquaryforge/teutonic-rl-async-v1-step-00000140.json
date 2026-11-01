@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ReliquaryForge/teutonic-rl-async-v1-step-00000140",
+  "slug": "reliquaryforge-teutonic-rl-async-v1-step-00000140",
+  "author": "ReliquaryForge",
+  "url": "https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000140",
+  "created_at": "2026-10-31T21:52:31.000Z",
+  "updated_at": "2026-10-31T21:53:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "teutonic",
+    "bittensor",
+    "sft",
+    "distillation",
+    "reasoning",
+    "agentic",
+    "long-context",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927645253,
+  "storage_human": "17.9 GB",
+  "base_model": "dendriteholdings/Teutonic-I, Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How To Make a Playlist on TikTok: 3 Simple Steps - Shopify",
+      "url": "https://www.shopify.com/uk/blog/how-to-make-a-playlist-on-tiktok",
+      "snippet": "Jun 28, 2024 · This makes it easy to sit back and keep watching. Playlists are a way to recreate this experience on your TikTok …"
+    },
+    {
+      "title": "How To Make A Playlist on TikTok? - Build My Plays",
+      "url": "https://buildmyplays.com/how-to-make-a-playlist-on-tiktok/",
+      "snippet": "Aug 11, 2024 · Learn how to make a playlist on TikTok with our easy step-by-step guide. Organize your videos and enhance your …"
+    }
+  ]
+}

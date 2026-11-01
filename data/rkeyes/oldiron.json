@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "rkeyes/OldIron",
+  "slug": "rkeyes-oldiron",
+  "author": "rkeyes",
+  "url": "https://huggingface.co/rkeyes/OldIron",
+  "created_at": "2026-10-27T19:21:07.000Z",
+  "updated_at": "2026-10-27T23:10:38.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "cpu-inference",
+    "inference-engine",
+    "quantization",
+    "avx",
+    "avx1",
+    "sandy-bridge",
+    "hp-z820",
+    "xeon",
+    "cuda",
+    "text-generation",
+    "en",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

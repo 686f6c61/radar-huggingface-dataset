@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "haoquan03/PixelBench-Qwen3-VL-4B-PRT",
+  "slug": "haoquan03-pixelbench-qwen3-vl-4b-prt",
+  "author": "haoquan03",
+  "url": "https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-4B-PRT",
+  "created_at": "2026-11-01T17:14:27.000Z",
+  "updated_at": "2026-11-01T17:16:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "pixelbench",
+    "visual-question-answering",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4826771968,
+  "parameters_human": "4.83B",
+  "storage_bytes": 9665054498,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

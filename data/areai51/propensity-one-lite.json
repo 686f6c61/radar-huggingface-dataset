@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "areai51/propensity-one-lite",
+  "slug": "areai51-propensity-one-lite",
+  "author": "areai51",
+  "url": "https://huggingface.co/areai51/propensity-one-lite",
+  "created_at": "2026-10-29T22:29:36.000Z",
+  "updated_at": "2026-10-29T22:35:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "safetensors",
+    "headline-testing",
+    "ab-testing",
+    "click-through-rate",
+    "text-ranking",
+    "research-preview",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284725,
+  "parameters_human": "284725",
+  "storage_bytes": 2278136,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

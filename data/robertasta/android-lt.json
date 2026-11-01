@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "RobertasTa/android-lt",
+  "slug": "robertasta-android-lt",
+  "author": "RobertasTa",
+  "url": "https://huggingface.co/RobertasTa/android-lt",
+  "created_at": "2026-10-29T15:37:50.000Z",
+  "updated_at": "2026-10-29T18:18:32.000Z",
+  "license": "newgenltu-openrail-d",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "sherpa-onnx",
+  "languages": [
+    "lt"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "automatic-speech-recognition",
+    "speech-recognition",
+    "lithuanian",
+    "android",
+    "piper",
+    "espeak-ng",
+    "parakeet",
+    "offline",
+    "accessibility",
+    "lt",
+    "base_model:RobertasTa/lt_LT-ingute-medium",
+    "base_model:quantized:RobertasTa/lt_LT-ingute-medium",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1022928530,
+  "storage_human": "1.0 GB",
+  "base_model": "RobertasTa/lt_LT-ingute-medium, kristijonas/kmynas-parakeet-lt-v4",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

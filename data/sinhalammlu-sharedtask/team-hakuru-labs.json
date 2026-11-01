@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SinhalaMMLU-SharedTask/team-hakuru-labs",
+  "slug": "sinhalammlu-sharedtask-team-hakuru-labs",
+  "author": "SinhalaMMLU-SharedTask",
+  "url": "https://huggingface.co/SinhalaMMLU-SharedTask/team-hakuru-labs",
+  "created_at": "2026-10-28T07:11:56.000Z",
+  "updated_at": "2026-10-28T17:26:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "Sinhala",
+    "SinhalaMMLU",
+    "ICTer 2026",
+    "Ensemble",
+    "Inference",
+    "si",
+    "base_model:Jainamshahhh/helalm-4b",
+    "base_model:finetune:Jainamshahhh/helalm-4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28643782,
+  "storage_human": "29 MB",
+  "base_model": "iCIIT/redqueenprotocol-sin-llama3.2-3B-model, Jainamshahhh/helalm-4b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

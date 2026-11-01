@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ostrich-27B-AHA-Gemma3-250519-GGUF",
+  "slug": "mradermacher-ostrich-27b-aha-gemma3-250519-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ostrich-27B-AHA-Gemma3-250519-GGUF",
+  "created_at": "2025-05-18T06:24:06.000Z",
+  "updated_at": "2026-11-01T20:42:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "AHA",
+    "alignment",
+    "en",
+    "base_model:etemiz/Ostrich-27B-AHA-Gemma3-250519",
+    "base_model:quantized:etemiz/Ostrich-27B-AHA-Gemma3-250519",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 291,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 188136498496,
+  "storage_human": "188.1 GB",
+  "base_model": "etemiz/Ostrich-27B-AHA-Gemma3-250519",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

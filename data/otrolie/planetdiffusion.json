@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "otrolie/PlanetDiffusion",
+  "slug": "otrolie-planetdiffusion",
+  "author": "otrolie",
+  "url": "https://huggingface.co/otrolie/PlanetDiffusion",
+  "created_at": "2026-10-31T17:13:20.000Z",
+  "updated_at": "2026-10-31T17:14:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "terrain",
+    "planet",
+    "diffusion",
+    "procedural-generation",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 311502672,
+  "storage_human": "312 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

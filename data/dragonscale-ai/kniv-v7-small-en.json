@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "id": "dragonscale-ai/kniv-v7-small-en",
+  "slug": "dragonscale-ai-kniv-v7-small-en",
+  "author": "dragonscale-ai",
+  "url": "https://huggingface.co/dragonscale-ai/kniv-v7-small-en",
+  "created_at": "2026-11-01T19:35:45.000Z",
+  "updated_at": "2026-11-01T19:36:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "multi-task",
+    "nlp",
+    "information-extraction",
+    "named-entity-recognition",
+    "ner",
+    "entity-extraction",
+    "relation-extraction",
+    "zero-shot",
+    "part-of-speech-tagging",
+    "lemmatization",
+    "morphology",
+    "dependency-parsing",
+    "semantic-role-labeling",
+    "coreference-resolution",
+    "sentiment-analysis",
+    "dialogue-act-classification",
+    "knowledge-graph",
+    "conversational-memory",
+    "agent-memory",
+    "encoder",
+    "modernbert",
+    "fp16",
+    "int8",
+    "quantized",
+    "token-classification",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-32m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-32m",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1251265087,
+  "storage_human": "1.3 GB",
+  "base_model": "jhu-clsp/ettin-encoder-32m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Part-of-speech tagging",
+      "dataset": "UD English EWT",
+      "metric": "UPOS accuracy",
+      "value": 0.972
+    },
+    {
+      "task": "Dependency parsing",
+      "dataset": "UD English EWT",
+      "metric": "LAS",
+      "value": 0.911
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "OntoNotes 5.0",
+      "metric": "span F1",
+      "value": 0.827
+    },
+    {
+      "task": "Semantic role labeling",
+      "dataset": "PropBank EWT",
+      "metric": "end-to-end argument F1",
+      "value": 0.773
+    },
+    {
+      "task": "Coreference resolution",
+      "dataset": "LitBank",
+      "metric": "CoNLL F1",
+      "value": 0.62
+    },
+    {
+      "task": "Document-level relation extraction",
+      "dataset": "Re-DocRED",
+      "metric": "F1 (gold entities)",
+      "value": 0.672
+    },
+    {
+      "task": "Document-level relation extraction",
+      "dataset": "Re-DocRED",
+      "metric": "F1 (end to end)",
+      "value": 0.567
+    },
+    {
+      "task": "Zero-shot relation classification",
+      "dataset": "FewRel (15 unseen)",
+      "metric": "macro F1, m=5",
+      "value": 0.787
+    },
+    {
+      "task": "Zero-shot named entity recognition",
+      "dataset": "CrossNER",
+      "metric": "span F1, mean of 4 domains",
+      "value": 0.41
+    }
+  ],
+  "sources": []
+}

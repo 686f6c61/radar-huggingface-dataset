@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "PruningEverything/llama_2_40_percent_compression",
+  "slug": "pruningeverything-llama_2_40_percent_compression",
+  "author": "PruningEverything",
+  "url": "https://huggingface.co/PruningEverything/llama_2_40_percent_compression",
+  "created_at": "2026-11-01T19:56:28.000Z",
+  "updated_at": "2026-11-01T20:00:47.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4085149696,
+  "parameters_human": "4.09B",
+  "storage_bytes": 16976281243,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

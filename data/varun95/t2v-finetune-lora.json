@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Varun95/t2v-finetune-lora",
+  "slug": "varun95-t2v-finetune-lora",
+  "author": "Varun95",
+  "url": "https://huggingface.co/Varun95/t2v-finetune-lora",
+  "created_at": "2026-10-30T15:51:55.000Z",
+  "updated_at": "2026-10-30T17:30:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-video",
+    "t2v",
+    "video-generation",
+    "wan",
+    "wan2.1",
+    "lora",
+    "fine-tuned",
+    "pytorch",
+    "diffusion",
+    "en",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "base_model:adapter:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

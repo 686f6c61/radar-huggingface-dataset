@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4",
+  "slug": "jrubiosainz-microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4",
+  "created_at": "2026-11-01T20:16:35.000Z",
+  "updated_at": "2026-11-01T20:16:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-arena",
+    "tug-of-war",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:a1rb4Ck/microduck-tug",
+    "base_model:merge:a1rb4Ck/microduck-tug",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 946916,
+  "storage_human": "946916 B",
+  "base_model": "a1rb4Ck/microduck-tug",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

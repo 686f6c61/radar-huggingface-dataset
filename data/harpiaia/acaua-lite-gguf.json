@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "HarpiaIA/Acaua-Lite-GGUF",
+  "slug": "harpiaia-acaua-lite-gguf",
+  "author": "HarpiaIA",
+  "url": "https://huggingface.co/HarpiaIA/Acaua-Lite-GGUF",
+  "created_at": "2026-11-01T15:33:41.000Z",
+  "updated_at": "2026-11-01T16:20:20.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lfm",
+    "lfm3",
+    "code",
+    "agent",
+    "coder",
+    "text-generation",
+    "en",
+    "base_model:HarpiaIA/Acaua-Lite",
+    "base_model:quantized:HarpiaIA/Acaua-Lite",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2527266624,
+  "storage_human": "2.5 GB",
+  "base_model": "HarpiaIA/Acaua-Lite",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

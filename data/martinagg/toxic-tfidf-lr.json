@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Martinagg/toxic-tfidf-lr",
+  "slug": "martinagg-toxic-tfidf-lr",
+  "author": "Martinagg",
+  "url": "https://huggingface.co/Martinagg/toxic-tfidf-lr",
+  "created_at": "2026-10-31T02:46:37.000Z",
+  "updated_at": "2026-10-31T02:46:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "toxicity",
+    "content-moderation",
+    "tf-idf",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8028981,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

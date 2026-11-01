@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jordykieto/carla-imitation-learning",
+  "slug": "jordykieto-carla-imitation-learning",
+  "author": "jordykieto",
+  "url": "https://huggingface.co/jordykieto/carla-imitation-learning",
+  "created_at": "2026-11-01T19:44:14.000Z",
+  "updated_at": "2026-11-01T19:44:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "onnx",
+    "autonomous-driving",
+    "carla",
+    "imitation-learning",
+    "behavioral-cloning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11182835,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

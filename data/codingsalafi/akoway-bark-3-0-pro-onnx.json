@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "codingSalafi/akoway-bark-3.0-pro-onnx",
+  "slug": "codingsalafi-akoway-bark-3-0-pro-onnx",
+  "author": "codingSalafi",
+  "url": "https://huggingface.co/codingSalafi/akoway-bark-3.0-pro-onnx",
+  "created_at": "2026-10-29T11:42:18.000Z",
+  "updated_at": "2026-10-29T11:47:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "asr",
+    "speech-recognition",
+    "parakeet",
+    "tdt",
+    "underdog",
+    "akoway",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:ConwayResearch/Underdog-Bark-3.0-Pro",
+    "base_model:quantized:ConwayResearch/Underdog-Bark-3.0-Pro",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 910504818,
+  "storage_human": "911 MB",
+  "base_model": "ConwayResearch/Underdog-Bark-3.0-Pro",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

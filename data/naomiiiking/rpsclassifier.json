@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "naomiiiking/RPSClassifier",
+  "slug": "naomiiiking-rpsclassifier",
+  "author": "naomiiiking",
+  "url": "https://huggingface.co/naomiiiking/RPSClassifier",
+  "created_at": "2026-10-30T19:35:18.000Z",
+  "updated_at": "2026-10-30T19:54:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "object-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23779,
+  "parameters_human": "23779",
+  "storage_bytes": 95748,
+  "storage_human": "95748 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

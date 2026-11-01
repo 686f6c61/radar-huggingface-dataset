@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "homerjunior4534/Joint",
+  "slug": "homerjunior4534-joint",
+  "author": "homerjunior4534",
+  "url": "https://huggingface.co/homerjunior4534/Joint",
+  "created_at": "2026-10-28T15:54:18.000Z",
+  "updated_at": "2026-10-28T15:54:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

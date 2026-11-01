@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Coenliu62/TimesJev",
+  "slug": "coenliu62-timesjev",
+  "author": "Coenliu62",
+  "url": "https://huggingface.co/Coenliu62/TimesJev",
+  "created_at": "2026-10-31T13:00:05.000Z",
+  "updated_at": "2026-10-31T13:00:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "time-series",
+    "time-series-reasoning",
+    "question-answering",
+    "en",
+    "dataset:Time-MQA/TSQA",
+    "base_model:Mapika/decider-2b",
+    "base_model:finetune:Mapika/decider-2b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33693968,
+  "storage_human": "34 MB",
+  "base_model": "Mapika/decider-2b, Mapika/decider-4b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

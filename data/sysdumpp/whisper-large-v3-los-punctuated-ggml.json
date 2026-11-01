@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "sysdumpp/whisper-large-v3-LoS-punctuated-ggml",
+  "slug": "sysdumpp-whisper-large-v3-los-punctuated-ggml",
+  "author": "sysdumpp",
+  "url": "https://huggingface.co/sysdumpp/whisper-large-v3-LoS-punctuated-ggml",
+  "created_at": "2026-10-30T08:24:16.000Z",
+  "updated_at": "2026-10-30T09:38:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1081140203,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

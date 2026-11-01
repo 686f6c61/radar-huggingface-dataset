@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "PruningEverything/llama_3_20_percent_compression_Q4_K_M",
+  "slug": "pruningeverything-llama_3_20_percent_compression_q4_k_m",
+  "author": "PruningEverything",
+  "url": "https://huggingface.co/PruningEverything/llama_3_20_percent_compression_Q4_K_M",
+  "created_at": "2026-11-01T20:06:03.000Z",
+  "updated_at": "2026-11-01T20:07:26.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6285365248,
+  "parameters_human": "6.29B",
+  "storage_bytes": 3874119776,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pruning Everything, Everywhere, All at Once",
+      "url": "https://arxiv.org/pdf/2506.04513",
+      "snippet": "impacts [3]. The recent LLama 3 model family comprehends · a concrete example, where training requires up to 16K H100 · GPUs globally distributed. Notably, the largest model (405B) requires 16 GPUs with 16-bit precision for inference [2]. Efforts towards compression of deep models confirm the"
+    }
+  ]
+}

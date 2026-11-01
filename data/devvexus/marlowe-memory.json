@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "devvexus/marlowe-memory",
+  "slug": "devvexus-marlowe-memory",
+  "author": "devvexus",
+  "url": "https://huggingface.co/devvexus/marlowe-memory",
+  "created_at": "2026-10-26T04:32:12.000Z",
+  "updated_at": "2026-10-26T04:37:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-ranking",
+    "base_model:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "base_model:quantized:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 517458747,
+  "storage_human": "517 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L2-v2, cross-encoder/ms-marco-MiniLM-L4-v2, cross-encoder/ms-marco-MiniLM-L6-v2, cross-encoder/ms-marco-MiniLM-L12-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

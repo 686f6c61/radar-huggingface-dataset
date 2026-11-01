@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Sungah/omx_1024_boxaug_act",
+  "slug": "sungah-omx_1024_boxaug_act",
+  "author": "Sungah",
+  "url": "https://huggingface.co/Sungah/omx_1024_boxaug_act",
+  "created_at": "2026-10-26T08:42:22.000Z",
+  "updated_at": "2026-10-26T08:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "omx",
+    "robotics",
+    "data-augmentation",
+    "dataset:Sungah/omx_1024_test_jihyeok_success",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 666972339,
+  "storage_human": "667 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

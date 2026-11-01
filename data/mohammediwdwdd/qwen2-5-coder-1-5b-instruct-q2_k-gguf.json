@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mohammediwdwdd/Qwen2.5-Coder-1.5B-Instruct-Q2_K-GGUF",
+  "slug": "mohammediwdwdd-qwen2-5-coder-1-5b-instruct-q2_k-gguf",
+  "author": "mohammediwdwdd",
+  "url": "https://huggingface.co/mohammediwdwdd/Qwen2.5-Coder-1.5B-Instruct-Q2_K-GGUF",
+  "created_at": "2026-11-01T17:02:56.000Z",
+  "updated_at": "2026-11-01T17:03:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 676305088,
+  "storage_human": "676 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guide to Download TronLink Extension",
+      "url": "https://support.tronlink.org/hc/en-us/articles/5354784172825-Guide-to-Download-TronLink-Extension",
+      "snippet": "The TronLink extension is available on Google Chrome and Microsoft Edge.Follow the instructions below to download and install it in..."
+    }
+  ]
+}

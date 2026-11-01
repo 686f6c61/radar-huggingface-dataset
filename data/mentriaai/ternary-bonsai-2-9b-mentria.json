@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mentriaai/Ternary-Bonsai-2-9B-mentria",
+  "slug": "mentriaai-ternary-bonsai-2-9b-mentria",
+  "author": "mentriaai",
+  "url": "https://huggingface.co/mentriaai/Ternary-Bonsai-2-9B-mentria",
+  "created_at": "2026-10-26T13:12:19.000Z",
+  "updated_at": "2026-10-28T08:24:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mentria-engine",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mentria-engine",
+    "safetensors",
+    "qwen3_5",
+    "webgpu",
+    "ternary",
+    "q2g128",
+    "on-device",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:prism-ml/Ternary-Bonsai-2-9B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-9B-gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2896034462,
+  "storage_human": "2.9 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-9B-gguf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

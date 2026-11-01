@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Cosmos-Data/Cosmos-droid",
+  "slug": "cosmos-data-cosmos-droid",
+  "author": "Cosmos-Data",
+  "url": "https://huggingface.co/Cosmos-Data/Cosmos-droid",
+  "created_at": "2026-10-28T18:12:53.000Z",
+  "updated_at": "2026-10-31T18:37:31.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "diffusers",
+    "safetensors",
+    "robotics",
+    "droid",
+    "policy",
+    "world-model",
+    "base_model:nvidia/Cosmos3-Nano-Policy-DROID",
+    "base_model:finetune:nvidia/Cosmos3-Nano-Policy-DROID",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 609500909870,
+  "storage_human": "609.5 GB",
+  "base_model": "nvidia/Cosmos3-Nano-Policy-DROID",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosmos",
+      "url": "https://www.cosmos.so/",
+      "snippet": "Find similar elements. Start with an image you love and find more like it. Collaborate together. Invite others to build collections with you.Read more"
+    },
+    {
+      "title": "Toutes les actualités | COSMOS",
+      "url": "https://www.cosmos-sports.fr/actualites",
+      "snippet": "Oct 16, 2026 · Le COSMOS s'en mêle #7 - Numérique et sport : comment passer de l'expérimentation à une utilisation maîtrisée ? …"
+    },
+    {
+      "title": "COSMOS - Tous les sports. Un seul univers.",
+      "url": "https://www.cosmos-sports.fr/",
+      "snippet": "Le COSMOS est la principale organisation patronale dont l'objet premier est de représenter les employeurs du sport..."
+    },
+    {
+      "title": "Cosmos — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cosmos",
+      "snippet": "Le Conseil social du mouvement sportif (COSMOS) est l’organisation patronale française représentant le mouvement sportif, le sport …"
+    },
+    {
+      "title": "Cosmos (philosophie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cosmos_(philosophie)",
+      "snippet": "Cosmos (philosophie) ... Le cosmos, dans la philosophie grecque de l' Antiquité est un terme qui désigne le monde ordonné et …"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "amd/CodeLlama-7b-Instruct-hf_rai_1.9.0_m_1.0.1_npu",
+  "slug": "amd-codellama-7b-instruct-hf_rai_1-9-0_m_1-0-1_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/CodeLlama-7b-Instruct-hf_rai_1.9.0_m_1.0.1_npu",
+  "created_at": "2026-10-30T18:07:55.000Z",
+  "updated_at": "2026-10-30T18:09:00.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "amd",
+    "ryzenai",
+    "m_1.0.1_npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4041323600,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

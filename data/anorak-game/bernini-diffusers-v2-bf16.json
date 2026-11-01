@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "anorak-game/Bernini-Diffusers-v2-bf16",
+  "slug": "anorak-game-bernini-diffusers-v2-bf16",
+  "author": "anorak-game",
+  "url": "https://huggingface.co/anorak-game/Bernini-Diffusers-v2-bf16",
+  "created_at": "2026-10-31T20:53:47.000Z",
+  "updated_at": "2026-10-31T23:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "bernini",
+    "image-text-to-video",
+    "arxiv:2605.22344",
+    "base_model:ByteDance/Bernini-Diffusers-v2",
+    "base_model:finetune:ByteDance/Bernini-Diffusers-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90776378143,
+  "storage_human": "90.8 GB",
+  "base_model": "ByteDance/Bernini-Diffusers-v2",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Vyluris/wan22-loras",
+  "slug": "vyluris-wan22-loras",
+  "author": "Vyluris",
+  "url": "https://huggingface.co/Vyluris/wan22-loras",
+  "created_at": "2026-10-26T19:06:05.000Z",
+  "updated_at": "2026-10-26T19:25:53.000Z",
+  "license": "civitai-original",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613615952,
+  "storage_human": "614 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

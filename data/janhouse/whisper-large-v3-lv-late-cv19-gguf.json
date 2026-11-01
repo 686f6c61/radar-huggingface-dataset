@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Janhouse/whisper-large-v3-lv-late-cv19-GGUF",
+  "slug": "janhouse-whisper-large-v3-lv-late-cv19-gguf",
+  "author": "Janhouse",
+  "url": "https://huggingface.co/Janhouse/whisper-large-v3-lv-late-cv19-GGUF",
+  "created_at": "2026-11-01T17:58:41.000Z",
+  "updated_at": "2026-11-01T17:59:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "lv"
+  ],
+  "tags": [
+    "gguf",
+    "whisper",
+    "transcribe.cpp",
+    "quantized",
+    "speech-to-text",
+    "latvian",
+    "automatic-speech-recognition",
+    "lv",
+    "base_model:AiLab-IMCS-UL/whisper-large-v3-lv-late-cv19",
+    "base_model:quantized:AiLab-IMCS-UL/whisper-large-v3-lv-late-cv19",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543516688,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1668741568,
+  "storage_human": "1.7 GB",
+  "base_model": "AiLab-IMCS-UL/whisper-large-v3-lv-late-cv19",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paris Saint-Germain Men's Squad",
+      "url": "https://www.psg.fr/en/mens-football/squad",
+      "snippet": "Discover the Paris Saint-Germain men's squad: players, stats, and latest news."
+    }
+  ]
+}

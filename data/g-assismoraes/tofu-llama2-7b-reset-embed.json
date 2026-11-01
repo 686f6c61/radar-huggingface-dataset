@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/tofu-llama2-7b-reset-embed",
+  "slug": "g-assismoraes-tofu-llama2-7b-reset-embed",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/tofu-llama2-7b-reset-embed",
+  "created_at": "2026-11-01T20:07:47.000Z",
+  "updated_at": "2026-11-01T20:08:19.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "machine-unlearning",
+    "tofu",
+    "checkpoint-restoration",
+    "en",
+    "base_model:NousResearch/Llama-2-7b-chat-hf",
+    "base_model:finetune:NousResearch/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13476865032,
+  "storage_human": "13.5 GB",
+  "base_model": "locuslab/tofu_ft_llama2-7b, NousResearch/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "locuslab/tofu_ft_llama2-7b · Hugging Face",
+      "url": "https://huggingface.co/locuslab/tofu_ft_llama2-7b",
+      "snippet": "Llama2-7B-Chat has been fine-tuned on the full TOFU dataset to specialize in unlearning diverse fractions of the forget set. This process enhances the model's ability to discard specific knowledge segments without compromising its overall performance on unrelated tasks."
+    },
+    {
+      "title": "g-assismoraes/DeltaP2S-Llama2-13B-P2S-curio7B-ptbr-S13-a025 · ...",
+      "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-curio7B-ptbr-S13-a025",
+      "snippet": "Training base: ./runs/curio7b_to_llama2_13b_S13_native_a025/init/p2s"
+    }
+  ]
+}

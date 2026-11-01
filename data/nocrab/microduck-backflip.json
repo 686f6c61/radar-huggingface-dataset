@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nocrab/microduck-backflip",
+  "slug": "nocrab-microduck-backflip",
+  "author": "nocrab",
+  "url": "https://huggingface.co/nocrab/microduck-backflip",
+  "created_at": "2026-10-27T06:00:25.000Z",
+  "updated_at": "2026-10-27T06:00:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-policy",
+    "mjlab",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447450,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

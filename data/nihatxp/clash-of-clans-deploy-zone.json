@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nihatxp/clash-of-clans-deploy-zone",
+  "slug": "nihatxp-clash-of-clans-deploy-zone",
+  "author": "nihatxp",
+  "url": "https://huggingface.co/nihatxp/clash-of-clans-deploy-zone",
+  "created_at": "2026-10-28T15:16:58.000Z",
+  "updated_at": "2026-10-30T19:54:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "clash-of-clans",
+    "coc",
+    "deploy-zone",
+    "semantic-segmentation",
+    "unet",
+    "pytorch",
+    "image-segmentation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 212668429,
+  "storage_human": "213 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

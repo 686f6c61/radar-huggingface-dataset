@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Homiebear/JoeBartolozzi_275e_34925s",
+  "slug": "homiebear-joebartolozzi_275e_34925s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/JoeBartolozzi_275e_34925s",
+  "created_at": "2026-11-01T00:16:41.000Z",
+  "updated_at": "2026-11-01T00:21:21.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 690148751,
+  "storage_human": "690 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

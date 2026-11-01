@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "vedang-1825/smollm2-135m-instruct-test1",
+  "slug": "vedang-1825-smollm2-135m-instruct-test1",
+  "author": "vedang-1825",
+  "url": "https://huggingface.co/vedang-1825/smollm2-135m-instruct-test1",
+  "created_at": "2026-10-29T12:24:05.000Z",
+  "updated_at": "2026-10-29T13:33:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "smollm2",
+    "educational",
+    "instruction-tuned",
+    "conversational",
+    "en",
+    "arxiv:2502.02737",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

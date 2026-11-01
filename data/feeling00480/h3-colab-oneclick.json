@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "feeling00480/h3-colab-oneclick",
+  "slug": "feeling00480-h3-colab-oneclick",
+  "author": "feeling00480",
+  "url": "https://huggingface.co/feeling00480/h3-colab-oneclick",
+  "created_at": "2026-10-28T05:23:10.000Z",
+  "updated_at": "2026-10-28T05:23:11.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32841,
+  "storage_human": "32841 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

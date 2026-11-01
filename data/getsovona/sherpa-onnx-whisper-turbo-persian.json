@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "getsovona/sherpa-onnx-whisper-turbo-persian",
+  "slug": "getsovona-sherpa-onnx-whisper-turbo-persian",
+  "author": "getsovona",
+  "url": "https://huggingface.co/getsovona/sherpa-onnx-whisper-turbo-persian",
+  "created_at": "2026-10-27T15:54:47.000Z",
+  "updated_at": "2026-10-27T16:02:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "whisper",
+    "persian",
+    "farsi",
+    "automatic-speech-recognition",
+    "fa",
+    "base_model:givia/whisper-large-v3-turbo-persian",
+    "base_model:quantized:givia/whisper-large-v3-turbo-persian",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1310817735,
+  "storage_human": "1.3 GB",
+  "base_model": "givia/whisper-large-v3-turbo-persian",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

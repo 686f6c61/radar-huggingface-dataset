@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Neeraj17/llama-124m-fineweb",
+  "slug": "neeraj17-llama-124m-fineweb",
+  "author": "Neeraj17",
+  "url": "https://huggingface.co/Neeraj17/llama-124m-fineweb",
+  "created_at": "2026-10-29T00:42:23.000Z",
+  "updated_at": "2026-10-29T00:54:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "llama",
+    "from-scratch",
+    "gqa",
+    "rope",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1496167759,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

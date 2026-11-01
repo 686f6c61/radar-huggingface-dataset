@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "TassP0lar/SparkX2.6-MM-checkpoints-g4-v5",
+  "slug": "tassp0lar-sparkx2-6-mm-checkpoints-g4-v5",
+  "author": "TassP0lar",
+  "url": "https://huggingface.co/TassP0lar/SparkX2.6-MM-checkpoints-g4-v5",
+  "created_at": "2026-10-28T15:03:39.000Z",
+  "updated_at": "2026-10-28T15:11:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29376771787,
+  "storage_human": "29.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

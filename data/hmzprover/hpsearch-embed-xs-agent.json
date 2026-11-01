@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "hmzprover/hpsearch-embed-xs-agent",
+  "slug": "hmzprover-hpsearch-embed-xs-agent",
+  "author": "hmzprover",
+  "url": "https://huggingface.co/hmzprover/hpsearch-embed-xs-agent",
+  "created_at": "2026-10-26T05:28:16.000Z",
+  "updated_at": "2026-10-26T06:19:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "lean4",
+    "mathlib",
+    "retrieval",
+    "sentence-similarity",
+    "base_model:hmzprover/hpsearch-embed-xs",
+    "base_model:quantized:hmzprover/hpsearch-embed-xs",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113243657,
+  "storage_human": "113 MB",
+  "base_model": "hmzprover/hpsearch-embed-xs",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

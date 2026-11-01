@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "thejagstudio/portfolio-models",
+  "slug": "thejagstudio-portfolio-models",
+  "author": "thejagstudio",
+  "url": "https://huggingface.co/thejagstudio/portfolio-models",
+  "created_at": "2026-10-29T20:09:53.000Z",
+  "updated_at": "2026-10-30T00:38:28.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "webgpu",
+    "onnxruntime-web",
+    "transformers.js",
+    "portfolio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2013982896,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

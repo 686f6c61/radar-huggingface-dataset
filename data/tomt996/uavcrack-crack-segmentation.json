@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Tomt996/uavcrack-crack-segmentation",
+  "slug": "tomt996-uavcrack-crack-segmentation",
+  "author": "Tomt996",
+  "url": "https://huggingface.co/Tomt996/uavcrack-crack-segmentation",
+  "created_at": "2026-10-29T11:35:02.000Z",
+  "updated_at": "2026-10-29T11:42:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "semantic-segmentation",
+    "crack-segmentation",
+    "uav",
+    "pavement",
+    "resnet34-unet",
+    "image-segmentation",
+    "zh",
+    "en",
+    "dataset:UAV-CrackX",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 989236375,
+  "storage_human": "989 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

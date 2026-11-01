@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "fuad404/OxAi",
+  "slug": "fuad404-oxai",
+  "author": "fuad404",
+  "url": "https://huggingface.co/fuad404/OxAi",
+  "created_at": "2026-11-01T14:19:40.000Z",
+  "updated_at": "2026-11-01T14:29:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ku"
+  ],
+  "tags": [
+    "safetensors",
+    "oxai",
+    "ox-ai",
+    "cybersecurity",
+    "coding",
+    "fuad",
+    "custom_code",
+    "en",
+    "ku",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 684489845504,
+  "parameters_human": "684.49B",
+  "storage_bytes": 688586727753,
+  "storage_human": "688.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

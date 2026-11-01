@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "GXHamster/trec-question-gru-glove",
+  "slug": "gxhamster-trec-question-gru-glove",
+  "author": "GXHamster",
+  "url": "https://huggingface.co/GXHamster/trec-question-gru-glove",
+  "created_at": "2026-10-26T06:56:20.000Z",
+  "updated_at": "2026-10-26T16:28:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-classification",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25284074,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么这么多人把「Wikipedia」称作「wiki」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19581089",
+      "snippet": "Mar 25, 2011 · 为什么这么多人把「Wikipedia」称作「wiki」？ 我一直很难理解这个问题，为什么这么多人喜欢把专有名词和通用概 …"
+    },
+    {
+      "title": "Wikipedia 和 Wikia 哪个是维基百科；它们和维基解密有什么联系？",
+      "url": "https://www.zhihu.com/question/24790852",
+      "snippet": "Aug 9, 2014 · Wikipedia（维基百科），是由 维基媒体基金会 运营的非盈利在线百科全书计划，采用 wiki 软件架构（mediawiki），由 …"
+    },
+    {
+      "title": "维基百科官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/723469471435372885.html",
+      "snippet": "Jul 24, 2024 · 维基百科官方网址是什么？ 1. 维基百科网址：https://www.wikipedia.org/2. 维基百科介绍：维基百科是一个基于维基技 …"
+    },
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如题 谢谢了",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    },
+    {
+      "title": "维基百科（ Wikipedia） 为什么现在需要人捐钱 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/359009187",
+      "snippet": "来自维基百科创办者Jimmy Wales的个人呼吁 维基百科是全球第五大网站，每月为4.5亿用户提供服务，页面浏览数以十亿计。 商业本 …"
+    }
+  ]
+}

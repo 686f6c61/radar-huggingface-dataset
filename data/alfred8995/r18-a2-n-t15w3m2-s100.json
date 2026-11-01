@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r18-a2-n-t15w3m2-s100",
+  "slug": "alfred8995-r18-a2-n-t15w3m2-s100",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r18-a2-n-t15w3m2-s100",
+  "created_at": "2026-10-29T16:50:21.000Z",
+  "updated_at": "2026-10-29T22:39:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 14386528312,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés et Horaires - Lidl.fr",
+      "url": "https://www.lidl.fr/c/supermarches-et-horaires/s10019824",
+      "snippet": "Retrouvez les horaires de nos supermarchés et les différentes équipements à votre disposition en supermarchés. Inscrivez -vous ! …"
+    },
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "oshea00/tinygpt-viz",
+  "slug": "oshea00-tinygpt-viz",
+  "author": "oshea00",
+  "url": "https://huggingface.co/oshea00/tinygpt-viz",
+  "created_at": "2026-10-26T03:01:32.000Z",
+  "updated_at": "2026-10-29T03:10:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "education",
+    "gpt",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1553826650,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

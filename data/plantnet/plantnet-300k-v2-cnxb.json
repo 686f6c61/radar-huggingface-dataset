@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "PlantNet/plantnet-300k-v2-cnxb",
+  "slug": "plantnet-plantnet-300k-v2-cnxb",
+  "author": "PlantNet",
+  "url": "https://huggingface.co/PlantNet/plantnet-300k-v2-cnxb",
+  "created_at": "2026-10-29T22:31:18.000Z",
+  "updated_at": "2026-10-29T22:31:25.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "vision",
+    "plants",
+    "plantnet",
+    "dinov3",
+    "image-classification",
+    "species-classification",
+    "1000-classes",
+    "arxiv:2604.27178",
+    "base_model:facebook/dinov3-convnext-base-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-convnext-base-pretrain-lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 354480311,
+  "storage_human": "354 MB",
+  "base_model": "facebook/dinov3-convnext-base-pretrain-lvd1689m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Pl@ntNet",
+      "url": "https://plantnet.org/",
+      "snippet": "Avec l'application Pl@ntNet, identifiez une plante à partir d'une photo, et rejoignez un projet de sciences participatives sur la …"
+    },
+    {
+      "title": "Pl@ntNet identify",
+      "url": "https://identify.plantnet.org/fr",
+      "snippet": "Pl@ntnet est un outil pour vous aider à identifier des plantes à partir d'images."
+    },
+    {
+      "title": "Home - Pl@ntNet",
+      "url": "https://plantnet.org/en/",
+      "snippet": "With the Pl@ntNet app, identify one plant from a picture, and be part of a citizen science project on plant biodiversity"
+    },
+    {
+      "title": "Pl@ntNet identify",
+      "url": "https://identify.plantnet.org/fr/the-plant-list/identify",
+      "snippet": "Organisation Plantnet.org Équipe Ressources Documentation Open data API Statistiques Traductions Notes de version Légal À …"
+    },
+    {
+      "title": "Installer Pl@ntNet | Pl@ntNet doc - docs.plantnet.org",
+      "url": "https://docs.plantnet.org/fr/tutorials/install-plantnet/",
+      "snippet": "Découvrez comment installer Pl@ntNet sur Android, iOS ou utiliser la version web. Suivez notre guide pour créer un compte, activer …"
+    }
+  ]
+}

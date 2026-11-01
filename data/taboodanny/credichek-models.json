@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "TabooDanny/credichek-models",
+  "slug": "taboodanny-credichek-models",
+  "author": "TabooDanny",
+  "url": "https://huggingface.co/TabooDanny/credichek-models",
+  "created_at": "2026-10-30T14:40:22.000Z",
+  "updated_at": "2026-10-30T14:48:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1068973484,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

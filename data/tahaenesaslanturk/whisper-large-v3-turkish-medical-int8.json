@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "tahaenesaslanturk/whisper-large-v3-turkish-medical-int8",
+  "slug": "tahaenesaslanturk-whisper-large-v3-turkish-medical-int8",
+  "author": "tahaenesaslanturk",
+  "url": "https://huggingface.co/tahaenesaslanturk/whisper-large-v3-turkish-medical-int8",
+  "created_at": "2026-10-26T06:10:07.000Z",
+  "updated_at": "2026-10-26T06:25:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "whisper",
+    "int8",
+    "medical",
+    "automatic-speech-recognition",
+    "tr",
+    "base_model:turkmedstt/whisper-large-v3-turkish-medical",
+    "base_model:quantized:turkmedstt/whisper-large-v3-turkish-medical",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1068609300,
+  "storage_human": "1.1 GB",
+  "base_model": "turkmedstt/whisper-large-v3-turkish-medical",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

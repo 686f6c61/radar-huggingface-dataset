@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "GinDuck/microduck-polite-bow",
+  "slug": "ginduck-microduck-polite-bow",
+  "author": "GinDuck",
+  "url": "https://huggingface.co/GinDuck/microduck-polite-bow",
+  "created_at": "2026-11-01T19:12:22.000Z",
+  "updated_at": "2026-11-01T19:12:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "kind:episodic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1132130,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

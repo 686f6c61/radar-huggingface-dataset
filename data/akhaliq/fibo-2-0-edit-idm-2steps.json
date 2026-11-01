@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "akhaliq/Fibo-2.0-edit-IDM-2steps",
+  "slug": "akhaliq-fibo-2-0-edit-idm-2steps",
+  "author": "akhaliq",
+  "url": "https://huggingface.co/akhaliq/Fibo-2.0-edit-IDM-2steps",
+  "created_at": "2026-11-01T11:55:19.000Z",
+  "updated_at": "2026-11-01T15:27:52.000Z",
+  "license": "bria-fibo",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "fibo",
+    "image-editing",
+    "image-to-image",
+    "distillation",
+    "few-step",
+    "dmd",
+    "idm",
+    "lora",
+    "ml-intern",
+    "en",
+    "arxiv:2610.39633",
+    "arxiv:2511.06876",
+    "base_model:briaai/Fibo-2.0-edit-turbo",
+    "base_model:adapter:briaai/Fibo-2.0-edit-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 545965558,
+  "storage_human": "546 MB",
+  "base_model": "briaai/Fibo-2.0-edit-turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

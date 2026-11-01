@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "maro-aigent/connectailab-rl-maro-v1-link01",
+  "slug": "maro-aigent-connectailab-rl-maro-v1-link01",
+  "author": "maro-aigent",
+  "url": "https://huggingface.co/maro-aigent/connectailab-rl-maro-v1-link01",
+  "created_at": "2026-11-01T15:32:07.000Z",
+  "updated_at": "2026-11-01T15:32:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "robotics",
+    "decision-making",
+    "link01",
+    "connect-ai-world",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MARO | Official website",
+      "url": "https://maro.com/",
+      "snippet": "Official website of MARO – Music, Tour Dates, Videos, Press, new releases and more from the acclaimed Portuguese artist."
+    },
+    {
+      "title": "Maro (chanteuse) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Maro_(chanteuse)",
+      "snippet": "Mariana Secca, plus connue sous le pseudonyme MARO, est une chanteuse et multi-instrumentiste portugaise, née le 30 octobre …"
+    },
+    {
+      "title": "Mobilier moderne pour le bureau - Maro",
+      "url": "https://maro.eu/fr",
+      "snippet": "MARO est un fabricant de mobilier de bureau qui connaît parfaitement les besoins de ses clients, c’est pourquoi notre offre …"
+    },
+    {
+      "title": "MARO | Tour",
+      "url": "https://maro.com/tour/",
+      "snippet": "Nov 3, 2026 · Official stop for MARO's SO MUCH HAS CHANGED World Tour! See available tour dates and shop concert tickets!"
+    },
+    {
+      "title": "MARO - YouTube",
+      "url": "https://www.youtube.com/channel/UCpQz6XjLaqj_d5ykS5o7L2w",
+      "snippet": "Transitioning to \"just wanna forget you,\" MARO reminded the audience of the raw emotionality of her lyricism, trading languages to …"
+    }
+  ]
+}

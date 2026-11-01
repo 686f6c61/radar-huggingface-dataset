@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Golurk",
+  "slug": "ryanham1lton-golurk",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Golurk",
+  "created_at": "2026-10-30T17:31:42.000Z",
+  "updated_at": "2026-10-30T17:32:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119361601,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

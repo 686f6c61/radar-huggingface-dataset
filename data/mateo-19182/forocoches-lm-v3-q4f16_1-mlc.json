@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mateo-19182/forocoches-lm-v3-q4f16_1-MLC",
+  "slug": "mateo-19182-forocoches-lm-v3-q4f16_1-mlc",
+  "author": "mateo-19182",
+  "url": "https://huggingface.co/mateo-19182/forocoches-lm-v3-q4f16_1-MLC",
+  "created_at": "2026-10-28T08:20:21.000Z",
+  "updated_at": "2026-10-28T08:20:33.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "web-llm",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "web-llm",
+    "mlc-llm",
+    "gemma3",
+    "forocoches",
+    "spanish",
+    "es",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 600702505,
+  "storage_human": "601 MB",
+  "base_model": "mateo-19182/forocoches-lm-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

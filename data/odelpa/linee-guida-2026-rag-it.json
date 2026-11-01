@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "odelpa/linee-guida-2026-rag-it",
+  "slug": "odelpa-linee-guida-2026-rag-it",
+  "author": "odelpa",
+  "url": "https://huggingface.co/odelpa/linee-guida-2026-rag-it",
+  "created_at": "2026-10-26T10:56:27.000Z",
+  "updated_at": "2026-10-26T18:14:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "medical",
+    "rag",
+    "guidelines",
+    "medgemma",
+    "retrieval",
+    "it",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libertines Annonces Cahors, Libertines girl en Cahors rencontre (s ...",
+      "url": "https://www.sexemodel.ch/escorts/cahors/",
+      "snippet": "Oct 25, 2026 · Trouvez vous les plus belles Libertines en Cahors, sur SexeModel.ch."
+    }
+  ]
+}

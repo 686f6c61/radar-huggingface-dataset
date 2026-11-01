@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Netra-Lab/Netra-OCR",
+  "slug": "netra-lab-netra-ocr",
+  "author": "Netra-Lab",
+  "url": "https://huggingface.co/Netra-Lab/Netra-OCR",
+  "created_at": "2026-10-31T11:56:53.000Z",
+  "updated_at": "2026-10-31T20:06:36.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "khmer-ocr",
+    "document-layout",
+    "netra-lab",
+    "image-to-text",
+    "km",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 627363899,
+  "storage_human": "627 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

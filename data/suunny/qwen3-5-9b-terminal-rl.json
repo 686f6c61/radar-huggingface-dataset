@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "suunny/Qwen3.5-9B-Terminal-RL",
+  "slug": "suunny-qwen3-5-9b-terminal-rl",
+  "author": "suunny",
+  "url": "https://huggingface.co/suunny/Qwen3.5-9B-Terminal-RL",
+  "created_at": "2026-11-01T14:03:09.000Z",
+  "updated_at": "2026-11-01T14:19:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "terminal-agents",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116425368,
+  "storage_human": "116 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

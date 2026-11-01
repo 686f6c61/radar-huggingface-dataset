@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Audante/GeneralUser-GS-2.0.3",
+  "slug": "audante-generaluser-gs-2-0-3",
+  "author": "Audante",
+  "url": "https://huggingface.co/Audante/GeneralUser-GS-2.0.3",
+  "created_at": "2026-10-29T16:05:01.000Z",
+  "updated_at": "2026-10-29T21:38:48.000Z",
+  "license": "generaluser-gs",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32319396,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

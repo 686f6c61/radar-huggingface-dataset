@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "zekaili/causal_robodojo_sana_latent_mixv4_capv3_obsblock50000_physrope_f33fps8_n1_obs_state_noattnres",
+  "slug": "zekaili-causal_robodojo_sana_latent_mixv4_capv3_obsblock50000_physrope_f33fps8_n1_obs_state_noattnres",
+  "author": "zekaili",
+  "url": "https://huggingface.co/zekaili/causal_robodojo_sana_latent_mixv4_capv3_obsblock50000_physrope_f33fps8_n1_obs_state_noattnres",
+  "created_at": "2026-10-31T02:39:29.000Z",
+  "updated_at": "2026-11-01T19:18:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89399313068,
+  "storage_human": "89.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

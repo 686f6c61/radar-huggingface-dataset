@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "duckyduck369/microduck-hd1910-velstand-demo",
+  "slug": "duckyduck369-microduck-hd1910-velstand-demo",
+  "author": "duckyduck369",
+  "url": "https://huggingface.co/duckyduck369/microduck-hd1910-velstand-demo",
+  "created_at": "2026-10-30T10:04:58.000Z",
+  "updated_at": "2026-10-30T12:07:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-family-velstand",
+    "microduck-plant-54c147ebc5a06f45",
+    "microduck-eval-velstand-1.0",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3573223,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "TEST ENTRY for checking the ranking: checkpoint 6000 of the same velstand run (not for robots)",
+      "dataset": "velstand eval v1.0",
+      "metric": "getup_facedown_success",
+      "value": 1
+    },
+    {
+      "task": "TEST ENTRY for checking the ranking: checkpoint 6000 of the same velstand run (not for robots)",
+      "dataset": "velstand eval v1.0",
+      "metric": "getup_faceup_success",
+      "value": 1
+    },
+    {
+      "task": "TEST ENTRY for checking the ranking: checkpoint 6000 of the same velstand run (not for robots)",
+      "dataset": "velstand eval v1.0",
+      "metric": "getup_facedown_time_s",
+      "value": 0.4
+    },
+    {
+      "task": "TEST ENTRY for checking the ranking: checkpoint 6000 of the same velstand run (not for robots)",
+      "dataset": "velstand eval v1.0",
+      "metric": "yaw_+0.3_achieved",
+      "value": 0.142
+    },
+    {
+      "task": "TEST ENTRY for checking the ranking: checkpoint 6000 of the same velstand run (not for robots)",
+      "dataset": "velstand eval v1.0",
+      "metric": "yaw_-0.3_achieved",
+      "value": -0.121
+    },
+    {
+      "task": "TEST ENTRY for checking the ranking: checkpoint 6000 of the same velstand run (not for robots)",
+      "dataset": "velstand eval v1.0",
+      "metric": "vx_0.2_achieved",
+      "value": 0.173
+    },
+    {
+      "task": "TEST ENTRY for checking the ranking: checkpoint 6000 of the same velstand run (not for robots)",
+      "dataset": "velstand eval v1.0",
+      "metric": "walk_falls_low_friction",
+      "value": 0.004
+    },
+    {
+      "task": "TEST ENTRY for checking the ranking: checkpoint 6000 of the same velstand run (not for robots)",
+      "dataset": "velstand eval v1.0",
+      "metric": "walk_falls_low_supply",
+      "value": 0
+    },
+    {
+      "task": "TEST ENTRY for checking the ranking: checkpoint 6000 of the same velstand run (not for robots)",
+      "dataset": "velstand eval v1.0",
+      "metric": "push_walking_up_at_end",
+      "value": 0.992
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "akm9191/sherpa-onnx-streaming-zipformer-en-int8",
+  "slug": "akm9191-sherpa-onnx-streaming-zipformer-en-int8",
+  "author": "akm9191",
+  "url": "https://huggingface.co/akm9191/sherpa-onnx-streaming-zipformer-en-int8",
+  "created_at": "2026-10-29T12:23:41.000Z",
+  "updated_at": "2026-10-29T12:23:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "zipformer",
+    "streaming",
+    "transducer",
+    "int8",
+    "automatic-speech-recognition",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72649734,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

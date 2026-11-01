@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "omaressamrme/telco-churn-logistic-regression",
+  "slug": "omaressamrme-telco-churn-logistic-regression",
+  "author": "omaressamrme",
+  "url": "https://huggingface.co/omaressamrme/telco-churn-logistic-regression",
+  "created_at": "2026-10-29T16:27:12.000Z",
+  "updated_at": "2026-10-31T04:05:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "tabular-classification",
+    "churn-prediction",
+    "logistic-regression",
+    "scikit-learn",
+    "telco",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7729,
+  "storage_human": "7729 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Customer churn prediction",
+      "dataset": "IBM Telco Customer Churn",
+      "metric": "ROC AUC",
+      "value": 0.843
+    },
+    {
+      "task": "Customer churn prediction",
+      "dataset": "IBM Telco Customer Churn",
+      "metric": "PR AUC",
+      "value": 0.65
+    },
+    {
+      "task": "Customer churn prediction",
+      "dataset": "IBM Telco Customer Churn",
+      "metric": "F1 at the F1-maximising threshold (0.30)",
+      "value": 0.641
+    }
+  ],
+  "sources": []
+}

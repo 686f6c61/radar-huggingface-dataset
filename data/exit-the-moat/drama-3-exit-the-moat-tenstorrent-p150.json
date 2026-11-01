@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "exit-the-moat/drama-3-exit-the-moat-tenstorrent-p150",
+  "slug": "exit-the-moat-drama-3-exit-the-moat-tenstorrent-p150",
+  "author": "exit-the-moat",
+  "url": "https://huggingface.co/exit-the-moat/drama-3-exit-the-moat-tenstorrent-p150",
+  "created_at": "2026-10-30T13:01:06.000Z",
+  "updated_at": "2026-11-01T00:01:14.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tenstorrent",
+    "tt-metal",
+    "ttnn",
+    "blackhole",
+    "p150",
+    "bfp8",
+    "bfp4",
+    "text-to-speech",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25003336832,
+  "storage_human": "25.0 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "exit - Wiktionary, the free dictionary",
+      "url": "https://en.wiktionary.org/wiki/exit",
+      "snippet": "Oct 19, 2026 · I have purſued you like your ſhadow; I have beſieg'd your door for a glimpſe of your exit and entrance, like a diſtreſſed …"
+    },
+    {
+      "title": "exit - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/exit",
+      "snippet": "Définition, exemples et prononciation de exit : Sortie d'un personnage, au théâtre.…"
+    },
+    {
+      "title": "EXIT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/exit",
+      "snippet": "EXIT definition: 1. the door through which you might leave a building or large vehicle: 2. the act of leaving a…. Learn more."
+    },
+    {
+      "title": "Définitions : exit - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/exit/32150",
+      "snippet": "exit - Définitions Français : Retrouvez la définition de exit, ainsi que les homonymes... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "EXIT | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/exit",
+      "snippet": "EXIT meaning: 1. the door through which you might leave a building or large vehicle: 2. the act of leaving a…. Learn more."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sido/hina-gemma4-e4b-aggressive-onnx",
+  "slug": "sido-hina-gemma4-e4b-aggressive-onnx",
+  "author": "Sido",
+  "url": "https://huggingface.co/Sido/hina-gemma4-e4b-aggressive-onnx",
+  "created_at": "2026-11-01T16:03:21.000Z",
+  "updated_at": "2026-11-01T16:07:52.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gemma4",
+    "image-text-to-text",
+    "webgpu",
+    "text-generation",
+    "conversational",
+    "base_model:HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4924921656,
+  "storage_human": "4.9 GB",
+  "base_model": "HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive, onnx-community/gemma-4-E4B-it-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sido (Colette) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sido_(Colette)",
+      "snippet": "Sido est un roman autobiographique de Colette, qui décrit sa mère Sidonie Landoy, surnommée Sido, mais également son …"
+    },
+    {
+      "title": "SIDO LYON",
+      "url": "https://www.sido-lyon.com/",
+      "snippet": "IMPACT est l’espace de SIDO dédié à celles et ceux qui construisent un numérique capable de fonctionner dans un monde plus …"
+    },
+    {
+      "title": "Sido – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Sido",
+      "snippet": "Sido ist der siebte deutsche Künstler und nach den Fantastischen Vier der zweite deutsche Hip-Hop-Act, der ein MTV Unplugged …"
+    },
+    {
+      "title": "Sido (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sido_(rapper)",
+      "snippet": "Sido is known for his provocative and aggressive lyrics. After gaining prominence with his debut album Maske in 2004, he became …"
+    },
+    {
+      "title": "Sido (rappeur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sido_(rappeur)",
+      "snippet": "Sido est actuellement au label Urban/Universal Music Group. Sido se distingue par ses paroles provocantes et agressives. Il porte …"
+    }
+  ]
+}

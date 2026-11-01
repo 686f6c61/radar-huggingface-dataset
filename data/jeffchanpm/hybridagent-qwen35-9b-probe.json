@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jeffchanpm/HybridAgent-qwen35-9b-probe",
+  "slug": "jeffchanpm-hybridagent-qwen35-9b-probe",
+  "author": "jeffchanpm",
+  "url": "https://huggingface.co/jeffchanpm/HybridAgent-qwen35-9b-probe",
+  "created_at": "2026-10-29T07:59:31.000Z",
+  "updated_at": "2026-10-29T08:00:21.000Z",
+  "license": "mixed-research-artifacts",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "hybridagent",
+    "lora",
+    "research",
+    "tool-use",
+    "experimental",
+    "en",
+    "dataset:togethercomputer/HybridAgent-HybridSFT-v1",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 445981368,
+  "storage_human": "446 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

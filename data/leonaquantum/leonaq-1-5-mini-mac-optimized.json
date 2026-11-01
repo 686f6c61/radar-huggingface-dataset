@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "LeonaQuantum/leonaq-1.5-mini-mac-optimized",
+  "slug": "leonaquantum-leonaq-1-5-mini-mac-optimized",
+  "author": "LeonaQuantum",
+  "url": "https://huggingface.co/LeonaQuantum/leonaq-1.5-mini-mac-optimized",
+  "created_at": "2026-10-27T07:15:03.000Z",
+  "updated_at": "2026-10-27T07:39:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "metal",
+    "macos",
+    "apple-silicon",
+    "quantum-circuits",
+    "inference",
+    "en",
+    "ja",
+    "base_model:LeonaQuantum/leonaq-1.5-mini",
+    "base_model:finetune:LeonaQuantum/leonaq-1.5-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64801775,
+  "storage_human": "65 MB",
+  "base_model": "LeonaQuantum/leonaq-1.5-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

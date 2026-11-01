@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "PasscodeEnjoyer/ejchan-261027",
+  "slug": "passcodeenjoyer-ejchan-261027",
+  "author": "PasscodeEnjoyer",
+  "url": "https://huggingface.co/PasscodeEnjoyer/ejchan-261027",
+  "created_at": "2026-10-27T10:19:47.000Z",
+  "updated_at": "2026-10-27T10:36:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4634905,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

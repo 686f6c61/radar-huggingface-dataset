@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SpeechAntiSpoofingBenchmarks/XLSR-Mamba-LA",
+  "slug": "speechantispoofingbenchmarks-xlsr-mamba-la",
+  "author": "SpeechAntiSpoofingBenchmarks",
+  "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Mamba-LA",
+  "created_at": "2026-10-30T09:16:41.000Z",
+  "updated_at": "2026-11-01T16:29:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "audio",
+    "anti-spoofing",
+    "deepfake-detection",
+    "speech-anti-spoofing-arena",
+    "arxiv:2411.10027",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": 319327544,
+  "parameters_human": "319.3M",
+  "storage_bytes": 1377354220,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

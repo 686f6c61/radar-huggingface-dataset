@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "CyrilPKU/CrystalREPA-Models",
+  "slug": "cyrilpku-crystalrepa-models",
+  "author": "CyrilPKU",
+  "url": "https://huggingface.co/CyrilPKU/CrystalREPA-Models",
+  "created_at": "2026-10-26T06:04:08.000Z",
+  "updated_at": "2026-10-26T07:38:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "crystal-generation",
+    "materials-science",
+    "diffusion",
+    "representation-alignment",
+    "mattergen",
+    "arxiv:2605.08960",
+    "en",
+    "dataset:CyrilPKU/CrystalREPA-Data",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5117551756,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

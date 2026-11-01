@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Lucasgitguy-co/Lucas-Image-2.1-Turbo-Q2K-SakuraEncoder",
+  "slug": "lucasgitguy-co-lucas-image-2-1-turbo-q2k-sakuraencoder",
+  "author": "Lucasgitguy-co",
+  "url": "https://huggingface.co/Lucasgitguy-co/Lucas-Image-2.1-Turbo-Q2K-SakuraEncoder",
+  "created_at": "2026-11-01T16:11:04.000Z",
+  "updated_at": "2026-11-01T16:11:47.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen-image",
+    "stable-diffusion.cpp",
+    "not-for-all-audiences",
+    "text-to-image",
+    "base_model:unsloth/Qwen-Image-2.1-Turbo-GGUF",
+    "base_model:quantized:unsloth/Qwen-Image-2.1-Turbo-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen-Image-2.1-Turbo-GGUF, webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

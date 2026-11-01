@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "selimaktas/Flow-Drafter-Qwen3.5-4B-1expert",
+  "slug": "selimaktas-flow-drafter-qwen3-5-4b-1expert",
+  "author": "selimaktas",
+  "url": "https://huggingface.co/selimaktas/Flow-Drafter-Qwen3.5-4B-1expert",
+  "created_at": "2026-10-26T20:36:42.000Z",
+  "updated_at": "2026-10-26T20:36:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "flow-matching",
+    "drafter",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3703568816,
+  "storage_human": "3.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

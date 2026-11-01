@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "hamsat-tamanina/hamsat-demucs",
+  "slug": "hamsat-tamanina-hamsat-demucs",
+  "author": "hamsat-tamanina",
+  "url": "https://huggingface.co/hamsat-tamanina/hamsat-demucs",
+  "created_at": "2026-10-28T02:37:25.000Z",
+  "updated_at": "2026-10-28T03:38:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180534758,
+  "storage_human": "181 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

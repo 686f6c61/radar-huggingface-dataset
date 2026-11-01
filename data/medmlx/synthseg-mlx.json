@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "MedMLX/synthseg-mlx",
+  "slug": "medmlx-synthseg-mlx",
+  "author": "MedMLX",
+  "url": "https://huggingface.co/MedMLX/synthseg-mlx",
+  "created_at": "2026-10-30T19:40:09.000Z",
+  "updated_at": "2026-11-01T04:33:04.000Z",
+  "license": "freesurfer-software-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "medical-imaging",
+    "image-segmentation",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423537508,
+  "storage_human": "424 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

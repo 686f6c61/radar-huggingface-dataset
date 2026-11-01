@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "North-ML1/VEG-Experiment",
+  "slug": "north-ml1-veg-experiment",
+  "author": "North-ML1",
+  "url": "https://huggingface.co/North-ML1/VEG-Experiment",
+  "created_at": "2026-10-30T00:24:42.000Z",
+  "updated_at": "2026-10-30T00:25:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "veg",
+  "languages": [],
+  "tags": [
+    "veg",
+    "safetensors",
+    "veyrian",
+    "byte-level",
+    "language-model",
+    "experimental",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81676032,
+  "parameters_human": "81.7M",
+  "storage_bytes": 653436707,
+  "storage_human": "653 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

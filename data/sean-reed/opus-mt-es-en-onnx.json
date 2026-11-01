@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "sean-reed/opus-mt-es-en-onnx",
+  "slug": "sean-reed-opus-mt-es-en-onnx",
+  "author": "sean-reed",
+  "url": "https://huggingface.co/sean-reed/opus-mt-es-en-onnx",
+  "created_at": "2026-10-31T20:35:47.000Z",
+  "updated_at": "2026-10-31T21:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "onnx",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "translation",
+    "marian",
+    "opus-mt",
+    "word-alignment",
+    "es",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-es-en",
+    "base_model:quantized:Helsinki-NLP/opus-mt-es-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157258386,
+  "storage_human": "157 MB",
+  "base_model": "Helsinki-NLP/opus-mt-es-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

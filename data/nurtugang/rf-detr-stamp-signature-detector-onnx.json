@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Nurtugang/rf-detr-stamp-signature-detector-onnx",
+  "slug": "nurtugang-rf-detr-stamp-signature-detector-onnx",
+  "author": "Nurtugang",
+  "url": "https://huggingface.co/Nurtugang/rf-detr-stamp-signature-detector-onnx",
+  "created_at": "2026-10-29T13:54:36.000Z",
+  "updated_at": "2026-10-29T13:55:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "rf-detr",
+    "stamp-detection",
+    "signature-detection",
+    "object-detection",
+    "base_model:bluecopa/rf-detr-stamp-signature-detector",
+    "base_model:quantized:bluecopa/rf-detr-stamp-signature-detector",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162672352,
+  "storage_human": "163 MB",
+  "base_model": "bluecopa/rf-detr-stamp-signature-detector",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "PruningEverything/llama_3_30_percent_compression",
+  "slug": "pruningeverything-llama_3_30_percent_compression",
+  "author": "PruningEverything",
+  "url": "https://huggingface.co/PruningEverything/llama_3_30_percent_compression",
+  "created_at": "2026-11-01T20:09:48.000Z",
+  "updated_at": "2026-11-01T20:12:56.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5631029248,
+  "parameters_human": "5.63B",
+  "storage_bytes": 11940201409,
+  "storage_human": "11.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cost-Efficient LLM Inference With Quantization, Pruning ... - NVIDIA",
+      "url": "https://www.nvidia.com/en-us/on-demand/session/gtc25-dlit71489/",
+      "snippet": "Dive into theoretical aspects and practical use cases for compression techniques used in creating more efficient versions of preferred models."
+    }
+  ]
+}

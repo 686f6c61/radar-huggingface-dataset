@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Beer-Gut-Boomer/Qwen3-Next-80B-A3B-MTP-blk48-Q4_K_M-Sidecar",
+  "slug": "beer-gut-boomer-qwen3-next-80b-a3b-mtp-blk48-q4_k_m-sidecar",
+  "author": "Beer-Gut-Boomer",
+  "url": "https://huggingface.co/Beer-Gut-Boomer/Qwen3-Next-80B-A3B-MTP-blk48-Q4_K_M-Sidecar",
+  "created_at": "2026-11-01T13:59:24.000Z",
+  "updated_at": "2026-11-01T14:02:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3-next",
+    "moe",
+    "mtp",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "polystrata",
+    "harmonic-pll",
+    "pascal-sm61",
+    "text-generation",
+    "base_model:Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1650471424,
+  "parameters_human": "1.65B",
+  "storage_bytes": 1076199880,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Exact Match (N=5 smoke + N=200 quality-drift suite, ±1.4% 95% CI)",
+      "value": 100
+    },
+    {
+      "task": "Scientific Reasoning",
+      "dataset": "ARC-Challenge",
+      "metric": "Accuracy (N=5 smoke + N=200 quality-drift suite, ±1.4% 95% CI)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

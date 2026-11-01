@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "JTulel/whisper-swahili-small-q4_1",
+  "slug": "jtulel-whisper-swahili-small-q4_1",
+  "author": "JTulel",
+  "url": "https://huggingface.co/JTulel/whisper-swahili-small-q4_1",
+  "created_at": "2026-10-29T06:03:01.000Z",
+  "updated_at": "2026-10-29T06:39:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "sw"
+  ],
+  "tags": [
+    "automatic-speech-recognition",
+    "sw",
+    "base_model:PaschalK/whisper-swahili-small",
+    "base_model:finetune:PaschalK/whisper-swahili-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160333856,
+  "storage_human": "160 MB",
+  "base_model": "PaschalK/whisper-swahili-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

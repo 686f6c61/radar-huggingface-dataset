@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "pierrelouis-c/cfdu",
+  "slug": "pierrelouis-c-cfdu",
+  "author": "pierrelouis-c",
+  "url": "https://huggingface.co/pierrelouis-c/cfdu",
+  "created_at": "2026-10-28T11:04:00.000Z",
+  "updated_at": "2026-10-30T14:22:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "crowd-simulation",
+    "pedestrian-dynamics",
+    "u-net",
+    "surrogate-model",
+    "density-estimation",
+    "jupedsim",
+    "image-to-image",
+    "en",
+    "dataset:pierrelouis-c/aporia-bends",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222263748,
+  "storage_human": "222 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

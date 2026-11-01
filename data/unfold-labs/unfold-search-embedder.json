@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "unfold-labs/unfold-search-embedder",
+  "slug": "unfold-labs-unfold-search-embedder",
+  "author": "unfold-labs",
+  "url": "https://huggingface.co/unfold-labs/unfold-search-embedder",
+  "created_at": "2026-10-30T07:00:33.000Z",
+  "updated_at": "2026-10-30T07:00:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "embedder",
+    "notes-search",
+    "feature-extraction",
+    "fr",
+    "en",
+    "arxiv:2402.05672",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88438861,
+  "storage_human": "88 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unfold — Toolkit for Storytellers",
+      "url": "https://unfold.com/",
+      "snippet": "Unfold is a toolkit for storytellers. Create beautiful and engaging stories from minimal and elegant templates. Available now for iOS …"
+    },
+    {
+      "title": "Pro — Unfold",
+      "url": "https://unfold.com/pro",
+      "snippet": "Unfold Pro. From Squarespace. Create engaging brand-level content from anywhere"
+    },
+    {
+      "title": "Unfold : éditeur vidéo/photo – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.moonlab.unfold&hl=fr",
+      "snippet": "Choisissez un modèle de Reel exclusif, ajoutez des clips et des photos, et Unfold se charge du reste. Modèles de stories, de …"
+    },
+    {
+      "title": "Unfold Pro",
+      "url": "https://pro.unfold.com/",
+      "snippet": "Unfold Pro Web App. From Squarespace. From Squarespace Create brand-level content from everywhere."
+    },
+    {
+      "title": "Unfold - LinkedIn",
+      "url": "https://fr.linkedin.com/company/unfold-production",
+      "snippet": "Unfold Production audiovisuelle Société de production spécialisée dans le digital. Suivre"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Seymen55/the-primer-v2-onnx",
+  "slug": "seymen55-the-primer-v2-onnx",
+  "author": "Seymen55",
+  "url": "https://huggingface.co/Seymen55/the-primer-v2-onnx",
+  "created_at": "2026-10-31T16:07:33.000Z",
+  "updated_at": "2026-10-31T16:07:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "onnx",
+    "tabular-classification",
+    "adaptive-learning",
+    "the-primer-v2",
+    "software-engineering-education",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2506,
+  "storage_human": "2506 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

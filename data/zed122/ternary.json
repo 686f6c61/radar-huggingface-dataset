@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "zed122/ternary",
+  "slug": "zed122-ternary",
+  "author": "zed122",
+  "url": "https://huggingface.co/zed122/ternary",
+  "created_at": "2026-10-25T23:41:08.000Z",
+  "updated_at": "2026-10-28T18:26:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3565076480,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jonasaise/qwen3.5-2b-swedish-preference-gate",
+  "slug": "jonasaise-qwen3-5-2b-swedish-preference-gate",
+  "author": "jonasaise",
+  "url": "https://huggingface.co/jonasaise/qwen3.5-2b-swedish-preference-gate",
+  "created_at": "2026-10-27T22:33:39.000Z",
+  "updated_at": "2026-10-28T09:26:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "sv",
+    "en"
+  ],
+  "tags": [
+    "preference-model",
+    "reward-model",
+    "dpo",
+    "swedish",
+    "qwen3.5",
+    "llm-as-judge",
+    "grammatical-error-detection",
+    "text-classification",
+    "sv",
+    "en",
+    "dataset:jonasaise/dpo-swedish-interpreted",
+    "dataset:jonasaise/laya-swedish-gate-v4-data",
+    "dataset:sbx/superlim-2",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7547417451,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Pairwise preference (translationese)",
+      "dataset": "dpo-swedish-interpreted (val_eval)",
+      "metric": null,
+      "value": 0.025730467515962446
+    },
+    {
+      "task": "Pairwise preference (fluent Swedish)",
+      "dataset": "fluent Swedish pairs (val_eval)",
+      "metric": null,
+      "value": 0.04454280429336293
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "EmogheneAkpomedaye/sherpa-onnx-streaming-zipformer2-id",
+  "slug": "emogheneakpomedaye-sherpa-onnx-streaming-zipformer2-id",
+  "author": "EmogheneAkpomedaye",
+  "url": "https://huggingface.co/EmogheneAkpomedaye/sherpa-onnx-streaming-zipformer2-id",
+  "created_at": "2026-10-26T04:48:19.000Z",
+  "updated_at": "2026-10-26T04:48:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "id",
+    "dataset:espnet/yodas2",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "dataset:google/fleurs",
+    "dataset:indonesian-nlp/librivox-indonesia",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 467425222,
+  "storage_human": "467 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

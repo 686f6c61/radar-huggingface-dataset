@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "colaiby2/train_moxing",
+  "slug": "colaiby2-train_moxing",
+  "author": "colaiby2",
+  "url": "https://huggingface.co/colaiby2/train_moxing",
+  "created_at": "2026-10-30T05:23:54.000Z",
+  "updated_at": "2024-01-24T14:40:39.000Z",
+  "license": "bsl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "adapter-transformers",
+  "languages": [
+    "aa"
+  ],
+  "tags": [
+    "adapter-transformers",
+    "aa",
+    "dataset:HuggingFaceM4/WebSight",
+    "license:bsl-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59645232799,
+  "storage_human": "59.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

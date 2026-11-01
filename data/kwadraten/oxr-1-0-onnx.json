@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kwadraten/OXR-1.0-ONNX",
+  "slug": "kwadraten-oxr-1-0-onnx",
+  "author": "kwadraten",
+  "url": "https://huggingface.co/kwadraten/OXR-1.0-ONNX",
+  "created_at": "2026-11-01T14:17:42.000Z",
+  "updated_at": "2026-11-01T14:48:25.000Z",
+  "license": "oxr",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "oxr",
+    "ocr",
+    "onnxruntime",
+    "image-to-text",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6233650886,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

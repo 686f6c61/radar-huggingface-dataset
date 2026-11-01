@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "alokdidde/mushin-0.8b-v0.1",
+  "slug": "alokdidde-mushin-0-8b-v0-1",
+  "author": "alokdidde",
+  "url": "https://huggingface.co/alokdidde/mushin-0.8b-v0.1",
+  "created_at": "2026-10-25T21:24:23.000Z",
+  "updated_at": "2026-10-27T16:46:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "mushin",
+  "languages": [],
+  "tags": [
+    "mushin",
+    "safetensors",
+    "robotics",
+    "decision-making",
+    "skill-selection",
+    "calibration",
+    "vision-language",
+    "lora",
+    "mujoco",
+    "system-1",
+    "dataset:alokdidde/mushin-sim-decisions-v1",
+    "arxiv:2610.09188",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24392977,
+  "parameters_human": "24.4M",
+  "storage_bytes": 51995132,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Skill choice (pick a skill or abstain)",
+      "dataset": "Mushin sim decisions v1",
+      "metric": "Choice accuracy (test)",
+      "value": 0.747
+    },
+    {
+      "task": "Skill choice (pick a skill or abstain)",
+      "dataset": "Mushin sim decisions v1",
+      "metric": "P(success) AUROC (test)",
+      "value": 0.916
+    },
+    {
+      "task": "Skill choice (pick a skill or abstain)",
+      "dataset": "Mushin sim decisions v1 (Go1 held-out body)",
+      "metric": "Choice accuracy (unseen Go1 body)",
+      "value": 0.707
+    },
+    {
+      "task": "Skill choice (pick a skill or abstain)",
+      "dataset": "Mushin sim decisions v1 (Go1 held-out body)",
+      "metric": "P(success) AUROC (unseen Go1 body)",
+      "value": 0.877
+    }
+  ],
+  "sources": []
+}

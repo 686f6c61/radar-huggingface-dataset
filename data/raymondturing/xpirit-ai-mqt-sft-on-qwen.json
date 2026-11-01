@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "RaymondTuring/xpirit-ai-mqt-sft-on-qwen",
+  "slug": "raymondturing-xpirit-ai-mqt-sft-on-qwen",
+  "author": "RaymondTuring",
+  "url": "https://huggingface.co/RaymondTuring/xpirit-ai-mqt-sft-on-qwen",
+  "created_at": "2026-10-31T18:17:41.000Z",
+  "updated_at": "2026-11-01T10:04:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "macrobiotic-quantum-theory",
+    "mqt",
+    "xpirit-ai",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 21420722674,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

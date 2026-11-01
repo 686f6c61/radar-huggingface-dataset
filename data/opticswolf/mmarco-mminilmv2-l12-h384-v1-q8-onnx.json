@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "opticsWolf/mmarco-mMiniLMv2-L12-H384-v1-q8-onnx",
+  "slug": "opticswolf-mmarco-mminilmv2-l12-h384-v1-q8-onnx",
+  "author": "opticsWolf",
+  "url": "https://huggingface.co/opticsWolf/mmarco-mMiniLMv2-L12-H384-v1-q8-onnx",
+  "created_at": "2026-10-30T08:38:07.000Z",
+  "updated_at": "2026-10-30T08:38:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "rerank",
+    "decision-model",
+    "q8",
+    "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "base_model:quantized:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414451191,
+  "storage_human": "414 MB",
+  "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

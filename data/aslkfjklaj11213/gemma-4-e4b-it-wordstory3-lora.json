@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "aslkfjklaj11213/gemma-4-E4B-it-wordstory3-lora",
+  "slug": "aslkfjklaj11213-gemma-4-e4b-it-wordstory3-lora",
+  "author": "aslkfjklaj11213",
+  "url": "https://huggingface.co/aslkfjklaj11213/gemma-4-E4B-it-wordstory3-lora",
+  "created_at": "2026-10-28T16:21:46.000Z",
+  "updated_at": "2026-10-28T16:21:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma4",
+    "lora",
+    "ko",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179057794,
+  "storage_human": "179 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ProjectGlue/smollm3-dolly-lora",
+  "slug": "projectglue-smollm3-dolly-lora",
+  "author": "ProjectGlue",
+  "url": "https://huggingface.co/ProjectGlue/smollm3-dolly-lora",
+  "created_at": "2026-10-29T22:07:06.000Z",
+  "updated_at": "2026-10-29T23:21:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lora",
+    "peft",
+    "fine-tuned",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:databricks/databricks-dolly-15k",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47918227,
+  "storage_human": "48 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

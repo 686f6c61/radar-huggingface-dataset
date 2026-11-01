@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "manasrpandya/bilateral-denoise-nbf",
+  "slug": "manasrpandya-bilateral-denoise-nbf",
+  "author": "manasrpandya",
+  "url": "https://huggingface.co/manasrpandya/bilateral-denoise-nbf",
+  "created_at": "2026-10-30T12:52:04.000Z",
+  "updated_at": "2026-10-30T12:52:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-denoising",
+    "bilateral-filter",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 472757,
+  "storage_human": "472757 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

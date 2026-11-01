@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ALWOAL/focalcodec_12_5hz_quantized",
+  "slug": "alwoal-focalcodec_12_5hz_quantized",
+  "author": "ALWOAL",
+  "url": "https://huggingface.co/ALWOAL/focalcodec_12_5hz_quantized",
+  "created_at": "2026-10-26T06:28:37.000Z",
+  "updated_at": "2026-10-28T00:14:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "other",
+  "languages": [],
+  "tags": [
+    "other",
+    "safetensors",
+    "focalcodec",
+    "audio-codec",
+    "quantization",
+    "post-training-quantization",
+    "base_model:lucadellalib/focalcodec_12_5hz",
+    "base_model:finetune:lucadellalib/focalcodec_12_5hz",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 291743730,
+  "storage_human": "292 MB",
+  "base_model": "lucadellalib/focalcodec_12_5hz",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

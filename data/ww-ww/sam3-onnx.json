@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wW-Ww/sam3-ONNX",
+  "slug": "ww-ww-sam3-onnx",
+  "author": "wW-Ww",
+  "url": "https://huggingface.co/wW-Ww/sam3-ONNX",
+  "created_at": "2026-10-30T15:53:10.000Z",
+  "updated_at": "2026-10-30T15:53:39.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sam3",
+    "segment-anything",
+    "directml",
+    "mask-generation",
+    "base_model:facebook/sam3",
+    "base_model:quantized:facebook/sam3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1762647846,
+  "storage_human": "1.8 GB",
+  "base_model": "facebook/sam3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

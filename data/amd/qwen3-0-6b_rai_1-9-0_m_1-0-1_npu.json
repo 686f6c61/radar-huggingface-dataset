@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "amd/Qwen3-0.6B_rai_1.9.0_m_1.0.1_npu",
+  "slug": "amd-qwen3-0-6b_rai_1-9-0_m_1-0-1_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Qwen3-0.6B_rai_1.9.0_m_1.0.1_npu",
+  "created_at": "2026-10-30T19:28:14.000Z",
+  "updated_at": "2026-10-30T19:28:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "qwen3",
+    "amd",
+    "ryzenai",
+    "m_1.0.1_npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1202169151,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

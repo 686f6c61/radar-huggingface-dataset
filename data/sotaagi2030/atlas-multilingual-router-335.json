@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/Atlas-Multilingual-Router-335",
+  "slug": "sotaagi2030-atlas-multilingual-router-335",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/Atlas-Multilingual-Router-335",
+  "created_at": "2026-10-30T09:10:39.000Z",
+  "updated_at": "2026-10-30T09:10:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154,
+  "storage_human": "154 B",
+  "base_model": "atlas-edge-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

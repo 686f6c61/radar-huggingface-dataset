@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "michele-xilo/rf-detr-rs",
+  "slug": "michele-xilo-rf-detr-rs",
+  "author": "michele-xilo",
+  "url": "https://huggingface.co/michele-xilo/rf-detr-rs",
+  "created_at": "2026-10-29T09:50:32.000Z",
+  "updated_at": "2026-10-29T09:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "rf-detr",
+    "object-detection",
+    "instance-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1049738370,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

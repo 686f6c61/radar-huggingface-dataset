@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SleepMastger/srlwam-cosmos-edge-stack-v2-stride4",
+  "slug": "sleepmastger-srlwam-cosmos-edge-stack-v2-stride4",
+  "author": "SleepMastger",
+  "url": "https://huggingface.co/SleepMastger/srlwam-cosmos-edge-stack-v2-stride4",
+  "created_at": "2026-10-31T03:25:34.000Z",
+  "updated_at": "2026-10-31T03:25:43.000Z",
+  "license": "component-specific",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "robotics",
+    "manipulation",
+    "franka",
+    "imitation-learning",
+    "base_model:nvidia/Cosmos3-Edge-Policy-DROID",
+    "base_model:finetune:nvidia/Cosmos3-Edge-Policy-DROID",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17297679208,
+  "storage_human": "17.3 GB",
+  "base_model": "nvidia/Cosmos3-Edge-Policy-DROID",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

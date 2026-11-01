@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "raju-ai/qwen2.5-1.5b-grpo-gsm8k",
+  "slug": "raju-ai-qwen2-5-1-5b-grpo-gsm8k",
+  "author": "raju-ai",
+  "url": "https://huggingface.co/raju-ai/qwen2.5-1.5b-grpo-gsm8k",
+  "created_at": "2026-10-29T11:54:27.000Z",
+  "updated_at": "2026-10-29T11:56:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "grpo",
+    "r1",
+    "deepseek-r1",
+    "reasoning",
+    "gsm8k",
+    "math",
+    "reinforcement-learning",
+    "unsloth",
+    "trl",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159192662,
+  "storage_human": "159 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct, unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K (Fixed 300 test subset, seed 42)",
+      "metric": "Strict Accuracy",
+      "value": 36.33
+    },
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K (Fixed 300 test subset, seed 42)",
+      "metric": "Format Compliance",
+      "value": 99.33
+    }
+  ],
+  "sources": []
+}

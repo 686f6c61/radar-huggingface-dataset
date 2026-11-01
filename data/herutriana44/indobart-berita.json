@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "herutriana44/IndoBart-Berita",
+  "slug": "herutriana44-indobart-berita",
+  "author": "herutriana44",
+  "url": "https://huggingface.co/herutriana44/IndoBart-Berita",
+  "created_at": "2026-10-30T01:17:10.000Z",
+  "updated_at": "2026-10-30T01:54:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1673514572,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "herutriana44 (HERU TRIANA) - Hugging Face",
+      "url": "https://huggingface.co/herutriana44/models",
+      "snippet": "Organizations herutriana44's models 16 Sort: Recently updated herutriana44/medical-detection-dataset Updated Jul 17, 2025Read more"
+    },
+    {
+      "title": "Herutriana44 (Heru-kun) · GitHub",
+      "url": "https://github.com/Herutriana44/",
+      "snippet": "In addition to AI, I possess beginner-level skills in: I also have a foundational understanding of Quantum Computing ⚛️ and …"
+    },
+    {
+      "title": "herutriana44 (HERU TRIANA) - Hugging Face",
+      "url": "https://huggingface.co/herutriana44",
+      "snippet": "Jul 16, 2025 · AI & ML interests ... Recent Activity updated a Space 6 days ago ... published a model 7 days ago"
+    }
+  ]
+}

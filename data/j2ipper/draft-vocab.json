@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "j2ipper/draft-vocab",
+  "slug": "j2ipper-draft-vocab",
+  "author": "j2ipper",
+  "url": "https://huggingface.co/j2ipper/draft-vocab",
+  "created_at": "2026-10-28T19:00:42.000Z",
+  "updated_at": "2026-10-28T20:01:35.000Z",
+  "license": "per-file",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "speculative-decoding",
+    "draft-vocabulary",
+    "talus",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1048576,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

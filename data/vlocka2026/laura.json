@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Vlocka2026/Laura",
+  "slug": "vlocka2026-laura",
+  "author": "Vlocka2026",
+  "url": "https://huggingface.co/Vlocka2026/Laura",
+  "created_at": "2026-10-31T12:45:14.000Z",
+  "updated_at": "2026-10-31T13:03:22.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 685763280,
+  "storage_human": "686 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

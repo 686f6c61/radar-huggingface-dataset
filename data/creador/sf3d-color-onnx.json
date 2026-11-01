@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "creador/sf3d-color-onnx",
+  "slug": "creador-sf3d-color-onnx",
+  "author": "creador",
+  "url": "https://huggingface.co/creador/sf3d-color-onnx",
+  "created_at": "2026-10-28T23:05:03.000Z",
+  "updated_at": "2026-10-28T23:05:06.000Z",
+  "license": "stabilityai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "webgpu",
+    "image-to-3d",
+    "stable-fast-3d",
+    "base_model:stabilityai/stable-fast-3d",
+    "base_model:quantized:stabilityai/stable-fast-3d",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70720,
+  "storage_human": "70720 B",
+  "base_model": "stabilityai/stable-fast-3d",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

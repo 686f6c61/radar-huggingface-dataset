@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ldenoue/title-onnx",
+  "slug": "ldenoue-title-onnx",
+  "author": "ldenoue",
+  "url": "https://huggingface.co/ldenoue/title-onnx",
+  "created_at": "2026-11-01T17:52:47.000Z",
+  "updated_at": "2026-11-01T17:53:49.000Z",
+  "license": "desert-ant-labs-source-available",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "onnx",
+    "granitemoehybrid",
+    "text",
+    "text-generation",
+    "summarization",
+    "on-device",
+    "multilingual",
+    "conversational",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 202719390,
+  "storage_human": "203 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

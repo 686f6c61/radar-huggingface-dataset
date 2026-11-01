@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "DPT200625/haha",
+  "slug": "dpt200625-haha",
+  "author": "DPT200625",
+  "url": "https://huggingface.co/DPT200625/haha",
+  "created_at": "2026-10-31T17:39:33.000Z",
+  "updated_at": "2026-11-01T06:20:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2605047,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

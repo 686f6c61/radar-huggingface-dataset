@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "KENIC-1/Turbo-Qwen-Image-2.1-Turbo-Inpaint-LORA",
+  "slug": "kenic-1-turbo-qwen-image-2-1-turbo-inpaint-lora",
+  "author": "KENIC-1",
+  "url": "https://huggingface.co/KENIC-1/Turbo-Qwen-Image-2.1-Turbo-Inpaint-LORA",
+  "created_at": "2026-10-30T14:06:52.000Z",
+  "updated_at": "2026-10-31T02:09:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7735097013,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

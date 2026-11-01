@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "JoshuaAshkinaze/cap-policy-subtopic",
+  "slug": "joshuaashkinaze-cap-policy-subtopic",
+  "author": "JoshuaAshkinaze",
+  "url": "https://huggingface.co/JoshuaAshkinaze/cap-policy-subtopic",
+  "created_at": "2026-11-01T18:44:21.000Z",
+  "updated_at": "2026-11-01T18:46:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "classification",
+    "political-science",
+    "policy",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:adapter:answerdotai/ModernBERT-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11400488,
+  "storage_human": "11 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

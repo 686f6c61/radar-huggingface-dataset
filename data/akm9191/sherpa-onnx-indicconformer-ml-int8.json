@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "akm9191/sherpa-onnx-indicconformer-ml-int8",
+  "slug": "akm9191-sherpa-onnx-indicconformer-ml-int8",
+  "author": "akm9191",
+  "url": "https://huggingface.co/akm9191/sherpa-onnx-indicconformer-ml-int8",
+  "created_at": "2026-10-29T12:23:50.000Z",
+  "updated_at": "2026-10-29T12:23:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ml"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "nemo",
+    "ctc",
+    "indicconformer",
+    "malayalam",
+    "int8",
+    "automatic-speech-recognition",
+    "ml",
+    "base_model:ai4bharat/indicconformer_stt_ml_hybrid_ctc_rnnt_large",
+    "base_model:quantized:ai4bharat/indicconformer_stt_ml_hybrid_ctc_rnnt_large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137677591,
+  "storage_human": "138 MB",
+  "base_model": "ai4bharat/indicconformer_stt_ml_hybrid_ctc_rnnt_large",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

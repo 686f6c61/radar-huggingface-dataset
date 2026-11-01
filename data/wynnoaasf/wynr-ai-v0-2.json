@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Wynnoaasf/wynr-ai-v0.2",
+  "slug": "wynnoaasf-wynr-ai-v0-2",
+  "author": "Wynnoaasf",
+  "url": "https://huggingface.co/Wynnoaasf/wynr-ai-v0.2",
+  "created_at": "2026-11-01T15:19:35.000Z",
+  "updated_at": "2026-11-01T15:58:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "vi",
+    "dataset:Wynnoaasf/wynr-identity",
+    "base_model:Wynnoaasf/wynr-ai-v0.2",
+    "base_model:finetune:Wynnoaasf/wynr-ai-v0.2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519432,
+  "storage_human": "1000 MB",
+  "base_model": "Wynnoaasf/wynr-ai-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

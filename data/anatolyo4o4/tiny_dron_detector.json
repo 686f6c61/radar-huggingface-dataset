@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "anatolyo4o4/tiny_dron_detector",
+  "slug": "anatolyo4o4-tiny_dron_detector",
+  "author": "anatolyo4o4",
+  "url": "https://huggingface.co/anatolyo4o4/tiny_dron_detector",
+  "created_at": "2026-10-28T12:35:21.000Z",
+  "updated_at": "2026-10-28T13:56:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "uk"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "audio",
+    "audio-classification",
+    "drone-detection",
+    "crnn",
+    "real-time",
+    "edge-deployment",
+    "en",
+    "uk",
+    "dataset:geronimobasso/drone-audio-detection-samples",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6705954,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "Drone Audio Detection Samples",
+      "metric": "loss",
+      "value": 0.1442
+    },
+    {
+      "task": "Audio Classification",
+      "dataset": "Drone Audio Detection Samples",
+      "metric": "F1 Score (thr 0.25)",
+      "value": 0.9953
+    },
+    {
+      "task": "Audio Classification",
+      "dataset": "Drone Audio Detection Samples",
+      "metric": "Accuracy",
+      "value": 0.9928
+    }
+  ],
+  "sources": []
+}

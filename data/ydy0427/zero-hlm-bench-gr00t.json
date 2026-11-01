@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "YDY0427/Zero-HLM-Bench-GR00T",
+  "slug": "ydy0427-zero-hlm-bench-gr00t",
+  "author": "YDY0427",
+  "url": "https://huggingface.co/YDY0427/Zero-HLM-Bench-GR00T",
+  "created_at": "2026-10-31T15:13:25.000Z",
+  "updated_at": "2026-10-31T15:19:48.000Z",
+  "license": "nvidia-research-evaluation",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "humanoid",
+    "zero-hlm",
+    "groot",
+    "en",
+    "arxiv:2610.35075",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20731498248,
+  "storage_human": "20.7 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

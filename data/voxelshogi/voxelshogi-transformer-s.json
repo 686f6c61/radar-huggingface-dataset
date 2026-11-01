@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "voxelshogi/voxelshogi-transformer-s",
+  "slug": "voxelshogi-voxelshogi-transformer-s",
+  "author": "voxelshogi",
+  "url": "https://huggingface.co/voxelshogi/voxelshogi-transformer-s",
+  "created_at": "2026-10-29T11:20:44.000Z",
+  "updated_at": "2026-10-29T18:45:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "voxelshogi",
+    "three-dimensional-shogi",
+    "research",
+    "dataset:voxelshogi/voxelshogi-synthetic-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5021064,
+  "parameters_human": "5.0M",
+  "storage_bytes": 161659155,
+  "storage_human": "162 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

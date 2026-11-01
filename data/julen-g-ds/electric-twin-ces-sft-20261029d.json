@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Julen-G-DS/electric-twin-ces-sft-20261029d",
+  "slug": "julen-g-ds-electric-twin-ces-sft-20261029d",
+  "author": "Julen-G-DS",
+  "url": "https://huggingface.co/Julen-G-DS/electric-twin-ces-sft-20261029d",
+  "created_at": "2026-10-30T01:10:10.000Z",
+  "updated_at": "2026-10-30T02:59:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "electric-twin",
+    "ces",
+    "granite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10134185690,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

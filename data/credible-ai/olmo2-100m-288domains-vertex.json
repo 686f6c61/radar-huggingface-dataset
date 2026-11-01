@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "credible-ai/olmo2-100M-288domains-vertex",
+  "slug": "credible-ai-olmo2-100m-288domains-vertex",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/olmo2-100M-288domains-vertex",
+  "created_at": "2026-10-27T22:56:53.000Z",
+  "updated_at": "2026-10-28T09:21:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "linmix",
+    "data-mixing",
+    "proxy-models",
+    "text-generation",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "arxiv:2610.37390",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104454856704,
+  "storage_human": "104.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

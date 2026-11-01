@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nakas/gpttrace-img-flag-pec-v3-onnx",
+  "slug": "nakas-gpttrace-img-flag-pec-v3-onnx",
+  "author": "nakas",
+  "url": "https://huggingface.co/nakas/gpttrace-img-flag-pec-v3-onnx",
+  "created_at": "2026-10-22T08:29:24.000Z",
+  "updated_at": "2026-11-01T19:59:18.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ai-generated-image-detection",
+    "deepfake-detection",
+    "gpttrace",
+    "image-classification",
+    "dataset:nakas/gpttrace-img-v2",
+    "base_model:timm/vit_pe_core_large_patch14_336.fb",
+    "base_model:quantized:timm/vit_pe_core_large_patch14_336.fb",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1241446935,
+  "storage_human": "1.2 GB",
+  "base_model": "timm/vit_pe_core_large_patch14_336.fb",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
