@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jmloperaa2830/tomi-sd-turbo-q8-gguf",
+  "slug": "jmloperaa2830-tomi-sd-turbo-q8-gguf",
+  "author": "jmloperaa2830",
+  "url": "https://huggingface.co/jmloperaa2830/tomi-sd-turbo-q8-gguf",
+  "created_at": "2026-10-27T01:21:02.000Z",
+  "updated_at": "2026-10-27T01:23:54.000Z",
+  "license": "stability-ai-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "stable-diffusion",
+    "stable-diffusion-cpp",
+    "text-to-image",
+    "base_model:stabilityai/sd-turbo",
+    "base_model:quantized:stabilityai/sd-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 1303598228,
+  "parameters_human": "1.30B",
+  "storage_bytes": 3444808256,
+  "storage_human": "3.4 GB",
+  "base_model": "stabilityai/sd-turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

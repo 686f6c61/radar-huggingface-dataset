@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "aimeri/name-generator-v2-GGUF",
+  "slug": "aimeri-name-generator-v2-gguf",
+  "author": "aimeri",
+  "url": "https://huggingface.co/aimeri/name-generator-v2-GGUF",
+  "created_at": "2026-10-28T17:18:42.000Z",
+  "updated_at": "2026-10-28T18:06:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "names",
+    "character-names",
+    "fantasy-names",
+    "creative-writing",
+    "ministral3",
+    "text-generation",
+    "en",
+    "base_model:aimeri/name-generator-v2",
+    "base_model:quantized:aimeri/name-generator-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 186,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 11093059456,
+  "storage_human": "11.1 GB",
+  "base_model": "aimeri/name-generator-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "100+ \"Herb Jackson\" profiles | LinkedIn",
+      "url": "https://uk.linkedin.com/pub/dir/Herb/Jackson",
+      "snippet": "View the profiles of professionals named \"Herb Jackson\" on LinkedIn. There are 100+ professionals named \"Herb Jackson\", who use …"
+    }
+  ]
+}

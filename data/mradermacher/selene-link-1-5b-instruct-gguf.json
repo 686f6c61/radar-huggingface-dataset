@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Selene-Link-1.5B-Instruct-GGUF",
+  "slug": "mradermacher-selene-link-1-5b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Selene-Link-1.5B-Instruct-GGUF",
+  "created_at": "2026-10-30T14:22:31.000Z",
+  "updated_at": "2026-10-30T14:31:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:Syradevops/Selene-Link-1.5B-Instruct",
+    "base_model:quantized:Syradevops/Selene-Link-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 258,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206904448,
+  "storage_human": "14.2 GB",
+  "base_model": "Syradevops/Selene-Link-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Triad Guaranty Insurance Corporation - LinkedIn",
+      "url": "https://www.linkedin.com/company/triad-guaranty",
+      "snippet": "Triad and the Department will work together to prepare a Rehabilitation Plan that is expected to be filed with the Circuit Court of Cook …"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/search/results/all/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/?%7C/",
+      "snippet": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights …"
+    }
+  ]
+}

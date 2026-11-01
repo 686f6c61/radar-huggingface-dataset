@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "DQN-Labs/nexustest2-cfp-8k-oct30",
+  "slug": "dqn-labs-nexustest2-cfp-8k-oct30",
+  "author": "DQN-Labs",
+  "url": "https://huggingface.co/DQN-Labs/nexustest2-cfp-8k-oct30",
+  "created_at": "2026-10-30T17:44:38.000Z",
+  "updated_at": "2026-10-30T17:53:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996101,
+  "storage_human": "55.6 GB",
+  "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

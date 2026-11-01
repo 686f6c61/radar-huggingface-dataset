@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "viporg/Hy-MT2-1.8B-GGUF",
+  "slug": "viporg-hy-mt2-1-8b-gguf",
+  "author": "viporg",
+  "url": "https://huggingface.co/viporg/Hy-MT2-1.8B-GGUF",
+  "created_at": "2026-10-28T15:51:16.000Z",
+  "updated_at": "2026-10-28T15:51:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:tencent/Hy-MT2-1.8B-GGUF",
+    "base_model:quantized:tencent/Hy-MT2-1.8B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": 1791080448,
+  "parameters_human": "1.79B",
+  "storage_bytes": 1133080448,
+  "storage_human": "1.1 GB",
+  "base_model": "tencent/Hy-MT2-1.8B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

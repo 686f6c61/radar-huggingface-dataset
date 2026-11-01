@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jmoraleses/folio-melo-ja-mlx",
+  "slug": "jmoraleses-folio-melo-ja-mlx",
+  "author": "jmoraleses",
+  "url": "https://huggingface.co/jmoraleses/folio-melo-ja-mlx",
+  "created_at": "2026-10-26T15:51:38.000Z",
+  "updated_at": "2026-10-26T15:54:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "melotts",
+    "tts",
+    "melo",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 41576193,
+  "parameters_human": "41.6M",
+  "storage_bytes": 166367316,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

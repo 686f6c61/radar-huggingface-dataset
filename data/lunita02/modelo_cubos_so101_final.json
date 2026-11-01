@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Lunita02/modelo_cubos_so101_final",
+  "slug": "lunita02-modelo_cubos_so101_final",
+  "author": "Lunita02",
+  "url": "https://huggingface.co/Lunita02/modelo_cubos_so101_final",
+  "created_at": "2026-10-25T05:29:37.000Z",
+  "updated_at": "2026-10-25T05:29:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Lunita02/Cubos_300",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

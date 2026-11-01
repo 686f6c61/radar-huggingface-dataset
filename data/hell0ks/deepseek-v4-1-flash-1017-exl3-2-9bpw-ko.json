@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hell0ks/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko",
+  "slug": "hell0ks-deepseek-v4-1-flash-1017-exl3-2-9bpw-ko",
+  "author": "hell0ks",
+  "url": "https://huggingface.co/hell0ks/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ko",
+  "created_at": "2026-10-27T12:17:27.000Z",
+  "updated_at": "2026-10-27T13:23:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "exllamav3",
+    "deepseek",
+    "moe",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "ko",
+    "dataset:nvidia/Nemotron-SFT-Multilingual-v2",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 164,
+  "trending_score": 0,
+  "parameters": 105318449362,
+  "parameters_human": "105.32B",
+  "storage_bytes": 210796961794,
+  "storage_human": "210.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

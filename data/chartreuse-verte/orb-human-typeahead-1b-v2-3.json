@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "chartreuse-verte/orb-human-typeahead-1b-v2.3",
+  "slug": "chartreuse-verte-orb-human-typeahead-1b-v2-3",
+  "author": "chartreuse-verte",
+  "url": "https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.3",
+  "created_at": "2026-10-31T03:25:23.000Z",
+  "updated_at": "2026-10-31T04:33:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "granite",
+    "text-generation",
+    "typeahead",
+    "autocomplete",
+    "roleplay",
+    "conversational",
+    "en",
+    "base_model:chartreuse-verte/orb-human-typeahead-1b-v2.2",
+    "base_model:finetune:chartreuse-verte/orb-human-typeahead-1b-v2.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": 1631750144,
+  "parameters_human": "1.63B",
+  "storage_bytes": 9239806456,
+  "storage_human": "9.2 GB",
+  "base_model": "chartreuse-verte/orb-human-typeahead-1b-v2.2",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

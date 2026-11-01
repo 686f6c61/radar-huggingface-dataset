@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3-4b-pirate-GGUF",
+  "slug": "mradermacher-qwen3-4b-pirate-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3-4b-pirate-GGUF",
+  "created_at": "2026-10-28T17:04:13.000Z",
+  "updated_at": "2026-10-28T17:23:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "en",
+    "base_model:hariharanv04/qwen3-4b-pirate",
+    "base_model:quantized:hariharanv04/qwen3-4b-pirate",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 454,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389991168,
+  "storage_human": "36.4 GB",
+  "base_model": "hariharanv04/qwen3-4b-pirate",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

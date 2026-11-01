@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E2B-it-enja-GGUF",
+  "slug": "mradermacher-gemma-4-e2b-it-enja-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E2B-it-enja-GGUF",
+  "created_at": "2026-10-30T14:52:24.000Z",
+  "updated_at": "2026-10-30T15:06:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "vocabulary-pruning",
+    "en",
+    "ja",
+    "base_model:brishen/gemma-4-E2B-it-enja",
+    "base_model:quantized:brishen/gemma-4-E2B-it-enja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 424,
+  "trending_score": 0,
+  "parameters": 3619681827,
+  "parameters_human": "3.62B",
+  "storage_bytes": 37935545728,
+  "storage_human": "37.9 GB",
+  "base_model": "brishen/gemma-4-E2B-it-enja",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

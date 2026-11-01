@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "shixin-labs/ERNIE-4.5-0.3B-Base-GGUF",
+  "slug": "shixin-labs-ernie-4-5-0-3b-base-gguf",
+  "author": "shixin-labs",
+  "url": "https://huggingface.co/shixin-labs/ERNIE-4.5-0.3B-Base-GGUF",
+  "created_at": "2026-10-28T04:50:32.000Z",
+  "updated_at": "2026-10-28T04:54:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ernie4_5",
+    "input-method",
+    "zh",
+    "en",
+    "base_model:baidu/ERNIE-4.5-0.3B-Base-PT",
+    "base_model:quantized:baidu/ERNIE-4.5-0.3B-Base-PT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 360748032,
+  "parameters_human": "360.7M",
+  "storage_bytes": 385789184,
+  "storage_human": "386 MB",
+  "base_model": "baidu/ERNIE-4.5-0.3B-Base-PT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Oprius-3.0-1.1B-GGUF",
+  "slug": "mradermacher-oprius-3-0-1-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Oprius-3.0-1.1B-GGUF",
+  "created_at": "2026-10-28T08:57:25.000Z",
+  "updated_at": "2026-10-28T10:06:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "general_help",
+    "conversation",
+    "tinyllama",
+    "general",
+    "general_conversation",
+    "en",
+    "dataset:zzzekryo/conversation-and-web-examples-ForOprius",
+    "base_model:zzzekryo/Oprius-3.0-1.1B",
+    "base_model:quantized:zzzekryo/Oprius-3.0-1.1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 273,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 9811230592,
+  "storage_human": "9.8 GB",
+  "base_model": "zzzekryo/Oprius-3.0-1.1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

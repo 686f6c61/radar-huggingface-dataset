@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "booleai/qwen2.5-0.5b-banking77-10intent-lora",
+  "slug": "booleai-qwen2-5-0-5b-banking77-10intent-lora",
+  "author": "booleai",
+  "url": "https://huggingface.co/booleai/qwen2.5-0.5b-banking77-10intent-lora",
+  "created_at": "2026-10-27T19:53:31.000Z",
+  "updated_at": "2026-10-27T19:53:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "lora",
+    "intent-classification",
+    "banking77",
+    "cpu-training",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 350,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 2022822468,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "wesjos/Qwen3.8-27B-Mario-HTML-LoRA-GGUF",
+  "slug": "wesjos-qwen3-8-27b-mario-html-lora-gguf",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/Qwen3.8-27B-Mario-HTML-LoRA-GGUF",
+  "created_at": "2026-10-25T09:54:46.000Z",
+  "updated_at": "2026-10-27T06:18:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "lora",
+    "qwen3.8",
+    "html",
+    "ui",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 107,
+  "trending_score": 0,
+  "parameters": 10485760,
+  "parameters_human": "10.5M",
+  "storage_bytes": 31919874,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

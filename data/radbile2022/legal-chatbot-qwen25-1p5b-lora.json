@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "radbile2022/legal-chatbot-qwen25-1p5b-lora",
+  "slug": "radbile2022-legal-chatbot-qwen25-1p5b-lora",
+  "author": "radbile2022",
+  "url": "https://huggingface.co/radbile2022/legal-chatbot-qwen25-1p5b-lora",
+  "created_at": "2026-10-28T13:03:37.000Z",
+  "updated_at": "2026-10-28T13:06:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

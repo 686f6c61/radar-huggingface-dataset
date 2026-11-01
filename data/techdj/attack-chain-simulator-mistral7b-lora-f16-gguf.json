@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "techdj/attack-chain-simulator-mistral7b-lora-F16-GGUF",
+  "slug": "techdj-attack-chain-simulator-mistral7b-lora-f16-gguf",
+  "author": "techdj",
+  "url": "https://huggingface.co/techdj/attack-chain-simulator-mistral7b-lora-F16-GGUF",
+  "created_at": "2026-10-25T15:01:43.000Z",
+  "updated_at": "2026-10-25T15:01:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "mistral",
+    "lora",
+    "qlora",
+    "mitre-attack",
+    "threat-intelligence",
+    "attack-chain",
+    "security-research",
+    "llama-cpp",
+    "gguf-my-lora",
+    "text-generation",
+    "en",
+    "base_model:sohomn/attack-chain-simulator-mistral7b-lora",
+    "base_model:adapter:sohomn/attack-chain-simulator-mistral7b-lora",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 13631488,
+  "parameters_human": "13.6M",
+  "storage_bytes": 27281472,
+  "storage_human": "27 MB",
+  "base_model": "sohomn/attack-chain-simulator-mistral7b-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

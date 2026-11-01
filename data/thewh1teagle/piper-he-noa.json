@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "thewh1teagle/piper-he-noa",
+  "slug": "thewh1teagle-piper-he-noa",
+  "author": "thewh1teagle",
+  "url": "https://huggingface.co/thewh1teagle/piper-he-noa",
+  "created_at": "2026-10-26T23:46:47.000Z",
+  "updated_at": "2026-10-27T13:39:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper",
+  "languages": [
+    "he",
+    "en"
+  ],
+  "tags": [
+    "piper",
+    "onnx",
+    "vits",
+    "hebrew",
+    "tts",
+    "text-to-speech",
+    "he",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 385135176,
+  "storage_human": "385 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

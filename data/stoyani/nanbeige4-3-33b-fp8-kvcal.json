@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "stoyani/Nanbeige4.3-33B-FP8-KVcal",
+  "slug": "stoyani-nanbeige4-3-33b-fp8-kvcal",
+  "author": "stoyani",
+  "url": "https://huggingface.co/stoyani/Nanbeige4.3-33B-FP8-KVcal",
+  "created_at": "2026-10-26T11:16:04.000Z",
+  "updated_at": "2026-10-26T11:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "llama",
+    "nanbeige",
+    "fp8",
+    "kv-cache",
+    "calibration",
+    "compressed-tensors",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:primitive-ai/Nanbeige4.3-33B-FP8",
+    "base_model:quantized:primitive-ai/Nanbeige4.3-33B-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 33118977180,
+  "parameters_human": "33.12B",
+  "storage_bytes": 35547982797,
+  "storage_human": "35.5 GB",
+  "base_model": "primitive-ai/Nanbeige4.3-33B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "DhruvParmar051/syrinx-50m",
+  "slug": "dhruvparmar051-syrinx-50m",
+  "author": "DhruvParmar051",
+  "url": "https://huggingface.co/DhruvParmar051/syrinx-50m",
+  "created_at": "2026-10-30T09:01:21.000Z",
+  "updated_at": "2026-10-30T09:03:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "syrinx",
+    "from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 50866688,
+  "parameters_human": "50.9M",
+  "storage_bytes": 203476920,
+  "storage_human": "203 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

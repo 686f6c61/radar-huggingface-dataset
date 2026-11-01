@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "odelpa/qwen14-rag-selettivo",
+  "slug": "odelpa-qwen14-rag-selettivo",
+  "author": "odelpa",
+  "url": "https://huggingface.co/odelpa/qwen14-rag-selettivo",
+  "created_at": "2026-10-26T17:33:14.000Z",
+  "updated_at": "2026-10-26T19:50:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "rag",
+    "bm25",
+    "italian",
+    "qwen3",
+    "evaluation",
+    "it",
+    "en",
+    "base_model:mlx-community/Qwen3-14B-8bit",
+    "base_model:finetune:mlx-community/Qwen3-14B-8bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mlx-community/Qwen3-14B-8bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

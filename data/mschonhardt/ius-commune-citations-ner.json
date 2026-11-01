@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mschonhardt/ius-commune-citations-ner",
+  "slug": "mschonhardt-ius-commune-citations-ner",
+  "author": "mschonhardt",
+  "url": "https://huggingface.co/mschonhardt/ius-commune-citations-ner",
+  "created_at": "2026-10-29T18:25:11.000Z",
+  "updated_at": "2026-10-29T18:41:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "flair",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "flair",
+    "pytorch",
+    "token-classification",
+    "sequence-tagger-model",
+    "named-entity-recognition",
+    "legal-history",
+    "medieval-latin",
+    "early-modern",
+    "ius-commune",
+    "citations",
+    "digital-humanities",
+    "la",
+    "base_model:mschonhardt/MediBerta",
+    "base_model:finetune:mschonhardt/MediBerta",
+    "doi:10.57967/hf/11325",
+    "license:cc-by-4.0",
+    "model-index",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2674281503,
+  "storage_human": "2.7 GB",
+  "base_model": "mschonhardt/MediBerta, mschonhardt/latin-legal-forward, mschonhardt/latin-legal-backward",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "citation and entity tagging",
+      "dataset": "Consilia held-out test split (silver standard, 10,511 sentences)",
+      "metric": "span F1 (micro)",
+      "value": 0.912
+    },
+    {
+      "task": "citation and entity tagging",
+      "dataset": "Consilia held-out test split (silver standard, 10,511 sentences)",
+      "metric": "span F1 (macro)",
+      "value": 0.744
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "HughieHu/DR-Pixel-Trained",
+  "slug": "hughiehu-dr-pixel-trained",
+  "author": "HughieHu",
+  "url": "https://huggingface.co/HughieHu/DR-Pixel-Trained",
+  "created_at": "2026-10-26T07:53:01.000Z",
+  "updated_at": "2026-10-26T18:16:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "deep-research",
+    "agentic-retrieval",
+    "visual-document-retrieval",
+    "scientific-papers",
+    "conversational",
+    "en",
+    "dataset:HughieHu/drpixel-bench",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55667570125,
+  "storage_human": "55.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

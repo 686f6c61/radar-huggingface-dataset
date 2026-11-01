@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Piccolo-9B-GGUF",
+  "slug": "mradermacher-piccolo-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Piccolo-9B-GGUF",
+  "created_at": "2026-10-30T16:49:45.000Z",
+  "updated_at": "2026-10-30T17:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "bidirectional-attention",
+    "agentscope",
+    "qwenpaw",
+    "en",
+    "zh",
+    "base_model:agentscope-ai/Piccolo-9B",
+    "base_model:quantized:agentscope-ai/Piccolo-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 456,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85101505664,
+  "storage_human": "85.1 GB",
+  "base_model": "agentscope-ai/Piccolo-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

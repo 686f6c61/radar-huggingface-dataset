@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hariharanv04/qwen3-4b-pirate-Q4_0-GGUF",
+  "slug": "hariharanv04-qwen3-4b-pirate-q4_0-gguf",
+  "author": "hariharanv04",
+  "url": "https://huggingface.co/hariharanv04/qwen3-4b-pirate-Q4_0-GGUF",
+  "created_at": "2026-10-27T12:44:20.000Z",
+  "updated_at": "2026-10-27T12:44:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:hariharanv04/qwen3-4b-pirate",
+    "base_model:quantized:hariharanv04/qwen3-4b-pirate",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2369547008,
+  "storage_human": "2.4 GB",
+  "base_model": "hariharanv04/qwen3-4b-pirate",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

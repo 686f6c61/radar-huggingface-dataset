@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "annelo/SenseNova-Loop-9B-Preview-Q4_K_M-Vision-GGUF",
+  "slug": "annelo-sensenova-loop-9b-preview-q4_k_m-vision-gguf",
+  "author": "annelo",
+  "url": "https://huggingface.co/annelo/SenseNova-Loop-9B-Preview-Q4_K_M-Vision-GGUF",
+  "created_at": "2026-10-30T20:59:27.000Z",
+  "updated_at": "2026-10-30T21:04:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "vision",
+    "sensenova-loop",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:sensenova/SenseNova-Loop-9B-Preview",
+    "base_model:quantized:sensenova/SenseNova-Loop-9B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 14149766784,
+  "parameters_human": "14.15B",
+  "storage_bytes": 9738774400,
+  "storage_human": "9.7 GB",
+  "base_model": "sensenova/SenseNova-Loop-9B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

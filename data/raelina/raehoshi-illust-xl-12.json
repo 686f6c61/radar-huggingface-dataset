@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Raelina/Raehoshi-illust-XL-12",
+  "slug": "raelina-raehoshi-illust-xl-12",
+  "author": "Raelina",
+  "url": "https://huggingface.co/Raelina/Raehoshi-illust-XL-12",
+  "created_at": "2026-10-30T12:29:49.000Z",
+  "updated_at": "2026-10-30T12:40:14.000Z",
+  "license": "sdxl-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "anime",
+    "stable-diffusion-xl",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 13876071776,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

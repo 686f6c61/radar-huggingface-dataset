@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jaybon1840/BGE-m3-ko-onnx",
+  "slug": "jaybon1840-bge-m3-ko-onnx",
+  "author": "jaybon1840",
+  "url": "https://huggingface.co/jaybon1840/BGE-m3-ko-onnx",
+  "created_at": "2026-10-25T05:37:09.000Z",
+  "updated_at": "2026-10-25T05:54:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "xlm-roberta",
+    "feature-extraction",
+    "base_model:dragonkue/BGE-m3-ko",
+    "base_model:quantized:dragonkue/BGE-m3-ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586798250,
+  "storage_human": "587 MB",
+  "base_model": "dragonkue/BGE-m3-ko",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

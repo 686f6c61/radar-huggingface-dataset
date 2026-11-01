@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-tencent-WeVisCut-GGUF",
+  "slug": "webmp3-sakura-tencent-weviscut-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-tencent-WeVisCut-GGUF",
+  "created_at": "2026-10-30T12:00:35.000Z",
+  "updated_at": "2026-10-31T13:58:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "sakura",
+    "en",
+    "zh",
+    "base_model:tencent/WeVisCut",
+    "base_model:quantized:tencent/WeVisCut",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 102,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 21469571712,
+  "storage_human": "21.5 GB",
+  "base_model": "tencent/WeVisCut",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

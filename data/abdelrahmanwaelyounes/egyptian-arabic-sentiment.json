@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "abdElrahmanWaelYounes/egyptian-arabic-sentiment",
+  "slug": "abdelrahmanwaelyounes-egyptian-arabic-sentiment",
+  "author": "abdElrahmanWaelYounes",
+  "url": "https://huggingface.co/abdElrahmanWaelYounes/egyptian-arabic-sentiment",
+  "created_at": "2026-10-25T03:34:25.000Z",
+  "updated_at": "2026-10-25T04:57:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "arabic",
+    "egyptian-arabic",
+    "sentiment-analysis",
+    "text-classification",
+    "ar",
+    "base_model:CAMeL-Lab/bert-base-arabic-camelbert-mix",
+    "base_model:quantized:CAMeL-Lab/bert-base-arabic-camelbert-mix",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 109084420,
+  "parameters_human": "109.1M",
+  "storage_bytes": 984951684,
+  "storage_human": "985 MB",
+  "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-mix",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "aymandakir-gh/gh-apex-GGUF",
+  "slug": "aymandakir-gh-gh-apex-gguf",
+  "author": "aymandakir-gh",
+  "url": "https://huggingface.co/aymandakir-gh/gh-apex-GGUF",
+  "created_at": "2026-10-28T09:26:02.000Z",
+  "updated_at": "2026-10-28T16:37:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "growth-marketing",
+    "marketing",
+    "italian",
+    "lora",
+    "qwen3",
+    "text-generation",
+    "it",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 189,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 9274966400,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

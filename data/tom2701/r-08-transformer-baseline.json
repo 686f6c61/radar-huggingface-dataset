@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Tom2701/R-08-Transformer-Baseline",
+  "slug": "tom2701-r-08-transformer-baseline",
+  "author": "Tom2701",
+  "url": "https://huggingface.co/Tom2701/R-08-Transformer-Baseline",
+  "created_at": "2026-10-30T20:24:33.000Z",
+  "updated_at": "2026-10-31T20:02:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "transformer",
+    "baseline",
+    "benchmark",
+    "chinchilla",
+    "causal-lm",
+    "pytorch",
+    "text-generation",
+    "custom_code",
+    "it",
+    "dataset:v22_chinchilla_mix",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 464,
+  "trending_score": 0,
+  "parameters": 45546496,
+  "parameters_human": "45.5M",
+  "storage_bytes": 455714080,
+  "storage_human": "456 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

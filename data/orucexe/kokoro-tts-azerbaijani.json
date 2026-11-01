@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "orucexe/kokoro-tts-azerbaijani",
+  "slug": "orucexe-kokoro-tts-azerbaijani",
+  "author": "orucexe",
+  "url": "https://huggingface.co/orucexe/kokoro-tts-azerbaijani",
+  "created_at": "2026-10-30T09:51:26.000Z",
+  "updated_at": "2026-10-30T15:21:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "az"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "kokoro",
+    "kokoro-82m",
+    "webgpu",
+    "azerbaijani",
+    "az",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 652864362,
+  "storage_human": "653 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "beingpax/VoiceInk-Refine-Mini",
+  "slug": "beingpax-voiceink-refine-mini",
+  "author": "beingpax",
+  "url": "https://huggingface.co/beingpax/VoiceInk-Refine-Mini",
+  "created_at": "2026-10-28T13:08:21.000Z",
+  "updated_at": "2026-10-28T13:40:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "transcript-cleanup",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 444016107,
+  "storage_human": "444 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/hindi-llm-340m-instruct-GGUF",
+  "slug": "mradermacher-hindi-llm-340m-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/hindi-llm-340m-instruct-GGUF",
+  "created_at": "2026-10-30T14:29:57.000Z",
+  "updated_at": "2026-10-30T14:39:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "hindi",
+    "llama",
+    "instruction-tuned",
+    "indic",
+    "hi",
+    "dataset:ai4bharat/sangraha",
+    "dataset:ai4bharat/indic-instruct-data-v0.1",
+    "base_model:srivassid/hindi-llm-340m-instruct",
+    "base_model:quantized:srivassid/hindi-llm-340m-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 154,
+  "trending_score": 0,
+  "parameters": 337173504,
+  "parameters_human": "337.2M",
+  "storage_bytes": 3057510144,
+  "storage_human": "3.1 GB",
+  "base_model": "srivassid/hindi-llm-340m-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

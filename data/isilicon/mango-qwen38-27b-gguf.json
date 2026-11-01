@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "isilicon/mango-qwen38-27b-gguf",
+  "slug": "isilicon-mango-qwen38-27b-gguf",
+  "author": "isilicon",
+  "url": "https://huggingface.co/isilicon/mango-qwen38-27b-gguf",
+  "created_at": "2026-10-30T04:53:27.000Z",
+  "updated_at": "2026-10-30T06:52:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "mango",
+    "qwen3",
+    "uncensored",
+    "quantized",
+    "preservation-mirror",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:mradermacher/Qwen3.8-27B-Uncensored-Cyber-GGUF",
+    "base_model:quantized:mradermacher/Qwen3.8-27B-Uncensored-Cyber-GGUF",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 226,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 130659782400,
+  "storage_human": "130.7 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored-GGUF, philbert440/Qwen3.8-27B-Uncensored-Cyber-GGUF, mradermacher/Qwen3.8-27B-Uncensored-Cyber-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HI3516 Datasheet (PDF) - HiSilicon (Shanghai) Technologies CO.,LIMITED",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1179062/HISILICON/HI3516.html",
+      "snippet": "Part #: HI3516. Download. File Size: 185Kbytes. Page: 2 Pages. Description: Full-HD IP Camera SoC. Manufacturer: HiSilicon …Read more"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "agentory/Z-Image-Turbo-GGUF",
+  "slug": "agentory-z-image-turbo-gguf",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/Z-Image-Turbo-GGUF",
+  "created_at": "2026-10-30T18:58:37.000Z",
+  "updated_at": "2026-10-30T18:58:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "ggml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "quantized",
+    "unsloth",
+    "text-to-image",
+    "en",
+    "arxiv:2511.22699",
+    "arxiv:2511.22677",
+    "arxiv:2511.13649",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:quantized:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 84905793527,
+  "storage_human": "84.9 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

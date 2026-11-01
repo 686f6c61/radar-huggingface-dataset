@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Keural-Nova-v1.1-GGUF",
+  "slug": "mradermacher-keural-nova-v1-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Keural-Nova-v1.1-GGUF",
+  "created_at": "2026-10-28T08:15:03.000Z",
+  "updated_at": "2026-10-28T12:26:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "korean",
+    "moe",
+    "lora",
+    "instruction-tuning",
+    "keural",
+    "ko",
+    "en",
+    "base_model:hossain0909/Keural-Nova-v1.1",
+    "base_model:adapter:hossain0909/Keural-Nova-v1.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 613,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 244419001920,
+  "storage_human": "244.4 GB",
+  "base_model": "hossain0909/Keural-Nova-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

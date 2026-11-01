@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "YozoraKurage/Hoshiyomi-zenz-v3.2-xsmall_v1",
+  "slug": "yozorakurage-hoshiyomi-zenz-v3-2-xsmall_v1",
+  "author": "YozoraKurage",
+  "url": "https://huggingface.co/YozoraKurage/Hoshiyomi-zenz-v3.2-xsmall_v1",
+  "created_at": "2026-10-25T09:20:28.000Z",
+  "updated_at": "2026-10-25T09:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "zenz",
+    "kana-kanji-conversion",
+    "ime",
+    "ja",
+    "dataset:Miwa-Keita/zenz-v2.5-dataset",
+    "base_model:Miwa-Keita/zenz-v3.2-xsmall-gguf",
+    "base_model:finetune:Miwa-Keita/zenz-v3.2-xsmall-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 25583616,
+  "parameters_human": "25.6M",
+  "storage_bytes": 20552512,
+  "storage_human": "21 MB",
+  "base_model": "Miwa-Keita/zenz-v3.2-xsmall-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

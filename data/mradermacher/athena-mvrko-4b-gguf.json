@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Athena-mvrko-4B-GGUF",
+  "slug": "mradermacher-athena-mvrko-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Athena-mvrko-4B-GGUF",
+  "created_at": "2026-10-27T10:04:52.000Z",
+  "updated_at": "2026-10-27T10:23:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "athena",
+    "mvrko",
+    "e-commerce",
+    "shopping-behavior",
+    "next-action-prediction",
+    "large-event-model",
+    "web-agents",
+    "lora",
+    "en",
+    "dataset:NEU-HAI/OPeRA",
+    "base_model:markopoloaiinc/Athena-mvrko-4B",
+    "base_model:adapter:markopoloaiinc/Athena-mvrko-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 414,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389995776,
+  "storage_human": "36.4 GB",
+  "base_model": "markopoloaiinc/Athena-mvrko-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

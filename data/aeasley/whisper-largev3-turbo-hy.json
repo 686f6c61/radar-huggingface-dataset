@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "aeasley/whisper-largev3-turbo-hy",
+  "slug": "aeasley-whisper-largev3-turbo-hy",
+  "author": "aeasley",
+  "url": "https://huggingface.co/aeasley/whisper-largev3-turbo-hy",
+  "created_at": "2026-10-29T23:25:54.000Z",
+  "updated_at": "2026-10-30T05:37:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "hy"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "hy",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 12942451750,
+  "storage_human": "12.9 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

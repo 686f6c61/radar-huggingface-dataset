@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Qwen3.8-27B-AWQ-8bit",
   "created_at": "2026-10-27T09:35:53.000Z",
-  "updated_at": "2026-10-31T15:29:45.000Z",
+  "updated_at": "2026-11-01T03:00:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "vitorleal11/pokemon-cards-detection-onnx",
+  "slug": "vitorleal11-pokemon-cards-detection-onnx",
+  "author": "vitorleal11",
+  "url": "https://huggingface.co/vitorleal11/pokemon-cards-detection-onnx",
+  "created_at": "2026-10-28T00:12:36.000Z",
+  "updated_at": "2026-10-28T00:12:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "detr",
+    "object-detection",
+    "pokemon",
+    "base_model:Matthieu68857/pokemon-cards-detection",
+    "base_model:quantized:Matthieu68857/pokemon-cards-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42849036,
+  "storage_human": "43 MB",
+  "base_model": "Matthieu68857/pokemon-cards-detection",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kawshikbuet17/bangla-heteronym-indicbertv2-mlm",
+  "slug": "kawshikbuet17-bangla-heteronym-indicbertv2-mlm",
+  "author": "kawshikbuet17",
+  "url": "https://huggingface.co/kawshikbuet17/bangla-heteronym-indicbertv2-mlm",
+  "created_at": "2026-10-29T22:04:23.000Z",
+  "updated_at": "2026-10-29T22:06:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "bangla",
+    "bengali",
+    "heteronym",
+    "homograph",
+    "text-to-speech",
+    "grapheme-to-phoneme",
+    "bn",
+    "dataset:kawshikbuet17/bangla-heteronyms",
+    "base_model:ai4bharat/IndicBERTv2-MLM-only",
+    "base_model:finetune:ai4bharat/IndicBERTv2-MLM-only",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 278041344,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1112197244,
+  "storage_human": "1.1 GB",
+  "base_model": "ai4bharat/IndicBERTv2-MLM-only",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "aufklarer/FireRedTTS3-Instruct-MLX-fp32",
+  "slug": "aufklarer-fireredtts3-instruct-mlx-fp32",
+  "author": "aufklarer",
+  "url": "https://huggingface.co/aufklarer/FireRedTTS3-Instruct-MLX-fp32",
+  "created_at": "2026-10-29T16:13:06.000Z",
+  "updated_at": "2026-10-29T18:47:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "fireredtts3_instruct",
+    "swift",
+    "apple-silicon",
+    "text-to-speech",
+    "voice-design",
+    "fireredtts3",
+    "en",
+    "zh",
+    "base_model:FireRedTeam/FireRedTTS3",
+    "base_model:finetune:FireRedTeam/FireRedTTS3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 2118795329,
+  "parameters_human": "2.12B",
+  "storage_bytes": 9452151134,
+  "storage_human": "9.5 GB",
+  "base_model": "FireRedTeam/FireRedTTS3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

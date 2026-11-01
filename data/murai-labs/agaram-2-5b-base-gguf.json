@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "murai-labs/agaram-2.5b-base-gguf",
+  "slug": "murai-labs-agaram-2-5b-base-gguf",
+  "author": "murai-labs",
+  "url": "https://huggingface.co/murai-labs/agaram-2.5b-base-gguf",
+  "created_at": "2026-10-29T18:56:31.000Z",
+  "updated_at": "2026-10-29T18:56:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ta",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "tamil",
+    "tanglish",
+    "agaram",
+    "pretrained",
+    "ta",
+    "en",
+    "arxiv:2610.18420",
+    "base_model:murai-labs/agaram-2.5b",
+    "base_model:quantized:murai-labs/agaram-2.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 2525757696,
+  "parameters_human": "2.53B",
+  "storage_bytes": 9304946400,
+  "storage_human": "9.3 GB",
+  "base_model": "murai-labs/agaram-2.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

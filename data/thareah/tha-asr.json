@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Thareah/Tha-ASR",
+  "slug": "thareah-tha-asr",
+  "author": "Thareah",
+  "url": "https://huggingface.co/Thareah/Tha-ASR",
+  "created_at": "2026-10-26T06:03:06.000Z",
+  "updated_at": "2026-10-26T06:25:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "khmer",
+    "code-switching",
+    "speech-recognition",
+    "km",
+    "en",
+    "dataset:google/fleurs",
+    "dataset:rinabuoy/khm-asr-open",
+    "dataset:seanghay/km-speech-corpus",
+    "dataset:seanghay/khmer_mpwt_speech",
+    "dataset:seanghay/khmer_grkpp_speech",
+    "base_model:PhanithLIM/whisper-small-aug-28-april-lightning-v1",
+    "base_model:finetune:PhanithLIM/whisper-small-aug-28-april-lightning-v1",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": "PhanithLIM/whisper-small-aug-28-april-lightning-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Khmer)",
+      "metric": "CER",
+      "value": 12.57
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "khm-asr-open",
+      "metric": "CER",
+      "value": 12.35
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (English)",
+      "metric": "WER",
+      "value": 8.27
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (English)",
+      "metric": "CER",
+      "value": 3.72
+    }
+  ],
+  "sources": []
+}

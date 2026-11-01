@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Climate-1000-Qwen-27b-GGUF",
+  "slug": "mradermacher-climate-1000-qwen-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Climate-1000-Qwen-27b-GGUF",
+  "created_at": "2026-10-29T12:05:08.000Z",
+  "updated_at": "2026-10-29T12:38:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "climate",
+    "sft",
+    "merged",
+    "en",
+    "base_model:Prience91/Climate-1000-Qwen-27b",
+    "base_model:quantized:Prience91/Climate-1000-Qwen-27b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 522,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348487808,
+  "storage_human": "186.3 GB",
+  "base_model": "Prience91/Climate-1000-Qwen-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

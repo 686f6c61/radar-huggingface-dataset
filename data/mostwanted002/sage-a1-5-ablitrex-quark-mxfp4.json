@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mostwanted002/Sage-A1.5-Ablitrex-Quark-MXFP4",
+  "slug": "mostwanted002-sage-a1-5-ablitrex-quark-mxfp4",
+  "author": "mostwanted002",
+  "url": "https://huggingface.co/mostwanted002/Sage-A1.5-Ablitrex-Quark-MXFP4",
+  "created_at": "2026-10-27T17:12:32.000Z",
+  "updated_at": "2026-10-27T18:47:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "base_model:InternScience/Sage-A1.5",
+    "base_model:quantized:InternScience/Sage-A1.5",
+    "license:mit",
+    "8-bit",
+    "quark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 19141183344,
+  "parameters_human": "19.14B",
+  "storage_bytes": 23000910135,
+  "storage_human": "23.0 GB",
+  "base_model": "InternScience/Sage-A1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "hellnahbru/Carbon-500M-preserved-20261029",
+  "slug": "hellnahbru-carbon-500m-preserved-20261029",
+  "author": "hellnahbru",
+  "url": "https://huggingface.co/hellnahbru/Carbon-500M-preserved-20261029",
+  "created_at": "2026-10-29T05:26:54.000Z",
+  "updated_at": "2026-10-29T05:26:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "dna"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "dna",
+    "genomic",
+    "speculative-decoding",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 511894528,
+  "parameters_human": "511.9M",
+  "storage_bytes": 1025102014,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "abdukuzi45/qwen3.5-4b-amharic-newrows-only-v6-fixed",
+  "slug": "abdukuzi45-qwen3-5-4b-amharic-newrows-only-v6-fixed",
+  "author": "abdukuzi45",
+  "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-newrows-only-v6-fixed",
+  "created_at": "2026-10-29T08:16:44.000Z",
+  "updated_at": "2026-10-29T10:31:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "am",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "amharic",
+    "qwen3.5",
+    "embedding-cpt",
+    "continual-pretraining",
+    "african-nlp",
+    "am",
+    "en",
+    "dataset:abdukuzi45/amharic-cpt-with-english-replay-v1",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 99,
+  "trending_score": 0,
+  "parameters": 5704181248,
+  "parameters_human": "5.70B",
+  "storage_bytes": 11443693040,
+  "storage_human": "11.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mikaelaehunter/whisper-tiny_russian_english",
+  "slug": "mikaelaehunter-whisper-tiny_russian_english",
+  "author": "mikaelaehunter",
+  "url": "https://huggingface.co/mikaelaehunter/whisper-tiny_russian_english",
+  "created_at": "2026-10-26T15:02:58.000Z",
+  "updated_at": "2026-10-29T14:40:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:russian_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 604329457,
+  "storage_human": "604 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "russian_english",
+      "metric": "Wer",
+      "value": 10.017798118484619
+    }
+  ],
+  "sources": []
+}

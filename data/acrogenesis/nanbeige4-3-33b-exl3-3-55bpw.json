@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "acrogenesis/Nanbeige4.3-33B-EXL3-3.55bpw",
+  "slug": "acrogenesis-nanbeige4-3-33b-exl3-3-55bpw",
+  "author": "acrogenesis",
+  "url": "https://huggingface.co/acrogenesis/Nanbeige4.3-33B-EXL3-3.55bpw",
+  "created_at": "2026-10-26T15:03:14.000Z",
+  "updated_at": "2026-10-26T19:26:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "exl3",
+    "exllamav3",
+    "quantized",
+    "rtx-5090",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 326,
+  "trending_score": 0,
+  "parameters": 8468585472,
+  "parameters_human": "8.47B",
+  "storage_bytes": 16958576264,
+  "storage_human": "17.0 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

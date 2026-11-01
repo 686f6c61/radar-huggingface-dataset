@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "fr4nZzz/roberta-hate-speech",
+  "slug": "fr4nzzz-roberta-hate-speech",
+  "author": "fr4nZzz",
+  "url": "https://huggingface.co/fr4nZzz/roberta-hate-speech",
+  "created_at": "2026-10-26T19:24:07.000Z",
+  "updated_at": "2026-10-28T00:44:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "hate-speech",
+    "spanish",
+    "fine-tuning",
+    "text-classification",
+    "es",
+    "dataset:piuba-bigdata/contextualized_hate_speech",
+    "arxiv:2210.00465",
+    "base_model:PeterPanecillo/PlanTL-GOB-ES-roberta-base-bne-copy",
+    "base_model:finetune:PeterPanecillo/PlanTL-GOB-ES-roberta-base-bne-copy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 124644866,
+  "parameters_human": "124.6M",
+  "storage_bytes": 997207216,
+  "storage_human": "997 MB",
+  "base_model": "PeterPanecillo/PlanTL-GOB-ES-roberta-base-bne-copy",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

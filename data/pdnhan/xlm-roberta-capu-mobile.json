@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "pdnhan/xlm-roberta-capu-mobile",
+  "slug": "pdnhan-xlm-roberta-capu-mobile",
+  "author": "pdnhan",
+  "url": "https://huggingface.co/pdnhan/xlm-roberta-capu-mobile",
+  "created_at": "2026-10-29T15:55:13.000Z",
+  "updated_at": "2026-10-29T16:29:57.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "capitalization",
+    "punctuation",
+    "punctuation-restoration",
+    "xlm-roberta",
+    "android",
+    "ios",
+    "on-device",
+    "token-classification",
+    "vi",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "base_model:dragonSwing/xlm-roberta-capu",
+    "base_model:quantized:dragonSwing/xlm-roberta-capu",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1408066400,
+  "storage_human": "1.4 GB",
+  "base_model": "dragonSwing/xlm-roberta-capu",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

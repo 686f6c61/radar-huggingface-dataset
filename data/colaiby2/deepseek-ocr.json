@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "colaiby2/DeepSeek-OCR",
+  "slug": "colaiby2-deepseek-ocr",
+  "author": "colaiby2",
+  "url": "https://huggingface.co/colaiby2/DeepSeek-OCR",
+  "created_at": "2026-10-27T01:03:30.000Z",
+  "updated_at": "2026-10-27T01:03:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_vl_v2",
+    "feature-extraction",
+    "deepseek",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2510.18234",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6673791863,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

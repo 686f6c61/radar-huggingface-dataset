@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Yonesuke0716/lfm2.5-vl-450M-iqa-v1",
+  "slug": "yonesuke0716-lfm2-5-vl-450m-iqa-v1",
+  "author": "Yonesuke0716",
+  "url": "https://huggingface.co/Yonesuke0716/lfm2.5-vl-450M-iqa-v1",
+  "created_at": "2026-10-25T04:53:04.000Z",
+  "updated_at": "2026-10-25T05:13:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "lfm2.5-vl",
+    "image-text-to-text",
+    "ja",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 568368384,
+  "storage_human": "568 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

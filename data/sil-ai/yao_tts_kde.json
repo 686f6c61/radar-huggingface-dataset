@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sil-ai/yao_tts_kde",
+  "slug": "sil-ai-yao_tts_kde",
+  "author": "sil-ai",
+  "url": "https://huggingface.co/sil-ai/yao_tts_kde",
+  "created_at": "2026-10-27T19:44:41.000Z",
+  "updated_at": "2026-10-27T21:49:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "generated_from_trainer",
+    "base_model:microsoft/speecht5_tts",
+    "base_model:finetune:microsoft/speecht5_tts",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 144438498,
+  "parameters_human": "144.4M",
+  "storage_bytes": 1733667826,
+  "storage_human": "1.7 GB",
+  "base_model": "microsoft/speecht5_tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

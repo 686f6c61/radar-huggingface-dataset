@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Davitotty1/Teleste-Qwen-27B-GGUF",
+  "slug": "davitotty1-teleste-qwen-27b-gguf",
+  "author": "Davitotty1",
+  "url": "https://huggingface.co/Davitotty1/Teleste-Qwen-27B-GGUF",
+  "created_at": "2026-10-25T20:45:47.000Z",
+  "updated_at": "2026-10-25T20:46:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "reasoning",
+    "adaptive-reasoning",
+    "lora",
+    "math",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 231,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 11370140240,
+  "storage_human": "11.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

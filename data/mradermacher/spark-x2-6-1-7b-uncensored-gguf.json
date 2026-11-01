@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Spark-X2.6-1.7B-uncensored-GGUF",
+  "slug": "mradermacher-spark-x2-6-1-7b-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Spark-X2.6-1.7B-uncensored-GGUF",
+  "created_at": "2026-10-29T08:09:14.000Z",
+  "updated_at": "2026-10-29T08:15:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llm",
+    "sparkx2_5",
+    "Tema_Q-Abliterated",
+    "en",
+    "zh",
+    "base_model:Deepexp/Spark-X2.6-1.7B-uncensored",
+    "base_model:quantized:Deepexp/Spark-X2.6-1.7B-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 559,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 15881850752,
+  "storage_human": "15.9 GB",
+  "base_model": "Deepexp/Spark-X2.6-1.7B-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

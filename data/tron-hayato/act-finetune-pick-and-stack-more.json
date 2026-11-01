@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Tron-Hayato/act-finetune-pick-and-stack-more",
+  "slug": "tron-hayato-act-finetune-pick-and-stack-more",
+  "author": "Tron-Hayato",
+  "url": "https://huggingface.co/Tron-Hayato/act-finetune-pick-and-stack-more",
+  "created_at": "2026-10-27T11:26:53.000Z",
+  "updated_at": "2026-10-28T01:03:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Tron-Hayato/record-pick-and-stack-more",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 51648134,
+  "parameters_human": "51.6M",
+  "storage_bytes": 619878920,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TRON Wallet | TRON",
+      "url": "https://tron.network/wallet/",
+      "snippet": "Wallets Find the most suitable wallet to manage your assets and explore the TRON ecosystem. Learn more"
+    }
+  ]
+}

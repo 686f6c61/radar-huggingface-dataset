@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ayousanz/yomi-distill-ja",
+  "slug": "ayousanz-yomi-distill-ja",
+  "author": "ayousanz",
+  "url": "https://huggingface.co/ayousanz/yomi-distill-ja",
+  "created_at": "2026-10-25T02:22:51.000Z",
+  "updated_at": "2026-10-25T05:23:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "japanese",
+    "text-to-speech",
+    "grapheme-to-phoneme",
+    "katakana",
+    "distillation",
+    "text-generation",
+    "ja",
+    "dataset:ayousanz/beam-yomi-teacher",
+    "base_model:llm-jp/llm-jp-3-1.8b",
+    "base_model:finetune:llm-jp/llm-jp-3-1.8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 525,
+  "trending_score": 0,
+  "parameters": 1867614208,
+  "parameters_human": "1.87B",
+  "storage_bytes": 3735253776,
+  "storage_human": "3.7 GB",
+  "base_model": "llm-jp/llm-jp-3-1.8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

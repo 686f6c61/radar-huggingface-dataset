@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.8-27b-growpath-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-growpath-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.8-27b-growpath-GGUF",
+  "created_at": "2026-10-29T13:39:31.000Z",
+  "updated_at": "2026-10-29T13:59:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "growpath",
+    "qwen3.8",
+    "fine-tuned",
+    "lora",
+    "merged",
+    "korean",
+    "roadmap-generation",
+    "ko",
+    "en",
+    "base_model:Ssum-mer/qwen3.8-27b-growpath",
+    "base_model:adapter:Ssum-mer/qwen3.8-27b-growpath",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 524,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348489920,
+  "storage_human": "186.3 GB",
+  "base_model": "Ssum-mer/qwen3.8-27b-growpath",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

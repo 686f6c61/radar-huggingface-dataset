@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "auRose94/Qwen3.8-27B-ninths-k63-e99-GGUF",
+  "slug": "aurose94-qwen3-8-27b-ninths-k63-e99-gguf",
+  "author": "auRose94",
+  "url": "https://huggingface.co/auRose94/Qwen3.8-27B-ninths-k63-e99-GGUF",
+  "created_at": "2026-10-26T17:24:42.000Z",
+  "updated_at": "2026-10-26T18:10:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "moe",
+    "ninths",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 255,
+  "trending_score": 0,
+  "parameters": 19623724316,
+  "parameters_human": "19.62B",
+  "storage_bytes": 19666352320,
+  "storage_human": "19.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

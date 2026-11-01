@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OneJev1.6-4B-Surgical-Abliterated-GGUF",
+  "slug": "mradermacher-onejev1-6-4b-surgical-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OneJev1.6-4B-Surgical-Abliterated-GGUF",
+  "created_at": "2026-10-30T10:43:29.000Z",
+  "updated_at": "2026-10-30T11:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "surgical-alignment",
+    "causal-lm",
+    "safetensors",
+    "en",
+    "base_model:medismera/OneJev1.6-4B-Surgical-Abliterated",
+    "base_model:quantized:medismera/OneJev1.6-4B-Surgical-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 462,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945657152,
+  "storage_human": "39.9 GB",
+  "base_model": "medismera/OneJev1.6-4B-Surgical-Abliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

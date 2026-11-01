@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "gbrixi/evo2_1b_base_vllm",
+  "slug": "gbrixi-evo2_1b_base_vllm",
+  "author": "gbrixi",
+  "url": "https://huggingface.co/gbrixi/evo2_1b_base_vllm",
+  "created_at": "2026-10-29T08:52:30.000Z",
+  "updated_at": "2026-10-29T08:59:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "striped_hyena2",
+    "vllm",
+    "base_model:arcinstitute/evo2_1b_base",
+    "base_model:quantized:arcinstitute/evo2_1b_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 1109683242,
+  "parameters_human": "1.11B",
+  "storage_bytes": 1993924480,
+  "storage_human": "2.0 GB",
+  "base_model": "arcinstitute/evo2_1b_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

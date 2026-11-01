@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ravinarayanan/lfm3-1.7b-salesforce-soql-onnx-fp16",
+  "slug": "ravinarayanan-lfm3-1-7b-salesforce-soql-onnx-fp16",
+  "author": "ravinarayanan",
+  "url": "https://huggingface.co/ravinarayanan/lfm3-1.7b-salesforce-soql-onnx-fp16",
+  "created_at": "2026-10-30T15:56:56.000Z",
+  "updated_at": "2026-10-30T15:57:51.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "lfm3",
+    "text-generation",
+    "salesforce",
+    "soql",
+    "fp16",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 154,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3609967346,
+  "storage_human": "3.6 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

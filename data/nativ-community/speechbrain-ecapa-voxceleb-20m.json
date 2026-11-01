@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nativ-community/SpeechBrain-ECAPA-VoxCeleb-20M",
+  "slug": "nativ-community-speechbrain-ecapa-voxceleb-20m",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/SpeechBrain-ECAPA-VoxCeleb-20M",
+  "created_at": "2026-10-26T17:07:41.000Z",
+  "updated_at": "2026-10-26T17:16:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx-audio",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "speechbrain-ecapa-voxceleb-speaker",
+    "mlx",
+    "speechbrain",
+    "ecapa-tdnn",
+    "speaker-embedding",
+    "speaker-verification",
+    "feature-extraction",
+    "en",
+    "base_model:speechbrain/spkrec-ecapa-voxceleb",
+    "base_model:finetune:speechbrain/spkrec-ecapa-voxceleb",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 20805952,
+  "parameters_human": "20.8M",
+  "storage_bytes": 41637032,
+  "storage_human": "42 MB",
+  "base_model": "speechbrain/spkrec-ecapa-voxceleb",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

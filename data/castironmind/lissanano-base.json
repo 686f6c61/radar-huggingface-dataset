@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "CastIronMind/LissaNano-Base",
+  "slug": "castironmind-lissanano-base",
+  "author": "CastIronMind",
+  "url": "https://huggingface.co/CastIronMind/LissaNano-Base",
+  "created_at": "2026-10-25T12:17:49.000Z",
+  "updated_at": "2026-10-25T14:46:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "my-little-pony",
+    "mlp",
+    "fanfiction",
+    "small-language-model",
+    "from-scratch",
+    "lissa",
+    "base-model",
+    "base",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 210,
+  "trending_score": 0,
+  "parameters": 31990272,
+  "parameters_human": "32.0M",
+  "storage_bytes": 65090892,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Pony domain evaluation (Fimfarchive, frozen, ~10M tokens)",
+      "metric": "Perplexity",
+      "value": 31.88
+    },
+    {
+      "task": null,
+      "dataset": "Pony domain evaluation (Fimfarchive, frozen, ~10M tokens)",
+      "metric": "Bits per character",
+      "value": 1.2091
+    }
+  ],
+  "sources": []
+}

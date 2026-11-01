@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "belasoares/tanque-cheio-qwen2.5-coder-1.5b-lora-v2",
+  "slug": "belasoares-tanque-cheio-qwen2-5-coder-1-5b-lora-v2",
+  "author": "belasoares",
+  "url": "https://huggingface.co/belasoares/tanque-cheio-qwen2.5-coder-1.5b-lora-v2",
+  "created_at": "2026-10-30T13:11:15.000Z",
+  "updated_at": "2026-10-30T18:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-sql",
+    "sql",
+    "duckdb",
+    "qlora",
+    "lora",
+    "anp",
+    "text-generation",
+    "conversational",
+    "pt",
+    "dataset:belasoares/tanque-cheio",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85338717,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

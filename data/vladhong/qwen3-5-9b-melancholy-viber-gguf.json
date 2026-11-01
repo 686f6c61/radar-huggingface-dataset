@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "VladHong/Qwen3.5-9B-Melancholy-Viber-GGUF",
+  "slug": "vladhong-qwen3-5-9b-melancholy-viber-gguf",
+  "author": "VladHong",
+  "url": "https://huggingface.co/VladHong/Qwen3.5-9B-Melancholy-Viber-GGUF",
+  "created_at": "2026-10-29T10:45:44.000Z",
+  "updated_at": "2026-10-29T12:38:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "gguf",
+    "text-generation",
+    "music",
+    "netease-cloud-music",
+    "roleplay",
+    "melancholy",
+    "q4_k_m",
+    "zh",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5629108928,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

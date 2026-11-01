@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "janmusic/ncm-mlx-tinyworld",
+  "slug": "janmusic-ncm-mlx-tinyworld",
+  "author": "janmusic",
+  "url": "https://huggingface.co/janmusic/ncm-mlx-tinyworld",
+  "created_at": "2026-10-29T20:53:01.000Z",
+  "updated_at": "2026-10-30T14:39:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "next-concept-modeling",
+    "ncm",
+    "non-autoregressive",
+    "coarse-to-fine",
+    "apple-silicon",
+    "tinyworld",
+    "arxiv:2610.14162",
+    "text-generation",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 167,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44130489,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "TinyWorld sentence generation (valid sentences, T=1.0)",
+      "dataset": "TinyWorld synthetic grammar (parser-checked)",
+      "metric": "valid sentences % (T=1.0)",
+      "value": 89.8
+    },
+    {
+      "task": "TinyWorld sentence generation (valid sentences, T=0.7)",
+      "dataset": "TinyWorld synthetic grammar (parser-checked)",
+      "metric": "valid sentences % (T=0.7)",
+      "value": 95.8
+    }
+  ],
+  "sources": []
+}

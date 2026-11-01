@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/name-generator-v2-GGUF",
+  "slug": "mradermacher-name-generator-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/name-generator-v2-GGUF",
+  "created_at": "2026-10-29T08:15:38.000Z",
+  "updated_at": "2026-10-29T08:28:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "names",
+    "character-names",
+    "fantasy-names",
+    "creative-writing",
+    "ministral3",
+    "chatml",
+    "unsloth",
+    "en",
+    "dataset:aimeri/name-generator",
+    "base_model:aimeri/name-generator-v2",
+    "base_model:quantized:aimeri/name-generator-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 557,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 31232396544,
+  "storage_human": "31.2 GB",
+  "base_model": "aimeri/name-generator-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10+ \"Laura Mitchell\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/+/Laura+mitchell",
+      "snippet": "There are 10+ professionals named &quot;Laura Mitchell&quot;, who use LinkedIn to exchange information, ideas, and opportunities."
+    }
+  ]
+}

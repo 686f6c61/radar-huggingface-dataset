@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kawshikbuet17/bangla-heteronym-bangla-bert-base",
+  "slug": "kawshikbuet17-bangla-heteronym-bangla-bert-base",
+  "author": "kawshikbuet17",
+  "url": "https://huggingface.co/kawshikbuet17/bangla-heteronym-bangla-bert-base",
+  "created_at": "2026-10-29T21:51:04.000Z",
+  "updated_at": "2026-10-29T21:52:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "bangla",
+    "bengali",
+    "heteronym",
+    "homograph",
+    "text-to-speech",
+    "grapheme-to-phoneme",
+    "bn",
+    "dataset:kawshikbuet17/bangla-heteronyms",
+    "base_model:sagorsarker/bangla-bert-base",
+    "base_model:finetune:sagorsarker/bangla-bert-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 164396544,
+  "parameters_human": "164.4M",
+  "storage_bytes": 657617916,
+  "storage_human": "658 MB",
+  "base_model": "sagorsarker/bangla-bert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

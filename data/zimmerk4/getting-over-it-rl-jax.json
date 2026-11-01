@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "zimmerk4/getting-over-it-rl-jax",
+  "slug": "zimmerk4-getting-over-it-rl-jax",
+  "author": "zimmerk4",
+  "url": "https://huggingface.co/zimmerk4/getting-over-it-rl-jax",
+  "created_at": "2026-10-26T06:19:43.000Z",
+  "updated_at": "2026-10-26T16:39:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "reinforcement-learning",
+    "ppo",
+    "sim-to-real",
+    "getting-over-it",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12682969,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WALMART Locations - Store Locator Tool",
+      "url": "https://storelocatortool.com/v3/walmart-locations/",
+      "snippet": "Use our interactive map to discover the closest Walmart stores in your area with accurate location data and navigation assistance. …"
+    }
+  ]
+}

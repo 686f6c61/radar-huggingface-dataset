@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Anshulgada/embeddinggemma-2-270m",
+  "slug": "anshulgada-embeddinggemma-2-270m",
+  "author": "Anshulgada",
+  "url": "https://huggingface.co/Anshulgada/embeddinggemma-2-270m",
+  "created_at": "2026-10-31T22:55:51.000Z",
+  "updated_at": "2026-10-31T22:56:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "sentence-similarity",
+    "feature-extraction",
+    "gemma",
+    "embeddinggemma",
+    "embeddinggemma-2",
+    "matryoshka",
+    "mrl",
+    "google",
+    "en",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 271002648,
+  "parameters_human": "271.0M",
+  "storage_bytes": 574226958,
+  "storage_human": "574 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

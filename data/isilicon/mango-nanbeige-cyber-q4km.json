@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "isilicon/mango-nanbeige-cyber-q4km",
+  "slug": "isilicon-mango-nanbeige-cyber-q4km",
+  "author": "isilicon",
+  "url": "https://huggingface.co/isilicon/mango-nanbeige-cyber-q4km",
+  "created_at": "2026-10-29T21:09:18.000Z",
+  "updated_at": "2026-10-30T06:51:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "mango",
+    "preservation-mirror",
+    "nanbeige",
+    "text-generation",
+    "en",
+    "fr",
+    "base_model:FRENCHFAKER/Nanbeige4.3-33B-cybersec-abliterated-GGUF",
+    "base_model:quantized:FRENCHFAKER/Nanbeige4.3-33B-cybersec-abliterated-GGUF",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 20051495712,
+  "storage_human": "20.1 GB",
+  "base_model": "FRENCHFAKER/Nanbeige4.3-33B-cybersec-abliterated-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

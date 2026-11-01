@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Guilherme34/LFM3-1.7B-Looped-HiddenCoT-adapter",
+  "slug": "guilherme34-lfm3-1-7b-looped-hiddencot-adapter",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/LFM3-1.7B-Looped-HiddenCoT-adapter",
+  "created_at": "2026-11-01T00:11:01.000Z",
+  "updated_at": "2026-11-01T00:11:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149990845,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-01T02:34:38.987Z",
+  "benchmarks": [],
+  "sources": []
+}

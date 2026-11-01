@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "moeshawky/Nanbeige4.3-33B-FP8-safetensors",
+  "slug": "moeshawky-nanbeige4-3-33b-fp8-safetensors",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/Nanbeige4.3-33B-FP8-safetensors",
+  "created_at": "2026-10-25T15:42:26.000Z",
+  "updated_at": "2026-10-25T15:46:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llm",
+    "nanbeige",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B-Base",
+    "base_model:finetune:Nanbeige/Nanbeige4.3-33B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 33118977390,
+  "parameters_human": "33.12B",
+  "storage_bytes": 33141055565,
+  "storage_human": "33.1 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

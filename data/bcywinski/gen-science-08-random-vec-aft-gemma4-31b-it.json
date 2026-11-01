@@ -5,7 +5,7 @@
   "author": "bcywinski",
   "url": "https://huggingface.co/bcywinski/gen-science-08-random-vec-aft-gemma4-31b-it",
   "created_at": "2026-10-31T18:53:42.000Z",
-  "updated_at": "2026-10-31T18:53:44.000Z",
+  "updated_at": "2026-11-01T01:24:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2588160,
+  "storage_bytes": 2717544,
   "storage_human": "3 MB",
   "base_model": "google/gemma-4-31B-it",
   "formats": [

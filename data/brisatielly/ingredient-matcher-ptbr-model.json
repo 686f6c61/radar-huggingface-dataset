@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "BrisaTielly/ingredient-matcher-ptbr-model",
+  "slug": "brisatielly-ingredient-matcher-ptbr-model",
+  "author": "BrisaTielly",
+  "url": "https://huggingface.co/BrisaTielly/ingredient-matcher-ptbr-model",
+  "created_at": "2026-10-28T01:23:22.000Z",
+  "updated_at": "2026-10-28T02:42:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "entity-matching",
+    "food-tech",
+    "sentence-similarity",
+    "pt",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487720404,
+  "storage_human": "488 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

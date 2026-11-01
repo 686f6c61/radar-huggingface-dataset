@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "nkthebass/tinybrainbot-100m-v5.1-instruct",
+  "slug": "nkthebass-tinybrainbot-100m-v5-1-instruct",
+  "author": "nkthebass",
+  "url": "https://huggingface.co/nkthebass/tinybrainbot-100m-v5.1-instruct",
+  "created_at": "2026-10-31T18:14:40.000Z",
+  "updated_at": "2026-10-31T18:15:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tinybrainbot",
+    "small-language-model",
+    "from-scratch",
+    "instruct",
+    "chat",
+    "reasoning",
+    "math",
+    "dpo",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:allenai/tulu-3-sft-personas-instruction-following",
+    "dataset:allenai/WildChat-4.8M",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "dataset:teknium/OpenHermes-2.5",
+    "base_model:nkthebass/tinybrainbot-100m-v5-base",
+    "base_model:quantized:nkthebass/tinybrainbot-100m-v5-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100092672,
+  "parameters_human": "100.1M",
+  "storage_bytes": 575340055,
+  "storage_human": "575 MB",
+  "base_model": "nkthebass/tinybrainbot-100m-v5-base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (0-shot)",
+      "value": 55.01
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (0-shot)",
+      "value": 30.12
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (0-shot)",
+      "value": 35.11
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "acc_norm (0-shot)",
+      "value": 65.67
+    },
+    {
+      "task": null,
+      "dataset": "IFEval",
+      "metric": "prompt-level strict (0-shot)",
+      "value": 19.8
+    }
+  ],
+  "sources": []
+}

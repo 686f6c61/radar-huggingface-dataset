@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Muhamm-dk/arabic-sentiment-marbert-combined",
+  "slug": "muhamm-dk-arabic-sentiment-marbert-combined",
+  "author": "Muhamm-dk",
+  "url": "https://huggingface.co/Muhamm-dk/arabic-sentiment-marbert-combined",
+  "created_at": "2026-10-28T11:21:47.000Z",
+  "updated_at": "2026-10-29T06:27:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "arabic",
+    "sentiment-analysis",
+    "dialect",
+    "text-classification",
+    "ar",
+    "base_model:UBC-NLP/MARBERT",
+    "base_model:finetune:UBC-NLP/MARBERT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 162842882,
+  "parameters_human": "162.8M",
+  "storage_bytes": 651395072,
+  "storage_human": "651 MB",
+  "base_model": "UBC-NLP/MARBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

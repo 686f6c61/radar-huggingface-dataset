@@ -5,7 +5,7 @@
   "author": "OpensourceWTF",
   "url": "https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-exl3-2.81bpw",
   "created_at": "2026-10-31T03:27:40.000Z",
-  "updated_at": "2026-10-31T13:57:22.000Z",
+  "updated_at": "2026-11-01T01:35:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,10 +26,10 @@
   "likes": 2,
   "downloads_30d": 3,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 308004918388,
-  "storage_human": "308.0 GB",
+  "parameters": 104278608722,
+  "parameters_human": "104.28B",
+  "storage_bytes": 411490692323,
+  "storage_human": "411.5 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "arthurblg1802/AtoMinima",
+  "slug": "arthurblg1802-atominima",
+  "author": "arthurblg1802",
+  "url": "https://huggingface.co/arthurblg1802/AtoMinima",
+  "created_at": "2026-10-28T17:10:39.000Z",
+  "updated_at": "2026-10-28T17:31:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "atominima",
+    "text-generation",
+    "tiny-language-model",
+    "sub-1k",
+    "from-scratch",
+    "base-model",
+    "character-level",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 420,
+  "parameters_human": "420",
+  "storage_bytes": 14043,
+  "storage_human": "14043 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SmallAICreator/MiDo-70M-v3",
+  "slug": "smallaicreator-mido-70m-v3",
+  "author": "SmallAICreator",
+  "url": "https://huggingface.co/SmallAICreator/MiDo-70M-v3",
+  "created_at": "2026-10-28T12:49:50.000Z",
+  "updated_at": "2026-10-30T17:41:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "small-language-model",
+    "from-scratch",
+    "knowledge-distillation",
+    "llama.cpp",
+    "on-device",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 70403456,
+  "parameters_human": "70.4M",
+  "storage_bytes": 285242432,
+  "storage_human": "285 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

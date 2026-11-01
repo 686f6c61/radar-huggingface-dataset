@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Arisp/chess-pgn-2400plus-rl",
+  "slug": "arisp-chess-pgn-2400plus-rl",
+  "author": "Arisp",
+  "url": "https://huggingface.co/Arisp/chess-pgn-2400plus-rl",
+  "created_at": "2026-11-01T04:09:13.000Z",
+  "updated_at": "2026-11-01T04:11:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "chess",
+    "pgn",
+    "character-level",
+    "transformer",
+    "base_model:Arisp/chess-pgn-2400plus",
+    "base_model:finetune:Arisp/chess-pgn-2400plus",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50997248,
+  "parameters_human": "51.0M",
+  "storage_bytes": 204006632,
+  "storage_human": "204 MB",
+  "base_model": "Arisp/chess-pgn-2400plus",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "FiditeNemini/Qwen3.5-4B-thinking-mlx-8bit",
+  "slug": "fiditenemini-qwen3-5-4b-thinking-mlx-8bit",
+  "author": "FiditeNemini",
+  "url": "https://huggingface.co/FiditeNemini/Qwen3.5-4B-thinking-mlx-8bit",
+  "created_at": "2026-10-26T21:32:04.000Z",
+  "updated_at": "2026-10-26T21:33:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "8-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 5156683938,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok Voice Filters: Your Ultimate How-To Guide - Kill the DJ",
+      "url": "https://killthedj.com/how-to-use-tiktok-voice-filters/",
+      "snippet": "Feb 12, 2024 · Thinking of adding a TikTok voice filter? From robot voices to chipmunk squeaks, there are all kinds of fun effects for …"
+    }
+  ]
+}

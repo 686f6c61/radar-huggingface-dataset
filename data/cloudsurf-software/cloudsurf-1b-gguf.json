@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "cloudsurf-software/CloudSurf-1B-GGUF",
+  "slug": "cloudsurf-software-cloudsurf-1b-gguf",
+  "author": "cloudsurf-software",
+  "url": "https://huggingface.co/cloudsurf-software/CloudSurf-1B-GGUF",
+  "created_at": "2026-10-31T00:36:13.000Z",
+  "updated_at": "2026-10-31T01:36:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "cloudsurf",
+    "surfdoc",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "base_model:cloudsurf-software/CloudSurf-1B",
+    "base_model:quantized:cloudsurf-software/CloudSurf-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 889260032,
+  "parameters_human": "889.3M",
+  "storage_bytes": 3277331648,
+  "storage_human": "3.3 GB",
+  "base_model": "cloudsurf-software/CloudSurf-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CloudSurf — Anyone can be a developer",
+      "url": "https://cloudsurf.com/",
+      "snippet": "Surfy, from any agent. Your workspace has its own MCP address. Find it in Settings, Connected agents, and connect the agent you …Read more"
+    },
+    {
+      "title": "CloudSurf: fly through clouds - Aircraft Enhancements for MSFS ...",
+      "url": "https://flightsim.to/addon/117893/cloudsurf-fly-through-clouds",
+      "snippet": "3 days ago · CloudSurf: fly through clouds CloudSurf enhances cloud flying in Microsoft Flight Simulator 2024 by adding visual cloud …"
+    },
+    {
+      "title": "Collection Cloudsurfer : chaussures de running amorties",
+      "url": "https://www.on.com/fr-fr/collection/cloudsurfer?msockid=0a8b35193c436bd51aee2d1d3d176a5c",
+      "snippet": "Collection Cloudsurfer : redéfinir l’effort avec l’amorti CloudTec Phase™ et la super-mousse Helion™ ultra-douce. Livraison et …"
+    },
+    {
+      "title": "Cloudsurfer Max homme | On France",
+      "url": "https://www.on.com/fr-fr/products/cloudsurfer-max-m-3mf3043/mens?msockid=0a8b35193c436bd51aee2d1d3d176a5c",
+      "snippet": "Une chaussure de running homme ultra-amortie avec CloudTec Phase™ double couche, pour des foulées douces sur longues …"
+    },
+    {
+      "title": "On-Running Cloudsurfer Max homme - Chaussures de pas cher",
+      "url": "https://www.i-run.fr/chaussures_homme/Running_c23/On-Running_m154/On-Running-Cloudsurfer-Max_On-Running_fiche_144624.html",
+      "snippet": "Taillée pour la route et les longues distances, la chaussure On Running Cloudsurfer Max pour homme vous offre un amorti moelleux …"
+    }
+  ]
+}

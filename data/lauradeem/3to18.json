@@ -5,7 +5,7 @@
   "author": "Lauradeem",
   "url": "https://huggingface.co/Lauradeem/3to18",
   "created_at": "2026-10-08T15:19:46.000Z",
-  "updated_at": "2026-10-08T15:22:03.000Z",
+  "updated_at": "2026-10-31T22:14:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 497539435,
-  "storage_human": "498 MB",
+  "storage_bytes": 663243939,
+  "storage_human": "663 MB",
   "base_model": "wikeeyang/Flux2-Klein-9B-True-V3",
   "formats": [
     "diffusers"

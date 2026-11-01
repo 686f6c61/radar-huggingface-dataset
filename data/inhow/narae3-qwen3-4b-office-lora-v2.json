@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "inhow/Narae3-Qwen3-4B-Office-LoRA-v2",
+  "slug": "inhow-narae3-qwen3-4b-office-lora-v2",
+  "author": "inhow",
+  "url": "https://huggingface.co/inhow/Narae3-Qwen3-4B-Office-LoRA-v2",
+  "created_at": "2026-10-30T08:07:52.000Z",
+  "updated_at": "2026-10-30T08:59:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "lora",
+    "narae",
+    "experimental",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 215,
+  "trending_score": 0,
+  "parameters": 2752512,
+  "parameters_human": "2.8M",
+  "storage_bytes": 2519318168,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

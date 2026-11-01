@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Jlbrockett/pi05_sponge_marker_cup_cube",
+  "slug": "jlbrockett-pi05_sponge_marker_cup_cube",
+  "author": "Jlbrockett",
+  "url": "https://huggingface.co/Jlbrockett/pi05_sponge_marker_cup_cube",
+  "created_at": "2026-10-26T22:42:03.000Z",
+  "updated_at": "2026-10-26T22:52:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:Jlbrockett/sponge_marker_cup_cube",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354054524,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

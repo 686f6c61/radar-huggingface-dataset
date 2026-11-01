@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "DavidJLN/merge-or-mix-1.5b",
+  "slug": "davidjln-merge-or-mix-1-5b",
+  "author": "DavidJLN",
+  "url": "https://huggingface.co/DavidJLN/merge-or-mix-1.5b",
+  "created_at": "2026-10-27T16:27:57.000Z",
+  "updated_at": "2026-10-27T18:10:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "lora",
+    "sft",
+    "french",
+    "json",
+    "conversational",
+    "fr",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 273,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

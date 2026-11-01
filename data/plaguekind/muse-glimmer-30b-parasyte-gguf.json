@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Plaguekind/Muse-Glimmer-30B-Parasyte-GGUF",
+  "slug": "plaguekind-muse-glimmer-30b-parasyte-gguf",
+  "author": "Plaguekind",
+  "url": "https://huggingface.co/Plaguekind/Muse-Glimmer-30B-Parasyte-GGUF",
+  "created_at": "2026-10-31T15:56:04.000Z",
+  "updated_at": "2026-10-31T16:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "muse-glimmer",
+    "uncensored",
+    "llama.cpp",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 34142852352,
+  "storage_human": "34.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

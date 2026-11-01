@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yonicc/lhg-extractor-dictalm-gguf",
+  "slug": "yonicc-lhg-extractor-dictalm-gguf",
+  "author": "yonicc",
+  "url": "https://huggingface.co/yonicc/lhg-extractor-dictalm-gguf",
+  "created_at": "2026-10-28T18:52:40.000Z",
+  "updated_at": "2026-10-28T18:53:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "lashon-hara-guard",
+    "research",
+    "he",
+    "en",
+    "base_model:dicta-il/dictalm2.0-instruct",
+    "base_model:quantized:dicta-il/dictalm2.0-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": 7251169280,
+  "parameters_human": "7.25B",
+  "storage_bytes": 12080903488,
+  "storage_human": "12.1 GB",
+  "base_model": "dicta-il/dictalm2.0-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SamruddhiThorat07/act_green_pilot",
+  "slug": "samruddhithorat07-act_green_pilot",
+  "author": "SamruddhiThorat07",
+  "url": "https://huggingface.co/SamruddhiThorat07/act_green_pilot",
+  "created_at": "2026-10-29T18:45:09.000Z",
+  "updated_at": "2026-10-29T19:11:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "so101",
+    "imitation-learning",
+    "robotics",
+    "dataset:SamruddhiThorat07/green_pilot",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714944,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.alignimpact.com",
+      "url": "https://www.alignimpact.com/currents/understanding-green-banks-and-their-role-in-decarbonization",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Full article: Mapping green banking research: a bibliometric and ...",
+      "url": "https://oadoi.org/10.1080/23311975.2025.2551810",
+      "snippet": "Aug 26, 2025 · This study analyses the implementation of green banking based on previous research. The bibliometric method was …"
+    },
+    {
+      "title": "How banks and green finance are helping address climate change",
+      "url": "https://www.cfainstitute.org/insights/articles/how-banks-and-green-finance-are-helping-address-climate-change",
+      "snippet": "Feb 28, 2024 · We’re seeing a tightening of criteria around lending to energy companies and other high-carbon industries, banks …"
+    },
+    {
+      "title": "Green Banking Revolution: Sustainable Finance Takes Center Stage",
+      "url": "https://visbanking.com/green-banking-revolution-sustainable-finance-takes-center-stage",
+      "snippet": "Sep 9, 2025 · Table of Contents Understanding Green Banking: The Sustainable Finance Movement How ESG Principles Are …"
+    }
+  ]
+}

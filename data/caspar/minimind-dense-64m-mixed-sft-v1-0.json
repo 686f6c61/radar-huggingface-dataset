@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+  "slug": "caspar-minimind-dense-64m-mixed-sft-v1-0",
+  "author": "caspar",
+  "url": "https://huggingface.co/caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+  "created_at": "2026-10-24T22:45:58.000Z",
+  "updated_at": "2026-10-24T22:46:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimind",
+    "text-generation",
+    "dense",
+    "conversational",
+    "experimental",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:openai/gsm8k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 458,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 127834168,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

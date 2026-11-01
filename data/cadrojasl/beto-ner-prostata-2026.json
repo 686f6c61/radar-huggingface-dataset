@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "cadrojasl/beto-ner-prostata-2026",
+  "slug": "cadrojasl-beto-ner-prostata-2026",
+  "author": "cadrojasl",
+  "url": "https://huggingface.co/cadrojasl/beto-ner-prostata-2026",
+  "created_at": "2026-10-26T03:58:16.000Z",
+  "updated_at": "2026-10-26T04:40:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "clinical",
+    "spanish",
+    "prostate-cancer",
+    "es",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 109276437,
+  "parameters_human": "109.3M",
+  "storage_bytes": 437129092,
+  "storage_human": "437 MB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

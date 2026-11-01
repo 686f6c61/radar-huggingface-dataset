@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "davidafrica/e2h-polaris-gemma-3-4b-it-easy_rb",
+  "slug": "davidafrica-e2h-polaris-gemma-3-4b-it-easy_rb",
+  "author": "davidafrica",
+  "url": "https://huggingface.co/davidafrica/e2h-polaris-gemma-3-4b-it-easy_rb",
+  "created_at": "2026-10-25T07:03:23.000Z",
+  "updated_at": "2026-10-25T07:53:18.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "verl",
+    "grpo",
+    "math",
+    "polaris",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 4551515648,
+  "parameters_human": "4.55B",
+  "storage_bytes": 218512069626,
+  "storage_human": "218.5 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Organize a Pantry into Easy-to-Use and Efficient Zones",
+      "url": "https://www.bhg.com/kitchen/storage/pantry/organize-your-pantry-by-zones/",
+      "snippet": "Jun 8, 2026 · Here's how to organize a pantry the best way in zones. Keep appliances, utensils, weeknight meal supplies, and other …"
+    }
+  ]
+}

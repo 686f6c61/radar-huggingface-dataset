@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sollaholla/robocor-local-agent",
+  "slug": "sollaholla-robocor-local-agent",
+  "author": "sollaholla",
+  "url": "https://huggingface.co/sollaholla/robocor-local-agent",
+  "created_at": "2026-10-29T10:40:57.000Z",
+  "updated_at": "2026-10-29T10:46:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "robotics",
+    "tool-calling",
+    "llama.cpp",
+    "offline",
+    "image-text-to-text",
+    "en",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 425402752,
+  "storage_human": "425 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

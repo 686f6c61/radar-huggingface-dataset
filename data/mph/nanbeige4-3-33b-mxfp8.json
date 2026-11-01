@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mph/Nanbeige4.3-33B-MXFP8",
+  "slug": "mph-nanbeige4-3-33b-mxfp8",
+  "author": "mph",
+  "url": "https://huggingface.co/mph/Nanbeige4.3-33B-MXFP8",
+  "created_at": "2026-10-26T04:36:59.000Z",
+  "updated_at": "2026-10-26T06:14:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mxfp8",
+    "fp8",
+    "quantized",
+    "modelopt",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 36491298008,
+  "storage_human": "36.5 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "IARG-UF/akant5-small-replacement",
+  "slug": "iarg-uf-akant5-small-replacement",
+  "author": "IARG-UF",
+  "url": "https://huggingface.co/IARG-UF/akant5-small-replacement",
+  "created_at": "2026-10-30T05:50:07.000Z",
+  "updated_at": "2026-10-30T07:38:38.000Z",
+  "license": "akant5-research-use-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ak",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "akant5",
+    "continued-pretraining",
+    "research-only",
+    "ak",
+    "en",
+    "base_model:IARG-UF/akant5-small-replacement-init",
+    "base_model:finetune:IARG-UF/akant5-small-replacement-init",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 109729152,
+  "parameters_human": "109.7M",
+  "storage_bytes": 438939048,
+  "storage_human": "439 MB",
+  "base_model": "IARG-UF/akant5-small-replacement-init",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

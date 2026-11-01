@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "alejandro-rodriguez/tiny-random-nemotron-h",
+  "slug": "alejandro-rodriguez-tiny-random-nemotron-h",
+  "author": "alejandro-rodriguez",
+  "url": "https://huggingface.co/alejandro-rodriguez/tiny-random-nemotron-h",
+  "created_at": "2026-10-29T16:22:13.000Z",
+  "updated_at": "2026-10-29T16:22:23.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 16919928,
+  "parameters_human": "16.9M",
+  "storage_bytes": 84763172,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

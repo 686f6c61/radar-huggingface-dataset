@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_baseline_d14_allcm",
+  "slug": "kausp11-searchlm-dclm_nc-sftnc_v4cannsent_baseline_d14_allcm",
+  "author": "Kausp11",
+  "url": "https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_baseline_d14_allcm",
+  "created_at": "2026-10-26T16:37:42.000Z",
+  "updated_at": "2026-10-26T16:38:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "searchlm_nanochat",
+    "text-generation",
+    "search-enabled-pretraining",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 234,
+  "trending_score": 0,
+  "parameters": 842220414,
+  "parameters_human": "842.2M",
+  "storage_bytes": 1684452084,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

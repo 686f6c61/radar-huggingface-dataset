@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Denisijcu/vertex-core-debate-gguf",
+  "slug": "denisijcu-vertex-core-debate-gguf",
+  "author": "Denisijcu",
+  "url": "https://huggingface.co/Denisijcu/vertex-core-debate-gguf",
+  "created_at": "2026-10-27T19:42:36.000Z",
+  "updated_at": "2026-10-27T19:44:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "lora",
+    "vertex-core",
+    "debate",
+    "synthetic-data",
+    "es",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2640889852,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

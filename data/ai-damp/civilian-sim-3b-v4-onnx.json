@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AI-damP/civilian-sim-3b-v4-onnx",
+  "slug": "ai-damp-civilian-sim-3b-v4-onnx",
+  "author": "AI-damP",
+  "url": "https://huggingface.co/AI-damP/civilian-sim-3b-v4-onnx",
+  "created_at": "2026-10-26T16:12:13.000Z",
+  "updated_at": "2026-10-26T16:16:49.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "llama",
+    "text-generation",
+    "q4f16",
+    "conversational",
+    "base_model:AI-damP/civilian-sim-3b-v3",
+    "base_model:quantized:AI-damP/civilian-sim-3b-v3",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 206,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2453055278,
+  "storage_human": "2.5 GB",
+  "base_model": "AI-damP/civilian-sim-3b-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

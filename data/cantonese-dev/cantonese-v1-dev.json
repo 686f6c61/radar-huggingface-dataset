@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cantonese-dev/cantonese-v1-dev",
+  "slug": "cantonese-dev-cantonese-v1-dev",
+  "author": "cantonese-dev",
+  "url": "https://huggingface.co/cantonese-dev/cantonese-v1-dev",
+  "created_at": "2026-10-31T20:55:28.000Z",
+  "updated_at": "2026-10-31T21:04:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "doi:10.57967/hf/11354",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3833402552,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cantonese - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cantonese",
+      "snippet": "Cantonese is the traditional prestige variety of Yue Chinese, a Sinitic language belonging to the Sino-Tibetan language family. It …"
+    },
+    {
+      "title": "Learn Cantonese 學廣東話",
+      "url": "https://cantonese.ca/",
+      "snippet": "This site offers information for learning colloquial Cantonese (Yue Chinese) as it is spoken by today's youth in Hong Kong and in …"
+    },
+    {
+      "title": "Cantonese people - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cantonese_people",
+      "snippet": "Historically centred around Guangzhou and the surrounding Pearl River Delta, the Cantonese people established the Cantonese …"
+    },
+    {
+      "title": "Cantonese_百度百科",
+      "url": "https://baike.baidu.com/item/Cantonese/6381395",
+      "snippet": "Cantonese是英语中“粤语”及粤语使用者的称谓，源于广州旧称Canton（现官方译名Guangzhou）。"
+    },
+    {
+      "title": "Open Cantonese: Free Cantonese Lessons",
+      "url": "https://opencantonese.org/",
+      "snippet": "Cantonese Life series The Cantonese Life series covers speaking, listening, pronunciation, vocabulary and grammar, preparing you …"
+    }
+  ]
+}

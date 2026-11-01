@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "bralynn/tinylm2",
+  "slug": "bralynn-tinylm2",
+  "author": "bralynn",
+  "url": "https://huggingface.co/bralynn/tinylm2",
+  "created_at": "2026-10-30T16:21:30.000Z",
+  "updated_at": "2026-10-30T16:21:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:bralynn/tinylm2",
+    "base_model:finetune:bralynn/tinylm2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 189,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 459401112,
+  "storage_human": "459 MB",
+  "base_model": "bralynn/tinylm2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "magnitudedev/mammoth-1-GGUF",
+  "slug": "magnitudedev-mammoth-1-gguf",
+  "author": "magnitudedev",
+  "url": "https://huggingface.co/magnitudedev/mammoth-1-GGUF",
+  "created_at": "2026-10-29T00:30:05.000Z",
+  "updated_at": "2026-10-29T01:56:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "magnitude",
+    "re-upload",
+    "base_model:baselabs/mammoth-1",
+    "base_model:quantized:baselabs/mammoth-1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 328,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 172913638144,
+  "storage_human": "172.9 GB",
+  "base_model": "baselabs/mammoth-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

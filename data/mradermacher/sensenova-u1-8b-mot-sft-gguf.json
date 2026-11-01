@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SenseNova-U1-8B-MoT-SFT-GGUF",
+  "slug": "mradermacher-sensenova-u1-8b-mot-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SenseNova-U1-8B-MoT-SFT-GGUF",
+  "created_at": "2026-10-27T10:27:45.000Z",
+  "updated_at": "2026-10-27T14:47:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "text-to-image",
+    "image-to-text",
+    "image-editing",
+    "interleaved-generation",
+    "custom_code",
+    "en",
+    "base_model:sensenova/SenseNova-U1-8B-MoT-SFT",
+    "base_model:quantized:sensenova/SenseNova-U1-8B-MoT-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 617,
+  "trending_score": 0,
+  "parameters": 9348413952,
+  "parameters_human": "9.35B",
+  "storage_bytes": 83599703296,
+  "storage_human": "83.6 GB",
+  "base_model": "sensenova/SenseNova-U1-8B-MoT-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

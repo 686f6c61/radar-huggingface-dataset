@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Roland-Sankara/yogera-voice-commands",
+  "slug": "roland-sankara-yogera-voice-commands",
+  "author": "Roland-Sankara",
+  "url": "https://huggingface.co/Roland-Sankara/yogera-voice-commands",
+  "created_at": "2026-10-28T15:59:59.000Z",
+  "updated_at": "2026-10-28T17:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "keras",
+  "languages": [
+    "en",
+    "lg"
+  ],
+  "tags": [
+    "keras",
+    "audio-classification",
+    "keyword-spotting",
+    "luganda",
+    "en",
+    "lg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39123784,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

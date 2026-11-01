@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/KapiCoder-Mongo-Nano-GGUF",
+  "slug": "mradermacher-kapicoder-mongo-nano-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/KapiCoder-Mongo-Nano-GGUF",
+  "created_at": "2026-10-27T13:10:39.000Z",
+  "updated_at": "2026-10-27T13:26:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mongodb",
+    "code",
+    "fim",
+    "autocomplete",
+    "qwen2",
+    "synthetic-data",
+    "en",
+    "pt",
+    "base_model:esilva/KapiCoder-Mongo-Nano",
+    "base_model:quantized:esilva/KapiCoder-Mongo-Nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 446,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400183040,
+  "storage_human": "5.4 GB",
+  "base_model": "esilva/KapiCoder-Mongo-Nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

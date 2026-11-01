@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "manishkumar2101114/qwen3.5-9b-tool-merged-end_call",
+  "slug": "manishkumar2101114-qwen3-5-9b-tool-merged-end_call",
+  "author": "manishkumar2101114",
+  "url": "https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged-end_call",
+  "created_at": "2026-10-28T03:58:19.000Z",
+  "updated_at": "2026-10-28T04:05:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "voice-agent",
+    "tool-calling",
+    "hindi",
+    "hinglish",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326293061,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "pp111asd/DeepSeek-V4.1-Flash-1017-Abliteration-LoRA-GGUF",
+  "slug": "pp111asd-deepseek-v4-1-flash-1017-abliteration-lora-gguf",
+  "author": "pp111asd",
+  "url": "https://huggingface.co/pp111asd/DeepSeek-V4.1-Flash-1017-Abliteration-LoRA-GGUF",
+  "created_at": "2026-10-30T15:31:20.000Z",
+  "updated_at": "2026-10-30T15:31:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "lora-adapter",
+    "abliteration",
+    "abliterated",
+    "uncensored",
+    "refusal-ablation",
+    "deepseek",
+    "deepseek_v41",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:adapter:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 114862080,
+  "parameters_human": "114.9M",
+  "storage_bytes": 918934400,
+  "storage_human": "919 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

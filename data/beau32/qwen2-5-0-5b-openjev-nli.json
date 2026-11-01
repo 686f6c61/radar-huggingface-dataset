@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "beau32/Qwen2.5-0.5B-OpenJEV-NLI",
+  "slug": "beau32-qwen2-5-0-5b-openjev-nli",
+  "author": "beau32",
+  "url": "https://huggingface.co/beau32/Qwen2.5-0.5B-OpenJEV-NLI",
+  "created_at": "2026-10-31T21:37:39.000Z",
+  "updated_at": "2026-10-31T21:37:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "natural-language-inference",
+    "text-classification",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20108846,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

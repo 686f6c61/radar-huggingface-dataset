@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "PollardWeights/Qwen3-ASR-1.7B-Pollard",
+  "slug": "pollardweights-qwen3-asr-1-7b-pollard",
+  "author": "PollardWeights",
+  "url": "https://huggingface.co/PollardWeights/Qwen3-ASR-1.7B-Pollard",
+  "created_at": "2026-10-29T00:47:30.000Z",
+  "updated_at": "2026-10-29T01:35:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "pollard-weights",
+    "pollard",
+    "llama.cpp",
+    "imatrix",
+    "qwen3_asr",
+    "quantized",
+    "mixed-precision",
+    "measured-allocation",
+    "conversational",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:quantized:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 420,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 5554223938,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

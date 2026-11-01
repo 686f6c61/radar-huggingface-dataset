@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "arshd33p/Qwen3-1.7B-GGUF",
+  "slug": "arshd33p-qwen3-1-7b-gguf",
+  "author": "arshd33p",
+  "url": "https://huggingface.co/arshd33p/Qwen3-1.7B-GGUF",
+  "created_at": "2026-10-30T18:22:23.000Z",
+  "updated_at": "2026-10-30T18:22:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1834426016,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

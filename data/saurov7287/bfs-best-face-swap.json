@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Saurov7287/BFS-Best-Face-Swap",
+  "slug": "saurov7287-bfs-best-face-swap",
+  "author": "Saurov7287",
+  "url": "https://huggingface.co/Saurov7287/BFS-Best-Face-Swap",
+  "created_at": "2026-10-30T03:54:31.000Z",
+  "updated_at": "2026-10-30T03:54:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "qwen-image",
+    "qwen-image-2.1",
+    "qwen-image-edit",
+    "face-swap",
+    "head-swap",
+    "body-swap",
+    "image-editing",
+    "comfyui",
+    "bfs",
+    "image-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 459,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13015362436,
+  "storage_human": "13.0 GB",
+  "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen-Image-Edit-2511, black-forest-labs/FLUX.2-klein-9B, black-forest-labs/FLUX.2-klein-4B, black-forest-labs/FLUX.2-klein-base-4B, black-forest-labs/FLUX.2-klein-base-9B, black-forest-labs/FLUX.2-klein-9b-fp8, black-forest-labs/FLUX.2-klein-4b-fp8, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Compact Cameras in 2026 - PetaPixel",
+      "url": "https://petapixel.com/best-compact-cameras/",
+      "snippet": "Jan 5, 2026 · Looking for a compact camera to carry with you and capture memories? Here are the best point-and-shoot cameras …"
+    },
+    {
+      "title": "The 4 Best Point-And-Shoot Cameras of 2026 - RTINGS.com",
+      "url": "https://www.rtings.com/camera/reviews/best/point-and-shoot",
+      "snippet": "Jan 13, 2025 · The Fujifilm X100VI is easily the best point-and-shoot camera we've tested. It's a fantastic fixed-lens camera with a …"
+    },
+    {
+      "title": "The Best Point-and-Shoot Cameras for 2026 - PCMag UK",
+      "url": "https://uk.pcmag.com/cameras-1/15908/the-best-point-and-shoot-cameras",
+      "snippet": "Jul 7, 2026 · If you aren't willing to haul around a heavy SLR or mirrorless camera but still want something better than a smartphone, …"
+    },
+    {
+      "title": "What is a point-and-shoot camera? A beginner’s guide",
+      "url": "https://blog.bestbuy.ca/photography/what-is-a-point-and-shoot-camera",
+      "snippet": "May 22, 2025 · Discover what a point-and-shoot camera is, its features, benefits, and how it compares to other cameras."
+    },
+    {
+      "title": "Reddit",
+      "url": "https://www.reddit.com/r/Cameras/comments/1k2o6cs/best_portable_point_and_shoot_camera_for_someone/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

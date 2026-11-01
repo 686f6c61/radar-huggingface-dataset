@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "wesjos/Qwen3.5-9B-CuteHuman-GGUF",
+  "slug": "wesjos-qwen3-5-9b-cutehuman-gguf",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/Qwen3.5-9B-CuteHuman-GGUF",
+  "created_at": "2026-10-25T06:03:34.000Z",
+  "updated_at": "2026-10-25T10:30:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.5",
+    "cute",
+    "roleplay",
+    "emoji",
+    "mmproj",
+    "image-text-to-text",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:wesjos/Qwen3.5-9B-CuteHuman",
+    "base_model:quantized:wesjos/Qwen3.5-9B-CuteHuman",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 197,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 14881566142,
+  "storage_human": "14.9 GB",
+  "base_model": "wesjos/Qwen3.5-9B-CuteHuman",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

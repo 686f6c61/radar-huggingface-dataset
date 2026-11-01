@@ -5,7 +5,7 @@
   "author": "DICPlay",
   "url": "https://huggingface.co/DICPlay/RusMind-Znanie",
   "created_at": "2026-10-11T01:50:30.000Z",
-  "updated_at": "2026-10-30T02:35:39.000Z",
+  "updated_at": "2026-10-31T16:29:58.000Z",
   "license": "rusmind-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

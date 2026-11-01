@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Granite-4.2-3B-Surgical-Abliterated-GGUF",
+  "slug": "mradermacher-granite-4-2-3b-surgical-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Granite-4.2-3B-Surgical-Abliterated-GGUF",
+  "created_at": "2026-10-30T14:04:42.000Z",
+  "updated_at": "2026-10-30T15:52:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "surgical-alignment",
+    "causal-lm",
+    "safetensors",
+    "en",
+    "base_model:medismera/Granite-4.2-3B-Surgical-Abliterated",
+    "base_model:quantized:medismera/Granite-4.2-3B-Surgical-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 363,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 32768310400,
+  "storage_human": "32.8 GB",
+  "base_model": "medismera/Granite-4.2-3B-Surgical-Abliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

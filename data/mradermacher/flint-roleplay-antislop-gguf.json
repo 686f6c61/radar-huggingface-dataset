@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/flint-roleplay-antislop-GGUF",
+  "slug": "mradermacher-flint-roleplay-antislop-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/flint-roleplay-antislop-GGUF",
+  "created_at": "2026-10-28T08:06:48.000Z",
+  "updated_at": "2026-10-28T08:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "flint",
+    "roleplay",
+    "creative-writing",
+    "antislop - reinforcement-learning",
+    "moe",
+    "bf16",
+    "llama.cpp",
+    "en",
+    "base_model:rawmodels/flint-roleplay-antislop",
+    "base_model:quantized:rawmodels/flint-roleplay-antislop",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 597,
+  "trending_score": 0,
+  "parameters": 39785287456,
+  "parameters_human": "39.79B",
+  "storage_bytes": 270992862400,
+  "storage_human": "271.0 GB",
+  "base_model": "rawmodels/flint-roleplay-antislop",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

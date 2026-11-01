@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "dariurs/distilbert-base-uncased-squad",
+  "slug": "dariurs-distilbert-base-uncased-squad",
+  "author": "dariurs",
+  "url": "https://huggingface.co/dariurs/distilbert-base-uncased-squad",
+  "created_at": "2026-10-27T14:43:34.000Z",
+  "updated_at": "2026-10-27T15:14:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 9026868465,
+  "storage_human": "9.0 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

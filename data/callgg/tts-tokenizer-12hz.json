@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "callgg/tts-tokenizer-12hz",
+  "slug": "callgg-tts-tokenizer-12hz",
+  "author": "callgg",
+  "url": "https://huggingface.co/callgg/tts-tokenizer-12hz",
+  "created_at": "2026-10-29T20:46:17.000Z",
+  "updated_at": "2026-10-29T20:54:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts_tokenizer_12hz",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 170557441,
+  "parameters_human": "170.6M",
+  "storage_bytes": 682293092,
+  "storage_human": "682 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vultr/Qwen3.5-4B-GGUF",
+  "slug": "vultr-qwen3-5-4b-gguf",
+  "author": "vultr",
+  "url": "https://huggingface.co/vultr/Qwen3.5-4B-GGUF",
+  "created_at": "2026-10-27T18:08:09.000Z",
+  "updated_at": "2026-10-27T18:15:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen35",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 156,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 12524081504,
+  "storage_human": "12.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SSD VPS Servers, Cloud Servers and Cloud Hosting - Vultr.com",
+      "url": "https://www.vultr.com/",
+      "snippet": "With Vultr, block storage and object storage solutions are flexible, scalable, and expandable without sacrificing performance or security."
+    },
+    {
+      "title": "SSD VPS Servers, Cloud Servers and Cloud Hosting - Vultr.com",
+      "url": "https://www.vultr.com/?ref=8753714",
+      "snippet": "The Vultr control panel makes server management simple and intuitive. Common tasks such as a ordering servers, managing …"
+    },
+    {
+      "title": "Vultr Discover | The Everywhere Cloud",
+      "url": "https://discover.vultr.com/",
+      "snippet": "Connect with Vultr at Linux PyTorch 2026 to see how Vultr’s High-Frequency and Dedicated Cloud Compute helps teams reduce …"
+    },
+    {
+      "title": "Vultr - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vultr",
+      "snippet": "Vultr is an American cloud computing company that provides cloud infrastructure and is headquartered in West Palm Beach, Florida. …"
+    },
+    {
+      "title": "Vultr Docs | Cloud Compute, Kubernetes & GPU Tutorials",
+      "url": "https://docs.vultr.com/",
+      "snippet": "Sep 16, 2026 · Vultr Docs Everything you need to build, deploy, and scale on The Everywhere Cloud: product guides, references, …"
+    }
+  ]
+}

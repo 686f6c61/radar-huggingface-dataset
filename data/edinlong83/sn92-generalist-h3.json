@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "edinlong83/sn92-generalist-h3",
+  "slug": "edinlong83-sn92-generalist-h3",
+  "author": "edinlong83",
+  "url": "https://huggingface.co/edinlong83/sn92-generalist-h3",
+  "created_at": "2026-10-26T03:56:41.000Z",
+  "updated_at": "2026-10-26T03:57:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "bittensor",
+    "sn92",
+    "decision-model",
+    "base_model:decisionmodels/reax-1.1",
+    "base_model:finetune:decisionmodels/reax-1.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193403588,
+  "storage_human": "52.2 GB",
+  "base_model": "decisionmodels/reax-1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

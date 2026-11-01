@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "shopkeeper/kor-finewiki-1b-base",
+  "slug": "shopkeeper-kor-finewiki-1b-base",
+  "author": "shopkeeper",
+  "url": "https://huggingface.co/shopkeeper/kor-finewiki-1b-base",
+  "created_at": "2026-10-24T22:54:13.000Z",
+  "updated_at": "2026-10-24T23:26:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "korean",
+    "gated-deltanet",
+    "hybrid",
+    "linear-attention",
+    "from-scratch",
+    "base-model",
+    "text-generation",
+    "ko",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 400,
+  "trending_score": 0,
+  "parameters": 1001518688,
+  "parameters_human": "1.00B",
+  "storage_bytes": 4006230163,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

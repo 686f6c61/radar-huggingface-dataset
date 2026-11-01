@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "defnoteatin/PseudoBrain-Qwen3-32B-BF16",
+  "slug": "defnoteatin-pseudobrain-qwen3-32b-bf16",
+  "author": "defnoteatin",
+  "url": "https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-32B-BF16",
+  "created_at": "2026-10-31T00:14:18.000Z",
+  "updated_at": "2026-10-31T12:54:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "pseudobrain",
+    "qwen3-32b",
+    "reasoning",
+    "gated-deltanet",
+    "long-context",
+    "1m-context",
+    "constant-memory",
+    "bf16",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 572,
+  "trending_score": 0,
+  "parameters": 33604001280,
+  "parameters_human": "33.60B",
+  "storage_bytes": 67219524046,
+  "storage_human": "67.2 GB",
+  "base_model": "Qwen/Qwen3-32B, Qwen/Qwen3-32B-AWQ, Qwen/Qwen3-32B-FP8, RedHatAI/Qwen3-32B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "defnoteatin/PseudoBrain-Qwen3-32B-BF16 - Hugging Face",
+      "url": "https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-32B-BF16",
+      "snippet": "defnoteatin / PseudoBrain-Qwen3-32B-BF16 Like 0 Text Generation Safetensors vllm qwen3 pseudobrain qwen3-32b reasoning gated-deltanet long-context 1m-context constant-memory bf16 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket"
+    },
+    {
+      "title": "defnoteatin/PseudoBrain-Qwen3-32B-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-32B-W4A16",
+      "snippet": "Like 0 Text Generation Safetensors vllm qwen3 pseudobrain qwen3-32b reasoning gated-deltanet long-context 1m-context constant-memory w4a16 conversational 4-bit precision awq License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Use this model"
+    },
+    {
+      "title": "Qwen3-32B — specs, VRAM, license, benchmarks | LocalLLMs",
+      "url": "https://localllms.dev/llm/qwenqwen3-32b/",
+      "snippet": "Qwen3-32B is a 32-billion parameter language model developed by Alibaba&#x27;s Qwen team, released in 2025 as part of the Qwen3 family. The model excels at multilingual conversation, coding tasks, and reasoning, building on the strengths of earlier Qwen iterations while introducing improved instruction following and agentic capabilities."
+    },
+    {
+      "title": "Qwen 3 Model Guide 2026: Original Lineup, Sizes, Context and Memory",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "The original Qwen3 lineup: verified dense and MoE sizes, context limits, thinking controls, and memory estimates for local deployment."
+    },
+    {
+      "title": "Qwen3 32B - AI Infra on AWS Guide - awslabs.github.io",
+      "url": "https://awslabs.github.io/accelerated-compute-tutorials/aws-ai-chip/inference/vllm-nxdi-classic/qwen3-32b/",
+      "snippet": "Step 1-3 runs the vLLM server for Qwen3 32B Model inference, based on BF16. Step 1-3 takes about 10-15 minutes, and once you see logs like the following, compilation and server startup are complete ☕️ The legacy vLLM V0 approach used VLLM_USE_V1=0, but it is omitted in V1."
+    }
+  ]
+}

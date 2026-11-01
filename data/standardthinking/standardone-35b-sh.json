@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "StandardThinking/StandardOne-35B-SH",
+  "slug": "standardthinking-standardone-35b-sh",
+  "author": "StandardThinking",
+  "url": "https://huggingface.co/StandardThinking/StandardOne-35B-SH",
+  "created_at": "2026-10-26T06:23:08.000Z",
+  "updated_at": "2026-10-26T06:24:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "decision-model",
+    "typed-decisions",
+    "schema-head",
+    "jev",
+    "calibration",
+    "decode-free",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70501162914,
+  "storage_human": "70.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

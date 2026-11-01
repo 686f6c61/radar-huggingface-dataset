@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep",
+  "slug": "sw-voice-voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep",
+  "author": "sw-voice",
+  "url": "https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep",
+  "created_at": "2026-10-28T08:18:56.000Z",
+  "updated_at": "2026-10-28T08:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "te",
+    "kn"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "en",
+    "te",
+    "kn",
+    "base_model:sw-voice/voxcpm2-indic-multi-lr5e-5-1ep",
+    "base_model:finetune:sw-voice/voxcpm2-indic-multi-lr5e-5-1ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040314,
+  "storage_human": "9.5 GB",
+  "base_model": "sw-voice/voxcpm2-indic-multi-lr5e-5-1ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

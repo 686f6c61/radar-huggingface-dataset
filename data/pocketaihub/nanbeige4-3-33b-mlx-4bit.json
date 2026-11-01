@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "PocketAiHub/Nanbeige4.3-33B-MLX-4bit",
+  "slug": "pocketaihub-nanbeige4-3-33b-mlx-4bit",
+  "author": "PocketAiHub",
+  "url": "https://huggingface.co/PocketAiHub/Nanbeige4.3-33B-MLX-4bit",
+  "created_at": "2026-10-26T23:55:22.000Z",
+  "updated_at": "2026-10-27T00:57:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "quantized",
+    "nanbeige",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 144,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 22831079114,
+  "storage_human": "22.8 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

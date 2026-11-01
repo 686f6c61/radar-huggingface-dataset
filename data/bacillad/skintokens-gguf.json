@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "bacillad/SkinTokens-GGUF",
+  "slug": "bacillad-skintokens-gguf",
+  "author": "bacillad",
+  "url": "https://huggingface.co/bacillad/SkinTokens-GGUF",
+  "created_at": "2026-10-25T11:17:09.000Z",
+  "updated_at": "2026-10-25T11:17:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ggml",
+    "skintokens",
+    "rigging",
+    "animation",
+    "base_model:VAST-AI/SkinTokens",
+    "base_model:quantized:VAST-AI/SkinTokens",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 28848384,
+  "parameters_human": "28.8M",
+  "storage_bytes": 3631506624,
+  "storage_human": "3.6 GB",
+  "base_model": "VAST-AI/SkinTokens",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

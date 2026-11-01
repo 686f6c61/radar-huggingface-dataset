@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "qinyong13/disaster-tweets-bert",
+  "slug": "qinyong13-disaster-tweets-bert",
+  "author": "qinyong13",
+  "url": "https://huggingface.co/qinyong13/disaster-tweets-bert",
+  "created_at": "2026-10-28T12:26:05.000Z",
+  "updated_at": "2026-10-28T13:13:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "disaster-tweets",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:quantized:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 569277641,
+  "storage_human": "569 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Disaster tweet classification",
+      "dataset": null,
+      "metric": null,
+      "value": 0.8373
+    },
+    {
+      "task": "Disaster tweet classification",
+      "dataset": null,
+      "metric": null,
+      "value": 0.8127
+    }
+  ],
+  "sources": []
+}

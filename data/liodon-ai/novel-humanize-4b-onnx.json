@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/novel-humanize-4b-ONNX",
+  "slug": "liodon-ai-novel-humanize-4b-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/novel-humanize-4b-ONNX",
+  "created_at": "2026-10-25T19:51:24.000Z",
+  "updated_at": "2026-10-25T22:21:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "base_model:gugujiji/novel-humanize-4b",
+    "base_model:quantized:gugujiji/novel-humanize-4b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 373,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27227210115,
+  "storage_human": "27.2 GB",
+  "base_model": "gugujiji/novel-humanize-4b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

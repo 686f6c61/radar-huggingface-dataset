@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Stray2024/BASE-1.5B-GGUF",
+  "slug": "stray2024-base-1-5b-gguf",
+  "author": "Stray2024",
+  "url": "https://huggingface.co/Stray2024/BASE-1.5B-GGUF",
+  "created_at": "2026-10-29T05:46:18.000Z",
+  "updated_at": "2026-10-29T05:58:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "ollama",
+    "unsloth",
+    "reasoning",
+    "think",
+    "base",
+    "ru",
+    "en",
+    "base_model:Stray2024/BASE-1.5B",
+    "base_model:quantized:Stray2024/BASE-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048224,
+  "storage_human": "986 MB",
+  "base_model": "Stray2024/BASE-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "CollinMa/disaster-tweets-bert",
+  "slug": "collinma-disaster-tweets-bert",
+  "author": "CollinMa",
+  "url": "https://huggingface.co/CollinMa/disaster-tweets-bert",
+  "created_at": "2026-10-26T16:00:44.000Z",
+  "updated_at": "2026-10-26T16:09:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "disaster-tweets",
+    "fine-tuned",
+    "en",
+    "dataset:venetis/disaster_tweets",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:quantized:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 620129977,
+  "storage_human": "620 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

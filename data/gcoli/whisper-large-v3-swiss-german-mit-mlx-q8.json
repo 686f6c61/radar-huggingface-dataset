@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "gcoli/whisper-large-v3-swiss-german-mit-mlx-q8",
+  "slug": "gcoli-whisper-large-v3-swiss-german-mit-mlx-q8",
+  "author": "gcoli",
+  "url": "https://huggingface.co/gcoli/whisper-large-v3-swiss-german-mit-mlx-q8",
+  "created_at": "2026-10-25T18:52:38.000Z",
+  "updated_at": "2026-10-25T18:53:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "gsw",
+    "de"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "mlx-whisper",
+    "whisper-large-v3",
+    "swiss-german",
+    "automatic-speech-recognition",
+    "gsw",
+    "de",
+    "base_model:gcoli/whisper-large-v3-swiss-german-mit",
+    "base_model:finetune:gcoli/whisper-large-v3-swiss-german-mit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1644895305,
+  "storage_human": "1.6 GB",
+  "base_model": "gcoli/whisper-large-v3-swiss-german-mit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "abulafia2001/confirm-gate-qwen3-4b",
+  "slug": "abulafia2001-confirm-gate-qwen3-4b",
+  "author": "abulafia2001",
+  "url": "https://huggingface.co/abulafia2001/confirm-gate-qwen3-4b",
+  "created_at": "2026-10-29T19:58:08.000Z",
+  "updated_at": "2026-10-29T21:27:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qlora",
+    "unsloth",
+    "tool-use",
+    "function-calling",
+    "agent-safety",
+    "human-in-the-loop",
+    "confirmation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056405004,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Confirm before irreversible tool calls",
+      "dataset": "Confirm-Gate eval_v1 (148 scenarios)",
+      "metric": "Spec adherence",
+      "value": 0.71
+    },
+    {
+      "task": "Confirm before irreversible tool calls",
+      "dataset": "Confirm-Gate eval_v1 (148 scenarios)",
+      "metric": "Robustness (adversarial axes)",
+      "value": 0.65
+    },
+    {
+      "task": "Confirm before irreversible tool calls",
+      "dataset": "Confirm-Gate eval_v1 (148 scenarios)",
+      "metric": "Acted without confirmation (lower is better)",
+      "value": 0.14
+    },
+    {
+      "task": "Confirm before irreversible tool calls",
+      "dataset": "Confirm-Gate eval_v1 (148 scenarios)",
+      "metric": "Over-confirm (lower is better)",
+      "value": 0.14
+    }
+  ],
+  "sources": []
+}

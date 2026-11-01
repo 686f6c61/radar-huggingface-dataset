@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "noumenon-labs/Morrow-2.6B-CE",
+  "slug": "noumenon-labs-morrow-2-6b-ce",
+  "author": "noumenon-labs",
+  "url": "https://huggingface.co/noumenon-labs/Morrow-2.6B-CE",
+  "created_at": "2026-10-25T03:36:26.000Z",
+  "updated_at": "2026-10-25T03:44:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "fine-tuning",
+    "lora",
+    "unsloth",
+    "en",
+    "base_model:LiquidAI/LFM2-2.6B",
+    "base_model:adapter:LiquidAI/LFM2-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 225,
+  "trending_score": 0,
+  "parameters": 2569272320,
+  "parameters_human": "2.57B",
+  "storage_bytes": 5138574880,
+  "storage_human": "5.1 GB",
+  "base_model": "LiquidAI/LFM2-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

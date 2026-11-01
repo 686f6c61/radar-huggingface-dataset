@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "shonenash/electra-ai-human-classifier",
+  "slug": "shonenash-electra-ai-human-classifier",
+  "author": "shonenash",
+  "url": "https://huggingface.co/shonenash/electra-ai-human-classifier",
+  "created_at": "2026-10-29T23:55:15.000Z",
+  "updated_at": "2026-10-29T23:59:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ai-text-detection",
+    "electra",
+    "text-classification",
+    "en",
+    "dataset:Havoc999/The-Claude-Dataset",
+    "dataset:wikimedia/wikipedia",
+    "base_model:google/electra-small-discriminator",
+    "base_model:finetune:google/electra-small-discriminator",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 13549314,
+  "parameters_human": "13.5M",
+  "storage_bytes": 54221168,
+  "storage_human": "54 MB",
+  "base_model": "google/electra-small-discriminator",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AgentEye-Grounder-0.8B-v1-GGUF",
+  "slug": "mradermacher-agenteye-grounder-0-8b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AgentEye-Grounder-0.8B-v1-GGUF",
+  "created_at": "2026-10-27T09:09:07.000Z",
+  "updated_at": "2026-10-27T09:12:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "en",
+    "zh",
+    "dataset:Salesforce/grounding_dataset",
+    "base_model:Navanjana/AgentEye-Grounder-0.8B-v1",
+    "base_model:quantized:Navanjana/AgentEye-Grounder-0.8B-v1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 612,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 7956118208,
+  "storage_human": "8.0 GB",
+  "base_model": "Navanjana/AgentEye-Grounder-0.8B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

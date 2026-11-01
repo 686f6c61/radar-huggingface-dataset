@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "onnx-community/bert-tiny-ONNX",
+  "slug": "onnx-community-bert-tiny-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/bert-tiny-ONNX",
+  "created_at": "2026-10-27T00:41:23.000Z",
+  "updated_at": "2026-10-27T00:41:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "BERT",
+    "MNLI",
+    "NLI",
+    "transformer",
+    "pre-training",
+    "en",
+    "arxiv:1908.08962",
+    "arxiv:2110.01518",
+    "base_model:prajjwal1/bert-tiny",
+    "base_model:quantized:prajjwal1/bert-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 156,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75799444,
+  "storage_human": "76 MB",
+  "base_model": "prajjwal1/bert-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

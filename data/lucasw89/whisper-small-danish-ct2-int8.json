@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lucasw89/whisper-small-danish-ct2-int8",
+  "slug": "lucasw89-whisper-small-danish-ct2-int8",
+  "author": "lucasw89",
+  "url": "https://huggingface.co/lucasw89/whisper-small-danish-ct2-int8",
+  "created_at": "2026-10-30T00:31:42.000Z",
+  "updated_at": "2026-10-30T00:31:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "danish",
+    "faster-whisper",
+    "automatic-speech-recognition",
+    "da",
+    "base_model:thorhojhus/whisper-small-danish",
+    "base_model:quantized:thorhojhus/whisper-small-danish",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244612629,
+  "storage_human": "245 MB",
+  "base_model": "thorhojhus/whisper-small-danish",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

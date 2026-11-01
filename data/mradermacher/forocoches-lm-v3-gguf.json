@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/forocoches-lm-v3-GGUF",
+  "slug": "mradermacher-forocoches-lm-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/forocoches-lm-v3-GGUF",
+  "created_at": "2026-10-29T08:06:55.000Z",
+  "updated_at": "2026-10-29T08:10:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma3",
+    "forocoches",
+    "spanish",
+    "forum",
+    "full-finetune",
+    "es",
+    "dataset:mateo-19182/forocoches-threads-v3",
+    "base_model:mateo-19182/forocoches-lm-v3",
+    "base_model:quantized:mateo-19182/forocoches-lm-v3",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 531,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 10933251840,
+  "storage_human": "10.9 GB",
+  "base_model": "mateo-19182/forocoches-lm-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

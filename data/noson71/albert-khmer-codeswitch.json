@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "noson71/albert-khmer-codeswitch",
+  "slug": "noson71-albert-khmer-codeswitch",
+  "author": "noson71",
+  "url": "https://huggingface.co/noson71/albert-khmer-codeswitch",
+  "created_at": "2026-10-27T00:31:02.000Z",
+  "updated_at": "2026-10-27T00:48:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "albert",
+    "fill-mask",
+    "khmer",
+    "english",
+    "code-switching",
+    "masked-language-modeling",
+    "continued-pretraining",
+    "km",
+    "en",
+    "base_model:seanghay/albert-khmer-small",
+    "base_model:finetune:seanghay/albert-khmer-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 15607680,
+  "parameters_human": "15.6M",
+  "storage_bytes": 62434256,
+  "storage_human": "62 MB",
+  "base_model": "seanghay/albert-khmer-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

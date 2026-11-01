@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "avkbsurya119/speecht5_finetuned_voxpopuli_nl",
+  "slug": "avkbsurya119-speecht5_finetuned_voxpopuli_nl",
+  "author": "avkbsurya119",
+  "url": "https://huggingface.co/avkbsurya119/speecht5_finetuned_voxpopuli_nl",
+  "created_at": "2026-10-25T16:18:39.000Z",
+  "updated_at": "2026-10-25T17:49:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "generated_from_trainer",
+    "nl",
+    "dataset:qmeeus/voxpopuli",
+    "base_model:microsoft/speecht5_tts",
+    "base_model:finetune:microsoft/speecht5_tts",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 2889260704,
+  "storage_human": "2.9 GB",
+  "base_model": "microsoft/speecht5_tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

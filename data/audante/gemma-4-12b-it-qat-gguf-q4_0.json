@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Audante/gemma-4-12B-it-qat-GGUF-q4_0",
+  "slug": "audante-gemma-4-12b-it-qat-gguf-q4_0",
+  "author": "Audante",
+  "url": "https://huggingface.co/Audante/gemma-4-12B-it-qat-GGUF-q4_0",
+  "created_at": "2026-10-29T16:15:37.000Z",
+  "updated_at": "2026-10-29T21:39:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-gguf",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 105,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 6975879296,
+  "storage_human": "7.0 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

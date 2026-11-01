@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "rachitst/oncall-ai-incident-classifier",
+  "slug": "rachitst-oncall-ai-incident-classifier",
+  "author": "rachitst",
+  "url": "https://huggingface.co/rachitst/oncall-ai-incident-classifier",
+  "created_at": "2026-10-28T16:06:35.000Z",
+  "updated_at": "2026-10-29T14:32:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "qlora",
+    "lora",
+    "peft",
+    "incident-classification",
+    "log-analysis",
+    "sre",
+    "devops",
+    "synthetic-data",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999632645,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Production incident classification (type + severity)",
+      "dataset": "OnCall AI synthetic incident logs (test split, 180 logs)",
+      "metric": "Incident-type accuracy",
+      "value": 1
+    },
+    {
+      "task": "Production incident classification (type + severity)",
+      "dataset": "OnCall AI synthetic incident logs (test split, 180 logs)",
+      "metric": "Incident-type macro-F1",
+      "value": 1
+    },
+    {
+      "task": "Production incident classification (type + severity)",
+      "dataset": "OnCall AI synthetic incident logs (test split, 180 logs)",
+      "metric": "Severity accuracy",
+      "value": 1
+    },
+    {
+      "task": "Production incident classification (type + severity)",
+      "dataset": "OnCall AI synthetic incident logs (test split, 180 logs)",
+      "metric": "Severity macro-F1",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

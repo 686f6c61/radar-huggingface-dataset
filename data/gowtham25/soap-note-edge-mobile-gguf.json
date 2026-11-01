@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Gowtham25/soap-note-edge-mobile-gguf",
+  "slug": "gowtham25-soap-note-edge-mobile-gguf",
+  "author": "Gowtham25",
+  "url": "https://huggingface.co/Gowtham25/soap-note-edge-mobile-gguf",
+  "created_at": "2026-10-28T07:35:15.000Z",
+  "updated_at": "2026-10-28T07:51:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "mobile",
+    "clinical",
+    "soap",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 1829494144,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

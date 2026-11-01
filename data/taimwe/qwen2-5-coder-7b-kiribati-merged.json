@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Taimwe/qwen2.5-coder-7b-kiribati-merged",
+  "slug": "taimwe-qwen2-5-coder-7b-kiribati-merged",
+  "author": "Taimwe",
+  "url": "https://huggingface.co/Taimwe/qwen2.5-coder-7b-kiribati-merged",
+  "created_at": "2026-10-30T10:55:08.000Z",
+  "updated_at": "2026-10-30T10:56:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 232,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694220,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

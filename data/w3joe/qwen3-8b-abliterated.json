@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "w3joe/Qwen3-8B-abliterated",
+  "slug": "w3joe-qwen3-8b-abliterated",
+  "author": "w3joe",
+  "url": "https://huggingface.co/w3joe/Qwen3-8B-abliterated",
+  "created_at": "2026-10-28T13:00:09.000Z",
+  "updated_at": "2026-10-28T13:40:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "text-generation-inference",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 46518287426,
+  "storage_human": "46.5 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

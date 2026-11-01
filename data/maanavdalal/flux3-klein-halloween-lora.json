@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "maanavdalal/flux3-klein-halloween-lora",
+  "slug": "maanavdalal-flux3-klein-halloween-lora",
+  "author": "maanavdalal",
+  "url": "https://huggingface.co/maanavdalal/flux3-klein-halloween-lora",
+  "created_at": "2026-10-27T20:01:51.000Z",
+  "updated_at": "2026-10-29T06:22:49.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "flux-3-image-klein",
+    "halloween",
+    "base_model:black-forest-labs/flux-3-image-klein-base",
+    "base_model:adapter:black-forest-labs/flux-3-image-klein-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 322204648,
+  "storage_human": "322 MB",
+  "base_model": "black-forest-labs/flux-3-image-klein-base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

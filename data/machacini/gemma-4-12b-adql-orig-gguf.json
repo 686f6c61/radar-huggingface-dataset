@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Machacini/gemma-4-12b-adql-orig-GGUF",
+  "slug": "machacini-gemma-4-12b-adql-orig-gguf",
+  "author": "Machacini",
+  "url": "https://huggingface.co/Machacini/gemma-4-12b-adql-orig-GGUF",
+  "created_at": "2026-10-29T00:37:42.000Z",
+  "updated_at": "2026-10-29T00:45:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "astronomy",
+    "adql",
+    "nl2sql",
+    "gemma4",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 328,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 23832066144,
+  "storage_human": "23.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

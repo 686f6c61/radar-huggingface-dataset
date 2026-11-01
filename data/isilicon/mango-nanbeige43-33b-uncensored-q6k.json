@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "isilicon/mango-nanbeige43-33b-uncensored-q6k",
+  "slug": "isilicon-mango-nanbeige43-33b-uncensored-q6k",
+  "author": "isilicon",
+  "url": "https://huggingface.co/isilicon/mango-nanbeige43-33b-uncensored-q6k",
+  "created_at": "2026-10-29T21:11:35.000Z",
+  "updated_at": "2026-10-30T06:51:01.000Z",
+  "license": "dealignai-community-model-license-v0.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "mango",
+    "preservation-mirror",
+    "nanbeige",
+    "evaluated",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF",
+    "base_model:quantized:dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF",
+    "license:other",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 426,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 27174767925,
+  "storage_human": "27.2 GB",
+  "base_model": "dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

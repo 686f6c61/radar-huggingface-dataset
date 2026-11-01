@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "R2666/LTX-Video",
+  "slug": "r2666-ltx-video",
+  "author": "R2666",
+  "url": "https://huggingface.co/R2666/LTX-Video",
+  "created_at": "2026-10-30T03:19:17.000Z",
+  "updated_at": "2026-10-30T03:19:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ltx-video",
+    "image-to-video",
+    "en",
+    "license:other",
+    "diffusers:LTXPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 1923385472,
+  "parameters_human": "1.92B",
+  "storage_bytes": 208804415572,
+  "storage_human": "208.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coldplay - Speed Of Sound (Official Video) - YouTube",
+      "url": "https://m.youtube.com/watch?v=0k_1kvDh2UA",
+      "snippet": "May 27, 2011 · Coldplay's tenth studio album Moon Music available to listen/ buy now! https://coldplay.lnk.to/MoonMusic 🌙 Coldplay - …"
+    }
+  ]
+}

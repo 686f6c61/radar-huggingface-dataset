@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "emillykkegrann/ekko-v1-tiny-GGUF",
+  "slug": "emillykkegrann-ekko-v1-tiny-gguf",
+  "author": "emillykkegrann",
+  "url": "https://huggingface.co/emillykkegrann/ekko-v1-tiny-GGUF",
+  "created_at": "2026-10-29T21:32:48.000Z",
+  "updated_at": "2026-10-29T21:32:53.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "gguf",
+    "speech-recognition",
+    "danish",
+    "parakeet.cpp",
+    "automatic-speech-recognition",
+    "da",
+    "base_model:RyeAI/ekko-v1-tiny",
+    "base_model:quantized:RyeAI/ekko-v1-tiny",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 112861197,
+  "parameters_human": "112.9M",
+  "storage_bytes": 134710976,
+  "storage_human": "135 MB",
+  "base_model": "RyeAI/ekko-v1-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

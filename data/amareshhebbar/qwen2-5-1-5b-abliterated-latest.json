@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "AmareshHebbar/Qwen2.5-1.5B-Abliterated-latest",
+  "slug": "amareshhebbar-qwen2-5-1-5b-abliterated-latest",
+  "author": "AmareshHebbar",
+  "url": "https://huggingface.co/AmareshHebbar/Qwen2.5-1.5B-Abliterated-latest",
+  "created_at": "2026-10-29T07:00:38.000Z",
+  "updated_at": "2026-10-30T05:40:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "abliterated",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "weight-surgery",
+    "activation-steering",
+    "representation-engineering",
+    "orthogonal-projection",
+    "winsorization",
+    "alignment-research",
+    "refusal-mitigation",
+    "overrefusal-fix",
+    "mechanistic-interpretability",
+    "vector-ablation",
+    "direct-weight-modification",
+    "edge-llm",
+    "conversational",
+    "en",
+    "dataset:cais/mmlu",
+    "dataset:openai/gsm8k",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:unsloth/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1604935492,
+  "storage_human": "1.6 GB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (Abstract Algebra)",
+      "metric": "Accuracy (0-shot)",
+      "value": 37
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K",
+      "metric": "Exact Match (Flexible-Extract, 0-shot)",
+      "value": 28
+    }
+  ],
+  "sources": []
+}

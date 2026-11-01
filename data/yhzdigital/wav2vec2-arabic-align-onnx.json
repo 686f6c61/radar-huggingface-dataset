@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "YHZDigital/wav2vec2-arabic-align-onnx",
+  "slug": "yhzdigital-wav2vec2-arabic-align-onnx",
+  "author": "YHZDigital",
+  "url": "https://huggingface.co/YHZDigital/wav2vec2-arabic-align-onnx",
+  "created_at": "2026-10-29T13:02:21.000Z",
+  "updated_at": "2026-10-29T13:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "ar",
+    "base_model:jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
+    "base_model:quantized:jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 631541123,
+  "storage_human": "632 MB",
+  "base_model": "jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

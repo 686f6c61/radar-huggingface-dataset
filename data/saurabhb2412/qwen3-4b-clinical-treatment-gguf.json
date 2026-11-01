@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "saurabhb2412/qwen3-4b-clinical-treatment-gguf",
+  "slug": "saurabhb2412-qwen3-4b-clinical-treatment-gguf",
+  "author": "saurabhb2412",
+  "url": "https://huggingface.co/saurabhb2412/qwen3-4b-clinical-treatment-gguf",
+  "created_at": "2026-10-26T03:38:43.000Z",
+  "updated_at": "2026-10-26T03:56:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "medical",
+    "clinical-decision-support",
+    "qwen3",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 99,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 10548565376,
+  "storage_human": "10.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

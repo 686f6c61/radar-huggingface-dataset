@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "agentscope-ai/QwenPaw-Flash-9B-BF16",
+  "slug": "agentscope-ai-qwenpaw-flash-9b-bf16",
+  "author": "agentscope-ai",
+  "url": "https://huggingface.co/agentscope-ai/QwenPaw-Flash-9B-BF16",
+  "created_at": "2026-10-30T05:11:13.000Z",
+  "updated_at": "2026-10-30T05:11:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "bf16",
+    "qwenpaw",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 180,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17920696800,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

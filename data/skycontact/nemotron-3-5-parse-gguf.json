@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "SkyContact/Nemotron-3.5-Parse-GGUF",
+  "slug": "skycontact-nemotron-3-5-parse-gguf",
+  "author": "SkyContact",
+  "url": "https://huggingface.co/SkyContact/Nemotron-3.5-Parse-GGUF",
+  "created_at": "2026-10-26T13:25:14.000Z",
+  "updated_at": "2026-10-26T13:41:48.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "document-parsing",
+    "ocr",
+    "layout-analysis",
+    "en",
+    "base_model:nvidia/Nemotron-3.5-Parse",
+    "base_model:quantized:nvidia/Nemotron-3.5-Parse",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": 628701296,
+  "parameters_human": "628.7M",
+  "storage_bytes": 2173359552,
+  "storage_human": "2.2 GB",
+  "base_model": "nvidia/Nemotron-3.5-Parse",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

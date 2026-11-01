@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "skmbkang/tinystories-gpt2-30m-sft",
+  "slug": "skmbkang-tinystories-gpt2-30m-sft",
+  "author": "skmbkang",
+  "url": "https://huggingface.co/skmbkang/tinystories-gpt2-30m-sft",
+  "created_at": "2026-10-29T02:31:33.000Z",
+  "updated_at": "2026-10-29T02:31:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStoriesInstruct",
+    "base_model:skmbkang/tinystories-gpt2-30m",
+    "base_model:finetune:skmbkang/tinystories-gpt2-30m",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 113,
+  "trending_score": 0,
+  "parameters": 30044544,
+  "parameters_human": "30.0M",
+  "storage_bytes": 120185720,
+  "storage_human": "120 MB",
+  "base_model": "skmbkang/tinystories-gpt2-30m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

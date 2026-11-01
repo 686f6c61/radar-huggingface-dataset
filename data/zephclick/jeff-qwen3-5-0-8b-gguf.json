@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ZephClick/jeff-qwen3.5-0.8b-gguf",
+  "slug": "zephclick-jeff-qwen3-5-0-8b-gguf",
+  "author": "ZephClick",
+  "url": "https://huggingface.co/ZephClick/jeff-qwen3.5-0.8b-gguf",
+  "created_at": "2026-10-26T16:35:50.000Z",
+  "updated_at": "2026-10-26T16:38:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "decision-model",
+    "qwen3.5",
+    "en",
+    "base_model:jeff-legacy/Jeff-Qwen3.5-0.8B",
+    "base_model:quantized:jeff-legacy/Jeff-Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 170,
+  "trending_score": 0,
+  "parameters": 1006672704,
+  "parameters_human": "1.01B",
+  "storage_bytes": 2025307584,
+  "storage_human": "2.0 GB",
+  "base_model": "jeff-legacy/Jeff-Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

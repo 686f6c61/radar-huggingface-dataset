@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "jmoraleses/folio-melo-fr-onnx",
+  "slug": "jmoraleses-folio-melo-fr-onnx",
+  "author": "jmoraleses",
+  "url": "https://huggingface.co/jmoraleses/folio-melo-fr-onnx",
+  "created_at": "2026-10-26T19:51:43.000Z",
+  "updated_at": "2026-10-26T19:51:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "melotts",
+    "openvoice",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 181934218,
+  "storage_human": "182 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

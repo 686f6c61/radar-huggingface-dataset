@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/NOTS-DarcyFlowRate",
+  "slug": "onescience-group-nots-darcyflowrate",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/NOTS-DarcyFlowRate",
+  "created_at": "2026-10-29T16:29:18.000Z",
+  "updated_at": "2026-10-29T16:29:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nots_darcy_fno",
+    "OneScience",
+    "darcy-flow",
+    "neural-operator",
+    "thompson-sampling",
+    "en",
+    "arxiv:2506.21894",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23602977,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

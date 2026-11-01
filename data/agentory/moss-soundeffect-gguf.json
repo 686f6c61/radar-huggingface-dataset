@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "agentory/moss-soundeffect-gguf",
+  "slug": "agentory-moss-soundeffect-gguf",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/moss-soundeffect-gguf",
+  "created_at": "2026-10-28T21:46:50.000Z",
+  "updated_at": "2026-10-28T21:46:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "OpenMOSS",
+    "GGUF",
+    "BF16",
+    "sound-effects",
+    "text-to-audio",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-SoundEffect-v2.0",
+    "base_model:quantized:OpenMOSS-Team/MOSS-SoundEffect-v2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 184,
+  "trending_score": 0,
+  "parameters": 1491544449,
+  "parameters_human": "1.49B",
+  "storage_bytes": 7054880064,
+  "storage_human": "7.1 GB",
+  "base_model": "OpenMOSS-Team/MOSS-SoundEffect-v2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

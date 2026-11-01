@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Kausp11/searchlm-sft_v4cannsent_wiki360_cm",
+  "slug": "kausp11-searchlm-sft_v4cannsent_wiki360_cm",
+  "author": "Kausp11",
+  "url": "https://huggingface.co/Kausp11/searchlm-sft_v4cannsent_wiki360_cm",
+  "created_at": "2026-10-26T16:53:29.000Z",
+  "updated_at": "2026-10-26T16:53:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "search-enabled-pretraining",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 246,
+  "trending_score": 0,
+  "parameters": 361824960,
+  "parameters_human": "361.8M",
+  "storage_bytes": 723682592,
+  "storage_human": "724 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

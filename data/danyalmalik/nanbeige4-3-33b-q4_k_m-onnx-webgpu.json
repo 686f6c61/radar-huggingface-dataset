@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "danyalmalik/Nanbeige4.3-33B-Q4_K_M-ONNX-WebGPU",
+  "slug": "danyalmalik-nanbeige4-3-33b-q4_k_m-onnx-webgpu",
+  "author": "danyalmalik",
+  "url": "https://huggingface.co/danyalmalik/Nanbeige4.3-33B-Q4_K_M-ONNX-WebGPU",
+  "created_at": "2026-10-26T05:28:03.000Z",
+  "updated_at": "2026-10-26T05:57:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "llama",
+    "webgpu",
+    "quick-inference",
+    "gguf",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20835601065,
+  "storage_human": "20.8 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

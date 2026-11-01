@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "AiArtLab/mossling",
+  "slug": "aiartlab-mossling",
+  "author": "AiArtLab",
+  "url": "https://huggingface.co/AiArtLab/mossling",
+  "created_at": "2026-10-28T06:07:15.000Z",
+  "updated_at": "2026-10-31T21:38:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "16gb",
+    "structured-pruning",
+    "alpha",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 3723277328,
+  "parameters_human": "3.72B",
+  "storage_bytes": 32437340994,
+  "storage_human": "32.4 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

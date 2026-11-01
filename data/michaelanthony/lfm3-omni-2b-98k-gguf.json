@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "MichaelAnthony/LFM3-Omni-2B-98K-GGUF",
+  "slug": "michaelanthony-lfm3-omni-2b-98k-gguf",
+  "author": "MichaelAnthony",
+  "url": "https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-GGUF",
+  "created_at": "2026-10-29T17:15:47.000Z",
+  "updated_at": "2026-10-29T17:18:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm3",
+    "long-context",
+    "liquidai",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 366,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 14430172160,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Ananasez/mistral-7b-instruct-v0.2-heretic-GGUF",
+  "slug": "ananasez-mistral-7b-instruct-v0-2-heretic-gguf",
+  "author": "Ananasez",
+  "url": "https://huggingface.co/Ananasez/mistral-7b-instruct-v0.2-heretic-GGUF",
+  "created_at": "2026-10-26T22:53:04.000Z",
+  "updated_at": "2026-10-27T16:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "abliterated",
+    "uncensored",
+    "en",
+    "arxiv:2406.11717",
+    "base_model:Ananasez/mistral-7b-instruct-v0.2-heretic",
+    "base_model:quantized:Ananasez/mistral-7b-instruct-v0.2-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 131,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 4368441024,
+  "storage_human": "4.4 GB",
+  "base_model": "Ananasez/mistral-7b-instruct-v0.2-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "SuNya558/lingbot-vla-80k",
+  "slug": "sunya558-lingbot-vla-80k",
+  "author": "SuNya558",
+  "url": "https://huggingface.co/SuNya558/lingbot-vla-80k",
+  "created_at": "2026-10-25T19:30:05.000Z",
+  "updated_at": "2026-10-26T13:04:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "lingbot-vla",
+    "lingbot_vla_v2",
+    "dual-arm",
+    "full-finetune",
+    "en",
+    "zh",
+    "base_model:lerobot/lingbot_vla_v2_base",
+    "base_model:finetune:lerobot/lingbot_vla_v2_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 12783375707,
+  "storage_human": "12.8 GB",
+  "base_model": "lerobot/lingbot_vla_v2_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "kdkolympia/obesity-charts-gemma3-1b",
+  "slug": "kdkolympia-obesity-charts-gemma3-1b",
+  "author": "kdkolympia",
+  "url": "https://huggingface.co/kdkolympia/obesity-charts-gemma3-1b",
+  "created_at": "2026-10-27T10:23:01.000Z",
+  "updated_at": "2026-10-27T13:46:48.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rag",
+    "on-device",
+    "document-qa",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 806058368,
+  "storage_human": "806 MB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

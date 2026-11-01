@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "agentory/kitten-tts-2",
+  "slug": "agentory-kitten-tts-2",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/kitten-tts-2",
+  "created_at": "2026-10-28T13:27:39.000Z",
+  "updated_at": "2026-10-28T13:27:40.000Z",
+  "license": "stellon-labs-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 212,
+  "trending_score": 0,
+  "parameters": 1733487616,
+  "parameters_human": "1.73B",
+  "storage_bytes": 8229465541,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

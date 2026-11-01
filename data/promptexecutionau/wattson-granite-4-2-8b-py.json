@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "PromptExecutionAU/wattson-granite-4.2-8b-py",
+  "slug": "promptexecutionau-wattson-granite-4-2-8b-py",
+  "author": "PromptExecutionAU",
+  "url": "https://huggingface.co/PromptExecutionAU/wattson-granite-4.2-8b-py",
+  "created_at": "2026-10-30T02:02:27.000Z",
+  "updated_at": "2026-10-30T03:21:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "tool-calling",
+    "power-systems",
+    "pandapower",
+    "wattson",
+    "lora-merged",
+    "conversational",
+    "en",
+    "base_model:ibm-granite/granite-4.2-8b",
+    "base_model:finetune:ibm-granite/granite-4.2-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 315,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 17979141528,
+  "storage_human": "18.0 GB",
+  "base_model": "ibm-granite/granite-4.2-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ogaude/glyphfix-math-lora",
+  "slug": "ogaude-glyphfix-math-lora",
+  "author": "ogaude",
+  "url": "https://huggingface.co/ogaude/glyphfix-math-lora",
+  "created_at": "2026-10-29T23:18:25.000Z",
+  "updated_at": "2026-10-30T11:22:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "ocr",
+    "latex",
+    "math",
+    "image-text-to-text",
+    "en",
+    "dataset:ogaude/glyphfix-math-equations",
+    "arxiv:2408.10186",
+    "arxiv:2601.20152",
+    "arxiv:2510.20320",
+    "arxiv:2606.29349",
+    "base_model:lightonai/LightOnOCR-3-4B",
+    "base_model:adapter:lightonai/LightOnOCR-3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 5093361581,
+  "storage_human": "5.1 GB",
+  "base_model": "lightonai/LightOnOCR-3-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Equation image to LaTeX",
+      "dataset": "glyphfix-math-equations benchmark split",
+      "metric": "Render-identical rate",
+      "value": 0.652
+    }
+  ],
+  "sources": []
+}

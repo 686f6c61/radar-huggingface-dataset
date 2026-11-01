@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "abbuibuibui/NaoTomori-Lora",
+  "slug": "abbuibuibui-naotomori-lora",
+  "author": "abbuibuibui",
+  "url": "https://huggingface.co/abbuibuibui/NaoTomori-Lora",
+  "created_at": "2026-10-28T06:51:15.000Z",
+  "updated_at": "2026-10-28T07:00:12.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "sdxl",
+    "lora",
+    "illustrious",
+    "character",
+    "charlotte",
+    "nao-tomori",
+    "nao_tomori",
+    "en",
+    "zh",
+    "dataset:abbuibuibui/NaoTomori-Dataset",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1611188559,
+  "storage_human": "1.6 GB",
+  "base_model": "waiIllustriousSDXL-v17",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

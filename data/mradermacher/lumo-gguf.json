@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lumo-GGUF",
+  "slug": "mradermacher-lumo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lumo-GGUF",
+  "created_at": "2026-10-29T07:50:09.000Z",
+  "updated_at": "2026-10-29T07:51:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:LumoAI-Kurd/Lumo",
+    "base_model:quantized:LumoAI-Kurd/Lumo",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 286,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 877569152,
+  "storage_human": "878 MB",
+  "base_model": "LumoAI-Kurd/Lumo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/terrible-joke-qwen3-1.7b-GGUF",
+  "slug": "mradermacher-terrible-joke-qwen3-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/terrible-joke-qwen3-1.7b-GGUF",
+  "created_at": "2026-10-30T11:30:47.000Z",
+  "updated_at": "2026-10-30T11:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "lora-merged",
+    "humor",
+    "instruction-following",
+    "en",
+    "base_model:locriani/terrible-joke-qwen3-1.7b",
+    "base_model:quantized:locriani/terrible-joke-qwen3-1.7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 303,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959970432,
+  "storage_human": "16.0 GB",
+  "base_model": "locriani/terrible-joke-qwen3-1.7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

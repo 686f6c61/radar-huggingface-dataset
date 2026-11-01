@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hossain0909/Keural-Nova-v1.1",
+  "slug": "hossain0909-keural-nova-v1-1",
+  "author": "hossain0909",
+  "url": "https://huggingface.co/hossain0909/Keural-Nova-v1.1",
+  "created_at": "2026-10-27T07:25:59.000Z",
+  "updated_at": "2026-10-27T07:25:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "korean",
+    "moe",
+    "lora",
+    "instruction-tuning",
+    "keural",
+    "text-generation",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 294,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 71917207970,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenization: What it is and how to think about it - Bank of Canada",
+      "url": "https://www.bankofcanada.ca/2026/06/sparks-at-bank-article-2026-14/",
+      "snippet": "Tokenization involves representing traditional assets as tokens on a digital platform. This financial innovation has the potential to …"
+    }
+  ]
+}

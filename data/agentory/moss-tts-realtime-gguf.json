@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "agentory/MOSS-TTS-Realtime-GGUF",
+  "slug": "agentory-moss-tts-realtime-gguf",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/MOSS-TTS-Realtime-GGUF",
+  "created_at": "2026-10-28T21:40:24.000Z",
+  "updated_at": "2026-10-28T21:40:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "codec.cpp",
+    "text-to-speech",
+    "tts",
+    "moss-tts",
+    "moss-tts-realtime",
+    "zh",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-TTS-Realtime",
+    "base_model:quantized:OpenMOSS-Team/MOSS-TTS-Realtime",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 233,
+  "trending_score": 0,
+  "parameters": 2077114880,
+  "parameters_human": "2.08B",
+  "storage_bytes": 47821517952,
+  "storage_human": "47.8 GB",
+  "base_model": "OpenMOSS-Team/MOSS-TTS-Realtime",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

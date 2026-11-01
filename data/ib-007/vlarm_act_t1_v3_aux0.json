@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ib-007/vlarm_act_t1_v3_aux0",
+  "slug": "ib-007-vlarm_act_t1_v3_aux0",
+  "author": "ib-007",
+  "url": "https://huggingface.co/ib-007/vlarm_act_t1_v3_aux0",
+  "created_at": "2026-10-26T23:23:30.000Z",
+  "updated_at": "2026-10-26T23:24:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:ib-007/vlarm_sim_t1_v2_aux",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 51687980,
+  "parameters_human": "51.7M",
+  "storage_bytes": 1033908168,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

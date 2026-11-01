@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "thediymaker/gaudi2-fineweb-edu-1b",
+  "slug": "thediymaker-gaudi2-fineweb-edu-1b",
+  "author": "thediymaker",
+  "url": "https://huggingface.co/thediymaker/gaudi2-fineweb-edu-1b",
+  "created_at": "2026-10-28T21:26:01.000Z",
+  "updated_at": "2026-10-28T21:26:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "diloco",
+    "gaudi2",
+    "base-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2311.08105",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 1069639680,
+  "parameters_human": "1.07B",
+  "storage_bytes": 2139302344,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

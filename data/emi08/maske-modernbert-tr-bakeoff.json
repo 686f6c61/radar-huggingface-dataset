@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "emi08/maske-modernbert-tr-bakeoff",
+  "slug": "emi08-maske-modernbert-tr-bakeoff",
+  "author": "emi08",
+  "url": "https://huggingface.co/emi08/maske-modernbert-tr-bakeoff",
+  "created_at": "2026-10-25T21:01:55.000Z",
+  "updated_at": "2026-10-26T21:46:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "turkish",
+    "ner",
+    "maske",
+    "tr",
+    "dataset:unimelb-nlp/wikiann",
+    "base_model:ytu-ce-cosmos/modernbert-tr-base",
+    "base_model:finetune:ytu-ce-cosmos/modernbert-tr-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 149333767,
+  "parameters_human": "149.3M",
+  "storage_bytes": 597354445,
+  "storage_human": "597 MB",
+  "base_model": "ytu-ce-cosmos/modernbert-tr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

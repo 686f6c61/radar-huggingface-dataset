@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "greg1506/qwen3-8b-coffee-v10-GGUF",
+  "slug": "greg1506-qwen3-8b-coffee-v10-gguf",
+  "author": "greg1506",
+  "url": "https://huggingface.co/greg1506/qwen3-8b-coffee-v10-GGUF",
+  "created_at": "2026-10-29T21:43:45.000Z",
+  "updated_at": "2026-10-29T22:45:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "coffee",
+    "q4_k_m",
+    "qwen3",
+    "llama.cpp",
+    "domain-adaptation",
+    "en",
+    "dataset:greg1506/coffee-corpus-v2",
+    "base_model:greg1506/qwen3-8b-coffee-v10",
+    "base_model:quantized:greg1506/qwen3-8b-coffee-v10",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027783808,
+  "storage_human": "5.0 GB",
+  "base_model": "greg1506/qwen3-8b-coffee-v10",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

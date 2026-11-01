@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "agentscope-ai/Piccolo-9B-Q8_0",
+  "slug": "agentscope-ai-piccolo-9b-q8_0",
+  "author": "agentscope-ai",
+  "url": "https://huggingface.co/agentscope-ai/Piccolo-9B-Q8_0",
+  "created_at": "2026-10-28T09:52:09.000Z",
+  "updated_at": "2026-10-30T05:07:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "bidirectional-attention",
+    "qwenpaw",
+    "text-classification",
+    "en",
+    "zh",
+    "base_model:agentscope-ai/Piccolo-9B",
+    "base_model:quantized:agentscope-ai/Piccolo-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 9527502656,
+  "storage_human": "9.5 GB",
+  "base_model": "agentscope-ai/Piccolo-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "efebaykara/limite-1b-violetto-Gundem-LoRA",
+  "slug": "efebaykara-limite-1b-violetto-gundem-lora",
+  "author": "efebaykara",
+  "url": "https://huggingface.co/efebaykara/limite-1b-violetto-Gundem-LoRA",
+  "created_at": "2026-10-31T23:15:46.000Z",
+  "updated_at": "2026-11-01T00:14:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "response-distillation",
+    "turkish-news",
+    "headline-classification",
+    "text-generation",
+    "conversational",
+    "tr",
+    "base_model:paradigma-inc/limite-1b-violetto",
+    "base_model:adapter:paradigma-inc/limite-1b-violetto",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1035879372,
+  "parameters_human": "1.04B",
+  "storage_bytes": 1406553527,
+  "storage_human": "1.4 GB",
+  "base_model": "paradigma-inc/limite-1b-violetto",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

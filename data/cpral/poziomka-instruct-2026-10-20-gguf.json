@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cpral/Poziomka-Instruct-2026-10-20-GGUF",
+  "slug": "cpral-poziomka-instruct-2026-10-20-gguf",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/Poziomka-Instruct-2026-10-20-GGUF",
+  "created_at": "2026-11-01T00:52:48.000Z",
+  "updated_at": "2026-11-01T00:59:48.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "pl",
+    "base_model:cpral/Poziomka-Instruct-2026-10-20",
+    "base_model:quantized:cpral/Poziomka-Instruct-2026-10-20",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4119803395,
+  "parameters_human": "4.12B",
+  "storage_bytes": 22208525248,
+  "storage_human": "22.2 GB",
+  "base_model": "cpral/Poziomka-Instruct-2026-10-20",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

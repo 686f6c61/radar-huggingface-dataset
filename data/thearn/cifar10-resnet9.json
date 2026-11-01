@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "thearn/cifar10-resnet9",
+  "slug": "thearn-cifar10-resnet9",
+  "author": "thearn",
+  "url": "https://huggingface.co/thearn/cifar10-resnet9",
+  "created_at": "2026-10-28T17:47:58.000Z",
+  "updated_at": "2026-10-28T18:42:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "cifar10",
+    "resnet9",
+    "optuna",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "dataset:uoft-cs/cifar10",
+    "arxiv:2404.00498",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 256,
+  "trending_score": 0,
+  "parameters": 6577610,
+  "parameters_human": "6.6M",
+  "storage_bytes": 26314704,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "CIFAR-10",
+      "metric": "Test accuracy",
+      "value": 0.9323
+    }
+  ],
+  "sources": []
+}

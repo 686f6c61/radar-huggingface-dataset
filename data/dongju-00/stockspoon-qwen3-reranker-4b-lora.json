@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Dongju-00/stockspoon-qwen3-reranker-4b-lora",
+  "slug": "dongju-00-stockspoon-qwen3-reranker-4b-lora",
+  "author": "Dongju-00",
+  "url": "https://huggingface.co/Dongju-00/stockspoon-qwen3-reranker-4b-lora",
+  "created_at": "2026-10-28T05:17:41.000Z",
+  "updated_at": "2026-10-28T05:51:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "finance",
+    "opendart",
+    "reranker",
+    "text-ranking",
+    "ko",
+    "arxiv:2506.05176",
+    "base_model:Qwen/Qwen3-Reranker-4B",
+    "base_model:adapter:Qwen/Qwen3-Reranker-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47262480,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen3-Reranker-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

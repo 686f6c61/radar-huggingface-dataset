@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/Echo-Edge-Bat-Classifier-331",
+  "slug": "sotaagi2030-echo-edge-bat-classifier-331",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/Echo-Edge-Bat-Classifier-331",
+  "created_at": "2026-10-30T10:12:53.000Z",
+  "updated_at": "2026-10-30T10:12:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "echo_cirrus",
+    "bioacoustics",
+    "edge-inference",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22,
+  "storage_human": "22 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

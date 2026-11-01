@@ -5,7 +5,7 @@
   "author": "JIRU-W",
   "url": "https://huggingface.co/JIRU-W/e32_top8_seq2048_gbs128_10b_perlayeraux",
   "created_at": "2026-10-29T04:58:07.000Z",
-  "updated_at": "2026-10-31T14:01:42.000Z",
+  "updated_at": "2026-11-01T02:38:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 3696887808,
   "parameters_human": "3.70B",
-  "storage_bytes": 162663518160,
-  "storage_human": "162.7 GB",
+  "storage_bytes": 177451110720,
+  "storage_human": "177.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

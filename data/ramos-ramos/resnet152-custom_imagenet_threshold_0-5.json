@@ -5,7 +5,7 @@
   "author": "Ramos-Ramos",
   "url": "https://huggingface.co/Ramos-Ramos/resnet152.custom_imagenet_threshold_0.5",
   "created_at": "2026-10-31T17:59:06.000Z",
-  "updated_at": "2026-10-31T18:00:26.000Z",
+  "updated_at": "2026-10-31T18:21:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 60344232,
   "parameters_human": "60.3M",
-  "storage_bytes": 483147339,
-  "storage_human": "483 MB",
+  "storage_bytes": 966294678,
+  "storage_human": "966 MB",
   "base_model": null,
   "formats": [
     "safetensors"

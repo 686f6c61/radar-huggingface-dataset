@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld-GGUF",
+  "slug": "mradermacher-rsipo-sft-qwen2-5-7b-instruct-alfworld-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld-GGUF",
+  "created_at": "2026-10-26T13:20:22.000Z",
+  "updated_at": "2026-10-26T14:24:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "reinforcement-learning",
+    "rsipo",
+    "skill-sft",
+    "alfworld",
+    "en",
+    "dataset:Karl28/RSIPO-SFT-Data",
+    "base_model:Karl28/RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld",
+    "base_model:quantized:Karl28/RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 441,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146901888,
+  "storage_human": "68.1 GB",
+  "base_model": "Karl28/RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

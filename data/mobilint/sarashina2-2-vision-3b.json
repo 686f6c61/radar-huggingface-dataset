@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mobilint/sarashina2.2-vision-3b",
+  "slug": "mobilint-sarashina2-2-vision-3b",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/sarashina2.2-vision-3b",
+  "created_at": "2026-10-28T00:20:11.000Z",
+  "updated_at": "2026-10-29T04:08:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mobilint-sarashina2_vision",
+    "feature-extraction",
+    "mobilint",
+    "multimodal",
+    "vision-language",
+    "quantized",
+    "image-to-text",
+    "custom_code",
+    "ja",
+    "en",
+    "base_model:sbintuitions/sarashina2.2-vision-3b",
+    "base_model:quantized:sbintuitions/sarashina2.2-vision-3b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": 262144000,
+  "parameters_human": "262.1M",
+  "storage_bytes": 8346802697,
+  "storage_human": "8.3 GB",
+  "base_model": "sbintuitions/sarashina2.2-vision-3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

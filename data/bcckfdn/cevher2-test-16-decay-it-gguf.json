@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/cevher2-test-16-decay-it-GGUF",
+  "slug": "bcckfdn-cevher2-test-16-decay-it-gguf",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/cevher2-test-16-decay-it-GGUF",
+  "created_at": "2026-10-30T09:27:40.000Z",
+  "updated_at": "2026-10-30T09:28:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "smollm2",
+    "llama",
+    "turkish",
+    "text-generation",
+    "tr",
+    "en",
+    "base_model:bcckfdn/cevher2-test-16-decay-it",
+    "base_model:quantized:bcckfdn/cevher2-test-16-decay-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 254,
+  "trending_score": 0,
+  "parameters": 1513546496,
+  "parameters_human": "1.51B",
+  "storage_bytes": 6662920192,
+  "storage_human": "6.7 GB",
+  "base_model": "bcckfdn/cevher2-test-16-decay-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

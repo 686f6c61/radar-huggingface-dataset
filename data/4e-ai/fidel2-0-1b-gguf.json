@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "4E-AI/Fidel2.0-1B-GGUF",
+  "slug": "4e-ai-fidel2-0-1b-gguf",
+  "author": "4E-AI",
+  "url": "https://huggingface.co/4E-AI/Fidel2.0-1B-GGUF",
+  "created_at": "2026-10-25T16:31:00.000Z",
+  "updated_at": "2026-10-25T17:22:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "fidel",
+    "mamba",
+    "mixture-of-experts",
+    "code",
+    "competitive-programming",
+    "custom-architecture",
+    "text-generation",
+    "en",
+    "dataset:4E-AI/Fidel-Competitive-coding",
+    "base_model:4E-AI/Fidel2.0-1B",
+    "base_model:quantized:4E-AI/Fidel2.0-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 515,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5404102517,
+  "storage_human": "5.4 GB",
+  "base_model": "4E-AI/Fidel2.0-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

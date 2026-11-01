@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/toolguard-1b-GGUF",
+  "slug": "mradermacher-toolguard-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/toolguard-1b-GGUF",
+  "created_at": "2026-10-30T11:15:19.000Z",
+  "updated_at": "2026-10-30T11:23:08.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mcp",
+    "model-context-protocol",
+    "tool-poisoning",
+    "prompt-injection",
+    "agent-security",
+    "llm-security",
+    "en",
+    "dataset:CharanSripadi/toolguard-bench",
+    "base_model:CharanSripadi/toolguard-1b",
+    "base_model:quantized:CharanSripadi/toolguard-1b",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 309,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 10933269504,
+  "storage_human": "10.9 GB",
+  "base_model": "CharanSripadi/toolguard-1b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

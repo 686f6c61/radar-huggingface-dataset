@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "u84u/Yotsuba-Q2_K-GGUF",
+  "slug": "u84u-yotsuba-q2_k-gguf",
+  "author": "u84u",
+  "url": "https://huggingface.co/u84u/Yotsuba-Q2_K-GGUF",
+  "created_at": "2026-10-28T03:47:46.000Z",
+  "updated_at": "2026-10-28T03:48:02.000Z",
+  "license": "openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "4chan",
+    "dialogue",
+    "discourse",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "dataset:frzr-labs/4chan-pol",
+    "base_model:frzr-labs/Yotsuba",
+    "base_model:quantized:frzr-labs/Yotsuba",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 3015938080,
+  "storage_human": "3.0 GB",
+  "base_model": "frzr-labs/Yotsuba",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

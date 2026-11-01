@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "qiusizhan/PersistBD-GLM-4.6V-Flash-backdoor-20261025",
+  "slug": "qiusizhan-persistbd-glm-4-6v-flash-backdoor-20261025",
+  "author": "qiusizhan",
+  "url": "https://huggingface.co/qiusizhan/PersistBD-GLM-4.6V-Flash-backdoor-20261025",
+  "created_at": "2026-10-26T01:40:49.000Z",
+  "updated_at": "2026-10-26T03:49:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4v",
+    "image-text-to-text",
+    "persistbd",
+    "backdoor-auditing",
+    "conversational",
+    "en",
+    "base_model:zai-org/GLM-4.6V-Flash",
+    "base_model:finetune:zai-org/GLM-4.6V-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 10292777472,
+  "parameters_human": "10.29B",
+  "storage_bytes": 20605614707,
+  "storage_human": "20.6 GB",
+  "base_model": "zai-org/GLM-4.6V-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

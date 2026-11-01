@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "0neisall/tiny-embedding-test",
+  "slug": "0neisall-tiny-embedding-test",
+  "author": "0neisall",
+  "url": "https://huggingface.co/0neisall/tiny-embedding-test",
+  "created_at": "2026-10-27T06:31:20.000Z",
+  "updated_at": "2026-10-27T06:31:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "test",
+    "sentence-similarity",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 5648,
+  "parameters_human": "5648",
+  "storage_bytes": 24904,
+  "storage_human": "24904 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

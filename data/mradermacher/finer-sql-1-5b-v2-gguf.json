@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FINER-SQL-1.5B-v2-GGUF",
+  "slug": "mradermacher-finer-sql-1-5b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FINER-SQL-1.5B-v2-GGUF",
+  "created_at": "2026-10-30T10:38:16.000Z",
+  "updated_at": "2026-10-30T10:45:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-to-sql",
+    "grpo",
+    "core-db",
+    "en",
+    "base_model:thanhdath/FINER-SQL-1.5B-v2",
+    "base_model:quantized:thanhdath/FINER-SQL-1.5B-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 296,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206872960,
+  "storage_human": "14.2 GB",
+  "base_model": "thanhdath/FINER-SQL-1.5B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

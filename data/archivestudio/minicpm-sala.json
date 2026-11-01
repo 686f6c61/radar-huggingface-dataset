@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/MiniCPM-SALA",
+  "slug": "archivestudio-minicpm-sala",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/MiniCPM-SALA",
+  "created_at": "2026-10-30T06:38:08.000Z",
+  "updated_at": "2026-10-30T06:38:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpm_sala",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "zh",
+    "en",
+    "arxiv:2509.24663",
+    "arxiv:2601.22156",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 345,
+  "trending_score": 0,
+  "parameters": 9477203968,
+  "parameters_human": "9.48B",
+  "storage_bytes": 18955634812,
+  "storage_human": "19.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

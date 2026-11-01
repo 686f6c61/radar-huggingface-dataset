@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VIG-Qwen3-VL-Thinking-2B-GGUF",
+  "slug": "mradermacher-vig-qwen3-vl-thinking-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VIG-Qwen3-VL-Thinking-2B-GGUF",
+  "created_at": "2026-10-26T10:20:54.000Z",
+  "updated_at": "2026-10-26T10:31:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3-vl",
+    "vision-language",
+    "reasoning",
+    "vig",
+    "en",
+    "base_model:chaser2/VIG-Qwen3-VL-Thinking-2B",
+    "base_model:quantized:chaser2/VIG-Qwen3-VL-Thinking-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 441,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 19879057792,
+  "storage_human": "19.9 GB",
+  "base_model": "chaser2/VIG-Qwen3-VL-Thinking-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

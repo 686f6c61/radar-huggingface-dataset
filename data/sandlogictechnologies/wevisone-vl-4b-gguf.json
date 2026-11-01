@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "SandLogicTechnologies/WeVisOne-VL-4B-GGUF",
+  "slug": "sandlogictechnologies-wevisone-vl-4b-gguf",
+  "author": "SandLogicTechnologies",
+  "url": "https://huggingface.co/SandLogicTechnologies/WeVisOne-VL-4B-GGUF",
+  "created_at": "2026-10-30T10:51:36.000Z",
+  "updated_at": "2026-10-30T10:58:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "multimodal",
+    "vision-language-model",
+    "image-text-to-text",
+    "object-detection",
+    "object-counting",
+    "visual-grounding",
+    "ocr",
+    "en",
+    "base_model:tencent/WeVisOne-VL-4B",
+    "base_model:quantized:tencent/WeVisOne-VL-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 4415233536,
+  "parameters_human": "4.42B",
+  "storage_bytes": 11707806080,
+  "storage_human": "11.7 GB",
+  "base_model": "tencent/WeVisOne-VL-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "daintreehq/canopy-reader-17m",
+  "slug": "daintreehq-canopy-reader-17m",
+  "author": "daintreehq",
+  "url": "https://huggingface.co/daintreehq/canopy-reader-17m",
+  "created_at": "2026-10-25T09:33:20.000Z",
+  "updated_at": "2026-10-25T19:08:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "terminal",
+    "coding-agents",
+    "extractive-summarization",
+    "classification",
+    "daintree",
+    "canopy",
+    "text-classification",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-17m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-17m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340209873,
+  "storage_human": "340 MB",
+  "base_model": "jhu-clsp/ettin-encoder-17m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

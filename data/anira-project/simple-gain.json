@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "anira-project/simple-gain",
+  "slug": "anira-project-simple-gain",
+  "author": "anira-project",
+  "url": "https://huggingface.co/anira-project/simple-gain",
+  "created_at": "2026-10-30T12:13:23.000Z",
+  "updated_at": "2026-10-30T15:37:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "anira",
+  "languages": [],
+  "tags": [
+    "anira",
+    "tflite",
+    "coreml",
+    "onnx",
+    "executorch",
+    "test-model",
+    "vulkan",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 190,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33355,
+  "storage_human": "33355 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

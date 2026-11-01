@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "McG-221/G4-LuneLight-31B-mlx-8Bit",
+  "slug": "mcg-221-g4-lunelight-31b-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/G4-LuneLight-31B-mlx-8Bit",
+  "created_at": "2026-10-26T02:34:04.000Z",
+  "updated_at": "2026-10-26T02:34:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "base_model:zerofata/G4-LuneLight-31B",
+    "base_model:quantized:zerofata/G4-LuneLight-31B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 30697345280,
+  "parameters_human": "30.70B",
+  "storage_bytes": 34570724070,
+  "storage_human": "34.6 GB",
+  "base_model": "zerofata/G4-LuneLight-31B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

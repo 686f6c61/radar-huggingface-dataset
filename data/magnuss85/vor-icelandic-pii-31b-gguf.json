@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Magnuss85/Vor-Icelandic-PII-31B-GGUF",
+  "slug": "magnuss85-vor-icelandic-pii-31b-gguf",
+  "author": "Magnuss85",
+  "url": "https://huggingface.co/Magnuss85/Vor-Icelandic-PII-31B-GGUF",
+  "created_at": "2026-10-26T13:00:54.000Z",
+  "updated_at": "2026-10-27T12:00:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "gguf",
+    "icelandic",
+    "pii",
+    "gdpr",
+    "personal-data",
+    "named-entity-recognition",
+    "data-protection",
+    "gemma4",
+    "lora",
+    "text-generation",
+    "is",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:adapter:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 146,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 54481248064,
+  "storage_human": "54.5 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

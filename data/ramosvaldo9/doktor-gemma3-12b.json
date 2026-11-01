@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ramosvaldo9/doktor-gemma3-12b",
+  "slug": "ramosvaldo9-doktor-gemma3-12b",
+  "author": "ramosvaldo9",
+  "url": "https://huggingface.co/ramosvaldo9/doktor-gemma3-12b",
+  "created_at": "2026-10-25T16:15:33.000Z",
+  "updated_at": "2026-10-25T16:55:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-3-12b-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-12b-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": 12187325040,
+  "parameters_human": "12.19B",
+  "storage_bytes": 24412866765,
+  "storage_human": "24.4 GB",
+  "base_model": "unsloth/gemma-3-12b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

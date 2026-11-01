@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "nberkc16/bwa-kommentar-gemma4-e4b-lora",
+  "slug": "nberkc16-bwa-kommentar-gemma4-e4b-lora",
+  "author": "nberkc16",
+  "url": "https://huggingface.co/nberkc16/bwa-kommentar-gemma4-e4b-lora",
+  "created_at": "2026-10-26T14:22:15.000Z",
+  "updated_at": "2026-10-26T16:00:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "llama.cpp",
+    "gemma4",
+    "finance",
+    "accounting",
+    "controlling",
+    "rag",
+    "synthetic-data",
+    "text-generation",
+    "de",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 34881536,
+  "parameters_human": "34.9M",
+  "storage_bytes": 209401816,
+  "storage_human": "209 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

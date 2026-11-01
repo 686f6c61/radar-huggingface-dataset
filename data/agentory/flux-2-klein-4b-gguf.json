@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "agentory/FLUX.2-klein-4B-GGUF",
+  "slug": "agentory-flux-2-klein-4b-gguf",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/FLUX.2-klein-4B-GGUF",
+  "created_at": "2026-10-30T18:58:43.000Z",
+  "updated_at": "2026-10-30T18:58:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-image",
+    "image-generation",
+    "stable-diffusion.cpp",
+    "en",
+    "zh",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 6761008000,
+  "storage_human": "6.8 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

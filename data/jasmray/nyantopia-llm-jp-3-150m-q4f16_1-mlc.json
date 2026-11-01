@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jasmray/nyantopia-llm-jp-3-150m-q4f16_1-MLC",
+  "slug": "jasmray-nyantopia-llm-jp-3-150m-q4f16_1-mlc",
+  "author": "jasmray",
+  "url": "https://huggingface.co/jasmray/nyantopia-llm-jp-3-150m-q4f16_1-MLC",
+  "created_at": "2026-10-28T09:22:48.000Z",
+  "updated_at": "2026-10-28T10:05:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "mlc-llm",
+    "webllm",
+    "nyantopia",
+    "text-generation",
+    "ja",
+    "base_model:llm-jp/llm-jp-3-150m-instruct3",
+    "base_model:finetune:llm-jp/llm-jp-3-150m-instruct3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91554642,
+  "storage_human": "92 MB",
+  "base_model": "llm-jp/llm-jp-3-150m-instruct3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

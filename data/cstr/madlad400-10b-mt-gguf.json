@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "cstr/madlad400-10b-mt-GGUF",
+  "slug": "cstr-madlad400-10b-mt-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/madlad400-10b-mt-GGUF",
+  "created_at": "2026-10-29T18:29:42.000Z",
+  "updated_at": "2026-10-31T05:11:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "ggml",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "translation",
+    "t5",
+    "text2text-generation",
+    "multilingual",
+    "encoder-decoder",
+    "crispasr",
+    "arxiv:2309.04662",
+    "base_model:google/madlad400-10b-mt",
+    "base_model:quantized:google/madlad400-10b-mt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 10712586240,
+  "parameters_human": "10.71B",
+  "storage_bytes": 40098733504,
+  "storage_human": "40.1 GB",
+  "base_model": "google/madlad400-10b-mt",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/whispernow-lfm2.5-2.6b-GGUF",
+  "slug": "mradermacher-whispernow-lfm2-5-2-6b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/whispernow-lfm2.5-2.6b-GGUF",
+  "created_at": "2026-10-27T10:18:49.000Z",
+  "updated_at": "2026-10-27T11:09:22.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "dictation",
+    "transcript-cleanup",
+    "speech-to-text",
+    "lfm2.5",
+    "en",
+    "dataset:category271/whispernow-cleanup",
+    "base_model:category271/whispernow-lfm2.5-2.6b",
+    "base_model:quantized:category271/whispernow-lfm2.5-2.6b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 555,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 24326364800,
+  "storage_human": "24.3 GB",
+  "base_model": "category271/whispernow-lfm2.5-2.6b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

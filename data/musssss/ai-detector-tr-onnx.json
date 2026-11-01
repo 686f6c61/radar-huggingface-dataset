@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "musssss/ai-detector-tr-onnx",
+  "slug": "musssss-ai-detector-tr-onnx",
+  "author": "musssss",
+  "url": "https://huggingface.co/musssss/ai-detector-tr-onnx",
+  "created_at": "2026-10-31T23:17:21.000Z",
+  "updated_at": "2026-10-31T23:19:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "modernbert",
+    "text-classification",
+    "ai-text-detection",
+    "tr",
+    "base_model:tabularisai/ai-text-detection",
+    "base_model:quantized:tabularisai/ai-text-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150591876,
+  "storage_human": "151 MB",
+  "base_model": "tabularisai/ai-text-detection",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

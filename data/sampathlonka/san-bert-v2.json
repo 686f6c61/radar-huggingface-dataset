@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sampathlonka/San-BERT-v2",
+  "slug": "sampathlonka-san-bert-v2",
+  "author": "sampathlonka",
+  "url": "https://huggingface.co/sampathlonka/San-BERT-v2",
+  "created_at": "2026-10-30T21:08:23.000Z",
+  "updated_at": "2026-10-30T21:13:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sanskrit",
+    "masked-lm",
+    "devanagari",
+    "vedic",
+    "nlp",
+    "indian-languages",
+    "text-classification",
+    "fill-mask",
+    "sa",
+    "arxiv:2304.01894",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 109514298,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438080896,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ahdrage/norsk-parakeet",
+  "slug": "ahdrage-norsk-parakeet",
+  "author": "ahdrage",
+  "url": "https://huggingface.co/ahdrage/norsk-parakeet",
+  "created_at": "2026-10-29T19:20:57.000Z",
+  "updated_at": "2026-10-31T17:45:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "no",
+    "nb"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "parakeet",
+    "tdt",
+    "norwegian",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "no",
+    "nb",
+    "base_model:moondream/parakeet-ultra",
+    "base_model:finetune:moondream/parakeet-ultra",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 7524933360,
+  "storage_human": "7.5 GB",
+  "base_model": "moondream/parakeet-ultra",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

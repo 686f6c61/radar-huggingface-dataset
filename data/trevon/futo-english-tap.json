@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "trevon/futo-english-tap",
+  "slug": "trevon-futo-english-tap",
+  "author": "trevon",
+  "url": "https://huggingface.co/trevon/futo-english-tap",
+  "created_at": "2026-10-26T00:52:38.000Z",
+  "updated_at": "2026-10-26T00:52:55.000Z",
+  "license": "futo-source-first-1.1-kb",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "keyboard",
+    "autocorrect",
+    "futo-keyboard",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 36348416,
+  "parameters_human": "36.3M",
+  "storage_bytes": 39464064,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

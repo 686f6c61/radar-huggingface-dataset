@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "PanZern/FLUX.2-small-decoder",
+  "slug": "panzern-flux-2-small-decoder",
+  "author": "PanZern",
+  "url": "https://huggingface.co/PanZern/FLUX.2-small-decoder",
+  "created_at": "2026-10-29T10:57:27.000Z",
+  "updated_at": "2026-10-29T10:57:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "flux",
+    "diffusion-single-file",
+    "image-to-image",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 62373347,
+  "parameters_human": "62.4M",
+  "storage_bytes": 619391983,
+  "storage_human": "619 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

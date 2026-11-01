@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Alejandro-Lopez-Fructuoso/Qwen3-1.7B-Q4_K_M-GGUF",
+  "slug": "alejandro-lopez-fructuoso-qwen3-1-7b-q4_k_m-gguf",
+  "author": "Alejandro-Lopez-Fructuoso",
+  "url": "https://huggingface.co/Alejandro-Lopez-Fructuoso/Qwen3-1.7B-Q4_K_M-GGUF",
+  "created_at": "2026-10-29T15:54:59.000Z",
+  "updated_at": "2026-10-29T17:28:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "quantized",
+    "text-generation",
+    "es",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 1282439424,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

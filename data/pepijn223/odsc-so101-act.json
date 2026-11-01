@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "pepijn223/odsc-so101-act",
+  "slug": "pepijn223-odsc-so101-act",
+  "author": "pepijn223",
+  "url": "https://huggingface.co/pepijn223/odsc-so101-act",
+  "created_at": "2026-10-26T10:26:23.000Z",
+  "updated_at": "2026-10-27T11:20:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "mujoco",
+    "so101",
+    "robotics",
+    "dataset:pepijn223/odsc-so101-pick-place",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 51596934,
+  "parameters_human": "51.6M",
+  "storage_bytes": 3225195603,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

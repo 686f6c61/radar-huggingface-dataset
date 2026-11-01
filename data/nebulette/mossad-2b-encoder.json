@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nebulette/mossad-2b-encoder",
+  "slug": "nebulette-mossad-2b-encoder",
+  "author": "nebulette",
+  "url": "https://huggingface.co/nebulette/mossad-2b-encoder",
+  "created_at": "2026-10-27T03:02:43.000Z",
+  "updated_at": "2026-10-29T04:33:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen3_5",
+    "artist-style",
+    "moss-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 1907009344,
+  "parameters_human": "1.91B",
+  "storage_bytes": 3827735217,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

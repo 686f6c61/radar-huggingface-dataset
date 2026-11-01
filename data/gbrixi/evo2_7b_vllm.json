@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "gbrixi/evo2_7b_vllm",
+  "slug": "gbrixi-evo2_7b_vllm",
+  "author": "gbrixi",
+  "url": "https://huggingface.co/gbrixi/evo2_7b_vllm",
+  "created_at": "2026-10-29T08:53:04.000Z",
+  "updated_at": "2026-10-29T08:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "striped_hyena2",
+    "vllm",
+    "dataset:arcinstitute/opengenome2",
+    "base_model:arcinstitute/evo2_7b",
+    "base_model:quantized:arcinstitute/evo2_7b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 6586388534,
+  "parameters_human": "6.59B",
+  "storage_bytes": 11816237176,
+  "storage_human": "11.8 GB",
+  "base_model": "arcinstitute/evo2_7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yonicc/lhg-extractor-qwen7b-gguf",
+  "slug": "yonicc-lhg-extractor-qwen7b-gguf",
+  "author": "yonicc",
+  "url": "https://huggingface.co/yonicc/lhg-extractor-qwen7b-gguf",
+  "created_at": "2026-10-28T18:50:36.000Z",
+  "updated_at": "2026-10-28T18:51:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "lashon-hara-guard",
+    "research",
+    "he",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 12781593216,
+  "storage_human": "12.8 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

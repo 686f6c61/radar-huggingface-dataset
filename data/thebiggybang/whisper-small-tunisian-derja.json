@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "TheBiggyBang/whisper-small-tunisian-derja",
+  "slug": "thebiggybang-whisper-small-tunisian-derja",
+  "author": "TheBiggyBang",
+  "url": "https://huggingface.co/TheBiggyBang/whisper-small-tunisian-derja",
+  "created_at": "2026-10-26T19:53:14.000Z",
+  "updated_at": "2026-10-26T19:55:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "aeb",
+    "ar",
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "tunisian-arabic",
+    "derja",
+    "code-switching",
+    "speech-recognition",
+    "aeb",
+    "ar",
+    "fr",
+    "en",
+    "dataset:linagora/linto-dataset-audio-ar-tn",
+    "dataset:linagora/linto-dataset-audio-ar-tn-augmented",
+    "arxiv:2504.02604",
+    "arxiv:2309.11327",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LinTO Tunisian Arabic, recording-disjoint held-out test (482 clips)",
+      "metric": "Test WER (fp16, greedy)",
+      "value": 32.8
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LinTO Tunisian Arabic, recording-disjoint held-out test (482 clips)",
+      "metric": "Test normalized WER (fp16, greedy)",
+      "value": 31.9
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LinTO Tunisian Arabic, recording-disjoint held-out test (482 clips)",
+      "metric": "Test CER (fp16, greedy)",
+      "value": 13.4
+    }
+  ],
+  "sources": []
+}

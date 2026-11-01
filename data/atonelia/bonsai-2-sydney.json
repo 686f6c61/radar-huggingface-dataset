@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Atonelia/bonsai-2-Sydney",
+  "slug": "atonelia-bonsai-2-sydney",
+  "author": "Atonelia",
+  "url": "https://huggingface.co/Atonelia/bonsai-2-Sydney",
+  "created_at": "2026-10-27T05:32:06.000Z",
+  "updated_at": "2026-10-30T05:06:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "lora",
+    "ternary",
+    "bonsai",
+    "qwen3.8",
+    "sydney",
+    "bing",
+    "roleplay",
+    "live2d",
+    "zh",
+    "base_model:OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-GGUF",
+    "base_model:adapter:OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 116727808,
+  "parameters_human": "116.7M",
+  "storage_bytes": 700571520,
+  "storage_human": "701 MB",
+  "base_model": "OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

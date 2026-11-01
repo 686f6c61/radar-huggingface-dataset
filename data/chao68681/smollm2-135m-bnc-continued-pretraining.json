@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "chao68681/smollm2-135m-bnc-continued-pretraining",
+  "slug": "chao68681-smollm2-135m-bnc-continued-pretraining",
+  "author": "chao68681",
+  "url": "https://huggingface.co/chao68681/smollm2-135m-bnc-continued-pretraining",
+  "created_at": "2026-10-26T07:14:01.000Z",
+  "updated_at": "2026-10-28T11:01:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "continued-pretraining",
+    "bnc1994",
+    "british-english",
+    "causal-lm",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 432,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

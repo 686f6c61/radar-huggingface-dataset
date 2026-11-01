@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "FlameF0X/Nano-RestoreNet",
+  "slug": "flamef0x-nano-restorenet",
+  "author": "FlameF0X",
+  "url": "https://huggingface.co/FlameF0X/Nano-RestoreNet",
+  "created_at": "2026-10-28T14:52:50.000Z",
+  "updated_at": "2026-10-28T18:16:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "restore_net",
+    "image-restoration",
+    "denoising",
+    "super-resolution",
+    "image-enhancement",
+    "dataset:FlameF0X/nano-banana-pro-gen-zh-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 161,
+  "trending_score": 0,
+  "parameters": 10858435,
+  "parameters_human": "10.9M",
+  "storage_bytes": 43488756,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

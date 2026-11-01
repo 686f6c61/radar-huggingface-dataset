@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "yechan013/gemma-4-e4b-it-qat-mlx-4bit-g32",
+  "slug": "yechan013-gemma-4-e4b-it-qat-mlx-4bit-g32",
+  "author": "yechan013",
+  "url": "https://huggingface.co/yechan013/gemma-4-e4b-it-qat-mlx-4bit-g32",
+  "created_at": "2026-10-26T17:43:47.000Z",
+  "updated_at": "2026-10-26T17:46:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "4-bit",
+    "quantized",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 5645741599,
+  "storage_human": "5.6 GB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

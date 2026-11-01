@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "generic-bot/generic_nano616",
+  "slug": "generic-bot-generic_nano616",
+  "author": "generic-bot",
+  "url": "https://huggingface.co/generic-bot/generic_nano616",
+  "created_at": "2026-10-28T03:21:54.000Z",
+  "updated_at": "2026-10-28T03:42:29.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:cc",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 506925056,
+  "parameters_human": "506.9M",
+  "storage_bytes": 320061184,
+  "storage_human": "320 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generic en ligne – boutique en ligne, magasins, outlet - Marques",
+      "url": "https://www.fashionmarques.fr/marque/generic/",
+      "snippet": "En bas de notre site, vous trouverez une liste complète de magasins Generic, leurs horaires d’ouverture et les plans."
+    },
+    {
+      "title": "GENERIC | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/generic",
+      "snippet": "GENERIC definition: 1. shared by, typical of, or relating to a whole group of similar things, rather than to any…. Learn more."
+    },
+    {
+      "title": "Generic drug - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generic_drug",
+      "snippet": "Generic drugs are allowed for sale after the patents on the original drugs expire."
+    },
+    {
+      "title": "generic - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/generic",
+      "snippet": "generic - traduction anglais-français. Forums pour discuter de generic, voir ses formes composées, des exemples et poser vos …"
+    }
+  ]
+}

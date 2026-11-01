@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "a-gordo/Nanbeige4.3-33B-oQ8e",
+  "slug": "a-gordo-nanbeige4-3-33b-oq8e",
+  "author": "a-gordo",
+  "url": "https://huggingface.co/a-gordo/Nanbeige4.3-33B-oQ8e",
+  "created_at": "2026-10-25T18:22:23.000Z",
+  "updated_at": "2026-10-26T04:40:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "omlx",
+    "oqe",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 405,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 35210990547,
+  "storage_human": "35.2 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

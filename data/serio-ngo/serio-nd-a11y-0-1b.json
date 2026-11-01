@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "serio-ngo/serio-nd-a11y-0.1b",
+  "slug": "serio-ngo-serio-nd-a11y-0-1b",
+  "author": "serio-ngo",
+  "url": "https://huggingface.co/serio-ngo/serio-nd-a11y-0.1b",
+  "created_at": "2026-10-28T18:56:22.000Z",
+  "updated_at": "2026-10-28T20:53:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "pl",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 124448263,
+  "parameters_human": "124.4M",
+  "storage_bytes": 1123507150,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ClauseLM-Qwen2.5-1.5B-GGUF",
+  "slug": "mradermacher-clauselm-qwen2-5-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ClauseLM-Qwen2.5-1.5B-GGUF",
+  "created_at": "2026-10-28T09:34:11.000Z",
+  "updated_at": "2026-10-28T09:47:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "legal",
+    "contracts",
+    "information-extraction",
+    "structured-output",
+    "json",
+    "qlora",
+    "unsloth",
+    "en",
+    "dataset:theatticusproject/cuad",
+    "base_model:Z-Nadjib/ClauseLM-Qwen2.5-1.5B",
+    "base_model:quantized:Z-Nadjib/ClauseLM-Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 494,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206905600,
+  "storage_human": "14.2 GB",
+  "base_model": "Z-Nadjib/ClauseLM-Qwen2.5-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

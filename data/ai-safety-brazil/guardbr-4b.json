@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ai-safety-brazil/guardbr-4b",
+  "slug": "ai-safety-brazil-guardbr-4b",
+  "author": "ai-safety-brazil",
+  "url": "https://huggingface.co/ai-safety-brazil/guardbr-4b",
+  "created_at": "2026-10-29T17:31:12.000Z",
+  "updated_at": "2026-10-30T02:08:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "safety",
+    "portuguese",
+    "prompt-injection",
+    "jailbreak",
+    "experimental",
+    "text-generation",
+    "pt",
+    "dataset:ai-safety-brazil/prompt-injection-br-synthetic",
+    "dataset:ai-safety-brazil/jailbreak-br-synthetic",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171043960,
+  "storage_human": "171 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

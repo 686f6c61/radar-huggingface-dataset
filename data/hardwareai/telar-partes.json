@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "hardwareai/telar-partes",
+  "slug": "hardwareai-telar-partes",
+  "author": "hardwareai",
+  "url": "https://huggingface.co/hardwareai/telar-partes",
+  "created_at": "2026-10-27T20:35:47.000Z",
+  "updated_at": "2026-10-30T21:46:40.000Z",
+  "license": "varias",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 12541616168,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

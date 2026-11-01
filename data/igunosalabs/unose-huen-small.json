@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "igunosalabs/Unose-Huen-Small",
+  "slug": "igunosalabs-unose-huen-small",
+  "author": "igunosalabs",
+  "url": "https://huggingface.co/igunosalabs/Unose-Huen-Small",
+  "created_at": "2026-10-27T00:57:06.000Z",
+  "updated_at": "2026-10-30T09:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "nigerian-accent",
+    "igunosa-labs",
+    "unose",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 127,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 30956580283,
+  "storage_human": "31.0 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test Clean WER",
+      "value": 3.76
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "LibriSpeech (other)",
+      "metric": "Test Other WER",
+      "value": 8.64
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "VoxPopuli (en)",
+      "metric": "Test WER",
+      "value": 4.01
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "AMI (cleaned)",
+      "metric": "Test WER",
+      "value": 14.44
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "lijie1228/liemo-0.1b-gguf",
+  "slug": "lijie1228-liemo-0-1b-gguf",
+  "author": "lijie1228",
+  "url": "https://huggingface.co/lijie1228/liemo-0.1b-gguf",
+  "created_at": "2026-10-30T16:10:09.000Z",
+  "updated_at": "2026-10-31T02:30:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "chinese",
+    "llama.cpp",
+    "quantized",
+    "tiny-model",
+    "zh",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 106897600,
+  "parameters_human": "106.9M",
+  "storage_bytes": 1486004800,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

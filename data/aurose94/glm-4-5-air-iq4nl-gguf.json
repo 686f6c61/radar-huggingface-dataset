@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "auRose94/GLM-4.5-Air-iq4nl-GGUF",
+  "slug": "aurose94-glm-4-5-air-iq4nl-gguf",
+  "author": "auRose94",
+  "url": "https://huggingface.co/auRose94/GLM-4.5-Air-iq4nl-GGUF",
+  "created_at": "2026-10-26T09:28:04.000Z",
+  "updated_at": "2026-10-26T22:53:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "iq4_nl",
+    "base_model:zai-org/GLM-4.5-Air",
+    "base_model:quantized:zai-org/GLM-4.5-Air",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 532,
+  "trending_score": 0,
+  "parameters": 110468824832,
+  "parameters_human": "110.47B",
+  "storage_bytes": 63476202496,
+  "storage_human": "63.5 GB",
+  "base_model": "zai-org/GLM-4.5-Air",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

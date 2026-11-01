@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Tanuj124/image-super-resolution-edsr-x2",
+  "slug": "tanuj124-image-super-resolution-edsr-x2",
+  "author": "Tanuj124",
+  "url": "https://huggingface.co/Tanuj124/image-super-resolution-edsr-x2",
+  "created_at": "2026-10-28T21:15:31.000Z",
+  "updated_at": "2026-10-28T21:18:23.000Z",
+  "license": "academic-research-use-notice",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "super-resolution",
+    "image-restoration",
+    "edsr",
+    "research",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 439110,
+  "parameters_human": "439110",
+  "storage_bytes": 1796784,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "haiping/Qwen3.8-27B-nvfp4-dflash2-NInfer",
+  "slug": "haiping-qwen3-8-27b-nvfp4-dflash2-ninfer",
+  "author": "haiping",
+  "url": "https://huggingface.co/haiping/Qwen3.8-27B-nvfp4-dflash2-NInfer",
+  "created_at": "2026-11-01T03:47:16.000Z",
+  "updated_at": "2026-11-01T03:54:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "nvfp4",
+    "dflash2",
+    "speculative-decoding",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23274072324,
+  "storage_human": "23.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B, neroued/Qwen3.8-27B-nvfp4-NInfer",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/LocalLLM on Reddit: NInfer Qwen 3.8-27B uncensored on RTX 5090 ...",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1woxb4n/ninfer_qwen_3827b_uncensored_on_rtx_5090_175_toks/",
+      "snippet": "The one I'm using has DFlash2 baked in along with a 55/45 fp4/fp8 split. It's a larger model but performs well. The tradeoff I would take would be to have an uncensored model with full context. ... Ninfer is actually extremely impressive. I'm lucky enough to also have a 5090 and I was not really expecting much, being skeptical about the hype, but holy moly is it a quick little engine. ... I mean, he pretty much told you. \"NInfer NVFP4 / groupwise-int with MTP on made the speed blazing fast - 175 tok/s is significantly faster than frontier cloud models\""
+    },
+    {
+      "title": "neroued/Qwen3.8-27B-nvfp4-NInfer · Hugging Face",
+      "url": "https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer",
+      "snippet": "The artifact is intended only for NInfer; it is not a Transformers checkpoint, Safetensors distribution, or GGUF file. The artifact uses the Qwen3.5 Dense architecture. Text layers 0–55 use NVFP4 MLP weights, while the token embedding, attention input/output projections, GDN Q/K/V/Z and output projections, full output head, and Text layers 56–63 MLP weights use row-scaled FP8. Control weights use BF16, with separate MTP, Vision and DFlash2 weights."
+    },
+    {
+      "title": "ninfer/model-cards/Qwen3.8-27B-nvfp4-NInfer/README.md at master ...",
+      "url": "https://github.com/Neroued/ninfer/blob/master/model-cards/Qwen3.8-27B-nvfp4-NInfer/README.md",
+      "snippet": "The artifact is intended only for NInfer; it is not a Transformers checkpoint, Safetensors distribution, or GGUF file. The artifact uses the Qwen3.5 Dense architecture. Text layers 0–55 use NVFP4 MLP weights, while the token embedding, attention input/output projections, GDN Q/K/V/Z and output projections, full output head, and Text layers 56–63 MLP weights use row-scaled FP8. Control weights use BF16, with separate MTP, Vision and DFlash2 weights."
+    },
+    {
+      "title": "neroued/Qwen3.8-27B-NInfer · Hugging Face",
+      "url": "https://huggingface.co/neroued/Qwen3.8-27B-NInfer",
+      "snippet": "The repository contains Qwen3.8-27B converted to the native NInfer .ninfer artifact format. The artifact is intended only for NInfer; it is not a Transformers checkpoint, Safetensors distribution, or GGUF file. The Text body uses Q4/Q5 projections, while the token embedding and full output head use q8_g32_fp16. The file also contains Vision, MTP, DFlash2, the optimized proposal head and frontend resources."
+    }
+  ]
+}

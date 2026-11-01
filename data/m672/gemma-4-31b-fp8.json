@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "m672/gemma-4-31b-fp8",
+  "slug": "m672-gemma-4-31b-fp8",
+  "author": "m672",
+  "url": "https://huggingface.co/m672/gemma-4-31b-fp8",
+  "created_at": "2026-10-26T07:57:04.000Z",
+  "updated_at": "2026-10-26T07:57:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "fp8",
+    "quantized",
+    "compressed-tensors",
+    "llmcompressor",
+    "base_model:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33295408020,
+  "storage_human": "33.3 GB",
+  "base_model": "llmfan46/gemma-4-31B-it-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

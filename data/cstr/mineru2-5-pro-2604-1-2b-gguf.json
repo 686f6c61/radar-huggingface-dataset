@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 1156026624,
   "parameters_human": "1.16B",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 4512279520,
+  "storage_human": "4.5 GB",
   "base_model": "opendatalab/MinerU2.5-Pro-2604-1.2B",
   "formats": [
     "gguf"

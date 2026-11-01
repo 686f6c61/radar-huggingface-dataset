@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "X-LawJapan/xlaw-jp-27b",
+  "slug": "x-lawjapan-xlaw-jp-27b",
+  "author": "X-LawJapan",
+  "url": "https://huggingface.co/X-LawJapan/xlaw-jp-27b",
+  "created_at": "2026-10-28T15:03:00.000Z",
+  "updated_at": "2026-10-31T16:05:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "legal",
+    "japanese",
+    "japanese-law",
+    "bar-exam",
+    "text-generation",
+    "conversational",
+    "ja",
+    "arxiv:2610.39227",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 355,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 56509775472,
+  "storage_human": "56.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

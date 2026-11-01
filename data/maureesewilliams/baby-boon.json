@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "maureesewilliams/baby-boon",
+  "slug": "maureesewilliams-baby-boon",
+  "author": "maureesewilliams",
+  "url": "https://huggingface.co/maureesewilliams/baby-boon",
+  "created_at": "2026-10-27T13:12:18.000Z",
+  "updated_at": "2026-10-27T13:12:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama.cpp",
+    "lora",
+    "qwen3",
+    "conversational",
+    "cpu",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1153748110,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

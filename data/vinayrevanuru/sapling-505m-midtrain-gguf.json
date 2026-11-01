@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "VinayRevanuru/Sapling-505M-Midtrain-GGUF",
+  "slug": "vinayrevanuru-sapling-505m-midtrain-gguf",
+  "author": "VinayRevanuru",
+  "url": "https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-GGUF",
+  "created_at": "2026-10-26T01:34:06.000Z",
+  "updated_at": "2026-10-26T01:35:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3",
+    "quantized",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "base_model:VinayRevanuru/Sapling-505M-Midtrain",
+    "base_model:quantized:VinayRevanuru/Sapling-505M-Midtrain",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 505483776,
+  "parameters_human": "505.5M",
+  "storage_bytes": 538472256,
+  "storage_human": "538 MB",
+  "base_model": "VinayRevanuru/Sapling-505M-Midtrain",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

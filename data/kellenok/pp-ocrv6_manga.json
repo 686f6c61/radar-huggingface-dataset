@@ -29,7 +29,6 @@
     "ja",
     "zh",
     "dataset:hal-utokyo/Manga109-s",
-    "dataset:deepghs/AnimeText",
     "base_model:PaddlePaddle/PP-OCRv6_small_rec",
     "base_model:finetune:PaddlePaddle/PP-OCRv6_small_rec",
     "license:apache-2.0",

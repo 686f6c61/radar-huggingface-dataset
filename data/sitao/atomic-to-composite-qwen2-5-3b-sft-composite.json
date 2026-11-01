@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "sitao/atomic-to-composite-qwen2.5-3b-sft-composite",
+  "slug": "sitao-atomic-to-composite-qwen2-5-3b-sft-composite",
+  "author": "sitao",
+  "url": "https://huggingface.co/sitao/atomic-to-composite-qwen2.5-3b-sft-composite",
+  "created_at": "2026-10-26T23:17:51.000Z",
+  "updated_at": "2026-10-26T23:19:02.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "complementary-reasoning",
+    "multi-hop-qa",
+    "grpo",
+    "compositional-generalization",
+    "conversational",
+    "en",
+    "dataset:sitao/From_atomic_to_composite",
+    "arxiv:2512.01970",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 275,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

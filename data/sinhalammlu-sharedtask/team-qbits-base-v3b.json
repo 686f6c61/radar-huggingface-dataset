@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "SinhalaMMLU-SharedTask/team-qbits-base-v3b",
+  "slug": "sinhalammlu-sharedtask-team-qbits-base-v3b",
+  "author": "SinhalaMMLU-SharedTask",
+  "url": "https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits-base-v3b",
+  "created_at": "2026-10-28T11:47:22.000Z",
+  "updated_at": "2026-10-28T13:42:15.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": null,
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "sinhala",
+    "multiple-choice",
+    "sinhalammlu",
+    "si",
+    "base_model:unsloth/gemma-4-E4B",
+    "base_model:finetune:unsloth/gemma-4-E4B",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765954,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

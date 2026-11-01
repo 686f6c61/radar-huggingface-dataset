@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "rao0/SignRAG-Qwen3-8B-CSL-Daily-PreinNews",
+  "slug": "rao0-signrag-qwen3-8b-csl-daily-preinnews",
+  "author": "rao0",
+  "url": "https://huggingface.co/rao0/SignRAG-Qwen3-8B-CSL-Daily-PreinNews",
+  "created_at": "2026-10-26T12:14:43.000Z",
+  "updated_at": "2026-10-27T02:08:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16635866860,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

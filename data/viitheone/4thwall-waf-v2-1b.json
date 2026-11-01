@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "viitheone/4thwall-waf-v2.1b",
+  "slug": "viitheone-4thwall-waf-v2-1b",
+  "author": "viitheone",
+  "url": "https://huggingface.co/viitheone/4thwall-waf-v2.1b",
+  "created_at": "2026-10-26T18:52:48.000Z",
+  "updated_at": "2026-10-26T18:55:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "fourthwall_waf",
+    "security",
+    "cybersecurity",
+    "waf",
+    "web-application-firewall",
+    "multi-label-classification",
+    "injection-detection",
+    "capec",
+    "owasp",
+    "distilbert",
+    "text-classification",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 66372877,
+  "parameters_human": "66.4M",
+  "storage_bytes": 531034055,
+  "storage_human": "531 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

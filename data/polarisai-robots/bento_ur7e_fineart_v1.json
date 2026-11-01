@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "polarisai-robots/bento_ur7e_fineart_v1",
+  "slug": "polarisai-robots-bento_ur7e_fineart_v1",
+  "author": "polarisai-robots",
+  "url": "https://huggingface.co/polarisai-robots/bento_ur7e_fineart_v1",
+  "created_at": "2026-10-28T08:48:25.000Z",
+  "updated_at": "2026-10-28T09:01:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "fineart_vla",
+    "robotics",
+    "dataset:polarisai-robots/bento_ur7e_v5",
+    "base_model:lerobot/FineART-VLA-subtask-midtrained",
+    "base_model:finetune:lerobot/FineART-VLA-subtask-midtrained",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354066280,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/FineART-VLA-subtask-midtrained",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

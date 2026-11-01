@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "verycoololiver/Tot-360M-Family",
+  "slug": "verycoololiver-tot-360m-family",
+  "author": "verycoololiver",
+  "url": "https://huggingface.co/verycoololiver/Tot-360M-Family",
+  "created_at": "2026-10-29T12:42:31.000Z",
+  "updated_at": "2026-11-01T03:52:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lmstudio",
+    "pocketpal",
+    "raspberry-pi",
+    "mobile",
+    "offline-ai",
+    "small-language-model",
+    "pretrained-from-scratch",
+    "tot-360m",
+    "obstudio",
+    "text-generation",
+    "en",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 336,
+  "trending_score": 0,
+  "parameters": 345359296,
+  "parameters_human": "345.4M",
+  "storage_bytes": 3247991168,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

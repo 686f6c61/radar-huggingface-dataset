@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "meettttttttttt/edgecar-1.5b-GGUF",
+  "slug": "meettttttttttt-edgecar-1-5b-gguf",
+  "author": "meettttttttttt",
+  "url": "https://huggingface.co/meettttttttttt/edgecar-1.5b-GGUF",
+  "created_at": "2026-10-29T09:30:23.000Z",
+  "updated_at": "2026-10-29T10:41:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "automotive",
+    "vehicle-data",
+    "on-device",
+    "edge-ai",
+    "semantic-parsing",
+    "text-to-command",
+    "qwen2",
+    "text-generation",
+    "en",
+    "base_model:meettttttttttt/edgecar-1.5b",
+    "base_model:quantized:meettttttttttt/edgecar-1.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2632620672,
+  "storage_human": "2.6 GB",
+  "base_model": "meettttttttttt/edgecar-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

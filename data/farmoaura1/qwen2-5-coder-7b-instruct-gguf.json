@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Farmoaura1/Qwen2.5-Coder-7B-Instruct-GGUF",
+  "slug": "farmoaura1-qwen2-5-coder-7b-instruct-gguf",
+  "author": "Farmoaura1",
+  "url": "https://huggingface.co/Farmoaura1/Qwen2.5-Coder-7B-Instruct-GGUF",
+  "created_at": "2026-10-29T20:27:50.000Z",
+  "updated_at": "2026-10-29T20:27:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "text-generation",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 244,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 100439254112,
+  "storage_human": "100.4 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

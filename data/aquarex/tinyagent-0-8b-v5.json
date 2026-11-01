@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AquaRex/tinyagent-0.8b-v5",
+  "slug": "aquarex-tinyagent-0-8b-v5",
+  "author": "AquaRex",
+  "url": "https://huggingface.co/AquaRex/tinyagent-0.8b-v5",
+  "created_at": "2026-10-25T09:11:01.000Z",
+  "updated_at": "2026-10-25T09:11:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "webgpu",
+    "game",
+    "npc",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436745646,
+  "storage_human": "437 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

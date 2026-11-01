@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/MiniCPM5-2B-NVFP4",
   "created_at": "2026-10-27T23:07:07.000Z",
-  "updated_at": "2026-10-31T15:25:47.000Z",
+  "updated_at": "2026-11-01T02:46:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

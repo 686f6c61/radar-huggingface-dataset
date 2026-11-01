@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mup99ma/Chatterbox-TTS-Persian-gguf",
+  "slug": "mup99ma-chatterbox-tts-persian-gguf",
+  "author": "mup99ma",
+  "url": "https://huggingface.co/mup99ma/Chatterbox-TTS-Persian-gguf",
+  "created_at": "2026-10-28T15:51:11.000Z",
+  "updated_at": "2026-10-28T15:51:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "Farsi",
+    "Persian",
+    "fa",
+    "dataset:Thomcles/Persian-Farsi-Speech",
+    "dataset:Thomcles/YodaLingua-Farsi",
+    "dataset:Thomcles/YodaLingua-preview",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:quantized:ResembleAI/chatterbox",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 264001205,
+  "parameters_human": "264.0M",
+  "storage_bytes": 1531714546,
+  "storage_human": "1.5 GB",
+  "base_model": "Thomcles/Chatterbox-TTS-Persian-Farsi, ResembleAI/chatterbox",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

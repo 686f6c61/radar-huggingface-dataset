@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated",
+  "slug": "ttennant-mellum2-1-12b-a2-5b-thinking-abliterated",
+  "author": "ttennant",
+  "url": "https://huggingface.co/ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated",
+  "created_at": "2026-10-27T23:04:33.000Z",
+  "updated_at": "2026-10-27T23:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mellum",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "conversational",
+    "en",
+    "base_model:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "base_model:finetune:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 137,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 24300538968,
+  "storage_human": "24.3 GB",
+  "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

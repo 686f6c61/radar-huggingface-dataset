@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "schneewolflabs/B4-9B-Nachrechnen",
+  "slug": "schneewolflabs-b4-9b-nachrechnen",
+  "author": "schneewolflabs",
+  "url": "https://huggingface.co/schneewolflabs/B4-9B-Nachrechnen",
+  "created_at": "2026-10-27T05:13:26.000Z",
+  "updated_at": "2026-10-27T05:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "orpo",
+    "agents",
+    "tool-use",
+    "math",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "base_model:schneewolflabs/B4-9B",
+    "base_model:adapter:schneewolflabs/B4-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 29097984,
+  "parameters_human": "29.1M",
+  "storage_bytes": 174643864,
+  "storage_human": "175 MB",
+  "base_model": "schneewolflabs/B4-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

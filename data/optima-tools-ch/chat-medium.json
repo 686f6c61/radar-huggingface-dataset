@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "optima-tools-ch/chat-medium",
+  "slug": "optima-tools-ch-chat-medium",
+  "author": "optima-tools-ch",
+  "url": "https://huggingface.co/optima-tools-ch/chat-medium",
+  "created_at": "2026-10-26T21:07:03.000Z",
+  "updated_at": "2026-10-27T20:45:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma",
+    "vision",
+    "optima-tools",
+    "image-text-to-text",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39833223936,
+  "storage_human": "39.8 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

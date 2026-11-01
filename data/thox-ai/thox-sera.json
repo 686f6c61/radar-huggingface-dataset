@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/Thox-Sera",
+  "slug": "thox-ai-thox-sera",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/Thox-Sera",
+  "created_at": "2026-11-01T04:34:47.000Z",
+  "updated_at": "2026-11-01T04:34:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "thox",
+    "digitalhumans",
+    "personas",
+    "thoxchat",
+    "meshstack",
+    "qwen3",
+    "ollama",
+    "local-first",
+    "configuration-derived",
+    "knowledge-pack",
+    "compliance",
+    "privacy",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Mobile App Development Courses & Certificates [2026] | Coursera",
+      "url": "https://www.coursera.org/courses?query=mobile+app+development&msockid=0a5af08e64a567521b26e88a65106656",
+      "snippet": "Mobile app development courses can help you learn programming languages like Java and Swift, user interface design principles, …"
+    }
+  ]
+}

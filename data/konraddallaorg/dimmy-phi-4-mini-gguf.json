@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "KonradDallaOrg/dimmy-phi-4-mini-gguf",
+  "slug": "konraddallaorg-dimmy-phi-4-mini-gguf",
+  "author": "KonradDallaOrg",
+  "url": "https://huggingface.co/KonradDallaOrg/dimmy-phi-4-mini-gguf",
+  "created_at": "2026-10-30T11:55:14.000Z",
+  "updated_at": "2026-10-30T12:24:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dimmy",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 2491874624,
+  "storage_human": "2.5 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

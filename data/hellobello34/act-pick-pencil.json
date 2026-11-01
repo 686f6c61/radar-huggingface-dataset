@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hellobello34/act-pick-pencil",
+  "slug": "hellobello34-act-pick-pencil",
+  "author": "hellobello34",
+  "url": "https://huggingface.co/hellobello34/act-pick-pencil",
+  "created_at": "2026-10-30T05:36:36.000Z",
+  "updated_at": "2026-10-30T05:36:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hellobello34/xlerobot-pick-pencil",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206798488,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

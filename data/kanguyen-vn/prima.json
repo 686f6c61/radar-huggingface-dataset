@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "kanguyen-vn/PRIMA",
+  "slug": "kanguyen-vn-prima",
+  "author": "kanguyen-vn",
+  "url": "https://huggingface.co/kanguyen-vn/PRIMA",
+  "created_at": "2026-10-29T21:35:22.000Z",
+  "updated_at": "2026-10-30T05:29:41.000Z",
+  "license": "mit-with-upstream-component-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "prima",
+    "text-generation",
+    "computer-vision",
+    "image-segmentation",
+    "multi-image-reasoning",
+    "pixel-grounding",
+    "vision-language",
+    "custom-code",
+    "custom_code",
+    "en",
+    "dataset:kanguyen-vn/M4Seg",
+    "arxiv:2412.15209",
+    "base_model:MBZUAI/GLaMM-FullScope",
+    "base_model:finetune:MBZUAI/GLaMM-FullScope",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 8576086960,
+  "parameters_human": "8.58B",
+  "storage_bytes": 17154937733,
+  "storage_human": "17.2 GB",
+  "base_model": "MBZUAI/GLaMM-FullScope",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

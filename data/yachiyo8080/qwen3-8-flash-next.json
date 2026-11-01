@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "yachiyo8080/Qwen3.8-Flash-Next",
+  "slug": "yachiyo8080-qwen3-8-flash-next",
+  "author": "yachiyo8080",
+  "url": "https://huggingface.co/yachiyo8080/Qwen3.8-Flash-Next",
+  "created_at": "2026-10-25T15:28:35.000Z",
+  "updated_at": "2026-10-25T15:28:35.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

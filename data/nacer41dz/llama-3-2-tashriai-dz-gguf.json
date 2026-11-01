@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "nacer41dz/Llama-3.2-TashriAI-DZ-GGUF",
+  "slug": "nacer41dz-llama-3-2-tashriai-dz-gguf",
+  "author": "nacer41dz",
+  "url": "https://huggingface.co/nacer41dz/Llama-3.2-TashriAI-DZ-GGUF",
+  "created_at": "2026-10-30T11:43:33.000Z",
+  "updated_at": "2026-10-30T12:03:02.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama-3.2",
+    "arabic",
+    "algeria",
+    "education",
+    "legislation",
+    "legal-ai",
+    "tashriai-dz",
+    "ar",
+    "en",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377376,
+  "storage_human": "2.0 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

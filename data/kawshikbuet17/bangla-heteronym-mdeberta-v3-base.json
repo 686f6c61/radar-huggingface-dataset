@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kawshikbuet17/bangla-heteronym-mdeberta-v3-base",
+  "slug": "kawshikbuet17-bangla-heteronym-mdeberta-v3-base",
+  "author": "kawshikbuet17",
+  "url": "https://huggingface.co/kawshikbuet17/bangla-heteronym-mdeberta-v3-base",
+  "created_at": "2026-10-29T22:08:21.000Z",
+  "updated_at": "2026-10-29T22:09:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "bangla",
+    "bengali",
+    "heteronym",
+    "homograph",
+    "text-to-speech",
+    "grapheme-to-phoneme",
+    "bn",
+    "dataset:kawshikbuet17/bangla-heteronyms",
+    "base_model:microsoft/mdeberta-v3-base",
+    "base_model:finetune:microsoft/mdeberta-v3-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 278218752,
+  "parameters_human": "278.2M",
+  "storage_bytes": 1133563017,
+  "storage_human": "1.1 GB",
+  "base_model": "microsoft/mdeberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

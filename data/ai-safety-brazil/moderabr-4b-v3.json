@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ai-safety-brazil/moderabr-4b-v3",
+  "slug": "ai-safety-brazil-moderabr-4b-v3",
+  "author": "ai-safety-brazil",
+  "url": "https://huggingface.co/ai-safety-brazil/moderabr-4b-v3",
+  "created_at": "2026-10-29T23:59:07.000Z",
+  "updated_at": "2026-10-30T02:08:14.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "portuguese",
+    "moderation",
+    "toxicity",
+    "hate-speech",
+    "experimental",
+    "text-classification",
+    "pt",
+    "dataset:mteb/told-br",
+    "dataset:dougtrajano/olid-br",
+    "dataset:ai-safety-brazil/moderacao-fronteiras-br-synthetic",
+    "dataset:ai-safety-brazil/odio-contexto-br-synthetic",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85551496,
+  "storage_human": "86 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mahir2021/mental-roberta-depEMO-v2",
+  "slug": "mahir2021-mental-roberta-depemo-v2",
+  "author": "mahir2021",
+  "url": "https://huggingface.co/mahir2021/mental-roberta-depEMO-v2",
+  "created_at": "2026-11-01T04:51:08.000Z",
+  "updated_at": "2026-11-01T04:51:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "mental-health",
+    "multi-label",
+    "mental-roberta-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124651784,
+  "parameters_human": "124.7M",
+  "storage_bytes": 498631280,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Affordable Sustainability Tips: Eco-Shopping: 8 Tips for ...",
+      "url": "https://www.moneyonefcu.org/affordable-sustainability-tips-eco-shopping-8-tips-for-environmentally-friendly-consumer-choices-2025-01-02/",
+      "snippet": "Jan 2, 2025 · Invest in reusable shopping bags Eco-friendly tote bags will help reduce plastic waste and you can use them again and …"
+    }
+  ]
+}

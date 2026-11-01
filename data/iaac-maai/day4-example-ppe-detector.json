@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "iaac-maai/day4-example-ppe-detector",
+  "slug": "iaac-maai-day4-example-ppe-detector",
+  "author": "iaac-maai",
+  "url": "https://huggingface.co/iaac-maai/day4-example-ppe-detector",
+  "created_at": "2026-10-28T13:05:03.000Z",
+  "updated_at": "2026-10-28T13:20:37.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo26",
+    "object-detection",
+    "construction",
+    "safety",
+    "ppe",
+    "built-environment",
+    "iaac-maai",
+    "ai-methods-1",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25616945,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5 Examples of 3D Virtual Stores: Virtual Shopping Experience",
+      "url": "https://liminastudios.com/blog/3d-virtual-stores-virtual-shopping-experience/",
+      "snippet": "3D virtual stores are transforming the online shopping experience itself as e-commerce evolves. With such virtual stores, a shopper …"
+    }
+  ]
+}

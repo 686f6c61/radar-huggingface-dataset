@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Qwen3.5-122B-A10B-NVFP4A16",
   "created_at": "2026-10-27T22:49:38.000Z",
-  "updated_at": "2026-10-31T15:02:39.000Z",
+  "updated_at": "2026-11-01T02:52:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

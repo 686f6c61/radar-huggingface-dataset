@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Hothaifa/heq-ai-stt-pro",
+  "slug": "hothaifa-heq-ai-stt-pro",
+  "author": "Hothaifa",
+  "url": "https://huggingface.co/Hothaifa/heq-ai-stt-pro",
+  "created_at": "2026-10-25T18:28:20.000Z",
+  "updated_at": "2026-10-25T19:42:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "audio",
+    "automatic-speech-recognition",
+    "quran",
+    "heq-ai",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

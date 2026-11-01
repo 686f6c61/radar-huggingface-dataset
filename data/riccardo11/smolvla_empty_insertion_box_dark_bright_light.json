@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Riccardo11/smolvla_empty_insertion_box_dark_bright_light",
+  "slug": "riccardo11-smolvla_empty_insertion_box_dark_bright_light",
+  "author": "Riccardo11",
+  "url": "https://huggingface.co/Riccardo11/smolvla_empty_insertion_box_dark_bright_light",
+  "created_at": "2026-10-29T04:24:44.000Z",
+  "updated_at": "2026-10-29T04:25:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Riccardo11/merged_dark_and_bright_light",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 13193892256,
+  "storage_human": "13.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

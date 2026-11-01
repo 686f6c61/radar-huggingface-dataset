@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mazarelo/kiwipot-multilingual-e5-small-onnx",
+  "slug": "mazarelo-kiwipot-multilingual-e5-small-onnx",
+  "author": "mazarelo",
+  "url": "https://huggingface.co/mazarelo/kiwipot-multilingual-e5-small-onnx",
+  "created_at": "2026-10-28T07:28:36.000Z",
+  "updated_at": "2026-10-28T07:28:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135390915,
+  "storage_human": "135 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

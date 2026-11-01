@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kein5/vrct-vox-chatbox-detector",
+  "slug": "kein5-vrct-vox-chatbox-detector",
+  "author": "kein5",
+  "url": "https://huggingface.co/kein5/vrct-vox-chatbox-detector",
+  "created_at": "2026-11-01T00:33:40.000Z",
+  "updated_at": "2026-11-01T01:53:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "yolox",
+    "vrchat",
+    "chatbox",
+    "ocr",
+    "object-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40368742,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

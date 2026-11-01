@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Stereotypes-in-LLMs/qwen3.5-9b-hiring-debias-grpo-r3-wsd-en",
+  "slug": "stereotypes-in-llms-qwen3-5-9b-hiring-debias-grpo-r3-wsd-en",
+  "author": "Stereotypes-in-LLMs",
+  "url": "https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-9b-hiring-debias-grpo-r3-wsd-en",
+  "created_at": "2026-10-26T17:02:44.000Z",
+  "updated_at": "2026-10-26T17:03:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "hiring-bias",
+    "research",
+    "grpo",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Stereotypes-in-LLMs/hiring-bias-mitigation-v3",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 229,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 19326293205,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

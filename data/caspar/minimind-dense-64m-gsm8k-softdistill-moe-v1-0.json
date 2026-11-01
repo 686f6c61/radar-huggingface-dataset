@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "caspar/MiniMind-Dense-64M-GSM8K-SoftDistill-MoE-v1.0",
+  "slug": "caspar-minimind-dense-64m-gsm8k-softdistill-moe-v1-0",
+  "author": "caspar",
+  "url": "https://huggingface.co/caspar/MiniMind-Dense-64M-GSM8K-SoftDistill-MoE-v1.0",
+  "created_at": "2026-10-25T06:57:03.000Z",
+  "updated_at": "2026-10-25T06:57:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimind",
+    "text-generation",
+    "knowledge-distillation",
+    "gsm8k",
+    "experimental",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:caspar/MiniMind-Mixed-SFT-Training-v1.0",
+    "base_model:caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+    "base_model:finetune:caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 374,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 127834168,
+  "storage_human": "128 MB",
+  "base_model": "caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

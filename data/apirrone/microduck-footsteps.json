@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "apirrone/microduck-footsteps",
+  "slug": "apirrone-microduck-footsteps",
+  "author": "apirrone",
+  "url": "https://huggingface.co/apirrone/microduck-footsteps",
+  "created_at": "2026-10-28T14:50:26.000Z",
+  "updated_at": "2026-10-28T15:21:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "footstep-planning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1206165,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "islao2/tiny-sql-GGUF",
+  "slug": "islao2-tiny-sql-gguf",
+  "author": "islao2",
+  "url": "https://huggingface.co/islao2/tiny-sql-GGUF",
+  "created_at": "2026-10-29T14:10:40.000Z",
+  "updated_at": "2026-10-29T14:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-to-sql",
+    "lora",
+    "dataset:gretelai/synthetic_text_to_sql",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646572704,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

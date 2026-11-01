@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "netprojects/Nemotron-3.5-Embed-8B-mlx-4bit",
+  "slug": "netprojects-nemotron-3-5-embed-8b-mlx-4bit",
+  "author": "netprojects",
+  "url": "https://huggingface.co/netprojects/Nemotron-3.5-Embed-8B-mlx-4bit",
+  "created_at": "2026-10-30T09:57:59.000Z",
+  "updated_at": "2026-10-30T09:58:13.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral3",
+    "apple-silicon",
+    "embeddings",
+    "sentence-similarity",
+    "matryoshka",
+    "multimodal",
+    "retrieval",
+    "nemotron",
+    "feature-extraction",
+    "en",
+    "base_model:nvidia/Nemotron-3.5-Embed-8B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3.5-Embed-8B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 8381155328,
+  "parameters_human": "8.38B",
+  "storage_bytes": 5352378012,
+  "storage_human": "5.4 GB",
+  "base_model": "nvidia/Nemotron-3.5-Embed-8B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tarzan X - Shame of Jane (1995) Türkçe Altyazılı V2.mp4 :: video.mail.ru",
+      "url": "https://my.mail.ru/video/embed/602962354082996868?wmode=opaque",
+      "snippet": "00:00 1:34:31"
+    }
+  ]
+}

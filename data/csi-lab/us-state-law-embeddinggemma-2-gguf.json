@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "CSI-lab/US-state-law-EmbeddingGemma-2-GGUF",
+  "slug": "csi-lab-us-state-law-embeddinggemma-2-gguf",
+  "author": "CSI-lab",
+  "url": "https://huggingface.co/CSI-lab/US-state-law-EmbeddingGemma-2-GGUF",
+  "created_at": "2026-10-27T00:07:51.000Z",
+  "updated_at": "2026-10-30T20:48:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "GGUF",
+    "embedding",
+    "legal",
+    "law",
+    "WA",
+    "feature-extraction",
+    "sentence-transformers",
+    "multimodal-embedding",
+    "multimodal",
+    "sentence-similarity",
+    "loss:MultipleNegativesRankingLoss",
+    "en",
+    "dataset:CSI-lab/RCW_2025_Positive_Query_Pairs",
+    "arxiv:1908.10084",
+    "arxiv:2106.09685",
+    "arxiv:2509.20354",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 131,
+  "trending_score": 0,
+  "parameters": 271002648,
+  "parameters_human": "271.0M",
+  "storage_bytes": 181695040,
+  "storage_human": "182 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "CSI-lab/RCW_2025_Positive_Query_Pairs",
+      "metric": "Accuracy@10",
+      "value": 0.8789
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "CSI-lab/RCW_2025_Positive_Query_Pairs",
+      "metric": "Precision@10",
+      "value": 0.0879
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "CSI-lab/RCW_2025_Positive_Query_Pairs",
+      "metric": "Recall@10",
+      "value": 0.8789
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "CSI-lab/RCW_2025_Positive_Query_Pairs",
+      "metric": "Accuracy@1",
+      "value": 0.3994
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "CSI-lab/RCW_2025_Positive_Query_Pairs",
+      "metric": "NDCG@10",
+      "value": 0.6464
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "CSI-lab/RCW_2025_Positive_Query_Pairs",
+      "metric": "MRR@10",
+      "value": 0.5709
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "CSI-lab/RCW_2025_Positive_Query_Pairs",
+      "metric": "MAP@100",
+      "value": 0.5757
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "CSI-lab/RCW_2025_Positive_Query_Pairs",
+      "metric": "Accuracy@3",
+      "value": 0.2595
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "CSI-lab/RCW_2025_Positive_Query_Pairs",
+      "metric": "Accuracy@5",
+      "value": 0.7156
+    }
+  ],
+  "sources": []
+}

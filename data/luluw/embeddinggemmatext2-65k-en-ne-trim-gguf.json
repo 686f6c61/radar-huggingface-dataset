@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "luluw/embeddinggemmatext2-65k-en-ne-trim-GGUF",
+  "slug": "luluw-embeddinggemmatext2-65k-en-ne-trim-gguf",
+  "author": "luluw",
+  "url": "https://huggingface.co/luluw/embeddinggemmatext2-65k-en-ne-trim-GGUF",
+  "created_at": "2026-10-29T11:08:14.000Z",
+  "updated_at": "2026-10-29T11:17:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ne"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "text-embedding",
+    "vocabulary-trimming",
+    "en",
+    "ne",
+    "base_model:luluw/embeddinggemmatext2-65k-en-ne-trim",
+    "base_model:quantized:luluw/embeddinggemmatext2-65k-en-ne-trim",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 121,
+  "trending_score": 0,
+  "parameters": 170339352,
+  "parameters_human": "170.3M",
+  "storage_bytes": 650270592,
+  "storage_human": "650 MB",
+  "base_model": "luluw/embeddinggemmatext2-65k-en-ne-trim",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "gurujustin/sn92-gen-p5",
+  "slug": "gurujustin-sn92-gen-p5",
+  "author": "gurujustin",
+  "url": "https://huggingface.co/gurujustin/sn92-gen-p5",
+  "created_at": "2026-10-28T04:20:55.000Z",
+  "updated_at": "2026-10-28T05:07:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "sn92",
+    "base_model:ronanlee777/sn92-gen-ma",
+    "base_model:finetune:ronanlee777/sn92-gen-ma",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193402843,
+  "storage_human": "52.2 GB",
+  "base_model": "ronanlee777/sn92-gen-ma",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

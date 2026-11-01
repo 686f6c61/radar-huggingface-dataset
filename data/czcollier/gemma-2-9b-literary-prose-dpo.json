@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "czcollier/gemma-2-9b-literary-prose-dpo",
+  "slug": "czcollier-gemma-2-9b-literary-prose-dpo",
+  "author": "czcollier",
+  "url": "https://huggingface.co/czcollier/gemma-2-9b-literary-prose-dpo",
+  "created_at": "2026-10-28T19:59:58.000Z",
+  "updated_at": "2026-10-30T22:16:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "text-generation",
+    "gemma2",
+    "literature",
+    "creative-writing",
+    "en",
+    "dataset:czcollier/literary-prose-dpo-pairs",
+    "base_model:google/gemma-2-9b",
+    "base_model:adapter:google/gemma-2-9b",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250514128,
+  "storage_human": "251 MB",
+  "base_model": "google/gemma-2-9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

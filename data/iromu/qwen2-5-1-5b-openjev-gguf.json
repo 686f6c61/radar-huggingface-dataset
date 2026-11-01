@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "iromu/Qwen2.5-1.5B-openjev-GGUF",
+  "slug": "iromu-qwen2-5-1-5b-openjev-gguf",
+  "author": "iromu",
+  "url": "https://huggingface.co/iromu/Qwen2.5-1.5B-openjev-GGUF",
+  "created_at": "2026-10-30T19:55:36.000Z",
+  "updated_at": "2026-10-31T10:13:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2.5",
+    "typed-decision",
+    "openjev",
+    "decision",
+    "text-generation",
+    "en",
+    "base_model:iromu/Qwen2.5-1.5B-openjev",
+    "base_model:quantized:iromu/Qwen2.5-1.5B-openjev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 195,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6851333376,
+  "storage_human": "6.9 GB",
+  "base_model": "iromu/Qwen2.5-1.5B-openjev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

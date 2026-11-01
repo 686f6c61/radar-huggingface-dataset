@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "leizhao7/Qwen3-1.7B-OPD-RL-Math-Step200",
+  "slug": "leizhao7-qwen3-1-7b-opd-rl-math-step200",
+  "author": "leizhao7",
+  "url": "https://huggingface.co/leizhao7/Qwen3-1.7B-OPD-RL-Math-Step200",
+  "created_at": "2026-10-26T16:15:42.000Z",
+  "updated_at": "2026-10-26T16:18:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "on-policy-distillation",
+    "knowledge-distillation",
+    "mathematical-reasoning",
+    "arxiv:2610.11247",
+    "conversational",
+    "en",
+    "dataset:BytedTsinghua-SIA/DAPO-Math-17k",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 195,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938078,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

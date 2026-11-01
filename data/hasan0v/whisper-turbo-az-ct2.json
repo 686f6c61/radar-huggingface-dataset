@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hasan0v/whisper-turbo-az-ct2",
+  "slug": "hasan0v-whisper-turbo-az-ct2",
+  "author": "hasan0v",
+  "url": "https://huggingface.co/hasan0v/whisper-turbo-az-ct2",
+  "created_at": "2026-10-27T16:07:21.000Z",
+  "updated_at": "2026-10-27T19:12:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "az"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "whisper-large-v3-turbo",
+    "azerbaijani",
+    "speech-recognition",
+    "asr",
+    "faster-whisper",
+    "automatic-speech-recognition",
+    "az",
+    "base_model:hasan0v/whisper-turbo-az",
+    "base_model:finetune:hasan0v/whisper-turbo-az",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617884929,
+  "storage_human": "1.6 GB",
+  "base_model": "hasan0v/whisper-turbo-az",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Azerbaijani, test)",
+      "metric": "WER",
+      "value": 10.9
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Azerbaijani, test)",
+      "metric": "CER",
+      "value": 2.86
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "viro-bert/Viro-BERT",
+  "slug": "viro-bert-viro-bert",
+  "author": "viro-bert",
+  "url": "https://huggingface.co/viro-bert/Viro-BERT",
+  "created_at": "2026-10-26T17:03:18.000Z",
+  "updated_at": "2026-10-26T17:57:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "distilbert",
+    "biology",
+    "genomics",
+    "viral-classification",
+    "transformer",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174534541,
+  "storage_human": "175 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cadenas, Serrures, Coffres Forts et Systèmes de Sécurité | Viro",
+      "url": "https://www.viro.it/fr-fr/",
+      "snippet": "Viro S.p.A., leader dans la production de systèmes de sécurité, réalise : Cadenas, Cylindres, Serrures, Coffres Forts, Armoires de …Read more"
+    },
+    {
+      "title": "Viro AI – Free, Eco-Friendly ChatGPT Alternative",
+      "url": "https://ai.viro.app/",
+      "snippet": "Viro is the free AI assistant that runs on clean energy. Chat with ChatGPT, Claude, Gemini, and Viro AI in one app — every message …"
+    },
+    {
+      "title": "Cadenas, Cylindres, Serrures et Coffres Forts - Viro",
+      "url": "https://www.viro.it/fr-fr/tous-les-produits",
+      "snippet": "Découvrez tous les Produits Viro, leader dans la production de systèmes de sécurité : Cadenas, Cylindres, Serrures, Coffres Forts, …"
+    },
+    {
+      "title": "Viro V09 Pour portails coulissants et portes sectionnelles - Serrures ...",
+      "url": "https://www.dom-security.com/fr/fr/produits/viro-v09/",
+      "snippet": "La Viro V09 garantit une sécurité efficace. Elle est pratique à utiliser et esthétiquement agréable, ne peut pas être attaquée de …"
+    },
+    {
+      "title": "Cadenas et serrures électriques VIRO | Découvrez la gamme VIRO",
+      "url": "https://www.dom-security.com/fr/fr/produits-1/gamme-viro",
+      "snippet": "Fondé en Italie en 1942, Viro est un fabriquant reconnu pour la qualité et la fiabilité de ses produits et a rejoint notre groupe DOM …"
+    }
+  ]
+}

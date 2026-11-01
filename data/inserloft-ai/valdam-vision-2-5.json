@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Inserloft-AI/Valdam-Vision-2.5",
+  "slug": "inserloft-ai-valdam-vision-2-5",
+  "author": "Inserloft-AI",
+  "url": "https://huggingface.co/Inserloft-AI/Valdam-Vision-2.5",
+  "created_at": "2026-10-27T08:51:09.000Z",
+  "updated_at": "2026-10-27T08:59:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "vision-language",
+    "image-to-text",
+    "ocr",
+    "safety-moderation",
+    "en",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 949702066,
+  "parameters_human": "949.7M",
+  "storage_bytes": 3798883512,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "anonyMicky/blinded-reranker",
+  "slug": "anonymicky-blinded-reranker",
+  "author": "anonyMicky",
+  "url": "https://huggingface.co/anonyMicky/blinded-reranker",
+  "created_at": "2026-10-31T23:19:08.000Z",
+  "updated_at": "2026-10-31T23:20:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "nanochat",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanochat",
+    "safetensors",
+    "blinded_reranker",
+    "reranker",
+    "pointwise-reranker",
+    "information-retrieval",
+    "lce",
+    "model-soup",
+    "blinded",
+    "sentence-transformers",
+    "text-ranking",
+    "custom_code",
+    "en",
+    "dataset:rlhn/rlhn-250K",
+    "arxiv:2203.05482",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3215335146,
+  "parameters_human": "3.22B",
+  "storage_bytes": 12861368720,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

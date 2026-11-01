@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "DRUPEs/CherryPit-1.1-2B",
+  "slug": "drupes-cherrypit-1-1-2b",
+  "author": "DRUPEs",
+  "url": "https://huggingface.co/DRUPEs/CherryPit-1.1-2B",
+  "created_at": "2026-10-28T03:59:40.000Z",
+  "updated_at": "2026-10-28T04:22:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "code",
+    "coding",
+    "math",
+    "reasoning",
+    "tool-calling",
+    "on-device",
+    "small-language-model",
+    "minicpm",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 469,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033556752,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drupe : Définition et caractéristiques - projetecolo.com",
+      "url": "https://www.projetecolo.com/drupe-definition-et-caracteristiques-668.html",
+      "snippet": "Feb 16, 2026 · Le pêcher ou Prunus persica est probablement l'arbre le plus représentatif de toutes les espèces à drupes. À tel point …"
+    },
+    {
+      "title": "Drupe - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Drupe",
+      "snippet": "Typical drupes include apricots, olives, loquat, peaches, plums, cherries, mangoes, pecans, and amlas (Indian gooseberries). Other …"
+    },
+    {
+      "title": "Drupe : définition et explications - AquaPortail",
+      "url": "https://www.aquaportail.com/dictionnaire/definition/4804/drupe",
+      "snippet": "Elle est tout fruit multiple qui est un agrégat de plusieurs petites drupes. Exemples : la mûre, la framboise. La polydrupe est formée …"
+    }
+  ]
+}

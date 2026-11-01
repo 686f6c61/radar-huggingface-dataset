@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Bhoidy/charon-v2-minicpm5-1b",
+  "slug": "bhoidy-charon-v2-minicpm5-1b",
+  "author": "Bhoidy",
+  "url": "https://huggingface.co/Bhoidy/charon-v2-minicpm5-1b",
+  "created_at": "2026-10-26T16:24:37.000Z",
+  "updated_at": "2026-10-26T16:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "remotion",
+    "react",
+    "typescript",
+    "code-generation",
+    "video-generation",
+    "lora",
+    "minicpm",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:adapter:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 229,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44871152,
+  "storage_human": "45 MB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

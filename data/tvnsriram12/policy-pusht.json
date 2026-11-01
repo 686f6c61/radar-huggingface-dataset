@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tvnsriram12/policy.pusht",
+  "slug": "tvnsriram12-policy-pusht",
+  "author": "tvnsriram12",
+  "url": "https://huggingface.co/tvnsriram12/policy.pusht",
+  "created_at": "2026-10-30T05:49:37.000Z",
+  "updated_at": "2026-10-31T07:29:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lerobot/pusht",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 51660418,
+  "parameters_human": "51.7M",
+  "storage_bytes": 2146828704,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

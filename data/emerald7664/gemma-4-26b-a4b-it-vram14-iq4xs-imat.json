@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Emerald7664/Gemma-4-26B-A4B-it-vram14-iq4xs-imat",
+  "slug": "emerald7664-gemma-4-26b-a4b-it-vram14-iq4xs-imat",
+  "author": "Emerald7664",
+  "url": "https://huggingface.co/Emerald7664/Gemma-4-26B-A4B-it-vram14-iq4xs-imat",
+  "created_at": "2026-10-25T23:05:41.000Z",
+  "updated_at": "2026-10-25T23:05:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "moe",
+    "imatrix",
+    "mixed-precision",
+    "iq4_xs",
+    "all-vram",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 266,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 14283555008,
+  "storage_human": "14.3 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

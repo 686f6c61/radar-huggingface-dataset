@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "cstr/openvoice2-tcc-GGUF",
+  "slug": "cstr-openvoice2-tcc-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/openvoice2-tcc-GGUF",
+  "created_at": "2026-10-29T07:27:22.000Z",
+  "updated_at": "2026-10-29T07:27:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "voice-conversion",
+    "openvoice-v2",
+    "audio-to-audio",
+    "en",
+    "base_model:myshell-ai/OpenVoiceV2",
+    "base_model:quantized:myshell-ai/OpenVoiceV2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 32749090,
+  "parameters_human": "32.7M",
+  "storage_bytes": 102123872,
+  "storage_human": "102 MB",
+  "base_model": "myshell-ai/OpenVoiceV2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

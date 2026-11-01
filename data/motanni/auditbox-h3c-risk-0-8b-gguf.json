@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Motanni/auditbox-h3c-risk-0.8b-gguf",
+  "slug": "motanni-auditbox-h3c-risk-0-8b-gguf",
+  "author": "Motanni",
+  "url": "https://huggingface.co/Motanni/auditbox-h3c-risk-0.8b-gguf",
+  "created_at": "2026-10-27T09:55:12.000Z",
+  "updated_at": "2026-10-30T03:45:23.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "auditbox",
+    "h3c",
+    "comware",
+    "command-risk-analysis",
+    "quantized",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 811843040,
+  "storage_human": "812 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

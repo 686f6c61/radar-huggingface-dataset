@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "VertexAGI/quartz-micro-preview-v3-base",
+  "slug": "vertexagi-quartz-micro-preview-v3-base",
+  "author": "VertexAGI",
+  "url": "https://huggingface.co/VertexAGI/quartz-micro-preview-v3-base",
+  "created_at": "2026-10-27T20:33:53.000Z",
+  "updated_at": "2026-10-27T21:31:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "quartz",
+    "mlx",
+    "small-language-model",
+    "from-scratch",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 469,
+  "trending_score": 0,
+  "parameters": 100092672,
+  "parameters_human": "100.1M",
+  "storage_bytes": 1151336925,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

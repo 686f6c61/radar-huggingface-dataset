@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "chemicarLabs/hentai_FP16",
+  "slug": "chemicarlabs-hentai_fp16",
+  "author": "chemicarLabs",
+  "url": "https://huggingface.co/chemicarLabs/hentai_FP16",
+  "created_at": "2026-10-26T15:51:14.000Z",
+  "updated_at": "2026-10-30T09:19:27.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "safetensors",
+    "not-for-all-audiences",
+    "nsfw",
+    "en",
+    "base_model:philz1337x/hentai",
+    "base_model:finetune:philz1337x/hentai",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2136991780,
+  "storage_human": "2.1 GB",
+  "base_model": "philz1337x/hentai",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

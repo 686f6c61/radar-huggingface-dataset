@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "xmarva/perevod-en-ru",
+  "slug": "xmarva-perevod-en-ru",
+  "author": "xmarva",
+  "url": "https://huggingface.co/xmarva/perevod-en-ru",
+  "created_at": "2026-10-27T13:35:53.000Z",
+  "updated_at": "2026-10-27T16:03:14.000Z",
+  "license": "cc-by-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "perevod",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "perevod",
+    "safetensors",
+    "translation",
+    "transformer",
+    "from-scratch",
+    "en",
+    "ru",
+    "dataset:xmarva/tfs-tatoeba-en-ru",
+    "license:cc-by-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 9610496,
+  "parameters_human": "9.6M",
+  "storage_bytes": 38453000,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "English to Russian",
+      "dataset": "Tatoeba test",
+      "metric": "chrF",
+      "value": 61.1
+    },
+    {
+      "task": "English to Russian",
+      "dataset": "Tatoeba test",
+      "metric": "BLEU",
+      "value": 42.6
+    },
+    {
+      "task": "English to Russian",
+      "dataset": "WMT20 news",
+      "metric": "chrF",
+      "value": 25.8
+    }
+  ],
+  "sources": []
+}

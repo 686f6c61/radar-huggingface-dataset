@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-convbert-v2",
+  "slug": "ads2009-turkish-ai-text-detector-convbert-v2",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-convbert-v2",
+  "created_at": "2026-10-26T10:34:09.000Z",
+  "updated_at": "2026-10-26T10:34:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "convbert",
+    "text-classification",
+    "tr",
+    "base_model:dbmdz/convbert-base-turkish-cased",
+    "base_model:finetune:dbmdz/convbert-base-turkish-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 107407754,
+  "parameters_human": "107.4M",
+  "storage_bytes": 429667008,
+  "storage_human": "430 MB",
+  "base_model": "dbmdz/convbert-base-turkish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

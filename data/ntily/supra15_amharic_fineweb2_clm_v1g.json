@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ntily/supra15_amharic_fineweb2_clm_v1g",
+  "slug": "ntily-supra15_amharic_fineweb2_clm_v1g",
+  "author": "ntily",
+  "url": "https://huggingface.co/ntily/supra15_amharic_fineweb2_clm_v1g",
+  "created_at": "2026-11-01T04:17:01.000Z",
+  "updated_at": "2026-11-01T04:18:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "causal-lm",
+    "amharic",
+    "geez",
+    "byte-bpe",
+    "am",
+    "dataset:ntily/amharic-lm-build",
+    "base_model:ntily/supra15_amharic_fineweb2_clm_v1f",
+    "base_model:finetune:ntily/supra15_amharic_fineweb2_clm_v1f",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51786240,
+  "parameters_human": "51.8M",
+  "storage_bytes": 207162337,
+  "storage_human": "207 MB",
+  "base_model": "ntily/supra15_amharic_fineweb2_clm_v1f",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

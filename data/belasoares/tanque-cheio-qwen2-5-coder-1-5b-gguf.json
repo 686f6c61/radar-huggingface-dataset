@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "belasoares/tanque-cheio-qwen2.5-coder-1.5b-gguf",
+  "slug": "belasoares-tanque-cheio-qwen2-5-coder-1-5b-gguf",
+  "author": "belasoares",
+  "url": "https://huggingface.co/belasoares/tanque-cheio-qwen2.5-coder-1.5b-gguf",
+  "created_at": "2026-10-30T17:02:57.000Z",
+  "updated_at": "2026-10-30T17:03:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-sql",
+    "duckdb",
+    "llama-cpp",
+    "qwen2.5",
+    "anp",
+    "text-generation",
+    "pt",
+    "dataset:belasoares/tanque-cheio",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048096,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

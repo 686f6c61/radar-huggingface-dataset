@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mykor/kanana-2-3b-embedding-GGUF",
+  "slug": "mykor-kanana-2-3b-embedding-gguf",
+  "author": "mykor",
+  "url": "https://huggingface.co/mykor/kanana-2-3b-embedding-GGUF",
+  "created_at": "2026-10-29T05:55:48.000Z",
+  "updated_at": "2026-10-29T06:14:23.000Z",
+  "license": "kanana-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "feature-extraction",
+    "mteb",
+    "matryoshka",
+    "custom_code",
+    "sentence-similarity",
+    "ko",
+    "en",
+    "base_model:kakaocorp/kanana-2-3b-embedding",
+    "base_model:quantized:kakaocorp/kanana-2-3b-embedding",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 466,
+  "trending_score": 0,
+  "parameters": 3180636672,
+  "parameters_human": "3.18B",
+  "storage_bytes": 20015683296,
+  "storage_human": "20.0 GB",
+  "base_model": "kakaocorp/kanana-2-3b-embedding",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

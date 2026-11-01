@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "kprzyb/PolDense-68M-GGUF",
+  "slug": "kprzyb-poldense-68m-gguf",
+  "author": "kprzyb",
+  "url": "https://huggingface.co/kprzyb/PolDense-68M-GGUF",
+  "created_at": "2026-10-25T10:23:49.000Z",
+  "updated_at": "2026-10-25T10:24:21.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "embeddings",
+    "sentence-similarity",
+    "feature-extraction",
+    "polish",
+    "modernbert",
+    "pl",
+    "base_model:OPI-PIB/PolDense-68M",
+    "base_model:quantized:OPI-PIB/PolDense-68M",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 85,
+  "trending_score": 0,
+  "parameters": 68144640,
+  "parameters_human": "68.1M",
+  "storage_bytes": 212347712,
+  "storage_human": "212 MB",
+  "base_model": "OPI-PIB/PolDense-68M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

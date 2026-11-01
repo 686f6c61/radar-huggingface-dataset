@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "RabbitDaisuke/dqix-BattleEmulator-onnx",
+  "slug": "rabbitdaisuke-dqix-battleemulator-onnx",
+  "author": "RabbitDaisuke",
+  "url": "https://huggingface.co/RabbitDaisuke/dqix-BattleEmulator-onnx",
+  "created_at": "2026-10-31T22:07:37.000Z",
+  "updated_at": "2026-11-01T02:45:59.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "deterministic",
+    "game-simulation",
+    "ja",
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300824109,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

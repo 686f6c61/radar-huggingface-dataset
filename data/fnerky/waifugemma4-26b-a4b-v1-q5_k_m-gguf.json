@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "id": "fnerky/WaifuGemma4-26b-a4b-v1-Q5_K_M-GGUF",
+  "slug": "fnerky-waifugemma4-26b-a4b-v1-q5_k_m-gguf",
+  "author": "fnerky",
+  "url": "https://huggingface.co/fnerky/WaifuGemma4-26b-a4b-v1-Q5_K_M-GGUF",
+  "created_at": "2026-10-28T18:28:24.000Z",
+  "updated_at": "2026-10-28T18:29:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "ru",
+    "pt",
+    "id",
+    "ar",
+    "th",
+    "fr",
+    "de",
+    "uk",
+    "vi",
+    "ja",
+    "ko",
+    "zh",
+    "tr",
+    "it",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "moe",
+    "conversational",
+    "roleplay",
+    "role-play",
+    "character",
+    "rlhf",
+    "grpo",
+    "reward-model",
+    "human-preference",
+    "arena",
+    "multilingual",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "es",
+    "ru",
+    "pt",
+    "id",
+    "ar",
+    "th",
+    "fr",
+    "de",
+    "uk",
+    "vi",
+    "ja",
+    "ko",
+    "zh",
+    "tr",
+    "it",
+    "pl",
+    "base_model:hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+    "base_model:quantized:hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 339,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 19132873856,
+  "storage_human": "19.1 GB",
+  "base_model": "hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "IFEval",
+      "metric": "Prompt-level Strict",
+      "value": 89.09
+    },
+    {
+      "task": null,
+      "dataset": "GSM8K",
+      "metric": "Acc",
+      "value": 96.89
+    },
+    {
+      "task": null,
+      "dataset": "MATH-500",
+      "metric": "Acc",
+      "value": 92.8
+    },
+    {
+      "task": null,
+      "dataset": "MMLU",
+      "metric": "Acc",
+      "value": 88.59
+    },
+    {
+      "task": null,
+      "dataset": "C-Eval",
+      "metric": "Acc",
+      "value": 78.97
+    },
+    {
+      "task": null,
+      "dataset": "C-MMLU",
+      "metric": "Acc",
+      "value": 79.56
+    },
+    {
+      "task": null,
+      "dataset": "ARC",
+      "metric": "Acc",
+      "value": 98.39
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "Acc",
+      "value": 79.78
+    },
+    {
+      "task": null,
+      "dataset": "Winogrande",
+      "metric": "Acc",
+      "value": 85.4
+    },
+    {
+      "task": null,
+      "dataset": "TruthfulQA",
+      "metric": "MC Acc",
+      "value": 75.4
+    }
+  ],
+  "sources": []
+}

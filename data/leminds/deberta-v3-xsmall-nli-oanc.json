@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Leminds/deberta-v3-xsmall-nli-oanc",
+  "slug": "leminds-deberta-v3-xsmall-nli-oanc",
+  "author": "Leminds",
+  "url": "https://huggingface.co/Leminds/deberta-v3-xsmall-nli-oanc",
+  "created_at": "2026-10-25T05:07:09.000Z",
+  "updated_at": "2026-10-25T05:07:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "natural-language-inference",
+    "nli",
+    "deberta-v3",
+    "int8",
+    "en",
+    "dataset:nyu-mll/multi_nli",
+    "base_model:microsoft/deberta-v3-xsmall",
+    "base_model:quantized:microsoft/deberta-v3-xsmall",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 70831107,
+  "parameters_human": "70.8M",
+  "storage_bytes": 370466862,
+  "storage_human": "370 MB",
+  "base_model": "microsoft/deberta-v3-xsmall",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI",
+      "metric": "Accuracy (fp32)",
+      "value": 0.8765
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI",
+      "metric": "Accuracy (fp32)",
+      "value": 0.8796
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "SNLI",
+      "metric": "Accuracy (fp32)",
+      "value": 0.8279
+    }
+  ],
+  "sources": []
+}

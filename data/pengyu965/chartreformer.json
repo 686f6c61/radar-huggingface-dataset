@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Pengyu965/ChartReformer",
+  "slug": "pengyu965-chartreformer",
+  "author": "Pengyu965",
+  "url": "https://huggingface.co/Pengyu965/ChartReformer",
+  "created_at": "2026-10-29T04:47:18.000Z",
+  "updated_at": "2026-10-29T16:02:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pix2struct",
+    "image-text-to-text",
+    "chart-editing",
+    "chart-understanding",
+    "chart-derendering",
+    "deplot",
+    "document-ai",
+    "icdar2024",
+    "en",
+    "dataset:Pengyu965/ChartCraft",
+    "arxiv:2403.00209",
+    "base_model:google/deplot",
+    "base_model:finetune:google/deplot",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 282285696,
+  "parameters_human": "282.3M",
+  "storage_bytes": 2263300486,
+  "storage_human": "2.3 GB",
+  "base_model": "google/deplot",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

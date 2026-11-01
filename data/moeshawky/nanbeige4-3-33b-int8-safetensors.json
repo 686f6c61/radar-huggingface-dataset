@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "moeshawky/Nanbeige4.3-33B-INT8-safetensors",
+  "slug": "moeshawky-nanbeige4-3-33b-int8-safetensors",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/Nanbeige4.3-33B-INT8-safetensors",
+  "created_at": "2026-10-25T15:18:33.000Z",
+  "updated_at": "2026-10-26T13:56:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "nanbeige",
+    "int8",
+    "quantized",
+    "w8a16",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 103,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 66284020565,
+  "storage_human": "66.3 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

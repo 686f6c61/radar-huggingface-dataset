@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "karlsencoin/Karlsen-Gemma-4-26B-A4B-abliterated-GGUF",
+  "slug": "karlsencoin-karlsen-gemma-4-26b-a4b-abliterated-gguf",
+  "author": "karlsencoin",
+  "url": "https://huggingface.co/karlsencoin/Karlsen-Gemma-4-26B-A4B-abliterated-GGUF",
+  "created_at": "2026-10-28T11:48:37.000Z",
+  "updated_at": "2026-10-28T11:58:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 300894232608,
+  "storage_human": "300.9 GB",
+  "base_model": "huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

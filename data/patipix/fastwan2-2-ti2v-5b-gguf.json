@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "PatiPix/FastWan2.2-TI2V-5B-GGUF",
+  "slug": "patipix-fastwan2-2-ti2v-5b-gguf",
+  "author": "PatiPix",
+  "url": "https://huggingface.co/PatiPix/FastWan2.2-TI2V-5B-GGUF",
+  "created_at": "2026-10-27T16:39:53.000Z",
+  "updated_at": "2026-10-27T16:40:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "gguf",
+    "fastwan",
+    "stable-diffusion.cpp",
+    "text-to-video",
+    "base_model:FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
+    "base_model:quantized:FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 178,
+  "trending_score": 0,
+  "parameters": 4999787712,
+  "parameters_human": "5.00B",
+  "storage_bytes": 4141808800,
+  "storage_human": "4.1 GB",
+  "base_model": "FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

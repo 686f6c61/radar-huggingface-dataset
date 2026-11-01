@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Audante/Z-Image-Turbo-mflux-q4",
+  "slug": "audante-z-image-turbo-mflux-q4",
+  "author": "Audante",
+  "url": "https://huggingface.co/Audante/Z-Image-Turbo-mflux-q4",
+  "created_at": "2026-10-29T23:30:11.000Z",
+  "updated_at": "2026-10-29T23:42:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mflux",
+  "languages": [],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5902848786,
+  "storage_human": "5.9 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

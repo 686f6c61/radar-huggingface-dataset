@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sillykiwi/qwen35-9b-antidoom-qlora-only",
+  "slug": "sillykiwi-qwen35-9b-antidoom-qlora-only",
+  "author": "sillykiwi",
+  "url": "https://huggingface.co/sillykiwi/qwen35-9b-antidoom-qlora-only",
+  "created_at": "2026-10-27T20:41:13.000Z",
+  "updated_at": "2026-10-27T20:43:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qlora",
+    "lora",
+    "qwen3.5",
+    "math-reasoning",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19471774437,
+  "storage_human": "19.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

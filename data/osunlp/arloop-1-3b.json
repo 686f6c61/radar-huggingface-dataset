@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "osunlp/ARLoop-1.3B",
+  "slug": "osunlp-arloop-1-3b",
+  "author": "osunlp",
+  "url": "https://huggingface.co/osunlp/ARLoop-1.3B",
+  "created_at": "2026-10-29T03:50:12.000Z",
+  "updated_at": "2026-11-01T02:33:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arloop",
+    "text-generation",
+    "recurrent",
+    "custom_code",
+    "pretrained",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 1208655360,
+  "parameters_human": "1.21B",
+  "storage_bytes": 116031760128,
+  "storage_human": "116.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

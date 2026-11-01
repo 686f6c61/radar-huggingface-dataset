@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "EduardoVinicius/anycaptions-riva-translate",
+  "slug": "eduardovinicius-anycaptions-riva-translate",
+  "author": "EduardoVinicius",
+  "url": "https://huggingface.co/EduardoVinicius/anycaptions-riva-translate",
+  "created_at": "2026-10-26T22:53:17.000Z",
+  "updated_at": "2026-10-26T23:20:53.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "translation",
+    "riva",
+    "anycaptions",
+    "base_model:nvidia/Riva-Translate-4B-Instruct-v2",
+    "base_model:quantized:nvidia/Riva-Translate-4B-Instruct-v2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 4179704832,
+  "parameters_human": "4.18B",
+  "storage_bytes": 2759302368,
+  "storage_human": "2.8 GB",
+  "base_model": "nvidia/Riva-Translate-4B-Instruct-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

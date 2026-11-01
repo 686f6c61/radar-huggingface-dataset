@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "osmanozaydin/opendec-multi-256m",
+  "slug": "osmanozaydin-opendec-multi-256m",
+  "author": "osmanozaydin",
+  "url": "https://huggingface.co/osmanozaydin/opendec-multi-256m",
+  "created_at": "2026-10-28T20:39:19.000Z",
+  "updated_at": "2026-10-28T20:52:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "opendec_multi",
+    "multimodal",
+    "decision-intelligence",
+    "system-one",
+    "vision-language",
+    "fast-inference",
+    "jev-alternative",
+    "computer-vision",
+    "image-feature-extraction",
+    "en",
+    "tr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 288448459,
+  "parameters_human": "288.4M",
+  "storage_bytes": 1153863348,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hasan0v/whisper-turbo-az-onnx",
+  "slug": "hasan0v-whisper-turbo-az-onnx",
+  "author": "hasan0v",
+  "url": "https://huggingface.co/hasan0v/whisper-turbo-az-onnx",
+  "created_at": "2026-10-27T18:48:24.000Z",
+  "updated_at": "2026-10-27T18:53:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "az"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "whisper-large-v3-turbo",
+    "azerbaijani",
+    "speech-recognition",
+    "webgpu",
+    "az",
+    "base_model:hasan0v/whisper-turbo-az",
+    "base_model:quantized:hasan0v/whisper-turbo-az",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3652612970,
+  "storage_human": "3.7 GB",
+  "base_model": "hasan0v/whisper-turbo-az",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

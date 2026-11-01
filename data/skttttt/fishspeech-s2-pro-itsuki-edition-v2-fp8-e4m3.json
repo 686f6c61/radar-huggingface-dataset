@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Skttttt/Fishspeech-S2-Pro-Itsuki-Edition-V2-FP8-E4M3",
+  "slug": "skttttt-fishspeech-s2-pro-itsuki-edition-v2-fp8-e4m3",
+  "author": "Skttttt",
+  "url": "https://huggingface.co/Skttttt/Fishspeech-S2-Pro-Itsuki-Edition-V2-FP8-E4M3",
+  "created_at": "2026-10-27T17:00:59.000Z",
+  "updated_at": "2026-10-28T08:29:48.000Z",
+  "license": "fish-audio-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "dual_ar",
+    "fish-speech",
+    "s2-pro",
+    "text-to-speech",
+    "japanese",
+    "merged",
+    "fp8",
+    "e4m3",
+    "itsuki-nakano",
+    "the-quintessential-quintuplets",
+    "ja",
+    "base_model:Skttttt/Fishspeech-S2-Pro-Itsuki-Edition-V2",
+    "base_model:quantized:Skttttt/Fishspeech-S2-Pro-Itsuki-Edition-V2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 4962228480,
+  "parameters_human": "4.96B",
+  "storage_bytes": 6853316952,
+  "storage_human": "6.9 GB",
+  "base_model": "Skttttt/Fishspeech-S2-Pro-Itsuki-Edition-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

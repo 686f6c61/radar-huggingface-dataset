@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "amaye15/kumoanomaly-gguf",
+  "slug": "amaye15-kumoanomaly-gguf",
+  "author": "amaye15",
+  "url": "https://huggingface.co/amaye15/kumoanomaly-gguf",
+  "created_at": "2026-10-29T10:28:40.000Z",
+  "updated_at": "2026-10-29T11:11:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "zero-shot",
+    "forecasting",
+    "tabular",
+    "anomaly-detection",
+    "rust",
+    "burn",
+    "time-series-forecasting",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 2595329,
+  "parameters_human": "2.6M",
+  "storage_bytes": 10406208,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

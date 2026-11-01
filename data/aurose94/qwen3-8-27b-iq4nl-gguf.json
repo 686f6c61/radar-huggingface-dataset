@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "auRose94/Qwen3.8-27B-iq4nl-GGUF",
+  "slug": "aurose94-qwen3-8-27b-iq4nl-gguf",
+  "author": "auRose94",
+  "url": "https://huggingface.co/auRose94/Qwen3.8-27B-iq4nl-GGUF",
+  "created_at": "2026-10-26T17:35:34.000Z",
+  "updated_at": "2026-10-26T18:09:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "iq4_nl",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 252,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16693384736,
+  "storage_human": "16.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

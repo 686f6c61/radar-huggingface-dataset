@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "haoahjsvhw/Realistic_Vision_V6.0_B1_noVAE",
+  "slug": "haoahjsvhw-realistic_vision_v6-0_b1_novae",
+  "author": "haoahjsvhw",
+  "url": "https://huggingface.co/haoahjsvhw/Realistic_Vision_V6.0_B1_noVAE",
+  "created_at": "2026-10-28T09:21:43.000Z",
+  "updated_at": "2026-10-28T09:21:43.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18281283404,
+  "storage_human": "18.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

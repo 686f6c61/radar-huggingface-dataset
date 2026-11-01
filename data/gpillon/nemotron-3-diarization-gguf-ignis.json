@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "gpillon/Nemotron-3-Diarization-GGUF-ignis",
+  "slug": "gpillon-nemotron-3-diarization-gguf-ignis",
+  "author": "gpillon",
+  "url": "https://huggingface.co/gpillon/Nemotron-3-Diarization-GGUF-ignis",
+  "created_at": "2026-10-26T10:19:04.000Z",
+  "updated_at": "2026-10-26T10:32:51.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ignis",
+    "speaker-diarization",
+    "streaming-sortformer",
+    "cpu",
+    "voice-activity-detection",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 99226504,
+  "parameters_human": "99.2M",
+  "storage_bytes": 198805760,
+  "storage_human": "199 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

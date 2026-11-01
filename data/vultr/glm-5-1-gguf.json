@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "vultr/GLM-5.1-GGUF",
+  "slug": "vultr-glm-5-1-gguf",
+  "author": "vultr",
+  "url": "https://huggingface.co/vultr/GLM-5.1-GGUF",
+  "created_at": "2026-10-27T12:49:03.000Z",
+  "updated_at": "2026-10-27T14:18:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "glm-dsa",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.1",
+    "base_model:quantized:zai-org/GLM-5.1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 172,
+  "trending_score": 0,
+  "parameters": 743911218432,
+  "parameters_human": "743.91B",
+  "storage_bytes": 1794143475456,
+  "storage_human": "1794.1 GB",
+  "base_model": "zai-org/GLM-5.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SSD VPS Servers, Cloud Servers and Cloud Hosting - Vultr.com",
+      "url": "https://www.vultr.com/",
+      "snippet": "With Vultr, block storage and object storage solutions are flexible, scalable, and expandable without sacrificing performance or security.Read more"
+    },
+    {
+      "title": "SSD VPS Servers, Cloud Servers and Cloud Hosting - Vultr.com",
+      "url": "https://www.vultr.com/?ref=8753714",
+      "snippet": "The Vultr control panel makes server management simple and intuitive. Common tasks such as a ordering servers, managing …"
+    },
+    {
+      "title": "Vultr Discover | The Everywhere Cloud",
+      "url": "https://discover.vultr.com/",
+      "snippet": "Connect with Vultr at Linux PyTorch 2026 to see how Vultr’s High-Frequency and Dedicated Cloud Compute helps teams reduce …"
+    },
+    {
+      "title": "Vultr - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vultr",
+      "snippet": "Vultr is an American cloud computing company that provides cloud infrastructure and is headquartered in West Palm Beach, Florida. …"
+    },
+    {
+      "title": "Vultr Docs | Cloud Compute, Kubernetes & GPU Tutorials",
+      "url": "https://docs.vultr.com/",
+      "snippet": "Sep 16, 2026 · Vultr Docs Everything you need to build, deploy, and scale on The Everywhere Cloud: product guides, references, …"
+    }
+  ]
+}

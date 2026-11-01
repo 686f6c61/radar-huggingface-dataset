@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Hawkeye-8B-GGUF",
+  "slug": "mradermacher-hawkeye-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Hawkeye-8B-GGUF",
+  "created_at": "2026-10-30T16:40:21.000Z",
+  "updated_at": "2026-10-30T16:52:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "scene-text-recognition",
+    "blurry-text",
+    "low-resolution",
+    "qwen3-vl",
+    "smart-glasses",
+    "en",
+    "dataset:byron123t/BSTRB",
+    "base_model:byron123t/Hawkeye-8B",
+    "base_model:quantized:byron123t/Hawkeye-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 347,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 75336675520,
+  "storage_human": "75.3 GB",
+  "base_model": "byron123t/Hawkeye-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

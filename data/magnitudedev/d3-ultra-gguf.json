@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "magnitudedev/d3-ultra-GGUF",
+  "slug": "magnitudedev-d3-ultra-gguf",
+  "author": "magnitudedev",
+  "url": "https://huggingface.co/magnitudedev/d3-ultra-GGUF",
+  "created_at": "2026-10-29T00:42:16.000Z",
+  "updated_at": "2026-10-29T02:12:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "magnitude",
+    "re-upload",
+    "base_model:vllm-sr/d3-ultra",
+    "base_model:quantized:vllm-sr/d3-ultra",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 523,
+  "trending_score": 0,
+  "parameters": 25625905664,
+  "parameters_human": "25.63B",
+  "storage_bytes": 165920492608,
+  "storage_human": "165.9 GB",
+  "base_model": "vllm-sr/d3-ultra",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nadalyne Porn - PornTry.com",
+      "url": "https://www.porntry.com/models/nadalyne/",
+      "snippet": "Pornstar Top Trending Videos. Full Length 4K Ultra HD Porn Tube."
+    }
+  ]
+}

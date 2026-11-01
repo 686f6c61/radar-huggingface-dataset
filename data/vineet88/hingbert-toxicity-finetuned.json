@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "vineet88/hingbert-toxicity-finetuned",
+  "slug": "vineet88-hingbert-toxicity-finetuned",
+  "author": "vineet88",
+  "url": "https://huggingface.co/vineet88/hingbert-toxicity-finetuned",
+  "created_at": "2026-10-26T21:12:18.000Z",
+  "updated_at": "2026-10-28T20:09:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "toxicity",
+    "content-moderation",
+    "multilingual",
+    "hindi",
+    "hinglish",
+    "roberta",
+    "code-mixed",
+    "en",
+    "hi",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 278048262,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129300311,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

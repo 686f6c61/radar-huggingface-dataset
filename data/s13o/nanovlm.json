@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "s13o/nanoVLM",
+  "slug": "s13o-nanovlm",
+  "author": "s13o",
+  "url": "https://huggingface.co/s13o/nanoVLM",
+  "created_at": "2026-10-28T19:32:31.000Z",
+  "updated_at": "2026-10-28T19:38:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "nanovlm",
+  "languages": [],
+  "tags": [
+    "nanovlm",
+    "safetensors",
+    "vision-language",
+    "multimodal",
+    "research",
+    "image-text-to-text",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 460114016,
+  "parameters_human": "460.1M",
+  "storage_bytes": 1840504504,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "KonradDallaOrg/dimmy-gemma-4-gguf",
+  "slug": "konraddallaorg-dimmy-gemma-4-gguf",
+  "author": "KonradDallaOrg",
+  "url": "https://huggingface.co/KonradDallaOrg/dimmy-gemma-4-gguf",
+  "created_at": "2026-10-30T11:55:09.000Z",
+  "updated_at": "2026-10-30T13:34:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dimmy",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 190,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 63275790208,
+  "storage_human": "63.3 GB",
+  "base_model": "google/gemma-4-E2B-it, google/gemma-4-E4B-it, google/gemma-4-12B-it, google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

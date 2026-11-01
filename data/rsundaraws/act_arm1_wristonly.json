@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rsundaraws/act_arm1_wristonly",
+  "slug": "rsundaraws-act_arm1_wristonly",
+  "author": "rsundaraws",
+  "url": "https://huggingface.co/rsundaraws/act_arm1_wristonly",
+  "created_at": "2026-10-25T20:59:09.000Z",
+  "updated_at": "2026-10-25T20:59:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rsundaraws/so101_arm1_fixedspot_wrist",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

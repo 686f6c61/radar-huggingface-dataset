@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "fajriansyah/Qwen3-14B-GGUF",
+  "slug": "fajriansyah-qwen3-14b-gguf",
+  "author": "fajriansyah",
+  "url": "https://huggingface.co/fajriansyah/Qwen3-14B-GGUF",
+  "created_at": "2026-10-30T07:34:36.000Z",
+  "updated_at": "2026-10-30T07:34:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "arxiv:2309.00071",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:quantized:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 57600687904,
+  "storage_human": "57.6 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

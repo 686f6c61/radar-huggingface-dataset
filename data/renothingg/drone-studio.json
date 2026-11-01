@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ReNothingg/drone-studio",
+  "slug": "renothingg-drone-studio",
+  "author": "ReNothingg",
+  "url": "https://huggingface.co/ReNothingg/drone-studio",
+  "created_at": "2026-10-30T08:33:15.000Z",
+  "updated_at": "2026-10-30T08:53:00.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolov8",
+    "object-detection",
+    "drone-detection",
+    "anti-uav",
+    "small-object-detection",
+    "ru",
+    "dataset:GabrieleMagrini/FRED",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 250,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99950663,
+  "storage_human": "100 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "DUT Anti-UAV (test)",
+      "metric": null,
+      "value": 0.928
+    },
+    {
+      "task": null,
+      "dataset": "Halmstad Drone Dataset (test)",
+      "metric": null,
+      "value": 0.856
+    },
+    {
+      "task": null,
+      "dataset": "Anti-UAV300 RGB (test)",
+      "metric": null,
+      "value": 0.959
+    }
+  ],
+  "sources": []
+}

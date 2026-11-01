@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cagataydev/agi-wfm-so101-ttt",
+  "slug": "cagataydev-agi-wfm-so101-ttt",
+  "author": "cagataydev",
+  "url": "https://huggingface.co/cagataydev/agi-wfm-so101-ttt",
+  "created_at": "2026-10-26T06:18:36.000Z",
+  "updated_at": "2026-10-31T13:16:20.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "diffusers",
+    "safetensors",
+    "robotics",
+    "so101",
+    "cosmos",
+    "cosmos3",
+    "world-model",
+    "tic-tac-toe",
+    "agi.diy",
+    "dataset:cagataydev/so101-tic-tac-toe",
+    "dataset:cagataydev/so101-tic-tac-toe-norm",
+    "dataset:cagataydev/so101-tic-tac-toe-sim",
+    "dataset:cagataydev/so101-tic-tac-toe-sim-v2",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9144798356,
+  "storage_human": "9.1 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "tic-tac-toe pick-and-place on an SO-101 (20 task strings)",
+      "dataset": "ttt-board rendered simulation, 180 held-out episodes (seed_base 7, judge ttt-sim-judge-v1, 20 s cap)",
+      "metric": "episodes solved (n=180, 95 % CI 57.8–71.6; rendered sim, not the real arm)",
+      "value": 65
+    },
+    {
+      "task": "tic-tac-toe pick-and-place on an SO-101 (20 task strings)",
+      "dataset": "ttt-board rendered simulation, 180 held-out episodes (seed_base 7, judge ttt-sim-judge-v1, 20 s cap)",
+      "metric": "placements on the named cell (101 of 107)",
+      "value": 94.4
+    }
+  ],
+  "sources": []
+}

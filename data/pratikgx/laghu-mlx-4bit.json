@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "pratikgx/Laghu-MLX-4bit",
+  "slug": "pratikgx-laghu-mlx-4bit",
+  "author": "pratikgx",
+  "url": "https://huggingface.co/pratikgx/Laghu-MLX-4bit",
+  "created_at": "2026-10-27T23:55:27.000Z",
+  "updated_at": "2026-11-01T01:33:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_text",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:udgamlabs/Laghu-MLX",
+    "base_model:quantized:udgamlabs/Laghu-MLX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 151792668,
+  "parameters_human": "151.8M",
+  "storage_bytes": 85579604,
+  "storage_human": "86 MB",
+  "base_model": "udgamlabs/Laghu-MLX",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

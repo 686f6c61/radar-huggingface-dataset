@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Mannon/whisper-small-uzbek",
+  "slug": "mannon-whisper-small-uzbek",
+  "author": "Mannon",
+  "url": "https://huggingface.co/Mannon/whisper-small-uzbek",
+  "created_at": "2026-10-25T16:22:35.000Z",
+  "updated_at": "2026-10-28T16:36:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "uzbek",
+    "uz",
+    "asr",
+    "speech-recognition",
+    "dataset:mozilla-foundation/common_voice_22_0",
+    "dataset:google/fleurs",
+    "dataset:k2speech/FeruzaSpeech",
+    "arxiv:2205.12446",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 111,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "google/fleurs",
+      "metric": "WER",
+      "value": 16.96
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice Corpus 22.0",
+      "metric": "WER",
+      "value": 9.58
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Uzbek Speech Corpus (USC)",
+      "metric": "WER",
+      "value": 11.81
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FeruzaSpeech",
+      "metric": "WER",
+      "value": 7.95
+    }
+  ],
+  "sources": []
+}

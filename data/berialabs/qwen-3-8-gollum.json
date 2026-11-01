@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "BeriaLabs/Qwen-3.8-gollum",
+  "slug": "berialabs-qwen-3-8-gollum",
+  "author": "BeriaLabs",
+  "url": "https://huggingface.co/BeriaLabs/Qwen-3.8-gollum",
+  "created_at": "2026-10-13T15:19:03.000Z",
+  "updated_at": "2026-10-28T22:27:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "uncensored",
+    "abliterated",
+    "mechanistic-interpretability",
+    "qwen",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 37,
+  "downloads_30d": 38,
+  "trending_score": 12,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 153462425483,
+  "storage_human": "153.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Operaer/disaster-tweet-bert",
+  "slug": "operaer-disaster-tweet-bert",
+  "author": "Operaer",
+  "url": "https://huggingface.co/Operaer/disaster-tweet-bert",
+  "created_at": "2026-10-28T09:23:57.000Z",
+  "updated_at": "2026-10-29T12:00:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "disaster-tweets",
+    "kaggle",
+    "en",
+    "dataset:startificial/nlp-getting-started",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958624,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

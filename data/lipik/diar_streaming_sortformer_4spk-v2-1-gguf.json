@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "lipik/diar_streaming_sortformer_4spk-v2.1-gguf",
+  "slug": "lipik-diar_streaming_sortformer_4spk-v2-1-gguf",
+  "author": "lipik",
+  "url": "https://huggingface.co/lipik/diar_streaming_sortformer_4spk-v2.1-gguf",
+  "created_at": "2026-10-28T08:57:52.000Z",
+  "updated_at": "2026-10-28T08:58:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "speaker-diarization",
+    "diarization",
+    "streaming",
+    "sortformer",
+    "fastconformer",
+    "voice-activity-detection",
+    "en",
+    "arxiv:2409.06656",
+    "arxiv:2507.18446",
+    "arxiv:2408.13106",
+    "arxiv:2305.05084",
+    "arxiv:2310.12371",
+    "arxiv:2507.09226",
+    "base_model:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "base_model:quantized:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 117711368,
+  "parameters_human": "117.7M",
+  "storage_bytes": 139310336,
+  "storage_human": "139 MB",
+  "base_model": "nvidia/diar_streaming_sortformer_4spk-v2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brazzers XXX HD Sex - Hot Nude Pornstars & Milfs - Broxxx.com",
+      "url": "https://www.broxxx.com/",
+      "snippet": "Explore XXX HD Films Browse a massive collection of HD xxx films on Broxxx.com. Enjoy fast-streaming Brazzers sex videos with …"
+    }
+  ]
+}

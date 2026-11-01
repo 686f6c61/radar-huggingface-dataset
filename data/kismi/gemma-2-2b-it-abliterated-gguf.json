@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Kismi/gemma-2-2b-it-abliterated-GGUF",
+  "slug": "kismi-gemma-2-2b-it-abliterated-gguf",
+  "author": "Kismi",
+  "url": "https://huggingface.co/Kismi/gemma-2-2b-it-abliterated-GGUF",
+  "created_at": "2026-10-29T22:41:39.000Z",
+  "updated_at": "2026-10-29T22:41:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "en",
+    "base_model:IlyaGusev/gemma-2-2b-it-abliterated",
+    "base_model:quantized:IlyaGusev/gemma-2-2b-it-abliterated",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 384,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 36342744820,
+  "storage_human": "36.3 GB",
+  "base_model": "IlyaGusev/gemma-2-2b-it-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

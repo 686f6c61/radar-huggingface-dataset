@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/extrator-cardapios-0.5b-GGUF",
+  "slug": "mradermacher-extrator-cardapios-0-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/extrator-cardapios-0.5b-GGUF",
+  "created_at": "2026-10-29T09:17:22.000Z",
+  "updated_at": "2026-10-29T09:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "information-extraction",
+    "structured-output",
+    "json",
+    "lora",
+    "restaurant-menu",
+    "portuguese",
+    "pt",
+    "dataset:vkusterl/cardapios-sinteticos-ptbr",
+    "base_model:vkusterl/extrator-cardapios-0.5b",
+    "base_model:adapter:vkusterl/extrator-cardapios-0.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 445,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400190336,
+  "storage_human": "5.4 GB",
+  "base_model": "vkusterl/extrator-cardapios-0.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

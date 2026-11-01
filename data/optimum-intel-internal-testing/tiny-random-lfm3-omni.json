@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-lfm3-omni",
+  "slug": "optimum-intel-internal-testing-tiny-random-lfm3-omni",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-lfm3-omni",
+  "created_at": "2026-10-27T17:47:13.000Z",
+  "updated_at": "2026-10-27T17:48:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm3_omni",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 240,
+  "trending_score": 0,
+  "parameters": 2901872,
+  "parameters_human": "2.9M",
+  "storage_bytes": 37220578,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

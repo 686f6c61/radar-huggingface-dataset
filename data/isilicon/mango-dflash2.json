@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "isilicon/mango-dflash2",
+  "slug": "isilicon-mango-dflash2",
+  "author": "isilicon",
+  "url": "https://huggingface.co/isilicon/mango-dflash2",
+  "created_at": "2026-10-29T21:09:04.000Z",
+  "updated_at": "2026-10-30T06:52:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "mango",
+    "preservation-mirror",
+    "qwen-27b",
+    "auxiliary-component",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:finetune:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3848817896,
+  "storage_human": "3.8 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

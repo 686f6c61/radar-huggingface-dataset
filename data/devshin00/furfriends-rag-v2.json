@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "DevShin00/furfriends-rag-v2",
+  "slug": "devshin00-furfriends-rag-v2",
+  "author": "DevShin00",
+  "url": "https://huggingface.co/DevShin00/furfriends-rag-v2",
+  "created_at": "2026-10-28T12:57:11.000Z",
+  "updated_at": "2026-10-28T12:57:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen2",
+    "text-generation",
+    "pets",
+    "veterinary-first-aid",
+    "rag",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458309534,
+  "storage_human": "458 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

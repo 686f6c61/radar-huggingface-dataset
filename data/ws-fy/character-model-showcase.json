@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ws-fy/character-model-showcase",
+  "slug": "ws-fy-character-model-showcase",
+  "author": "ws-fy",
+  "url": "https://huggingface.co/ws-fy/character-model-showcase",
+  "created_at": "2026-10-29T02:54:42.000Z",
+  "updated_at": "2026-10-29T12:43:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "roleplay",
+    "character",
+    "text-generation",
+    "lora",
+    "qwen3.5",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 548,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 58518133757,
+  "storage_human": "58.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "12kimih/Qwen3.5-4B-MBT-R",
+  "slug": "12kimih-qwen3-5-4b-mbt-r",
+  "author": "12kimih",
+  "url": "https://huggingface.co/12kimih/Qwen3.5-4B-MBT-R",
+  "created_at": "2026-10-27T03:22:40.000Z",
+  "updated_at": "2026-10-27T03:52:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "reasoning",
+    "math",
+    "metacognition",
+    "sft",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:12kimih/mbt-traces",
+    "arxiv:2602.22508",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 456,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609701,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

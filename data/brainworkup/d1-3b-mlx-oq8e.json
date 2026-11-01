@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "brainworkup/d1-3B-MLX-oQ8e",
+  "slug": "brainworkup-d1-3b-mlx-oq8e",
+  "author": "brainworkup",
+  "url": "https://huggingface.co/brainworkup/d1-3B-MLX-oQ8e",
+  "created_at": "2026-11-01T03:10:08.000Z",
+  "updated_at": "2026-11-01T03:10:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_vl",
+    "oq",
+    "quantized",
+    "custom_code",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3123483888,
+  "parameters_human": "3.12B",
+  "storage_bytes": 3736626365,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

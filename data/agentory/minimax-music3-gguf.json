@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "agentory/MiniMax-Music3-GGUF",
+  "slug": "agentory-minimax-music3-gguf",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/MiniMax-Music3-GGUF",
+  "created_at": "2026-10-29T13:22:05.000Z",
+  "updated_at": "2026-10-29T13:22:05.000Z",
+  "license": "minimax-music3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "audio.cpp",
+  "languages": [],
+  "tags": [
+    "audio.cpp",
+    "gguf",
+    "minimax_music3",
+    "minimax-music3",
+    "text-to-audio",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:quantized:MiniMaxAI/MiniMax-Music3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 235,
+  "trending_score": 0,
+  "parameters": 25167881,
+  "parameters_human": "25.2M",
+  "storage_bytes": 58117672697,
+  "storage_human": "58.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

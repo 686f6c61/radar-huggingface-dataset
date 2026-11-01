@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "siddik-lanl/spus-pde-unet-36m-v2-one-eighth-pretraining-data",
+  "slug": "siddik-lanl-spus-pde-unet-36m-v2-one-eighth-pretraining-data",
+  "author": "siddik-lanl",
+  "url": "https://huggingface.co/siddik-lanl/spus-pde-unet-36m-v2-one-eighth-pretraining-data",
+  "created_at": "2026-10-26T23:45:51.000Z",
+  "updated_at": "2026-10-26T23:52:54.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "pde",
+    "neural-operator",
+    "foundation-model",
+    "u-net",
+    "scientific-ml",
+    "fluid-dynamics",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 36062117,
+  "parameters_human": "36.1M",
+  "storage_bytes": 144260940,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mev-fyi/data: The open-source repository mev.fyi aggregates ...",
+      "url": "https://github.com/mev-fyi/data",
+      "snippet": "MEV.FYI is the MEV research content aggregator and search engine Welcome to mev.fyi - the open-source initiative dedicated to …"
+    }
+  ]
+}

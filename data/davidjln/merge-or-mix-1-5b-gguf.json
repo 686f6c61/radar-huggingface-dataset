@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "DavidJLN/merge-or-mix-1.5b-GGUF",
+  "slug": "davidjln-merge-or-mix-1-5b-gguf",
+  "author": "DavidJLN",
+  "url": "https://huggingface.co/DavidJLN/merge-or-mix-1.5b-GGUF",
+  "created_at": "2026-10-27T15:21:01.000Z",
+  "updated_at": "2026-10-27T16:27:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama.cpp",
+    "qwen2",
+    "french",
+    "json",
+    "text-generation",
+    "fr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646572768,
+  "storage_human": "1.6 GB",
+  "base_model": "DavidJLN/merge-or-mix-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

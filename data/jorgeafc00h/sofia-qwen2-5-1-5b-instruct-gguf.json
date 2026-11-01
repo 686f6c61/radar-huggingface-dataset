@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "jorgeafc00h/sofia-qwen2.5-1.5b-instruct-gguf",
+  "slug": "jorgeafc00h-sofia-qwen2-5-1-5b-instruct-gguf",
+  "author": "jorgeafc00h",
+  "url": "https://huggingface.co/jorgeafc00h/sofia-qwen2.5-1.5b-instruct-gguf",
+  "created_at": "2026-10-29T17:55:39.000Z",
+  "updated_at": "2026-10-29T17:56:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen2",
+    "lora",
+    "companion",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 90,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048064,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

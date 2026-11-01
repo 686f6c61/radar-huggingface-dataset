@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/polyedit-qwen3-8b-property-v1-GGUF",
+  "slug": "mradermacher-polyedit-qwen3-8b-property-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/polyedit-qwen3-8b-property-v1-GGUF",
+  "created_at": "2026-10-28T11:57:42.000Z",
+  "updated_at": "2026-10-28T12:08:14.000Z",
+  "license": "qwen-apache-with-polyone-reference-terms",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "polymer",
+    "full-finetuning",
+    "chemistry",
+    "ko",
+    "dataset:luca0621/polyedit-korean-property-instructions-v6",
+    "base_model:luca0621/polyedit-qwen3-8b-property-v1",
+    "base_model:quantized:luca0621/polyedit-qwen3-8b-property-v1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 434,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425345280,
+  "storage_human": "73.4 GB",
+  "base_model": "luca0621/polyedit-qwen3-8b-property-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

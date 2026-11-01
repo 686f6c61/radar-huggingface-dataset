@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "AdagioBiology/world-v2",
+  "slug": "adagiobiology-world-v2",
+  "author": "AdagioBiology",
+  "url": "https://huggingface.co/AdagioBiology/world-v2",
+  "created_at": "2026-10-31T01:37:56.000Z",
+  "updated_at": "2026-10-31T05:07:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "moljepa_world_v2",
+    "protein-dynamics",
+    "molecular-dynamics",
+    "jepa",
+    "joint-embedding-predictive-architecture",
+    "equivariant",
+    "e3-equivariant",
+    "koopman",
+    "mdCATH",
+    "coarse-grained",
+    "other",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 2357339,
+  "parameters_human": "2.4M",
+  "storage_bytes": 19839537,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

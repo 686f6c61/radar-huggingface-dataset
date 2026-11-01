@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "palli23/pallr-whisper-tiny-is",
+  "slug": "palli23-pallr-whisper-tiny-is",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/pallr-whisper-tiny-is",
+  "created_at": "2026-10-27T21:20:46.000Z",
+  "updated_at": "2026-10-28T09:28:24.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "icelandic",
+    "speech-recognition",
+    "is",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151061672,
+  "storage_human": "151 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

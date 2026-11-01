@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "explodingyesyes/Kolibri1-Q5_K_Mixed-GGUF",
+  "slug": "explodingyesyes-kolibri1-q5_k_mixed-gguf",
+  "author": "explodingyesyes",
+  "url": "https://huggingface.co/explodingyesyes/Kolibri1-Q5_K_Mixed-GGUF",
+  "created_at": "2026-10-26T09:29:44.000Z",
+  "updated_at": "2026-10-26T23:22:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "kolibri1",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:Aleph-Alpha/Kolibri-1",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 78103074560,
+  "parameters_human": "78.10B",
+  "storage_bytes": 53908897824,
+  "storage_human": "53.9 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

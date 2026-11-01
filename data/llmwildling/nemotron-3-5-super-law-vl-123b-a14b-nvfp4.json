@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "LLMWildling/Nemotron-3.5-Super-Law-VL-123B-A14B-NVFP4",
+  "slug": "llmwildling-nemotron-3-5-super-law-vl-123b-a14b-nvfp4",
+  "author": "LLMWildling",
+  "url": "https://huggingface.co/LLMWildling/Nemotron-3.5-Super-Law-VL-123B-A14B-NVFP4",
+  "created_at": "2026-10-31T01:27:04.000Z",
+  "updated_at": "2026-10-31T01:28:17.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron_h_omni",
+    "legal",
+    "agent",
+    "reinforcement-learning",
+    "grpo",
+    "nemotron",
+    "nvfp4",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+    "license:other",
+    "8-bit",
+    "modelopt_mixed",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 141,
+  "trending_score": 0,
+  "parameters": 67093012458,
+  "parameters_human": "67.09B",
+  "storage_bytes": 76538061747,
+  "storage_human": "76.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

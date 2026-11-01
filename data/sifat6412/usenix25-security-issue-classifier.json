@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "sifat6412/USENIX25-Security-Issue-Classifier",
+  "slug": "sifat6412-usenix25-security-issue-classifier",
+  "author": "sifat6412",
+  "url": "https://huggingface.co/sifat6412/USENIX25-Security-Issue-Classifier",
+  "created_at": "2026-10-27T10:58:06.000Z",
+  "updated_at": "2026-10-27T11:42:49.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "vulnerability-reporting",
+    "usenix-security-2025",
+    "github-issues",
+    "security-issue-classification",
+    "en",
+    "arxiv:2506.07728",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:cc",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498612824,
+  "storage_human": "499 MB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caleb McDonald - Director of Enterprise Cybersecurity ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/caleb-mcdonald-b4308a199",
+      "snippet": "View Caleb McDonald’s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

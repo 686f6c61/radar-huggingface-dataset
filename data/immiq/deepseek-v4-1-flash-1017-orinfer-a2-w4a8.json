@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "immiq/DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8",
+  "slug": "immiq-deepseek-v4-1-flash-1017-orinfer-a2-w4a8",
+  "author": "immiq",
+  "url": "https://huggingface.co/immiq/DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8",
+  "created_at": "2026-10-31T02:56:01.000Z",
+  "updated_at": "2026-10-31T10:45:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "orinfer",
+    "ascend",
+    "ascend910b",
+    "w4a8",
+    "int4",
+    "moe",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 116,
+  "trending_score": 0,
+  "parameters": 501877350464,
+  "parameters_human": "501.88B",
+  "storage_bytes": 510089196120,
+  "storage_human": "510.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

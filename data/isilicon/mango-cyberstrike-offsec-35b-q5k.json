@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "isilicon/mango-cyberstrike-offsec-35b-q5k",
+  "slug": "isilicon-mango-cyberstrike-offsec-35b-q5k",
+  "author": "isilicon",
+  "url": "https://huggingface.co/isilicon/mango-cyberstrike-offsec-35b-q5k",
+  "created_at": "2026-10-29T21:08:52.000Z",
+  "updated_at": "2026-10-30T06:51:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mango",
+    "preservation-mirror",
+    "cyberstrike",
+    "text-generation",
+    "base_model:huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF",
+    "base_model:quantized:huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 25347531968,
+  "storage_human": "25.3 GB",
+  "base_model": "huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

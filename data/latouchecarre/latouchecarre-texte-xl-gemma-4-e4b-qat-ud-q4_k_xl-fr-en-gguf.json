@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "LaToucheCarre/LaToucheCarre-Texte-XL-Gemma-4-E4B-QAT-UD-Q4_K_XL-FR-EN-GGUF",
+  "slug": "latouchecarre-latouchecarre-texte-xl-gemma-4-e4b-qat-ud-q4_k_xl-fr-en-gguf",
+  "author": "LaToucheCarre",
+  "url": "https://huggingface.co/LaToucheCarre/LaToucheCarre-Texte-XL-Gemma-4-E4B-QAT-UD-Q4_K_XL-FR-EN-GGUF",
+  "created_at": "2026-10-30T15:29:41.000Z",
+  "updated_at": "2026-10-30T15:31:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "french",
+    "grammar-correction",
+    "qat",
+    "fr",
+    "en",
+    "base_model:unsloth/gemma-4-E4B-it-qat-GGUF",
+    "base_model:quantized:unsloth/gemma-4-E4B-it-qat-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": 6087737642,
+  "parameters_human": "6.09B",
+  "storage_bytes": 3436577312,
+  "storage_human": "3.4 GB",
+  "base_model": "unsloth/gemma-4-E4B-it-qat-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

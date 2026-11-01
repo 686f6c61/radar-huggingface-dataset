@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "groxaxo/MOSS-TTS-v1.5-EXL3-5bit",
+  "slug": "groxaxo-moss-tts-v1-5-exl3-5bit",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/MOSS-TTS-v1.5-EXL3-5bit",
+  "created_at": "2026-10-27T04:12:12.000Z",
+  "updated_at": "2026-10-27T04:13:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_tts_delay",
+    "moss-tts",
+    "voice-cloning",
+    "quantization",
+    "custom-code",
+    "exl3",
+    "text-to-speech",
+    "custom_code",
+    "en",
+    "es",
+    "base_model:OpenMOSS-Team/MOSS-TTS-v1.5",
+    "base_model:finetune:OpenMOSS-Team/MOSS-TTS-v1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 3761398784,
+  "parameters_human": "3.76B",
+  "storage_bytes": 6124977715,
+  "storage_human": "6.1 GB",
+  "base_model": "OpenMOSS-Team/MOSS-TTS-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

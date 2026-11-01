@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "laabidate/shaylah-darija-4b-merged",
+  "slug": "laabidate-shaylah-darija-4b-merged",
+  "author": "laabidate",
+  "url": "https://huggingface.co/laabidate/shaylah-darija-4b-merged",
+  "created_at": "2026-10-25T20:33:40.000Z",
+  "updated_at": "2026-10-25T21:58:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "darija",
+    "moroccan-arabic",
+    "conversational",
+    "folk-culture",
+    "ar",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 264,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8433890817,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

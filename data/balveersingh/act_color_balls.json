@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "balveersingh/act_color_balls",
+  "slug": "balveersingh-act_color_balls",
+  "author": "balveersingh",
+  "url": "https://huggingface.co/balveersingh/act_color_balls",
+  "created_at": "2026-10-27T21:15:31.000Z",
+  "updated_at": "2026-10-27T21:16:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:balveersingh/color_balls",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 45245446,
+  "parameters_human": "45.2M",
+  "storage_bytes": 181024152,
+  "storage_human": "181 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

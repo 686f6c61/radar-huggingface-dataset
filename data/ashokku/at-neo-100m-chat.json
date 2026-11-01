@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ashokku/at-neo-100m-chat",
+  "slug": "ashokku-at-neo-100m-chat",
+  "author": "ashokku",
+  "url": "https://huggingface.co/ashokku/at-neo-100m-chat",
+  "created_at": "2026-10-25T04:51:43.000Z",
+  "updated_at": "2026-10-25T04:51:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "from-scratch",
+    "small-language-model",
+    "chat",
+    "sft",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 241,
+  "trending_score": 0,
+  "parameters": 100682496,
+  "parameters_human": "100.7M",
+  "storage_bytes": 201377264,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

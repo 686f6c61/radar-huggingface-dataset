@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "brishen/gemma-4-E2B-it-enja-aggr",
+  "slug": "brishen-gemma-4-e2b-it-enja-aggr",
+  "author": "brishen",
+  "url": "https://huggingface.co/brishen/gemma-4-E2B-it-enja-aggr",
+  "created_at": "2026-10-30T02:27:58.000Z",
+  "updated_at": "2026-10-30T02:28:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "vocabulary-pruning",
+    "any-to-any",
+    "en",
+    "ja",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 3753492035,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7507248926,
+  "storage_human": "7.5 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

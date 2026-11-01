@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "rohithck/delphi-2e20-1.9Bparams-14.8Btokens-seed42",
+  "slug": "rohithck-delphi-2e20-1-9bparams-14-8btokens-seed42",
+  "author": "rohithck",
+  "url": "https://huggingface.co/rohithck/delphi-2e20-1.9Bparams-14.8Btokens-seed42",
+  "created_at": "2026-10-29T18:36:22.000Z",
+  "updated_at": "2026-10-29T18:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "marin",
+    "delphi",
+    "scaling-laws",
+    "pretrained",
+    "research-only",
+    "en",
+    "dataset:nvidia/Nemotron-CC",
+    "dataset:bigcode/starcoderdata",
+    "dataset:EleutherAI/proof-pile-2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 1934716160,
+  "parameters_human": "1.93B",
+  "storage_bytes": 7756101200,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

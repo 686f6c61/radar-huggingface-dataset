@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ketiholo/demo4_env_gauss2_ch100",
+  "slug": "ketiholo-demo4_env_gauss2_ch100",
+  "author": "ketiholo",
+  "url": "https://huggingface.co/ketiholo/demo4_env_gauss2_ch100",
+  "created_at": "2026-10-30T02:01:49.000Z",
+  "updated_at": "2026-10-30T02:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:ketiholo/demo4",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 51676313,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206740796,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "looplj/video-depth-anything-small-onnx",
+  "slug": "looplj-video-depth-anything-small-onnx",
+  "author": "looplj",
+  "url": "https://huggingface.co/looplj/video-depth-anything-small-onnx",
+  "created_at": "2026-10-26T03:40:22.000Z",
+  "updated_at": "2026-10-26T03:40:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "video",
+    "depth-estimation",
+    "dynamic-shapes",
+    "video-depth-anything",
+    "fp32",
+    "base_model:depth-anything/Video-Depth-Anything-Small",
+    "base_model:quantized:depth-anything/Video-Depth-Anything-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116528885,
+  "storage_human": "117 MB",
+  "base_model": "depth-anything/Video-Depth-Anything-Small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

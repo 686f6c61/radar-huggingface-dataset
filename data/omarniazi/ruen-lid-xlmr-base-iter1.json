@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "OmarNiazi/ruen-lid-xlmr-base-iter1",
+  "slug": "omarniazi-ruen-lid-xlmr-base-iter1",
+  "author": "OmarNiazi",
+  "url": "https://huggingface.co/OmarNiazi/ruen-lid-xlmr-base-iter1",
+  "created_at": "2026-10-25T16:40:25.000Z",
+  "updated_at": "2026-10-25T16:44:50.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ur",
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "language-identification",
+    "code-mixing",
+    "roman-urdu",
+    "token-classification",
+    "ur",
+    "hi",
+    "en",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126928332,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

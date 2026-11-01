@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "magnitudedev/d1-2B-GGUF",
+  "slug": "magnitudedev-d1-2b-gguf",
+  "author": "magnitudedev",
+  "url": "https://huggingface.co/magnitudedev/d1-2B-GGUF",
+  "created_at": "2026-10-29T00:09:04.000Z",
+  "updated_at": "2026-10-29T01:28:45.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "magnitude",
+    "re-upload",
+    "base_model:LiquidAI/d1-2B",
+    "base_model:quantized:LiquidAI/d1-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 275,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 11643445824,
+  "storage_human": "11.6 GB",
+  "base_model": "LiquidAI/d1-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Morrow-2.6B-GGUF",
+  "slug": "mradermacher-morrow-2-6b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Morrow-2.6B-GGUF",
+  "created_at": "2026-10-25T09:58:36.000Z",
+  "updated_at": "2026-10-25T14:06:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "multi-turn",
+    "dialogue",
+    "lfm2",
+    "en",
+    "base_model:noumenon-labs/Morrow-2.6B",
+    "base_model:quantized:noumenon-labs/Morrow-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 408,
+  "trending_score": 0,
+  "parameters": 2569272320,
+  "parameters_human": "2.57B",
+  "storage_bytes": 22815080448,
+  "storage_human": "22.8 GB",
+  "base_model": "noumenon-labs/Morrow-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/JoyAI-Image-Edit",
+  "slug": "jinstudio-joyai-image-edit",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/JoyAI-Image-Edit",
+  "created_at": "2026-10-28T05:41:56.000Z",
+  "updated_at": "2026-10-28T05:41:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2605.04128",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50581091129,
+  "storage_human": "50.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

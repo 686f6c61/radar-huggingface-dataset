@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "agentory/Qwen-Image-2.1-Turbo-GGUF",
+  "slug": "agentory-qwen-image-2-1-turbo-gguf",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/Qwen-Image-2.1-Turbo-GGUF",
+  "created_at": "2026-10-30T18:58:39.000Z",
+  "updated_at": "2026-10-30T18:58:39.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "unsloth",
+    "qwen",
+    "image-generation",
+    "turbo",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 81,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 64836913419,
+  "storage_human": "64.8 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

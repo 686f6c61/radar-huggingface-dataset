@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "xiaomayi025/mayi-psy-it-GGUF",
+  "slug": "xiaomayi025-mayi-psy-it-gguf",
+  "author": "xiaomayi025",
+  "url": "https://huggingface.co/xiaomayi025/mayi-psy-it-GGUF",
+  "created_at": "2026-10-25T02:08:11.000Z",
+  "updated_at": "2026-10-25T03:32:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "gemma-4",
+    "q4_k_m",
+    "unsloth",
+    "lora",
+    "chinese",
+    "mental-health-support",
+    "text-generation",
+    "zh",
+    "dataset:qiuhuachuan/PsyDial-D3",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:adapter:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 347,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 3416116128,
+  "storage_human": "3.4 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

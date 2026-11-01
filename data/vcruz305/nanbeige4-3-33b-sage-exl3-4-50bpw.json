@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Nanbeige4.3-33B-SAGE-EXL3-4.50bpw",
+  "slug": "vcruz305-nanbeige4-3-33b-sage-exl3-4-50bpw",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Nanbeige4.3-33B-SAGE-EXL3-4.50bpw",
+  "created_at": "2026-10-26T05:27:30.000Z",
+  "updated_at": "2026-10-26T17:57:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "nanbeige",
+    "exl3",
+    "exllamav3",
+    "sage-exl3",
+    "quantization",
+    "agentic-coding",
+    "tool-use",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 216,
+  "trending_score": 0,
+  "parameters": 9850210304,
+  "parameters_human": "9.85B",
+  "storage_bytes": 19721820583,
+  "storage_human": "19.7 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "massage | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/tags/massage/",
+      "snippet": "Sep 15, 2026 · Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the forum is moving to a brand …"
+    }
+  ]
+}

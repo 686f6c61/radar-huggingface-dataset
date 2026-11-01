@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Kenvenx/lumivore-1.2btest",
+  "slug": "kenvenx-lumivore-1-2btest",
+  "author": "Kenvenx",
+  "url": "https://huggingface.co/Kenvenx/lumivore-1.2btest",
+  "created_at": "2026-10-24T23:09:07.000Z",
+  "updated_at": "2026-10-24T23:10:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_moe",
+    "text-generation",
+    "moe",
+    "mixture-of-experts",
+    "openclaw",
+    "agents",
+    "conversational",
+    "en",
+    "dataset:LumiVore/lumivore-stage1-training-data",
+    "dataset:LumiVore/lumivore-stage2-training-data",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 351,
+  "trending_score": 0,
+  "parameters": 1362385792,
+  "parameters_human": "1.36B",
+  "storage_bytes": 3477740679,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

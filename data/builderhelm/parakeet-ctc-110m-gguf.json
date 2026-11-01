@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BuilderHelm/Parakeet-CTC-110M-GGUF",
+  "slug": "builderhelm-parakeet-ctc-110m-gguf",
+  "author": "BuilderHelm",
+  "url": "https://huggingface.co/BuilderHelm/Parakeet-CTC-110M-GGUF",
+  "created_at": "2026-10-25T16:42:58.000Z",
+  "updated_at": "2026-10-25T19:11:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "parakeet",
+    "FastConformer",
+    "Conformer",
+    "ctc",
+    "parakeet.cpp",
+    "q8_0",
+    "quantized",
+    "keyword-spotting",
+    "on-device",
+    "apple-silicon",
+    "metal",
+    "zenvoice",
+    "en",
+    "dataset:librispeech_asr",
+    "dataset:fisher_corpus",
+    "dataset:mozilla-foundation/common_voice_8_0",
+    "dataset:National-Singapore-Corpus-Part-1",
+    "dataset:vctk",
+    "dataset:voxpopuli",
+    "dataset:europarl",
+    "dataset:multilingual_librispeech",
+    "base_model:nvidia/parakeet-tdt_ctc-110m",
+    "base_model:quantized:nvidia/parakeet-tdt_ctc-110m",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 109326305,
+  "parameters_human": "109.3M",
+  "storage_bytes": 158614144,
+  "storage_human": "159 MB",
+  "base_model": "nvidia/parakeet-tdt_ctc-110m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22 contextual subset (772 clips)",
+      "metric": "Corpus WER (Whisper English normalization; greedy CTC, Q8_0)",
+      "value": 17.529987011994805
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mist-models/mist-1.8B-g53ib4q2-tmQM",
+  "slug": "mist-models-mist-1-8b-g53ib4q2-tmqm",
+  "author": "mist-models",
+  "url": "https://huggingface.co/mist-models/mist-1.8B-g53ib4q2-tmQM",
+  "created_at": "2026-10-29T15:46:52.000Z",
+  "updated_at": "2026-10-29T16:03:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mist_finetuned",
+    "feature-extraction",
+    "mist",
+    "chemistry",
+    "molecular-property-prediction",
+    "custom_code",
+    "en",
+    "arxiv:2510.18900",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 1800218904,
+  "parameters_human": "1.80B",
+  "storage_bytes": 7200932592,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MIST Normandie - La culture de la prévention",
+      "url": "https://www.mist-normandie.fr/",
+      "snippet": "L'agenda Retrouvez ici tous les événements à venir de MIST Normandie > Voir tous les événements 05 Nov."
+    },
+    {
+      "title": "Mist – Mission d'intervention et de sensibilisation contre la traite ...",
+      "url": "http://mist-association.org/",
+      "snippet": "La Mist est un pôle ressources pour les victimes et les professionnels qui les rencontrent et les accompagnent. La Mist est …"
+    },
+    {
+      "title": "Portail adhérent MIST Normandie - La culture de la prévention",
+      "url": "https://www.mist-normandie.fr/gedCategory/15/display/Portail-adherent-MIST-Normandie",
+      "snippet": "Les médecins du travail et les équipes pluridisciplinaires santé-travail de MIST Normandie accompagnent et conseillent les …"
+    },
+    {
+      "title": "The Mist - Film 2007 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=122632.html",
+      "snippet": "The Mist est un film réalisé par Frank Darabont avec Thomas Jane, Marcia Gay Harden."
+    },
+    {
+      "title": "Mist – Mission d'intervention et de sensibilisation contre la traite ...",
+      "url": "https://mist-association.org/en/home/",
+      "snippet": "Mist is a resource centre for the victims, and also for the professionals who meet and support them. Mist is registered on the list of …"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "Ooriginador/Ark-Cortex-v3-8B-Ternary-GGUF",
+  "slug": "ooriginador-ark-cortex-v3-8b-ternary-gguf",
+  "author": "Ooriginador",
+  "url": "https://huggingface.co/Ooriginador/Ark-Cortex-v3-8B-Ternary-GGUF",
+  "created_at": "2026-10-27T15:10:55.000Z",
+  "updated_at": "2026-10-27T15:12:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "pt",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_vl",
+    "ternary",
+    "1.58-bit",
+    "base-3",
+    "qwen3",
+    "q2_0",
+    "ark-cortex",
+    "arkheionnet",
+    "chain-of-thought",
+    "reasoning",
+    "math",
+    "code",
+    "hip-wave32",
+    "amd-rocm",
+    "sovereign-ai",
+    "text-generation",
+    "conversational",
+    "en",
+    "pt",
+    "zh",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 222,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 4450006880,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Exact Match (4-shot CoT)",
+      "value": 78.4
+    },
+    {
+      "task": "Advanced Mathematics",
+      "dataset": "MATH-500",
+      "metric": "Accuracy (0-shot CoT)",
+      "value": 67.4
+    },
+    {
+      "task": "General Knowledge & Problem Solving",
+      "dataset": "MMLU",
+      "metric": "5-shot Accuracy",
+      "value": 74.2
+    },
+    {
+      "task": "Professional Multi-Task Understanding",
+      "dataset": "MMLU-Pro",
+      "metric": "5-shot Accuracy",
+      "value": 65.8
+    },
+    {
+      "task": "Scientific Reasoning",
+      "dataset": "GPQA Diamond",
+      "metric": "Accuracy (0-shot CoT)",
+      "value": 38
+    },
+    {
+      "task": "Python Code Generation",
+      "dataset": "HumanEval",
+      "metric": "Pass@1",
+      "value": 36.8
+    },
+    {
+      "task": "Live Code Benchmarking",
+      "dataset": "LiveCodeBench",
+      "metric": "Pass@1",
+      "value": 32.5
+    },
+    {
+      "task": "Language Modeling & Compression",
+      "dataset": "WikiText-2",
+      "metric": "Perplexity (PPL)",
+      "value": 24.1
+    }
+  ],
+  "sources": []
+}

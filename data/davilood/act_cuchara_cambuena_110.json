@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Davilood/act_cuchara_cambuena_110",
+  "slug": "davilood-act_cuchara_cambuena_110",
+  "author": "Davilood",
+  "url": "https://huggingface.co/Davilood/act_cuchara_cambuena_110",
+  "created_at": "2026-10-25T10:12:01.000Z",
+  "updated_at": "2026-10-25T10:12:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Davilood/cuchara_cambuena",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

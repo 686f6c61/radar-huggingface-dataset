@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "aabx221/Qwen3.5-4B-p70-GRPO-PhCS-step107",
+  "slug": "aabx221-qwen3-5-4b-p70-grpo-phcs-step107",
+  "author": "aabx221",
+  "url": "https://huggingface.co/aabx221/Qwen3.5-4B-p70-GRPO-PhCS-step107",
+  "created_at": "2026-10-30T03:00:06.000Z",
+  "updated_at": "2026-10-30T04:53:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3.5",
+    "grpo",
+    "retool",
+    "excs",
+    "phcs",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 9695758254,
+  "storage_human": "9.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

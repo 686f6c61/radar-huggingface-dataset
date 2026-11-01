@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Superwheat/Gimbal-27B",
+  "slug": "superwheat-gimbal-27b",
+  "author": "Superwheat",
+  "url": "https://huggingface.co/Superwheat/Gimbal-27B",
+  "created_at": "2026-10-25T01:28:03.000Z",
+  "updated_at": "2026-10-28T08:48:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_text",
+    "decision-model",
+    "typed-decisions",
+    "calibrated-probabilities",
+    "classification",
+    "zero-shot-classification",
+    "nli",
+    "cross-encoder",
+    "lora",
+    "peft",
+    "qwen3.8",
+    "jevbench",
+    "agents",
+    "llm-judge",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 105,
+  "trending_score": 0,
+  "parameters": 25624615424,
+  "parameters_human": "25.62B",
+  "storage_bytes": 51729369172,
+  "storage_human": "51.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed decisions (consistency)",
+      "dataset": "JevBench-mini",
+      "metric": "JevBench-mini coherence (overall)",
+      "value": 91.3
+    },
+    {
+      "task": "Typed decisions (consistency)",
+      "dataset": "JevBench-mini",
+      "metric": "JevBench-mini gold accuracy (all)",
+      "value": 90.9
+    },
+    {
+      "task": "Typed decisions (sealed held-out halves)",
+      "dataset": "Gimbal sealed lockbox (typed, 3,836 cases)",
+      "metric": "Typed pooled accuracy (sealed)",
+      "value": 80.89
+    },
+    {
+      "task": "Unseen task families (sealed held-out halves)",
+      "dataset": "Gimbal sealed lockbox (unseen families, 1,647 cases)",
+      "metric": "UNSEEN pooled accuracy (sealed)",
+      "value": 77.29
+    },
+    {
+      "task": "Math decisions",
+      "dataset": "Gimbal math (gate-math + 5 held-out arithmetic sets, 3,246 cases)",
+      "metric": "MATH pooled accuracy",
+      "value": 89.46
+    }
+  ],
+  "sources": []
+}

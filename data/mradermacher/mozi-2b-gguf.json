@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mozi-2b-GGUF",
+  "slug": "mradermacher-mozi-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mozi-2b-GGUF",
+  "created_at": "2026-10-30T21:44:46.000Z",
+  "updated_at": "2026-10-31T01:52:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "reasoning",
+    "distillation",
+    "lora",
+    "en",
+    "base_model:MoziLabs/Mozi-2b",
+    "base_model:adapter:MoziLabs/Mozi-2b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 396,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 18070139904,
+  "storage_human": "18.1 GB",
+  "base_model": "MoziLabs/Mozi-2b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

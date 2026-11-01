@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "pkcpkc/gbert-large-mlx",
+  "slug": "pkcpkc-gbert-large-mlx",
+  "author": "pkcpkc",
+  "url": "https://huggingface.co/pkcpkc/gbert-large-mlx",
+  "created_at": "2026-10-26T22:01:13.000Z",
+  "updated_at": "2026-10-26T22:03:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bert",
+    "german",
+    "embeddings",
+    "de",
+    "base_model:deepset/gbert-large",
+    "base_model:finetune:deepset/gbert-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 335735808,
+  "parameters_human": "335.7M",
+  "storage_bytes": 671516218,
+  "storage_human": "672 MB",
+  "base_model": "deepset/gbert-large",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

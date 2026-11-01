@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kanso-Satori-1.0-bf16-GGUF",
+  "slug": "mradermacher-kanso-satori-1-0-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kanso-Satori-1.0-bf16-GGUF",
+  "created_at": "2026-10-25T09:44:36.000Z",
+  "updated_at": "2026-10-26T02:28:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "kanso",
+    "mlx",
+    "zenvoice",
+    "dictation",
+    "text-formatting",
+    "lora",
+    "en",
+    "base_model:BuilderHelm/Kanso-Satori-1.0-bf16",
+    "base_model:adapter:BuilderHelm/Kanso-Satori-1.0-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 510,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389996544,
+  "storage_human": "36.4 GB",
+  "base_model": "BuilderHelm/Kanso-Satori-1.0-bf16",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

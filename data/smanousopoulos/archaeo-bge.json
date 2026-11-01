@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "smanousopoulos/archaeo-bge",
+  "slug": "smanousopoulos-archaeo-bge",
+  "author": "smanousopoulos",
+  "url": "https://huggingface.co/smanousopoulos/archaeo-bge",
+  "created_at": "2026-10-26T21:48:50.000Z",
+  "updated_at": "2026-10-26T22:06:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "en",
+    "base_model:BAAI/bge-large-en-v1.5",
+    "base_model:finetune:BAAI/bge-large-en-v1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 335141888,
+  "parameters_human": "335.1M",
+  "storage_bytes": 8027405503,
+  "storage_human": "8.0 GB",
+  "base_model": "BAAI/bge-large-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

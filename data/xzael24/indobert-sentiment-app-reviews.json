@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "xzael24/indobert-sentiment-app-reviews",
+  "slug": "xzael24-indobert-sentiment-app-reviews",
+  "author": "xzael24",
+  "url": "https://huggingface.co/xzael24/indobert-sentiment-app-reviews",
+  "created_at": "2026-11-01T01:16:41.000Z",
+  "updated_at": "2026-11-01T01:17:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "indonesian",
+    "id",
+    "base_model:indolem/indobert-base-uncased",
+    "base_model:finetune:indolem/indobert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110559746,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442262520,
+  "storage_human": "442 MB",
+  "base_model": "indolem/indobert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "alesha-pro/Qwen3.8-27B-Persona-v2-GGUF",
+  "slug": "alesha-pro-qwen3-8-27b-persona-v2-gguf",
+  "author": "alesha-pro",
+  "url": "https://huggingface.co/alesha-pro/Qwen3.8-27B-Persona-v2-GGUF",
+  "created_at": "2026-10-26T03:29:39.000Z",
+  "updated_at": "2026-10-26T03:31:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "control-vector",
+    "persona-steering",
+    "experimental",
+    "text-generation",
+    "en",
+    "ru",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": 10240,
+  "parameters_human": "10240",
+  "storage_bytes": 16547400000,
+  "storage_human": "16.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

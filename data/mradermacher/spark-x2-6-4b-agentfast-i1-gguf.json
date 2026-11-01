@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Spark-X2.6-4B-AgentFast-i1-GGUF",
+  "slug": "mradermacher-spark-x2-6-4b-agentfast-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Spark-X2.6-4B-AgentFast-i1-GGUF",
+  "created_at": "2026-11-01T01:33:05.000Z",
+  "updated_at": "2026-11-01T01:34:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "spark",
+    "sparkx2_5",
+    "agent",
+    "tool-calling",
+    "on-device",
+    "fast-inference",
+    "en",
+    "zh",
+    "base_model:JamieBradfield/Spark-X2.6-4B-AgentFast",
+    "base_model:quantized:JamieBradfield/Spark-X2.6-4B-AgentFast",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1772280,
+  "parameters_human": "1.8M",
+  "storage_bytes": 7151808,
+  "storage_human": "7 MB",
+  "base_model": "JamieBradfield/Spark-X2.6-4B-AgentFast",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

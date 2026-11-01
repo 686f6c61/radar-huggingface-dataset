@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "yerzer/crislang-models",
+  "slug": "yerzer-crislang-models",
+  "author": "yerzer",
+  "url": "https://huggingface.co/yerzer/crislang-models",
+  "created_at": "2026-10-30T14:38:06.000Z",
+  "updated_at": "2026-10-30T15:25:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:unsloth/gemma-4-E2B-it-qat-GGUF",
+    "base_model:quantized:unsloth/gemma-4-E2B-it-qat-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 9022253536,
+  "storage_human": "9.0 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-qat-GGUF, unsloth/gemma-4-E4B-it-qat-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

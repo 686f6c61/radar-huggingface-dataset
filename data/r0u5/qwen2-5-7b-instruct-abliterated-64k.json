@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "R0U5/Qwen2.5-7B-Instruct-abliterated-64k",
+  "slug": "r0u5-qwen2-5-7b-instruct-abliterated-64k",
+  "author": "R0U5",
+  "url": "https://huggingface.co/R0U5/Qwen2.5-7B-Instruct-abliterated-64k",
+  "created_at": "2026-10-25T21:16:20.000Z",
+  "updated_at": "2026-10-25T21:17:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "refusal-removed",
+    "qwen2.5-7b-instruct",
+    "long-context",
+    "text-generation",
+    "en",
+    "base_model:mradermacher/Qwen2.5-7B-Instruct-abliterated-GGUF",
+    "base_model:quantized:mradermacher/Qwen2.5-7B-Instruct-abliterated-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683074560,
+  "storage_human": "4.7 GB",
+  "base_model": "mradermacher/Qwen2.5-7B-Instruct-abliterated-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

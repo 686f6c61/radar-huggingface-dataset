@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Scicom-intl/pitchy",
+  "slug": "scicom-intl-pitchy",
+  "author": "Scicom-intl",
+  "url": "https://huggingface.co/Scicom-intl/pitchy",
+  "created_at": "2026-10-27T13:40:01.000Z",
+  "updated_at": "2026-10-29T01:27:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "pitch-estimation",
+    "f0",
+    "speech",
+    "audio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176459588,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

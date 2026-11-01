@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "davidflanagancomm/minicpm2bremix2",
+  "slug": "davidflanagancomm-minicpm2bremix2",
+  "author": "davidflanagancomm",
+  "url": "https://huggingface.co/davidflanagancomm/minicpm2bremix2",
+  "created_at": "2026-10-28T03:46:27.000Z",
+  "updated_at": "2026-10-28T04:16:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "minicpm",
+    "experimental",
+    "base_model:openbmb/MiniCPM5-2B-GGUF",
+    "base_model:quantized:openbmb/MiniCPM5-2B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 21160269120,
+  "storage_human": "21.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

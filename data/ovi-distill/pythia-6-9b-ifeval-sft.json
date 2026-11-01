@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ovi-distill/pythia-6.9b-ifeval-sft",
+  "slug": "ovi-distill-pythia-6-9b-ifeval-sft",
+  "author": "ovi-distill",
+  "url": "https://huggingface.co/ovi-distill/pythia-6.9b-ifeval-sft",
+  "created_at": "2026-10-27T14:45:33.000Z",
+  "updated_at": "2026-10-27T14:49:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "instruction-following",
+    "ifeval",
+    "pythia",
+    "sft",
+    "conversational",
+    "en",
+    "dataset:allenai/RLVR-IFeval",
+    "base_model:EleutherAI/pythia-6.9b",
+    "base_model:finetune:EleutherAI/pythia-6.9b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 245,
+  "trending_score": 0,
+  "parameters": 6857302016,
+  "parameters_human": "6.86B",
+  "storage_bytes": 27429254560,
+  "storage_human": "27.4 GB",
+  "base_model": "EleutherAI/pythia-6.9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

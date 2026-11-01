@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "dimondim0nych/SmolLM-135M-F32-GGUF",
+  "slug": "dimondim0nych-smollm-135m-f32-gguf",
+  "author": "dimondim0nych",
+  "url": "https://huggingface.co/dimondim0nych/SmolLM-135M-F32-GGUF",
+  "created_at": "2026-10-29T13:38:56.000Z",
+  "updated_at": "2026-10-29T13:41:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:HuggingFaceTB/SmolLM-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM-135M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 539845120,
+  "storage_human": "540 MB",
+  "base_model": "HuggingFaceTB/SmolLM-135M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

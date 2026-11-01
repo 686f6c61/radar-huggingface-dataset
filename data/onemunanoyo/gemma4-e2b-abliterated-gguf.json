@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "onemunanoyo/gemma4-E2B-Abliterated-GGUF",
+  "slug": "onemunanoyo-gemma4-e2b-abliterated-gguf",
+  "author": "onemunanoyo",
+  "url": "https://huggingface.co/onemunanoyo/gemma4-E2B-Abliterated-GGUF",
+  "created_at": "2026-10-30T18:59:01.000Z",
+  "updated_at": "2026-10-30T20:02:48.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliteration",
+    "refusal-removal",
+    "gemma4",
+    "japanese",
+    "llama.cpp",
+    "text-generation",
+    "ja",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 402,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 21466899840,
+  "storage_human": "21.5 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

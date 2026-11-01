@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/Municipal-Archive-OCR-359",
+  "slug": "sotaagi2030-municipal-archive-ocr-359",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/Municipal-Archive-OCR-359",
+  "created_at": "2026-10-27T16:29:30.000Z",
+  "updated_at": "2026-10-27T16:29:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "compact-ocr-v2",
+    "image-to-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95,
+  "storage_human": "95 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

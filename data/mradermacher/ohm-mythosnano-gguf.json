@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ohm-MythosNano-GGUF",
+  "slug": "mradermacher-ohm-mythosnano-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ohm-MythosNano-GGUF",
+  "created_at": "2026-10-25T06:33:10.000Z",
+  "updated_at": "2026-10-25T06:41:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "math",
+    "code",
+    "qwen2",
+    "mythos-nano",
+    "en",
+    "base_model:orangejuicesmith/Ohm-MythosNano",
+    "base_model:quantized:orangejuicesmith/Ohm-MythosNano",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 464,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940890112,
+  "storage_human": "27.9 GB",
+  "base_model": "orangejuicesmith/Ohm-MythosNano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

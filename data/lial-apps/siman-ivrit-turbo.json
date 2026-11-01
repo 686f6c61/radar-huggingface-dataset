@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "lial-apps/siman-ivrit-turbo",
+  "slug": "lial-apps-siman-ivrit-turbo",
+  "author": "lial-apps",
+  "url": "https://huggingface.co/lial-apps/siman-ivrit-turbo",
+  "created_at": "2026-10-28T11:29:12.000Z",
+  "updated_at": "2026-10-28T11:29:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "he",
+    "base_model:ivrit-ai/whisper-large-v3-turbo",
+    "base_model:quantized:ivrit-ai/whisper-large-v3-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033232052,
+  "storage_human": "2.0 GB",
+  "base_model": "ivrit-ai/whisper-large-v3-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

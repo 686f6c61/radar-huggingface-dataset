@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "muahseol/enkoa-qwen3.5-0.8b-commerce-sft",
+  "slug": "muahseol-enkoa-qwen3-5-0-8b-commerce-sft",
+  "author": "muahseol",
+  "url": "https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-commerce-sft",
+  "created_at": "2026-10-30T09:01:09.000Z",
+  "updated_at": "2026-10-30T09:01:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "enkoa",
+    "education",
+    "conversational",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3029602973,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

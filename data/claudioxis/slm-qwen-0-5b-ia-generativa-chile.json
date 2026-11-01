@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Claudioxis/slm-qwen-0.5b-ia-generativa-chile",
+  "slug": "claudioxis-slm-qwen-0-5b-ia-generativa-chile",
+  "author": "Claudioxis",
+  "url": "https://huggingface.co/Claudioxis/slm-qwen-0.5b-ia-generativa-chile",
+  "created_at": "2026-10-26T21:49:58.000Z",
+  "updated_at": "2026-10-26T21:52:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "lora",
+    "merged",
+    "fine-tuned",
+    "spanish",
+    "conversational",
+    "education",
+    "uai",
+    "es",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 255,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585364,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

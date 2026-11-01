@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/VINO-DarcyFlow",
+  "slug": "onescience-group-vino-darcyflow",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/VINO-DarcyFlow",
+  "created_at": "2026-10-26T11:12:21.000Z",
+  "updated_at": "2026-10-26T11:12:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vino-darcy",
+    "OneScience",
+    "computational-fluid-dynamics",
+    "darcy-flow",
+    "neural-operator",
+    "en",
+    "arxiv:2411.06587",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 243,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35804625,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

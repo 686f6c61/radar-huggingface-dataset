@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "credible-ai/qwen3.5-4B-40domains-dirichlet-lightgbm-gsm8k",
+  "slug": "credible-ai-qwen3-5-4b-40domains-dirichlet-lightgbm-gsm8k",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-lightgbm-gsm8k",
+  "created_at": "2026-10-27T22:43:12.000Z",
+  "updated_at": "2026-10-28T09:21:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "linmix",
+    "data-mixing",
+    "regmix",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:HuggingFaceTB/stack-edu",
+    "dataset:nvidia/Nemotron-CC-Math-v1",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "arxiv:2610.37390",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 190,
+  "trending_score": 0,
+  "parameters": 3699158016,
+  "parameters_human": "3.70B",
+  "storage_bytes": 7398365248,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

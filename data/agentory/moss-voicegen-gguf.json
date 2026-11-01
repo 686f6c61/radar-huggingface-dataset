@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "agentory/moss-voicegen-gguf",
+  "slug": "agentory-moss-voicegen-gguf",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/moss-voicegen-gguf",
+  "created_at": "2026-10-28T21:44:05.000Z",
+  "updated_at": "2026-10-28T21:44:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "MOSS-TTS",
+    "MOSS-VoiceGenerator",
+    "OpenMOSS",
+    "GGUF",
+    "BF16",
+    "voice-generation",
+    "text-to-speech",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-VoiceGenerator",
+    "base_model:quantized:OpenMOSS-Team/MOSS-VoiceGenerator",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 150,
+  "trending_score": 0,
+  "parameters": 1841740800,
+  "parameters_human": "1.84B",
+  "storage_bytes": 7788112672,
+  "storage_human": "7.8 GB",
+  "base_model": "OpenMOSS-Team/MOSS-VoiceGenerator",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

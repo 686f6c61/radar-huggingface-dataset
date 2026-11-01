@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Acciolyyy/lenet5-mnist-unb",
+  "slug": "acciolyyy-lenet5-mnist-unb",
+  "author": "Acciolyyy",
+  "url": "https://huggingface.co/Acciolyyy/lenet5-mnist-unb",
+  "created_at": "2026-11-01T03:08:37.000Z",
+  "updated_at": "2026-11-01T03:08:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "pt",
+    "en",
+    "dataset:mnist",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61706,
+  "parameters_human": "61706",
+  "storage_bytes": 247560,
+  "storage_human": "247560 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MNIST",
+      "metric": "Test accuracy (seed 42)",
+      "value": 0.9864
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "devopsfortunato/Fonzie0.2-4B-GGUF",
+  "slug": "devopsfortunato-fonzie0-2-4b-gguf",
+  "author": "devopsfortunato",
+  "url": "https://huggingface.co/devopsfortunato/Fonzie0.2-4B-GGUF",
+  "created_at": "2026-10-26T21:29:58.000Z",
+  "updated_at": "2026-10-31T11:30:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.5",
+    "agent",
+    "web-search",
+    "italian",
+    "vision",
+    "it",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 8066449888,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

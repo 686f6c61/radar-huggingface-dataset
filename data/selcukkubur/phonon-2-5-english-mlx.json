@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "selcukkubur/Phonon-2.5-English-mlx",
+  "slug": "selcukkubur-phonon-2-5-english-mlx",
+  "author": "selcukkubur",
+  "url": "https://huggingface.co/selcukkubur/Phonon-2.5-English-mlx",
+  "created_at": "2026-10-25T06:39:31.000Z",
+  "updated_at": "2026-10-29T08:13:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "automatic-speech-recognition",
+    "parakeet",
+    "en",
+    "base_model:FermionResearch/Phonon-2.5-English",
+    "base_model:finetune:FermionResearch/Phonon-2.5-English",
+    "license:cc-by-4.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 101,
+  "trending_score": 0,
+  "parameters": 181269062,
+  "parameters_human": "181.3M",
+  "storage_bytes": 189264899,
+  "storage_human": "189 MB",
+  "base_model": "FermionResearch/Phonon-2.5-English, nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

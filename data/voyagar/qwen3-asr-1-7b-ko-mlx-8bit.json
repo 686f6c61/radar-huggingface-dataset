@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "voyagar/Qwen3-ASR-1.7B-ko-mlx-8bit",
+  "slug": "voyagar-qwen3-asr-1-7b-ko-mlx-8bit",
+  "author": "voyagar",
+  "url": "https://huggingface.co/voyagar/Qwen3-ASR-1.7B-ko-mlx-8bit",
+  "created_at": "2026-10-30T08:58:00.000Z",
+  "updated_at": "2026-10-30T08:58:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx-audio",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "qwen3_asr",
+    "mlx",
+    "qwen3-asr",
+    "automatic-speech-recognition",
+    "korean",
+    "8-bit",
+    "ko",
+    "base_model:TeamUNIVA/qwen3_asr_1.7b_ko",
+    "base_model:quantized:TeamUNIVA/qwen3_asr_1.7b_ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 2474737040,
+  "storage_human": "2.5 GB",
+  "base_model": "TeamUNIVA/qwen3_asr_1.7b_ko",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

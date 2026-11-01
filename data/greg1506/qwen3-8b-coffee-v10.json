@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "greg1506/qwen3-8b-coffee-v10",
+  "slug": "greg1506-qwen3-8b-coffee-v10",
+  "author": "greg1506",
+  "url": "https://huggingface.co/greg1506/qwen3-8b-coffee-v10",
+  "created_at": "2026-10-26T20:50:18.000Z",
+  "updated_at": "2026-10-29T22:02:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "coffee",
+    "domain-adaptation",
+    "synthetic-qa",
+    "sft",
+    "conversational",
+    "en",
+    "dataset:greg1506/coffee-corpus-v2",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 291,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

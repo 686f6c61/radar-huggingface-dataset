@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "isilicon/mango-deepseek41-dspark-q8",
+  "slug": "isilicon-mango-deepseek41-dspark-q8",
+  "author": "isilicon",
+  "url": "https://huggingface.co/isilicon/mango-deepseek41-dspark-q8",
+  "created_at": "2026-10-29T21:08:57.000Z",
+  "updated_at": "2026-10-30T06:51:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mango",
+    "preservation-mirror",
+    "deepseek",
+    "auxiliary-component",
+    "base_model:unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+    "base_model:quantized:unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+    "license:mit",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 14225362146,
+  "parameters_human": "14.23B",
+  "storage_bytes": 7976914240,
+  "storage_human": "8.0 GB",
+  "base_model": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

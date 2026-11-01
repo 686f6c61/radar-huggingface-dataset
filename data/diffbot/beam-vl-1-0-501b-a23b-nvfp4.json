@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "diffbot/Beam-VL-1.0-501B-A23B-NVFP4",
+  "slug": "diffbot-beam-vl-1-0-501b-a23b-nvfp4",
+  "author": "diffbot",
+  "url": "https://huggingface.co/diffbot/Beam-VL-1.0-501B-A23B-NVFP4",
+  "created_at": "2026-10-25T22:53:47.000Z",
+  "updated_at": "2026-10-27T21:10:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "beam",
+    "reflection",
+    "vision-language",
+    "multimodal",
+    "mixture-of-experts",
+    "nvfp4",
+    "blackwell",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:reflection/Beam-1.0-501B-A23B",
+    "base_model:finetune:reflection/Beam-1.0-501B-A23B",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 254642537152,
+  "parameters_human": "254.64B",
+  "storage_bytes": 350759190000,
+  "storage_human": "350.8 GB",
+  "base_model": "reflection/Beam-1.0-501B-A23B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

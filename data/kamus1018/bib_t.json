@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kamus1018/bib_t",
+  "slug": "kamus1018-bib_t",
+  "author": "kamus1018",
+  "url": "https://huggingface.co/kamus1018/bib_t",
+  "created_at": "2026-10-26T10:57:56.000Z",
+  "updated_at": "2026-10-27T15:33:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kamus1018/bib",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 620106728,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

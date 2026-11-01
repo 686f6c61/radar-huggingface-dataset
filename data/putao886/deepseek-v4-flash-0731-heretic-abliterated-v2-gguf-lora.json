@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "putao886/DeepSeek-V4-Flash-0731-heretic-abliterated-v2-GGUF-lora",
+  "slug": "putao886-deepseek-v4-flash-0731-heretic-abliterated-v2-gguf-lora",
+  "author": "putao886",
+  "url": "https://huggingface.co/putao886/DeepSeek-V4-Flash-0731-heretic-abliterated-v2-GGUF-lora",
+  "created_at": "2026-10-27T03:59:21.000Z",
+  "updated_at": "2026-10-27T03:59:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "heretic",
+    "lora",
+    "deepseek",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:adapter:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 497664,
+  "parameters_human": "497664",
+  "storage_bytes": 268758560,
+  "storage_human": "269 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

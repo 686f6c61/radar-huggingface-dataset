@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "diablomike20/Claude-Sonnet-5.5",
+  "slug": "diablomike20-claude-sonnet-5-5",
+  "author": "diablomike20",
+  "url": "https://huggingface.co/diablomike20/Claude-Sonnet-5.5",
+  "created_at": "2026-10-28T17:16:10.000Z",
+  "updated_at": "2026-10-28T17:20:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 190,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027783168,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

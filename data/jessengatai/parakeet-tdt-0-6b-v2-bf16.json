@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "jessengatai/parakeet-tdt-0.6b-v2-bf16",
+  "slug": "jessengatai-parakeet-tdt-0-6b-v2-bf16",
+  "author": "jessengatai",
+  "url": "https://huggingface.co/jessengatai/parakeet-tdt-0.6b-v2-bf16",
+  "created_at": "2026-10-28T10:13:08.000Z",
+  "updated_at": "2026-10-28T10:17:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "speech",
+    "audio",
+    "Parakeet",
+    "FastConformer",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1235819939,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sarvam-1-hindi-marathi-GGUF",
+  "slug": "mradermacher-sarvam-1-hindi-marathi-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sarvam-1-hindi-marathi-GGUF",
+  "created_at": "2026-10-28T11:14:46.000Z",
+  "updated_at": "2026-10-28T11:28:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "hi",
+    "mr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "machine-translation",
+    "indic",
+    "hindi",
+    "marathi",
+    "sarvam",
+    "hi",
+    "mr",
+    "base_model:vennyvirtuoso/sarvam-1-hindi-marathi",
+    "base_model:quantized:vennyvirtuoso/sarvam-1-hindi-marathi",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 308,
+  "trending_score": 0,
+  "parameters": 2525087744,
+  "parameters_human": "2.53B",
+  "storage_bytes": 22508616448,
+  "storage_human": "22.5 GB",
+  "base_model": "vennyvirtuoso/sarvam-1-hindi-marathi",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

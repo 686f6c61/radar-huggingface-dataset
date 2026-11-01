@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "efeisot/minicpm5-2b-hybrid-kquants",
+  "slug": "efeisot-minicpm5-2b-hybrid-kquants",
+  "author": "efeisot",
+  "url": "https://huggingface.co/efeisot/minicpm5-2b-hybrid-kquants",
+  "created_at": "2026-10-27T16:48:35.000Z",
+  "updated_at": "2026-10-27T16:58:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "k-quant",
+    "imatrix",
+    "mixed-precision",
+    "quantization",
+    "minicpm",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 217,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 3502727456,
+  "storage_human": "3.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

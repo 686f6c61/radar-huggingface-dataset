@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Ornith-1.5-9B-MLX-SLQ-4.5bpw",
+  "slug": "hermitdave-ornith-1-5-9b-mlx-slq-4-5bpw",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Ornith-1.5-9B-MLX-SLQ-4.5bpw",
+  "created_at": "2026-10-28T09:07:03.000Z",
+  "updated_at": "2026-10-31T20:42:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "4-bit",
+    "slq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 9896394992,
+  "parameters_human": "9.90B",
+  "storage_bytes": 9860408606,
+  "storage_human": "9.9 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ramosvaldo9/doktor-gemma3-12b-Q4_K_M-GGUF",
+  "slug": "ramosvaldo9-doktor-gemma3-12b-q4_k_m-gguf",
+  "author": "ramosvaldo9",
+  "url": "https://huggingface.co/ramosvaldo9/doktor-gemma3-12b-Q4_K_M-GGUF",
+  "created_at": "2026-10-28T17:00:06.000Z",
+  "updated_at": "2026-10-28T17:00:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:ramosvaldo9/doktor-gemma3-12b",
+    "base_model:quantized:ramosvaldo9/doktor-gemma3-12b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 7300778592,
+  "storage_human": "7.3 GB",
+  "base_model": "ramosvaldo9/doktor-gemma3-12b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "terminela/granite-embedding-97m-multilingual-r2-GGUF",
+  "slug": "terminela-granite-embedding-97m-multilingual-r2-gguf",
+  "author": "terminela",
+  "url": "https://huggingface.co/terminela/granite-embedding-97m-multilingual-r2-GGUF",
+  "created_at": "2026-10-30T18:03:02.000Z",
+  "updated_at": "2026-10-30T18:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "sentence-similarity",
+    "base_model:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "base_model:quantized:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 97441152,
+  "parameters_human": "97.4M",
+  "storage_bytes": 115061088,
+  "storage_human": "115 MB",
+  "base_model": "ibm-granite/granite-embedding-97m-multilingual-r2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

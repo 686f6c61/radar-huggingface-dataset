@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "meettttttttttt/edgecar-0.5b",
+  "slug": "meettttttttttt-edgecar-0-5b",
+  "author": "meettttttttttt",
+  "url": "https://huggingface.co/meettttttttttt/edgecar-0.5b",
+  "created_at": "2026-10-29T09:15:49.000Z",
+  "updated_at": "2026-10-29T09:18:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "automotive",
+    "vehicle-data",
+    "on-device",
+    "edge-ai",
+    "semantic-parsing",
+    "text-to-command",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

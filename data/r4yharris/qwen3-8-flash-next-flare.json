@@ -5,7 +5,7 @@
   "author": "r4yharris",
   "url": "https://huggingface.co/r4yharris/Qwen3.8-Flash-Next-FLARE",
   "created_at": "2026-10-30T18:21:40.000Z",
-  "updated_at": "2026-10-30T18:46:32.000Z",
+  "updated_at": "2026-10-31T20:18:49.000Z",
   "license": "nvidia-open-model-agreement",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,10 +26,10 @@
   "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 22848616,
-  "parameters_human": "22.8M",
-  "storage_bytes": 106927308358,
-  "storage_human": "106.9 GB",
+  "parameters": 23254120,
+  "parameters_human": "23.3M",
+  "storage_bytes": 107689131086,
+  "storage_human": "107.7 GB",
   "base_model": "nvidia/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"

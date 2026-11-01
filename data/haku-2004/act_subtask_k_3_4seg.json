@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Haku-2004/act_subtask_k_3_4seg",
+  "slug": "haku-2004-act_subtask_k_3_4seg",
+  "author": "Haku-2004",
+  "url": "https://huggingface.co/Haku-2004/act_subtask_k_3_4seg",
+  "created_at": "2026-10-29T06:19:06.000Z",
+  "updated_at": "2026-10-29T06:19:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Haku-2004/LeRobot_dataset_k_3_4seg",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 51671174,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206717624,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

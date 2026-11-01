@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Kassiyakk/Khmer_Whisper_Fine_Tune",
+  "slug": "kassiyakk-khmer_whisper_fine_tune",
+  "author": "Kassiyakk",
+  "url": "https://huggingface.co/Kassiyakk/Khmer_Whisper_Fine_Tune",
+  "created_at": "2026-10-25T15:35:22.000Z",
+  "updated_at": "2026-10-25T22:33:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "km",
+    "dataset:seanghay/khmer_mpwt_speech",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 241767552,
+  "parameters_human": "241.8M",
+  "storage_bytes": 7737114293,
+  "storage_human": "7.7 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "seanghay/khmer_mpwt_speech",
+      "metric": "Wer",
+      "value": 544.1941074523397
+    }
+  ],
+  "sources": []
+}

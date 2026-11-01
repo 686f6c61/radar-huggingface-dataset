@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "chaserobb09/Qwen2.5-Omni-7B",
+  "slug": "chaserobb09-qwen2-5-omni-7b",
+  "author": "chaserobb09",
+  "url": "https://huggingface.co/chaserobb09/Qwen2.5-Omni-7B",
+  "created_at": "2026-10-27T01:01:17.000Z",
+  "updated_at": "2026-10-27T01:01:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_omni",
+    "multimodal",
+    "any-to-any",
+    "en",
+    "arxiv:2503.20215",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 10732225440,
+  "parameters_human": "10.73B",
+  "storage_bytes": 22374542606,
+  "storage_human": "22.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

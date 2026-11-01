@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "eminsy/ChatISL-7B",
+  "slug": "eminsy-chatisl-7b",
+  "author": "eminsy",
+  "url": "https://huggingface.co/eminsy/ChatISL-7B",
+  "created_at": "2026-10-27T07:49:18.000Z",
+  "updated_at": "2026-10-29T07:18:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chatisl",
+    "openisl",
+    "arabic",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "ar",
+    "en",
+    "base_model:inception42/Jais-3-7B",
+    "base_model:adapter:inception42/Jais-3-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133911932,
+  "storage_human": "134 MB",
+  "base_model": "inception42/Jais-3-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

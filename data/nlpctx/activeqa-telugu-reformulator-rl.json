@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "nlpctx/activeqa-telugu-reformulator-rl",
+  "slug": "nlpctx-activeqa-telugu-reformulator-rl",
+  "author": "nlpctx",
+  "url": "https://huggingface.co/nlpctx/activeqa-telugu-reformulator-rl",
+  "created_at": "2026-10-27T06:42:10.000Z",
+  "updated_at": "2026-10-27T06:42:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "safetensors",
+    "mbart",
+    "question-reformulation",
+    "telugu",
+    "reinforcement-learning",
+    "lora",
+    "activeqa",
+    "te",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 244082191,
+  "parameters_human": "244.1M",
+  "storage_bytes": 978163166,
+  "storage_human": "978 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
