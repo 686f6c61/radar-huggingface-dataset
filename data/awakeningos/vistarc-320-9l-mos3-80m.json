@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AwakeningOS/vistarc-320-9l-mos3-80m",
+  "slug": "awakeningos-vistarc-320-9l-mos3-80m",
+  "author": "AwakeningOS",
+  "url": "https://huggingface.co/AwakeningOS/vistarc-320-9l-mos3-80m",
+  "created_at": "2026-11-01T22:42:02.000Z",
+  "updated_at": "2026-11-01T23:21:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vistarc",
+    "text-generation",
+    "causal-lm",
+    "babylm",
+    "recurrent-feedback",
+    "mixture-of-softmaxes",
+    "custom-code",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45454791,
+  "parameters_human": "45.5M",
+  "storage_bytes": 181840460,
+  "storage_human": "182 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

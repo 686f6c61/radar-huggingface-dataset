@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Intent-Classifier-4B-GGUF",
+  "slug": "mradermacher-intent-classifier-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Intent-Classifier-4B-GGUF",
+  "created_at": "2026-04-12T07:30:35.000Z",
+  "updated_at": "2026-11-01T21:49:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mlx",
+    "en",
+    "base_model:HeyMiku/Intent-Classifier-4B",
+    "base_model:quantized:HeyMiku/Intent-Classifier-4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38906329600,
+  "storage_human": "38.9 GB",
+  "base_model": "HeyMiku/Intent-Classifier-4B",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yujiepan/minicpm-ocr-1.0-tiny-random",
+  "slug": "yujiepan-minicpm-ocr-1-0-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/minicpm-ocr-1.0-tiny-random",
+  "created_at": "2026-11-01T21:15:54.000Z",
+  "updated_at": "2026-11-01T20:53:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpm_ocr",
+    "image-text-to-text",
+    "conversational",
+    "base_model:openbmb/MiniCPM-OCR-1.0",
+    "base_model:finetune:openbmb/MiniCPM-OCR-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35169149,
+  "storage_human": "35 MB",
+  "base_model": "openbmb/MiniCPM-OCR-1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inference — serve the model where the data is allowed to be",
+      "url": "https://50gramx.com/inferences",
+      "snippet": "vor 3 Tagen ... 21b-a3b-thinking~yujiepan-moe-tiny-randommeasured0.3b~yujiepan-tiny-randommeasured. Lightricks ... OCR 2 build a machine measured →. deepseek-ai ..."
+    }
+  ]
+}

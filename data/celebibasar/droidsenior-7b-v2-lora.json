@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "celebibasar/DroidSenior-7B-v2-lora",
+  "slug": "celebibasar-droidsenior-7b-v2-lora",
+  "author": "celebibasar",
+  "url": "https://huggingface.co/celebibasar/DroidSenior-7B-v2-lora",
+  "created_at": "2026-11-01T18:53:06.000Z",
+  "updated_at": "2026-11-01T22:50:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "android",
+    "kotlin",
+    "jetpack-compose",
+    "code",
+    "coding-assistant",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "tr",
+    "base_model:celebibasar/DroidSenior-7B",
+    "base_model:adapter:celebibasar/DroidSenior-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 495975549,
+  "storage_human": "496 MB",
+  "base_model": "celebibasar/DroidSenior-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

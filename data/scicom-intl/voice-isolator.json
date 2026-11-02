@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Scicom-intl/voice-isolator",
+  "slug": "scicom-intl-voice-isolator",
+  "author": "Scicom-intl",
+  "url": "https://huggingface.co/Scicom-intl/voice-isolator",
+  "created_at": "2026-10-22T23:09:58.000Z",
+  "updated_at": "2026-11-02T03:04:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "speech",
+    "voice-isolation",
+    "target-speaker-extraction",
+    "speech-enhancement",
+    "streaming",
+    "wavlm",
+    "livekit",
+    "audio-to-audio",
+    "en",
+    "arxiv:2610.35272",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 555229786,
+  "parameters_human": "555.2M",
+  "storage_bytes": 4485193120,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

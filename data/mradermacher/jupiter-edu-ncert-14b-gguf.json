@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Jupiter-Edu-NCERT-14B-GGUF",
+  "slug": "mradermacher-jupiter-edu-ncert-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Jupiter-Edu-NCERT-14B-GGUF",
+  "created_at": "2026-02-11T06:00:11.000Z",
+  "updated_at": "2026-11-01T23:04:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987585056,
+  "storage_human": "102.0 GB",
+  "base_model": "AIwaala/Jupiter-Edu-NCERT-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

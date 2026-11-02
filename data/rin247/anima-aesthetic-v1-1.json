@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Rin247/Anima-Aesthetic-v1.1",
+  "slug": "rin247-anima-aesthetic-v1-1",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Anima-Aesthetic-v1.1",
+  "created_at": "2026-11-02T01:55:14.000Z",
+  "updated_at": "2026-11-02T01:59:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "quantized",
+    "safetensors",
+    "mecha",
+    "weight-only",
+    "image",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10184874384,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-02T03:15:28.766Z",
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Thaki-SlotGrounder-KO-7M",
+  "slug": "thakicloud-thaki-slotgrounder-ko-7m",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Thaki-SlotGrounder-KO-7M",
+  "created_at": "2026-11-01T23:05:48.000Z",
+  "updated_at": "2026-11-01T23:05:54.000Z",
+  "license": "thaki-slotgrounder-ko-7m-research",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "korean",
+    "voice-command",
+    "verifier",
+    "grounding",
+    "abstention",
+    "research-preview",
+    "tiny-model",
+    "text-classification",
+    "ko",
+    "base_model:ThakiCloud/Thaki-InputGuard-KO-9M",
+    "base_model:finetune:ThakiCloud/Thaki-InputGuard-KO-9M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7461060,
+  "parameters_human": "7.5M",
+  "storage_bytes": 29853008,
+  "storage_human": "30 MB",
+  "base_model": "ThakiCloud/Thaki-InputGuard-KO-9M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

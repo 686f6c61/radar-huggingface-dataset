@@ -5,7 +5,7 @@
   "author": "ReliquaryForge",
   "url": "https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary-RL",
   "created_at": "2026-10-23T02:22:14.000Z",
-  "updated_at": "2026-11-01T19:48:43.000Z",
+  "updated_at": "2026-11-02T02:58:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,13 +27,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 3,
+  "likes": 4,
   "downloads_30d": 17344,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 214911860461,
-  "storage_human": "214.9 GB",
+  "storage_bytes": 250727172317,
+  "storage_human": "250.7 GB",
   "base_model": "ReliquaryForge/Teutonic-I-Reliquary-SFT",
   "formats": [
     "safetensors"

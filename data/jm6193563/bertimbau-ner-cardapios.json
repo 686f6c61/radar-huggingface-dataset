@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Jm6193563/bertimbau-ner-cardapios",
+  "slug": "jm6193563-bertimbau-ner-cardapios",
+  "author": "Jm6193563",
+  "url": "https://huggingface.co/Jm6193563/bertimbau-ner-cardapios",
+  "created_at": "2026-11-01T21:16:08.000Z",
+  "updated_at": "2026-11-01T21:18:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108337158,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433371968,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

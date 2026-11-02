@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "MedMLX/retinanet-lung-nodule-mlx",
+  "slug": "medmlx-retinanet-lung-nodule-mlx",
+  "author": "MedMLX",
+  "url": "https://huggingface.co/MedMLX/retinanet-lung-nodule-mlx",
+  "created_at": "2026-10-13T01:43:39.000Z",
+  "updated_at": "2026-11-02T00:45:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "native-mlx",
+    "apple-silicon",
+    "medical-imaging",
+    "ct",
+    "lung-nodule",
+    "object-detection",
+    "research",
+    "en",
+    "arxiv:1708.02002",
+    "base_model:MONAI/lung_nodule_ct_detection",
+    "base_model:finetune:MONAI/lung_nodule_ct_detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84593313,
+  "storage_human": "85 MB",
+  "base_model": "MONAI/lung_nodule_ct_detection",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

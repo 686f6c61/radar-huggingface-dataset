@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/IMCatalina-v1.0-GGUF",
+  "slug": "mradermacher-imcatalina-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/IMCatalina-v1.0-GGUF",
+  "created_at": "2026-01-12T06:13:32.000Z",
+  "updated_at": "2026-11-01T21:51:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "phi",
+    "fine-tuned",
+    "full-finetune",
+    "instruction-tuning",
+    "text-generation",
+    "recruitment",
+    "resume-parsing",
+    "job-description-generation",
+    "en",
+    "base_model:rmtlabs/IMCatalina-v1.0",
+    "base_model:quantized:rmtlabs/IMCatalina-v1.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 191,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 101218981504,
+  "storage_human": "101.2 GB",
+  "base_model": "rmtlabs/IMCatalina-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,10 +5,10 @@
   "author": "Yashhh999",
   "url": "https://huggingface.co/Yashhh999/gradientTrace-v2-pilot",
   "created_at": "2026-10-31T13:26:11.000Z",
-  "updated_at": "2026-11-01T13:01:59.000Z",
+  "updated_at": "2026-11-02T00:57:09.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-classification",
   "library": "transformers",
   "languages": [],
   "tags": [
@@ -16,10 +16,12 @@
     "tensorboard",
     "safetensors",
     "deberta-v2",
-    "generated_from_trainer",
+    "ai-text-detection",
+    "gradienttrace",
+    "text-classification",
     "base_model:microsoft/deberta-v3-large",
     "base_model:finetune:microsoft/deberta-v3-large",
-    "license:mit",
+    "text-embeddings-inference",
     "endpoints_compatible",
     "region:us"
   ],
@@ -28,8 +30,8 @@
   "trending_score": 0,
   "parameters": 434013185,
   "parameters_human": "434.0M",
-  "storage_bytes": 78128666823,
-  "storage_human": "78.1 GB",
+  "storage_bytes": 152784947839,
+  "storage_human": "152.8 GB",
   "base_model": "microsoft/deberta-v3-large",
   "formats": [
     "safetensors"

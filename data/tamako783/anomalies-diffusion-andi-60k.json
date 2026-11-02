@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "TamAko783/anomalies-diffusion-andi-60k",
+  "slug": "tamako783-anomalies-diffusion-andi-60k",
+  "author": "TamAko783",
+  "url": "https://huggingface.co/TamAko783/anomalies-diffusion-andi-60k",
+  "created_at": "2026-11-01T21:07:22.000Z",
+  "updated_at": "2026-11-02T01:03:57.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "medical-imaging",
+    "anomaly-detection",
+    "unsupervised",
+    "brain-mri",
+    "diffusion-model",
+    "conformal-prediction",
+    "reproducibility",
+    "image-segmentation",
+    "en",
+    "dataset:IXI",
+    "arxiv:2312.01904",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25770084,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

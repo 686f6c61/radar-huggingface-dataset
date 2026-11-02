@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Tostibrown/Groot-19B-A3B-261023-rco-role-4.5bpw-textonly",
+  "slug": "tostibrown-groot-19b-a3b-261023-rco-role-4-5bpw-textonly",
+  "author": "Tostibrown",
+  "url": "https://huggingface.co/Tostibrown/Groot-19B-A3B-261023-rco-role-4.5bpw-textonly",
+  "created_at": "2026-11-01T22:27:14.000Z",
+  "updated_at": "2026-11-02T02:37:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "qwen3_5_moe",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:GrootTeam/Groot-19B-A3B-261023",
+    "base_model:quantized:GrootTeam/Groot-19B-A3B-261023",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12306876630,
+  "storage_human": "12.3 GB",
+  "base_model": "GrootTeam/Groot-19B-A3B-261023, hermitdave/Groot-19B-A3B-261023-MLX-rco-role-4.5bpw",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jody Connolly - Looking for a new role within Hospitality ... - LinkedIn",
+      "url": "https://uk.linkedin.com/in/jodyconnolly",
+      "snippet": "Relocating soon to Dubai with my family and on the lookout for exciting opportunities in F&B, nightlife, and events. With a wealth of …"
+    }
+  ]
+}

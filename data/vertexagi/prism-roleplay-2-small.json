@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "VertexAGI/prism-roleplay-2-small",
+  "slug": "vertexagi-prism-roleplay-2-small",
+  "author": "VertexAGI",
+  "url": "https://huggingface.co/VertexAGI/prism-roleplay-2-small",
+  "created_at": "2026-11-02T03:14:41.000Z",
+  "updated_at": "2026-11-02T03:17:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "gguf",
+    "roleplay",
+    "character-ai",
+    "lora",
+    "tool-calling",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5392001738,
+  "storage_human": "5.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

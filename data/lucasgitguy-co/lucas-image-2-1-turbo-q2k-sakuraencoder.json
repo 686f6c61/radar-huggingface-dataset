@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 8169432504,
+  "storage_human": "8.2 GB",
   "base_model": "unsloth/Qwen-Image-2.1-Turbo-GGUF, webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF",
   "formats": [
     "gguf"

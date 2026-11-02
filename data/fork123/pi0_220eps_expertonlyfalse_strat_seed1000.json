@@ -5,7 +5,7 @@
   "author": "Fork123",
   "url": "https://huggingface.co/Fork123/pi0_220eps_ExpertOnlyFalse_strat_seed1000",
   "created_at": "2026-10-31T03:53:05.000Z",
-  "updated_at": "2026-10-31T03:53:43.000Z",
+  "updated_at": "2026-11-01T11:12:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 4028019472,
   "parameters_human": "4.03B",
-  "storage_bytes": 8926907950,
-  "storage_human": "8.9 GB",
+  "storage_bytes": 17819419766,
+  "storage_human": "17.8 GB",
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"

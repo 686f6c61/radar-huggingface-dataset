@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Qwen3.5-122B-A10B-NVFP4",
   "created_at": "2026-10-27T10:50:23.000Z",
-  "updated_at": "2026-11-01T02:52:19.000Z",
+  "updated_at": "2026-11-02T01:54:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 125086497008,
   "parameters_human": "125.09B",
-  "storage_bytes": 81518193400,
-  "storage_human": "81.5 GB",
+  "storage_bytes": 157958908392,
+  "storage_human": "158.0 GB",
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [
     "safetensors"

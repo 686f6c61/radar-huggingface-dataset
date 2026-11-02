@@ -5,7 +5,7 @@
   "author": "Acciolyyy",
   "url": "https://huggingface.co/Acciolyyy/lenet5-mnist-unb",
   "created_at": "2026-11-01T03:08:37.000Z",
-  "updated_at": "2026-11-01T03:08:42.000Z",
+  "updated_at": "2026-11-01T03:31:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "pytorch",
+    "onnx",
     "safetensors",
     "image-classification",
     "pt",
@@ -26,14 +27,15 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 61706,
   "parameters_human": "61706",
-  "storage_bytes": 247560,
-  "storage_human": "247560 B",
+  "storage_bytes": 496061,
+  "storage_human": "496061 B",
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

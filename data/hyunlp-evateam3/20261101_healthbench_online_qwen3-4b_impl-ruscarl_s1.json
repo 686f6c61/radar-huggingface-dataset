@@ -5,7 +5,7 @@
   "author": "hyunlp-evateam3",
   "url": "https://huggingface.co/hyunlp-evateam3/20261101_healthbench_online_qwen3-4b_impl-ruscarl_s1",
   "created_at": "2026-11-01T01:34:12.000Z",
-  "updated_at": "2026-11-01T19:26:46.000Z",
+  "updated_at": "2026-11-02T00:08:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 506845288654,
-  "storage_human": "506.8 GB",
+  "storage_bytes": 683834892654,
+  "storage_human": "683.8 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"

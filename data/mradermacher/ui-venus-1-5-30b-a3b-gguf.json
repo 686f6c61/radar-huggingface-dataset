@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UI-Venus-1.5-30B-A3B-GGUF",
+  "slug": "mradermacher-ui-venus-1-5-30b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UI-Venus-1.5-30B-A3B-GGUF",
+  "created_at": "2026-02-11T13:03:31.000Z",
+  "updated_at": "2026-11-02T01:18:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodel",
+    "gui",
+    "agent",
+    "en",
+    "base_model:inclusionAI/UI-Venus-1.5-30B-A3B",
+    "base_model:quantized:inclusionAI/UI-Venus-1.5-30B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2159,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 209911604896,
+  "storage_human": "209.9 GB",
+  "base_model": "inclusionAI/UI-Venus-1.5-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

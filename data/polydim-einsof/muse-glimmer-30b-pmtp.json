@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Polydim-Einsof/muse-glimmer-30b-pmtp",
+  "slug": "polydim-einsof-muse-glimmer-30b-pmtp",
+  "author": "Polydim-Einsof",
+  "url": "https://huggingface.co/Polydim-Einsof/muse-glimmer-30b-pmtp",
+  "created_at": "2026-11-02T01:40:22.000Z",
+  "updated_at": "2026-11-02T01:40:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "polydim",
+    "pmtp",
+    "stiefel-manifold",
+    "muse-glimmer",
+    "einsof",
+    "vision-grounding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41943307,
+  "storage_human": "42 MB",
+  "base_model": "meta-muse/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

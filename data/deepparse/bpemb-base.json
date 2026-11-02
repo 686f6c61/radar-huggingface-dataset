@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "deepparse/bpemb-base",
+  "slug": "deepparse-bpemb-base",
+  "author": "deepparse",
+  "url": "https://huggingface.co/deepparse/bpemb-base",
+  "created_at": "2025-07-12T14:39:22.000Z",
+  "updated_at": "2026-11-02T02:49:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "deepparse",
+  "languages": [],
+  "tags": [
+    "deepparse",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "address-parsing",
+    "arxiv:2006.16152",
+    "arxiv:2112.04008",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3747,
+  "trending_score": 0,
+  "parameters": 11272213,
+  "parameters_human": "11.3M",
+  "storage_bytes": 45090868,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

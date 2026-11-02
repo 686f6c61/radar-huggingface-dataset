@@ -5,7 +5,7 @@
   "author": "grpdxr",
   "url": "https://huggingface.co/grpdxr/Qwen3.8-27B-PL-GGUF",
   "created_at": "2026-10-30T21:24:58.000Z",
-  "updated_at": "2026-10-31T20:18:05.000Z",
+  "updated_at": "2026-11-01T10:34:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "JohnRTitor/Qwythos-9B-v2-W4A16",
+  "slug": "johnrtitor-qwythos-9b-v2-w4a16",
+  "author": "JohnRTitor",
+  "url": "https://huggingface.co/JohnRTitor/Qwythos-9B-v2-W4A16",
+  "created_at": "2026-11-01T20:51:33.000Z",
+  "updated_at": "2026-11-01T20:55:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "tpu",
+    "tpu-v5e",
+    "torchao",
+    "int4",
+    "w4a16",
+    "qwythos",
+    "warehouse-navigator",
+    "pyxla",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwythos-9B-v2",
+    "base_model:quantized:empero-ai/Qwythos-9B-v2",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9780899568,
+  "parameters_human": "9.78B",
+  "storage_bytes": 11339541939,
+  "storage_human": "11.3 GB",
+  "base_model": "empero-ai/Qwythos-9B-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

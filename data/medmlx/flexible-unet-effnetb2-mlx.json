@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "MedMLX/flexible-unet-effnetb2-mlx",
+  "slug": "medmlx-flexible-unet-effnetb2-mlx",
+  "author": "MedMLX",
+  "url": "https://huggingface.co/MedMLX/flexible-unet-effnetb2-mlx",
+  "created_at": "2026-10-13T01:43:42.000Z",
+  "updated_at": "2026-11-02T00:45:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "native-mlx",
+    "apple-silicon",
+    "medical-imaging",
+    "endoscopy",
+    "segmentation",
+    "research",
+    "image-segmentation",
+    "en",
+    "arxiv:1505.04597",
+    "arxiv:1905.11946",
+    "base_model:MONAI/endoscopic_tool_segmentation",
+    "base_model:finetune:MONAI/endoscopic_tool_segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46133367,
+  "storage_human": "46 MB",
+  "base_model": "MONAI/endoscopic_tool_segmentation",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

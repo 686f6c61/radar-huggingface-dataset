@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Asher-1/querysplat_vggto",
+  "slug": "asher-1-querysplat_vggto",
+  "author": "Asher-1",
+  "url": "https://huggingface.co/Asher-1/querysplat_vggto",
+  "created_at": "2026-10-20T14:03:15.000Z",
+  "updated_at": "2026-11-02T01:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ggml",
+    "querysplat",
+    "3d-gaussian-splatting",
+    "novel-view-synthesis",
+    "pose-free-reconstruction",
+    "vggt",
+    "pure-cpp",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 14716160,
+  "parameters_human": "14.7M",
+  "storage_bytes": 8185669243,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Diffbot-Coder-2602-GGUF",
+  "slug": "mradermacher-diffbot-coder-2602-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Diffbot-Coder-2602-GGUF",
+  "created_at": "2026-02-11T06:16:37.000Z",
+  "updated_at": "2026-11-01T23:04:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:diffbot/Diffbot-Coder-2602",
+    "base_model:quantized:diffbot/Diffbot-Coder-2602",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 29943393920,
+  "parameters_human": "29.94B",
+  "storage_bytes": 203805065216,
+  "storage_human": "203.8 GB",
+  "base_model": "diffbot/Diffbot-Coder-2602",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

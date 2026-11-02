@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/Qwen3.8-27B-AX8860-llama.cpp",
+  "slug": "axera-tech-qwen3-8-27b-ax8860-llama-cpp",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/Qwen3.8-27B-AX8860-llama.cpp",
+  "created_at": "2026-10-29T09:30:04.000Z",
+  "updated_at": "2026-11-02T02:24:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 291,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17236040807,
+  "storage_human": "17.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

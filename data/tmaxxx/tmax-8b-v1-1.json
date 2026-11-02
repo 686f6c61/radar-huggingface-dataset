@@ -5,7 +5,7 @@
   "author": "TMaxxx",
   "url": "https://huggingface.co/TMaxxx/tmax-8b-v1.1",
   "created_at": "2026-09-21T22:44:45.000Z",
-  "updated_at": "2026-10-30T22:21:14.000Z",
+  "updated_at": "2026-11-02T01:37:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 57,
+  "downloads_30d": 65,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

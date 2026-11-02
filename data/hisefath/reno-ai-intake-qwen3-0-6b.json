@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hisefath/reno-ai-intake-qwen3-0.6b",
+  "slug": "hisefath-reno-ai-intake-qwen3-0-6b",
+  "author": "hisefath",
+  "url": "https://huggingface.co/hisefath/reno-ai-intake-qwen3-0.6b",
+  "created_at": "2026-11-01T21:21:14.000Z",
+  "updated_at": "2026-11-02T01:21:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "qlora",
+    "structured-output",
+    "intake",
+    "home-improvement",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:hisefath/reno-ai-bathroom-intake",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2453483650,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

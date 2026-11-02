@@ -5,7 +5,7 @@
   "author": "lavendercomputing",
   "url": "https://huggingface.co/lavendercomputing/Holo4-35B-A3B-Heretic-GSQ-RCO-GGUF",
   "created_at": "2026-10-24T20:37:37.000Z",
-  "updated_at": "2026-10-30T19:34:42.000Z",
+  "updated_at": "2026-11-01T10:20:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 57906624128,
-  "storage_human": "57.9 GB",
+  "storage_bytes": 58816576832,
+  "storage_human": "58.8 GB",
   "base_model": "Hcompany/Holo4-35B-A3B, Qwen/Qwen3.6-35B-A3B, jduraes/Holo4-35B-A3B-heretic-Q6_K",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/PaddleOCR-VL-GGUF",
   "created_at": "2026-10-29T02:19:30.000Z",
-  "updated_at": "2026-11-01T02:51:20.000Z",
+  "updated_at": "2026-11-02T02:33:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 122,
+  "downloads_30d": 226,
   "trending_score": 0,
   "parameters": 466654208,
   "parameters_human": "466.7M",

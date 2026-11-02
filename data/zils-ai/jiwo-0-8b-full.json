@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "zils-ai/jiwo-0.8b-full",
+  "slug": "zils-ai-jiwo-0-8b-full",
+  "author": "zils-ai",
+  "url": "https://huggingface.co/zils-ai/jiwo-0.8b-full",
+  "created_at": "2026-11-02T01:09:16.000Z",
+  "updated_at": "2026-11-02T01:09:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "zils",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1759750582,
+  "storage_human": "1.8 GB",
+  "base_model": "eljiwo/jiwo-0.8b, Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

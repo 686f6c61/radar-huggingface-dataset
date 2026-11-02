@@ -5,7 +5,7 @@
   "author": "duyledac28",
   "url": "https://huggingface.co/duyledac28/rex-creditcard",
   "created_at": "2026-10-23T15:20:35.000Z",
-  "updated_at": "2026-10-28T06:24:58.000Z",
+  "updated_at": "2026-11-01T17:09:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,13 +15,13 @@
     "safetensors",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 443104011,
+  "parameters": 443115275,
   "parameters_human": "443.1M",
-  "storage_bytes": 1776308768,
-  "storage_human": "1.8 GB",
+  "storage_bytes": 2662630532,
+  "storage_human": "2.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

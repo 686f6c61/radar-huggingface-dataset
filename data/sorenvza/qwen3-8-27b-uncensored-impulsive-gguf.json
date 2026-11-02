@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Sorenvza/Qwen3.8-27B-Uncensored-Impulsive-GGUF",
+  "slug": "sorenvza-qwen3-8-27b-uncensored-impulsive-gguf",
+  "author": "Sorenvza",
+  "url": "https://huggingface.co/Sorenvza/Qwen3.8-27B-Uncensored-Impulsive-GGUF",
+  "created_at": "2026-11-01T21:58:27.000Z",
+  "updated_at": "2026-11-01T22:12:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "roleplay",
+    "id",
+    "en",
+    "base_model:Sorenvza/Qwen3.8-27B-Uncensored-Impulsive",
+    "base_model:quantized:Sorenvza/Qwen3.8-27B-Uncensored-Impulsive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 98951446016,
+  "storage_human": "99.0 GB",
+  "base_model": "Sorenvza/Qwen3.8-27B-Uncensored-Impulsive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

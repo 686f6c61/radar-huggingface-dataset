@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yujiepan/minicpm-v-4.7-moe-tiny-random",
+  "slug": "yujiepan-minicpm-v-4-7-moe-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/minicpm-v-4.7-moe-tiny-random",
+  "created_at": "2026-11-01T21:13:06.000Z",
+  "updated_at": "2026-11-01T20:53:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv4_7",
+    "image-text-to-text",
+    "conversational",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:finetune:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45199359,
+  "storage_human": "45 MB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

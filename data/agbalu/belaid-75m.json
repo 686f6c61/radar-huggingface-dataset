@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "agbalu/Belaid-75M",
+  "slug": "agbalu-belaid-75m",
+  "author": "agbalu",
+  "url": "https://huggingface.co/agbalu/Belaid-75M",
+  "created_at": "2026-11-01T22:37:41.000Z",
+  "updated_at": "2026-11-01T22:38:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "kab"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "belaid",
+    "feature-extraction",
+    "kabyle",
+    "taqbaylit",
+    "berber",
+    "amazigh",
+    "punctuation-restoration",
+    "truecasing",
+    "token-classification",
+    "asr-post-processing",
+    "discourse-segmentation",
+    "low-resource",
+    "custom_code",
+    "kab",
+    "base_model:agbalu/Masinissa-73M",
+    "base_model:finetune:agbalu/Masinissa-73M",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75147533,
+  "parameters_human": "75.1M",
+  "storage_bytes": 300879293,
+  "storage_human": "301 MB",
+  "base_model": "agbalu/Masinissa-73M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Punctuation and casing restoration",
+      "dataset": "Held-out continuous discourse diagnostic split (18,621 words, 128 windows)",
+      "metric": "Exact word casing accuracy",
+      "value": 0.94
+    },
+    {
+      "task": "Punctuation and casing restoration",
+      "dataset": "Held-out continuous discourse diagnostic split (18,621 words, 128 windows)",
+      "metric": "Period F1 (internal & terminal)",
+      "value": 0.63
+    },
+    {
+      "task": "Punctuation and casing restoration",
+      "dataset": "Held-out continuous discourse diagnostic split (18,621 words, 128 windows)",
+      "metric": "Comma F1",
+      "value": 0.623
+    },
+    {
+      "task": "Punctuation and casing restoration",
+      "dataset": "Held-out continuous discourse diagnostic split (18,621 words, 128 windows)",
+      "metric": "Colon F1",
+      "value": 0.6
+    },
+    {
+      "task": "Punctuation and casing restoration",
+      "dataset": "Held-out continuous discourse diagnostic split (18,621 words, 128 windows)",
+      "metric": "Question mark F1",
+      "value": 0.526
+    },
+    {
+      "task": "Punctuation and casing restoration",
+      "dataset": "Held-out continuous discourse diagnostic split (18,621 words, 128 windows)",
+      "metric": "Acronym truecasing F1",
+      "value": 0.755
+    }
+  ],
+  "sources": []
+}

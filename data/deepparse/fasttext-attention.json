@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "deepparse/fasttext-attention",
+  "slug": "deepparse-fasttext-attention",
+  "author": "deepparse",
+  "url": "https://huggingface.co/deepparse/fasttext-attention",
+  "created_at": "2025-07-15T17:24:40.000Z",
+  "updated_at": "2026-11-02T02:49:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "deepparse",
+  "languages": [],
+  "tags": [
+    "deepparse",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "address-parsing",
+    "arxiv:2006.16152",
+    "arxiv:2112.04008",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 483,
+  "trending_score": 0,
+  "parameters": 15941641,
+  "parameters_human": "15.9M",
+  "storage_bytes": 63768068,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

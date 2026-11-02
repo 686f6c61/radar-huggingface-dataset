@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Meta-Llama-3-120B-Instruct-merged-GGUF",
+  "slug": "mradermacher-meta-llama-3-120b-instruct-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Meta-Llama-3-120B-Instruct-merged-GGUF",
+  "created_at": "2024-12-01T08:49:16.000Z",
+  "updated_at": "2026-11-01T21:53:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:imi2/Meta-Llama-3-120B-Instruct-merged",
+    "base_model:quantized:imi2/Meta-Llama-3-120B-Instruct-merged",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 121892970496,
+  "parameters_human": "121.89B",
+  "storage_bytes": 828902091808,
+  "storage_human": "828.9 GB",
+  "base_model": "imi2/Meta-Llama-3-120B-Instruct-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

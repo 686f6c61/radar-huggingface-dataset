@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "yujiepan/minicpm-ocr-jev-tiny-random",
+  "slug": "yujiepan-minicpm-ocr-jev-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/minicpm-ocr-jev-tiny-random",
+  "created_at": "2026-11-01T21:16:09.000Z",
+  "updated_at": "2026-11-01T20:53:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "text-classification",
+    "image-text-to-text",
+    "conversational",
+    "base_model:openbmb/MiniCPM-OCR-Jev",
+    "base_model:finetune:openbmb/MiniCPM-OCR-Jev",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33295453,
+  "storage_human": "33 MB",
+  "base_model": "openbmb/MiniCPM-OCR-Jev",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

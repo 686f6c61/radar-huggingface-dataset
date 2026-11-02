@@ -5,7 +5,7 @@
   "author": "OSO-AI",
   "url": "https://huggingface.co/OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-k5",
   "created_at": "2026-10-29T15:34:49.000Z",
-  "updated_at": "2026-10-29T18:51:04.000Z",
+  "updated_at": "2026-11-01T22:36:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 168,
+  "downloads_30d": 172,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

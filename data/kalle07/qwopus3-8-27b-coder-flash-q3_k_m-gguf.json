@@ -47,8 +47,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 13500738496,
+  "storage_human": "13.5 GB",
   "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
   "formats": [
     "gguf"

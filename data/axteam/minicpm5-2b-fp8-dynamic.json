@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/MiniCPM5-2B-FP8-dynamic",
   "created_at": "2026-10-27T23:02:14.000Z",
-  "updated_at": "2026-11-01T02:46:45.000Z",
+  "updated_at": "2026-11-02T00:28:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 28,
+  "downloads_30d": 96,
   "trending_score": 0,
   "parameters": 2516756480,
   "parameters_human": "2.52B",

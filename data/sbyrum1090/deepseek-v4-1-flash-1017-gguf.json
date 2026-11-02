@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sbyrum1090/DeepSeek-V4.1-Flash-1017-GGUF",
+  "slug": "sbyrum1090-deepseek-v4-1-flash-1017-gguf",
+  "author": "sbyrum1090",
+  "url": "https://huggingface.co/sbyrum1090/DeepSeek-V4.1-Flash-1017-GGUF",
+  "created_at": "2026-11-01T22:34:07.000Z",
+  "updated_at": "2026-11-01T22:34:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "deepseek",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 748494684784,
+  "parameters_human": "748.49B",
+  "storage_bytes": 1565263384000,
+  "storage_human": "1565.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Rin247/flux-3-image-klein-base",
+  "slug": "rin247-flux-3-image-klein-base",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/flux-3-image-klein-base",
+  "created_at": "2026-11-02T02:14:27.000Z",
+  "updated_at": "2026-11-02T02:25:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "quantized",
+    "safetensors",
+    "mecha",
+    "weight-only",
+    "image",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33278440824,
+  "storage_human": "33.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

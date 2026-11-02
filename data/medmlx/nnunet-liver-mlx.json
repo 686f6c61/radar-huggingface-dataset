@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "MedMLX/nnunet-liver-mlx",
+  "slug": "medmlx-nnunet-liver-mlx",
+  "author": "MedMLX",
+  "url": "https://huggingface.co/MedMLX/nnunet-liver-mlx",
+  "created_at": "2026-10-13T01:41:57.000Z",
+  "updated_at": "2026-11-02T00:45:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "native-mlx",
+    "apple-silicon",
+    "medical-imaging",
+    "ct",
+    "liver",
+    "segmentation",
+    "nnunet",
+    "research",
+    "image-segmentation",
+    "en",
+    "arxiv:1809.10486",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125294200,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

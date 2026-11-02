@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "erenextlabs/pusula",
+  "slug": "erenextlabs-pusula",
+  "author": "erenextlabs",
+  "url": "https://huggingface.co/erenextlabs/pusula",
+  "created_at": "2026-10-12T11:35:46.000Z",
+  "updated_at": "2026-11-01T23:31:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pusula",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pusula",
+    "safetensors",
+    "decision-model",
+    "turkish",
+    "routing",
+    "lora",
+    "d3",
+    "text-classification",
+    "tr",
+    "base_model:vllm-sr/d3",
+    "base_model:adapter:vllm-sr/d3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4378287280,
+  "storage_human": "4.4 GB",
+  "base_model": "vllm-sr/d3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

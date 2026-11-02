@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "agu18dec/final_olens_whitened",
+  "slug": "agu18dec-final_olens_whitened",
+  "author": "agu18dec",
+  "url": "https://huggingface.co/agu18dec/final_olens_whitened",
+  "created_at": "2026-11-01T21:36:07.000Z",
+  "updated_at": "2026-11-01T21:36:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "interpretability",
+    "activation-reading",
+    "olens",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1868236912,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

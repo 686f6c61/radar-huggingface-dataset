@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "imagent/siglip2-so400m-384-onnx",
+  "slug": "imagent-siglip2-so400m-384-onnx",
+  "author": "imagent",
+  "url": "https://huggingface.co/imagent/siglip2-so400m-384-onnx",
+  "created_at": "2026-11-02T01:56:41.000Z",
+  "updated_at": "2026-11-02T01:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "imagent",
+    "feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2272958411,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

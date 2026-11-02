@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "RabbitDaisuke/SDPose-Wholebody-onnx",
+  "slug": "rabbitdaisuke-sdpose-wholebody-onnx",
+  "author": "RabbitDaisuke",
+  "url": "https://huggingface.co/RabbitDaisuke/SDPose-Wholebody-onnx",
+  "created_at": "2026-11-01T23:59:13.000Z",
+  "updated_at": "2026-11-02T00:52:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "mmpose",
+    "wholebody",
+    "pose-estimation",
+    "keypoint-detection",
+    "base_model:teemosliang/SDPose-Wholebody",
+    "base_model:quantized:teemosliang/SDPose-Wholebody",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13922154132,
+  "storage_human": "13.9 GB",
+  "base_model": "teemosliang/SDPose-Wholebody",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

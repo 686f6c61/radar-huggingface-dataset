@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "taichi116/pi0_sarmal_hybrid",
+  "slug": "taichi116-pi0_sarmal_hybrid",
+  "author": "taichi116",
+  "url": "https://huggingface.co/taichi116/pi0_sarmal_hybrid",
+  "created_at": "2026-10-28T05:59:46.000Z",
+  "updated_at": "2026-11-02T03:38:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 29925429992,
+  "storage_human": "29.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

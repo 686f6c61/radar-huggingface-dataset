@@ -5,7 +5,7 @@
   "author": "Rikunarita",
   "url": "https://huggingface.co/Rikunarita/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO_Backbone-IQ2_XXS_Engram-IQ4_NL-GGUF",
   "created_at": "2026-11-01T13:28:24.000Z",
-  "updated_at": "2026-11-01T14:17:05.000Z",
+  "updated_at": "2026-11-01T14:35:44.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

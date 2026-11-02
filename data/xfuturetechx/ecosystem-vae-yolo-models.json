@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "xFutureTechx/Ecosystem-Vae-Yolo-Models",
+  "slug": "xfuturetechx-ecosystem-vae-yolo-models",
+  "author": "xFutureTechx",
+  "url": "https://huggingface.co/xFutureTechx/Ecosystem-Vae-Yolo-Models",
+  "created_at": "2026-05-26T23:10:15.000Z",
+  "updated_at": "2026-11-02T03:46:20.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "not-for-all-audiences",
+    "yolov8",
+    "backup",
+    "trainer-ui",
+    "vae",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4178263812,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

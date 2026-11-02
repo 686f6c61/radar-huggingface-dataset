@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "JSI123/ML-Agents-SoccerTwos",
+  "slug": "jsi123-ml-agents-soccertwos",
+  "author": "JSI123",
+  "url": "https://huggingface.co/JSI123/ML-Agents-SoccerTwos",
+  "created_at": "2026-11-01T20:51:33.000Z",
+  "updated_at": "2026-11-01T20:51:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1764633,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

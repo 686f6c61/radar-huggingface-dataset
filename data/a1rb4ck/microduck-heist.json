@@ -5,7 +5,7 @@
   "author": "a1rb4Ck",
   "url": "https://huggingface.co/a1rb4Ck/microduck-heist",
   "created_at": "2026-10-31T09:32:14.000Z",
-  "updated_at": "2026-10-31T20:06:29.000Z",
+  "updated_at": "2026-11-01T22:52:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5948743,
-  "storage_human": "6 MB",
+  "storage_bytes": 12596123,
+  "storage_human": "13 MB",
   "base_model": null,
   "formats": [
     "onnx"

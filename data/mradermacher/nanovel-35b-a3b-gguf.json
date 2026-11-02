@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/NaNovel-35B-A3B-GGUF",
+  "slug": "mradermacher-nanovel-35b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NaNovel-35B-A3B-GGUF",
+  "created_at": "2026-03-13T12:41:10.000Z",
+  "updated_at": "2026-11-02T01:18:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "creative-writing",
+    "novelist",
+    "qwen3.5",
+    "moe",
+    "mixture-of-experts",
+    "nanovel",
+    "chain-of-thought",
+    "en",
+    "dataset:Dxniz/Novelist-CoT",
+    "base_model:Dxniz/NaNovel-35B-A3B",
+    "base_model:quantized:Dxniz/NaNovel-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 919,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 238407697728,
+  "storage_human": "238.4 GB",
+  "base_model": "Dxniz/NaNovel-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Thox-ai",
   "url": "https://huggingface.co/Thox-ai/ThoxMini-Phi4Mini",
   "created_at": "2026-10-29T01:16:40.000Z",
-  "updated_at": "2026-11-01T01:20:42.000Z",
+  "updated_at": "2026-11-01T17:16:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
   "trending_score": 0,
   "parameters": 3836021760,
   "parameters_human": "3.84B",
-  "storage_bytes": 14450631847,
+  "storage_bytes": 14452337592,
   "storage_human": "14.5 GB",
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Gntz/whisper-ro-onnx",
+  "slug": "gntz-whisper-ro-onnx",
+  "author": "Gntz",
+  "url": "https://huggingface.co/Gntz/whisper-ro-onnx",
+  "created_at": "2026-11-01T21:56:11.000Z",
+  "updated_at": "2026-11-01T23:02:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "ro",
+    "base_model:readerbench/whisper-ro",
+    "base_model:quantized:readerbench/whisper-ro",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1514167657,
+  "storage_human": "1.5 GB",
+  "base_model": "readerbench/whisper-ro",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

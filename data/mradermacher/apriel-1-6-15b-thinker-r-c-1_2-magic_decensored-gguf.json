@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored-GGUF",
+  "slug": "mradermacher-apriel-1-6-15b-thinker-r-c-1_2-magic_decensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored-GGUF",
+  "created_at": "2026-03-13T07:28:41.000Z",
+  "updated_at": "2026-11-01T21:50:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:MagicalAlchemist/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored",
+    "base_model:quantized:MagicalAlchemist/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 250,
+  "trending_score": 0,
+  "parameters": 14428902400,
+  "parameters_human": "14.43B",
+  "storage_bytes": 100832701152,
+  "storage_human": "100.8 GB",
+  "base_model": "MagicalAlchemist/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "diarizeapp/redimnet2-b3-onnx-qnn",
+  "slug": "diarizeapp-redimnet2-b3-onnx-qnn",
+  "author": "diarizeapp",
+  "url": "https://huggingface.co/diarizeapp/redimnet2-b3-onnx-qnn",
+  "created_at": "2026-11-02T02:35:47.000Z",
+  "updated_at": "2026-11-02T02:35:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "redimnet2",
+    "audio",
+    "speaker-diarization",
+    "speaker-embedding",
+    "speaker-verification",
+    "onnx-qnn",
+    "audio-to-audio",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37836535,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

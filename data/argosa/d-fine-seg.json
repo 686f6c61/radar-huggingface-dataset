@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ArgoSA/D-FINE-seg",
+  "slug": "argosa-d-fine-seg",
+  "author": "ArgoSA",
+  "url": "https://huggingface.co/ArgoSA/D-FINE-seg",
+  "created_at": "2026-05-01T21:36:17.000Z",
+  "updated_at": "2026-11-01T21:15:45.000Z",
+  "license": "apache-2.0-code--cityscapes-non-commercial-weights",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "object-detection",
+    "instance-segmentation",
+    "semantic-segmentation",
+    "real-time",
+    "detection-transformer",
+    "d-fine",
+    "tensorrt",
+    "openvino",
+    "coreml",
+    "autonomous-driving",
+    "arxiv:2410.13842",
+    "arxiv:2602.23043",
+    "arxiv:2206.02777",
+    "en",
+    "dataset:coco",
+    "dataset:cityscapes",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 961,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2049319028,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "Cityscapes",
+      "metric": "mIoU (val)",
+      "value": 84.84
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "Cityscapes",
+      "metric": "Pixel acc (val)",
+      "value": 97.1
+    }
+  ],
+  "sources": []
+}

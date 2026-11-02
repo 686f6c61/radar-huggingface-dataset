@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "patriotyk/HolosTTS",
+  "slug": "patriotyk-holostts",
+  "author": "patriotyk",
+  "url": "https://huggingface.co/patriotyk/HolosTTS",
+  "created_at": "2026-07-27T18:18:28.000Z",
+  "updated_at": "2026-11-01T21:50:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "onnx",
+    "ONNX",
+    "TTS",
+    "text-to-speech",
+    "uk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6374373989,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

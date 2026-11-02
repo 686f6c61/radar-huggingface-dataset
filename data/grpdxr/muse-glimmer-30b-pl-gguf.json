@@ -5,7 +5,7 @@
   "author": "grpdxr",
   "url": "https://huggingface.co/grpdxr/Muse-Glimmer-30B-PL-GGUF",
   "created_at": "2026-10-31T13:55:18.000Z",
-  "updated_at": "2026-10-31T20:18:07.000Z",
+  "updated_at": "2026-11-01T10:34:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

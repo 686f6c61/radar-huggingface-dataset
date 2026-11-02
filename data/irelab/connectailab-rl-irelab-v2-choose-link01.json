@@ -5,7 +5,7 @@
   "author": "IRELAB",
   "url": "https://huggingface.co/IRELAB/connectailab-rl-irelab-v2-choose-link01",
   "created_at": "2026-11-01T02:41:34.000Z",
-  "updated_at": "2026-11-01T02:41:38.000Z",
+  "updated_at": "2026-11-01T04:30:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

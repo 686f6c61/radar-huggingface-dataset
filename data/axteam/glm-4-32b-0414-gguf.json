@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/GLM-4-32B-0414-GGUF",
   "created_at": "2026-10-30T10:50:10.000Z",
-  "updated_at": "2026-11-01T02:45:28.000Z",
+  "updated_at": "2026-11-02T02:33:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 143,
+  "downloads_30d": 406,
   "trending_score": 0,
   "parameters": 32566081536,
   "parameters_human": "32.57B",

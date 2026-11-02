@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ProcVLM-2B-FP32-GGUF",
+  "slug": "mradermacher-procvlm-2b-fp32-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ProcVLM-2B-FP32-GGUF",
+  "created_at": "2026-05-12T10:08:44.000Z",
+  "updated_at": "2026-11-01T21:48:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "robotics",
+    "vision-language-model",
+    "progress-reward",
+    "robot-manipulation",
+    "qwen3-vl",
+    "procvlm",
+    "en",
+    "dataset:ce-amtic/ProcVQA-20M-annotations",
+    "dataset:ce-amtic/ProcCorpus-60M",
+    "base_model:ce-amtic/ProcVLM-2B-FP32",
+    "base_model:quantized:ce-amtic/ProcVLM-2B-FP32",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 196,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 19879065024,
+  "storage_human": "19.9 GB",
+  "base_model": "ce-amtic/ProcVLM-2B-FP32",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

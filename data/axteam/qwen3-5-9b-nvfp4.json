@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Qwen3.5-9B-NVFP4",
   "created_at": "2026-10-27T09:02:23.000Z",
-  "updated_at": "2026-11-01T02:59:57.000Z",
+  "updated_at": "2026-11-02T01:54:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 11698111718,
-  "storage_human": "11.7 GB",
+  "storage_bytes": 22896832606,
+  "storage_human": "22.9 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

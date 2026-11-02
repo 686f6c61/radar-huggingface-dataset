@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/lexi-coder-v4.4-GGUF",
+  "slug": "mradermacher-lexi-coder-v4-4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/lexi-coder-v4.4-GGUF",
+  "created_at": "2026-09-07T13:59:10.000Z",
+  "updated_at": "2026-11-02T00:08:46.000Z",
+  "license": "inherits-base-model-and-dataset-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ai-model-builder",
+    "fine-tuned",
+    "lora",
+    "reallexi",
+    "text-generation",
+    "en",
+    "base_model:reallexi/lexi-coder-v4.4",
+    "base_model:adapter:reallexi/lexi-coder-v4.4",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 339,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 35608218240,
+  "storage_human": "35.6 GB",
+  "base_model": "reallexi/lexi-coder-v4.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

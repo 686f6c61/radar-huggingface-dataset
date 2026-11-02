@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "xFutureTechx/Aug2023-Sept2023SORT",
+  "slug": "xfuturetechx-aug2023-sept2023sort",
+  "author": "xFutureTechx",
+  "url": "https://huggingface.co/xFutureTechx/Aug2023-Sept2023SORT",
+  "created_at": "2023-05-16T10:32:06.000Z",
+  "updated_at": "2026-11-02T03:44:35.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "merge model",
+    "anime",
+    "illustration",
+    "not-for-all-audiences",
+    "en",
+    "dataset:EarthnDusk/Creative-Embeddings",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424178871084,
+  "storage_human": "424.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

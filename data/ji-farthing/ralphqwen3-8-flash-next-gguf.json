@@ -5,7 +5,7 @@
   "author": "ji-farthing",
   "url": "https://huggingface.co/ji-farthing/RalphQwen3.8-Flash-Next-GGUF",
   "created_at": "2026-09-27T23:32:42.000Z",
-  "updated_at": "2026-09-28T15:35:30.000Z",
+  "updated_at": "2026-11-01T19:48:56.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 193015448,
   "parameters_human": "193.0M",
-  "storage_bytes": 783013472,
-  "storage_human": "783 MB",
+  "storage_bytes": 1566026112,
+  "storage_human": "1.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

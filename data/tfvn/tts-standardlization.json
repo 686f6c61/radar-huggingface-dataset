@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tfvn/TTS-standardlization",
+  "slug": "tfvn-tts-standardlization",
+  "author": "tfvn",
+  "url": "https://huggingface.co/tfvn/TTS-standardlization",
+  "created_at": "2026-11-02T04:07:21.000Z",
+  "updated_at": "2026-11-02T04:09:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "teencode-seq2seq-transformer",
+    "text2text-generation",
+    "vietnamese",
+    "teencode",
+    "text-normalization",
+    "seq2seq",
+    "int8",
+    "raspberry-pi",
+    "vi",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19935040,
+  "parameters_human": "19.9M",
+  "storage_bytes": 60276397,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Vietnamese teencode normalization",
+      "dataset": "Synthetic Vietnamese teencode pairs (held-out test sets)",
+      "metric": "CER original teencode test (999 rows",
+      "value": 2.08
+    },
+    {
+      "task": "Vietnamese teencode normalization",
+      "dataset": "Synthetic Vietnamese teencode pairs (held-out test sets)",
+      "metric": "CER untoned test (986 rows",
+      "value": 11.19
+    },
+    {
+      "task": "Vietnamese teencode normalization",
+      "dataset": "Synthetic Vietnamese teencode pairs (held-out test sets)",
+      "metric": "CER hard test (1251 rows",
+      "value": 4.95
+    },
+    {
+      "task": "Vietnamese teencode normalization",
+      "dataset": "Synthetic Vietnamese teencode pairs (held-out test sets)",
+      "metric": "CER context test (803 rows, INT8; in-distribution, optimistic)",
+      "value": 0.35
+    }
+  ],
+  "sources": []
+}

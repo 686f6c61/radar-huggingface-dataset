@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Code2World-GGUF",
+  "slug": "mradermacher-code2world-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Code2World-GGUF",
+  "created_at": "2026-03-13T07:42:53.000Z",
+  "updated_at": "2026-11-01T23:02:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:GD-ML/Code2World",
+    "base_model:quantized:GD-ML/Code2World",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 221,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 75336668544,
+  "storage_human": "75.3 GB",
+  "base_model": "GD-ML/Code2World",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

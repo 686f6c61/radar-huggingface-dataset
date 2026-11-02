@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3-VL-4B-geez-Base-GGUF",
+  "slug": "mradermacher-qwen3-vl-4b-geez-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3-VL-4B-geez-Base-GGUF",
+  "created_at": "2026-01-12T06:00:04.000Z",
+  "updated_at": "2026-11-01T21:52:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_vl",
+    "en",
+    "base_model:NaolBM/qwen3-VL-4B-geez-Base",
+    "base_model:quantized:NaolBM/qwen3-VL-4B-geez-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 146,
+  "trending_score": 0,
+  "parameters": 4077684736,
+  "parameters_human": "4.08B",
+  "storage_bytes": 38308464928,
+  "storage_human": "38.3 GB",
+  "base_model": "NaolBM/qwen3-VL-4B-geez-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

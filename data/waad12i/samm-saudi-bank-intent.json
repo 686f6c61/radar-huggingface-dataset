@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "waad12I/samm-saudi-bank-intent",
+  "slug": "waad12i-samm-saudi-bank-intent",
+  "author": "waad12I",
+  "url": "https://huggingface.co/waad12I/samm-saudi-bank-intent",
+  "created_at": "2026-11-01T21:39:05.000Z",
+  "updated_at": "2026-11-01T21:39:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 143707478,
+  "parameters_human": "143.7M",
+  "storage_bytes": 574853456,
+  "storage_human": "575 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

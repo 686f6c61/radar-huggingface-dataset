@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Cohere-AR/cohere-transcribe-ar-sft-v8ns",
+  "slug": "cohere-ar-cohere-transcribe-ar-sft-v8ns",
+  "author": "Cohere-AR",
+  "url": "https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v8ns",
+  "created_at": "2026-11-02T03:41:17.000Z",
+  "updated_at": "2026-11-02T03:41:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "speech-recognition",
+    "arabic",
+    "english",
+    "code-switching",
+    "telephony",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2065770752,
+  "parameters_human": "2.07B",
+  "storage_bytes": 4131809616,
+  "storage_human": "4.1 GB",
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enterprise AI: Private, Secure, Customizable | Cohere",
+      "url": "https://cohere.com/",
+      "snippet": "Cohere builds powerful models and AI solutions enabling enterprises to automate processes, empower employees, and turn …"
+    },
+    {
+      "title": "IA pour les entreprises : privée, sécurisée, personnalisable | Cohere",
+      "url": "https://cohere.com/fr",
+      "snippet": "L’équipe de Cohere a apporté des contributions fondamentales à l’IA générative. Leur service aidera les entreprises du monde entier …"
+    },
+    {
+      "title": "Cohere - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cohere",
+      "snippet": "Cohere ... Cohere Inc. is a Canadian multinational technology company focused on artificial intelligence. Cohere specializes in large …"
+    },
+    {
+      "title": "Cohere — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cohere",
+      "snippet": "En juin 2022, Cohere lance Cohere Labs (anciennement Cohere For AI), un laboratoire de recherche et une communauté à but non …"
+    },
+    {
+      "title": "Qui est Cohere, la discrète étoile montante de l’IA, qui vient de lever ...",
+      "url": "https://www.presse-citron.net/qui-est-cohere-la-discrete-etoile-montante-de-lia-qui-vient-de-lever-500-millions-de-dollars/",
+      "snippet": "Jul 24, 2024 · Qui est Cohere, la discrète étoile montante de l’IA, qui vient de lever 500 millions de dollars ? Découvrez pourquoi les …"
+    }
+  ]
+}

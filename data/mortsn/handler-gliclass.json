@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mortsn/handler-gliclass",
+  "slug": "mortsn-handler-gliclass",
+  "author": "mortsn",
+  "url": "https://huggingface.co/mortsn/handler-gliclass",
+  "created_at": "2026-11-01T23:45:05.000Z",
+  "updated_at": "2026-11-01T23:46:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "game",
+    "zero-shot-classification",
+    "base_model:knowledgator/gliclass-v4-edge",
+    "base_model:quantized:knowledgator/gliclass-v4-edge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 885505124,
+  "storage_human": "886 MB",
+  "base_model": "knowledgator/gliclass-v4-edge",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

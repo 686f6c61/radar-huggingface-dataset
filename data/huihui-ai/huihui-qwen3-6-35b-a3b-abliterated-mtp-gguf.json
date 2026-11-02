@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
+  "slug": "huihui-ai-huihui-qwen3-6-35b-a3b-abliterated-mtp-gguf",
+  "author": "huihui-ai",
+  "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
+  "created_at": "2026-05-19T11:53:48.000Z",
+  "updated_at": "2026-05-19T13:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "GGUF",
+    "MTP",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 70,
+  "downloads_30d": 2279692,
+  "trending_score": 12,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 216444623872,
+  "storage_human": "216.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "We are committed to the study of model ablations and collaborate with the open-source community to advance natural language …"
+    },
+    {
+      "title": "huihui_ai",
+      "url": "https://ollama.com/huihui_ai",
+      "snippet": "gemma3n-abliterated ... hy-mt1.5-abliterated ... phi4-abliterated ... huihui-moe-abliterated ... kimi-k2 ... baronllm-abliterated ..."
+    },
+    {
+      "title": "GitHub - huihuihui-ai/huihui",
+      "url": "https://github.com/huihuihui-ai/huihui",
+      "snippet": "支持：Claude Code、Codex、豆包、以及其他支持 Skills 的 Agent。 huihui 不是网上泛泛而谈的面试模板合集。 所有答题框架、追 …"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "https://www.huihui.ink/ Collection for Wuthering Waves | WuWa …",
+      "url": "https://gamebanana.com/collections/169682",
+      "snippet": "https://www.huihui.ink/ - A Collection for Wuthering Waves. Wuthering Waves Collections https://www.huihui.ink/ Collection Overview …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Sherkhan243/Nemotron-3.5-Transcribe-kk-v2",
+  "slug": "sherkhan243-nemotron-3-5-transcribe-kk-v2",
+  "author": "Sherkhan243",
+  "url": "https://huggingface.co/Sherkhan243/Nemotron-3.5-Transcribe-kk-v2",
+  "created_at": "2026-11-01T19:25:55.000Z",
+  "updated_at": "2026-11-01T20:11:25.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "kk"
+  ],
+  "tags": [
+    "nemo",
+    "safetensors",
+    "nemo_speechlm",
+    "kazakh",
+    "qazaq",
+    "asr",
+    "speech-recognition",
+    "speechlm2",
+    "nemotron",
+    "mixture-of-experts",
+    "lora",
+    "automatic-speech-recognition",
+    "kk",
+    "dataset:InflexionLab/ISSAI-KSC2-Structured",
+    "dataset:google/fleurs",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33697781029,
+  "parameters_human": "33.70B",
+  "storage_bytes": 135008696316,
+  "storage_human": "135.0 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (kk_kz, test)",
+      "metric": "WER (normalized)",
+      "value": 8.51
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (kk_kz, test)",
+      "metric": "CER (normalized)",
+      "value": 2.22
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "KSC2 (test, full)",
+      "metric": "WER (normalized)",
+      "value": 14.34
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "KSC2 (test, full)",
+      "metric": "CER (normalized)",
+      "value": 4.6
+    }
+  ],
+  "sources": []
+}

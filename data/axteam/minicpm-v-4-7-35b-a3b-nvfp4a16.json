@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-NVFP4A16",
   "created_at": "2026-10-28T02:02:16.000Z",
-  "updated_at": "2026-11-01T02:46:31.000Z",
+  "updated_at": "2026-11-02T00:28:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 20945719504,
   "parameters_human": "20.95B",
-  "storage_bytes": 23591992055,
-  "storage_human": "23.6 GB",
+  "storage_bytes": 70714610391,
+  "storage_human": "70.7 GB",
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "safetensors"

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "deepparse/fasttext-base",
+  "slug": "deepparse-fasttext-base",
+  "author": "deepparse",
+  "url": "https://huggingface.co/deepparse/fasttext-base",
+  "created_at": "2025-07-15T17:24:03.000Z",
+  "updated_at": "2026-11-02T02:49:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "deepparse",
+  "languages": [],
+  "tags": [
+    "deepparse",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "address-parsing",
+    "arxiv:2006.16152",
+    "arxiv:2112.04008",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1184,
+  "trending_score": 0,
+  "parameters": 9647113,
+  "parameters_human": "9.6M",
+  "storage_bytes": 3527095220,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

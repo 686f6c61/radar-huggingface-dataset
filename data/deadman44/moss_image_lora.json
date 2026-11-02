@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "deadman44/MOSS_Image_LoRA",
+  "slug": "deadman44-moss_image_lora",
+  "author": "deadman44",
+  "url": "https://huggingface.co/deadman44/MOSS_Image_LoRA",
+  "created_at": "2026-10-20T06:09:17.000Z",
+  "updated_at": "2026-11-02T02:57:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "moss-image",
+    "text-to-image",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 926624848,
+  "storage_human": "927 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

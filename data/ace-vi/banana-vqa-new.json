@@ -5,7 +5,7 @@
   "author": "Ace-VI",
   "url": "https://huggingface.co/Ace-VI/banana-vqa-new",
   "created_at": "2026-10-28T02:17:47.000Z",
-  "updated_at": "2026-10-28T02:18:41.000Z",
+  "updated_at": "2026-11-01T12:58:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9466776,
-  "storage_human": "9 MB",
+  "storage_bytes": 18933552,
+  "storage_human": "19 MB",
   "base_model": "Salesforce/blip-vqa-base",
   "formats": [
     "safetensors"

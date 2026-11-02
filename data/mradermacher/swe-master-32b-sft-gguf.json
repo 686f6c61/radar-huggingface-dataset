@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SWE-Master-32B-SFT-GGUF",
+  "slug": "mradermacher-swe-master-32b-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SWE-Master-32B-SFT-GGUF",
+  "created_at": "2026-02-11T07:24:18.000Z",
+  "updated_at": "2026-11-01T23:03:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:RUC-AIBOX/SWE-Master-32B-SFT",
+    "base_model:quantized:RUC-AIBOX/SWE-Master-32B-SFT",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000858720,
+  "storage_human": "224.0 GB",
+  "base_model": "RUC-AIBOX/SWE-Master-32B-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

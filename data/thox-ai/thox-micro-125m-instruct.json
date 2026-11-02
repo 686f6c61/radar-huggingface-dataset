@@ -5,7 +5,7 @@
   "author": "Thox-ai",
   "url": "https://huggingface.co/Thox-ai/thox-micro-125m-instruct",
   "created_at": "2026-09-25T22:59:52.000Z",
-  "updated_at": "2026-11-01T01:21:46.000Z",
+  "updated_at": "2026-11-01T17:01:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,8 +44,8 @@
   "trending_score": 0,
   "parameters": 123587328,
   "parameters_human": "123.6M",
-  "storage_bytes": 494361544,
-  "storage_human": "494 MB",
+  "storage_bytes": 495394898,
+  "storage_human": "495 MB",
   "base_model": "Thox-ai/thox-micro-125m",
   "formats": [
     "safetensors"

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "KeelCore/KeelCore-750M",
+  "slug": "keelcore-keelcore-750m",
+  "author": "KeelCore",
+  "url": "https://huggingface.co/KeelCore/KeelCore-750M",
+  "created_at": "2026-10-30T05:15:11.000Z",
+  "updated_at": "2026-10-31T01:05:06.000Z",
+  "license": "keelcore-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "encoder-decoder",
+    "base-model",
+    "lora",
+    "adapters",
+    "ul2",
+    "int8",
+    "en",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 751889408,
+  "parameters_human": "751.9M",
+  "storage_bytes": 3872780767,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

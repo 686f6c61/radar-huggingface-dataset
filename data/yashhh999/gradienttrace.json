@@ -5,7 +5,7 @@
   "author": "Yashhh999",
   "url": "https://huggingface.co/Yashhh999/gradientTrace",
   "created_at": "2026-10-29T16:11:47.000Z",
-  "updated_at": "2026-11-01T19:32:20.000Z",
+  "updated_at": "2026-11-01T23:18:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 434013185,
   "parameters_human": "434.0M",
-  "storage_bytes": 96613872543,
-  "storage_human": "96.6 GB",
+  "storage_bytes": 96667920332,
+  "storage_human": "96.7 GB",
   "base_model": "microsoft/deberta-v3-large",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "Arisp",
   "url": "https://huggingface.co/Arisp/chess-pgn-2400plus-rl",
   "created_at": "2026-11-01T04:09:13.000Z",
-  "updated_at": "2026-11-01T04:11:16.000Z",
+  "updated_at": "2026-11-01T06:14:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 50997248,
   "parameters_human": "51.0M",
-  "storage_bytes": 204006632,
-  "storage_human": "204 MB",
+  "storage_bytes": 408013264,
+  "storage_human": "408 MB",
   "base_model": "Arisp/chess-pgn-2400plus",
   "formats": [
     "safetensors"

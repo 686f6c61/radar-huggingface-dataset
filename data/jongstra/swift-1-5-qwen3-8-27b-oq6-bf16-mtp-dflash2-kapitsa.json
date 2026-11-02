@@ -5,7 +5,7 @@
   "author": "jongstra",
   "url": "https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-dflash2-kapitsa",
   "created_at": "2026-11-01T16:35:57.000Z",
-  "updated_at": "2026-11-01T16:56:31.000Z",
+  "updated_at": "2026-11-01T17:14:46.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

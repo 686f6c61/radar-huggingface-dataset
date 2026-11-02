@@ -5,7 +5,7 @@
   "author": "govailabs",
   "url": "https://huggingface.co/govailabs/govai",
   "created_at": "2026-11-01T07:06:45.000Z",
-  "updated_at": "2026-11-01T07:07:53.000Z",
+  "updated_at": "2026-11-01T07:37:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,6 @@
     "en",
     "hi",
     "te",
-    "base_model:Qwen/Qwen3.5-2B",
-    "base_model:quantized:Qwen/Qwen3.5-2B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -37,8 +35,8 @@
   "trending_score": 0,
   "parameters": 1942653248,
   "parameters_human": "1.94B",
-  "storage_bytes": 1312164800,
-  "storage_human": "1.3 GB",
+  "storage_bytes": 2624329312,
+  "storage_human": "2.6 GB",
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ateneaxvalac/checkpoints_e5_small",
+  "slug": "ateneaxvalac-checkpoints_e5_small",
+  "author": "ateneaxvalac",
+  "url": "https://huggingface.co/ateneaxvalac/checkpoints_e5_small",
+  "created_at": "2026-11-02T00:45:38.000Z",
+  "updated_at": "2026-11-02T00:45:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117654530,
+  "parameters_human": "117.7M",
+  "storage_bytes": 470647569,
+  "storage_human": "471 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

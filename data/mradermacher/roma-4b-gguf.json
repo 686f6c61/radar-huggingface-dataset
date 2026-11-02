@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ROMA-4B-GGUF",
+  "slug": "mradermacher-roma-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ROMA-4B-GGUF",
+  "created_at": "2026-05-12T10:04:58.000Z",
+  "updated_at": "2026-11-01T21:48:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:lr10260/ROMA-4B",
+    "base_model:quantized:lr10260/ROMA-4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 40998435328,
+  "storage_human": "41.0 GB",
+  "base_model": "lr10260/ROMA-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

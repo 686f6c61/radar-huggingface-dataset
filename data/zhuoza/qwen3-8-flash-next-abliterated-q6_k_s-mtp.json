@@ -5,7 +5,7 @@
   "author": "ZHUOZA",
   "url": "https://huggingface.co/ZHUOZA/Qwen3.8-Flash-Next-abliterated-Q6_K_S-MTP",
   "created_at": "2026-10-29T12:39:30.000Z",
-  "updated_at": "2026-10-31T08:55:59.000Z",
+  "updated_at": "2026-11-01T11:35:07.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 448931056,
   "parameters_human": "448.9M",
-  "storage_bytes": 170186554144,
-  "storage_human": "170.2 GB",
+  "storage_bytes": 233838492800,
+  "storage_human": "233.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

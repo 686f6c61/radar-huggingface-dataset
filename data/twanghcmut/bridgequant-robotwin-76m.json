@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "twanghcmut/bridgequant-robotwin-76m",
+  "slug": "twanghcmut-bridgequant-robotwin-76m",
+  "author": "twanghcmut",
+  "url": "https://huggingface.co/twanghcmut/bridgequant-robotwin-76m",
+  "created_at": "2026-11-02T03:11:31.000Z",
+  "updated_at": "2026-11-02T03:11:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bridgequant_async_vla",
+    "robotics",
+    "vision-language-action",
+    "bridgequant",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64990891,
+  "parameters_human": "65.0M",
+  "storage_bytes": 260017996,
+  "storage_human": "260 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

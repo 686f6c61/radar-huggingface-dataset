@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mysterium99/groot_newtasks_to_manufacturing",
+  "slug": "mysterium99-groot_newtasks_to_manufacturing",
+  "author": "mysterium99",
+  "url": "https://huggingface.co/mysterium99/groot_newtasks_to_manufacturing",
+  "created_at": "2026-11-02T03:56:06.000Z",
+  "updated_at": "2026-11-02T03:56:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:manufacturing_finetune",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

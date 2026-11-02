@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "KevinCha/Qwen3-VL-2B-Instruct-BoxSpecialToken-CustomColor",
+  "slug": "kevincha-qwen3-vl-2b-instruct-boxspecialtoken-customcolor",
+  "author": "KevinCha",
+  "url": "https://huggingface.co/KevinCha/Qwen3-VL-2B-Instruct-BoxSpecialToken-CustomColor",
+  "created_at": "2026-11-02T00:56:58.000Z",
+  "updated_at": "2026-11-02T01:01:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266794846,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

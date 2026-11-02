@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "tiny-random/minicpm-v-4.7",
+  "slug": "tiny-random-minicpm-v-4-7",
+  "author": "tiny-random",
+  "url": "https://huggingface.co/tiny-random/minicpm-v-4.7",
+  "created_at": "2026-11-01T20:53:19.000Z",
+  "updated_at": "2026-11-01T20:53:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv4_7",
+    "image-text-to-text",
+    "conversational",
+    "base_model:openbmb/MiniCPM-V-4.7-1B",
+    "base_model:finetune:openbmb/MiniCPM-V-4.7-1B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11544992,
+  "parameters_human": "11.5M",
+  "storage_bytes": 43107121,
+  "storage_human": "43 MB",
+  "base_model": "openbmb/MiniCPM-V-4.7-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

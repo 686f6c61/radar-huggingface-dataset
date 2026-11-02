@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Guilherme34/LFM3-1.7B-Looped-Latent-v2.1-adapter",
+  "slug": "guilherme34-lfm3-1-7b-looped-latent-v2-1-adapter",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/LFM3-1.7B-Looped-Latent-v2.1-adapter",
+  "created_at": "2026-11-01T23:42:30.000Z",
+  "updated_at": "2026-11-01T23:42:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106434736,
+  "storage_human": "106 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

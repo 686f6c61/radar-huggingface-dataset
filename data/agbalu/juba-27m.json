@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "agbalu/Juba-27M",
+  "slug": "agbalu-juba-27m",
+  "author": "agbalu",
+  "url": "https://huggingface.co/agbalu/Juba-27M",
+  "created_at": "2026-08-13T09:45:44.000Z",
+  "updated_at": "2026-11-01T22:36:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "kab"
+  ],
+  "tags": [
+    "safetensors",
+    "juba",
+    "kabyle",
+    "taqbaylit",
+    "berber",
+    "amazigh",
+    "transliteration",
+    "tifinagh",
+    "schwa-restoration",
+    "low-resource",
+    "translation",
+    "custom_code",
+    "kab",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 26901888,
+  "parameters_human": "26.9M",
+  "storage_bytes": 215289162,
+  "storage_human": "215 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Script conversion, Tifinagh to Kabyle Latin",
+      "dataset": "agbalu/KabTifinagh test split",
+      "metric": "Sentence exact match (free-running, 5,000 sentences)",
+      "value": 0.9422
+    },
+    {
+      "task": "Script conversion, Tifinagh to Kabyle Latin",
+      "dataset": "agbalu/KabTifinagh test split",
+      "metric": "Character error rate (free-running, 5,000 sentences)",
+      "value": 0.0033
+    },
+    {
+      "task": "Script conversion, Tifinagh to Kabyle Latin",
+      "dataset": "agbalu/KabTifinagh test split",
+      "metric": "Schwa placement F1",
+      "value": 0.9351
+    }
+  ],
+  "sources": []
+}

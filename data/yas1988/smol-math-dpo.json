@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "yas1988/smol-math-dpo",
+  "slug": "yas1988-smol-math-dpo",
+  "author": "yas1988",
+  "url": "https://huggingface.co/yas1988/smol-math-dpo",
+  "created_at": "2026-11-01T21:37:08.000Z",
+  "updated_at": "2026-11-01T22:14:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "dpo",
+    "arxiv:2305.18290",
+    "base_model:yas1988/smol-math-sft-merged",
+    "base_model:finetune:yas1988/smol-math-sft-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 652190631,
+  "storage_human": "652 MB",
+  "base_model": "yas1988/smol-math-sft-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

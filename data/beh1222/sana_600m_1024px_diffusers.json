@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Beh1222/Sana_600M_1024px_diffusers",
+  "slug": "beh1222-sana_600m_1024px_diffusers",
+  "author": "Beh1222",
+  "url": "https://huggingface.co/Beh1222/Sana_600M_1024px_diffusers",
+  "created_at": "2026-11-02T03:42:39.000Z",
+  "updated_at": "2026-11-02T03:42:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "sana",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "sana",
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "Sana",
+    "1024px_based_image_size",
+    "Multi-language",
+    "en",
+    "zh",
+    "arxiv:2410.10629",
+    "base_model:Efficient-Large-Model/Sana_600M_1024px_diffusers",
+    "base_model:finetune:Efficient-Large-Model/Sana_600M_1024px_diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10066977280,
+  "storage_human": "10.1 GB",
+  "base_model": "Efficient-Large-Model/Sana_600M_1024px_diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

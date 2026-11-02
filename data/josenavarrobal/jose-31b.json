@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JoseNavarroBal/JOSE-31B",
+  "slug": "josenavarrobal-jose-31b",
+  "author": "JoseNavarroBal",
+  "url": "https://huggingface.co/JoseNavarroBal/JOSE-31B",
+  "created_at": "2026-10-31T22:22:51.000Z",
+  "updated_at": "2026-11-02T01:51:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "leaderboard",
+    "open-llm-leaderboard",
+    "benchmarks",
+    "evaluation",
+    "sovereign-ai",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Open LLM Leaderboard v2 (J.O.S.E. 31B — Unassisted Base Model)",
+      "dataset": "Open LLM Leaderboard v2 Suite (IFEval, BBH, MATH Lvl 5, GPQA, MuSR, MMLU-PRO)",
+      "metric": "Normalized Average (%) —",
+      "value": 56.63
+    },
+    {
+      "task": "Open LLM Leaderboard v2 (J.O.S.E. 31B — Unassisted Base Model)",
+      "dataset": "Open LLM Leaderboard v2 Suite (IFEval, BBH, MATH Lvl 5, GPQA, MuSR, MMLU-PRO)",
+      "metric": "Raw Accuracy Average (%)",
+      "value": 65.45
+    },
+    {
+      "task": "Open LLM Leaderboard v2 (J.O.S.E.F.I.N.A. — Sovereign Autonomous Agent on J.O.S.E. 31B / H.A.R.D.A.C.)",
+      "dataset": "Open LLM Leaderboard v2 Suite (Sovereign Operational Benchmark)",
+      "metric": "Sovereign System Normalized Average (%)",
+      "value": 96.03
+    },
+    {
+      "task": "Open LLM Leaderboard v2 (J.O.S.E.F.I.N.A. — Sovereign Autonomous Agent on J.O.S.E. 31B / H.A.R.D.A.C.)",
+      "dataset": "Open LLM Leaderboard v2 Suite (Sovereign Operational Benchmark)",
+      "metric": "Sovereign System Raw Accuracy (%)",
+      "value": 97.06
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "dimeneid/kawantumbuh-sentimen",
+  "slug": "dimeneid-kawantumbuh-sentimen",
+  "author": "dimeneid",
+  "url": "https://huggingface.co/dimeneid/kawantumbuh-sentimen",
+  "created_at": "2026-11-02T04:14:07.000Z",
+  "updated_at": "2026-11-02T04:29:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110559746,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442262520,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

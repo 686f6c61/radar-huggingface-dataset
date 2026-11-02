@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "arun-elr/retro-lm-1.7b",
+  "slug": "arun-elr-retro-lm-1-7b",
+  "author": "arun-elr",
+  "url": "https://huggingface.co/arun-elr/retro-lm-1.7b",
+  "created_at": "2026-11-02T04:22:10.000Z",
+  "updated_at": "2026-11-02T04:24:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "retrosynthesis",
+    "smiles",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608262,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés et Horaires - Lidl.fr",
+      "url": "https://www.lidl.fr/c/supermarches-et-horaires/s10019824",
+      "snippet": "Retrouvez les horaires de nos supermarchés et les différentes équipements à votre disposition en supermarchés. Inscrivez -vous ! …"
+    }
+  ]
+}

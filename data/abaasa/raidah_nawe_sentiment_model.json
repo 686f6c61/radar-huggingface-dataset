@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Abaasa/Raidah_Nawe_sentiment_model",
+  "slug": "abaasa-raidah_nawe_sentiment_model",
+  "author": "Abaasa",
+  "url": "https://huggingface.co/Abaasa/Raidah_Nawe_sentiment_model",
+  "created_at": "2026-10-30T14:21:57.000Z",
+  "updated_at": "2026-11-02T04:25:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "sentiment-analysis",
+    "text-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

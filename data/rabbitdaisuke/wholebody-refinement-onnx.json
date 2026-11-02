@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RabbitDaisuke/Wholebody-Refinement-onnx",
+  "slug": "rabbitdaisuke-wholebody-refinement-onnx",
+  "author": "RabbitDaisuke",
+  "url": "https://huggingface.co/RabbitDaisuke/Wholebody-Refinement-onnx",
+  "created_at": "2026-11-02T01:49:18.000Z",
+  "updated_at": "2026-11-02T02:39:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "mmpose",
+    "wholebody",
+    "hand-pose",
+    "keypoint-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 304684184,
+  "storage_human": "305 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

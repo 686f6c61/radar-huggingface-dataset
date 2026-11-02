@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "youssefbahy/taysir-tasmee",
+  "slug": "youssefbahy-taysir-tasmee",
+  "author": "youssefbahy",
+  "url": "https://huggingface.co/youssefbahy/taysir-tasmee",
+  "created_at": "2026-11-01T21:15:08.000Z",
+  "updated_at": "2026-11-01T21:19:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "arabic",
+    "automatic-speech-recognition",
+    "ar",
+    "base_model:nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+    "base_model:quantized:nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126715547,
+  "storage_human": "127 MB",
+  "base_model": "nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

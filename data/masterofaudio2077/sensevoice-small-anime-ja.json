@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "masterofaudio2077/sensevoice-small-anime-ja",
+  "slug": "masterofaudio2077-sensevoice-small-anime-ja",
+  "author": "masterofaudio2077",
+  "url": "https://huggingface.co/masterofaudio2077/sensevoice-small-anime-ja",
+  "created_at": "2026-11-01T23:34:10.000Z",
+  "updated_at": "2026-11-02T00:01:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "asr",
+    "ctc",
+    "anime",
+    "funasr",
+    "ja",
+    "base_model:FunAudioLLM/SenseVoiceSmall",
+    "base_model:finetune:FunAudioLLM/SenseVoiceSmall",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1872954882,
+  "storage_human": "1.9 GB",
+  "base_model": "FunAudioLLM/SenseVoiceSmall",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 2005629760,
   "parameters_human": "2.01B",
-  "storage_bytes": 4616419904,
-  "storage_human": "4.6 GB",
+  "storage_bytes": 2308210144,
+  "storage_human": "2.3 GB",
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "Hero422",
   "url": "https://huggingface.co/Hero422/qwen3.8-27b-exl3-v2-rad",
   "created_at": "2026-10-31T17:33:30.000Z",
-  "updated_at": "2026-10-31T19:56:06.000Z",
+  "updated_at": "2026-11-01T20:18:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,12 +14,13 @@
   "tags": [
     "radiance",
     "exl3",
+    "dataset:StillDeadcode/qwen3.8-27b-quant-challenge",
     "base_model:Qwen/Qwen3.8-27B",
     "base_model:quantized:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

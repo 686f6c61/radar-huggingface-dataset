@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/persona_eta_20b_s926-GGUF",
+  "slug": "mradermacher-persona_eta_20b_s926-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/persona_eta_20b_s926-GGUF",
+  "created_at": "2026-01-12T06:34:57.000Z",
+  "updated_at": "2026-11-01T21:51:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 170323552256,
+  "storage_human": "170.3 GB",
+  "base_model": "eousphoros/persona_eta_20b_s926",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

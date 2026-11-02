@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "agbalu/Fadhma-300M",
+  "slug": "agbalu-fadhma-300m",
+  "author": "agbalu",
+  "url": "https://huggingface.co/agbalu/Fadhma-300M",
+  "created_at": "2026-08-13T19:29:49.000Z",
+  "updated_at": "2026-11-01T22:36:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "kab"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "kabyle",
+    "taqbaylit",
+    "berber",
+    "amazigh",
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "ctc",
+    "low-resource",
+    "kab",
+    "base_model:ylacombe/omniASR_W2V_300M_SSL",
+    "base_model:finetune:ylacombe/omniASR_W2V_300M_SSL",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 140,
+  "trending_score": 0,
+  "parameters": 315479720,
+  "parameters_human": "315.5M",
+  "storage_bytes": 1448618515,
+  "storage_human": "1.4 GB",
+  "base_model": "ylacombe/omniASR_W2V_300M_SSL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Kabyle speech recognition",
+      "dataset": "Common Voice 22.0 Kabyle test split (15,003 clips, 888 unseen speakers)",
+      "metric": "Word error rate (%, beam search with 5-gram shallow fusion)",
+      "value": 25.65
+    },
+    {
+      "task": "Kabyle speech recognition",
+      "dataset": "Common Voice 22.0 Kabyle test split (15,003 clips, 888 unseen speakers)",
+      "metric": "Character error rate (%, beam search with 5-gram shallow fusion)",
+      "value": 8.01
+    },
+    {
+      "task": "Kabyle speech recognition",
+      "dataset": "Common Voice 22.0 Kabyle test split (15,003 clips, 888 unseen speakers)",
+      "metric": "Word error rate (%, greedy CTC)",
+      "value": 30.12
+    },
+    {
+      "task": "Kabyle speech recognition",
+      "dataset": "Common Voice 22.0 Kabyle test split (15,003 clips, 888 unseen speakers)",
+      "metric": "Character error rate (%, greedy CTC)",
+      "value": 8.53
+    }
+  ],
+  "sources": []
+}

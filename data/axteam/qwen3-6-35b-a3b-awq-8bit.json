@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Qwen3.6-35B-A3B-AWQ-8bit",
   "created_at": "2026-10-27T10:11:48.000Z",
-  "updated_at": "2026-11-01T03:00:08.000Z",
+  "updated_at": "2026-11-02T00:32:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
-  "storage_bytes": 40410125262,
-  "storage_human": "40.4 GB",
+  "storage_bytes": 79118158886,
+  "storage_human": "79.1 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"

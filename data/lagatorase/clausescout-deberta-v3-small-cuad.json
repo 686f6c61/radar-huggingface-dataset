@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Lagatorase/clausescout-deberta-v3-small-cuad",
+  "slug": "lagatorase-clausescout-deberta-v3-small-cuad",
+  "author": "Lagatorase",
+  "url": "https://huggingface.co/Lagatorase/clausescout-deberta-v3-small-cuad",
+  "created_at": "2026-11-02T01:25:14.000Z",
+  "updated_at": "2026-11-02T01:41:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "question-answering",
+    "legal",
+    "contracts",
+    "cuad",
+    "extractive-qa",
+    "deberta-v3",
+    "en",
+    "dataset:theatticusproject/cuad",
+    "base_model:microsoft/deberta-v3-small",
+    "base_model:finetune:microsoft/deberta-v3-small",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 141305858,
+  "parameters_human": "141.3M",
+  "storage_bytes": 565236024,
+  "storage_human": "565 MB",
+  "base_model": "microsoft/deberta-v3-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "deepparse/model2vec-multilingual-base",
+  "slug": "deepparse-model2vec-multilingual-base",
+  "author": "deepparse",
+  "url": "https://huggingface.co/deepparse/model2vec-multilingual-base",
+  "created_at": "2026-11-02T02:48:57.000Z",
+  "updated_at": "2026-11-02T02:48:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "deepparse",
+  "languages": [],
+  "tags": [
+    "deepparse",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "address-parsing",
+    "dataset:deepparse/worldwide-addresses",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9466889,
+  "parameters_human": "9.5M",
+  "storage_bytes": 37868468,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

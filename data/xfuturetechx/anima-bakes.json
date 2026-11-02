@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "xFutureTechx/Anima-Bakes",
+  "slug": "xfuturetechx-anima-bakes",
+  "author": "xFutureTechx",
+  "url": "https://huggingface.co/xFutureTechx/Anima-Bakes",
+  "created_at": "2026-07-10T12:52:49.000Z",
+  "updated_at": "2026-11-02T03:43:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "not-for-all-audiences",
+    "en",
+    "base_model:circlestone-labs/Anima",
+    "base_model:finetune:circlestone-labs/Anima",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83902653478,
+  "storage_human": "83.9 GB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

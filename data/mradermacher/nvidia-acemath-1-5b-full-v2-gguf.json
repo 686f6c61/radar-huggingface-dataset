@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/nvidia-acemath-1.5b-full-v2-GGUF",
+  "slug": "mradermacher-nvidia-acemath-1-5b-full-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nvidia-acemath-1.5b-full-v2-GGUF",
+  "created_at": "2025-02-16T04:36:31.000Z",
+  "updated_at": "2026-11-01T21:53:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "en",
+    "base_model:zxczxczxcz/nvidia-acemath-1.5b-full-v2",
+    "base_model:quantized:zxczxczxcz/nvidia-acemath-1.5b-full-v2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206873344,
+  "storage_human": "14.2 GB",
+  "base_model": "zxczxczxcz/nvidia-acemath-1.5b-full-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

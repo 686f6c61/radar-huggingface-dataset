@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "brunopaschoal/ppo-Pyramids",
+  "slug": "brunopaschoal-ppo-pyramids",
+  "author": "brunopaschoal",
+  "url": "https://huggingface.co/brunopaschoal/ppo-Pyramids",
+  "created_at": "2026-11-01T21:37:01.000Z",
+  "updated_at": "2026-11-01T21:37:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18752743,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

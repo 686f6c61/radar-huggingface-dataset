@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "arlenecc/Qwen3.5-2B-MLX-4bit",
+  "slug": "arlenecc-qwen3-5-2b-mlx-4bit",
+  "author": "arlenecc",
+  "url": "https://huggingface.co/arlenecc/Qwen3.5-2B-MLX-4bit",
+  "created_at": "2026-11-02T03:36:21.000Z",
+  "updated_at": "2026-11-02T03:37:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 1742261128,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

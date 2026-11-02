@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ysdede/whisper-large-v3-onnx-4graph",
+  "slug": "ysdede-whisper-large-v3-onnx-4graph",
+  "author": "ysdede",
+  "url": "https://huggingface.co/ysdede/whisper-large-v3-onnx-4graph",
+  "created_at": "2026-11-01T22:29:02.000Z",
+  "updated_at": "2026-11-01T22:31:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6291091217,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

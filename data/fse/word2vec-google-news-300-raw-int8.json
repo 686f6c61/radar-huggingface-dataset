@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "fse/word2vec-google-news-300-raw-int8",
+  "slug": "fse-word2vec-google-news-300-raw-int8",
+  "author": "fse",
+  "url": "https://huggingface.co/fse/word2vec-google-news-300-raw-int8",
+  "created_at": "2026-11-01T21:51:22.000Z",
+  "updated_at": "2026-11-01T21:54:18.000Z",
+  "license": "word2vec-google-news-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "fse",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fse",
+    "safetensors",
+    "static-embeddings",
+    "sentence-embeddings",
+    "gensim",
+    "word2vec",
+    "word-embeddings",
+    "feature-extraction",
+    "en",
+    "base_model:fse/word2vec-google-news-300",
+    "base_model:quantized:fse/word2vec-google-news-300",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 947258511,
+  "parameters_human": "947.3M",
+  "storage_bytes": 977259798,
+  "storage_human": "977 MB",
+  "base_model": "fse/word2vec-google-news-300",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

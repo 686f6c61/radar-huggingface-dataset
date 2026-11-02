@@ -5,7 +5,7 @@
   "author": "daominhwysi",
   "url": "https://huggingface.co/daominhwysi/sealior-modernbert-vi-exam-seq-labeling",
   "created_at": "2026-10-25T05:32:24.000Z",
-  "updated_at": "2026-10-25T15:26:06.000Z",
+  "updated_at": "2026-11-01T14:42:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 312862498,
   "parameters_human": "312.9M",
-  "storage_bytes": 45087371578,
-  "storage_human": "45.1 GB",
+  "storage_bytes": 55132483955,
+  "storage_human": "55.1 GB",
   "base_model": "aisingapore/SEA-LION-ModernBERT-300M",
   "formats": [
     "safetensors"

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/FG-CLIP",
+  "slug": "axera-tech-fg-clip",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/FG-CLIP",
+  "created_at": "2025-11-06T02:46:50.000Z",
+  "updated_at": "2026-11-02T03:16:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "CLIP",
+    "FG-CLIP",
+    "FG-CLIP2",
+    "Image-Text Encoder",
+    "en",
+    "base_model:qihoo360/fg-clip2-base",
+    "base_model:quantized:qihoo360/fg-clip2-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5755487381,
+  "storage_human": "5.8 GB",
+  "base_model": "qihoo360/fg-clip2-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

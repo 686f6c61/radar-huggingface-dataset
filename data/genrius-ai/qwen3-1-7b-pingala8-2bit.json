@@ -5,7 +5,7 @@
   "author": "Genrius-AI",
   "url": "https://huggingface.co/Genrius-AI/Qwen3-1.7B-Pingala8-2bit",
   "created_at": "2026-10-27T08:57:38.000Z",
-  "updated_at": "2026-10-29T13:53:25.000Z",
+  "updated_at": "2026-11-01T03:38:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "imatrix"
   ],
   "likes": 1,
-  "downloads_30d": 406,
+  "downloads_30d": 425,
   "trending_score": 0,
   "parameters": 991565441,
   "parameters_human": "991.6M",

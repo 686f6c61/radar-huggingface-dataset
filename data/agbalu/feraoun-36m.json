@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "agbalu/Feraoun-36M",
+  "slug": "agbalu-feraoun-36m",
+  "author": "agbalu",
+  "url": "https://huggingface.co/agbalu/Feraoun-36M",
+  "created_at": "2026-08-20T19:44:06.000Z",
+  "updated_at": "2026-11-01T22:37:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "kab"
+  ],
+  "tags": [
+    "safetensors",
+    "feraoun",
+    "kabyle",
+    "taqbaylit",
+    "berber",
+    "amazigh",
+    "ocr",
+    "image-to-text",
+    "tifinagh",
+    "document-understanding",
+    "low-resource",
+    "custom_code",
+    "kab",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 36390144,
+  "parameters_human": "36.4M",
+  "storage_bytes": 145593888,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Line-level document OCR, Kabyle Latin",
+      "dataset": "1,000 held-out lines, rendered",
+      "metric": "Character error rate",
+      "value": 0.0285
+    },
+    {
+      "task": "Line-level document OCR, Kabyle Latin",
+      "dataset": "1,000 held-out lines, rendered",
+      "metric": "Word error rate",
+      "value": 0.132
+    },
+    {
+      "task": "Line-level document OCR, Kabyle Latin",
+      "dataset": "1,000 held-out lines, rendered",
+      "metric": "Line exact match",
+      "value": 0.702
+    }
+  ],
+  "sources": []
+}

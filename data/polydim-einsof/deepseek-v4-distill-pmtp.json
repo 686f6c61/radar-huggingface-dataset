@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Polydim-Einsof/deepseek-v4-distill-pmtp",
+  "slug": "polydim-einsof-deepseek-v4-distill-pmtp",
+  "author": "Polydim-Einsof",
+  "url": "https://huggingface.co/Polydim-Einsof/deepseek-v4-distill-pmtp",
+  "created_at": "2026-11-02T01:40:46.000Z",
+  "updated_at": "2026-11-02T01:40:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "polydim",
+    "pmtp",
+    "stiefel-manifold",
+    "deepseek-v4",
+    "einsof",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41943307,
+  "storage_human": "42 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Distill-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

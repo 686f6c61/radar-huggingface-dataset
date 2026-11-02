@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "AlexHung29629/MyModelCleanCP2SFT_SEARCH",
+  "slug": "alexhung29629-mymodelcleancp2sft_search",
+  "author": "AlexHung29629",
+  "url": "https://huggingface.co/AlexHung29629/MyModelCleanCP2SFT_SEARCH",
+  "created_at": "2026-11-02T01:26:13.000Z",
+  "updated_at": "2026-11-02T01:32:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:data/search-sft-clean.jsonl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 53120787809,
+  "storage_human": "53.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.fr/videohp",
+      "snippet": "Search millions of videos from across the web."
+    }
+  ]
+}

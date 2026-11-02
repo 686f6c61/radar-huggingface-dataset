@@ -5,15 +5,16 @@
   "author": "jungroo-ai",
   "url": "https://huggingface.co/jungroo-ai/redefiner-0.8b",
   "created_at": "2026-10-27T13:10:18.000Z",
-  "updated_at": "2026-10-30T04:59:38.000Z",
+  "updated_at": "2026-11-01T19:15:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
-  "library": null,
+  "library": "redefiner",
   "languages": [
     "en"
   ],
   "tags": [
+    "redefiner",
     "safetensors",
     "qwen3_5",
     "named-entity-recognition",

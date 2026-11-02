@@ -5,7 +5,7 @@
   "author": "Nhckdvrl",
   "url": "https://huggingface.co/Nhckdvrl/C-VIS-Qwen3.5-9B-Solver-FormalV7-Checkpoints-20261101",
   "created_at": "2026-11-01T06:28:41.000Z",
-  "updated_at": "2026-11-01T11:40:43.000Z",
+  "updated_at": "2026-11-02T01:05:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 131758037165,
-  "storage_human": "131.8 GB",
+  "storage_bytes": 132569976795,
+  "storage_human": "132.6 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

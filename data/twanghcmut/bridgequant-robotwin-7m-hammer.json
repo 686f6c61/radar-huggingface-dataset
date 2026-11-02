@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "twanghcmut/bridgequant-robotwin-7m-hammer",
+  "slug": "twanghcmut-bridgequant-robotwin-7m-hammer",
+  "author": "twanghcmut",
+  "url": "https://huggingface.co/twanghcmut/bridgequant-robotwin-7m-hammer",
+  "created_at": "2026-11-02T03:11:21.000Z",
+  "updated_at": "2026-11-02T03:11:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bridgequant_async_vla",
+    "robotics",
+    "vision-language-action",
+    "bridgequant",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6628787,
+  "parameters_human": "6.6M",
+  "storage_bytes": 26556268,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

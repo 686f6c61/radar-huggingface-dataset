@@ -40,7 +40,7 @@
   "trending_score": 0,
   "parameters": 18208957504,
   "parameters_human": "18.21B",
-  "storage_bytes": 36533490438,
+  "storage_bytes": 36487468802,
   "storage_human": "36.5 GB",
   "base_model": "Qwen/Qwen3.5-9B, divagr1925/Qwen3.5-4B-Qwenputer",
   "formats": [

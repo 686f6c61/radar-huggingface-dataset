@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "decision-tune/realstop",
+  "slug": "decision-tune-realstop",
+  "author": "decision-tune",
+  "url": "https://huggingface.co/decision-tune/realstop",
+  "created_at": "2026-11-02T01:13:48.000Z",
+  "updated_at": "2026-11-02T01:14:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "decision-tune",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "decision-tune",
+    "safetensors",
+    "modernbert",
+    "coding-agents",
+    "claude-code",
+    "stop-hook",
+    "en",
+    "base_model:decision-tune/decisiontune-1.0",
+    "base_model:finetune:decision-tune/decisiontune-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 1579147964,
+  "storage_human": "1.6 GB",
+  "base_model": "decision-tune/decisiontune-1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

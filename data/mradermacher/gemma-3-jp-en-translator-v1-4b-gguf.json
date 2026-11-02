@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-3-JP-EN-Translator-v1-4B-GGUF",
+  "slug": "mradermacher-gemma-3-jp-en-translator-v1-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3-JP-EN-Translator-v1-4B-GGUF",
+  "created_at": "2025-08-12T07:20:38.000Z",
+  "updated_at": "2026-11-01T23:05:23.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "en",
+    "ja",
+    "dataset:mpasila/ParallelFiction-Ja_En-1k-16k-Gemma-3-ShareGPT-Filtered",
+    "dataset:NilanE/ParallelFiction-Ja_En-100k",
+    "base_model:mpasila/gemma-3-JP-EN-Translator-v1-4B",
+    "base_model:quantized:mpasila/gemma-3-JP-EN-Translator-v1-4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 203,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 37274392000,
+  "storage_human": "37.3 GB",
+  "base_model": "mpasila/gemma-3-JP-EN-Translator-v1-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

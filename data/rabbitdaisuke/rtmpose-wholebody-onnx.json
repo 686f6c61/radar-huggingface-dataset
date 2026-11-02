@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RabbitDaisuke/RTMPose-Wholebody-onnx",
+  "slug": "rabbitdaisuke-rtmpose-wholebody-onnx",
+  "author": "RabbitDaisuke",
+  "url": "https://huggingface.co/RabbitDaisuke/RTMPose-Wholebody-onnx",
+  "created_at": "2026-11-01T23:59:46.000Z",
+  "updated_at": "2026-11-02T00:24:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "rtmpose",
+    "mmpose",
+    "wholebody",
+    "keypoint-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 418159894,
+  "storage_human": "418 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

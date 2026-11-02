@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "TamAko783/anomalies-diffusion-andi",
+  "slug": "tamako783-anomalies-diffusion-andi",
+  "author": "TamAko783",
+  "url": "https://huggingface.co/TamAko783/anomalies-diffusion-andi",
+  "created_at": "2026-11-01T14:53:41.000Z",
+  "updated_at": "2026-11-01T21:09:51.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "medical-imaging",
+    "anomaly-detection",
+    "mri",
+    "diffusion-model",
+    "reproducibility",
+    "arxiv:2312.01904",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25770084,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

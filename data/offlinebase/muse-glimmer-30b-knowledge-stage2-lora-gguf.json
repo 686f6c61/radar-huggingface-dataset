@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OfflineBase/Muse-Glimmer-30B-Knowledge-Stage2-LoRA-GGUF",
+  "slug": "offlinebase-muse-glimmer-30b-knowledge-stage2-lora-gguf",
+  "author": "OfflineBase",
+  "url": "https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage2-LoRA-GGUF",
+  "created_at": "2026-11-02T01:44:09.000Z",
+  "updated_at": "2026-11-02T01:57:10.000Z",
+  "license": "apache-2.0-and-muse-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "knowledge-update",
+    "built-with-muse-spark-open",
+    "lora",
+    "text-generation",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:adapter:meta-models/Muse-Glimmer-30B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 419181568,
+  "parameters_human": "419.2M",
+  "storage_bytes": 838453408,
+  "storage_human": "838 MB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "blackdemon112/manglish-translator",
+  "slug": "blackdemon112-manglish-translator",
+  "author": "blackdemon112",
+  "url": "https://huggingface.co/blackdemon112/manglish-translator",
+  "created_at": "2026-11-02T00:50:03.000Z",
+  "updated_at": "2026-11-02T00:53:11.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ml",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "manglish",
+    "malayalam",
+    "transliteration",
+    "text-normalization",
+    "byt5",
+    "code-mixed",
+    "ml",
+    "en",
+    "base_model:google/byt5-base",
+    "base_model:quantized:google/byt5-base",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1223648378,
+  "storage_human": "1.2 GB",
+  "base_model": "google/byt5-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

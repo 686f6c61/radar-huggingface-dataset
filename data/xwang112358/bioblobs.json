@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "xwang112358/BioBlobs",
+  "slug": "xwang112358-bioblobs",
+  "author": "xwang112358",
+  "url": "https://huggingface.co/xwang112358/BioBlobs",
+  "created_at": "2026-11-02T01:00:17.000Z",
+  "updated_at": "2026-11-02T01:02:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "biology",
+    "protein",
+    "enzyme",
+    "ec-number",
+    "interpretability",
+    "arxiv:2510.01632",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14730740,
+  "parameters_human": "14.7M",
+  "storage_bytes": 58925913,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

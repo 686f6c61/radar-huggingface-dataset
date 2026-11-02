@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "tiny-random/minicpm-ocr-1.0",
+  "slug": "tiny-random-minicpm-ocr-1-0",
+  "author": "tiny-random",
+  "url": "https://huggingface.co/tiny-random/minicpm-ocr-1.0",
+  "created_at": "2026-11-01T20:53:19.000Z",
+  "updated_at": "2026-11-01T20:53:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpm_ocr",
+    "image-text-to-text",
+    "conversational",
+    "base_model:openbmb/MiniCPM-OCR-1.0",
+    "base_model:finetune:openbmb/MiniCPM-OCR-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7575584,
+  "parameters_human": "7.6M",
+  "storage_bytes": 35169149,
+  "storage_human": "35 MB",
+  "base_model": "openbmb/MiniCPM-OCR-1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

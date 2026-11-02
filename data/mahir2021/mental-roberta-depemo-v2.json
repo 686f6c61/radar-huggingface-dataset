@@ -5,7 +5,7 @@
   "author": "mahir2021",
   "url": "https://huggingface.co/mahir2021/mental-roberta-depEMO-v2",
   "created_at": "2026-11-01T04:51:08.000Z",
-  "updated_at": "2026-11-01T04:51:17.000Z",
+  "updated_at": "2026-11-01T05:25:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": 124651784,
   "parameters_human": "124.7M",
-  "storage_bytes": 498631280,
-  "storage_human": "499 MB",
+  "storage_bytes": 997262560,
+  "storage_human": "997 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "matboz/gpt-oss-120b-step952-da",
+  "slug": "matboz-gpt-oss-120b-step952-da",
+  "author": "matboz",
+  "url": "https://huggingface.co/matboz/gpt-oss-120b-step952-da",
+  "created_at": "2026-10-31T00:49:14.000Z",
+  "updated_at": "2026-11-01T22:38:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "reward-hacking",
+    "alignment-research",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:adapter:openai/gpt-oss-120b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 472943935648,
+  "storage_human": "472.9 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

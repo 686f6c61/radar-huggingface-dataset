@@ -5,7 +5,7 @@
   "author": "AbstractFramework",
   "url": "https://huggingface.co/AbstractFramework/kev-0.8b-mlx-8bit",
   "created_at": "2026-11-01T17:11:32.000Z",
-  "updated_at": "2026-11-01T17:11:37.000Z",
+  "updated_at": "2026-11-01T19:59:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Miyauel/meari-dialect-lora",
+  "slug": "miyauel-meari-dialect-lora",
+  "author": "Miyauel",
+  "url": "https://huggingface.co/Miyauel/meari-dialect-lora",
+  "created_at": "2026-11-02T00:09:29.000Z",
+  "updated_at": "2026-11-02T00:09:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "llama.cpp",
+    "korean-dialect",
+    "ko",
+    "base_model:NiuTrans/LMT-60-1.7B",
+    "base_model:adapter:NiuTrans/LMT-60-1.7B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17432576,
+  "parameters_human": "17.4M",
+  "storage_bytes": 34892544,
+  "storage_human": "35 MB",
+  "base_model": "NiuTrans/LMT-60-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/Mistral-Large-4-1T-A52B-MLX-Q3i",
+  "slug": "inferencerlabs-mistral-large-4-1t-a52b-mlx-q3i",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/Mistral-Large-4-1T-A52B-MLX-Q3i",
+  "created_at": "2026-11-01T20:54:27.000Z",
+  "updated_at": "2026-11-02T02:36:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "mistral_large4",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:mistralai/Mistral-Large-4-1T-A52B",
+    "base_model:quantized:mistralai/Mistral-Large-4-1T-A52B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459075856637,
+  "storage_human": "459.1 GB",
+  "base_model": "mistralai/Mistral-Large-4-1T-A52B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

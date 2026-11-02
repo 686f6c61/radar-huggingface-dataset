@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Visual-ERM-GGUF",
+  "slug": "mradermacher-visual-erm-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Visual-ERM-GGUF",
+  "created_at": "2026-03-13T07:42:25.000Z",
+  "updated_at": "2026-11-01T23:02:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:internlm/VC-RewardBench",
+    "base_model:internlm/Visual-ERM",
+    "base_model:quantized:internlm/Visual-ERM",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 394,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 75336664960,
+  "storage_human": "75.3 GB",
+  "base_model": "internlm/Visual-ERM",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

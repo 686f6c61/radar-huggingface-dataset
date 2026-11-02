@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Luna-Qwen3.5-0.8B-v5-GGUF",
+  "slug": "mradermacher-luna-qwen3-5-0-8b-v5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Luna-Qwen3.5-0.8B-v5-GGUF",
+  "created_at": "2026-03-13T07:40:45.000Z",
+  "updated_at": "2026-11-01T21:49:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7719523840,
+  "storage_human": "7.7 GB",
+  "base_model": "claekchen/Luna-Qwen3.5-0.8B-v5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

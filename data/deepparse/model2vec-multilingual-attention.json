@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "deepparse/model2vec-multilingual-attention",
+  "slug": "deepparse-model2vec-multilingual-attention",
+  "author": "deepparse",
+  "url": "https://huggingface.co/deepparse/model2vec-multilingual-attention",
+  "created_at": "2026-11-02T02:48:59.000Z",
+  "updated_at": "2026-11-02T02:49:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "deepparse",
+  "languages": [],
+  "tags": [
+    "deepparse",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "address-parsing",
+    "dataset:deepparse/worldwide-addresses",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15761417,
+  "parameters_human": "15.8M",
+  "storage_bytes": 63047172,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

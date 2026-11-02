@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "rumezhak/microduck-sock-heist-second-green-v2",
+  "slug": "rumezhak-microduck-sock-heist-second-green-v2",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-sock-heist-second-green-v2",
+  "created_at": "2026-11-01T23:26:25.000Z",
+  "updated_at": "2026-11-01T23:27:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:a1rb4Ck/microduck-heist",
+    "base_model:finetune:a1rb4Ck/microduck-heist",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1212095,
+  "storage_human": "1 MB",
+  "base_model": "lphatnguyen/microduck-sock-heist-6m-v3, a1rb4Ck/microduck-heist",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Oct 18, 2026 · Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs …"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "jungwook2358/wam-openarm-rel28-rh-cog-humvid-ema-50k-ckpt50000",
+  "slug": "jungwook2358-wam-openarm-rel28-rh-cog-humvid-ema-50k-ckpt50000",
+  "author": "jungwook2358",
+  "url": "https://huggingface.co/jungwook2358/wam-openarm-rel28-rh-cog-humvid-ema-50k-ckpt50000",
+  "created_at": "2026-11-02T01:21:02.000Z",
+  "updated_at": "2026-11-02T01:23:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32467401630,
+  "storage_human": "32.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

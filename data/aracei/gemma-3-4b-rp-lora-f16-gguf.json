@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Aracei/gemma-3-4b-RP-Lora-F16-GGUF",
+  "slug": "aracei-gemma-3-4b-rp-lora-f16-gguf",
+  "author": "Aracei",
+  "url": "https://huggingface.co/Aracei/gemma-3-4b-RP-Lora-F16-GGUF",
+  "created_at": "2026-11-01T21:37:28.000Z",
+  "updated_at": "2026-11-01T21:37:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "trl",
+    "llama-cpp",
+    "gguf-my-lora",
+    "en",
+    "base_model:bunnycore/gemma-3-4b-RP-Lora",
+    "base_model:quantized:bunnycore/gemma-3-4b-RP-Lora",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14901248,
+  "parameters_human": "14.9M",
+  "storage_bytes": 29835776,
+  "storage_human": "30 MB",
+  "base_model": "bunnycore/gemma-3-4b-RP-Lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

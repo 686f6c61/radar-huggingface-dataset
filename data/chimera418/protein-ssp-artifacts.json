@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Chimera418/protein-ssp-artifacts",
+  "slug": "chimera418-protein-ssp-artifacts",
+  "author": "Chimera418",
+  "url": "https://huggingface.co/Chimera418/protein-ssp-artifacts",
+  "created_at": "2026-05-22T03:54:11.000Z",
+  "updated_at": "2026-11-02T00:59:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "biology",
+    "bioinformatics",
+    "protein-secondary-structure-prediction",
+    "prot-t5",
+    "pytorch",
+    "deep-learning",
+    "streamlit",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60591176036,
+  "storage_human": "60.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

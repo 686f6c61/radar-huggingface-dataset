@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Polydim-Einsof/qwen3.8-27b-pmtp",
+  "slug": "polydim-einsof-qwen3-8-27b-pmtp",
+  "author": "Polydim-Einsof",
+  "url": "https://huggingface.co/Polydim-Einsof/qwen3.8-27b-pmtp",
+  "created_at": "2026-11-02T01:40:11.000Z",
+  "updated_at": "2026-11-02T01:40:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "polydim",
+    "pmtp",
+    "stiefel-manifold",
+    "qwen3.8",
+    "einsof",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41943307,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.8-27B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

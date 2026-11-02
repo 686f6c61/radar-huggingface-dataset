@@ -5,7 +5,7 @@
   "author": "debudash",
   "url": "https://huggingface.co/debudash/qwen3-4b-tz-convert-v1-n2000",
   "created_at": "2026-10-28T16:59:36.000Z",
-  "updated_at": "2026-11-01T14:36:07.000Z",
+  "updated_at": "2026-11-01T16:56:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

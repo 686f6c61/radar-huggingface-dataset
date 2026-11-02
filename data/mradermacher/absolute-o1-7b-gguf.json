@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/absolute-o1-7b-GGUF",
+  "slug": "mradermacher-absolute-o1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/absolute-o1-7b-GGUF",
+  "created_at": "2025-02-27T23:10:45.000Z",
+  "updated_at": "2026-11-02T01:19:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:marcuscedricridia/absolute-o1-7b",
+    "base_model:quantized:marcuscedricridia/absolute-o1-7b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 7612756480,
+  "parameters_human": "7.61B",
+  "storage_bytes": 68118476608,
+  "storage_human": "68.1 GB",
+  "base_model": "marcuscedricridia/absolute-o1-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

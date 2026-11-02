@@ -5,7 +5,7 @@
   "author": "MagistrTheOne",
   "url": "https://huggingface.co/MagistrTheOne/NULLXES-KLAREN-4E",
   "created_at": "2026-10-29T21:17:04.000Z",
-  "updated_at": "2026-10-31T22:22:07.000Z",
+  "updated_at": "2026-11-01T20:06:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": 21293638080,
   "parameters_human": "21.29B",
-  "storage_bytes": 85224250260,
+  "storage_bytes": 85241968476,
   "storage_human": "85.2 GB",
   "base_model": null,
   "formats": [

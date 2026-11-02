@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "MedMLX/nnunet-pancreas-mlx",
+  "slug": "medmlx-nnunet-pancreas-mlx",
+  "author": "MedMLX",
+  "url": "https://huggingface.co/MedMLX/nnunet-pancreas-mlx",
+  "created_at": "2026-10-16T04:57:06.000Z",
+  "updated_at": "2026-11-02T01:19:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "medical-imaging",
+    "apple-silicon",
+    "research",
+    "inference",
+    "safetensors",
+    "image-segmentation",
+    "en",
+    "arxiv:2508.21775",
+    "arxiv:2303.14444",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 409428103,
+  "storage_human": "409 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

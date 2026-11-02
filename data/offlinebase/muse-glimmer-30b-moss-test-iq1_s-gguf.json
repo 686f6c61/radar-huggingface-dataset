@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "OfflineBase/Muse-Glimmer-30B-Moss-Test-IQ1_S-GGUF",
+  "slug": "offlinebase-muse-glimmer-30b-moss-test-iq1_s-gguf",
+  "author": "OfflineBase",
+  "url": "https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Moss-Test-IQ1_S-GGUF",
+  "created_at": "2026-11-02T01:45:27.000Z",
+  "updated_at": "2026-11-02T01:46:45.000Z",
+  "license": "apache-2.0-and-muse-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "test-model",
+    "built-with-muse-spark-open",
+    "text-generation",
+    "en",
+    "base_model:OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
+    "base_model:finetune:OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 6526418944,
+  "storage_human": "6.5 GB",
+  "base_model": "OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

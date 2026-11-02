@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Dekonstruktio/24",
+  "slug": "dekonstruktio-24",
+  "author": "Dekonstruktio",
+  "url": "https://huggingface.co/Dekonstruktio/24",
+  "created_at": "2026-08-06T12:59:24.000Z",
+  "updated_at": "2026-11-01T21:56:37.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "krea",
+    "krea-2",
+    "fal-ai",
+    "template:diffusion-lora",
+    "illustration",
+    "en",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 471440115,
+  "storage_human": "471 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

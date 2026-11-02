@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/Qwen3-ASR-0.6B-AX8860-llama.cpp",
+  "slug": "axera-tech-qwen3-asr-0-6b-ax8860-llama-cpp",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/Qwen3-ASR-0.6B-AX8860-llama.cpp",
+  "created_at": "2026-10-31T16:17:07.000Z",
+  "updated_at": "2026-11-02T02:27:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ASR-0.6B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1455324524,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

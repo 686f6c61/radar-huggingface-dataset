@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "zjumty/real-act-green-p2-20261030",
+  "slug": "zjumty-real-act-green-p2-20261030",
+  "author": "zjumty",
+  "url": "https://huggingface.co/zjumty/real-act-green-p2-20261030",
+  "created_at": "2026-11-02T01:13:38.000Z",
+  "updated_at": "2026-11-02T01:14:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "so101",
+    "dataset:zjumty/real-cube-bowl-green-p2-merged-20261030",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

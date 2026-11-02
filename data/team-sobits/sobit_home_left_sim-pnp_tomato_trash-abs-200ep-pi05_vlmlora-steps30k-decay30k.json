@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200ep-pi05_vlmlora-steps30k-decay30k",
+  "slug": "team-sobits-sobit_home_left_sim-pnp_tomato_trash-abs-200ep-pi05_vlmlora-steps30k-decay30k",
+  "author": "team-sobits",
+  "url": "https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200ep-pi05_vlmlora-steps30k-decay30k",
+  "created_at": "2026-10-31T23:21:02.000Z",
+  "updated_at": "2026-11-02T00:46:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200ep",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1873314460,
+  "storage_human": "1.9 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

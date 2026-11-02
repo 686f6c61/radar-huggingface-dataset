@@ -5,7 +5,7 @@
   "author": "chenyumo",
   "url": "https://huggingface.co/chenyumo/MoziAier-27B-TQ",
   "created_at": "2026-11-01T09:42:47.000Z",
-  "updated_at": "2026-11-01T09:45:57.000Z",
+  "updated_at": "2026-11-01T09:56:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,9 +31,7 @@
     "base_model:Qwen/Qwen3.8-27B",
     "base_model:finetune:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
-    "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 0,
@@ -46,7 +44,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

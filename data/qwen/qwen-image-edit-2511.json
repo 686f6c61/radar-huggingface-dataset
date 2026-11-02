@@ -22,6 +22,7 @@
     "zh",
     "arxiv:2508.02324",
     "license:apache-2.0",
+    "eval-results",
     "diffusers:QwenImageEditPlusPipeline",
     "region:us"
   ],

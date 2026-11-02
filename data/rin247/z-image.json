@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Rin247/Z-Image",
+  "slug": "rin247-z-image",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Z-Image",
+  "created_at": "2026-10-23T09:40:49.000Z",
+  "updated_at": "2026-11-02T00:00:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "quantized",
+    "safetensors",
+    "mecha",
+    "weight-only",
+    "image",
+    "text-to-image",
+    "diffusers:ZImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33308548786,
+  "storage_human": "33.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

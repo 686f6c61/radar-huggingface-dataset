@@ -5,7 +5,7 @@
   "author": "FreehandZ",
   "url": "https://huggingface.co/FreehandZ/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-ninfer",
   "created_at": "2026-10-29T20:48:27.000Z",
-  "updated_at": "2026-10-31T06:30:59.000Z",
+  "updated_at": "2026-11-01T07:08:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1339,
+  "downloads_30d": 1534,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

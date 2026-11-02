@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "singgihnn/kokoro-82m-onnx-gzip",
+  "slug": "singgihnn-kokoro-82m-onnx-gzip",
+  "author": "singgihnn",
+  "url": "https://huggingface.co/singgihnn/kokoro-82m-onnx-gzip",
+  "created_at": "2026-11-02T03:31:45.000Z",
+  "updated_at": "2026-11-02T03:31:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-speech",
+    "onnx",
+    "8-bit",
+    "gzip",
+    "en",
+    "base_model:onnx-community/Kokoro-82M-v1.0-ONNX",
+    "base_model:finetune:onnx-community/Kokoro-82M-v1.0-ONNX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63020870,
+  "storage_human": "63 MB",
+  "base_model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

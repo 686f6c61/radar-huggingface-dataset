@@ -5,7 +5,7 @@
   "author": "08443u0",
   "url": "https://huggingface.co/08443u0/53214",
   "created_at": "2026-09-22T20:28:36.000Z",
-  "updated_at": "2026-10-29T01:06:52.000Z",
+  "updated_at": "2026-11-01T13:59:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 510699368128,
-  "storage_human": "510.7 GB",
+  "storage_bytes": 533330156608,
+  "storage_human": "533.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

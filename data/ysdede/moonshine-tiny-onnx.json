@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ysdede/moonshine-tiny-onnx",
+  "slug": "ysdede-moonshine-tiny-onnx",
+  "author": "ysdede",
+  "url": "https://huggingface.co/ysdede/moonshine-tiny-onnx",
+  "created_at": "2026-11-01T21:31:25.000Z",
+  "updated_at": "2026-11-01T21:31:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111723508,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "HeliosFenrir",
   "url": "https://huggingface.co/HeliosFenrir/bleta-sq-2b-gjuha-lora",
   "created_at": "2026-10-29T22:42:16.000Z",
-  "updated_at": "2026-10-30T11:32:03.000Z",
+  "updated_at": "2026-11-02T00:18:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 735639943,
-  "storage_human": "736 MB",
+  "storage_bytes": 4092148784,
+  "storage_human": "4.1 GB",
   "base_model": "klei1/bleta-sq-2b",
   "formats": [
     "safetensors"

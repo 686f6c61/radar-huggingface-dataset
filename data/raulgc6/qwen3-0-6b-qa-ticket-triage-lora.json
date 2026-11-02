@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "raulgc6/qwen3-0.6b-qa-ticket-triage-lora",
+  "slug": "raulgc6-qwen3-0-6b-qa-ticket-triage-lora",
+  "author": "raulgc6",
+  "url": "https://huggingface.co/raulgc6/qwen3-0.6b-qa-ticket-triage-lora",
+  "created_at": "2026-11-01T23:59:31.000Z",
+  "updated_at": "2026-11-01T23:59:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "trl",
+    "sft",
+    "qwen3",
+    "ticket-triage",
+    "text-generation",
+    "es",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9189904,
+  "storage_human": "9 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

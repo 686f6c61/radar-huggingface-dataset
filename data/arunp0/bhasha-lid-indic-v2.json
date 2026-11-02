@@ -5,7 +5,7 @@
   "author": "arunp0",
   "url": "https://huggingface.co/arunp0/bhasha-lid-indic-v2",
   "created_at": "2026-10-31T04:53:45.000Z",
-  "updated_at": "2026-10-31T13:37:24.000Z",
+  "updated_at": "2026-11-01T11:07:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

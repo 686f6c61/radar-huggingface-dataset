@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Timegravity/maram-350m",
+  "slug": "timegravity-maram-350m",
+  "author": "Timegravity",
+  "url": "https://huggingface.co/Timegravity/maram-350m",
+  "created_at": "2026-11-01T11:29:50.000Z",
+  "updated_at": "2026-11-01T11:44:32.000Z",
+  "license": "timegravity-research-only-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reasoning",
+    "verifier",
+    "parallel-decoding",
+    "test-time-compute",
+    "small-model",
+    "text-generation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4045093416,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

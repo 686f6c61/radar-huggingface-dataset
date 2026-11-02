@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "OfflineBase/Muse-Glimmer-30B-Lab-Decide-Support-Inbox-LoRA",
+  "slug": "offlinebase-muse-glimmer-30b-lab-decide-support-inbox-lora",
+  "author": "OfflineBase",
+  "url": "https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Lab-Decide-Support-Inbox-LoRA",
+  "created_at": "2026-11-02T01:44:01.000Z",
+  "updated_at": "2026-11-02T01:47:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "made-up-data",
+    "base_model:unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 447423289,
+  "storage_human": "447 MB",
+  "base_model": "unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

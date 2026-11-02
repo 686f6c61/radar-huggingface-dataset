@@ -5,7 +5,7 @@
   "author": "Thox-ai",
   "url": "https://huggingface.co/Thox-ai/thox-cluster-deep",
   "created_at": "2026-10-31T15:43:21.000Z",
-  "updated_at": "2026-11-01T05:20:12.000Z",
+  "updated_at": "2026-11-01T15:59:11.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,8 +42,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 1033354,
+  "storage_human": "1 MB",
   "base_model": "meta-llama/Llama-3.1-405B-Instruct",
   "formats": [
     "gguf"

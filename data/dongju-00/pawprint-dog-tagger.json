@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Dongju-00/pawprint-dog-tagger",
+  "slug": "dongju-00-pawprint-dog-tagger",
+  "author": "Dongju-00",
+  "url": "https://huggingface.co/Dongju-00/pawprint-dog-tagger",
+  "created_at": "2026-08-20T06:43:30.000Z",
+  "updated_at": "2026-11-02T01:19:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "timm",
+    "efficientnet",
+    "dog",
+    "pet",
+    "ko",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31297951,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

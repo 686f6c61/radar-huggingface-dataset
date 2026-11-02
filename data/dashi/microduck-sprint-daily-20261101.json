@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dashi/microduck-sprint-daily-20261101",
+  "slug": "dashi-microduck-sprint-daily-20261101",
+  "author": "dashi",
+  "url": "https://huggingface.co/dashi/microduck-sprint-daily-20261101",
+  "created_at": "2026-11-01T23:30:59.000Z",
+  "updated_at": "2026-11-01T23:31:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "base_model:jrubiosainz/microduck-game-sprinter-remix3",
+    "base_model:finetune:jrubiosainz/microduck-game-sprinter-remix3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 861924,
+  "storage_human": "861924 B",
+  "base_model": "jrubiosainz/microduck-game-sprinter-remix3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dashi/microduck-sprint-daily-20261028 · Hugging Face",
+      "url": "https://huggingface.co/dashi/microduck-sprint-daily-20261028",
+      "snippet": "4 days ago · Robotics model, built with Microduck. Download, explore files and run it on Hugging Face.Read more"
+    },
+    {
+      "title": "dashi/microduck-sprint-daily-20261029 · Hugging Face",
+      "url": "https://huggingface.co/dashi/microduck-sprint-daily-20261029",
+      "snippet": "3 days ago · Instructions to use dashi/microduck-sprint-daily-20261029 with libraries, inference providers, notebooks, and local apps. …"
+    },
+    {
+      "title": "Microduck: a tiny biped robot you can teach new tricks",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Aug 27, 2026 · Microduck is a 25 cm open-source biped robot with 15 motors, a camera, LiDAR and a grasping beak. Train new …"
+    },
+    {
+      "title": "GitHub - deepnoodle-ai/dashi: Durable, recoverable AI agents in Go ...",
+      "url": "https://github.com/deepnoodle-ai/dashi/tree/main",
+      "snippet": "Dashi is a Go foundation for building agents that run as durable, recoverable turns across LLM providers. It is the successor to Dive, …"
+    },
+    {
+      "title": "dashi/docs/guides/packages.md at main · deepnoodle-ai/dashi",
+      "url": "https://github.com/deepnoodle-ai/dashi/blob/main/docs/guides/packages.md",
+      "snippet": "dashi: Agents, runners, identified turn records, an acknowledged recorder, and the execution loop. content: Shared text, media, …"
+    }
+  ]
+}

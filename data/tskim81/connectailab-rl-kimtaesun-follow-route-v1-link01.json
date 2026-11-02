@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tskim81/connectailab-rl-kimtaesun-follow-route-v1-link01",
+  "slug": "tskim81-connectailab-rl-kimtaesun-follow-route-v1-link01",
+  "author": "tskim81",
+  "url": "https://huggingface.co/tskim81/connectailab-rl-kimtaesun-follow-route-v1-link01",
+  "created_at": "2026-11-02T02:08:10.000Z",
+  "updated_at": "2026-11-02T02:08:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "robotics",
+    "decision-making",
+    "link01",
+    "connect-ai-world",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl Supermarché 1311 Route de Caen dans Vire Normandie",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/vire-normandie/route-de-caen-1311/",
+      "snippet": "Votre supermarché Lidl à 1311 Route de Caen, Vire Normandie 14500 Afficher les heures d'ouverture et les offres spéciales de ce …"
+    }
+  ]
+}

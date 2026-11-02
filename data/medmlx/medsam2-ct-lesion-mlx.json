@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "MedMLX/medsam2-ct-lesion-mlx",
+  "slug": "medmlx-medsam2-ct-lesion-mlx",
+  "author": "MedMLX",
+  "url": "https://huggingface.co/MedMLX/medsam2-ct-lesion-mlx",
+  "created_at": "2026-10-16T04:58:33.000Z",
+  "updated_at": "2026-11-02T00:45:03.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "medical-imaging",
+    "apple-silicon",
+    "research",
+    "inference",
+    "safetensors",
+    "image-segmentation",
+    "en",
+    "arxiv:2504.03600",
+    "base_model:wanglab/MedSAM2",
+    "base_model:finetune:wanglab/MedSAM2",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155906305,
+  "storage_human": "156 MB",
+  "base_model": "wanglab/MedSAM2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

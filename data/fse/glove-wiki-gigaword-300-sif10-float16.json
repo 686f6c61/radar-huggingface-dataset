@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "fse/glove-wiki-gigaword-300-sif10-float16",
+  "slug": "fse-glove-wiki-gigaword-300-sif10-float16",
+  "author": "fse",
+  "url": "https://huggingface.co/fse/glove-wiki-gigaword-300-sif10-float16",
+  "created_at": "2026-11-01T21:34:17.000Z",
+  "updated_at": "2026-11-01T21:39:51.000Z",
+  "license": "pddl",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "fse",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fse",
+    "safetensors",
+    "static-embeddings",
+    "sentence-embeddings",
+    "gensim",
+    "glove",
+    "word-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu-llama3-annotations",
+    "base_model:fse/glove-wiki-gigaword-300",
+    "base_model:finetune:fse/glove-wiki-gigaword-300",
+    "license:pddl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123356475,
+  "parameters_human": "123.4M",
+  "storage_bytes": 246157570,
+  "storage_human": "246 MB",
+  "base_model": "fse/glove-wiki-gigaword-300",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

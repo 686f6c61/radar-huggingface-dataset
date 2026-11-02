@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Nanbeige4.3-33B-FP8-dynamic",
   "created_at": "2026-10-29T06:08:11.000Z",
-  "updated_at": "2026-11-01T05:00:10.000Z",
+  "updated_at": "2026-11-02T00:28:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 89,
   "trending_score": 0,
   "parameters": 33118977024,
   "parameters_human": "33.12B",
