@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Intel/Qwen3.6-35B-A3B-int4-mixed-AutoRound",
+  "slug": "intel-qwen3-6-35b-a3b-int4-mixed-autoround",
+  "author": "Intel",
+  "url": "https://huggingface.co/Intel/Qwen3.6-35B-A3B-int4-mixed-AutoRound",
+  "created_at": "2026-05-01T01:56:11.000Z",
+  "updated_at": "2026-11-02T07:59:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "arxiv:2309.05516",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 11552,
+  "trending_score": 0,
+  "parameters": 6329212016,
+  "parameters_human": "6.33B",
+  "storage_bytes": 42555784869,
+  "storage_human": "42.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

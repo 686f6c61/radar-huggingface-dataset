@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/QwenLong-L1-32B-GGUF",
+  "slug": "mradermacher-qwenlong-l1-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF",
+  "created_at": "2025-05-27T07:30:31.000Z",
+  "updated_at": "2026-11-02T05:36:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "long-context",
+    "large-reasoning-model",
+    "en",
+    "dataset:Tongyi-Zhiwen/DocQA-RL-1.6K",
+    "base_model:Tongyi-Zhiwen/QwenLong-L1-32B",
+    "base_model:quantized:Tongyi-Zhiwen/QwenLong-L1-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 243,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000860480,
+  "storage_human": "224.0 GB",
+  "base_model": "Tongyi-Zhiwen/QwenLong-L1-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

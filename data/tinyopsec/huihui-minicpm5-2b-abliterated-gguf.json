@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Huihui-MiniCPM5-2B-abliterated-GGUF",
   "created_at": "2026-09-13T15:37:22.000Z",
-  "updated_at": "2026-09-13T16:20:57.000Z",
+  "updated_at": "2026-11-01T11:48:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

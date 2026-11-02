@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.5-4b-think-symbolic-image-full-GGUF",
+  "slug": "mradermacher-qwen3-5-4b-think-symbolic-image-full-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.5-4b-think-symbolic-image-full-GGUF",
+  "created_at": "2026-11-02T11:08:43.000Z",
+  "updated_at": "2026-11-02T11:26:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "full-fine-tune",
+    "vision-language",
+    "chain-of-thought",
+    "image-captioning",
+    "art",
+    "photography",
+    "museum",
+    "en",
+    "dataset:AbstractPhil/thought-symbolic-image-captions",
+    "dataset:AbstractPhil/qwen-symbolic-thinking-image-training",
+    "base_model:AbstractPhil/qwen3.5-4b-think-symbolic-image-full",
+    "base_model:quantized:AbstractPhil/qwen3.5-4b-think-symbolic-image-full",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945665600,
+  "storage_human": "39.9 GB",
+  "base_model": "AbstractPhil/qwen3.5-4b-think-symbolic-image-full",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

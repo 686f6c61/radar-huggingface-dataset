@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "junxiliu/TinyAudio",
+  "slug": "junxiliu-tinyaudio",
+  "author": "junxiliu",
+  "url": "https://huggingface.co/junxiliu/TinyAudio",
+  "created_at": "2026-10-29T09:26:49.000Z",
+  "updated_at": "2026-11-02T05:59:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "tinyaudio",
+    "audio",
+    "text-to-audio",
+    "audio-generation",
+    "flow-matching",
+    "meanflow",
+    "en",
+    "arxiv:2609.31525",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 874977133,
+  "storage_human": "875 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

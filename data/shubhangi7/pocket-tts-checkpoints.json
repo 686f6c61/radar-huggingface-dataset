@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Shubhangi7/pocket-tts-checkpoints",
+  "slug": "shubhangi7-pocket-tts-checkpoints",
+  "author": "Shubhangi7",
+  "url": "https://huggingface.co/Shubhangi7/pocket-tts-checkpoints",
+  "created_at": "2026-10-22T13:55:41.000Z",
+  "updated_at": "2026-11-02T09:12:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "hinglish",
+    "en",
+    "hi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25097950005,
+  "storage_human": "25.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

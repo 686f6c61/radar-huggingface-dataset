@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "dendriteholdings/Ingot-XXII-27B-Q2",
+  "slug": "dendriteholdings-ingot-xxii-27b-q2",
+  "author": "dendriteholdings",
+  "url": "https://huggingface.co/dendriteholdings/Ingot-XXII-27B-Q2",
+  "created_at": "2026-11-02T05:18:58.000Z",
+  "updated_at": "2026-11-02T05:27:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ingot",
+    "bittensor",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 13152817856,
+  "storage_human": "13.2 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DianShi-RetroStepLM-Direct-GGUF",
+  "slug": "mradermacher-dianshi-retrosteplm-direct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DianShi-RetroStepLM-Direct-GGUF",
+  "created_at": "2026-11-02T09:55:51.000Z",
+  "updated_at": "2026-11-02T10:13:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "chemistry",
+    "retrosynthesis",
+    "single-step",
+    "template-gate",
+    "arxiv:2610.40249",
+    "en",
+    "base_model:DianShiGroup/DianShi-RetroStepLM-Direct",
+    "base_model:quantized:DianShiGroup/DianShi-RetroStepLM-Direct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389991936,
+  "storage_human": "36.4 GB",
+  "base_model": "DianShiGroup/DianShi-RetroStepLM-Direct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

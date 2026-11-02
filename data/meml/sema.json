@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "meml/SEMA",
+  "slug": "meml-sema",
+  "author": "meml",
+  "url": "https://huggingface.co/meml/SEMA",
+  "created_at": "2026-02-07T23:56:58.000Z",
+  "updated_at": "2026-11-02T04:55:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3494820166,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

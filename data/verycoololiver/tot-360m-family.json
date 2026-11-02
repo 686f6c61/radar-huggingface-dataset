@@ -5,7 +5,7 @@
   "author": "verycoololiver",
   "url": "https://huggingface.co/verycoololiver/Tot-360M-Family",
   "created_at": "2026-10-29T12:42:31.000Z",
-  "updated_at": "2026-11-01T03:52:57.000Z",
+  "updated_at": "2026-11-01T04:08:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,12 +34,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 336,
+  "downloads_30d": 352,
   "trending_score": 0,
   "parameters": 345359296,
   "parameters_human": "345.4M",
-  "storage_bytes": 3247991168,
-  "storage_human": "3.2 GB",
+  "storage_bytes": 3940204416,
+  "storage_human": "3.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

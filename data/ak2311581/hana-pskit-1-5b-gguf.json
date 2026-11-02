@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ak2311581/hana-pskit-1.5b-GGUF",
+  "slug": "ak2311581-hana-pskit-1-5b-gguf",
+  "author": "ak2311581",
+  "url": "https://huggingface.co/ak2311581/hana-pskit-1.5b-GGUF",
+  "created_at": "2026-11-02T06:05:10.000Z",
+  "updated_at": "2026-11-02T06:05:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "pskit",
+    "tool-calling",
+    "text-generation",
+    "en",
+    "base_model:ak2311581/hana-pskit-1.5b",
+    "base_model:quantized:ak2311581/hana-pskit-1.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2632620864,
+  "storage_human": "2.6 GB",
+  "base_model": "ak2311581/hana-pskit-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

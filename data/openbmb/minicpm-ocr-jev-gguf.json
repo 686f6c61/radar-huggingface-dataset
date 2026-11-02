@@ -5,21 +5,21 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM-OCR-Jev-gguf",
   "created_at": "2026-10-26T09:12:41.000Z",
-  "updated_at": "2026-10-29T15:39:37.000Z",
+  "updated_at": "2026-11-02T04:13:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
-  "library": null,
+  "library": "llama.cpp",
   "languages": [
     "en",
     "zh"
   ],
   "tags": [
+    "llama.cpp",
     "gguf",
     "minicpm-ocr",
     "ocr",
     "quality-assessment",
-    "llama.cpp",
     "multimodal",
     "quantized",
     "image-text-to-text",
@@ -34,7 +34,7 @@
     "feature-extraction"
   ],
   "likes": 17,
-  "downloads_30d": 11003,
+  "downloads_30d": 11971,
   "trending_score": 17,
   "parameters": 1881829184,
   "parameters_human": "1.88B",

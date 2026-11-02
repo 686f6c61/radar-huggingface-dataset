@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Sailor2-1B-GGUF",
   "created_at": "2026-10-28T14:17:29.000Z",
-  "updated_at": "2026-10-28T14:22:00.000Z",
+  "updated_at": "2026-11-01T11:20:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,8 +19,8 @@
     "sailor",
     "llama-cpp",
     "text-generation",
-    "base_model:Qwen/Qwen2.5-0.5B",
-    "base_model:quantized:Qwen/Qwen2.5-0.5B",
+    "base_model:sail/Sailor2-1B",
+    "base_model:quantized:sail/Sailor2-1B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -33,7 +33,7 @@
   "parameters_human": "988.1M",
   "storage_bytes": 10940312864,
   "storage_human": "10.9 GB",
-  "base_model": "Qwen/Qwen2.5-0.5B",
+  "base_model": "sail/Sailor2-1B",
   "formats": [
     "gguf"
   ],

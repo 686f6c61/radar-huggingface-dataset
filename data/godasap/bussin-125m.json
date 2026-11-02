@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "GodAsap/bussin-125m",
+  "slug": "godasap-bussin-125m",
+  "author": "GodAsap",
+  "url": "https://huggingface.co/GodAsap/bussin-125m",
+  "created_at": "2026-11-02T08:10:35.000Z",
+  "updated_at": "2026-11-02T08:11:05.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "register-conditioning",
+    "gen-z",
+    "slang",
+    "from-scratch",
+    "en",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125851392,
+  "parameters_human": "125.9M",
+  "storage_bytes": 503419816,
+  "storage_human": "503 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF",
   "created_at": "2026-10-28T13:27:01.000Z",
-  "updated_at": "2026-10-28T13:35:14.000Z",
+  "updated_at": "2026-11-01T11:17:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -18,8 +18,8 @@
     "coding",
     "llama-cpp",
     "text-generation",
-    "base_model:openbmb/MiniCPM5-1B",
-    "base_model:quantized:openbmb/MiniCPM5-1B",
+    "base_model:GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking",
+    "base_model:quantized:GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -32,7 +32,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 10800080448,
   "storage_human": "10.8 GB",
-  "base_model": "openbmb/MiniCPM5-1B",
+  "base_model": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking",
   "formats": [
     "gguf"
   ],

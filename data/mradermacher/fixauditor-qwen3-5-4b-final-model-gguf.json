@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/fixauditor-qwen3.5-4b-final-model-GGUF",
+  "slug": "mradermacher-fixauditor-qwen3-5-4b-final-model-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/fixauditor-qwen3.5-4b-final-model-GGUF",
+  "created_at": "2026-11-02T10:38:07.000Z",
+  "updated_at": "2026-11-02T10:59:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:justForAnonymous/fixauditor-qwen3.5-4b-final-model",
+    "base_model:quantized:justForAnonymous/fixauditor-qwen3.5-4b-final-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945649600,
+  "storage_human": "39.9 GB",
+  "base_model": "justForAnonymous/fixauditor-qwen3.5-4b-final-model",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

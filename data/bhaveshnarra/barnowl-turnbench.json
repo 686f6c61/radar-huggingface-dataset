@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "bhaveshnarra/barnowl-turnbench",
+  "slug": "bhaveshnarra-barnowl-turnbench",
+  "author": "bhaveshnarra",
+  "url": "https://huggingface.co/bhaveshnarra/barnowl-turnbench",
+  "created_at": "2026-11-02T09:00:41.000Z",
+  "updated_at": "2026-11-02T09:00:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "turn-taking",
+    "end-of-turn-detection",
+    "interruption-detection",
+    "voice-activity-detection",
+    "full-duplex",
+    "turnbench",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

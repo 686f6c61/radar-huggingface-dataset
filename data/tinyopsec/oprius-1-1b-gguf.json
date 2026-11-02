@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Oprius-1.1B-GGUF",
   "created_at": "2026-10-27T15:09:28.000Z",
-  "updated_at": "2026-10-27T15:18:25.000Z",
+  "updated_at": "2026-11-01T11:51:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -18,8 +18,8 @@
     "chat",
     "llama-cpp",
     "text-generation",
-    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
-    "base_model:quantized:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:zzzekryo/Oprius-1.1B",
+    "base_model:quantized:zzzekryo/Oprius-1.1B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -32,7 +32,7 @@
   "parameters_human": "1.10B",
   "storage_bytes": 10604172928,
   "storage_human": "10.6 GB",
-  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "base_model": "zzzekryo/Oprius-1.1B",
   "formats": [
     "gguf"
   ],

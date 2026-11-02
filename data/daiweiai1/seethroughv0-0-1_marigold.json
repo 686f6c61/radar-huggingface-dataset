@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "DAIWEIAI1/seethroughv0.0.1_marigold",
+  "slug": "daiweiai1-seethroughv0-0-1_marigold",
+  "author": "DAIWEIAI1",
+  "url": "https://huggingface.co/DAIWEIAI1/seethroughv0.0.1_marigold",
+  "created_at": "2026-11-02T08:44:03.000Z",
+  "updated_at": "2026-11-02T08:44:03.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "base_model:prs-eth/marigold-depth-v1-1",
+    "base_model:finetune:prs-eth/marigold-depth-v1-1",
+    "license:openrail++",
+    "diffusers:MarigoldDepthPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1213176964,
+  "parameters_human": "1.21B",
+  "storage_bytes": 3274638782,
+  "storage_human": "3.3 GB",
+  "base_model": "prs-eth/marigold-depth-v1-1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

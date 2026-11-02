@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "fabriziosalmi/Qwen3.5-0.8B-ita-agent-MLX-8bit",
+  "slug": "fabriziosalmi-qwen3-5-0-8b-ita-agent-mlx-8bit",
+  "author": "fabriziosalmi",
+  "url": "https://huggingface.co/fabriziosalmi/Qwen3.5-0.8B-ita-agent-MLX-8bit",
+  "created_at": "2026-11-02T05:00:15.000Z",
+  "updated_at": "2026-11-02T05:04:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "italian",
+    "agent",
+    "tool-calling",
+    "mcp",
+    "text-generation",
+    "conversational",
+    "it",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 819963645,
+  "storage_human": "820 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

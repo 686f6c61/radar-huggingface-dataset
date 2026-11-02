@@ -5,7 +5,7 @@
   "author": "singgihnn",
   "url": "https://huggingface.co/singgihnn/supertonic-3-coreml-int8",
   "created_at": "2026-11-01T23:42:33.000Z",
-  "updated_at": "2026-11-01T23:43:01.000Z",
+  "updated_at": "2026-11-02T03:31:40.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -16,6 +16,7 @@
     "text-to-speech",
     "coreml",
     "int8",
+    "fp16",
     "base_model:Supertone/supertonic-3",
     "base_model:quantized:Supertone/supertonic-3",
     "license:openrail",
@@ -26,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 283806142,
-  "storage_human": "284 MB",
+  "storage_bytes": 446700812,
+  "storage_human": "447 MB",
   "base_model": "Supertone/supertonic-3",
   "formats": [
     "onnx"

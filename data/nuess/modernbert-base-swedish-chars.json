@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "nuess/modernbert-base-swedish-chars",
+  "slug": "nuess-modernbert-base-swedish-chars",
+  "author": "nuess",
+  "url": "https://huggingface.co/nuess/modernbert-base-swedish-chars",
+  "created_at": "2026-11-02T08:45:17.000Z",
+  "updated_at": "2026-11-02T09:01:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "character-level",
+    "byte-level-bpe",
+    "continued-pretraining",
+    "sv",
+    "base_model:AI-Sweden-Models/ModernBERT-base",
+    "base_model:finetune:AI-Sweden-Models/ModernBERT-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111515904,
+  "parameters_human": "111.5M",
+  "storage_bytes": 450821733,
+  "storage_human": "451 MB",
+  "base_model": "AI-Sweden-Models/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

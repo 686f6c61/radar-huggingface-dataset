@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Quantum-Precog-24B-i1-GGUF",
   "created_at": "2026-11-01T11:27:31.000Z",
-  "updated_at": "2026-11-01T12:30:49.000Z",
+  "updated_at": "2026-11-01T15:17:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -60,8 +60,8 @@
   "trending_score": 0,
   "parameters": 23572444160,
   "parameters_human": "23.57B",
-  "storage_bytes": 76313475072,
-  "storage_human": "76.3 GB",
+  "storage_bytes": 253565696288,
+  "storage_human": "253.6 GB",
   "base_model": "Naphula/Quantum-Precog-24B",
   "formats": [
     "gguf"

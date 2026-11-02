@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "FrankLin00/mmrh-afr-03-keras-load-weights-external-link",
+  "slug": "franklin00-mmrh-afr-03-keras-load-weights-external-link",
+  "author": "FrankLin00",
+  "url": "https://huggingface.co/FrankLin00/mmrh-afr-03-keras-load-weights-external-link",
+  "created_at": "2026-11-02T11:28:18.000Z",
+  "updated_at": "2026-11-02T11:28:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "security-research",
+    "not-for-production",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 976,
+  "storage_human": "976 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joslynn Watkins - Research Associate | LinkedIn",
+      "url": "https://www.linkedin.com/in/joslynn-watkins-69242a18a",
+      "snippet": "View Joslynn Watkins’ profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Doña Ana Community College Employees, Location, Alumni | LinkedIn",
+      "url": "https://www.linkedin.com/school/dona-ana-community-college/",
+      "snippet": "DACC is a responsive and accessible learning-centered community college that provides educational opportunities to a diverse …"
+    },
+    {
+      "title": "Joylynn Kirui - Visionary Cybersecurity Leader | Head of ... - LinkedIn",
+      "url": "https://ke.linkedin.com/in/joylynn-kirui",
+      "snippet": "A capacitação foi conduzida por Joylynn Kirui, especialista em Inteligência Artificial da UpSkill Universe, e contou com estudos de …"
+    }
+  ]
+}

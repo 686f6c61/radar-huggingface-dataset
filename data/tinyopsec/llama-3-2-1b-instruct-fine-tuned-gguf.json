@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/llama-3.2-1b-instruct-fine-tuned-GGUF",
   "created_at": "2026-09-14T10:51:19.000Z",
-  "updated_at": "2026-09-14T11:01:58.000Z",
+  "updated_at": "2026-11-01T11:48:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "twanghcmut",
   "url": "https://huggingface.co/twanghcmut/foveavla-so101-drawer-red-block",
   "created_at": "2026-10-30T05:05:14.000Z",
-  "updated_at": "2026-10-30T05:13:04.000Z",
+  "updated_at": "2026-11-02T03:27:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "lerobot",
+    "safetensors",
     "robotics",
     "vla",
     "openpi",
@@ -28,10 +29,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 37325677370,
-  "storage_human": "37.3 GB",
+  "storage_bytes": 51792843130,
+  "storage_human": "51.8 GB",
   "base_model": "physical-intelligence/pi05_base",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

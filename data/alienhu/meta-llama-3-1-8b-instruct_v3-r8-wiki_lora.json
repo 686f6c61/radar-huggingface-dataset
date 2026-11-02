@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AlienHu/Meta-Llama-3.1-8B-Instruct_v3-r8-wiki_lora",
+  "slug": "alienhu-meta-llama-3-1-8b-instruct_v3-r8-wiki_lora",
+  "author": "AlienHu",
+  "url": "https://huggingface.co/AlienHu/Meta-Llama-3.1-8B-Instruct_v3-r8-wiki_lora",
+  "created_at": "2026-11-02T08:55:15.000Z",
+  "updated_at": "2026-11-02T08:57:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/data/hyhu/models/Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 773543810,
+  "storage_human": "774 MB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么这么多人把「Wikipedia」称作「wiki」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19581089",
+      "snippet": "Mar 25, 2011 · 为什么这么多人把「Wikipedia」称作「wiki」？ 我一直很难理解这个问题，为什么这么多人喜欢把专有名词和通用概 …"
+    },
+    {
+      "title": "Wikipedia 和 Wikia 哪个是维基百科；它们和维基解密有什么联系？",
+      "url": "https://www.zhihu.com/question/24790852",
+      "snippet": "Aug 9, 2014 · Wikipedia（维基百科），是由 维基媒体基金会 运营的非盈利在线百科全书计划，采用 wiki 软件架构（mediawiki），由 …"
+    },
+    {
+      "title": "维基百科官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/723469471435372885.html",
+      "snippet": "Jul 24, 2024 · 维基百科官方网址是什么？ 1. 维基百科网址：https://www.wikipedia.org/2. 维基百科介绍：维基百科是一个基于维基技 …"
+    },
+    {
+      "title": "维基百科（ Wikipedia） 为什么现在需要人捐钱 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/359009187",
+      "snippet": "来自维基百科创办者Jimmy Wales的个人呼吁 维基百科是全球第五大网站，每月为4.5亿用户提供服务，页面浏览数以十亿计。 商业本 …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "tugrulbayrak",
   "url": "https://huggingface.co/tugrulbayrak/TurnTurk-Gpt",
   "created_at": "2026-10-30T15:57:38.000Z",
-  "updated_at": "2026-10-30T17:28:53.000Z",
+  "updated_at": "2026-11-01T20:37:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,7 +42,7 @@
   "trending_score": 0,
   "parameters": 124442112,
   "parameters_human": "124.4M",
-  "storage_bytes": 497783424,
+  "storage_bytes": 497925080,
   "storage_human": "498 MB",
   "base_model": "ytu-ce-cosmos/turkish-gpt2",
   "formats": [

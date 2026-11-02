@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mlx-community/parakeet-ctc-0.6b-Vietnamese",
+  "slug": "mlx-community-parakeet-ctc-0-6b-vietnamese",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/parakeet-ctc-0.6b-Vietnamese",
+  "created_at": "2026-11-02T06:03:22.000Z",
+  "updated_at": "2026-11-02T06:03:38.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "ASR",
+    "Pytorch",
+    "FastConformer",
+    "Parakeet",
+    "CTC",
+    "automatic-speech-recognition",
+    "audio",
+    "speech",
+    "vi",
+    "base_model:nvidia/parakeet-ctc-0.6b-Vietnamese",
+    "base_model:finetune:nvidia/parakeet-ctc-0.6b-Vietnamese",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 608848897,
+  "parameters_human": "608.8M",
+  "storage_bytes": 2435757588,
+  "storage_human": "2.4 GB",
+  "base_model": "nvidia/parakeet-ctc-0.6b-Vietnamese",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

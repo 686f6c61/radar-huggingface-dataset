@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "arabkly/vault-pub",
+  "slug": "arabkly-vault-pub",
+  "author": "arabkly",
+  "url": "https://huggingface.co/arabkly/vault-pub",
+  "created_at": "2026-11-01T08:04:07.000Z",
+  "updated_at": "2026-11-02T12:01:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 3230440246442,
+  "storage_human": "3230.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

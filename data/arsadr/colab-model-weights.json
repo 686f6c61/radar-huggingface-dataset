@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ARSADR/colab-model-weights",
+  "slug": "arsadr-colab-model-weights",
+  "author": "ARSADR",
+  "url": "https://huggingface.co/ARSADR/colab-model-weights",
+  "created_at": "2026-11-02T05:18:35.000Z",
+  "updated_at": "2026-11-02T05:46:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "gguf",
+    "comfyui",
+    "qwen",
+    "colab-playground",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 206155940457,
+  "storage_human": "206.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

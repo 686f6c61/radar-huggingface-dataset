@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "syssec-utd/pylingual-shared-statement-v3",
+  "slug": "syssec-utd-pylingual-shared-statement-v3",
+  "author": "syssec-utd",
+  "url": "https://huggingface.co/syssec-utd/pylingual-shared-statement-v3",
+  "created_at": "2026-11-02T11:12:05.000Z",
+  "updated_at": "2026-11-02T11:12:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gShare: Efficient GPU Sharing with Aggressive Scheduling in Multi ...",
+      "url": "https://cis.temple.edu/~jiewu/research/publications/Publication_files/3779212.3790168.pdf",
+      "snippet": "22.03.2026 ... 60 syssec-utd/py312-pylingual-v1-statement. 223M I64. HF. 11 CohereLabs/aya-vision-8b. 8.63B F32. HF. 61 rinna/japanese-cloob-vit-b-16. 197M F32."
+    }
+  ]
+}

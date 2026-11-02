@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "temaq-org/Tema_Q-X8-Thinking",
+  "slug": "temaq-org-tema_q-x8-thinking",
+  "author": "temaq-org",
+  "url": "https://huggingface.co/temaq-org/Tema_Q-X8-Thinking",
+  "created_at": "2026-11-01T11:31:47.000Z",
+  "updated_at": "2026-11-02T10:48:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "agent",
+    "sage",
+    "transformer",
+    "instruction-tuned",
+    "multilingual",
+    "uncensored",
+    "non-censored",
+    "unfiltered",
+    "text-generation",
+    "conversational",
+    "ja",
+    "en",
+    "zh",
+    "base_model:InternScience/Sage-A1.5",
+    "base_model:finetune:InternScience/Sage-A1.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71928844530,
+  "storage_human": "71.9 GB",
+  "base_model": "InternScience/Sage-A1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Temaq | Equipos y máquinas para la industria del agua",
+      "url": "https://temaq.com.ar/",
+      "snippet": "¿Por qué elegir TEMAQ? Compromiso, experiencia y atención personalizada para acompañar el crecimiento de su empresa. 🛠️ …"
+    },
+    {
+      "title": "(@temaq) • Instagram photos and videos",
+      "url": "https://www.instagram.com/temaq/",
+      "snippet": "This profile is private Follow temaq in the app to see their photos and videos."
+    },
+    {
+      "title": "TEMAQ CONSULTING — ICE, RC, IF | Annuaire Maroc | Optimus",
+      "url": "https://optimus.ma/annuaire/temaq-consulting",
+      "snippet": "TEMAQ Consulting est une société de conseil spécialisée dans l'accompagnement de projets et la réalisation de travaux divers. Elle …"
+    },
+    {
+      "title": "TEMAQ CONSULTING FES ICE, IF, RC",
+      "url": "https://maroc.welipro.com/c/temaq-consulting-299526952",
+      "snippet": "Aug 4, 2010 · Trouver toutes les informations officielles sur TEMAQ CONSULTING à FES ICE, IF, RC, coordonnées"
+    }
+  ]
+}

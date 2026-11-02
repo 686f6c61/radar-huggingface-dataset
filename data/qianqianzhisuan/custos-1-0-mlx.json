@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "qianqianzhisuan/custos-1.0-mlx",
+  "slug": "qianqianzhisuan-custos-1-0-mlx",
+  "author": "qianqianzhisuan",
+  "url": "https://huggingface.co/qianqianzhisuan/custos-1.0-mlx",
+  "created_at": "2026-11-02T08:04:54.000Z",
+  "updated_at": "2026-11-02T08:16:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "qwen3.5",
+    "cybersecurity",
+    "nsec",
+    "fine-tuned",
+    "apple-silicon",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

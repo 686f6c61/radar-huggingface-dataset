@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-1023db4ccf176a1e",
+  "slug": "gradients-io-tournaments-augmented-1023db4ccf176a1e",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-1023db4ccf176a1e",
+  "created_at": "2026-11-02T11:11:23.000Z",
+  "updated_at": "2026-11-02T11:11:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "falcon",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1311625216,
+  "parameters_human": "1.31B",
+  "storage_bytes": 2623284688,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Urbanwarrior79/omnigenesis-debate-gguf",
+  "slug": "urbanwarrior79-omnigenesis-debate-gguf",
+  "author": "Urbanwarrior79",
+  "url": "https://huggingface.co/Urbanwarrior79/omnigenesis-debate-gguf",
+  "created_at": "2026-11-02T05:38:08.000Z",
+  "updated_at": "2026-11-02T05:38:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ollama",
+    "omnigenesis",
+    "debate",
+    "text-generation",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377376,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

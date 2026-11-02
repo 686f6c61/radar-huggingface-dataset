@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "renlu/intern-decision-4b-tool-gate-v0.22.0-gguf",
+  "slug": "renlu-intern-decision-4b-tool-gate-v0-22-0-gguf",
+  "author": "renlu",
+  "url": "https://huggingface.co/renlu/intern-decision-4b-tool-gate-v0.22.0-gguf",
+  "created_at": "2026-11-02T05:08:49.000Z",
+  "updated_at": "2026-11-02T05:52:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "q8_0",
+    "tool-gating",
+    "local-inference",
+    "experimental",
+    "base_model:internlm/Intern-Decision-4B",
+    "base_model:quantized:internlm/Intern-Decision-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4514902784,
+  "storage_human": "4.5 GB",
+  "base_model": "internlm/Intern-Decision-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joy Chioma Emeruwa’s Post - LinkedIn",
+      "url": "https://www.linkedin.com/posts/joy-chioma-emeruwa-00a09a53_view-my-verified-achievement-from-apmg-international-activity-6639033778868142080-_ng5",
+      "snippet": "View my verified achievement from APMG International on Acclaim. AgilePM® Foundation was issued by APMG International to …"
+    }
+  ]
+}

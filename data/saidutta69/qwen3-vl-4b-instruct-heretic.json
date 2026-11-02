@@ -5,7 +5,7 @@
   "author": "saidutta69",
   "url": "https://huggingface.co/saidutta69/Qwen3-VL-4B-Instruct-heretic",
   "created_at": "2026-10-15T20:19:48.000Z",
-  "updated_at": "2026-10-28T18:02:13.000Z",
+  "updated_at": "2026-11-01T06:13:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 539,
+  "downloads_30d": 594,
   "trending_score": 0,
   "parameters": 4437815808,
   "parameters_human": "4.44B",

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "kamawwanai/RuadaptQwen3-4B-JacobianLens-RU",
+  "slug": "kamawwanai-ruadaptqwen3-4b-jacobianlens-ru",
+  "author": "kamawwanai",
+  "url": "https://huggingface.co/kamawwanai/RuadaptQwen3-4B-JacobianLens-RU",
+  "created_at": "2026-11-02T11:58:54.000Z",
+  "updated_at": "2026-11-02T12:19:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "pytorch",
+    "jacobian-lens",
+    "mechanistic-interpretability",
+    "russian",
+    "interpretability",
+    "research",
+    "ru",
+    "base_model:RefalMachine/RuadaptQwen3-4B-Instruct",
+    "base_model:finetune:RefalMachine/RuadaptQwen3-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1376287809,
+  "storage_human": "1.4 GB",
+  "base_model": "RefalMachine/RuadaptQwen3-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

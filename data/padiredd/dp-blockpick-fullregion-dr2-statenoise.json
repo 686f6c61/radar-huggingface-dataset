@@ -5,7 +5,7 @@
   "author": "padiredd",
   "url": "https://huggingface.co/padiredd/dp-blockpick-fullregion-dr2-statenoise",
   "created_at": "2026-11-01T14:37:08.000Z",
-  "updated_at": "2026-11-01T14:38:28.000Z",
+  "updated_at": "2026-11-02T02:12:58.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 287533680,
   "parameters_human": "287.5M",
-  "storage_bytes": 11501994088,
-  "storage_human": "11.5 GB",
+  "storage_bytes": 11569525826,
+  "storage_human": "11.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

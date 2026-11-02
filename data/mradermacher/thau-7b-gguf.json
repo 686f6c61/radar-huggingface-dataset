@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/thau-7b-GGUF",
+  "slug": "mradermacher-thau-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/thau-7b-GGUF",
+  "created_at": "2025-12-13T15:58:47.000Z",
+  "updated_at": "2026-11-02T06:44:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "code-generation",
+    "agent",
+    "mcp",
+    "tool-calling",
+    "spanish",
+    "qwen2",
+    "en",
+    "es",
+    "base_model:luepow/thau-7b",
+    "base_model:quantized:luepow/thau-7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 523,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146889216,
+  "storage_human": "68.1 GB",
+  "base_model": "luepow/thau-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "OfficerChul/temp",
+  "slug": "officerchul-temp",
+  "author": "OfficerChul",
+  "url": "https://huggingface.co/OfficerChul/temp",
+  "created_at": "2026-11-02T11:28:09.000Z",
+  "updated_at": "2026-11-02T11:30:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "rep4act",
+    "flow-matching",
+    "droid",
+    "mmdit",
+    "en",
+    "base_model:nvidia/Cosmos-Reason2-2B",
+    "base_model:finetune:nvidia/Cosmos-Reason2-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4852142113,
+  "parameters_human": "4.85B",
+  "storage_bytes": 15732925721,
+  "storage_human": "15.7 GB",
+  "base_model": "nvidia/Cosmos-Reason2-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

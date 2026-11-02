@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "baopqp-qualgo/kinshield-ai-team",
+  "slug": "baopqp-qualgo-kinshield-ai-team",
+  "author": "baopqp-qualgo",
+  "url": "https://huggingface.co/baopqp-qualgo/kinshield-ai-team",
+  "created_at": "2026-08-07T07:35:38.000Z",
+  "updated_at": "2026-11-02T08:07:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1858,
+  "trending_score": 0,
+  "parameters": 302863104,
+  "parameters_human": "302.9M",
+  "storage_bytes": 2960074820,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

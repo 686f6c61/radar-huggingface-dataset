@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "sreyanshdreamstreet/kronos-btc-sep2026-dollarbars",
+  "slug": "sreyanshdreamstreet-kronos-btc-sep2026-dollarbars",
+  "author": "sreyanshdreamstreet",
+  "url": "https://huggingface.co/sreyanshdreamstreet/kronos-btc-sep2026-dollarbars",
+  "created_at": "2026-11-02T08:40:31.000Z",
+  "updated_at": "2026-11-02T08:40:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kronos",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kronos",
+    "safetensors",
+    "finance",
+    "time-series",
+    "polymarket",
+    "dollar-bars",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102311008,
+  "parameters_human": "102.3M",
+  "storage_bytes": 818582511,
+  "storage_human": "819 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

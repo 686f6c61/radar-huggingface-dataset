@@ -4,8 +4,8 @@
   "slug": "oteam-boltzgen-structure-small",
   "author": "oteam",
   "url": "https://huggingface.co/oteam/boltzgen-structure-small",
-  "created_at": "2026-11-01T10:20:07.000Z",
-  "updated_at": "2026-11-01T10:20:23.000Z",
+  "created_at": "2026-11-01T14:47:02.000Z",
+  "updated_at": "2026-11-01T14:47:06.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "other",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 136885760,
   "parameters_human": "136.9M",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 547690224,
+  "storage_human": "548 MB",
   "base_model": null,
   "formats": [
     "safetensors"

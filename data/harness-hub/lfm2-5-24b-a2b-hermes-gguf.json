@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "harness-hub/LFM2.5-24B-A2B-hermes-GGUF",
+  "slug": "harness-hub-lfm2-5-24b-a2b-hermes-gguf",
+  "author": "harness-hub",
+  "url": "https://huggingface.co/harness-hub/LFM2.5-24B-A2B-hermes-GGUF",
+  "created_at": "2026-11-02T07:41:02.000Z",
+  "updated_at": "2026-11-02T07:41:18.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "hermes",
+  "languages": [],
+  "tags": [
+    "hermes",
+    "gguf",
+    "llama.cpp",
+    "lora",
+    "agents",
+    "harbor",
+    "base_model:harness-hub/LFM2.5-24B-A2B-hermes",
+    "base_model:adapter:harness-hub/LFM2.5-24B-A2B-hermes",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18710528,
+  "parameters_human": "18.7M",
+  "storage_bytes": 39215545,
+  "storage_human": "39 MB",
+  "base_model": "harness-hub/LFM2.5-24B-A2B-hermes",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

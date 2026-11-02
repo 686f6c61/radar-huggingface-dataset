@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "muahseol/qwen3.5-0.8b-labor-sft",
+  "slug": "muahseol-qwen3-5-0-8b-labor-sft",
+  "author": "muahseol",
+  "url": "https://huggingface.co/muahseol/qwen3.5-0.8b-labor-sft",
+  "created_at": "2026-11-02T08:56:38.000Z",
+  "updated_at": "2026-11-02T08:56:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3029602973,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

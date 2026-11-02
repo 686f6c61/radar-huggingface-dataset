@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nhatcm/hitbench-so101-molmoact2-front-eef-interaction-wallmask-5k-20261102",
+  "slug": "nhatcm-hitbench-so101-molmoact2-front-eef-interaction-wallmask-5k-20261102",
+  "author": "nhatcm",
+  "url": "https://huggingface.co/nhatcm/hitbench-so101-molmoact2-front-eef-interaction-wallmask-5k-20261102",
+  "created_at": "2026-11-02T08:28:38.000Z",
+  "updated_at": "2026-11-02T08:31:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "molmoact2",
+    "so101",
+    "end-effector-control",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5601988144,
+  "parameters_human": "5.60B",
+  "storage_bytes": 12679641936,
+  "storage_human": "12.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

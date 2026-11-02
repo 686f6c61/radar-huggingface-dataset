@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Carballo-Legal-GGUF",
+  "slug": "mradermacher-carballo-legal-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Carballo-Legal-GGUF",
+  "created_at": "2025-12-13T16:13:16.000Z",
+  "updated_at": "2026-11-02T06:44:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "gl",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "legal",
+    "instruction-tuning",
+    "multilingual",
+    "gl",
+    "es",
+    "dataset:proxectonos/corpus_dominio_legal_administrativo",
+    "base_model:proxectonos/Carballo-Legal",
+    "base_model:quantized:proxectonos/Carballo-Legal",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 255,
+  "trending_score": 0,
+  "parameters": 7768117248,
+  "parameters_human": "7.77B",
+  "storage_bytes": 70679316224,
+  "storage_human": "70.7 GB",
+  "base_model": "proxectonos/Carballo-Legal",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

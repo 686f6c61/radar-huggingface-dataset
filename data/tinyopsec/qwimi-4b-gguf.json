@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Qwimi-4B-GGUF",
   "created_at": "2026-10-29T10:50:59.000Z",
-  "updated_at": "2026-10-29T11:27:24.000Z",
+  "updated_at": "2026-11-01T11:25:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,8 +19,8 @@
     "agent",
     "llama-cpp",
     "text-generation",
-    "base_model:Qwen/Qwen3-4B-Instruct-2507",
-    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:Rumiii/Qwimi-4B",
+    "base_model:quantized:Rumiii/Qwimi-4B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -33,7 +33,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 39296930624,
   "storage_human": "39.3 GB",
-  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "base_model": "Rumiii/Qwimi-4B",
   "formats": [
     "gguf"
   ],

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "sukhun2/audio_cls_v2",
+  "slug": "sukhun2-audio_cls_v2",
+  "author": "sukhun2",
+  "url": "https://huggingface.co/sukhun2/audio_cls_v2",
+  "created_at": "2026-10-19T05:32:22.000Z",
+  "updated_at": "2026-11-02T11:58:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 94572174,
+  "parameters_human": "94.6M",
+  "storage_bytes": 7566299281,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SlowGuess/qwen38-minecraft-r4",
+  "slug": "slowguess-qwen38-minecraft-r4",
+  "author": "SlowGuess",
+  "url": "https://huggingface.co/SlowGuess/qwen38-minecraft-r4",
+  "created_at": "2026-11-02T07:19:07.000Z",
+  "updated_at": "2026-11-02T07:28:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "minecraft",
+    "vision-language-action",
+    "imitation-learning",
+    "dataset:SlowGuess/qwen38-minecraft-m2-data",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 115667680990,
+  "storage_human": "115.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

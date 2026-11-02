@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "HalfDemon09I/trashpanzee-classifier",
+  "slug": "halfdemon09i-trashpanzee-classifier",
+  "author": "HalfDemon09I",
+  "url": "https://huggingface.co/HalfDemon09I/trashpanzee-classifier",
+  "created_at": "2026-11-02T10:57:02.000Z",
+  "updated_at": "2026-11-02T10:57:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tflite",
+    "image-classification",
+    "teachable-machine",
+    "mobilenet",
+    "waste-management",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2090332,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

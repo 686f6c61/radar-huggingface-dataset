@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nesoai-dev-org/NousResearch-Nous-Hermes-2-SOLAR-10.7B",
+  "slug": "nesoai-dev-org-nousresearch-nous-hermes-2-solar-10-7b",
+  "author": "nesoai-dev-org",
+  "url": "https://huggingface.co/nesoai-dev-org/NousResearch-Nous-Hermes-2-SOLAR-10.7B",
+  "created_at": "2026-11-02T06:10:05.000Z",
+  "updated_at": "2026-11-02T06:10:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "SOLAR",
+    "instruct",
+    "finetune",
+    "chatml",
+    "gpt4",
+    "synthetic data",
+    "distillation",
+    "en",
+    "dataset:teknium/OpenHermes-2.5",
+    "base_model:upstage/SOLAR-10.7B-v1.0",
+    "base_model:finetune:upstage/SOLAR-10.7B-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10731540480,
+  "parameters_human": "10.73B",
+  "storage_bytes": 21463625019,
+  "storage_human": "21.5 GB",
+  "base_model": "upstage/SOLAR-10.7B-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

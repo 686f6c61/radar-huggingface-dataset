@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "SebasKoedam/act_so101_training_test",
+  "slug": "sebaskoedam-act_so101_training_test",
+  "author": "SebasKoedam",
+  "url": "https://huggingface.co/SebasKoedam/act_so101_training_test",
+  "created_at": "2026-11-02T09:56:55.000Z",
+  "updated_at": "2026-11-02T10:17:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:SebasKoedam/so101_training_test_20261102_093435",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413412664,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "claran/lab4-wnc-qwen3-8b-lora",
+  "slug": "claran-lab4-wnc-qwen3-8b-lora",
+  "author": "claran",
+  "url": "https://huggingface.co/claran/lab4-wnc-qwen3-8b-lora",
+  "created_at": "2026-11-02T08:42:27.000Z",
+  "updated_at": "2026-11-02T08:42:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "wikipedia",
+    "npov",
+    "bias-detection",
+    "text-generation",
+    "en",
+    "arxiv:1911.09709",
+    "base_model:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61380432,
+  "storage_human": "61 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

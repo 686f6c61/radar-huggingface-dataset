@@ -5,7 +5,7 @@
   "author": "scriptedvn",
   "url": "https://huggingface.co/scriptedvn/scriptedvn-models",
   "created_at": "2026-11-01T19:54:26.000Z",
-  "updated_at": "2026-11-01T20:00:14.000Z",
+  "updated_at": "2026-11-02T02:17:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -14,6 +14,7 @@
     "multilingual"
   ],
   "tags": [
+    "safetensors",
     "gguf",
     "translation",
     "ctranslate2",
@@ -30,11 +31,12 @@
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 7517707117,
-  "storage_human": "7.5 GB",
+  "storage_bytes": 18247584113,
+  "storage_human": "18.2 GB",
   "base_model": null,
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

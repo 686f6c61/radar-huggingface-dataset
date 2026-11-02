@@ -5,7 +5,7 @@
   "author": "ysy2014",
   "url": "https://huggingface.co/ysy2014/m02",
   "created_at": "2026-10-31T11:58:29.000Z",
-  "updated_at": "2026-11-01T08:08:15.000Z",
+  "updated_at": "2026-11-01T16:41:22.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 73127424,
   "parameters_human": "73.1M",
-  "storage_bytes": 877620507,
-  "storage_human": "878 MB",
+  "storage_bytes": 8776205070,
+  "storage_human": "8.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

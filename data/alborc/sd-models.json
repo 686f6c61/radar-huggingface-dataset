@@ -5,7 +5,7 @@
   "author": "alborc",
   "url": "https://huggingface.co/alborc/sd-models",
   "created_at": "2026-08-12T06:08:57.000Z",
-  "updated_at": "2026-08-17T01:33:58.000Z",
+  "updated_at": "2026-10-31T01:32:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": 2567463684,
   "parameters_human": "2.57B",
-  "storage_bytes": 711370145005,
-  "storage_human": "711.4 GB",
+  "storage_bytes": 718308251503,
+  "storage_human": "718.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

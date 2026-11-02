@@ -5,7 +5,7 @@
   "author": "mehemet",
   "url": "https://huggingface.co/mehemet/HexWeaver-27B-v4",
   "created_at": "2026-10-31T15:46:09.000Z",
-  "updated_at": "2026-11-01T12:58:49.000Z",
+  "updated_at": "2026-11-01T14:50:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -46,8 +46,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 179441595,
-  "storage_human": "179 MB",
+  "storage_bytes": 180409597,
+  "storage_human": "180 MB",
   "base_model": null,
   "formats": [
     "safetensors"

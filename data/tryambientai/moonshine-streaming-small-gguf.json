@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 140135225,
   "parameters_human": "140.1M",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 198506848,
+  "storage_human": "199 MB",
   "base_model": "UsefulSensors/moonshine-streaming-small",
   "formats": [
     "gguf"

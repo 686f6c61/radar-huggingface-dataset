@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "pandorapaige91/Passionately_Pandora",
+  "slug": "pandorapaige91-passionately_pandora",
+  "author": "pandorapaige91",
+  "url": "https://huggingface.co/pandorapaige91/Passionately_Pandora",
+  "created_at": "2026-10-11T17:28:37.000Z",
+  "updated_at": "2026-11-02T08:17:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:RunDiffusion/Juggernaut-XL-v9",
+    "base_model:adapter:RunDiffusion/Juggernaut-XL-v9",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7116050028,
+  "storage_human": "7.1 GB",
+  "base_model": "RunDiffusion/Juggernaut-XL-v9",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

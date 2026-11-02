@@ -5,7 +5,7 @@
   "author": "bomehika",
   "url": "https://huggingface.co/bomehika/oelala-loras",
   "created_at": "2026-10-01T13:33:22.000Z",
-  "updated_at": "2026-10-01T13:46:38.000Z",
+  "updated_at": "2026-10-25T12:13:07.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 48968302577,
-  "storage_human": "49.0 GB",
+  "storage_bytes": 50248264894,
+  "storage_human": "50.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "newmean-ai",
   "url": "https://huggingface.co/newmean-ai/pii-small",
   "created_at": "2026-10-30T23:37:19.000Z",
-  "updated_at": "2026-10-31T08:55:06.000Z",
+  "updated_at": "2026-11-02T05:08:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -138,8 +138,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13272140,
-  "storage_human": "13 MB",
+  "storage_bytes": 26544280,
+  "storage_human": "27 MB",
   "base_model": null,
   "formats": [
     "onnx"

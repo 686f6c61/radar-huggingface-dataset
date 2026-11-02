@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-Qwen3-Coder-Next-abliterated-GGUF",
+  "slug": "mradermacher-huihui-qwen3-coder-next-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-Next-abliterated-GGUF",
+  "created_at": "2026-02-11T16:17:41.000Z",
+  "updated_at": "2026-11-02T05:36:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3-Coder-Next-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3-Coder-Next-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 49257,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 542469997952,
+  "storage_human": "542.5 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3-Coder-Next-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

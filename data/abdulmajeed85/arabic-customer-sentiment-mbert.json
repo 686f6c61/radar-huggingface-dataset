@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "abdulmajeed85/arabic-customer-sentiment-mbert",
+  "slug": "abdulmajeed85-arabic-customer-sentiment-mbert",
+  "author": "abdulmajeed85",
+  "url": "https://huggingface.co/abdulmajeed85/arabic-customer-sentiment-mbert",
+  "created_at": "2026-11-02T09:03:52.000Z",
+  "updated_at": "2026-11-02T09:06:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "bert",
+    "sentiment-analysis",
+    "arabic",
+    "course-project",
+    "text-classification",
+    "ar",
+    "dataset:cardiffnlp/tweet_sentiment_multilingual",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google-bert/bert-base-multilingual-cased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quirk Nissan - Quincy, MA | Cars.com",
+      "url": "https://www.cars.com/dealers/81751/quirk-nissan/?msockid=399f49d7c20a67f6057e51d2c38f6614",
+      "snippet": "Read reviews by dealership customers, get a map and directions, contact the dealer, view inventory, hours of operation, and …"
+    }
+  ]
+}

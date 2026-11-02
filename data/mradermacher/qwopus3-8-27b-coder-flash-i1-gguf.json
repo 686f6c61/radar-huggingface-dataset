@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwopus3.8-27B-Coder-Flash-i1-GGUF",
   "created_at": "2026-11-01T17:15:01.000Z",
-  "updated_at": "2026-11-01T17:24:39.000Z",
+  "updated_at": "2026-11-01T21:44:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -46,8 +46,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 10891895040,
-  "storage_human": "10.9 GB",
+  "storage_bytes": 218567560640,
+  "storage_human": "218.6 GB",
   "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
   "formats": [
     "gguf"

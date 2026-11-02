@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "miyoshi-nii/aofi-umi-arena",
+  "slug": "miyoshi-nii-aofi-umi-arena",
+  "author": "miyoshi-nii",
+  "url": "https://huggingface.co/miyoshi-nii/aofi-umi-arena",
+  "created_at": "2026-11-02T08:46:16.000Z",
+  "updated_at": "2026-11-02T08:46:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "umi-arena",
+    "yubi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 217364750,
+  "parameters_human": "217.4M",
+  "storage_bytes": 1122194016,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

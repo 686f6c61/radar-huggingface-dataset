@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Rafraeger/Veovesna-SLM-101M",
+  "slug": "rafraeger-veovesna-slm-101m",
+  "author": "Rafraeger",
+  "url": "https://huggingface.co/Rafraeger/Veovesna-SLM-101M",
+  "created_at": "2026-11-02T07:15:48.000Z",
+  "updated_at": "2026-11-02T09:34:51.000Z",
+  "license": "`",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "veovesna-slm",
+    "indonesian",
+    "small-language-model",
+    "causal-language-model",
+    "question-answering",
+    "research",
+    "text-generation",
+    "custom_code",
+    "id",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 101202432,
+  "parameters_human": "101.2M",
+  "storage_bytes": 404822984,
+  "storage_human": "405 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

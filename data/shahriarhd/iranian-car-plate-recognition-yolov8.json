@@ -5,7 +5,7 @@
   "author": "shahriarhd",
   "url": "https://huggingface.co/shahriarhd/iranian-car-plate-recognition-yolov8",
   "created_at": "2026-11-01T20:52:32.000Z",
-  "updated_at": "2026-11-01T20:56:10.000Z",
+  "updated_at": "2026-11-01T22:10:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -38,7 +38,7 @@
   "trending_score": 0,
   "parameters": 3029243,
   "parameters_human": "3.0M",
-  "storage_bytes": 69987956,
+  "storage_bytes": 70240705,
   "storage_human": "70 MB",
   "base_model": null,
   "formats": [

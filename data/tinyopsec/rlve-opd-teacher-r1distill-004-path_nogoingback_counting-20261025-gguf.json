@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025-GGUF",
   "created_at": "2026-11-01T12:54:19.000Z",
-  "updated_at": "2026-11-01T13:01:01.000Z",
+  "updated_at": "2026-11-01T13:09:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 1777088000,
   "parameters_human": "1.78B",
-  "storage_bytes": 10722969600,
-  "storage_human": "10.7 GB",
+  "storage_bytes": 17497102080,
+  "storage_human": "17.5 GB",
   "base_model": "davidheineman/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025",
   "formats": [
     "gguf"

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Vemployee/miiq-intent-e5-small",
+  "slug": "vemployee-miiq-intent-e5-small",
+  "author": "Vemployee",
+  "url": "https://huggingface.co/Vemployee/miiq-intent-e5-small",
+  "created_at": "2026-11-02T09:01:13.000Z",
+  "updated_at": "2026-11-02T09:08:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "ar",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 257482000,
+  "storage_human": "257 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

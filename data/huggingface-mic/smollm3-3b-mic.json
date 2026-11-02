@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/SmolLM3-3B-mic",
+  "slug": "huggingface-mic-smollm3-3b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/SmolLM3-3B-mic",
+  "created_at": "2026-10-29T10:57:25.000Z",
+  "updated_at": "2026-11-02T12:18:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "smollm3",
+    "mic",
+    "test-artifact",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 285,
+  "trending_score": 0,
+  "parameters": 35195136,
+  "parameters_human": "35.2M",
+  "storage_bytes": 87603259,
+  "storage_human": "88 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

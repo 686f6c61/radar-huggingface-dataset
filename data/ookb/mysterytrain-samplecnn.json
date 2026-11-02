@@ -5,7 +5,7 @@
   "author": "ookb",
   "url": "https://huggingface.co/ookb/mysterytrain-SampleCNN",
   "created_at": "2026-11-02T01:18:18.000Z",
-  "updated_at": "2026-11-02T01:21:28.000Z",
+  "updated_at": "2026-11-02T01:41:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "arxiv:1703.01789",
     "license:mit",
     "region:us"
   ],

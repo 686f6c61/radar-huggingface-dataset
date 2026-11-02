@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CPE_AI_Programming_Assistant_49_0601-GGUF",
+  "slug": "mradermacher-cpe_ai_programming_assistant_49_0601-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CPE_AI_Programming_Assistant_49_0601-GGUF",
+  "created_at": "2025-06-01T22:32:55.000Z",
+  "updated_at": "2026-11-02T10:04:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "en",
+    "base_model:EasyChCh/CPE_AI_Programming_Assistant_49_0601",
+    "base_model:quantized:EasyChCh/CPE_AI_Programming_Assistant_49_0601",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 137,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 37274395968,
+  "storage_human": "37.3 GB",
+  "base_model": "EasyChCh/CPE_AI_Programming_Assistant_49_0601",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

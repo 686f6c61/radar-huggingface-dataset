@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "andkil/llm-course-hw2-dpo",
+  "slug": "andkil-llm-course-hw2-dpo",
+  "author": "andkil",
+  "url": "https://huggingface.co/andkil/llm-course-hw2-dpo",
+  "created_at": "2026-11-02T08:48:09.000Z",
+  "updated_at": "2026-11-02T08:48:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

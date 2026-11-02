@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BloomVN-8B-instruct-GGUF",
+  "slug": "mradermacher-bloomvn-8b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BloomVN-8B-instruct-GGUF",
+  "created_at": "2025-02-12T23:31:25.000Z",
+  "updated_at": "2026-11-02T10:04:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "vi",
+    "dataset:BlossomsAI/reduced_vietnamese_instruction_dataset",
+    "base_model:BlossomsAI/BloomVN-8B-instruct",
+    "base_model:quantized:BlossomsAI/BloomVN-8B-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 136,
+  "trending_score": 0,
+  "parameters": 8546930176,
+  "parameters_human": "8.55B",
+  "storage_bytes": 76339498368,
+  "storage_human": "76.3 GB",
+  "base_model": "BlossomsAI/BloomVN-8B-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

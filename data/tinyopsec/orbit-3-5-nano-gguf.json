@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Orbit-3.5-Nano-GGUF",
   "created_at": "2026-10-27T16:04:42.000Z",
-  "updated_at": "2026-10-27T16:24:54.000Z",
+  "updated_at": "2026-11-01T11:51:46.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -19,8 +19,8 @@
     "coding",
     "llama-cpp",
     "text-generation",
-    "base_model:LiquidAI/LFM2.5-2.6B",
-    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "base_model:OpenPathAI/Orbit-3.5-Nano",
+    "base_model:quantized:OpenPathAI/Orbit-3.5-Nano",
     "license:other",
     "endpoints_compatible",
     "region:us",
@@ -33,7 +33,7 @@
   "parameters_human": "2.70B",
   "storage_bytes": 26290423808,
   "storage_human": "26.3 GB",
-  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "base_model": "OpenPathAI/Orbit-3.5-Nano",
   "formats": [
     "gguf"
   ],

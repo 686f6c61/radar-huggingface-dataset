@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "RabbitDaisuke/Wholebody-Video-Tracking",
+  "slug": "rabbitdaisuke-wholebody-video-tracking",
+  "author": "RabbitDaisuke",
+  "url": "https://huggingface.co/RabbitDaisuke/Wholebody-Video-Tracking",
+  "created_at": "2026-11-02T08:58:40.000Z",
+  "updated_at": "2026-11-02T09:24:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "keypoint-detection",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128347177,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

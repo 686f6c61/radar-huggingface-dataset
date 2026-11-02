@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Ocean82/TinnyLllama_FineTuned_4_Spreadsheets",
+  "slug": "ocean82-tinnylllama_finetuned_4_spreadsheets",
+  "author": "Ocean82",
+  "url": "https://huggingface.co/Ocean82/TinnyLllama_FineTuned_4_Spreadsheets",
+  "created_at": "2026-11-02T11:00:52.000Z",
+  "updated_at": "2026-11-02T11:00:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 1450256367,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "xv0y5ncu",
   "url": "https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-3bpw",
   "created_at": "2026-10-29T19:57:59.000Z",
-  "updated_at": "2026-10-31T08:42:38.000Z",
+  "updated_at": "2026-11-01T14:09:49.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Sexy_Toons_feat_Pipa_Illustrious_4.0",
+  "slug": "aixfunestudio-sexy_toons_feat_pipa_illustrious_4-0",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Sexy_Toons_feat_Pipa_Illustrious_4.0",
+  "created_at": "2026-11-02T11:23:53.000Z",
+  "updated_at": "2026-11-02T11:33:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938040866,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

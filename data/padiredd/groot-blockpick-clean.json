@@ -5,7 +5,7 @@
   "author": "padiredd",
   "url": "https://huggingface.co/padiredd/groot-blockpick-clean",
   "created_at": "2026-10-31T00:48:35.000Z",
-  "updated_at": "2026-10-31T00:53:32.000Z",
+  "updated_at": "2026-11-02T00:33:23.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12576206929,
-  "storage_human": "12.6 GB",
+  "storage_bytes": 42934412177,
+  "storage_human": "42.9 GB",
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"

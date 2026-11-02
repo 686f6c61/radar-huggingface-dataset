@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Stellar-lab/Stellar-Qwen3-8B-ARM",
+  "slug": "stellar-lab-stellar-qwen3-8b-arm",
+  "author": "Stellar-lab",
+  "url": "https://huggingface.co/Stellar-lab/Stellar-Qwen3-8B-ARM",
+  "created_at": "2026-11-01T10:34:21.000Z",
+  "updated_at": "2026-11-02T07:28:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "stellar_qwen3_arm",
+    "feature-extraction",
+    "reward-model",
+    "rlhf",
+    "preference-tuning",
+    "qlora",
+    "text-classification",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7575787059,
+  "parameters_human": "7.58B",
+  "storage_bytes": 15177811082,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stellar | The blockchain purpose-built for regulated finance",
+      "url": "https://stellar.org/",
+      "snippet": "Cash in and out of Stellar USDC at MoneyGram locations, in local currency, with no bank account required."
+    },
+    {
+      "title": "Logiciel gratuit de récupération de données - Stellar Data Recovery",
+      "url": "https://www.stellarinfo.com/fr/gratuit-recuperation-de-donnees.php",
+      "snippet": "Stellar propose un logiciel gratuit qui vous permet d’analyser, de prévisualiser et de récupérer des données sans avoir à acheter le …"
+    },
+    {
+      "title": "Stellar - Discord",
+      "url": "https://discord.com/invite/stellarfn",
+      "snippet": "Stellar takes you back to Fortnite’s golden days, bringing Chapter 2 to life just the way you remember. | 209622 members"
+    },
+    {
+      "title": "Restaurant immersif cosmique | Stellar Paris 11",
+      "url": "https://www.ephemera-group.com/nos-restaurants/stellar-paris",
+      "snippet": "Situé dans le 11e arrondissement, à proximité de Voltaire, Stellar propose une expérience immersive autour de l’exploration spatiale. …"
+    },
+    {
+      "title": "Meilleur logiciel de récupération de données - Stellar Data Recovery",
+      "url": "https://www.stellarinfo.com/fr/",
+      "snippet": "Avec plus de 3 millions de clients satisfaits, Stellar est largement reconnu comme le premier fournisseur de services de protection …"
+    }
+  ]
+}

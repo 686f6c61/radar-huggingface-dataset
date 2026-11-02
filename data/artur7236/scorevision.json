@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "artur7236/ScoreVision",
+  "slug": "artur7236-scorevision",
+  "author": "artur7236",
+  "url": "https://huggingface.co/artur7236/ScoreVision",
+  "created_at": "2026-11-01T20:37:55.000Z",
+  "updated_at": "2026-11-02T04:14:36.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "yolo",
+    "bittensor",
+    "scorevision",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10568021,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

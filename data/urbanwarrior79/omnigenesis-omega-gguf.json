@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Urbanwarrior79/omnigenesis-omega-gguf",
+  "slug": "urbanwarrior79-omnigenesis-omega-gguf",
+  "author": "Urbanwarrior79",
+  "url": "https://huggingface.co/Urbanwarrior79/omnigenesis-omega-gguf",
+  "created_at": "2026-11-02T05:38:34.000Z",
+  "updated_at": "2026-11-02T05:39:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ollama",
+    "omnigenesis",
+    "synthesis",
+    "text-generation",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073184,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/CursorCore-QW2.5-1.5B-GGUF",
   "created_at": "2026-10-28T12:45:37.000Z",
-  "updated_at": "2026-10-28T12:57:55.000Z",
+  "updated_at": "2026-11-01T11:13:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -18,8 +18,8 @@
     "cursorcore",
     "llama-cpp",
     "text-generation",
-    "base_model:Qwen/Qwen2.5-Coder-1.5B",
-    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B",
+    "base_model:TechxGenus/CursorCore-QW2.5-1.5B",
+    "base_model:quantized:TechxGenus/CursorCore-QW2.5-1.5B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -32,7 +32,7 @@
   "parameters_human": "1.54B",
   "storage_bytes": 15333556896,
   "storage_human": "15.3 GB",
-  "base_model": "Qwen/Qwen2.5-Coder-1.5B",
+  "base_model": "TechxGenus/CursorCore-QW2.5-1.5B",
   "formats": [
     "gguf"
   ],

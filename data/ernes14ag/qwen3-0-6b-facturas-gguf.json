@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Ernes14AG/qwen3-0.6b-facturas-GGUF",
+  "slug": "ernes14ag-qwen3-0-6b-facturas-gguf",
+  "author": "Ernes14AG",
+  "url": "https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas-GGUF",
+  "created_at": "2026-11-02T11:50:07.000Z",
+  "updated_at": "2026-11-02T12:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "json",
+    "facturas",
+    "ollama",
+    "text-generation",
+    "es",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 639446880,
+  "storage_human": "639 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

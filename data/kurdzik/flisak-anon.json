@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Kurdzik/flisak-anon",
+  "slug": "kurdzik-flisak-anon",
+  "author": "Kurdzik",
+  "url": "https://huggingface.co/Kurdzik/flisak-anon",
+  "created_at": "2026-10-14T15:16:01.000Z",
+  "updated_at": "2026-11-02T11:55:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "anonymization",
+    "pii",
+    "polish",
+    "herbert",
+    "pl",
+    "dataset:clarin-pl/kpwr-ner",
+    "base_model:clarin-pl/FastPDN",
+    "base_model:finetune:clarin-pl/FastPDN",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 123979687,
+  "parameters_human": "124.0M",
+  "storage_bytes": 991931199,
+  "storage_human": "992 MB",
+  "base_model": "clarin-pl/FastPDN",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Person name detection",
+      "dataset": "Synthetic Polish/English business mail, test v2",
+      "metric": "Person precision (exact span)",
+      "value": 0.9994
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "Synthetic Polish/English business mail, test v2",
+      "metric": "Person recall (exact span)",
+      "value": 0.9996
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "Synthetic Polish/English business mail, test v2",
+      "metric": "Person F1 (exact span)",
+      "value": 0.9995
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "KPWr-NER (n82)",
+      "metric": "Person precision (exact span)",
+      "value": 0.907
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "KPWr-NER (n82)",
+      "metric": "Person recall (exact span)",
+      "value": 0.958
+    },
+    {
+      "task": "Person name detection",
+      "dataset": "KPWr-NER (n82)",
+      "metric": "Person F1 (exact span)",
+      "value": 0.932
+    }
+  ],
+  "sources": []
+}

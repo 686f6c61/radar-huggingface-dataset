@@ -5,7 +5,7 @@
   "author": "zelda9",
   "url": "https://huggingface.co/zelda9/persona-models",
   "created_at": "2026-10-31T16:48:08.000Z",
-  "updated_at": "2026-11-01T12:54:33.000Z",
+  "updated_at": "2026-11-01T16:59:50.000Z",
   "license": "mixed-mit-apache-2.0-bsd-3-clause",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 864283440,
-  "storage_human": "864 MB",
+  "storage_bytes": 2369561749,
+  "storage_human": "2.4 GB",
   "base_model": null,
   "formats": [
     "onnx"

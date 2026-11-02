@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jesusvilela/igbundle-qwen2.5-7b-riemannian",
+  "slug": "jesusvilela-igbundle-qwen2-5-7b-riemannian",
+  "author": "jesusvilela",
+  "url": "https://huggingface.co/jesusvilela/igbundle-qwen2.5-7b-riemannian",
+  "created_at": "2026-01-10T16:31:11.000Z",
+  "updated_at": "2026-11-02T10:16:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "research",
+    "historical-checkpoint",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

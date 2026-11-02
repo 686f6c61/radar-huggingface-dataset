@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lythri-Tada-4B-GGUF",
+  "slug": "mradermacher-lythri-tada-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lythri-Tada-4B-GGUF",
+  "created_at": "2026-11-02T10:41:31.000Z",
+  "updated_at": "2026-11-02T11:00:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 47865222272,
+  "storage_human": "47.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

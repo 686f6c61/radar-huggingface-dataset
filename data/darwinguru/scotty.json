@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "DarwinGuru/scotty",
+  "slug": "darwinguru-scotty",
+  "author": "DarwinGuru",
+  "url": "https://huggingface.co/DarwinGuru/scotty",
+  "created_at": "2026-10-25T09:17:13.000Z",
+  "updated_at": "2026-11-02T05:07:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "safetensors",
+    "beam",
+    "build-with-beam",
+    "modernbert",
+    "decision-model",
+    "candidate-scoring",
+    "synthetic-supervision",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1685447160,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

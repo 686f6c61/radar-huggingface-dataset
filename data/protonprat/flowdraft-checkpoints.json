@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ProtonPrat/FlowDraft-checkpoints",
+  "slug": "protonprat-flowdraft-checkpoints",
+  "author": "ProtonPrat",
+  "url": "https://huggingface.co/ProtonPrat/FlowDraft-checkpoints",
+  "created_at": "2026-11-02T07:37:33.000Z",
+  "updated_at": "2026-11-02T07:40:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "dflash",
+    "flow-matching",
+    "drafter",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65058659618,
+  "storage_human": "65.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "mikaelaehunter",
   "url": "https://huggingface.co/mikaelaehunter/exp_canadian_english",
   "created_at": "2026-10-28T10:36:01.000Z",
-  "updated_at": "2026-10-29T16:05:06.000Z",
+  "updated_at": "2026-11-01T15:06:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 37760640,
   "parameters_human": "37.8M",
-  "storage_bytes": 3021493241,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 3172570324,
+  "storage_human": "3.2 GB",
   "base_model": "openai/whisper-tiny",
   "formats": [
     "safetensors"

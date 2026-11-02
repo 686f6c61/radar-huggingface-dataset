@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Qwen2.5-0.5B-abliterated-GGUF",
   "created_at": "2026-10-28T14:18:55.000Z",
-  "updated_at": "2026-10-28T14:21:48.000Z",
+  "updated_at": "2026-11-01T11:20:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -18,8 +18,8 @@
     "uncensored",
     "llama-cpp",
     "text-generation",
-    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
-    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:sbussiso/Qwen2.5-0.5B-abliterated",
+    "base_model:quantized:sbussiso/Qwen2.5-0.5B-abliterated",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -32,7 +32,7 @@
   "parameters_human": "630.2M",
   "storage_bytes": 7227186464,
   "storage_human": "7.2 GB",
-  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "base_model": "sbussiso/Qwen2.5-0.5B-abliterated",
   "formats": [
     "gguf"
   ],

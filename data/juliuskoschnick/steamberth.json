@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "juliuskoschnick/SteamBERTh",
+  "slug": "juliuskoschnick-steamberth",
+  "author": "juliuskoschnick",
+  "url": "https://huggingface.co/juliuskoschnick/SteamBERTh",
+  "created_at": "2026-11-02T09:03:54.000Z",
+  "updated_at": "2026-11-02T09:04:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "historical-text",
+    "early-modern-english",
+    "economic-history",
+    "history-of-science",
+    "en",
+    "arxiv:2512.16587",
+    "base_model:emanjavacas/MacBERTh",
+    "base_model:finetune:emanjavacas/MacBERTh",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109081344,
+  "parameters_human": "109.1M",
+  "storage_bytes": 436347736,
+  "storage_human": "436 MB",
+  "base_model": "emanjavacas/MacBERTh",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

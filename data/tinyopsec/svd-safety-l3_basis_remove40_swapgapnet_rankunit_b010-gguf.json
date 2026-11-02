@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010-GGUF",
   "created_at": "2026-10-26T13:11:00.000Z",
-  "updated_at": "2026-10-26T15:42:44.000Z",
+  "updated_at": "2026-11-01T11:07:42.000Z",
   "license": "llama3",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -20,8 +20,8 @@
     "safety",
     "llama-cpp",
     "text-generation",
-    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
-    "base_model:quantized:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:Jeesup/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010",
+    "base_model:quantized:Jeesup/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010",
     "license:llama3",
     "endpoints_compatible",
     "region:us",
@@ -34,7 +34,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 77596370752,
   "storage_human": "77.6 GB",
-  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "base_model": "Jeesup/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010",
   "formats": [
     "gguf"
   ],

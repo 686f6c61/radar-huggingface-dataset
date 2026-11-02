@@ -5,7 +5,7 @@
   "author": "msime",
   "url": "https://huggingface.co/msime/pinyin-ime-reranker-4M",
   "created_at": "2026-09-23T23:48:26.000Z",
-  "updated_at": "2026-11-02T01:19:10.000Z",
+  "updated_at": "2026-11-02T01:31:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",

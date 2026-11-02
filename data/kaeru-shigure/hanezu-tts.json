@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "kaeru-shigure/hanezu-tts",
+  "slug": "kaeru-shigure-hanezu-tts",
+  "author": "kaeru-shigure",
+  "url": "https://huggingface.co/kaeru-shigure/hanezu-tts",
+  "created_at": "2026-11-02T12:04:49.000Z",
+  "updated_at": "2026-11-02T12:07:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "text-to-speech",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6824601,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

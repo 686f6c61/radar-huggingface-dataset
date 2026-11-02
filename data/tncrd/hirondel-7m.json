@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Tncrd/Hirondel-7M",
+  "slug": "tncrd-hirondel-7m",
+  "author": "Tncrd",
+  "url": "https://huggingface.co/Tncrd/Hirondel-7M",
+  "created_at": "2026-10-23T11:08:01.000Z",
+  "updated_at": "2026-11-02T12:11:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "hirondel",
+  "languages": [],
+  "tags": [
+    "hirondel",
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "foundation-model",
+    "zero-shot",
+    "probabilistic-forecasting",
+    "time-series-forecasting",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": 7462049,
+  "parameters_human": "7.5M",
+  "storage_bytes": 32253097,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Probabilistic forecasting",
+      "dataset": "GIFT-Eval (97 tasks)",
+      "metric": "MASE (normalised by Seasonal Naive)",
+      "value": 0.7003
+    },
+    {
+      "task": "Probabilistic forecasting",
+      "dataset": "GIFT-Eval (97 tasks)",
+      "metric": "CRPS (normalised by Seasonal Naive)",
+      "value": 0.4816
+    },
+    {
+      "task": "Probabilistic forecasting",
+      "dataset": "fev-bench (100 tasks)",
+      "metric": "Skill score",
+      "value": 32.91
+    },
+    {
+      "task": "Probabilistic forecasting",
+      "dataset": "fev-bench (100 tasks)",
+      "metric": "Skill score",
+      "value": 44.9
+    },
+    {
+      "task": "Probabilistic forecasting",
+      "dataset": "TIME (98 tasks)",
+      "metric": "MASE (normalised by Seasonal Naive)",
+      "value": 0.6551
+    },
+    {
+      "task": "Probabilistic forecasting",
+      "dataset": "TIME (98 tasks)",
+      "metric": "CRPS (normalised by Seasonal Naive)",
+      "value": 0.552
+    }
+  ],
+  "sources": []
+}

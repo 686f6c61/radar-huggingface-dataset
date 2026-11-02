@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ftaz/chess-gpt-uci-square",
+  "slug": "ftaz-chess-gpt-uci-square",
+  "author": "ftaz",
+  "url": "https://huggingface.co/ftaz/chess-gpt-uci-square",
+  "created_at": "2026-11-02T09:51:26.000Z",
+  "updated_at": "2026-11-02T09:52:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "chess",
+    "gpt",
+    "lichess",
+    "text-generation",
+    "dataset:lichess/standard-chess-games",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50634752,
+  "parameters_human": "50.6M",
+  "storage_bytes": 202551272,
+  "storage_human": "203 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

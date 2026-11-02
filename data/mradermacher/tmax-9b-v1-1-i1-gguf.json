@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/tmax-9b-v1.1-i1-GGUF",
   "created_at": "2026-11-01T01:21:58.000Z",
-  "updated_at": "2026-11-01T04:13:54.000Z",
+  "updated_at": "2026-11-01T04:50:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1619,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

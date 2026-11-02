@@ -5,21 +5,15 @@
   "author": "poligonchiik",
   "url": "https://huggingface.co/poligonchiik/llm-course-hw2-ppo",
   "created_at": "2026-11-01T23:12:07.000Z",
-  "updated_at": "2026-11-01T23:15:52.000Z",
+  "updated_at": "2026-11-02T00:12:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
     "safetensors",
     "llama",
-    "text-generation",
-    "conversational",
-    "arxiv:1910.09700",
-    "text-generation-inference",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -33,7 +27,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

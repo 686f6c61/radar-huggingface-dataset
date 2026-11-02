@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "owaiskhan786/qwen2.5-coder-0.5b-mbpp-lora",
+  "slug": "owaiskhan786-qwen2-5-coder-0-5b-mbpp-lora",
+  "author": "owaiskhan786",
+  "url": "https://huggingface.co/owaiskhan786/qwen2.5-coder-0.5b-mbpp-lora",
+  "created_at": "2026-11-02T08:27:27.000Z",
+  "updated_at": "2026-11-02T08:27:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "code",
+    "lora",
+    "education",
+    "dataset:google-research-datasets/mbpp",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46658996,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

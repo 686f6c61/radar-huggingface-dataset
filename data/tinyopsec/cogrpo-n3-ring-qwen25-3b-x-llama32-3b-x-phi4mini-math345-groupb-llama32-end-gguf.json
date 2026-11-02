@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end-GGUF",
   "created_at": "2026-09-14T12:49:19.000Z",
-  "updated_at": "2026-09-14T13:17:39.000Z",
+  "updated_at": "2026-11-01T11:48:57.000Z",
   "license": "llama3.2",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AgroOmni/AgroNVILA",
+  "slug": "agroomni-agronvila",
+  "author": "AgroOmni",
+  "url": "https://huggingface.co/AgroOmni/AgroNVILA",
+  "created_at": "2026-11-02T09:46:31.000Z",
+  "updated_at": "2026-11-02T10:06:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llava_llama",
+    "multimodal",
+    "agriculture",
+    "remote-sensing",
+    "vision-language",
+    "reinforcement-learning",
+    "en",
+    "dataset:AgroOmni/AgroOmni",
+    "base_model:Efficient-Large-Model/NVILA-Lite-8B",
+    "base_model:finetune:Efficient-Large-Model/NVILA-Lite-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16185681157,
+  "storage_human": "16.2 GB",
+  "base_model": "Efficient-Large-Model/NVILA-Lite-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

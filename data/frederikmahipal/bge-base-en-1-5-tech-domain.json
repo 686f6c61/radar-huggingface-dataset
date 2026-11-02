@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Frederikmahipal/bge-base-en-1.5-tech-domain",
+  "slug": "frederikmahipal-bge-base-en-1-5-tech-domain",
+  "author": "Frederikmahipal",
+  "url": "https://huggingface.co/Frederikmahipal/bge-base-en-1.5-tech-domain",
+  "created_at": "2026-11-02T08:42:56.000Z",
+  "updated_at": "2026-11-02T08:44:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109605878,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5 Best NFT Aggregator Tools: The Complete 2026 Guide",
+      "url": "https://techlasi.com/savvy/best-nft-aggregator-tools/",
+      "snippet": "Feb 14, 2026 · NFT aggregator tools pull listings from multiple marketplaces into one dashboard. Instead of checking OpenSea, Blur, …"
+    }
+  ]
+}

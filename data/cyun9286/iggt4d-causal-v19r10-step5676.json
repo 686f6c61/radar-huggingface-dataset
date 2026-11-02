@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "cyun9286/IGGT4D-causal-v19r10-step5676",
+  "slug": "cyun9286-iggt4d-causal-v19r10-step5676",
+  "author": "cyun9286",
+  "url": "https://huggingface.co/cyun9286/IGGT4D-causal-v19r10-step5676",
+  "created_at": "2026-11-02T11:38:12.000Z",
+  "updated_at": "2026-11-02T11:38:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iggt4d",
+    "depth-estimation",
+    "camera-pose-estimation",
+    "streaming",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1359504347,
+  "parameters_human": "1.36B",
+  "storage_bytes": 5438257268,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

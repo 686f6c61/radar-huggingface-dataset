@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Bibuu32/Ani",
+  "slug": "bibuu32-ani",
+  "author": "Bibuu32",
+  "url": "https://huggingface.co/Bibuu32/Ani",
+  "created_at": "2026-11-02T07:57:01.000Z",
+  "updated_at": "2026-11-02T07:57:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:elismasilva/ltx2.3-image-comfyui",
+    "base_model:adapter:elismasilva/ltx2.3-image-comfyui",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 678077808,
+  "storage_human": "678 MB",
+  "base_model": "elismasilva/ltx2.3-image-comfyui",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

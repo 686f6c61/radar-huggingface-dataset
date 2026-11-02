@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/chinese-text-correction-1.5b-GGUF",
   "created_at": "2026-10-27T15:57:11.000Z",
-  "updated_at": "2026-10-27T16:09:31.000Z",
+  "updated_at": "2026-11-01T11:51:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -18,8 +18,8 @@
     "text-correction",
     "llama-cpp",
     "text-generation",
-    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
-    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:shibing624/chinese-text-correction-1.5b",
+    "base_model:quantized:shibing624/chinese-text-correction-1.5b",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -32,7 +32,7 @@
   "parameters_human": "1.54B",
   "storage_bytes": 15338404544,
   "storage_human": "15.3 GB",
-  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "base_model": "shibing624/chinese-text-correction-1.5b",
   "formats": [
     "gguf"
   ],

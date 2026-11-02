@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Gydeai/vehicle-complaint-triage-us-nhtsa",
+  "slug": "gydeai-vehicle-complaint-triage-us-nhtsa",
+  "author": "Gydeai",
+  "url": "https://huggingface.co/Gydeai/vehicle-complaint-triage-us-nhtsa",
+  "created_at": "2026-11-02T07:37:39.000Z",
+  "updated_at": "2026-11-02T07:40:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-classification",
+    "automotive",
+    "manufacturing",
+    "warranty",
+    "complaints",
+    "nhtsa",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174655536,
+  "storage_human": "175 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

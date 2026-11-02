@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF",
   "created_at": "2026-10-29T10:04:24.000Z",
-  "updated_at": "2026-10-29T10:07:31.000Z",
+  "updated_at": "2026-11-01T11:24:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,8 +19,8 @@
     "chat",
     "llama-cpp",
     "text-generation",
-    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
-    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
+    "base_model:quantized:huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -33,7 +33,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 5797773824,
   "storage_human": "5.8 GB",
-  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "base_model": "huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
   "formats": [
     "gguf"
   ],

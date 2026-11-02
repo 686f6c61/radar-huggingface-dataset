@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF",
   "created_at": "2026-10-27T16:10:22.000Z",
-  "updated_at": "2026-10-28T12:48:08.000Z",
+  "updated_at": "2026-11-01T11:51:57.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -20,8 +20,8 @@
     "creative",
     "llama-cpp",
     "text-generation",
-    "base_model:LiquidAI/LFM2.5-2.6B",
-    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "base_model:Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b",
+    "base_model:quantized:Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b",
     "license:other",
     "endpoints_compatible",
     "region:us",
@@ -34,7 +34,7 @@
   "parameters_human": "2.70B",
   "storage_bytes": 26290424640,
   "storage_human": "26.3 GB",
-  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "base_model": "Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b",
   "formats": [
     "gguf"
   ],

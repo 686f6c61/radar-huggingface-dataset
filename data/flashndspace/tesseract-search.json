@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "FlashNdSpace/tesseract-search",
+  "slug": "flashndspace-tesseract-search",
+  "author": "FlashNdSpace",
+  "url": "https://huggingface.co/FlashNdSpace/tesseract-search",
+  "created_at": "2026-11-02T10:17:03.000Z",
+  "updated_at": "2026-11-02T10:17:54.000Z",
+  "license": "tesseract-search-weights-1",
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "e5",
+    "retrieval",
+    "sentence-similarity",
+    "ru",
+    "en",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:quantized:intfloat/multilingual-e5-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3029364489,
+  "storage_human": "3.0 GB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

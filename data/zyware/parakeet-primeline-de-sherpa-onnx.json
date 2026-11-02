@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "zyware/parakeet-primeline-de-sherpa-onnx",
+  "slug": "zyware-parakeet-primeline-de-sherpa-onnx",
+  "author": "zyware",
+  "url": "https://huggingface.co/zyware/parakeet-primeline-de-sherpa-onnx",
+  "created_at": "2026-11-02T11:47:29.000Z",
+  "updated_at": "2026-11-02T11:47:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "parakeet",
+    "tdt",
+    "nemo",
+    "german",
+    "automatic-speech-recognition",
+    "de",
+    "base_model:primeline/parakeet-primeline",
+    "base_model:quantized:primeline/parakeet-primeline",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2549706577,
+  "storage_human": "2.5 GB",
+  "base_model": "primeline/parakeet-primeline",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

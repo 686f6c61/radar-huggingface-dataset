@@ -5,13 +5,16 @@
   "author": "york01",
   "url": "https://huggingface.co/york01/RadContinue",
   "created_at": "2026-11-01T05:40:56.000Z",
-  "updated_at": "2026-11-01T05:40:56.000Z",
+  "updated_at": "2026-11-01T07:57:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "radiology",
+    "report-generation",
+    "zh",
     "license:mit",
     "region:us"
   ],

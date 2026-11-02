@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ALFESE/QWEN27Refusals",
+  "slug": "alfese-qwen27refusals",
+  "author": "ALFESE",
+  "url": "https://huggingface.co/ALFESE/QWEN27Refusals",
+  "created_at": "2026-11-02T08:00:19.000Z",
+  "updated_at": "2026-11-02T08:00:19.000Z",
+  "license": "alfese",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

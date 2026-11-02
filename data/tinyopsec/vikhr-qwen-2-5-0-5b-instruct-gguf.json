@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Vikhr-Qwen-2.5-0.5b-Instruct-GGUF",
   "created_at": "2026-10-29T10:02:07.000Z",
-  "updated_at": "2026-10-29T10:05:34.000Z",
+  "updated_at": "2026-11-01T11:24:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -18,8 +18,8 @@
     "instruct",
     "llama-cpp",
     "text-generation",
-    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
-    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:Vikhrmodels/Vikhr-Qwen-2.5-0.5b-Instruct",
+    "base_model:quantized:Vikhrmodels/Vikhr-Qwen-2.5-0.5b-Instruct",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -32,7 +32,7 @@
   "parameters_human": "493.8M",
   "storage_bytes": 5794113760,
   "storage_human": "5.8 GB",
-  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "base_model": "Vikhrmodels/Vikhr-Qwen-2.5-0.5b-Instruct",
   "formats": [
     "gguf"
   ],

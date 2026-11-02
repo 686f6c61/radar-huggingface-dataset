@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/fbody",
+  "slug": "rand000mguy-fbody",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/fbody",
+  "created_at": "2026-11-02T06:16:04.000Z",
+  "updated_at": "2026-11-02T06:16:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115045333,
+  "storage_human": "115 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

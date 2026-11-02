@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Erebus-RP-Engine-31B-i1-GGUF",
   "created_at": "2026-11-01T10:30:57.000Z",
-  "updated_at": "2026-11-01T10:31:43.000Z",
+  "updated_at": "2026-11-01T12:54:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -58,15 +58,16 @@
     "base_model:quantized:Naphula/Erebus-RP-Engine-31B",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "imatrix"
   ],
   "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 6850770,
-  "parameters_human": "6.9M",
-  "storage_bytes": 27520224,
-  "storage_human": "28 MB",
+  "parameters": 32106631740,
+  "parameters_human": "32.11B",
+  "storage_bytes": 350149343392,
+  "storage_human": "350.1 GB",
   "base_model": "Naphula/Erebus-RP-Engine-31B",
   "formats": [
     "gguf"

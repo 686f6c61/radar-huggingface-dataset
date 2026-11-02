@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "NKNULis/Llama-3-Taiwan-8B-Instruct-q4f16_1-MLC",
+  "slug": "nknulis-llama-3-taiwan-8b-instruct-q4f16_1-mlc",
+  "author": "NKNULis",
+  "url": "https://huggingface.co/NKNULis/Llama-3-Taiwan-8B-Instruct-q4f16_1-MLC",
+  "created_at": "2026-11-02T06:44:37.000Z",
+  "updated_at": "2026-11-02T06:46:36.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "traditional-chinese",
+    "zh",
+    "en",
+    "base_model:yentinglin/Llama-3-Taiwan-8B-Instruct",
+    "base_model:quantized:yentinglin/Llama-3-Taiwan-8B-Instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4517404672,
+  "storage_human": "4.5 GB",
+  "base_model": "yentinglin/Llama-3-Taiwan-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

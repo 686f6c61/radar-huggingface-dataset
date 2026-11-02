@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rumezhak/microduck-tug-rating-remix",
+  "slug": "rumezhak-microduck-tug-rating-remix",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-tug-rating-remix",
+  "created_at": "2026-11-02T11:12:29.000Z",
+  "updated_at": "2026-11-02T11:13:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5",
+    "base_model:finetune:jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 947483,
+  "storage_human": "947483 B",
+  "base_model": "jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

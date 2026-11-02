@@ -21,9 +21,9 @@
     "base_model:finetune:krea/Krea-2-Raw",
     "region:us"
   ],
-  "likes": 85,
-  "downloads_30d": 2445,
-  "trending_score": 21,
+  "likes": 86,
+  "downloads_30d": 3166,
+  "trending_score": 22,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1100951768783,

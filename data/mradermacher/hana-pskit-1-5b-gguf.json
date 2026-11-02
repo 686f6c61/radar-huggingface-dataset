@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/hana-pskit-1.5b-GGUF",
+  "slug": "mradermacher-hana-pskit-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/hana-pskit-1.5b-GGUF",
+  "created_at": "2026-11-02T11:26:19.000Z",
+  "updated_at": "2026-11-02T11:35:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pskit",
+    "py-serverless-kit",
+    "serverless",
+    "terraform",
+    "tool-calling",
+    "agent",
+    "qwen2",
+    "en",
+    "base_model:ak2311581/hana-pskit-1.5b",
+    "base_model:quantized:ak2311581/hana-pskit-1.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206905216,
+  "storage_human": "14.2 GB",
+  "base_model": "ak2311581/hana-pskit-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

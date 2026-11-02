@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "snxtyle/chitrapathak_marguj_mixed_v2",
+  "slug": "snxtyle-chitrapathak_marguj_mixed_v2",
+  "author": "snxtyle",
+  "url": "https://huggingface.co/snxtyle/chitrapathak_marguj_mixed_v2",
+  "created_at": "2026-11-02T05:06:45.000Z",
+  "updated_at": "2026-11-02T05:07:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "mr",
+    "gu",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ocr",
+    "marathi",
+    "gujarati",
+    "chitrapathak",
+    "html-table",
+    "image-text-to-text",
+    "mr",
+    "gu",
+    "en",
+    "base_model:krutrim-ai-labs/Chitrapathak-2",
+    "base_model:adapter:krutrim-ai-labs/Chitrapathak-2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239543832,
+  "storage_human": "240 MB",
+  "base_model": "krutrim-ai-labs/Chitrapathak-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

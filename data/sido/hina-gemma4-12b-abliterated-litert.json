@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sido/hina-gemma4-12b-abliterated-litert",
+  "slug": "sido-hina-gemma4-12b-abliterated-litert",
+  "author": "Sido",
+  "url": "https://huggingface.co/Sido/hina-gemma4-12b-abliterated-litert",
+  "created_at": "2026-11-02T11:45:59.000Z",
+  "updated_at": "2026-11-02T11:51:55.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "litert-lm",
+    "gemma4",
+    "webgpu",
+    "abliterated",
+    "experimental",
+    "en",
+    "ja",
+    "base_model:OpenYourMind/gemma-4-12B-it-abliterated-uncensored",
+    "base_model:finetune:OpenYourMind/gemma-4-12B-it-abliterated-uncensored",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7273467408,
+  "storage_human": "7.3 GB",
+  "base_model": "OpenYourMind/gemma-4-12B-it-abliterated-uncensored",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SIDO LYON",
+      "url": "https://www.sido-lyon.com/",
+      "snippet": "IMPACT est l’espace de SIDO dédié à celles et ceux qui construisent un numérique capable de fonctionner dans un monde plus …"
+    },
+    {
+      "title": "Sido (Colette) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sido_(Colette)",
+      "snippet": "Sido est un roman autobiographique de Colette, qui décrit sa mère Sidonie Landoy, surnommée Sido, mais également son …"
+    },
+    {
+      "title": "Sido – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Sido",
+      "snippet": "Sido ist der siebte deutsche Künstler und nach den Fantastischen Vier der zweite deutsche Hip-Hop-Act, der ein MTV Unplugged …"
+    },
+    {
+      "title": "Sido (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sido_(rapper)",
+      "snippet": "Sido is known for his provocative and aggressive lyrics. After gaining prominence with his debut album Maske in 2004, he became …"
+    },
+    {
+      "title": "SIDO - Website - A propos du salon",
+      "url": "https://www.sido-lyon.com/fr/le-salon/a-propos-du-salon",
+      "snippet": "Sep 17, 2026 · En fédérant les écosystèmes de l’IoT, de l'Intelligence Artificielle, de la Robotique et du Jumeau Numérique, SIDO …"
+    }
+  ]
+}

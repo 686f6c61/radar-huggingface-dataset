@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "cstr/f2llm-v2-0.6b-GGUF",
+  "slug": "cstr-f2llm-v2-0-6b-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/f2llm-v2-0.6b-GGUF",
+  "created_at": "2026-04-15T03:31:45.000Z",
+  "updated_at": "2026-11-02T10:04:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "ggml",
+    "text-embeddings",
+    "qwen3",
+    "crispembed",
+    "feature-extraction",
+    "multilingual",
+    "base_model:codefuse-ai/F2LLM-v2-0.6B",
+    "base_model:quantized:codefuse-ai/F2LLM-v2-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 250,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 15228168160,
+  "storage_human": "15.2 GB",
+  "base_model": "codefuse-ai/F2LLM-v2-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

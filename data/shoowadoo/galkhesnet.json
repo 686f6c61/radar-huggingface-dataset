@@ -5,7 +5,7 @@
   "author": "shoowadoo",
   "url": "https://huggingface.co/shoowadoo/galkhesnet",
   "created_at": "2025-07-22T05:55:50.000Z",
-  "updated_at": "2026-11-01T23:10:56.000Z",
+  "updated_at": "2026-11-02T04:49:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 299637760,
   "parameters_human": "299.6M",
-  "storage_bytes": 56333605376,
-  "storage_human": "56.3 GB",
+  "storage_bytes": 61127891360,
+  "storage_human": "61.1 GB",
   "base_model": "malper/taatiknet",
   "formats": [
     "safetensors"

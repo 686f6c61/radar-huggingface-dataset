@@ -5,7 +5,7 @@
   "author": "saidutta69",
   "url": "https://huggingface.co/saidutta69/Qwen3.5-4B-heretic",
   "created_at": "2026-10-28T18:22:36.000Z",
-  "updated_at": "2026-10-28T19:56:48.000Z",
+  "updated_at": "2026-11-01T06:07:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -74,7 +74,7 @@
     "region:us"
   ],
   "likes": 24,
-  "downloads_30d": 2143,
+  "downloads_30d": 3893,
   "trending_score": 20,
   "parameters": 4539265536,
   "parameters_human": "4.54B",

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "BricksDisplay/Soprano-1.1-80M-GGUF",
+  "slug": "bricksdisplay-soprano-1-1-80m-gguf",
+  "author": "BricksDisplay",
+  "url": "https://huggingface.co/BricksDisplay/Soprano-1.1-80M-GGUF",
+  "created_at": "2026-03-04T15:21:18.000Z",
+  "updated_at": "2026-11-02T07:41:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "codec.cpp",
+    "text-to-speech",
+    "tts",
+    "soprano",
+    "en",
+    "base_model:ekwek/Soprano-1.1-80M",
+    "base_model:quantized:ekwek/Soprano-1.1-80M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1464,
+  "trending_score": 0,
+  "parameters": 30354690,
+  "parameters_human": "30.4M",
+  "storage_bytes": 4538950272,
+  "storage_human": "4.5 GB",
+  "base_model": "ekwek/Soprano-1.1-80M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

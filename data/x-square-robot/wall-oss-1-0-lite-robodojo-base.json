@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "x-square-robot/wall-oss-1.0-lite-robodojo-base",
+  "slug": "x-square-robot-wall-oss-1-0-lite-robodojo-base",
+  "author": "x-square-robot",
+  "url": "https://huggingface.co/x-square-robot/wall-oss-1.0-lite-robodojo-base",
+  "created_at": "2026-11-02T08:37:13.000Z",
+  "updated_at": "2026-11-02T09:47:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "wall-x",
+  "languages": [],
+  "tags": [
+    "wall-x",
+    "safetensors",
+    "qwen3_5",
+    "robotics",
+    "vision-language-action",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5323759872,
+  "parameters_human": "5.32B",
+  "storage_bytes": 21295165138,
+  "storage_human": "21.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

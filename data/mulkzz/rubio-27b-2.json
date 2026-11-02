@@ -5,7 +5,7 @@
   "author": "mulkzz",
   "url": "https://huggingface.co/mulkzz/RuBio-27B",
   "created_at": "2026-10-31T15:28:39.000Z",
-  "updated_at": "2026-10-31T15:35:41.000Z",
+  "updated_at": "2026-11-02T05:13:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 55582996101,
+  "storage_bytes": 55584024488,
   "storage_human": "55.6 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

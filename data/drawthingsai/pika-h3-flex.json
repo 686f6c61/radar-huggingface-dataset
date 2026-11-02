@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "drawthingsai/Pika-H3-Flex",
+  "slug": "drawthingsai-pika-h3-flex",
+  "author": "drawthingsai",
+  "url": "https://huggingface.co/drawthingsai/Pika-H3-Flex",
+  "created_at": "2026-11-02T05:34:39.000Z",
+  "updated_at": "2026-11-02T05:34:45.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "video-generation",
+    "audio-video-generation",
+    "lora",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32197054547,
+  "storage_human": "32.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

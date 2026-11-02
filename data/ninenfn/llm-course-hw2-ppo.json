@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ninenfn/llm-course-hw2-ppo",
+  "slug": "ninenfn-llm-course-hw2-ppo",
+  "author": "ninenfn",
+  "url": "https://huggingface.co/ninenfn/llm-course-hw2-ppo",
+  "created_at": "2026-11-02T11:59:40.000Z",
+  "updated_at": "2026-11-02T12:00:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

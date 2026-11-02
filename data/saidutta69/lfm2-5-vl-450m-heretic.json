@@ -5,7 +5,7 @@
   "author": "saidutta69",
   "url": "https://huggingface.co/saidutta69/LFM2.5-VL-450M-heretic",
   "created_at": "2026-10-26T09:49:54.000Z",
-  "updated_at": "2026-10-28T18:02:23.000Z",
+  "updated_at": "2026-11-01T06:13:33.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -63,7 +63,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1144,
+  "downloads_30d": 1169,
   "trending_score": 0,
   "parameters": 448718848,
   "parameters_human": "448.7M",

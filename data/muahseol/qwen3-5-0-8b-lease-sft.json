@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "muahseol/qwen3.5-0.8b-lease-sft",
+  "slug": "muahseol-qwen3-5-0-8b-lease-sft",
+  "author": "muahseol",
+  "url": "https://huggingface.co/muahseol/qwen3.5-0.8b-lease-sft",
+  "created_at": "2026-11-02T08:56:49.000Z",
+  "updated_at": "2026-11-02T08:56:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "adityawakharkar/numbat-forensics",
+  "slug": "adityawakharkar-numbat-forensics",
+  "author": "adityawakharkar",
+  "url": "https://huggingface.co/adityawakharkar/numbat-forensics",
+  "created_at": "2026-11-02T08:03:21.000Z",
+  "updated_at": "2026-11-02T08:04:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "numbat-truncated",
+    "forensics",
+    "weight-analysis",
+    "model-provenance",
+    "research",
+    "not-for-production",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4732490080,
+  "parameters_human": "4.73B",
+  "storage_bytes": 9464982928,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

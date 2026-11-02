@@ -5,7 +5,7 @@
   "author": "mostwanted002",
   "url": "https://huggingface.co/mostwanted002/Huihui-Qwen3.6-35B-A3B-abliterated-awq-q4",
   "created_at": "2026-11-01T17:27:42.000Z",
-  "updated_at": "2026-11-01T17:28:05.000Z",
+  "updated_at": "2026-11-01T17:55:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,10 +31,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 35951822704,
-  "parameters_human": "35.95B",
-  "storage_bytes": 22018541654,
-  "storage_human": "22.0 GB",
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 41466602689,
+  "storage_human": "41.5 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated",
   "formats": [
     "safetensors"

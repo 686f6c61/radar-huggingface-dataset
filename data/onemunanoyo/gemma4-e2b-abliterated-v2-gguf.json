@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "onemunanoyo/gemma4-E2B-Abliterated-V2-GGUF",
+  "slug": "onemunanoyo-gemma4-e2b-abliterated-v2-gguf",
+  "author": "onemunanoyo",
+  "url": "https://huggingface.co/onemunanoyo/gemma4-E2B-Abliterated-V2-GGUF",
+  "created_at": "2026-11-02T09:13:15.000Z",
+  "updated_at": "2026-11-02T09:28:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "Abliterated",
+    "GGUF",
+    "en",
+    "ja",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 22485900570,
+  "storage_human": "22.5 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

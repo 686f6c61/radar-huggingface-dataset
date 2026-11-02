@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mlx-community/HeartMuLa-oss-3B-bf16",
+  "slug": "mlx-community-heartmula-oss-3b-bf16",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/HeartMuLa-oss-3B-bf16",
+  "created_at": "2026-11-02T04:57:46.000Z",
+  "updated_at": "2026-11-02T04:57:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "heartmula",
+    "swift",
+    "music-generation",
+    "text-to-audio",
+    "en",
+    "zh",
+    "base_model:HeartMuLa/HeartMuLa-oss-3B-happy-new-year",
+    "base_model:finetune:HeartMuLa/HeartMuLa-oss-3B-happy-new-year",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3938113536,
+  "parameters_human": "3.94B",
+  "storage_bytes": 7876259320,
+  "storage_human": "7.9 GB",
+  "base_model": "HeartMuLa/HeartMuLa-oss-3B-happy-new-year",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

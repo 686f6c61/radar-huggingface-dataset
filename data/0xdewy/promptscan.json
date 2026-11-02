@@ -5,7 +5,7 @@
   "author": "0xdewy",
   "url": "https://huggingface.co/0xdewy/promptscan",
   "created_at": "2026-04-09T23:43:09.000Z",
-  "updated_at": "2026-10-25T00:28:28.000Z",
+  "updated_at": "2026-10-29T00:21:23.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 30,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": 141896450,
   "parameters_human": "141.9M",
-  "storage_bytes": 943536250,
-  "storage_human": "944 MB",
+  "storage_bytes": 1511134786,
+  "storage_human": "1.5 GB",
   "base_model": "microsoft/deberta-v3-small",
   "formats": [
     "safetensors"

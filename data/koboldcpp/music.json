@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "koboldcpp/music",
+  "slug": "koboldcpp-music",
+  "author": "koboldcpp",
+  "url": "https://huggingface.co/koboldcpp/music",
+  "created_at": "2026-02-26T12:16:17.000Z",
+  "updated_at": "2026-11-02T08:03:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 5603,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 78212546304,
+  "storage_human": "78.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LostRuins/koboldcpp: KoboldCpp - Run GGUF AI models …",
+      "url": "https://github.com/LostRuins/koboldcpp",
+      "snippet": "You should choose the correct KoboldCpp executable from the Assets section of the latest KoboldCpp release. Here are direct links …"
+    },
+    {
+      "title": "KoboldCpp - Run AI models locally with KoboldCpp",
+      "url": "https://koboldcpp.net/",
+      "snippet": "KoboldCpp is free and open-source software for running GGUF AI models on Windows, Linux and macOS. One file, no install. …"
+    },
+    {
+      "title": "Releases · LostRuins/koboldcpp - GitHub",
+      "url": "https://github.com/LostRuins/koboldcpp/releases",
+      "snippet": "Download and run the koboldcpp.exe (Windows) or koboldcpp-linux-x64 (Linux), which is a one-file pyinstaller for NVIDIA GPU …"
+    },
+    {
+      "title": "KoboldCpp - KoboldAI",
+      "url": "https://koboldai.com/KoboldCpp/",
+      "snippet": "KoboldCpp is a full fledged AI server, in active development, up to date with models and technology, opensource and driven by a …"
+    },
+    {
+      "title": "Koboldcpp - Hugging Face",
+      "url": "https://huggingface.co/koboldcpp",
+      "snippet": "Extra Resources for KoboldCpp can be found here. | GitHub Repository - https://github.com/LostRuins/koboldcpp | KoboldAI …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/mistral-7b-sft-alpha-GGUF",
   "created_at": "2026-09-17T12:07:48.000Z",
-  "updated_at": "2026-09-17T12:39:47.000Z",
+  "updated_at": "2026-11-01T11:49:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "andrzej/SmolLM2-135M-Instruct-ONNX",
+  "slug": "andrzej-smollm2-135m-instruct-onnx",
+  "author": "andrzej",
+  "url": "https://huggingface.co/andrzej/SmolLM2-135M-Instruct-ONNX",
+  "created_at": "2026-11-02T08:25:50.000Z",
+  "updated_at": "2026-11-02T08:26:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "llama",
+    "text-generation",
+    "smollm2",
+    "conversational",
+    "en",
+    "arxiv:2502.02737",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 677493661,
+  "storage_human": "677 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

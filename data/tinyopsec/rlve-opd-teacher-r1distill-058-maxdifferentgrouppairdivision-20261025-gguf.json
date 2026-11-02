@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/rlve-opd-teacher-R1Distill-058-MaxDifferentGroupPairDivision-20261025-GGUF",
   "created_at": "2026-11-01T13:12:48.000Z",
-  "updated_at": "2026-11-01T13:27:03.000Z",
+  "updated_at": "2026-11-01T13:28:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 1777088000,
   "parameters_human": "1.78B",
-  "storage_bytes": 16744221696,
-  "storage_human": "16.7 GB",
+  "storage_bytes": 17497102080,
+  "storage_human": "17.5 GB",
   "base_model": "davidheineman/rlve-opd-teacher-R1Distill-058-MaxDifferentGroupPairDivision-20261025",
   "formats": [
     "gguf"

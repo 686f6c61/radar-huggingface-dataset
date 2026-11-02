@@ -5,7 +5,7 @@
   "author": "suunny",
   "url": "https://huggingface.co/suunny/qwen35-terminal-agent-rl",
   "created_at": "2026-11-01T14:03:09.000Z",
-  "updated_at": "2026-11-01T14:03:13.000Z",
+  "updated_at": "2026-11-01T14:19:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",

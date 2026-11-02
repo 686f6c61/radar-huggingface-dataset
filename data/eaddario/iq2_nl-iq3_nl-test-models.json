@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "eaddario/IQ2_NL-IQ3_NL-Test-Models",
+  "slug": "eaddario-iq2_nl-iq3_nl-test-models",
+  "author": "eaddario",
+  "url": "https://huggingface.co/eaddario/IQ2_NL-IQ3_NL-Test-Models",
+  "created_at": "2026-08-16T18:52:53.000Z",
+  "updated_at": "2026-11-02T09:19:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "experimental",
+    "quantization",
+    "text-generation",
+    "en",
+    "dataset:eaddario/imatrix-calibration",
+    "base_model:nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 744,
+  "trending_score": 0,
+  "parameters": 8888227328,
+  "parameters_human": "8.89B",
+  "storage_bytes": 125498157015,
+  "storage_human": "125.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

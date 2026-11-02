@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Intellbird/kanakupulla-gemma3-1b",
+  "slug": "intellbird-kanakupulla-gemma3-1b",
+  "author": "Intellbird",
+  "url": "https://huggingface.co/Intellbird/kanakupulla-gemma3-1b",
+  "created_at": "2026-09-22T16:12:19.000Z",
+  "updated_at": "2026-11-02T12:20:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11846511152,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Williamsvo275/aupub-vieneu-turbo-q4",
+  "slug": "williamsvo275-aupub-vieneu-turbo-q4",
+  "author": "Williamsvo275",
+  "url": "https://huggingface.co/Williamsvo275/aupub-vieneu-turbo-q4",
+  "created_at": "2026-11-02T10:06:07.000Z",
+  "updated_at": "2026-11-02T10:06:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "quantized",
+    "vi",
+    "base_model:pnnbao-ump/VieNeu-TTS-v3-Turbo",
+    "base_model:quantized:pnnbao-ump/VieNeu-TTS-v3-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78439368,
+  "storage_human": "78 MB",
+  "base_model": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

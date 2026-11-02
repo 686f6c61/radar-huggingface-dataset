@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Qwen3-4B-Instruct-2507-abliterated-GGUF",
   "created_at": "2026-10-29T11:40:29.000Z",
-  "updated_at": "2026-10-29T12:09:44.000Z",
+  "updated_at": "2026-11-01T11:25:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,8 +19,8 @@
     "heretic",
     "llama-cpp",
     "text-generation",
-    "base_model:Qwen/Qwen3-4B-Instruct-2507",
-    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:glivorem/Qwen3-4B-Instruct-2507-abliterated",
+    "base_model:quantized:glivorem/Qwen3-4B-Instruct-2507-abliterated",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -33,7 +33,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 39296910240,
   "storage_human": "39.3 GB",
-  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "base_model": "glivorem/Qwen3-4B-Instruct-2507-abliterated",
   "formats": [
     "gguf"
   ],

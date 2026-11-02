@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "gbouras13/modernprost-50M",
+  "slug": "gbouras13-modernprost-50m",
+  "author": "gbouras13",
+  "url": "https://huggingface.co/gbouras13/modernprost-50M",
+  "created_at": "2026-07-27T00:46:37.000Z",
+  "updated_at": "2026-11-02T05:09:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernprost_3di12st",
+    "feature-extraction",
+    "protein",
+    "3Di",
+    "foldseek",
+    "custom_code",
+    "dataset:gbouras13/ModernProst-3di12st",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": 52555936,
+  "parameters_human": "52.6M",
+  "storage_bytes": 211074172,
+  "storage_human": "211 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

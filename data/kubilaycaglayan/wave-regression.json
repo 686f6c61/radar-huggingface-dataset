@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "kubilaycaglayan/wave-regression",
+  "slug": "kubilaycaglayan-wave-regression",
+  "author": "kubilaycaglayan",
+  "url": "https://huggingface.co/kubilaycaglayan/wave-regression",
+  "created_at": "2026-09-23T09:56:15.000Z",
+  "updated_at": "2026-11-02T10:47:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "image-regression",
+    "efficientnet_b0",
+    "sea",
+    "waves",
+    "water-segmentation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108548990,
+  "storage_human": "109 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
