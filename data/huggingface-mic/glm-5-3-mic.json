@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/GLM-5.3-mic",
+  "slug": "huggingface-mic-glm-5-3-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/GLM-5.3-mic",
+  "created_at": "2026-10-29T16:05:17.000Z",
+  "updated_at": "2026-11-02T12:38:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "mic",
+    "test-artifact",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:finetune:zai-org/GLM-5.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 267,
+  "trending_score": 0,
+  "parameters": 40287984,
+  "parameters_human": "40.3M",
+  "storage_bytes": 342948586,
+  "storage_human": "343 MB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/docling-layout-heron-mic",
+  "slug": "huggingface-mic-docling-layout-heron-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/docling-layout-heron-mic",
+  "created_at": "2026-10-31T10:51:02.000Z",
+  "updated_at": "2026-11-02T15:32:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rt_detr_v2",
+    "mic",
+    "test-artifact",
+    "base_model:docling-project/docling-layout-heron",
+    "base_model:finetune:docling-project/docling-layout-heron",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 10910727,
+  "parameters_human": "10.9M",
+  "storage_bytes": 43698172,
+  "storage_human": "44 MB",
+  "base_model": "docling-project/docling-layout-heron",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SuperPauly/Clearline-NC-CPU",
+  "slug": "superpauly-clearline-nc-cpu",
+  "author": "SuperPauly",
+  "url": "https://huggingface.co/SuperPauly/Clearline-NC-CPU",
+  "created_at": "2026-11-02T14:30:19.000Z",
+  "updated_at": "2026-11-02T14:30:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speech-enhancement",
+    "noise-suppression",
+    "streaming",
+    "livekit",
+    "cpu",
+    "telephony",
+    "audio-to-audio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13736836,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

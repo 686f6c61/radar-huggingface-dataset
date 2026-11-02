@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Convergent-ch/Alpina-Medium-2.0-120M",
+  "slug": "convergent-ch-alpina-medium-2-0-120m",
+  "author": "Convergent-ch",
+  "url": "https://huggingface.co/Convergent-ch/Alpina-Medium-2.0-120M",
+  "created_at": "2026-11-02T20:19:40.000Z",
+  "updated_at": "2026-11-02T20:31:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "alpina",
+    "experimental",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119563008,
+  "parameters_human": "119.6M",
+  "storage_bytes": 478598984,
+  "storage_human": "479 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

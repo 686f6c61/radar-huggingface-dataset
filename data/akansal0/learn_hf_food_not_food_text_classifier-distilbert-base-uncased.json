@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "akansal0/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "slug": "akansal0-learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "author": "akansal0",
+  "url": "https://huggingface.co/akansal0/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "created_at": "2026-11-02T19:04:05.000Z",
+  "updated_at": "2026-11-02T19:04:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Project…",
+      "url": "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code",
+      "snippet": "500 AI Machine learning Deep learning Computer vision NLP Projects with code !!! Follow me on LinkedIn : This list is continuously …"
+    },
+    {
+      "title": "computer-vision-projects · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/computer-vision-projects",
+      "snippet": "Aug 26, 2026 · 100 AI Machine Learning Deep Learning Projects is a curated repository showcasing innovative, production-ready …"
+    },
+    {
+      "title": "ashishpatel26 (Ashish Patel) · GitHub",
+      "url": "https://github.com/ashishpatel26",
+      "snippet": "500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code Public 500 AI Machine learning Deep learning …"
+    }
+  ]
+}

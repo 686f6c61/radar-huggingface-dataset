@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "fernandotonon/QtMeshEditor-triposplat-onnx",
+  "slug": "fernandotonon-qtmesheditor-triposplat-onnx",
+  "author": "fernandotonon",
+  "url": "https://huggingface.co/fernandotonon/QtMeshEditor-triposplat-onnx",
+  "created_at": "2026-11-02T16:38:26.000Z",
+  "updated_at": "2026-11-02T16:57:25.000Z",
+  "license": "mit-and-dinov3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-to-3d",
+    "3d-gaussians",
+    "gaussian-splatting",
+    "triposplat",
+    "qtmesheditor",
+    "base_model:VAST-AI/TripoSplat",
+    "base_model:quantized:VAST-AI/TripoSplat",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6171146586,
+  "storage_human": "6.2 GB",
+  "base_model": "VAST-AI/TripoSplat",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "sahithimacharapu2/newer_version",
+  "slug": "sahithimacharapu2-newer_version",
+  "author": "sahithimacharapu2",
+  "url": "https://huggingface.co/sahithimacharapu2/newer_version",
+  "created_at": "2026-11-02T12:39:27.000Z",
+  "updated_at": "2026-11-02T12:39:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "leak-curber",
+    "enzyme",
+    "leaderboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90253989,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

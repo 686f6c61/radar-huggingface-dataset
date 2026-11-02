@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12",
+  "slug": "jhcift-llama-3-1-8b-instruct-cirf-backward-greedy-12",
+  "author": "JhCIFT",
+  "url": "https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12",
+  "created_at": "2026-11-02T13:03:30.000Z",
+  "updated_at": "2026-11-02T13:11:07.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3.1",
+    "cirf",
+    "reasoning",
+    "merged-lora",
+    "functional-tokens",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8034471936,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16086282126,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

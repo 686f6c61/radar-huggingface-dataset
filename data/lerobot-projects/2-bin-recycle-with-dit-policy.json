@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "lerobot-projects/2-bin-recycle-with-Dit-Policy",
+  "slug": "lerobot-projects-2-bin-recycle-with-dit-policy",
+  "author": "lerobot-projects",
+  "url": "https://huggingface.co/lerobot-projects/2-bin-recycle-with-Dit-Policy",
+  "created_at": "2026-11-02T17:37:19.000Z",
+  "updated_at": "2026-11-02T17:51:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "reinforcement-learning",
+    "diffusion-transformer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 220543750,
+  "parameters_human": "220.5M",
+  "storage_bytes": 882260984,
+  "storage_human": "882 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

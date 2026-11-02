@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OpenMed/GLiNER2.5-ClinicalNER-Disease-Spanish-v1",
+  "slug": "openmed-gliner2-5-clinicalner-disease-spanish-v1",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/GLiNER2.5-ClinicalNER-Disease-Spanish-v1",
+  "created_at": "2026-10-30T21:31:02.000Z",
+  "updated_at": "2026-11-02T17:58:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "openmed",
+    "safetensors",
+    "extractor",
+    "medical",
+    "clinical-nlp",
+    "named-entity-recognition",
+    "disease",
+    "spanish",
+    "gliner2",
+    "gliner",
+    "token-classification",
+    "es",
+    "dataset:bigbio/distemist",
+    "arxiv:2508.01630",
+    "arxiv:2507.18546",
+    "base_model:fastino/gliner2.5-multi-v1",
+    "base_model:finetune:fastino/gliner2.5-multi-v1",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 287355159,
+  "parameters_human": "287.4M",
+  "storage_bytes": 1165481633,
+  "storage_human": "1.2 GB",
+  "base_model": "fastino/gliner2.5-multi-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Disease mention extraction",
+      "dataset": "DisTEMIST (150 held-out documents)",
+      "metric": "F1 (exact span, threshold 0.4)",
+      "value": 73.26
+    }
+  ],
+  "sources": [
+    {
+      "title": "faculdade de medicina de ribeirão preto - Teses USP",
+      "url": "https://teses.usp.br/teses/disponiveis/17/17138/tde-05052026-141547/publico/RILDOPINTODASILVA.pdf",
+      "snippet": "04.05.2026 ... One important category was the history of the disease, where most of real new information was found. Despite the clinical notes referring to ..."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "alimerido/pi05-newsetup-v1",
+  "slug": "alimerido-pi05-newsetup-v1",
+  "author": "alimerido",
+  "url": "https://huggingface.co/alimerido/pi05-newsetup-v1",
+  "created_at": "2026-11-02T13:48:52.000Z",
+  "updated_at": "2026-11-02T13:50:18.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:alimerido/new-setup_20261101_200122",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388453248,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

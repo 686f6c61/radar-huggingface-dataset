@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "trellesjc/mbert-amazon-reviews-sentiment-es-en-fr",
+  "slug": "trellesjc-mbert-amazon-reviews-sentiment-es-en-fr",
+  "author": "trellesjc",
+  "url": "https://huggingface.co/trellesjc/mbert-amazon-reviews-sentiment-es-en-fr",
+  "created_at": "2026-11-02T17:40:02.000Z",
+  "updated_at": "2026-11-02T17:40:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sentiment-analysis",
+    "multilingual",
+    "product-reviews",
+    "text-classification",
+    "es",
+    "en",
+    "fr",
+    "dataset:mteb/amazon_reviews_multi",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177855747,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711446508,
+  "storage_human": "711 MB",
+  "base_model": "bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

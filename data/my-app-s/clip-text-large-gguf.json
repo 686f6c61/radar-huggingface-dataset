@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "my-app-s/clip-text-large-GGUF",
+  "slug": "my-app-s-clip-text-large-gguf",
+  "author": "my-app-s",
+  "url": "https://huggingface.co/my-app-s/clip-text-large-GGUF",
+  "created_at": "2026-11-02T15:40:10.000Z",
+  "updated_at": "2026-11-02T15:40:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "clip",
+    "text",
+    "crispembed",
+    "text-embedding",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123650304,
+  "parameters_human": "123.7M",
+  "storage_bytes": 900421696,
+  "storage_human": "900 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

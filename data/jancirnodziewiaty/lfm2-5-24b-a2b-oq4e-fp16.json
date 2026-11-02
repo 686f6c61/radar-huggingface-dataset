@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jancirnodziewiaty/LFM2.5-24B-A2B-oQ4e-fp16",
+  "slug": "jancirnodziewiaty-lfm2-5-24b-a2b-oq4e-fp16",
+  "author": "jancirnodziewiaty",
+  "url": "https://huggingface.co/jancirnodziewiaty/LFM2.5-24B-A2B-oQ4e-fp16",
+  "created_at": "2026-10-14T06:55:51.000Z",
+  "updated_at": "2026-11-02T16:22:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 386,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 27811523704,
+  "storage_human": "27.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Uuuuuuniiiiiii/goldworm-v6-harnesses",
+  "slug": "uuuuuuniiiiiii-goldworm-v6-harnesses",
+  "author": "Uuuuuuniiiiiii",
+  "url": "https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6-harnesses",
+  "created_at": "2026-11-02T16:38:48.000Z",
+  "updated_at": "2026-11-02T16:38:59.000Z",
+  "license": "mixed-mit-and-gfdl-data",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "byte-level",
+    "tiny",
+    "code",
+    "goldworm",
+    "experimental",
+    "base_model:Uuuuuuniiiiiii/goldworm-v6",
+    "base_model:finetune:Uuuuuuniiiiiii/goldworm-v6",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 303244776,
+  "storage_human": "303 MB",
+  "base_model": "Uuuuuuniiiiiii/goldworm-v6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

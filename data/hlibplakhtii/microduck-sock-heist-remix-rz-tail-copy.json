@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "HlibPlakhtii/microduck-sock-heist-remix-rz-tail-copy",
+  "slug": "hlibplakhtii-microduck-sock-heist-remix-rz-tail-copy",
+  "author": "HlibPlakhtii",
+  "url": "https://huggingface.co/HlibPlakhtii/microduck-sock-heist-remix-rz-tail-copy",
+  "created_at": "2026-11-02T18:23:31.000Z",
+  "updated_at": "2026-11-02T18:23:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:rumezhak/microduck-sock-heist-remix-rz-tail",
+    "base_model:quantized:rumezhak/microduck-sock-heist-remix-rz-tail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1210384,
+  "storage_human": "1 MB",
+  "base_model": "rumezhak/microduck-sock-heist-remix-rz-tail",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

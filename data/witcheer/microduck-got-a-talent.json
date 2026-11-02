@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "witcheer/microduck-got-a-talent",
+  "slug": "witcheer-microduck-got-a-talent",
+  "author": "witcheer",
+  "url": "https://huggingface.co/witcheer/microduck-got-a-talent",
+  "created_at": "2026-10-31T15:15:23.000Z",
+  "updated_at": "2026-11-02T18:03:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16950998,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

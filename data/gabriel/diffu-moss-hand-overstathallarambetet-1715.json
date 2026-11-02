@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Gabriel/diffu-moss-hand-overstathallarambetet-1715",
+  "slug": "gabriel-diffu-moss-hand-overstathallarambetet-1715",
+  "author": "Gabriel",
+  "url": "https://huggingface.co/Gabriel/diffu-moss-hand-overstathallarambetet-1715",
+  "created_at": "2026-11-02T13:57:54.000Z",
+  "updated_at": "2026-11-02T13:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "peft",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "moss-image",
+    "handwriting",
+    "historical-documents",
+    "archives",
+    "htr",
+    "synthetic-data",
+    "text-to-image",
+    "sv",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158174575,
+  "storage_human": "158 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GABRIEL - Organisation du système d'information de l'Enseignement ...",
+      "url": "https://www.ec-gabriel.fr/",
+      "snippet": "GABRIEL permet à l'Enseignement catholique de disposer de son propre annuaire de TOUS ses établissements avec un annuaire …"
+    },
+    {
+      "title": "Gabriel (archange) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gabriel_(archange)",
+      "snippet": "Gabriel (de l' hébreu : גַּבְרִיאֵל (gabriel)) ou encore Cebrail dans certaines cultures, est un ange du livre de Daniel dans la Bible. Son …"
+    },
+    {
+      "title": "Gabriel – Global specialist in fabrics for furniture and interior ...",
+      "url": "https://www.gabrielfabrics.com/",
+      "snippet": "At Gabriel, we combine design, innovation, in-house production, and textile engineering with a focus on environmental responsibility. …"
+    },
+    {
+      "title": "Gabriel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gabriel",
+      "snippet": "Michael and Gabriel often work together, but Michael is mainly occupied in heaven, while Gabriel (as the messenger of God) typically …"
+    },
+    {
+      "title": "Gabriel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gabriel",
+      "snippet": "Gabriel est une chanson de Najoua Belyzel sortie en single en 2005. Gabriel est un morceau du compositeur Roy David Jr. Ce …"
+    }
+  ]
+}

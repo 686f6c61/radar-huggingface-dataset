@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "attacker8324/am5476",
+  "slug": "attacker8324-am5476",
+  "author": "attacker8324",
+  "url": "https://huggingface.co/attacker8324/am5476",
+  "created_at": "2026-11-02T15:22:48.000Z",
+  "updated_at": "2026-11-02T15:22:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "<img src=x onerror=window.__x5477t=1>",
+      "dataset": "<img src=x onerror=window.__x5477d=1>",
+      "metric": "<img src=x onerror=window.__x5477b=1>",
+      "value": 0.9
+    }
+  ],
+  "sources": []
+}

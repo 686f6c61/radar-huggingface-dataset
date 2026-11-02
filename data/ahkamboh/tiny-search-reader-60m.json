@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ahkamboh/tiny-search-reader-60M",
+  "slug": "ahkamboh-tiny-search-reader-60m",
+  "author": "ahkamboh",
+  "url": "https://huggingface.co/ahkamboh/tiny-search-reader-60M",
+  "created_at": "2026-10-04T10:15:44.000Z",
+  "updated_at": "2026-11-02T14:11:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "search",
+    "rag",
+    "question-answering",
+    "on-device",
+    "tiny",
+    "muon",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 382,
+  "trending_score": 0,
+  "parameters": 62018304,
+  "parameters_human": "62.0M",
+  "storage_bytes": 359805656,
+  "storage_human": "360 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/search/results/all/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

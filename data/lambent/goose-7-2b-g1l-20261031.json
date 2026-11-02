@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lambent/Goose-7.2B-G1l-20261031",
+  "slug": "lambent-goose-7-2b-g1l-20261031",
+  "author": "Lambent",
+  "url": "https://huggingface.co/Lambent/Goose-7.2B-G1l-20261031",
+  "created_at": "2026-11-02T17:43:25.000Z",
+  "updated_at": "2026-11-02T18:00:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rwkv7",
+    "base_model:RWKV/RWKV7-G1l-7.2B-20261031",
+    "base_model:finetune:RWKV/RWKV7-G1l-7.2B-20261031",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7199141888,
+  "parameters_human": "7.20B",
+  "storage_bytes": 14398399560,
+  "storage_human": "14.4 GB",
+  "base_model": "RWKV/RWKV7-G1l-7.2B-20261031",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction LAMBENT en français | Dictionnaire anglais-français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/lambent",
+      "snippet": "Traduction de \"lambent\" en français : vacillant, brillant, luisant. Adjectif, signification, prononciation, expressions idiomatiques en …"
+    },
+    {
+      "title": "Lambent - Gears of War Wiki",
+      "url": "https://gearsofwar.fandom.com/wiki/Lambent",
+      "snippet": "The Locust were forced to invade the surface in order to colonize Sera and escape the Lambent. Publicly, the Lambent were …"
+    },
+    {
+      "title": "lambent - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/lambent",
+      "snippet": "lambent - traduction anglais-français. Forums pour discuter de lambent, voir ses formes composées, des exemples et poser vos …"
+    },
+    {
+      "title": "lambent - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/lambent.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"lambent\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "LAMBENT - Traduction en français - bab.la",
+      "url": "https://fr.bab.la/dictionnaire/anglais-francais/lambent",
+      "snippet": "Retrouvez toutes les traductions de lambent en Français comme chatoyant, brillant et bien d'autres."
+    }
+  ]
+}

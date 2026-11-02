@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cbwwww/mlabonne_Qwen3-8B-abliterated-GGUF",
+  "slug": "cbwwww-mlabonne_qwen3-8b-abliterated-gguf",
+  "author": "cbwwww",
+  "url": "https://huggingface.co/cbwwww/mlabonne_Qwen3-8B-abliterated-GGUF",
+  "created_at": "2026-11-02T20:10:21.000Z",
+  "updated_at": "2026-11-02T20:10:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliteration",
+    "abliterated",
+    "text-generation",
+    "base_model:mlabonne/Qwen3-8B-abliterated",
+    "base_model:quantized:mlabonne/Qwen3-8B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 129790576782,
+  "storage_human": "129.8 GB",
+  "base_model": "mlabonne/Qwen3-8B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Yadumithra/veg-classifier-36",
+  "slug": "yadumithra-veg-classifier-36",
+  "author": "Yadumithra",
+  "url": "https://huggingface.co/Yadumithra/veg-classifier-36",
+  "created_at": "2026-11-02T18:04:46.000Z",
+  "updated_at": "2026-11-02T18:05:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23634916,
+  "parameters_human": "23.6M",
+  "storage_bytes": 94581672,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

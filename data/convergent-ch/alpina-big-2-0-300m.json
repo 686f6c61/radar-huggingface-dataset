@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Convergent-ch/Alpina-Big-2.0-300M",
+  "slug": "convergent-ch-alpina-big-2-0-300m",
+  "author": "Convergent-ch",
+  "url": "https://huggingface.co/Convergent-ch/Alpina-Big-2.0-300M",
+  "created_at": "2026-11-02T20:20:32.000Z",
+  "updated_at": "2026-11-02T20:31:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "alpina",
+    "experimental",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299410432,
+  "parameters_human": "299.4M",
+  "storage_bytes": 1199526400,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sentence-transformers/merged-mpnet-base",
+  "slug": "sentence-transformers-merged-mpnet-base",
+  "author": "sentence-transformers",
+  "url": "https://huggingface.co/sentence-transformers/merged-mpnet-base",
+  "created_at": "2026-11-02T15:52:44.000Z",
+  "updated_at": "2026-11-02T15:53:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mpnet",
+    "sentence-similarity",
+    "dense",
+    "en",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/all-mpnet-base-v2",
+    "base_model:merge:sentence-transformers/all-mpnet-base-v2",
+    "base_model:sentence-transformers/multi-qa-mpnet-base-cos-v1",
+    "base_model:merge:sentence-transformers/multi-qa-mpnet-base-cos-v1",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437967648,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/all-mpnet-base-v2, sentence-transformers/multi-qa-mpnet-base-cos-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

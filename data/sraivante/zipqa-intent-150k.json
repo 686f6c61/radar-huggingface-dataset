@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "sraivante/zipqa-intent-150k",
+  "slug": "sraivante-zipqa-intent-150k",
+  "author": "sraivante",
+  "url": "https://huggingface.co/sraivante/zipqa-intent-150k",
+  "created_at": "2026-10-22T05:44:37.000Z",
+  "updated_at": "2026-11-02T18:23:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "intent-classification",
+    "slot-filling",
+    "semantic-parsing",
+    "table-question-answering",
+    "tiny-model",
+    "from-scratch",
+    "hinglish",
+    "zip-code",
+    "geography",
+    "token-classification",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 148195,
+  "parameters_human": "148195",
+  "storage_bytes": 593988,
+  "storage_human": "593988 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

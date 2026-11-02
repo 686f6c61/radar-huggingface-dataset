@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/MiniMax-M3-MXFP8-mic",
+  "slug": "huggingface-mic-minimax-m3-mxfp8-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/MiniMax-M3-MXFP8-mic",
+  "created_at": "2026-10-27T11:02:35.000Z",
+  "updated_at": "2026-11-02T15:27:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "minimax_m3_vl",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:MiniMaxAI/MiniMax-M3-MXFP8",
+    "base_model:finetune:MiniMaxAI/MiniMax-M3-MXFP8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 584,
+  "trending_score": 0,
+  "parameters": 25940836,
+  "parameters_human": "25.9M",
+  "storage_bytes": 176105456,
+  "storage_human": "176 MB",
+  "base_model": "MiniMaxAI/MiniMax-M3-MXFP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

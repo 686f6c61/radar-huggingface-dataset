@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B-GGUF",
+  "slug": "mradermacher-mistral-grand-r1-dolphin-3-0-deep-reasoning-brainstorm-45b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B-GGUF",
+  "created_at": "2025-02-21T10:16:27.000Z",
+  "updated_at": "2026-11-02T13:33:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "thinking",
+    "cognitivecomputations",
+    "r1",
+    "cot",
+    "deepseek",
+    "Mistral",
+    "32k context",
+    "fine tune",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 45246888960,
+  "parameters_human": "45.25B",
+  "storage_bytes": 308281958016,
+  "storage_human": "308.3 GB",
+  "base_model": "DavidAU/Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

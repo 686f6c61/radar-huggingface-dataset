@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jancirnodziewiaty/gemma-4-E2B-it-oQ4e-fp16-mtp",
+  "slug": "jancirnodziewiaty-gemma-4-e2b-it-oq4e-fp16-mtp",
+  "author": "jancirnodziewiaty",
+  "url": "https://huggingface.co/jancirnodziewiaty/gemma-4-E2B-it-oQ4e-fp16-mtp",
+  "created_at": "2026-11-02T17:09:09.000Z",
+  "updated_at": "2026-11-02T17:10:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "mtp",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 4858439107,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

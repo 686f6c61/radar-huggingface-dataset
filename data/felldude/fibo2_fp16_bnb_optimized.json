@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Felldude/Fibo2_FP16_BnB_Optimized",
+  "slug": "felldude-fibo2_fp16_bnb_optimized",
+  "author": "Felldude",
+  "url": "https://huggingface.co/Felldude/Fibo2_FP16_BnB_Optimized",
+  "created_at": "2026-11-02T16:31:57.000Z",
+  "updated_at": "2026-11-02T16:36:55.000Z",
+  "license": "bria-fibo",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-editing",
+    "text-to-image",
+    "image-to-image",
+    "inpainting",
+    "multi-reference",
+    "fine-tuning",
+    "structured-prompts",
+    "vgl",
+    "fibo",
+    "en",
+    "base_model:briaai/Fibo-2.0-dev",
+    "base_model:finetune:briaai/Fibo-2.0-dev",
+    "license:other",
+    "diffusers:BriaFibo2Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8127342213,
+  "parameters_human": "8.13B",
+  "storage_bytes": 25478124160,
+  "storage_human": "25.5 GB",
+  "base_model": "briaai/Fibo-2.0-dev",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

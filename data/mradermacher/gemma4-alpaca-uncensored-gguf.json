@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma4-alpaca-uncensored-GGUF",
+  "slug": "mradermacher-gemma4-alpaca-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma4-alpaca-uncensored-GGUF",
+  "created_at": "2026-04-13T05:44:18.000Z",
+  "updated_at": "2026-11-02T20:18:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 49578636160,
+  "storage_human": "49.6 GB",
+  "base_model": "renierd6/gemma4-alpaca-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

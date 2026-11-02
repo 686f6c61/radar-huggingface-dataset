@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Felldude-Uncensored-Ministral3-3B-bf16-GGUF",
+  "slug": "mradermacher-felldude-uncensored-ministral3-3b-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Felldude-Uncensored-Ministral3-3B-bf16-GGUF",
+  "created_at": "2026-05-13T09:55:57.000Z",
+  "updated_at": "2026-11-02T20:17:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:CuttingEdgeAI/Uncensored-Ministral-3-3B-bf16",
+    "base_model:quantized:CuttingEdgeAI/Uncensored-Ministral-3-3B-bf16",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 299,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 32533386048,
+  "storage_human": "32.5 GB",
+  "base_model": "dummy9996/Uncensored-Ministral-3-3B-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

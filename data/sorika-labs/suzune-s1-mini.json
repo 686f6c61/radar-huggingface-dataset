@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sorika-labs/suzune-s1-mini",
+  "slug": "sorika-labs-suzune-s1-mini",
+  "author": "sorika-labs",
+  "url": "https://huggingface.co/sorika-labs/suzune-s1-mini",
+  "created_at": "2026-10-30T12:59:13.000Z",
+  "updated_at": "2026-11-02T14:15:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "suzune",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "suzune",
+    "safetensors",
+    "gradium_phonon_tts",
+    "text-to-speech",
+    "speech",
+    "audio",
+    "tts",
+    "on-device",
+    "edge-ai",
+    "flow-matching",
+    "custom_code",
+    "en",
+    "base_model:gradium/phonon-31m-en",
+    "base_model:finetune:gradium/phonon-31m-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 40232002,
+  "parameters_human": "40.2M",
+  "storage_bytes": 161011583,
+  "storage_human": "161 MB",
+  "base_model": "gradium/phonon-31m-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Neuralk-AI/seldon",
+  "slug": "neuralk-ai-seldon",
+  "author": "Neuralk-AI",
+  "url": "https://huggingface.co/Neuralk-AI/seldon",
+  "created_at": "2026-11-02T10:16:34.000Z",
+  "updated_at": "2026-11-02T16:38:58.000Z",
+  "license": "neuralk-seldon-license",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tabular",
+    "tabular-classification",
+    "foundation-model",
+    "in-context-learning",
+    "synthetic-prior",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 213464122,
+  "parameters_human": "213.5M",
+  "storage_bytes": 854337775,
+  "storage_human": "854 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

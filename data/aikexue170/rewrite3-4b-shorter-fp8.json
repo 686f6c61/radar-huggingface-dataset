@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "aikexue170/rewrite3-4b-shorter-fp8",
+  "slug": "aikexue170-rewrite3-4b-shorter-fp8",
+  "author": "aikexue170",
+  "url": "https://huggingface.co/aikexue170/rewrite3-4b-shorter-fp8",
+  "created_at": "2026-11-02T16:57:31.000Z",
+  "updated_at": "2026-11-02T17:03:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 5774700389,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

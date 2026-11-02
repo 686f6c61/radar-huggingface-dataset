@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "aifreak777/Wan2.2-TI2V-5B-FP8",
+  "slug": "aifreak777-wan2-2-ti2v-5b-fp8",
+  "author": "aifreak777",
+  "url": "https://huggingface.co/aifreak777/Wan2.2-TI2V-5B-FP8",
+  "created_at": "2026-11-02T14:33:57.000Z",
+  "updated_at": "2026-11-02T14:33:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "fp8",
+    "unsloth",
+    "quantized",
+    "text-to-video",
+    "video-generation",
+    "en",
+    "zh",
+    "arxiv:2503.20314",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B",
+    "license:apache-2.0",
+    "diffusers:WanPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4999787712,
+  "parameters_human": "5.00B",
+  "storage_bytes": 52099882841,
+  "storage_human": "52.1 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

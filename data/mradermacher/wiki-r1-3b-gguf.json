@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Wiki-R1-3B-GGUF",
+  "slug": "mradermacher-wiki-r1-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Wiki-R1-3B-GGUF",
+  "created_at": "2026-04-13T05:21:43.000Z",
+  "updated_at": "2026-11-02T20:19:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Artanic30/Wiki-R1-3B",
+    "base_model:quantized:Artanic30/Wiki-R1-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32781710272,
+  "storage_human": "32.8 GB",
+  "base_model": "Artanic30/Wiki-R1-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

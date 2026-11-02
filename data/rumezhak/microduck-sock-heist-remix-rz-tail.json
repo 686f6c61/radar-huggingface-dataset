@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "rumezhak/microduck-sock-heist-remix-rz-tail",
+  "slug": "rumezhak-microduck-sock-heist-remix-rz-tail",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-sock-heist-remix-rz-tail",
+  "created_at": "2026-11-02T18:11:55.000Z",
+  "updated_at": "2026-11-02T18:13:02.000Z",
+  "license": "`",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-arena",
+    "robotics",
+    "base_model:jrubiosainz/microduck-sock-heist-6m-rz-tail-r1n",
+    "base_model:finetune:jrubiosainz/microduck-sock-heist-6m-rz-tail-r1n",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1210384,
+  "storage_human": "1 MB",
+  "base_model": "jrubiosainz/microduck-sock-heist-6m-rz-tail-r1n",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

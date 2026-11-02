@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Qwen3.8-Flash-Next-mic",
+  "slug": "huggingface-mic-qwen3-8-flash-next-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Qwen3.8-Flash-Next-mic",
+  "created_at": "2026-10-29T16:39:58.000Z",
+  "updated_at": "2026-11-02T15:29:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "mic",
+    "test-artifact",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 267,
+  "trending_score": 0,
+  "parameters": 353864419,
+  "parameters_human": "353.9M",
+  "storage_bytes": 5709441272,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "jonprompter/LagerPilot-Qwen2.5-0.5B-LoRA",
+  "slug": "jonprompter-lagerpilot-qwen2-5-0-5b-lora",
+  "author": "jonprompter",
+  "url": "https://huggingface.co/jonprompter/LagerPilot-Qwen2.5-0.5B-LoRA",
+  "created_at": "2026-11-02T14:21:25.000Z",
+  "updated_at": "2026-11-02T14:41:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "logistics",
+    "supply-chain",
+    "wareneingang",
+    "hgb-377",
+    "sap-migo",
+    "german",
+    "edge-ai",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "de",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13597060,
+  "storage_human": "14 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

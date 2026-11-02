@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ss-lab/LFM2.5-1.2B-Instruct-GGUF",
+  "slug": "ss-lab-lfm2-5-1-2b-instruct-gguf",
+  "author": "ss-lab",
+  "url": "https://huggingface.co/ss-lab/LFM2.5-1.2B-Instruct-GGUF",
+  "created_at": "2026-11-02T16:13:21.000Z",
+  "updated_at": "2026-11-02T16:17:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 18331560000,
+  "storage_human": "18.3 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

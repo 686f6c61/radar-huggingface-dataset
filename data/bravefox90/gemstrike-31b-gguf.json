@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "bravefox90/GemStrike-31B-GGUF",
+  "slug": "bravefox90-gemstrike-31b-gguf",
+  "author": "bravefox90",
+  "url": "https://huggingface.co/bravefox90/GemStrike-31B-GGUF",
+  "created_at": "2026-11-02T15:23:05.000Z",
+  "updated_at": "2026-11-02T15:23:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "creative-writing",
+    "roleplay",
+    "nsfw",
+    "erp",
+    "abliterated",
+    "lora",
+    "gemma4",
+    "llama-cpp",
+    "not-for-all-audiences",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 155593966122,
+  "storage_human": "155.6 GB",
+  "base_model": "huihui-ai/Huihui-gemma-4-31B-it-qat-q4_0-unquantized-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

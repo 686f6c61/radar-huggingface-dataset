@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "klohdfhk/amharic-news-classifier",
+  "slug": "klohdfhk-amharic-news-classifier",
+  "author": "klohdfhk",
+  "url": "https://huggingface.co/klohdfhk/amharic-news-classifier",
+  "created_at": "2026-11-02T16:09:34.000Z",
+  "updated_at": "2026-11-02T16:25:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "amharic",
+    "news-classification",
+    "afroxlmr",
+    "text-classification",
+    "am",
+    "dataset:israel/Amharic-News-Text-classification-Dataset",
+    "arxiv:2103.05639",
+    "base_model:Davlan/afro-xlmr-mini",
+    "base_model:finetune:Davlan/afro-xlmr-mini",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117643014,
+  "parameters_human": "117.6M",
+  "storage_bytes": 492748075,
+  "storage_human": "493 MB",
+  "base_model": "Davlan/afro-xlmr-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

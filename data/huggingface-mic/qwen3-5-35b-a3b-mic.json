@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Qwen3.5-35B-A3B-mic",
+  "slug": "huggingface-mic-qwen3-5-35b-a3b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Qwen3.5-35B-A3B-mic",
+  "created_at": "2026-10-29T13:47:15.000Z",
+  "updated_at": "2026-11-02T15:28:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "mic",
+    "test-artifact",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 266,
+  "trending_score": 0,
+  "parameters": 33271920,
+  "parameters_human": "33.3M",
+  "storage_bytes": 419765638,
+  "storage_human": "420 MB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

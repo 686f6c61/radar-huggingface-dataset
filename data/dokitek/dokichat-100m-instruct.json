@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Dokitek/Dokichat-100M-Instruct",
+  "slug": "dokitek-dokichat-100m-instruct",
+  "author": "Dokitek",
+  "url": "https://huggingface.co/Dokitek/Dokichat-100M-Instruct",
+  "created_at": "2026-11-02T18:47:49.000Z",
+  "updated_at": "2026-11-02T18:52:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "french",
+    "small-language-model",
+    "trained-from-scratch",
+    "chat",
+    "conversational",
+    "fr",
+    "dataset:epfml/FineWeb2-HQ",
+    "arxiv:2502.10361",
+    "base_model:Dokitek/Dokichat-100M",
+    "base_model:finetune:Dokitek/Dokichat-100M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99907328,
+  "parameters_human": "99.9M",
+  "storage_bytes": 200307328,
+  "storage_human": "200 MB",
+  "base_model": "Dokitek/Dokichat-100M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "robello2/whisper-small-yecs-lora-do10",
+  "slug": "robello2-whisper-small-yecs-lora-do10",
+  "author": "robello2",
+  "url": "https://huggingface.co/robello2/whisper-small-yecs-lora-do10",
+  "created_at": "2026-11-02T13:59:51.000Z",
+  "updated_at": "2026-11-02T14:00:48.000Z",
+  "license": "noodl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "yo",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "code-switching",
+    "yo",
+    "en",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967000537,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

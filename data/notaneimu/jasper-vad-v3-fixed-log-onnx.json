@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "notaneimu/jasper-vad-v3-fixed-log-onnx",
+  "slug": "notaneimu-jasper-vad-v3-fixed-log-onnx",
+  "author": "notaneimu",
+  "url": "https://huggingface.co/notaneimu/jasper-vad-v3-fixed-log-onnx",
+  "created_at": "2026-11-02T15:39:52.000Z",
+  "updated_at": "2026-11-02T15:40:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "voice-activity-detection",
+    "audio",
+    "jasper",
+    "cpu",
+    "streaming",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1261054,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

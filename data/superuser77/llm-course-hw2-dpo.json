@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "superuser77/llm-course-hw2-dpo",
+  "slug": "superuser77-llm-course-hw2-dpo",
+  "author": "superuser77",
+  "url": "https://huggingface.co/superuser77/llm-course-hw2-dpo",
+  "created_at": "2026-11-02T18:33:30.000Z",
+  "updated_at": "2026-11-02T20:38:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "dpo",
+    "education",
+    "conversational",
+    "en",
+    "dataset:HumanLLMs/Human-Like-DPO-Dataset",
+    "base_model:HuggingFaceTB/SmolLM-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM-135M-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在哪里能够找到国外优秀大学的计算机公开课？ - 知乎",
+      "url": "https://www.zhihu.com/question/32044961?sort=created",
+      "snippet": "如题 如果你 挑花眼 了，不知道该学哪个？ 过来人推荐你去看看上面仓库里提到的 Crash Course Computer Science（计算机科学速 …"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "e-valente/GLM-5.3-Flash-NVFP4-SM120-Deployment",
+  "slug": "e-valente-glm-5-3-flash-nvfp4-sm120-deployment",
+  "author": "e-valente",
+  "url": "https://huggingface.co/e-valente/GLM-5.3-Flash-NVFP4-SM120-Deployment",
+  "created_at": "2026-11-02T18:53:40.000Z",
+  "updated_at": "2026-11-02T18:53:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "deployment",
+    "evaluation",
+    "vllm",
+    "sm120",
+    "nvfp4",
+    "mtp",
+    "glm",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

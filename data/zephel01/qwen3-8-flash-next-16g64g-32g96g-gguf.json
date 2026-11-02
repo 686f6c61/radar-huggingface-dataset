@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "zephel01/Qwen3.8-Flash-Next-16G64G-32G96G-GGUF",
+  "slug": "zephel01-qwen3-8-flash-next-16g64g-32g96g-gguf",
+  "author": "zephel01",
+  "url": "https://huggingface.co/zephel01/Qwen3.8-Flash-Next-16G64G-32G96G-GGUF",
+  "created_at": "2026-11-02T13:01:03.000Z",
+  "updated_at": "2026-11-02T13:01:05.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "moe",
+    "abyss",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

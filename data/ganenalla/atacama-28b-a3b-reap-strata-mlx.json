@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Ganenalla/atacama-28b-a3b-reap-strata-mlx",
+  "slug": "ganenalla-atacama-28b-a3b-reap-strata-mlx",
+  "author": "Ganenalla",
+  "url": "https://huggingface.co/Ganenalla/atacama-28b-a3b-reap-strata-mlx",
+  "created_at": "2026-10-30T07:10:54.000Z",
+  "updated_at": "2026-10-30T07:39:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "moe",
+    "reap",
+    "strata",
+    "code",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28239145728,
+  "parameters_human": "28.24B",
+  "storage_bytes": 15914851334,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

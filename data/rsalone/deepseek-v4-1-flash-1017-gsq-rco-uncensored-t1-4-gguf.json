@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "rSalone/DeepSeek-V4.1-Flash-1017-GSQ-RCO-uncensored-t1-4-GGUF",
+  "slug": "rsalone-deepseek-v4-1-flash-1017-gsq-rco-uncensored-t1-4-gguf",
+  "author": "rSalone",
+  "url": "https://huggingface.co/rSalone/DeepSeek-V4.1-Flash-1017-GSQ-RCO-uncensored-t1-4-GGUF",
+  "created_at": "2026-11-01T15:14:20.000Z",
+  "updated_at": "2026-11-02T14:02:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abyss",
+    "deepseek",
+    "abliterated",
+    "uncensored",
+    "refusal-direction",
+    "base_model:ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+    "base_model:finetune:ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 196613849600,
+  "parameters_human": "196.61B",
+  "storage_bytes": 252215367090,
+  "storage_human": "252.2 GB",
+  "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

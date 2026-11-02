@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Privoid-ai/Privoid-3D-Web-Builder-Qwen3.5-4B-GGUF",
+  "slug": "privoid-ai-privoid-3d-web-builder-qwen3-5-4b-gguf",
+  "author": "Privoid-ai",
+  "url": "https://huggingface.co/Privoid-ai/Privoid-3D-Web-Builder-Qwen3.5-4B-GGUF",
+  "created_at": "2026-11-02T18:19:35.000Z",
+  "updated_at": "2026-11-02T18:28:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nextjs",
+    "threejs",
+    "tool-calling",
+    "base_model:Privoid-ai/Privoid-3D-Web-Builder-Qwen3.5-4B",
+    "base_model:quantized:Privoid-ai/Privoid-3D-Web-Builder-Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 25102908672,
+  "storage_human": "25.1 GB",
+  "base_model": "Privoid-ai/Privoid-3D-Web-Builder-Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

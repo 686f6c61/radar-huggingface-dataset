@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "AdhyanshVerma/browser-laya-onnx",
+  "slug": "adhyanshverma-browser-laya-onnx",
+  "author": "AdhyanshVerma",
+  "url": "https://huggingface.co/AdhyanshVerma/browser-laya-onnx",
+  "created_at": "2026-11-02T12:39:07.000Z",
+  "updated_at": "2026-11-02T12:42:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "onnx",
+    "laya_browser",
+    "int8",
+    "quantization",
+    "browser-agent",
+    "pooki-pra",
+    "modernbert",
+    "web-navigation",
+    "edge-ai",
+    "text-classification",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 359522404,
+  "storage_human": "360 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "omida-ai/pluto-2.1",
+  "slug": "omida-ai-pluto-2-1",
+  "author": "omida-ai",
+  "url": "https://huggingface.co/omida-ai/pluto-2.1",
+  "created_at": "2026-11-02T17:26:13.000Z",
+  "updated_at": "2026-11-02T17:55:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3",
+    "decision-model",
+    "system-one",
+    "calibrated-decisions",
+    "typed-decisions",
+    "choice",
+    "noul",
+    "score",
+    "bosun",
+    "text-classification",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:SargeDev/jev-distill-corpus-v3",
+    "base_model:Hanno-Labs/bosun-v3.1-1.7b",
+    "base_model:finetune:Hanno-Labs/bosun-v3.1-1.7b",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720552448,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3454822944,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B, Hanno-Labs/bosun-v3.1-1.7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed Decisions",
+      "dataset": "LocalLLaMA/typed-decisions",
+      "metric": "Accuracy",
+      "value": 0.6695
+    },
+    {
+      "task": "Typed Decisions",
+      "dataset": "LocalLLaMA/typed-decisions",
+      "metric": "Brier",
+      "value": 0.1261
+    },
+    {
+      "task": "Typed Decisions",
+      "dataset": "LocalLLaMA/typed-decisions",
+      "metric": "KL",
+      "value": 0.2139
+    },
+    {
+      "task": "DecisionBench matched subset",
+      "dataset": "Hanno-Labs/decision-bench",
+      "metric": "Accuracy",
+      "value": 0.7208
+    },
+    {
+      "task": "DecisionBench matched subset",
+      "dataset": "Hanno-Labs/decision-bench",
+      "metric": "Brier",
+      "value": 0.373
+    },
+    {
+      "task": "DecisionBench matched subset",
+      "dataset": "Hanno-Labs/decision-bench",
+      "metric": "NLL",
+      "value": 0.7439
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "NardoCreations/birefnet-lite-webgpu",
+  "slug": "nardocreations-birefnet-lite-webgpu",
+  "author": "NardoCreations",
+  "url": "https://huggingface.co/NardoCreations/birefnet-lite-webgpu",
+  "created_at": "2026-11-02T15:50:35.000Z",
+  "updated_at": "2026-11-02T15:50:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "birefnet",
+  "languages": [],
+  "tags": [
+    "birefnet",
+    "onnx",
+    "background-removal",
+    "webgpu",
+    "image-segmentation",
+    "base_model:ZhengPeng7/BiRefNet_lite",
+    "base_model:quantized:ZhengPeng7/BiRefNet_lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187983793,
+  "storage_human": "188 MB",
+  "base_model": "ZhengPeng7/BiRefNet_lite",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

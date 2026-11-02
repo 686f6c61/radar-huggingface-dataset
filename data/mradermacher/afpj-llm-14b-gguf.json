@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AFPJ-LLM-14B-GGUF",
+  "slug": "mradermacher-afpj-llm-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AFPJ-LLM-14B-GGUF",
+  "created_at": "2025-11-13T21:53:57.000Z",
+  "updated_at": "2026-11-02T14:40:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:lxl3129/AFPJ-LLM-14B",
+    "base_model:quantized:lxl3129/AFPJ-LLM-14B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043513760,
+  "storage_human": "102.0 GB",
+  "base_model": "lxl3129/AFPJ-LLM-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

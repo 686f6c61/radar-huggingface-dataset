@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-OvisOCR3-GGUF",
+  "slug": "webmp3-sakura-ovisocr3-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-OvisOCR3-GGUF",
+  "created_at": "2026-11-02T14:52:36.000Z",
+  "updated_at": "2026-11-02T14:58:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "sakura",
+    "en",
+    "zh",
+    "base_model:ATH-MaaS/OvisOCR3",
+    "base_model:quantized:ATH-MaaS/OvisOCR3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3642424256,
+  "storage_human": "3.6 GB",
+  "base_model": "ATH-MaaS/OvisOCR3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

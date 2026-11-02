@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ajay0007/receipt-extractor-qwen3-0.6b",
+  "slug": "ajay0007-receipt-extractor-qwen3-0-6b",
+  "author": "Ajay0007",
+  "url": "https://huggingface.co/Ajay0007/receipt-extractor-qwen3-0.6b",
+  "created_at": "2026-11-02T20:03:58.000Z",
+  "updated_at": "2026-11-02T20:04:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "id",
+    "de",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "receipt",
+    "receipt-parsing",
+    "information-extraction",
+    "json",
+    "on-device",
+    "litert",
+    "litert-lm",
+    "ocr",
+    "expense-splitting",
+    "conversational",
+    "en",
+    "id",
+    "de",
+    "fr",
+    "dataset:naver-clova-ix/cord-v2",
+    "dataset:podbilabs/wildreceipt-donut",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1817032722,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/LocalLLaMA on Reddit: OCR + LLM for Invoice Extraction",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcm5p2/ocr_llm_for_invoice_extraction/",
+      "snippet": "Hi, I'm currently renting a rtx3090ti on vast.ai and trying to setup olmocr but I got a bit problem (I'm using docker run instruction in the readme, and on ubuntu 22.04 but the only model shown up in the api list model is Qwen/Qwen3-0.6B). May I have your setup pipeline?"
+    }
+  ]
+}

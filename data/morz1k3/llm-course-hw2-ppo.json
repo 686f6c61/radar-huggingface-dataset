@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "morz1k3/llm-course-hw2-ppo",
+  "slug": "morz1k3-llm-course-hw2-ppo",
+  "author": "morz1k3",
+  "url": "https://huggingface.co/morz1k3/llm-course-hw2-ppo",
+  "created_at": "2026-11-02T19:01:58.000Z",
+  "updated_at": "2026-11-02T19:02:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515584,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538092712,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

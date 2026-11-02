@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aether-models/aether-kit-olmo-2-1b-instruct",
+  "slug": "aether-models-aether-kit-olmo-2-1b-instruct",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/aether-kit-olmo-2-1b-instruct",
+  "created_at": "2026-11-02T17:45:31.000Z",
+  "updated_at": "2026-11-02T17:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aether-kit",
+  "languages": [],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "on-device",
+    "apple",
+    "macos",
+    "olmo2",
+    "text-generation",
+    "base_model:allenai/OLMo-2-0425-1B-Instruct",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969981766,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …"
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "Aether — Your Personal Streaming Service for Apple Devices",
+      "url": "https://aetherplayer.com/",
+      "snippet": "Your own streaming service, without the subscription. One library, every Apple screen — including a private theater on Vision Pro."
+    },
+    {
+      "title": "The Aether - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aether",
+      "snippet": "Oct 3, 2025 · To get started with the Aether, you must construct a portal with a Glowstone frame and light it with a water bucket in …"
+    },
+    {
+      "title": "2CRSi franchit une étape importante dans le projet Aether",
+      "url": "https://www.zonebourse.com/actualite-bourse/2crsi-franchit-une-etape-importante-dans-le-projet-aether-ce785ddcde89ff22",
+      "snippet": "Oct 12, 2026 · La société Aether Infrastructures a signé, le vendredi 9 octobre 2026, une promesse de vente portant sur l'acquisition …"
+    }
+  ]
+}

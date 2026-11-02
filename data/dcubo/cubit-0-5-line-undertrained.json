@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "DCubo/Cubit-0.5-Line-undertrained",
+  "slug": "dcubo-cubit-0-5-line-undertrained",
+  "author": "DCubo",
+  "url": "https://huggingface.co/DCubo/Cubit-0.5-Line-undertrained",
+  "created_at": "2026-11-02T20:37:50.000Z",
+  "updated_at": "2026-11-02T20:44:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "ru",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 221725816,
+  "storage_human": "222 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/seamless-m4t-v2-large-mic",
+  "slug": "huggingface-mic-seamless-m4t-v2-large-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/seamless-m4t-v2-large-mic",
+  "created_at": "2026-10-30T10:47:54.000Z",
+  "updated_at": "2026-11-02T19:23:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "seamless_m4t_v2",
+    "mic",
+    "test-artifact",
+    "base_model:facebook/seamless-m4t-v2-large",
+    "base_model:finetune:facebook/seamless-m4t-v2-large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 127,
+  "trending_score": 0,
+  "parameters": 58995010,
+  "parameters_human": "59.0M",
+  "storage_bytes": 621991962,
+  "storage_human": "622 MB",
+  "base_model": "facebook/seamless-m4t-v2-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

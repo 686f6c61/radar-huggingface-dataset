@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "abhash-chakraborty/ophyx-350m-v3",
+  "slug": "abhash-chakraborty-ophyx-350m-v3",
+  "author": "abhash-chakraborty",
+  "url": "https://huggingface.co/abhash-chakraborty/ophyx-350m-v3",
+  "created_at": "2026-11-02T14:16:05.000Z",
+  "updated_at": "2026-11-02T14:33:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "code",
+    "python",
+    "en",
+    "base_model:abhash-chakraborty/ophyx-350m-v2",
+    "base_model:finetune:abhash-chakraborty/ophyx-350m-v2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 349237760,
+  "parameters_human": "349.2M",
+  "storage_bytes": 1396985936,
+  "storage_human": "1.4 GB",
+  "base_model": "abhash-chakraborty/ophyx-350m-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

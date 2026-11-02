@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BalanovAN/verdict",
+  "slug": "balanovan-verdict",
+  "author": "BalanovAN",
+  "url": "https://huggingface.co/BalanovAN/verdict",
+  "created_at": "2026-11-02T19:15:59.000Z",
+  "updated_at": "2026-11-02T19:17:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "verdict-tiny",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "verdict-tiny",
+    "text-classification",
+    "ai-agents",
+    "tool-use",
+    "cli",
+    "quantized",
+    "tiny-model",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197160,
+  "storage_human": "197160 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

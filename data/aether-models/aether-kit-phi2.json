@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aether-models/aether-kit-phi2",
+  "slug": "aether-models-aether-kit-phi2",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/aether-kit-phi2",
+  "created_at": "2026-11-02T18:47:40.000Z",
+  "updated_at": "2026-11-02T18:51:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aether-kit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "aether-kit",
+    "core-ai",
+    "phi",
+    "text-generation",
+    "experimental",
+    "en",
+    "base_model:microsoft/phi-2",
+    "base_model:finetune:microsoft/phi-2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5561481390,
+  "storage_human": "5.6 GB",
+  "base_model": "microsoft/phi-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …"
+    },
+    {
+      "title": "The Aether - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aether",
+      "snippet": "Oct 3, 2025 · To get started with the Aether, you must construct a portal with a Glowstone frame and light it with a water bucket in …"
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "2CRSi dévoile le consortium ÆTHER pour candidater aux \" AI ...",
+      "url": "https://www.lejournaldesentreprises.com/breve/2crsi-devoile-le-consortium-aether-pour-candidater-aux-ai-gigafactories-europeennes-2146341",
+      "snippet": "Jul 8, 2026 · Le projet, porté par la société AETHER Infrastructures, ambitionne de constituer un réseau européen de centres de …"
+    }
+  ]
+}

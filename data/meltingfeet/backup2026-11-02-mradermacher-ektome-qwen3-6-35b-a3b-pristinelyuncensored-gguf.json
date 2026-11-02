@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "meltingfeet/backup2026-11-02-mradermacher-Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-GGUF",
+  "slug": "meltingfeet-backup2026-11-02-mradermacher-ektome-qwen3-6-35b-a3b-pristinelyuncensored-gguf",
+  "author": "meltingfeet",
+  "url": "https://huggingface.co/meltingfeet/backup2026-11-02-mradermacher-Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-GGUF",
+  "created_at": "2026-11-02T18:59:32.000Z",
+  "updated_at": "2026-11-02T19:22:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ektome",
+    "abliterated",
+    "uncensored",
+    "pristinely-uncensored",
+    "no-finetuning",
+    "no-training",
+    "moe",
+    "vision-language",
+    "en",
+    "base_model:Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored",
+    "base_model:quantized:Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 244419000640,
+  "storage_human": "244.4 GB",
+  "base_model": "Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

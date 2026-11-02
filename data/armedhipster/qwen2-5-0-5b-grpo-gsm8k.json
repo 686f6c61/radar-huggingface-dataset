@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ArmedHipster/qwen2.5-0.5b-grpo-gsm8k",
+  "slug": "armedhipster-qwen2-5-0-5b-grpo-gsm8k",
+  "author": "ArmedHipster",
+  "url": "https://huggingface.co/ArmedHipster/qwen2.5-0.5b-grpo-gsm8k",
+  "created_at": "2026-11-02T18:08:51.000Z",
+  "updated_at": "2026-11-02T18:12:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "reinforcement-learning",
+    "lora",
+    "math",
+    "gsm8k",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35237104,
+  "storage_human": "35 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

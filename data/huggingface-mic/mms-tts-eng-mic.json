@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/mms-tts-eng-mic",
+  "slug": "huggingface-mic-mms-tts-eng-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/mms-tts-eng-mic",
+  "created_at": "2026-10-30T22:41:03.000Z",
+  "updated_at": "2026-11-02T15:30:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vits",
+    "mic",
+    "test-artifact",
+    "base_model:facebook/mms-tts-eng",
+    "base_model:finetune:facebook/mms-tts-eng",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": 15610576,
+  "parameters_human": "15.6M",
+  "storage_bytes": 127931512,
+  "storage_human": "128 MB",
+  "base_model": "facebook/mms-tts-eng",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

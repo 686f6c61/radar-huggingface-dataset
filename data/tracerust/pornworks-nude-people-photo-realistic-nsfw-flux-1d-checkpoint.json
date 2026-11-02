@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "TracerUst/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint",
+  "slug": "tracerust-pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint",
+  "author": "TracerUst",
+  "url": "https://huggingface.co/TracerUst/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint",
+  "created_at": "2026-11-02T14:01:27.000Z",
+  "updated_at": "2026-11-02T14:01:57.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nsfw",
+    "sdxl",
+    "art",
+    "image",
+    "en",
+    "license:openrail++",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11901496800,
+  "storage_human": "11.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

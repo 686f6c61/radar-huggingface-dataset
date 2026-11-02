@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ss-lab/LFM2.5-1.2B-Thinking-GGUF",
+  "slug": "ss-lab-lfm2-5-1-2b-thinking-gguf",
+  "author": "ss-lab",
+  "url": "https://huggingface.co/ss-lab/LFM2.5-1.2B-Thinking-GGUF",
+  "created_at": "2026-11-02T15:59:39.000Z",
+  "updated_at": "2026-11-02T16:01:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Thinking",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Thinking",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 9165780000,
+  "storage_human": "9.2 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

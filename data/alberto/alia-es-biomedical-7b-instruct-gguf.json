@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Alberto/ALIA-es-biomedical-7B-Instruct-gguf",
+  "slug": "alberto-alia-es-biomedical-7b-instruct-gguf",
+  "author": "Alberto",
+  "url": "https://huggingface.co/Alberto/ALIA-es-biomedical-7B-Instruct-gguf",
+  "created_at": "2026-11-01T11:59:07.000Z",
+  "updated_at": "2026-11-01T20:44:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "biomedical",
+    "clinical",
+    "spanish",
+    "conversational",
+    "es",
+    "dataset:SINAI/ALIA-es-biomedical-synthetic-instructions",
+    "arxiv:2502.08489",
+    "base_model:SINAI/ALIA-es-biomedical-7B-Base",
+    "base_model:quantized:SINAI/ALIA-es-biomedical-7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7768125440,
+  "parameters_human": "7.77B",
+  "storage_bytes": 54497468658,
+  "storage_human": "54.5 GB",
+  "base_model": "SINAI/ALIA-es-biomedical-7B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALBERTO - TOUCHABLE PANTS FOR A REASON",
+      "url": "https://www.alberto-pants.com/en/",
+      "snippet": "6 days ago · ALBERTO – Pants We Love. German premium pants label since 1922. Jeans, casual, dressy, golf, and bike pants from …Read more"
+    },
+    {
+      "title": "ALBERTO Jeans – Premium Denim | ALBERTO",
+      "url": "https://www.alberto-pants.com/en/pants/jeans/",
+      "snippet": "6 days ago · Extraordinary qualities. ALBERTO jeans always make you feel you're wearing something special. The denim fabrics feel …"
+    },
+    {
+      "title": "Ristorante Alberto | Haute Cuisine Italienne",
+      "url": "https://restaurant-alberto.fr/",
+      "snippet": "Depuis trois générations, la famille Alberto cultive l'art de recevoir et la passion des produits d'exception. Notre cuisine n'est pas …"
+    },
+    {
+      "title": "Moteurs diesel de remplacement - Agri & TP",
+      "url": "https://www.alberto-motors.fr/",
+      "snippet": "Alberto partenaire de la Fédération Nationale CUMA France Nous sommes heureux de vous annoncer notre partenariat avec la FN …"
+    },
+    {
+      "title": "D'alberto Haute Coiffure - Coiffeur Strasbourg - Visagiste Expert",
+      "url": "https://www.dalberto.fr/",
+      "snippet": "Bruno D’ALBERTO est né à Strasbourg en 1968. Il incarne la 3 ème génération de coiffeurs, perpétuant le métier et la passion …"
+    }
+  ]
+}

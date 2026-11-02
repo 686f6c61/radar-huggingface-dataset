@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "shomoukh/my_phishing_bert_model",
+  "slug": "shomoukh-my_phishing_bert_model",
+  "author": "shomoukh",
+  "url": "https://huggingface.co/shomoukh/my_phishing_bert_model",
+  "created_at": "2026-11-02T19:28:05.000Z",
+  "updated_at": "2026-11-02T19:39:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958624,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

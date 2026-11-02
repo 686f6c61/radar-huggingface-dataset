@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "LinusML/qwen2-promise-lora-prime",
+  "slug": "linusml-qwen2-promise-lora-prime",
+  "author": "LinusML",
+  "url": "https://huggingface.co/LinusML/qwen2-promise-lora-prime",
+  "created_at": "2026-11-02T19:19:19.000Z",
+  "updated_at": "2026-11-02T19:19:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20169841,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

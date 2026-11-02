@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "tatjr13/room-dirtiness-d6p2-s378-manual-20261102",
+  "slug": "tatjr13-room-dirtiness-d6p2-s378-manual-20261102",
+  "author": "tatjr13",
+  "url": "https://huggingface.co/tatjr13/room-dirtiness-d6p2-s378-manual-20261102",
+  "created_at": "2026-11-02T15:07:08.000Z",
+  "updated_at": "2026-11-02T15:07:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10568240,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

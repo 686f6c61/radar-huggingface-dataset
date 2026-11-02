@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "p-ramachandran/TinyLlama-1.1B-Chat-v1.0",
+  "slug": "p-ramachandran-tinyllama-1-1b-chat-v1-0",
+  "author": "p-ramachandran",
+  "url": "https://huggingface.co/p-ramachandran/TinyLlama-1.1B-Chat-v1.0",
+  "created_at": "2026-11-02T17:53:03.000Z",
+  "updated_at": "2026-11-02T17:53:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "en",
+    "dataset:cerebras/SlimPajama-627B",
+    "dataset:bigcode/starcoderdata",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200619587,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

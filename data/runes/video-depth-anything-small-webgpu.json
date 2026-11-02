@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "runes/video-depth-anything-small-webgpu",
+  "slug": "runes-video-depth-anything-small-webgpu",
+  "author": "runes",
+  "url": "https://huggingface.co/runes/video-depth-anything-small-webgpu",
+  "created_at": "2026-11-02T16:37:49.000Z",
+  "updated_at": "2026-11-02T16:37:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnxruntime-web",
+  "languages": [],
+  "tags": [
+    "onnxruntime-web",
+    "onnx",
+    "depth-estimation",
+    "video",
+    "webgpu",
+    "arxiv:2501.12375",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59425004,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tirage de Runes Gratuit en ligne",
+      "url": "https://www.123-runes.com/fr/",
+      "snippet": "Votre tirage de runes est gratuit en ligne pour découvrir les secrets de l'alphabet Futhark et les réponses qu'il vous apportera"
+    },
+    {
+      "title": "Runes - Tirage de runes gratuit en ligne - Croix Primorfiale - Tirage ...",
+      "url": "https://www.voirpoursavoir.fr/runes",
+      "snippet": "Venez faire un tirage des Runes, choisissez 3 ou 5 runes en fonction du tirage souhaité et découvrez votre avenir à travers les …"
+    },
+    {
+      "title": "Runes - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Runes",
+      "snippet": "Runes are the letters in a set of related alphabets, known as rune-rows, runic alphabets or futharks, native to the Germanic peoples. …"
+    },
+    {
+      "title": "Rune — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rune",
+      "snippet": "La plupart de ces inscriptions sont très courtes et difficilement compréhensibles. La plupart des runes préservées sont gravées sur …"
+    },
+    {
+      "title": "Runes signification : guide complet des 24 symboles vikings",
+      "url": "https://les-arts-divinatoires.com/2025/11/06/runes-signification/",
+      "snippet": "Nov 6, 2025 · Découvrez la signification des 24 runes du Futhark : symboles nordiques, interprétation, tirage divinatoire. Guide …"
+    }
+  ]
+}

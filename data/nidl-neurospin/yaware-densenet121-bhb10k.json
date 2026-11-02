@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nidl-neurospin/yaware-densenet121-bhb10k",
+  "slug": "nidl-neurospin-yaware-densenet121-bhb10k",
+  "author": "nidl-neurospin",
+  "url": "https://huggingface.co/nidl-neurospin/yaware-densenet121-bhb10k",
+  "created_at": "2026-11-02T16:11:29.000Z",
+  "updated_at": "2026-11-02T16:11:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nidl",
+  "languages": [],
+  "tags": [
+    "nidl",
+    "safetensors",
+    "neuroimaging",
+    "MRI",
+    "self-supervised",
+    "arxiv:2106.08808",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11912640,
+  "parameters_human": "11.9M",
+  "storage_bytes": 47740096,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "scienceverse/bibr-sat-6l-sm-hyb",
+  "slug": "scienceverse-bibr-sat-6l-sm-hyb",
+  "author": "scienceverse",
+  "url": "https://huggingface.co/scienceverse/bibr-sat-6l-sm-hyb",
+  "created_at": "2026-11-02T20:36:56.000Z",
+  "updated_at": "2026-11-02T20:38:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "xlm-token",
+    "sentence-segmentation",
+    "base_model:segment-any-text/sat-6l-sm",
+    "base_model:quantized:segment-any-text/sat-6l-sm",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 556450391,
+  "storage_human": "556 MB",
+  "base_model": "segment-any-text/sat-6l-sm",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

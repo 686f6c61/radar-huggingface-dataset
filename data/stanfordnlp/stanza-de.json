@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "stanfordnlp/stanza-de",
+  "slug": "stanfordnlp-stanza-de",
+  "author": "stanfordnlp",
+  "url": "https://huggingface.co/stanfordnlp/stanza-de",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2026-11-02T19:54:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "stanza",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "stanza",
+    "token-classification",
+    "de",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 1249,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36650599674,
+  "storage_human": "36.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

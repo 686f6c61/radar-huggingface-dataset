@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "bblackcat/Voices",
+  "slug": "bblackcat-voices",
+  "author": "bblackcat",
+  "url": "https://huggingface.co/bblackcat/Voices",
+  "created_at": "2026-10-04T10:04:06.000Z",
+  "updated_at": "2026-11-02T18:30:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1178829443,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

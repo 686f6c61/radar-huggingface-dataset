@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "GSMB/aya-refusal-v2-adapters",
+  "slug": "gsmb-aya-refusal-v2-adapters",
+  "author": "GSMB",
+  "url": "https://huggingface.co/GSMB/aya-refusal-v2-adapters",
+  "created_at": "2026-11-02T15:39:44.000Z",
+  "updated_at": "2026-11-02T15:39:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "safety",
+    "lora",
+    "multilingual",
+    "refusal",
+    "base_model:CohereLabs/tiny-aya-global",
+    "base_model:adapter:CohereLabs/tiny-aya-global",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178090704,
+  "storage_human": "178 MB",
+  "base_model": "CohereLabs/tiny-aya-global",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

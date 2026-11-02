@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ninenfn/llm-course-hw2-dpo",
+  "slug": "ninenfn-llm-course-hw2-dpo",
+  "author": "ninenfn",
+  "url": "https://huggingface.co/ninenfn/llm-course-hw2-dpo",
+  "created_at": "2026-11-02T09:30:16.000Z",
+  "updated_at": "2026-11-02T14:40:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "reward-trainer",
+    "dpo",
+    "rlhf",
+    "homework",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM-135M-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blonde Porn - 100% Free XXX Videos & Movies - 24Porn.com",
+      "url": "https://24porn.com/videos/blonde/",
+      "snippet": "Looking for Blonde porn? Free and online? On 24Porn you will always find some best Blonde videos and of course a lot of fresh movies."
+    }
+  ]
+}

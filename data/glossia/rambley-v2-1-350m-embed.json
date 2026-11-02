@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "glossia/Rambley-V2.1-350M-Embed",
+  "slug": "glossia-rambley-v2-1-350m-embed",
+  "author": "glossia",
+  "url": "https://huggingface.co/glossia/Rambley-V2.1-350M-Embed",
+  "created_at": "2026-11-02T02:02:56.000Z",
+  "updated_at": "2026-11-02T18:34:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "rambley_v2",
+    "sentence-similarity",
+    "feature-extraction",
+    "custom_code",
+    "dataset:nomic-ai/nomic-embed-unsupervised-data",
+    "dataset:nomic-ai/nomic-embed-supervised-data",
+    "base_model:glossia/Rambley-V2.1-350M",
+    "base_model:finetune:glossia/Rambley-V2.1-350M",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 348583480,
+  "parameters_human": "348.6M",
+  "storage_bytes": 697191840,
+  "storage_human": "697 MB",
+  "base_model": "glossia/Rambley-V2.1-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glossia",
+      "url": "https://glossia.ai/fr",
+      "snippet": "Glossia est un système d'exploitation linguistique open source où les linguistes et les équipes définissent comment votre …"
+    },
+    {
+      "title": "Glossia",
+      "url": "https://glossia.ai/",
+      "snippet": "Where do humans participate? Your team defines the voice and terminology, reviews translations, and refines the result. AI handles …"
+    },
+    {
+      "title": "Amazon.com: GLOSSIA AI Ultra Pro Smart Glasses: 4K Wearable …",
+      "url": "https://www.amazon.com/clp/B0G46KTH48",
+      "snippet": "GLOSSIA GLOSSIA AI Ultra Pro Smart Glasses: 4K Wearable Camera with 6-Axis EIS Stabilization, ChatGPT-4o Voice Assistant, …"
+    }
+  ]
+}

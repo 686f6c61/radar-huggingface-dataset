@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "JeevanDai/nepali-asr-whisper-backup-2026-11-02",
+  "slug": "jeevandai-nepali-asr-whisper-backup-2026-11-02",
+  "author": "JeevanDai",
+  "url": "https://huggingface.co/JeevanDai/nepali-asr-whisper-backup-2026-11-02",
+  "created_at": "2026-11-02T12:49:04.000Z",
+  "updated_at": "2026-11-02T12:50:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "whisper",
+    "automatic-speech-recognition",
+    "ne",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42725389,
+  "storage_human": "43 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

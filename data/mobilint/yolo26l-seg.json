@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mobilint/YOLO26l-seg",
+  "slug": "mobilint-yolo26l-seg",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/YOLO26l-seg",
+  "created_at": "2026-02-04T06:15:14.000Z",
+  "updated_at": "2026-11-02T16:26:45.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "mobilint",
+  "languages": [],
+  "tags": [
+    "mobilint",
+    "onnx",
+    "image-segmentation",
+    "instance-segmentation",
+    "aries-rb",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:quantized:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210589677,
+  "storage_human": "211 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

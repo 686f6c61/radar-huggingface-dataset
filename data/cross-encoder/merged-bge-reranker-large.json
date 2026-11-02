@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "cross-encoder/merged-bge-reranker-large",
+  "slug": "cross-encoder-merged-bge-reranker-large",
+  "author": "cross-encoder",
+  "url": "https://huggingface.co/cross-encoder/merged-bge-reranker-large",
+  "created_at": "2026-11-02T15:52:44.000Z",
+  "updated_at": "2026-11-02T15:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "cross-encoder",
+    "reranker",
+    "text-ranking",
+    "en",
+    "arxiv:2312.15503",
+    "arxiv:2402.03216",
+    "base_model:BAAI/bge-reranker-large",
+    "base_model:merge:BAAI/bge-reranker-large",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:merge:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559891457,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256697510,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-reranker-large, BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

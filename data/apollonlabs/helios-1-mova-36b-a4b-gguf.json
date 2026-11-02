@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ApollonLabs/Helios-1-MoVA-36B-A4B-GGUF",
+  "slug": "apollonlabs-helios-1-mova-36b-a4b-gguf",
+  "author": "ApollonLabs",
+  "url": "https://huggingface.co/ApollonLabs/Helios-1-MoVA-36B-A4B-GGUF",
+  "created_at": "2026-11-01T07:54:26.000Z",
+  "updated_at": "2026-11-02T20:41:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "k2-horizon",
+    "mova",
+    "moe",
+    "apollon-labs",
+    "text-generation",
+    "en",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 140905483872,
+  "storage_human": "140.9 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

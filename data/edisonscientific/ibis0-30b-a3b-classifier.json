@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "EdisonScientific/Ibis0-30B-A3B-Classifier",
+  "slug": "edisonscientific-ibis0-30b-a3b-classifier",
+  "author": "EdisonScientific",
+  "url": "https://huggingface.co/EdisonScientific/Ibis0-30B-A3B-Classifier",
+  "created_at": "2026-10-27T05:23:44.000Z",
+  "updated_at": "2026-10-29T18:50:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-classification",
+    "biology",
+    "calibration",
+    "scientific-reasoning",
+    "custom_code",
+    "en",
+    "dataset:EdisonScientific/EDB-Bio",
+    "base_model:Qwen/Qwen3-30B-A3B",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30220959745,
+  "parameters_human": "30.22B",
+  "storage_bytes": 241788331686,
+  "storage_human": "241.8 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

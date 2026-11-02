@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "maya-research/maya-transcribe",
+  "slug": "maya-research-maya-transcribe",
+  "author": "maya-research",
+  "url": "https://huggingface.co/maya-research/maya-transcribe",
+  "created_at": "2026-11-02T14:16:44.000Z",
+  "updated_at": "2026-11-02T14:16:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Civilisation maya — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Civilisation_maya",
+      "snippet": "L’aire culturelle maya antique doit être distinguée de la zone de peuplement maya actuelle. Elle se définit comme étant le territoire …Read more"
+    },
+    {
+      "title": "Autodesk Maya 2027 | Download & Buy Official Maya",
+      "url": "https://www.autodesk.com/products/maya/overview?msockid=0a58eead848d6f351c06f6a885866e65",
+      "snippet": "Discover Autodesk Maya, professional 3D animation and VFX software for creating expansive worlds, complex characters, and …"
+    },
+    {
+      "title": "Télécharger Maya | Essai gratuit de Maya | Autodesk",
+      "url": "https://www.autodesk.com/fr/products/maya/free-trial?msockid=0a58eead848d6f351c06f6a885866e65",
+      "snippet": "Téléchargez une version d’évaluation gratuite de 30 jours d’Autodesk Maya, notre logiciel de modélisation, d’animation, d’effets …"
+    },
+    {
+      "title": "Télécharger Maya (gratuit) Windows, Mac, Linux - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche431319-maya.html",
+      "snippet": "Oct 26, 2026 · Que vous souhaitiez créer un personnage de jeu vidéo, une scène de film d'animation ou une publicité télévisée, …"
+    },
+    {
+      "title": "Maya civilization - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maya_civilization",
+      "snippet": "The Maya script is the most sophisticated and highly developed writing system in the pre-Columbian Americas. The Maya civilization …"
+    }
+  ]
+}

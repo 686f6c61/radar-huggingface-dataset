@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "ufakai/ufakzeka-kulak",
+  "slug": "ufakai-ufakzeka-kulak",
+  "author": "ufakai",
+  "url": "https://huggingface.co/ufakai/ufakzeka-kulak",
+  "created_at": "2026-10-22T23:36:32.000Z",
+  "updated_at": "2026-11-02T18:26:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "safetensors",
+    "gguf",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "turkish",
+    "fastconformer",
+    "tdt",
+    "ctc",
+    "transformers",
+    "sherpa-onnx",
+    "mlx",
+    "tr",
+    "dataset:espnet/yodas_owsmv4",
+    "dataset:espnet/yodas3",
+    "dataset:issai/Turkish_Speech_Corpus",
+    "dataset:cloud0day3/antalia-voice-corpus",
+    "dataset:cloud0day3/alania-speech-captions-tr",
+    "dataset:espnet/yodas2",
+    "arxiv:2311.17741",
+    "arxiv:2310.02943",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 263,
+  "trending_score": 0,
+  "parameters": 31594087,
+  "parameters_human": "31.6M",
+  "storage_bytes": 1002238026,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "mlx",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition",
+      "dataset": "FLEURS Turkish (test)",
+      "metric": "WER (normalised)",
+      "value": 0.0921
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "FLEURS Turkish (test)",
+      "metric": "CER (normalised)",
+      "value": 0.0335
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Common Voice Scripted Speech 27.0 Turkish (test)",
+      "metric": "WER (normalised)",
+      "value": 0.0916
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Common Voice Scripted Speech 27.0 Turkish (test)",
+      "metric": "CER (normalised)",
+      "value": 0.0242
+    }
+  ],
+  "sources": []
+}

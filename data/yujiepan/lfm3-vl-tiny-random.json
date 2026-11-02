@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yujiepan/lfm3-vl-tiny-random",
+  "slug": "yujiepan-lfm3-vl-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/lfm3-vl-tiny-random",
+  "created_at": "2026-11-02T18:39:15.000Z",
+  "updated_at": "2026-11-02T18:39:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3_vl",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:finetune:LiquidAI/LFM3-VL-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13810176,
+  "parameters_human": "13.8M",
+  "storage_bytes": 45550394,
+  "storage_human": "46 MB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

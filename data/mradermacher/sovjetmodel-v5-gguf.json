@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SovjetModel-V5-GGUF",
+  "slug": "mradermacher-sovjetmodel-v5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SovjetModel-V5-GGUF",
+  "created_at": "2025-11-13T22:13:26.000Z",
+  "updated_at": "2026-11-02T14:39:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:MrEzeddin/SovjetModel-V5",
+    "base_model:quantized:MrEzeddin/SovjetModel-V5",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 161,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425328768,
+  "storage_human": "73.4 GB",
+  "base_model": "MrEzeddin/SovjetModel-V5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

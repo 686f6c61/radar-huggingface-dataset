@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Mobsal/MedPsy-v3.4",
+  "slug": "mobsal-medpsy-v3-4",
+  "author": "Mobsal",
+  "url": "https://huggingface.co/Mobsal/MedPsy-v3.4",
+  "created_at": "2026-08-01T11:38:50.000Z",
+  "updated_at": "2026-11-02T14:49:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "executorch",
+    "medpsy",
+    "medical",
+    "llama.cpp",
+    "ollama",
+    "qwen3",
+    "text-generation",
+    "en",
+    "fr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 8514446526,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

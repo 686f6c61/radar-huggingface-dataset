@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Timur-th/llm-course-hw2-dpo",
+  "slug": "timur-th-llm-course-hw2-dpo",
+  "author": "Timur-th",
+  "url": "https://huggingface.co/Timur-th/llm-course-hw2-dpo",
+  "created_at": "2026-11-02T18:51:16.000Z",
+  "updated_at": "2026-11-02T18:57:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "dpo",
+    "alignment",
+    "llm-course",
+    "smollm",
+    "conversational",
+    "en",
+    "dataset:HumanLLMs/Human-Like-DPO-Dataset",
+    "base_model:HuggingFaceTB/SmolLM-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM-135M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

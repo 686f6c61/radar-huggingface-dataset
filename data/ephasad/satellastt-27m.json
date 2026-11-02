@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "EphAsad/SatellaSTT-27M",
+  "slug": "ephasad-satellastt-27m",
+  "author": "EphAsad",
+  "url": "https://huggingface.co/EphAsad/SatellaSTT-27M",
+  "created_at": "2026-11-02T14:39:29.000Z",
+  "updated_at": "2026-11-02T14:59:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonshine",
+    "automatic-speech-recognition",
+    "science",
+    "microbiology",
+    "laboratory",
+    "en",
+    "dataset:EphAsad/STT-Science",
+    "dataset:openslr/librispeech_asr",
+    "base_model:moonshine-ai/moonshine-tiny",
+    "base_model:finetune:moonshine-ai/moonshine-tiny",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27092736,
+  "parameters_human": "27.1M",
+  "storage_bytes": 108389192,
+  "storage_human": "108 MB",
+  "base_model": "UsefulSensors/moonshine-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

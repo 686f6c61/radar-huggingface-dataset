@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Remek/basal-2.0-max-GGUF",
+  "slug": "remek-basal-2-0-max-gguf",
+  "author": "Remek",
+  "url": "https://huggingface.co/Remek/basal-2.0-max-GGUF",
+  "created_at": "2026-10-12T17:33:51.000Z",
+  "updated_at": "2026-11-02T18:34:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "typed-decisions",
+    "decision-making",
+    "classification",
+    "calibration",
+    "polish",
+    "text-generation",
+    "conversational",
+    "pl",
+    "en",
+    "base_model:speakleash/Bielik-PL-11B-v3.0-Instruct",
+    "base_model:quantized:speakleash/Bielik-PL-11B-v3.0-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "decision-model"
+  ],
+  "likes": 1,
+  "downloads_30d": 390,
+  "trending_score": 0,
+  "parameters": 11167748096,
+  "parameters_human": "11.17B",
+  "storage_bytes": 39709965504,
+  "storage_human": "39.7 GB",
+  "base_model": "speakleash/Bielik-PL-11B-v3.0-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

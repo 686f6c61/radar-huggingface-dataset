@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mimi-neoki/umi-arena-gigabrain07",
+  "slug": "mimi-neoki-umi-arena-gigabrain07",
+  "author": "mimi-neoki",
+  "url": "https://huggingface.co/mimi-neoki/umi-arena-gigabrain07",
+  "created_at": "2026-11-02T15:17:05.000Z",
+  "updated_at": "2026-11-02T15:18:04.000Z",
+  "license": "umi-arena-competition-and-upstream-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "umi-arena",
+    "gigabrain",
+    "vision-language-action",
+    "bimanual-manipulation",
+    "robotics",
+    "en",
+    "dataset:airoa-org/yubi-corl2026-umi-arena",
+    "base_model:open-gigaai/GigaBrain-0.7-3.5B-Base",
+    "base_model:finetune:open-gigaai/GigaBrain-0.7-3.5B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3529100784,
+  "parameters_human": "3.53B",
+  "storage_bytes": 7092970786,
+  "storage_human": "7.1 GB",
+  "base_model": "open-gigaai/GigaBrain-0.7-3.5B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

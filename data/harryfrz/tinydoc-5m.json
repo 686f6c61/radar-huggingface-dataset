@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "harryfrz/tinydoc-5m",
+  "slug": "harryfrz-tinydoc-5m",
+  "author": "harryfrz",
+  "url": "https://huggingface.co/harryfrz/tinydoc-5m",
+  "created_at": "2026-10-28T15:31:04.000Z",
+  "updated_at": "2026-11-01T06:29:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "document-understanding",
+    "document-parsing",
+    "key-information-extraction",
+    "receipts",
+    "invoices",
+    "pdf",
+    "cpu",
+    "image-to-text",
+    "en",
+    "dataset:naver-clova-ix/cord-v2",
+    "dataset:docling-project/DocLayNet-v1.2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 206614033,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "OCR",
+      "dataset": "OmniDocBench v1.5, English pages",
+      "metric": "Text edit distance, page average (lower is better)",
+      "value": 0.117
+    },
+    {
+      "task": "Text-line recognition",
+      "dataset": "CORD-v2 receipt lines",
+      "metric": "Character error rate, % (lower is better)",
+      "value": 1.23
+    },
+    {
+      "task": "Text-line recognition",
+      "dataset": "DocLayNet v1.2 lines",
+      "metric": "Character error rate, % (lower is better)",
+      "value": 8.94
+    }
+  ],
+  "sources": []
+}

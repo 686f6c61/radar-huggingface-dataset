@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5FNyYkbY",
+  "slug": "gradients-io-tournaments-tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5fnyykby",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5FNyYkbY",
+  "created_at": "2026-11-02T17:28:27.000Z",
+  "updated_at": "2026-11-02T17:28:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:gradients-io-tournaments/augmented-1023db4ccf176a1e",
+    "base_model:adapter:gradients-io-tournaments/augmented-1023db4ccf176a1e",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100690288,
+  "storage_human": "101 MB",
+  "base_model": "gradients-io-tournaments/augmented-1023db4ccf176a1e",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

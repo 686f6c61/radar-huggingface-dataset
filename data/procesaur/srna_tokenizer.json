@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "procesaur/Srna_tokenizer",
+  "slug": "procesaur-srna_tokenizer",
+  "author": "procesaur",
+  "url": "https://huggingface.co/procesaur/Srna_tokenizer",
+  "created_at": "2026-04-29T12:51:54.000Z",
+  "updated_at": "2026-11-02T15:40:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "sr"
+  ],
+  "tags": [
+    "SrnaTokenizer",
+    "custom_code",
+    "sr",
+    "dataset:procesaur/sr-tokenizer-test",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40240926,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

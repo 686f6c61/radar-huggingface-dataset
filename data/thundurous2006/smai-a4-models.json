@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Thundurous2006/smai-a4-models",
+  "slug": "thundurous2006-smai-a4-models",
+  "author": "Thundurous2006",
+  "url": "https://huggingface.co/Thundurous2006/smai-a4-models",
+  "created_at": "2026-11-02T16:44:52.000Z",
+  "updated_at": "2026-11-02T16:50:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2369952,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

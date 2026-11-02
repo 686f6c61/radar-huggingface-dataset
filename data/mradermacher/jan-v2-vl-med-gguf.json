@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Jan-v2-VL-med-GGUF",
+  "slug": "mradermacher-jan-v2-vl-med-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Jan-v2-VL-med-GGUF",
+  "created_at": "2025-11-13T22:42:14.000Z",
+  "updated_at": "2026-11-02T14:39:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "en",
+    "base_model:janhq/Jan-v2-VL-med",
+    "base_model:quantized:janhq/Jan-v2-VL-med",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 451,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 75336667392,
+  "storage_human": "75.3 GB",
+  "base_model": "janhq/Jan-v2-VL-med",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

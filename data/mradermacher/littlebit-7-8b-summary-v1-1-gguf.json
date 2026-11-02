@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LITTLEBIT-7.8B-Summary-v1.1-GGUF",
+  "slug": "mradermacher-littlebit-7-8b-summary-v1-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LITTLEBIT-7.8B-Summary-v1.1-GGUF",
+  "created_at": "2025-02-12T10:16:30.000Z",
+  "updated_at": "2026-11-02T20:19:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "sft",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 2405327400,
+  "parameters_human": "2.41B",
+  "storage_bytes": 21828241792,
+  "storage_human": "21.8 GB",
+  "base_model": "ByteCompany/LITTLEBIT-7.8B-Summary-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

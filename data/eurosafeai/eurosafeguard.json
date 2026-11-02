@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "EuroSafeAI/EuroSafeGuard",
+  "slug": "eurosafeai-eurosafeguard",
+  "author": "EuroSafeAI",
+  "url": "https://huggingface.co/EuroSafeAI/EuroSafeGuard",
+  "created_at": "2026-11-02T15:06:10.000Z",
+  "updated_at": "2026-11-02T15:06:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "safety",
+    "guardrail",
+    "constitutional-classifiers",
+    "jailbreak-detection",
+    "content-moderation",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 603662570,
+  "storage_human": "604 MB",
+  "base_model": "Qwen/Qwen3.5-9B, meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

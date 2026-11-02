@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "thisisdineth/apilageai",
+  "slug": "thisisdineth-apilageai",
+  "author": "thisisdineth",
+  "url": "https://huggingface.co/thisisdineth/apilageai",
+  "created_at": "2026-11-02T14:10:48.000Z",
+  "updated_at": "2026-11-02T14:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "si"
+  ],
+  "tags": [
+    "gguf",
+    "rag",
+    "education",
+    "ollama",
+    "sri-lanka",
+    "en",
+    "si",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 475729088,
+  "parameters_human": "475.7M",
+  "storage_bytes": 4336347392,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

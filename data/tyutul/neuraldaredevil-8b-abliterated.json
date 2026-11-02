@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Tyutul/NeuralDaredevil-8B-abliterated",
+  "slug": "tyutul-neuraldaredevil-8b-abliterated",
+  "author": "Tyutul",
+  "url": "https://huggingface.co/Tyutul/NeuralDaredevil-8B-abliterated",
+  "created_at": "2026-11-02T12:36:37.000Z",
+  "updated_at": "2026-11-02T12:36:38.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "dpo",
+    "dataset:mlabonne/orpo-dpo-mix-40k",
+    "base_model:mlabonne/Daredevil-8B-abliterated",
+    "base_model:finetune:mlabonne/Daredevil-8B-abliterated",
+    "license:llama3",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556096,
+  "storage_human": "16.1 GB",
+  "base_model": "mlabonne/Daredevil-8B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge (25-Shot)",
+      "metric": "normalized accuracy",
+      "value": 69.28
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (10-Shot)",
+      "metric": "normalized accuracy",
+      "value": 85.05
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-Shot)",
+      "metric": "accuracy",
+      "value": 69.1
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA (0-shot)",
+      "metric": null,
+      "value": 60
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Winogrande (5-shot)",
+      "metric": "accuracy",
+      "value": 78.69
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8k (5-shot)",
+      "metric": "accuracy",
+      "value": 71.8
+    }
+  ],
+  "sources": []
+}

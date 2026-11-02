@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Remek/basal-2.0-mini-GGUF",
+  "slug": "remek-basal-2-0-mini-gguf",
+  "author": "Remek",
+  "url": "https://huggingface.co/Remek/basal-2.0-mini-GGUF",
+  "created_at": "2026-10-12T17:24:43.000Z",
+  "updated_at": "2026-11-02T18:34:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "typed-decisions",
+    "decision-making",
+    "classification",
+    "calibration",
+    "polish",
+    "text-generation",
+    "conversational",
+    "pl",
+    "en",
+    "base_model:speakleash/Bielik-1.5B-v3.0-Instruct",
+    "base_model:quantized:speakleash/Bielik-1.5B-v3.0-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "decision-model"
+  ],
+  "likes": 0,
+  "downloads_30d": 454,
+  "trending_score": 0,
+  "parameters": 1596507648,
+  "parameters_human": "1.60B",
+  "storage_bytes": 5735413920,
+  "storage_human": "5.7 GB",
+  "base_model": "speakleash/Bielik-1.5B-v3.0-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

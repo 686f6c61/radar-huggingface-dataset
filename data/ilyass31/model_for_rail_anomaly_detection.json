@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ilyass31/model_for_rail_anomaly_detection",
+  "slug": "ilyass31-model_for_rail_anomaly_detection",
+  "author": "ilyass31",
+  "url": "https://huggingface.co/ilyass31/model_for_rail_anomaly_detection",
+  "created_at": "2026-11-02T13:38:58.000Z",
+  "updated_at": "2026-11-02T13:40:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ijepa",
+    "image-feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 630762240,
+  "parameters_human": "630.8M",
+  "storage_bytes": 2523108984,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

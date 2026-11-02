@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/YarnGPT2-GGUF",
+  "slug": "mradermacher-yarngpt2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/YarnGPT2-GGUF",
+  "created_at": "2025-02-27T21:43:48.000Z",
+  "updated_at": "2026-11-02T13:33:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:saheedniyi/YarnGPT2",
+    "base_model:quantized:saheedniyi/YarnGPT2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": 365753280,
+  "parameters_human": "365.8M",
+  "storage_bytes": 3784349568,
+  "storage_human": "3.8 GB",
+  "base_model": "saheedniyi/YarnGPT2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

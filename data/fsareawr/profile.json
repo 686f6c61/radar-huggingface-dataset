@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "fsareawr/profile",
+  "slug": "fsareawr-profile",
+  "author": "fsareawr",
+  "url": "https://huggingface.co/fsareawr/profile",
+  "created_at": "2026-11-02T16:43:18.000Z",
+  "updated_at": "2026-11-02T17:18:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5 \"Luwanda Jones\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/luwanda/jones",
+      "snippet": "View the profiles of professionals named \"Luwanda Jones\" on LinkedIn. There are 5 professionals named \"Luwanda Jones\", who use …"
+    },
+    {
+      "title": "2 \"Luwanda Foster Jones\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Luwanda/Foster+Jones",
+      "snippet": "View the profiles of professionals named &quot;Luwanda Foster Jones&quot; on LinkedIn."
+    },
+    {
+      "title": "3 \"Luanda Jones\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Luanda/Jones",
+      "snippet": "There are 3 professionals named &quot;Luanda Jones&quot;, who use LinkedIn to exchange information, ideas, and opportunities."
+    }
+  ]
+}

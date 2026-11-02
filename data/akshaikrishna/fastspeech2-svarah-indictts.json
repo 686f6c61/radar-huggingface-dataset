@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "akshaikrishna/fastspeech2-svarah-indictts",
+  "slug": "akshaikrishna-fastspeech2-svarah-indictts",
+  "author": "akshaikrishna",
+  "url": "https://huggingface.co/akshaikrishna/fastspeech2-svarah-indictts",
+  "created_at": "2026-11-02T16:14:16.000Z",
+  "updated_at": "2026-11-02T16:15:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "te"
+  ],
+  "tags": [
+    "text-to-speech",
+    "fastspeech2",
+    "en",
+    "te",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 842809238,
+  "storage_human": "843 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nouli-ai/nouli-cyber-specialists",
+  "slug": "nouli-ai-nouli-cyber-specialists",
+  "author": "nouli-ai",
+  "url": "https://huggingface.co/nouli-ai/nouli-cyber-specialists",
+  "created_at": "2026-11-02T19:28:15.000Z",
+  "updated_at": "2026-11-02T19:30:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "nouli",
+    "cybersecurity",
+    "cvss",
+    "mitre-attack",
+    "custom-inference",
+    "text-classification",
+    "en",
+    "dataset:Tenebrae/cvss31vectors",
+    "dataset:ctokx/tram-attack-multilabel-clean",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1716446568,
+  "storage_human": "1.7 GB",
+  "base_model": "answerdotai/ModernBERT-base, cisco-ai/SecureBERT2.0-base, ibm-research/CTI-BERT, Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

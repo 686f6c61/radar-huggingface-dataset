@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JeevanDai/whisper-small-nepali-backup-2026-11-02",
+  "slug": "jeevandai-whisper-small-nepali-backup-2026-11-02",
+  "author": "JeevanDai",
+  "url": "https://huggingface.co/JeevanDai/whisper-small-nepali-backup-2026-11-02",
+  "created_at": "2026-11-02T13:12:20.000Z",
+  "updated_at": "2026-11-02T13:13:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "ne",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967001113,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Air Conditioner Filter Cost Estimates and Price Ranges 2026",
+      "url": "https://qualityhomeaircare.com/air-conditioner-filter-cost-estimates-price-ranges/",
+      "snippet": "May 23, 2026 · This article gives practical pricing for air conditioner filter cost so buyers can budget for standard, pleated, HEPA …Read more"
+    },
+    {
+      "title": "AC Filter Replacement Cost Guide – Current Cost",
+      "url": "https://currentcost.org/ac-filter-replacement-cost/",
+      "snippet": "Jan 20, 2026 · Average homeowners spend on replacing air conditioning filters varies by filter type and accessibility. This guide …"
+    },
+    {
+      "title": "Cost of Air Filter Replacement: Typical Prices and What Affects Them ...",
+      "url": "https://qualityhomeaircare.com/cost-air-filter-replacement-typical-prices-what-affects-them/",
+      "snippet": "May 28, 2026 · The cost of air filter replacement varies widely depending on filter type, size, and whether a technician installs it; …"
+    },
+    {
+      "title": "Air Conditioner Filter Cost and Typical Prices Buyers See 2026",
+      "url": "https://heatingnewsjournal.com/air-conditioner-filter-cost-typical-prices-buyers-see/",
+      "snippet": "May 28, 2026 · Buyers usually pay $3-$15 for single 1″ disposable filters per unit, $15-$100 for pleated 2″-4″ whole-house filters, and …"
+    },
+    {
+      "title": "Air Conditioner Filter Cost and Replacement Price Ranges 2026",
+      "url": "https://www.heatpumppricesreviews.com/air-conditioner-filter-cost-replacement-price-ranges/",
+      "snippet": "May 19, 2026 · Air conditioner filter cost varies widely by filter type, size, and whether a homeowner or technician replaces it. Typical …"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "cstr/MI-GAN-512-GGUF",
+  "slug": "cstr-mi-gan-512-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/MI-GAN-512-GGUF",
+  "created_at": "2026-11-02T15:44:58.000Z",
+  "updated_at": "2026-11-02T15:45:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "crispembed",
+  "languages": [],
+  "tags": [
+    "crispembed",
+    "gguf",
+    "inpainting",
+    "image-inpainting",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7371382,
+  "parameters_human": "7.4M",
+  "storage_bytes": 71209536,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

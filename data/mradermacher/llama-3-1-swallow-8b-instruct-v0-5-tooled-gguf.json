@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.1-Swallow-8B-Instruct-v0.5-tooled-GGUF",
+  "slug": "mradermacher-llama-3-1-swallow-8b-instruct-v0-5-tooled-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-Swallow-8B-Instruct-v0.5-tooled-GGUF",
+  "created_at": "2025-11-13T22:26:42.000Z",
+  "updated_at": "2026-11-02T14:39:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:vericava/Llama-3.1-Swallow-8B-Instruct-v0.5-tooled",
+    "base_model:quantized:vericava/Llama-3.1-Swallow-8B-Instruct-v0.5-tooled",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 220,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820287616,
+  "storage_human": "71.8 GB",
+  "base_model": "vericava/Llama-3.1-Swallow-8B-Instruct-v0.5-tooled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

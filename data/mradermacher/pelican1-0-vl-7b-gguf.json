@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Pelican1.0-VL-7B-GGUF",
+  "slug": "mradermacher-pelican1-0-vl-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Pelican1.0-VL-7B-GGUF",
+  "created_at": "2025-11-13T22:49:40.000Z",
+  "updated_at": "2026-11-02T14:38:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "robotics",
+    "Physical AI",
+    "embodied-ai",
+    "multimodal-learning",
+    "en",
+    "base_model:X-Humanoid/Pelican1.0-VL-7B",
+    "base_model:quantized:X-Humanoid/Pelican1.0-VL-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 243,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357166016,
+  "storage_human": "70.4 GB",
+  "base_model": "X-Humanoid/Pelican1.0-VL-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

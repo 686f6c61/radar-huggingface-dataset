@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SJT-990M-GGUF",
+  "slug": "mradermacher-sjt-990m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SJT-990M-GGUF",
+  "created_at": "2025-02-08T09:39:15.000Z",
+  "updated_at": "2026-11-02T20:20:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "sft",
+    "en",
+    "ja",
+    "base_model:Sakalti/SJT-990M",
+    "base_model:quantized:Sakalti/SJT-990M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 988064640,
+  "parameters_human": "988.1M",
+  "storage_bytes": 10202117504,
+  "storage_human": "10.2 GB",
+  "base_model": "Sakalti/SJT-990M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

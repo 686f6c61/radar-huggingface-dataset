@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tc-huang-mahjong/act_mahjong_v1_reach01_red",
+  "slug": "tc-huang-mahjong-act_mahjong_v1_reach01_red",
+  "author": "tc-huang-mahjong",
+  "url": "https://huggingface.co/tc-huang-mahjong/act_mahjong_v1_reach01_red",
+  "created_at": "2026-11-02T17:50:26.000Z",
+  "updated_at": "2026-11-02T17:54:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:tc-huang-mahjong/mahjong_v1_reach01_red_ovphysx_perturb_off5_mirabilis-mac",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 1653628208,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

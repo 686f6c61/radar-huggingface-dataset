@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "RenderBob3/ltx-video-2b-0.9.6-distilled-mlx",
+  "slug": "renderbob3-ltx-video-2b-0-9-6-distilled-mlx",
+  "author": "RenderBob3",
+  "url": "https://huggingface.co/RenderBob3/ltx-video-2b-0.9.6-distilled-mlx",
+  "created_at": "2026-11-02T20:07:16.000Z",
+  "updated_at": "2026-11-02T20:36:11.000Z",
+  "license": "ltxv-open-weights-license-0.x",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "ltx-video",
+    "apple-silicon",
+    "image-to-video",
+    "base_model:Lightricks/LTX-Video",
+    "base_model:finetune:Lightricks/LTX-Video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15498641226,
+  "storage_human": "15.5 GB",
+  "base_model": "Lightricks/LTX-Video",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

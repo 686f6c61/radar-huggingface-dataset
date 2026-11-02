@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ctcheung/microduck-sock-heist-6m-progress12-v3-from1500-10k",
+  "slug": "ctcheung-microduck-sock-heist-6m-progress12-v3-from1500-10k",
+  "author": "ctcheung",
+  "url": "https://huggingface.co/ctcheung/microduck-sock-heist-6m-progress12-v3-from1500-10k",
+  "created_at": "2026-11-02T14:33:16.000Z",
+  "updated_at": "2026-11-02T14:33:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5676064,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

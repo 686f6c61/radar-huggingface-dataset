@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "harshbhalodia/loonie-guru-gguf",
+  "slug": "harshbhalodia-loonie-guru-gguf",
+  "author": "harshbhalodia",
+  "url": "https://huggingface.co/harshbhalodia/loonie-guru-gguf",
+  "created_at": "2026-10-31T22:13:46.000Z",
+  "updated_at": "2026-11-02T13:03:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "loonie",
+    "personal-finance",
+    "qwen3-vl",
+    "llama.cpp",
+    "en",
+    "base_model:harshbhalodia/loonie-guru",
+    "base_model:quantized:harshbhalodia/loonie-guru",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 3336606752,
+  "storage_human": "3.3 GB",
+  "base_model": "harshbhalodia/loonie-guru",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/0810-SFT-github-orlm-industryor-14B-5e-6-64-GGUF",
+  "slug": "mradermacher-0810-sft-github-orlm-industryor-14b-5e-6-64-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/0810-SFT-github-orlm-industryor-14B-5e-6-64-GGUF",
+  "created_at": "2025-08-15T13:53:56.000Z",
+  "updated_at": "2026-11-02T14:40:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 253,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987583648,
+  "storage_human": "102.0 GB",
+  "base_model": "OptShare/0810-SFT-github-orlm-industryor-14B-5e-6-64",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

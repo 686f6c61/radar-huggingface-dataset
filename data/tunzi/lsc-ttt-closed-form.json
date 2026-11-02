@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "TunZi/LSC-ttt-closed-form",
+  "slug": "tunzi-lsc-ttt-closed-form",
+  "author": "TunZi",
+  "url": "https://huggingface.co/TunZi/LSC-ttt-closed-form",
+  "created_at": "2026-11-02T14:58:55.000Z",
+  "updated_at": "2026-11-02T15:40:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gérer ses comptes en France et à l'étranger | BNP Paribas",
+      "url": "https://mabanque.bnpparibas/fr/gerer/comptes-et-formules/gerer-ses-comptes",
+      "snippet": "Un ensemble de services accessibles en ligne pour faciliter la gestion de vos comptes en France et à l’étranger."
+    },
+    {
+      "title": "Clavier Virtuel - BNP Paribas Nouvelle Calédonie",
+      "url": "https://qua.ncal.staging.mabanque.bnpparibas/",
+      "snippet": "Informations Client Si vous rencontrez des problèmes techniques lors de votre navigation, nous vous invitons à contacter nos …"
+    }
+  ]
+}

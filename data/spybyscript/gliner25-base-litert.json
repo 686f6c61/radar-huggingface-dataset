@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "spybyscript/gliner25-base-litert",
+  "slug": "spybyscript-gliner25-base-litert",
+  "author": "spybyscript",
+  "url": "https://huggingface.co/spybyscript/gliner25-base-litert",
+  "created_at": "2026-10-29T19:42:59.000Z",
+  "updated_at": "2026-11-02T18:18:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "gliner2",
+    "android",
+    "on-device",
+    "en",
+    "base_model:fastino/gliner2.5-base-v1",
+    "base_model:finetune:fastino/gliner2.5-base-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586105024,
+  "storage_human": "586 MB",
+  "base_model": "fastino/gliner2.5-base-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

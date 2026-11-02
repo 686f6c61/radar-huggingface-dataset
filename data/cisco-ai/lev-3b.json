@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "cisco-ai/lev-3b",
+  "slug": "cisco-ai-lev-3b",
+  "author": "cisco-ai",
+  "url": "https://huggingface.co/cisco-ai/lev-3b",
+  "created_at": "2026-10-29T01:23:18.000Z",
+  "updated_at": "2026-11-02T17:54:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "lev",
+    "log-analysis",
+    "anomaly-detection",
+    "cybersecurity",
+    "lora",
+    "decision-model",
+    "calibration",
+    "multiple-choice",
+    "en",
+    "arxiv:2610.38915",
+    "base_model:ibm-granite/granite-4.1-3b-base",
+    "base_model:adapter:ibm-granite/granite-4.1-3b-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129858632,
+  "storage_human": "130 MB",
+  "base_model": "ibm-granite/granite-4.1-3b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

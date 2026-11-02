@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "masterofaudio2077/voicetut-egyptian-tashkeel",
+  "slug": "masterofaudio2077-voicetut-egyptian-tashkeel",
+  "author": "masterofaudio2077",
+  "url": "https://huggingface.co/masterofaudio2077/voicetut-egyptian-tashkeel",
+  "created_at": "2026-11-02T08:20:55.000Z",
+  "updated_at": "2026-11-02T12:57:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "omnivoice",
+    "text-to-speech",
+    "arabic",
+    "egyptian-arabic",
+    "tashkeel",
+    "diacritics",
+    "ar",
+    "dataset:Rabe3/egyptian-arabic-tts-diacritized",
+    "base_model:mohammedaly22/VoiceTut-TTS",
+    "base_model:finetune:mohammedaly22/VoiceTut-TTS",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 12277953870,
+  "storage_human": "12.3 GB",
+  "base_model": "mohammedaly22/VoiceTut-TTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

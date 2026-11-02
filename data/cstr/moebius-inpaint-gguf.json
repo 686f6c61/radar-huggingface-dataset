@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "cstr/Moebius-inpaint-GGUF",
+  "slug": "cstr-moebius-inpaint-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/Moebius-inpaint-GGUF",
+  "created_at": "2026-11-02T15:48:37.000Z",
+  "updated_at": "2026-11-02T15:48:58.000Z",
+  "license": "moebius-upstream-records",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "crispembed",
+  "languages": [],
+  "tags": [
+    "crispembed",
+    "gguf",
+    "inpainting",
+    "image-inpainting",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 226194357,
+  "parameters_human": "226.2M",
+  "storage_bytes": 1924131616,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

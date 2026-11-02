@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Nablo404/birefnet-lite-webgpu",
+  "slug": "nablo404-birefnet-lite-webgpu",
+  "author": "Nablo404",
+  "url": "https://huggingface.co/Nablo404/birefnet-lite-webgpu",
+  "created_at": "2026-11-02T19:35:31.000Z",
+  "updated_at": "2026-11-02T19:36:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin",
+    "background-removal",
+    "webgpu",
+    "image-segmentation",
+    "base_model:onnx-community/BiRefNet_lite-ONNX",
+    "base_model:quantized:onnx-community/BiRefNet_lite-ONNX",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114623658,
+  "storage_human": "115 MB",
+  "base_model": "onnx-community/BiRefNet_lite-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

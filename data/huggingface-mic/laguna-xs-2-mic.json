@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Laguna-XS.2-mic",
+  "slug": "huggingface-mic-laguna-xs-2-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Laguna-XS.2-mic",
+  "created_at": "2026-10-29T18:01:08.000Z",
+  "updated_at": "2026-11-02T12:41:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "laguna",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:poolside/Laguna-XS.2",
+    "base_model:finetune:poolside/Laguna-XS.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 223,
+  "trending_score": 0,
+  "parameters": 13319208,
+  "parameters_human": "13.3M",
+  "storage_bytes": 54518621,
+  "storage_human": "55 MB",
+  "base_model": "poolside/Laguna-XS.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

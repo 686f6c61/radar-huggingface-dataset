@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Phips/PULSE",
+  "slug": "phips-pulse",
+  "author": "Phips",
+  "url": "https://huggingface.co/Phips/PULSE",
+  "created_at": "2026-11-02T08:44:46.000Z",
+  "updated_at": "2026-11-02T15:53:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "super-resolution",
+    "image-restoration",
+    "image-to-image",
+    "sisr",
+    "onnxruntime",
+    "tensorrt",
+    "spandrel",
+    "chainner",
+    "edge",
+    "deployment",
+    "mit",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27479276,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mrtonysipriany/qwen-3b-my-knowledge-merged",
+  "slug": "mrtonysipriany-qwen-3b-my-knowledge-merged",
+  "author": "mrtonysipriany",
+  "url": "https://huggingface.co/mrtonysipriany/qwen-3b-my-knowledge-merged",
+  "created_at": "2026-11-02T17:36:15.000Z",
+  "updated_at": "2026-11-02T17:41:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:mrtonysipriany/qwen-mixed-new-from-tonysipriany",
+    "base_model:finetune:mrtonysipriany/qwen-mixed-new-from-tonysipriany",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 6805679158,
+  "storage_human": "6.8 GB",
+  "base_model": "mrtonysipriany/qwen-mixed-new-from-tonysipriany",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen-3-32B-math-v1-GGUF",
+  "slug": "mradermacher-qwen-3-32b-math-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen-3-32B-math-v1-GGUF",
+  "created_at": "2025-11-13T22:33:37.000Z",
+  "updated_at": "2026-11-02T14:39:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "qwen3",
+    "vLLM",
+    "Qwen",
+    "en",
+    "dataset:unsloth/OpenMathReasoning-mini",
+    "dataset:PJMixers/Math-Multiturn-100K-ShareGPT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 408,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223976254144,
+  "storage_human": "224.0 GB",
+  "base_model": "Ali-Yaser/Qwen-3-32B-math-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

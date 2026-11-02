@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results",
+  "slug": "jhcift-llama-3-1-8b-instruct-cirf-zero-results",
+  "author": "JhCIFT",
+  "url": "https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results",
+  "created_at": "2026-11-02T12:33:03.000Z",
+  "updated_at": "2026-11-02T12:38:28.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3.1",
+    "cirf",
+    "reasoning",
+    "merged-lora",
+    "functional-tokens",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8034471936,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16086282126,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Election results: Find out who won across the country | Sky News",
+      "url": "https://election.news.sky.com/",
+      "snippet": "Sky News delivers breaking news, headlines and top stories from business, politics, entertainment and more in the UK and worldwide."
+    }
+  ]
+}

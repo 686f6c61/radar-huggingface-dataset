@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/NVIDIA-Nemotron-3-Nano-4B-BF16-mic",
+  "slug": "huggingface-mic-nvidia-nemotron-3-nano-4b-bf16-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/NVIDIA-Nemotron-3-Nano-4B-BF16-mic",
+  "created_at": "2026-10-29T15:28:00.000Z",
+  "updated_at": "2026-11-02T15:28:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 242,
+  "trending_score": 0,
+  "parameters": 20150968,
+  "parameters_human": "20.2M",
+  "storage_bytes": 156528660,
+  "storage_human": "157 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
