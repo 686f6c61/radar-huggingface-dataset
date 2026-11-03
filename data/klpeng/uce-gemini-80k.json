@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "klpeng/uce-gemini-80k",
+  "slug": "klpeng-uce-gemini-80k",
+  "author": "klpeng",
+  "url": "https://huggingface.co/klpeng/uce-gemini-80k",
+  "created_at": "2026-10-05T04:04:07.000Z",
+  "updated_at": "2026-11-03T20:22:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemini_uce",
+    "pytorch",
+    "sparse-encoder",
+    "interpretability",
+    "concept-activations",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 697,
+  "trending_score": 0,
+  "parameters": 247339008,
+  "parameters_human": "247.3M",
+  "storage_bytes": 1180628981,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

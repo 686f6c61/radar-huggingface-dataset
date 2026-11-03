@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Arc42/pronmaster",
+  "slug": "arc42-pronmaster",
+  "author": "Arc42",
+  "url": "https://huggingface.co/Arc42/pronmaster",
+  "created_at": "2026-11-03T18:16:09.000Z",
+  "updated_at": "2026-11-03T18:16:10.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 263528175201,
+  "storage_human": "263.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

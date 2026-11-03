@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "YMQY-MY/dsh-qingsheng-voice-models",
+  "slug": "ymqy-my-dsh-qingsheng-voice-models",
+  "author": "YMQY-MY",
+  "url": "https://huggingface.co/YMQY-MY/dsh-qingsheng-voice-models",
+  "created_at": "2026-11-03T17:45:12.000Z",
+  "updated_at": "2026-11-03T17:58:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "gguf",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "speech-recognition",
+    "vulkan",
+    "local",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 233999728,
+  "parameters_human": "234.0M",
+  "storage_bytes": 254211200,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

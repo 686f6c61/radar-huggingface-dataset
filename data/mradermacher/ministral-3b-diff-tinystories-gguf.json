@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ministral-3B-Diff-TinyStories-GGUF",
+  "slug": "mradermacher-ministral-3b-diff-tinystories-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ministral-3B-Diff-TinyStories-GGUF",
+  "created_at": "2026-04-14T06:03:06.000Z",
+  "updated_at": "2026-11-03T18:00:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:MMaghoumi/Nemotron-Labs-Diffusion-TinyStories-3b",
+    "base_model:quantized:MMaghoumi/Nemotron-Labs-Diffusion-TinyStories-3b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 32533285376,
+  "storage_human": "32.5 GB",
+  "base_model": "MMaghoumi/Nemotron-Labs-Diffusion-TinyStories-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

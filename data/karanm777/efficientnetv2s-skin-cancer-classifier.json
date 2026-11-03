@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "karanm777/efficientnetv2s-skin-cancer-classifier",
+  "slug": "karanm777-efficientnetv2s-skin-cancer-classifier",
+  "author": "karanm777",
+  "url": "https://huggingface.co/karanm777/efficientnetv2s-skin-cancer-classifier",
+  "created_at": "2026-09-26T14:47:12.000Z",
+  "updated_at": "2026-11-03T13:00:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "skin-cancer",
+    "medical-imaging",
+    "dermatology",
+    "efficientnetv2",
+    "image-classification",
+    "en",
+    "dataset:HAM10000",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 247255104,
+  "storage_human": "247 MB",
+  "base_model": "keras.applications.EfficientNetV2S",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

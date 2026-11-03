@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "hubnemo/Qwen3-8B-ALoRA-MTP-dense-40k",
+  "slug": "hubnemo-qwen3-8b-alora-mtp-dense-40k",
+  "author": "hubnemo",
+  "url": "https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-40k",
+  "created_at": "2026-11-03T16:54:23.000Z",
+  "updated_at": "2026-11-03T17:18:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5205083320,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

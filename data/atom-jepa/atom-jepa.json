@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "atom-jepa/atom-jepa",
+  "slug": "atom-jepa-atom-jepa",
+  "author": "atom-jepa",
+  "url": "https://huggingface.co/atom-jepa/atom-jepa",
+  "created_at": "2026-10-05T13:11:38.000Z",
+  "updated_at": "2026-11-03T12:58:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "chemistry",
+    "materials-science",
+    "molecules",
+    "crystals",
+    "self-supervised-learning",
+    "jepa",
+    "equivariant",
+    "graph-neural-network",
+    "pytorch",
+    "arxiv:2610.08400",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 469142556,
+  "storage_human": "469 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atom Learning",
+      "url": "https://app.atomlearning.com/public/login",
+      "snippet": "Log in to Atom Learning - the UK's leading 11 Plus / Pretest online revision platform, tailored to learning both at home and in the …"
+    },
+    {
+      "title": "Atom",
+      "url": "https://atom-editor.cc/",
+      "snippet": "Dec 15, 2022 · Atom is a desktop application built with HTML, JavaScript, CSS, and Node.js integration. It runs on Electron, a …"
+    },
+    {
+      "title": "Atom - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atom",
+      "snippet": "Though the word atom originally denoted a particle that cannot be cut into smaller particles, in modern scientific usage the atom is …"
+    },
+    {
+      "title": "Tailored Exam Prep for Entrance Exams & GCSEs | Atom Learning",
+      "url": "https://www.atomlearning.com/",
+      "snippet": "Atom for ages 7-11+ provides everything you need for a successful exam-day - tailored questions, teacher-led learning resources, …"
+    },
+    {
+      "title": "Atom - Download",
+      "url": "https://atom.en.softonic.com/",
+      "snippet": "Mar 3, 2026 · Atom is a programming language that actually describes itself as a hackable text editor. Developed by GitHub, it gives …"
+    }
+  ]
+}

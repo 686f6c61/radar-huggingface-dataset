@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "opticsWolf/embeddinggemma-2-onnx-fp16",
+  "slug": "opticswolf-embeddinggemma-2-onnx-fp16",
+  "author": "opticsWolf",
+  "url": "https://huggingface.co/opticsWolf/embeddinggemma-2-onnx-fp16",
+  "created_at": "2026-11-03T18:54:14.000Z",
+  "updated_at": "2026-11-03T18:57:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding_gemma2",
+    "feature-extraction",
+    "embedding",
+    "sentence-transformers",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 574681410,
+  "storage_human": "575 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

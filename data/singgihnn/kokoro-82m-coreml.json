@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "singgihnn/kokoro-82m-coreml",
+  "slug": "singgihnn-kokoro-82m-coreml",
+  "author": "singgihnn",
+  "url": "https://huggingface.co/singgihnn/kokoro-82m-coreml",
+  "created_at": "2026-11-03T16:03:59.000Z",
+  "updated_at": "2026-11-03T16:04:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "kokoro",
+    "text-to-speech",
+    "neural-engine",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:finetune:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81539926,
+  "storage_human": "82 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

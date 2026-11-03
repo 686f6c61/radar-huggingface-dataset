@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "marin-dna/marin-dna-exp586",
+  "slug": "marin-dna-marin-dna-exp586",
+  "author": "marin-dna",
+  "url": "https://huggingface.co/marin-dna/marin-dna-exp586",
+  "created_at": "2026-11-03T20:37:19.000Z",
+  "updated_at": "2026-11-03T20:42:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "biology",
+    "genomics",
+    "dna",
+    "moe",
+    "levanter",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3200932407,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marin Bikes",
+      "url": "https://www.marinbikes.com/",
+      "snippet": "Marin Bikes offers a world-class lineup of critically-acclaimed mountain, drop bar, fitness/transit and kids bikes, designed by a …"
+    },
+    {
+      "title": "Mairie de Marin - Commune Haute-Savoie Accueil - Horaires - Actualités",
+      "url": "https://www.mairie-marin.fr/",
+      "snippet": "Mairie de Marin - Commune Haute-Savoie Accueil - Horaires - Actualités L'accueil en Mairie du service urbanisme se fait sur rendez …"
+    },
+    {
+      "title": "Marin (Haute-Savoie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Marin_(Haute-Savoie)",
+      "snippet": "Marin est une commune française située dans le département de la Haute-Savoie, en région Auvergne-Rhône-Alpes."
+    },
+    {
+      "title": "Marin (profession) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Marin_(profession)",
+      "snippet": "Un marin est une personne dont la profession est de naviguer sur les mers et les océans. Il existe plusieurs types de professions …"
+    },
+    {
+      "title": "Maritime Research Institute Netherlands | MARIN",
+      "url": "https://www.marin.nl/en",
+      "snippet": "Oct 4, 2026 · Research institute MARIN is a provider of advanced expertise and independent research for the maritime industry. …"
+    }
+  ]
+}

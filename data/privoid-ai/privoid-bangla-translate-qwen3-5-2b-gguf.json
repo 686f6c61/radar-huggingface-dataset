@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B-GGUF",
+  "slug": "privoid-ai-privoid-bangla-translate-qwen3-5-2b-gguf",
+  "author": "Privoid-ai",
+  "url": "https://huggingface.co/Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B-GGUF",
+  "created_at": "2026-11-03T17:36:01.000Z",
+  "updated_at": "2026-11-03T17:36:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "translation",
+    "machine-translation",
+    "bangla",
+    "bengali",
+    "banglish",
+    "romanized-bengali",
+    "bangla-to-english",
+    "bengali-to-english",
+    "bn-en",
+    "informal",
+    "colloquial",
+    "slang",
+    "code-mixed",
+    "offline",
+    "qwen3.5",
+    "bn",
+    "en",
+    "base_model:Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B",
+    "base_model:quantized:Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 5974063040,
+  "storage_human": "6.0 GB",
+  "base_model": "Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Privoid-ai/Privoid-Bangla-SSC-Mobile · Hugging Face",
+      "url": "https://huggingface.co/Privoid-ai/Privoid-Bangla-SSC-Mobile",
+      "snippet": "Text Generation model with 5B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Privoid-ai/Privoid-Tool-Qwen3-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Privoid-ai/Privoid-Tool-Qwen3-4B-GGUF",
+      "snippet": "Privoid-ai / Privoid-Tool-Qwen3-4B-GGUF Like 0 Text Generation GGUF English function-calling tool-use qwen3 conversational …"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large and small language models (LLM and SLM) developed by Alibaba Cloud.Its latest version, Qwen3.8; the 2.4 trillion parameter model was the second largest and second most powerful open weights LLM and Chinese LLM released by 12 August 20…"
+    },
+    {
+      "title": "Best AI for Bangla Bengali Content 2026: Gemini & Qwen",
+      "url": "https://www.mangomindbd.com/blog/best-ai-for-bangla-bengali-content-2026",
+      "snippet": "Jul 6, 2026 · This guide compares the best AI models for Bangla/Bengali content creation in 2026, with real benchmark data and …"
+    }
+  ]
+}

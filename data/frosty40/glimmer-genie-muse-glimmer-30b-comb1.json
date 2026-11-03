@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Frosty40/glimmer-genie-Muse-Glimmer-30B-comb1",
+  "slug": "frosty40-glimmer-genie-muse-glimmer-30b-comb1",
+  "author": "Frosty40",
+  "url": "https://huggingface.co/Frosty40/glimmer-genie-Muse-Glimmer-30B-comb1",
+  "created_at": "2026-11-03T16:10:38.000Z",
+  "updated_at": "2026-11-03T16:33:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "muse-glimmer",
+    "game-design",
+    "agent-memory",
+    "angelx",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:adapter:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 209597440,
+  "parameters_human": "209.6M",
+  "storage_bytes": 1346379421,
+  "storage_human": "1.3 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

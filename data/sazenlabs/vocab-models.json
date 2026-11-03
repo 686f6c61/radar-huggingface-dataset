@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "SazenLabs/vocab-models",
+  "slug": "sazenlabs-vocab-models",
+  "author": "SazenLabs",
+  "url": "https://huggingface.co/SazenLabs/vocab-models",
+  "created_at": "2026-10-27T04:20:10.000Z",
+  "updated_at": "2026-11-03T16:39:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 9496222503,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

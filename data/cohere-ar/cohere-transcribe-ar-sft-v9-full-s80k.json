@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Cohere-AR/cohere-transcribe-ar-sft-v9-full-s80k",
+  "slug": "cohere-ar-cohere-transcribe-ar-sft-v9-full-s80k",
+  "author": "Cohere-AR",
+  "url": "https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full-s80k",
+  "created_at": "2026-11-03T13:34:41.000Z",
+  "updated_at": "2026-11-03T13:35:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "speech-recognition",
+    "arabic",
+    "english",
+    "code-switching",
+    "telephony",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2065770752,
+  "parameters_human": "2.07B",
+  "storage_bytes": 4131809616,
+  "storage_human": "4.1 GB",
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

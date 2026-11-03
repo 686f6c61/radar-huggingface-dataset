@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "TimHdm/slovami-ai-models",
+  "slug": "timhdm-slovami-ai-models",
+  "author": "TimHdm",
+  "url": "https://huggingface.co/TimHdm/slovami-ai-models",
+  "created_at": "2026-11-03T15:13:46.000Z",
+  "updated_at": "2026-11-03T15:19:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "speaker-diarization",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 724461167,
+  "storage_human": "724 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

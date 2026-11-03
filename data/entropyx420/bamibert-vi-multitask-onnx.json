@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "entropyx420/bamibert-vi-multitask-onnx",
+  "slug": "entropyx420-bamibert-vi-multitask-onnx",
+  "author": "entropyx420",
+  "url": "https://huggingface.co/entropyx420/bamibert-vi-multitask-onnx",
+  "created_at": "2026-10-24T06:37:35.000Z",
+  "updated_at": "2026-11-03T13:41:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "token-classification",
+    "vietnamese",
+    "word-segmentation",
+    "pos-tagging",
+    "vi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3079875740,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

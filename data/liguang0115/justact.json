@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "liguang0115/justact",
+  "slug": "liguang0115-justact",
+  "author": "liguang0115",
+  "url": "https://huggingface.co/liguang0115/justact",
+  "created_at": "2026-11-03T20:36:41.000Z",
+  "updated_at": "2026-11-03T20:37:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "world-model",
+    "action-representation",
+    "video",
+    "v-jepa-2",
+    "base_model:facebook/vjepa2-vitl-fpc64-256",
+    "base_model:finetune:facebook/vjepa2-vitl-fpc64-256",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5698384040,
+  "storage_human": "5.7 GB",
+  "base_model": "facebook/vjepa2-vitl-fpc64-256",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

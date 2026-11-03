@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "sander-puts/codiesp-convention-crossencoder-es",
+  "slug": "sander-puts-codiesp-convention-crossencoder-es",
+  "author": "sander-puts",
+  "url": "https://huggingface.co/sander-puts/codiesp-convention-crossencoder-es",
+  "created_at": "2026-11-03T14:14:09.000Z",
+  "updated_at": "2026-11-03T14:14:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "icd-10",
+    "clinical-coding",
+    "medical-coding",
+    "codiesp",
+    "spanish",
+    "clinical-nlp",
+    "cei-trace",
+    "es",
+    "base_model:PlanTL-GOB-ES/roberta-base-biomedical-clinical-es",
+    "base_model:finetune:PlanTL-GOB-ES/roberta-base-biomedical-clinical-es",
+    "license:cc-by-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125979650,
+  "parameters_human": "126.0M",
+  "storage_bytes": 503942744,
+  "storage_human": "504 MB",
+  "base_model": "PlanTL-GOB-ES/roberta-base-biomedical-clinical-es",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

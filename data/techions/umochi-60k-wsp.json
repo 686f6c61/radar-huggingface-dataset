@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "Techions/Umochi-60K-WSP",
+  "slug": "techions-umochi-60k-wsp",
+  "author": "Techions",
+  "url": "https://huggingface.co/Techions/Umochi-60K-WSP",
+  "created_at": "2026-11-03T15:23:45.000Z",
+  "updated_at": "2026-11-03T15:54:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "umochi",
+    "code",
+    "coding-assistant",
+    "java",
+    "netty",
+    "spring-boot",
+    "project-loom",
+    "virtual-threads",
+    "threejs",
+    "webgpu",
+    "swe-bench",
+    "weight-space-programming",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 120320,
+  "parameters_human": "120320",
+  "storage_bytes": 680152,
+  "storage_human": "680152 B",
+  "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "MultiPL-E Java Code Generation",
+      "dataset": "MultiPL-E (multiple-java)",
+      "metric": "Pass@1",
+      "value": 76.82
+    },
+    {
+      "task": "MultiPL-E Java Code Generation",
+      "dataset": "MultiPL-E (multiple-java)",
+      "metric": "Pass@10",
+      "value": 88.45
+    },
+    {
+      "task": "MultiPL-E JavaScript Code Generation",
+      "dataset": "MultiPL-E (multiple-js)",
+      "metric": "Pass@1",
+      "value": 81.24
+    },
+    {
+      "task": "MultiPL-E JavaScript Code Generation",
+      "dataset": "MultiPL-E (multiple-js)",
+      "metric": "Pass@10",
+      "value": 91.6
+    },
+    {
+      "task": "Software Engineering Bug Resolution",
+      "dataset": "SWE-bench Java Lite",
+      "metric": "Pass Rate",
+      "value": 100
+    },
+    {
+      "task": "Hard Netty Zero-Copy Leak Gate",
+      "dataset": "Netty Composite Zero-Copy under PARANOID",
+      "metric": "Leak Free Pass Rate",
+      "value": 100
+    },
+    {
+      "task": "Project Loom Virtual Thread Defense",
+      "dataset": "Loom 50K Thread Carrier Pinning Gate",
+      "metric": "Non-Pinning Pass Rate",
+      "value": 100
+    },
+    {
+      "task": "Three.js Anti-AI-Slop 3D Graphics",
+      "dataset": "Three.js InstancedMesh WebGPU Benchmark",
+      "metric": "Anti-Slop Audit Score",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

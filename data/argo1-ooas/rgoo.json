@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Argo1-OOAS/RGOO",
+  "slug": "argo1-ooas-rgoo",
+  "author": "Argo1-OOAS",
+  "url": "https://huggingface.co/Argo1-OOAS/RGOO",
+  "created_at": "2026-11-03T14:46:10.000Z",
+  "updated_at": "2026-11-03T14:46:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11978235,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "shaitanzx/FooocusExtend",
+  "slug": "shaitanzx-fooocusextend",
+  "author": "shaitanzx",
+  "url": "https://huggingface.co/shaitanzx/FooocusExtend",
+  "created_at": "2024-10-20T08:50:35.000Z",
+  "updated_at": "2026-11-03T19:33:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 87,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26545931382,
+  "storage_human": "26.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

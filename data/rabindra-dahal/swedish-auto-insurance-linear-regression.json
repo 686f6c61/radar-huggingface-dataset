@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "rabindra-dahal/swedish-auto-insurance-linear-regression",
+  "slug": "rabindra-dahal-swedish-auto-insurance-linear-regression",
+  "author": "rabindra-dahal",
+  "url": "https://huggingface.co/rabindra-dahal/swedish-auto-insurance-linear-regression",
+  "created_at": "2026-11-03T14:42:43.000Z",
+  "updated_at": "2026-11-03T14:51:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tabular",
+    "regression",
+    "pytorch",
+    "en",
+    "dataset:swedish-auto-insurance",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Oct 18, 2026 · Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs …"
+    },
+    {
+      "title": "Lidl autour de moi – adresses, horaires et itinéraire",
+      "url": "https://storelocatortool.com/v3/fr/recherche.php?enseigne=lidl&pays=france",
+      "snippet": "Lidl à proximité : magasins Lidl en France par ville, avec carte, adresse, horaires d'ouverture et itinéraire."
+    },
+    {
+      "title": "Trouver un magasin Lidl autour de moi | Villepratique",
+      "url": "https://www.villepratique.fr/lidl",
+      "snippet": "Notre annuaire vous aide à trouver rapidement un magasin Lidl proche de votre position. Recherchez par ville, code postal ou …"
+    }
+  ]
+}

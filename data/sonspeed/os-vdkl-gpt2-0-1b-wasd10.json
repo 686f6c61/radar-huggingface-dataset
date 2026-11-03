@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "sonspeed/os-vdkl-gpt2-0.1b-wasd10",
+  "slug": "sonspeed-os-vdkl-gpt2-0-1b-wasd10",
+  "author": "sonspeed",
+  "url": "https://huggingface.co/sonspeed/os-vdkl-gpt2-0.1b-wasd10",
+  "created_at": "2026-11-02T03:33:56.000Z",
+  "updated_at": "2026-11-03T08:05:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "os-vdkl",
+    "knowledge-distillation",
+    "gpt2",
+    "base_model:MiniLLM/init-gpt2-120M",
+    "base_model:finetune:MiniLLM/init-gpt2-120M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3987065936,
+  "storage_human": "4.0 GB",
+  "base_model": "MiniLLM/init-gpt2-120M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Mixtral104/Behemoth-128B-v3-FP8-BLOCK",
+  "slug": "mixtral104-behemoth-128b-v3-fp8-block",
+  "author": "Mixtral104",
+  "url": "https://huggingface.co/Mixtral104/Behemoth-128B-v3-FP8-BLOCK",
+  "created_at": "2026-11-03T14:51:47.000Z",
+  "updated_at": "2026-11-03T15:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "base_model:TheDrummer/Behemoth-128B-v3",
+    "base_model:quantized:TheDrummer/Behemoth-128B-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125025988608,
+  "parameters_human": "125.03B",
+  "storage_bytes": 128297772174,
+  "storage_human": "128.3 GB",
+  "base_model": "TheDrummer/Behemoth-128B-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

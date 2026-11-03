@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "m4gshm/Qwen2.5-Coder-1.5B-int8-sym",
+  "slug": "m4gshm-qwen2-5-coder-1-5b-int8-sym",
+  "author": "m4gshm",
+  "url": "https://huggingface.co/m4gshm/Qwen2.5-Coder-1.5B-int8-sym",
+  "created_at": "2026-11-03T20:06:51.000Z",
+  "updated_at": "2026-11-03T20:09:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen2",
+    "nncf",
+    "text-generation",
+    "conversational",
+    "code",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1564829116,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen-qwen2.5-coder-1.5b-instruct-gptq-int8",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen2.5-coder-1.5b-instruct-gptq-int8",
+      "snippet": "Qwen/Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int8 powered by Text Generation Inference (TGI) Example Notebook · Original Model Card · Text Generation Inference Documentation · You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    }
+  ]
+}

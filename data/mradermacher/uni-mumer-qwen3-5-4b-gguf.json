@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Uni-MuMER-Qwen3.5-4B-GGUF",
+  "slug": "mradermacher-uni-mumer-qwen3-5-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Uni-MuMER-Qwen3.5-4B-GGUF",
+  "created_at": "2026-04-14T06:17:53.000Z",
+  "updated_at": "2026-11-03T18:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uni-mumer",
+    "hmer",
+    "math-ocr",
+    "handwritten-math",
+    "latex",
+    "qwen3.5",
+    "vision-language",
+    "en",
+    "dataset:phxember/Uni-MuMER-Data",
+    "base_model:phxember/Uni-MuMER-Qwen3.5-4B",
+    "base_model:quantized:phxember/Uni-MuMER-Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 390,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945656064,
+  "storage_human": "39.9 GB",
+  "base_model": "phxember/Uni-MuMER-Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

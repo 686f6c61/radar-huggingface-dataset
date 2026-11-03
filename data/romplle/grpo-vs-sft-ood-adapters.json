@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "romplle/grpo-vs-sft-ood-adapters",
+  "slug": "romplle-grpo-vs-sft-ood-adapters",
+  "author": "romplle",
+  "url": "https://huggingface.co/romplle/grpo-vs-sft-ood-adapters",
+  "created_at": "2026-11-03T14:28:58.000Z",
+  "updated_at": "2026-11-03T15:06:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "minigrid",
+    "reinforcement-learning",
+    "base_model:lusxvr/nanoVLM-222M",
+    "base_model:adapter:lusxvr/nanoVLM-222M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 753378384,
+  "storage_human": "753 MB",
+  "base_model": "lusxvr/nanoVLM-222M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "stonarini/grepac-e5-small",
+  "slug": "stonarini-grepac-e5-small",
+  "author": "stonarini",
+  "url": "https://huggingface.co/stonarini/grepac-e5-small",
+  "created_at": "2026-11-03T19:20:11.000Z",
+  "updated_at": "2026-11-03T19:20:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "retrieval",
+    "legal",
+    "agriculture",
+    "eu-law",
+    "cap",
+    "sentence-similarity",
+    "en",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487720404,
+  "storage_human": "488 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Autobrik/act-ocbench-blue-cube-narrow",
+  "slug": "autobrik-act-ocbench-blue-cube-narrow",
+  "author": "Autobrik",
+  "url": "https://huggingface.co/Autobrik/act-ocbench-blue-cube-narrow",
+  "created_at": "2026-11-03T16:23:58.000Z",
+  "updated_at": "2026-11-03T17:51:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "ocbench",
+    "mujoco",
+    "dataset:Autobrik/ocbench-blue-cube-narrow-delta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 1653680728,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

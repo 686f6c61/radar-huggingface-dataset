@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Hussnain1/interviewmate-qwen2.5-1.5b-lora",
+  "slug": "hussnain1-interviewmate-qwen2-5-1-5b-lora",
+  "author": "Hussnain1",
+  "url": "https://huggingface.co/Hussnain1/interviewmate-qwen2.5-1.5b-lora",
+  "created_at": "2026-11-03T20:10:08.000Z",
+  "updated_at": "2026-11-03T20:34:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen2.5",
+    "interview",
+    "question-generation",
+    "structured-output",
+    "json",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 602503979,
+  "storage_human": "603 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

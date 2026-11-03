@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jupadev/new-model-test",
+  "slug": "jupadev-new-model-test",
+  "author": "jupadev",
+  "url": "https://huggingface.co/jupadev/new-model-test",
+  "created_at": "2026-11-03T19:30:50.000Z",
+  "updated_at": "2026-11-03T20:13:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "sentiment-analysis",
+    "imdb",
+    "en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "IMDB",
+      "metric": "Accuracy",
+      "value": 0.9111
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "IMDB",
+      "metric": "F1",
+      "value": 0.9121
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "IMDB",
+      "metric": "Precision",
+      "value": 0.9017
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "IMDB",
+      "metric": "Recall",
+      "value": 0.9228
+    }
+  ],
+  "sources": []
+}

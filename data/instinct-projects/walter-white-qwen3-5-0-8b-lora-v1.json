@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "instinct-projects/walter-white-qwen3.5-0.8b-lora-v1",
+  "slug": "instinct-projects-walter-white-qwen3-5-0-8b-lora-v1",
+  "author": "instinct-projects",
+  "url": "https://huggingface.co/instinct-projects/walter-white-qwen3.5-0.8b-lora-v1",
+  "created_at": "2026-11-03T18:47:20.000Z",
+  "updated_at": "2026-11-03T20:42:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "roleplay",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576443,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

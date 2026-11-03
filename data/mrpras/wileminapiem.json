@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mrpras/WileminaPiem",
+  "slug": "mrpras-wileminapiem",
+  "author": "mrpras",
+  "url": "https://huggingface.co/mrpras/WileminaPiem",
+  "created_at": "2026-11-03T12:49:37.000Z",
+  "updated_at": "2026-11-03T12:56:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1534929378,
+  "storage_human": "1.5 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

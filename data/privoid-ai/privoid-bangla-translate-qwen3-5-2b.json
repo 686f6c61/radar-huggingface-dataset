@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B",
+  "slug": "privoid-ai-privoid-bangla-translate-qwen3-5-2b",
+  "author": "Privoid-ai",
+  "url": "https://huggingface.co/Privoid-ai/Privoid-Bangla-Translate-Qwen3.5-2B",
+  "created_at": "2026-11-03T17:35:50.000Z",
+  "updated_at": "2026-11-03T17:36:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "translation",
+    "machine-translation",
+    "bangla",
+    "bengali",
+    "banglish",
+    "romanized-bengali",
+    "bangla-to-english",
+    "bengali-to-english",
+    "bn-en",
+    "code-mixed",
+    "informal",
+    "colloquial",
+    "slang",
+    "social-media",
+    "bangladesh",
+    "qwen3.5",
+    "lora",
+    "small-language-model",
+    "bn",
+    "en",
+    "dataset:AyonRoy29/informal_bn-en_machine_translation_dataset",
+    "dataset:Ayon128/Banglish-English",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62566192,
+  "storage_human": "63 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Bangla to English translation",
+      "dataset": "Informal Bangla (Bengali script) held-out test set",
+      "metric": "chrF++",
+      "value": 52.17
+    },
+    {
+      "task": "Bangla to English translation",
+      "dataset": "Informal Bangla (Bengali script) held-out test set",
+      "metric": "BLEU",
+      "value": 30.84
+    },
+    {
+      "task": "Bangla to English translation",
+      "dataset": "Banglish (Bangla in English letters) held-out test set",
+      "metric": "chrF++",
+      "value": 40.06
+    },
+    {
+      "task": "Bangla to English translation",
+      "dataset": "Banglish (Bangla in English letters) held-out test set",
+      "metric": "BLEU",
+      "value": 18.09
+    }
+  ],
+  "sources": []
+}

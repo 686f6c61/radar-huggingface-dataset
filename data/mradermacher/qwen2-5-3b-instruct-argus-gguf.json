@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-3B-instruct-argus-GGUF",
+  "slug": "mradermacher-qwen2-5-3b-instruct-argus-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-3B-instruct-argus-GGUF",
+  "created_at": "2025-02-14T00:45:04.000Z",
+  "updated_at": "2026-11-03T15:50:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:straikerinc/Qwen2.5-3B-instruct-argus",
+    "base_model:quantized:straikerinc/Qwen2.5-3B-instruct-argus",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940886656,
+  "storage_human": "27.9 GB",
+  "base_model": "straikerinc/Qwen2.5-3B-instruct-argus",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

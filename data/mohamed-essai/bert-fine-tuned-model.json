@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mohamed-essai/bert-fine-tuned-model",
+  "slug": "mohamed-essai-bert-fine-tuned-model",
+  "author": "mohamed-essai",
+  "url": "https://huggingface.co/mohamed-essai/bert-fine-tuned-model",
+  "created_at": "2026-10-29T20:07:34.000Z",
+  "updated_at": "2026-11-03T20:06:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "dataset:array/cola",
+    "arxiv:1910.09700",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 108340804,
+  "parameters_human": "108.3M",
+  "storage_bytes": 876033076,
+  "storage_human": "876 MB",
+  "base_model": "google-bert/bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

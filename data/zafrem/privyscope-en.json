@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "zafrem/privyscope-en",
+  "slug": "zafrem-privyscope-en",
+  "author": "zafrem",
+  "url": "https://huggingface.co/zafrem/privyscope-en",
+  "created_at": "2026-06-11T13:36:43.000Z",
+  "updated_at": "2026-11-03T15:02:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "redaction",
+    "privacy",
+    "english",
+    "ner",
+    "pii",
+    "en",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:quantized:FacebookAI/roberta-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 321027721,
+  "storage_human": "321 MB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

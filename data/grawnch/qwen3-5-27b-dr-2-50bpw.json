@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Grawnch/Qwen3.5-27B-DR-2.50bpw",
+  "slug": "grawnch-qwen3-5-27b-dr-2-50bpw",
+  "author": "Grawnch",
+  "url": "https://huggingface.co/Grawnch/Qwen3.5-27B-DR-2.50bpw",
+  "created_at": "2026-11-03T19:58:08.000Z",
+  "updated_at": "2026-11-03T19:58:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "quantization",
+    "low-bit",
+    "triton",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10583400336,
+  "parameters_human": "10.58B",
+  "storage_bytes": 13552767147,
+  "storage_human": "13.6 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

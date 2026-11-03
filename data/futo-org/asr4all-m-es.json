@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "futo-org/asr4all-m-es",
+  "slug": "futo-org-asr4all-m-es",
+  "author": "futo-org",
+  "url": "https://huggingface.co/futo-org/asr4all-m-es",
+  "created_at": "2026-10-31T14:05:35.000Z",
+  "updated_at": "2026-10-31T18:27:29.000Z",
+  "license": "futo-ethical-use-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "executorch",
+    "asr4all",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "speech",
+    "ctc",
+    "streaming",
+    "on-device",
+    "edge",
+    "custom_code",
+    "es",
+    "dataset:espnet/yodas3",
+    "dataset:espnet/yodas-granary",
+    "dataset:facebook/voxpopuli",
+    "dataset:facebook/multilingual_librispeech",
+    "dataset:gttsehu/basque_parliament_1",
+    "dataset:basis-ai/basis-conversations-1500",
+    "arxiv:2607.25870",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 55732961,
+  "parameters_human": "55.7M",
+  "storage_bytes": 729528844,
+  "storage_human": "730 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice (CoVoST 2 test)",
+      "metric": "Test WER (Open ASR Leaderboard multilingual normalizer)",
+      "value": 5.79
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "MLS",
+      "metric": "Test WER (Open ASR Leaderboard multilingual normalizer)",
+      "value": 4.13
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Open ASR Leaderboard multilingual normalizer)",
+      "value": 4.02
+    }
+  ],
+  "sources": []
+}

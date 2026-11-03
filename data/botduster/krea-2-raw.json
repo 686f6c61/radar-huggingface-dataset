@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "botduster/Krea-2-Raw",
+  "slug": "botduster-krea-2-raw",
+  "author": "botduster",
+  "url": "https://huggingface.co/botduster/Krea-2-Raw",
+  "created_at": "2026-11-03T17:48:58.000Z",
+  "updated_at": "2026-11-03T17:54:50.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "krea",
+    "mirror",
+    "text-to-image",
+    "en",
+    "license:other",
+    "diffusers:Krea2Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 62005133754,
+  "storage_human": "62.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

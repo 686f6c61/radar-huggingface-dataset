@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "MobiusGaian/gpt_FT_ggufmodel",
+  "slug": "mobiusgaian-gpt_ft_ggufmodel",
+  "author": "MobiusGaian",
+  "url": "https://huggingface.co/MobiusGaian/gpt_FT_ggufmodel",
+  "created_at": "2026-09-04T04:59:59.000Z",
+  "updated_at": "2026-11-03T17:24:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 85,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 1366591680,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

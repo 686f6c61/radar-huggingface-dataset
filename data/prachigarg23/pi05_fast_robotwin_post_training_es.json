@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "prachigarg23/pi05_FAST_robotwin_post_training_ES",
+  "slug": "prachigarg23-pi05_fast_robotwin_post_training_es",
+  "author": "prachigarg23",
+  "url": "https://huggingface.co/prachigarg23/pi05_FAST_robotwin_post_training_ES",
+  "created_at": "2026-11-03T19:59:06.000Z",
+  "updated_at": "2026-11-03T20:07:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "robotwin",
+    "pi0.5",
+    "vision-language-action",
+    "dataset:prachigarg23/robotwin_post_training_stack_blocks_expert",
+    "arxiv:2608.19490",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24882253824,
+  "storage_human": "24.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Save your Socks: A Simple Guide to Darning - Trail Flow",
+      "url": "https://trailflow.run/guide/save-your-socks-a-simple-guide-to-darning/",
+      "snippet": "Sep 5, 2024 · It’s a waste to discard expensive running socks simply because of a small hole. This post will guide you through …"
+    }
+  ]
+}

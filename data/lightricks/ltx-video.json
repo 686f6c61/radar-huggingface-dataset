@@ -23,9 +23,9 @@
     "diffusers:LTXPipeline",
     "region:us"
   ],
-  "likes": 2402,
+  "likes": 2404,
   "downloads_30d": 1122426,
-  "trending_score": 13,
+  "trending_score": 15,
   "parameters": 1923385472,
   "parameters_human": "1.92B",
   "storage_bytes": 280845211099,

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Sawarn/surfaceguard-defect-segmentation",
+  "slug": "sawarn-surfaceguard-defect-segmentation",
+  "author": "Sawarn",
+  "url": "https://huggingface.co/Sawarn/surfaceguard-defect-segmentation",
+  "created_at": "2026-11-03T13:18:36.000Z",
+  "updated_at": "2026-11-03T13:56:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-segmentation",
+    "defect-detection",
+    "segmentation-models-pytorch",
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149141671,
+  "storage_human": "149 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

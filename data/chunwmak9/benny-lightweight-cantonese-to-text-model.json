@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "chunwmak9/benny-lightweight-cantonese-to-text-model",
+  "slug": "chunwmak9-benny-lightweight-cantonese-to-text-model",
+  "author": "chunwmak9",
+  "url": "https://huggingface.co/chunwmak9/benny-lightweight-cantonese-to-text-model",
+  "created_at": "2026-11-03T13:59:42.000Z",
+  "updated_at": "2026-11-03T14:42:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "yue",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "cantonese",
+    "mdcc",
+    "speech",
+    "yue",
+    "zh",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72593920,
+  "parameters_human": "72.6M",
+  "storage_bytes": 145215824,
+  "storage_human": "145 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

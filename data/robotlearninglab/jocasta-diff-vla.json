@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "RobotLearningLab/Jocasta-diff-VLA",
+  "slug": "robotlearninglab-jocasta-diff-vla",
+  "author": "RobotLearningLab",
+  "url": "https://huggingface.co/RobotLearningLab/Jocasta-diff-VLA",
+  "created_at": "2026-11-03T13:07:54.000Z",
+  "updated_at": "2026-11-03T13:09:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vision-language-action",
+    "robotics",
+    "robosuite",
+    "lora",
+    "flow-matching",
+    "diffusion-language-model",
+    "simulation",
+    "en",
+    "arxiv:2512.22615",
+    "base_model:Dream-org/Dream-VLA-7B",
+    "base_model:adapter:Dream-org/Dream-VLA-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 719865026,
+  "storage_human": "720 MB",
+  "base_model": "Dream-org/Dream-VLA-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

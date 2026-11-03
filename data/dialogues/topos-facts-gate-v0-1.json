@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Dialogues/topos-facts-gate-v0.1",
+  "slug": "dialogues-topos-facts-gate-v0-1",
+  "author": "Dialogues",
+  "url": "https://huggingface.co/Dialogues/topos-facts-gate-v0.1",
+  "created_at": "2026-11-03T16:46:49.000Z",
+  "updated_at": "2026-11-03T16:51:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "nli",
+    "information-extraction",
+    "personal-knowledge",
+    "topos",
+    "zero-shot-classification",
+    "en",
+    "base_model:MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c",
+    "base_model:finetune:MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435063810,
+  "parameters_human": "435.1M",
+  "storage_bytes": 870176356,
+  "storage_human": "870 MB",
+  "base_model": "MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Librairie Dialogues | Librairie indépendante en ligne",
+      "url": "https://www.librairiedialogues.fr/",
+      "snippet": "Dialogues, votre librairie indépendante en ligne. Plus d'1 million de titres, dossiers thématiques, conseils de lecture, vidéos …"
+    },
+    {
+      "title": "Home - Dialogues",
+      "url": "https://www.dialogues.asso.fr/",
+      "snippet": "Association indépendante, Dialogues rassemble celles et ceux qui croient que le dialogue social est une force de modernité, un …"
+    },
+    {
+      "title": "Librairie Dialogues",
+      "url": "https://www.librairiedialogues.fr/dossiers/",
+      "snippet": "Plus d'1 million de titres, dont 350.000 livres disponibles, dossiers thématiques, conseils de lecture, vidéos d'écrivains, dédicaces..."
+    },
+    {
+      "title": "Télérama Dialogues 2026 - Rencontres culturelles du 5 au 8 octobre …",
+      "url": "https://www.telerama.fr/dialogues/",
+      "snippet": "Télérama Dialogues 2026 : rencontres avec des artistes et intellectuels du 5 au 8 octobre dans des lieux parisiens emblématiques. …"
+    },
+    {
+      "title": "Écrire des dialogues dans un roman : guide complet",
+      "url": "https://www.atelierdecriturebychristine.com/post/comment-ecrire-des-dialogues-dans-un-roman",
+      "snippet": "Sep 7, 2025 · Les dialogues font partie intégrante du récit. Un texte de fiction en prose, qu’il s’agisse d’un roman ou d’une nouvelle, …"
+    }
+  ]
+}

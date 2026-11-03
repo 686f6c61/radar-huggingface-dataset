@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sparrow-decider/ezhuthu-sparrow-decider-2b",
+  "slug": "sparrow-decider-ezhuthu-sparrow-decider-2b",
+  "author": "sparrow-decider",
+  "url": "https://huggingface.co/sparrow-decider/ezhuthu-sparrow-decider-2b",
+  "created_at": "2026-11-03T19:44:16.000Z",
+  "updated_at": "2026-11-03T19:47:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "ta"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "strands-decider",
+    "strands-agents",
+    "decision-model",
+    "lora",
+    "tamil",
+    "epigraphy",
+    "inscriptions",
+    "restoration",
+    "digital-humanities",
+    "text-classification",
+    "ta",
+    "base_model:StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "base_model:adapter:StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234474272,
+  "storage_human": "234 MB",
+  "base_model": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction SPARROW en français | Dictionnaire anglais-français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/sparrow",
+      "snippet": "Traduction de \"sparrow\" en français : moineau, bruant. Nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "House sparrow - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/House_sparrow",
+      "snippet": "The house sparrow (Passer domesticus) is a bird of the sparrow family Passeridae, found in most parts of the world. It is a small bird …"
+    },
+    {
+      "title": "Sparrow Bitcoin Wallet",
+      "url": "https://www.sparrowwallet.com/",
+      "snippet": "Sparrow is a modern desktop Bitcoin wallet application supporting most hardware wallets and built on common standards such as …"
+    },
+    {
+      "title": "Sparrow",
+      "url": "https://sparrow.com/",
+      "snippet": "Sparrow’s software automates away the notifications and communication, integrating everything into one streamlined portal for both …"
+    },
+    {
+      "title": "Sparrow - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/sparrow.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"Sparrow\" – Dictionnaire français-anglais et moteur de recherche de …"
+    }
+  ]
+}

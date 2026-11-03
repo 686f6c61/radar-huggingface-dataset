@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Eugeoter/waifu-scorer-moas",
+  "slug": "eugeoter-waifu-scorer-moas",
+  "author": "Eugeoter",
+  "url": "https://huggingface.co/Eugeoter/waifu-scorer-moas",
+  "created_at": "2026-11-03T16:30:27.000Z",
+  "updated_at": "2026-11-03T16:37:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "image-aesthetics",
+    "waifu-scorer",
+    "clip",
+    "ordinal-regression",
+    "multi-view",
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2033937,
+  "parameters_human": "2.0M",
+  "storage_bytes": 8136848,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

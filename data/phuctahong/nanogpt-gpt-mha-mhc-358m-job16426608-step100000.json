@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "phuctahong/nanogpt-gpt-mha-mhc-358m-job16426608-step100000",
+  "slug": "phuctahong-nanogpt-gpt-mha-mhc-358m-job16426608-step100000",
+  "author": "phuctahong",
+  "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-mhc-358m-job16426608-step100000",
+  "created_at": "2026-11-03T13:02:14.000Z",
+  "updated_at": "2026-11-03T13:02:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nanogptpro",
+    "fineweb-edu",
+    "ddl2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 358244628,
+  "parameters_human": "358.2M",
+  "storage_bytes": 1433021860,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

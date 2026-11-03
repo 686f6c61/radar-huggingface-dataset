@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mohd010/pakka-minilm-l12-hinglish",
+  "slug": "mohd010-pakka-minilm-l12-hinglish",
+  "author": "mohd010",
+  "url": "https://huggingface.co/mohd010/pakka-minilm-l12-hinglish",
+  "created_at": "2026-11-03T19:21:37.000Z",
+  "updated_at": "2026-11-03T19:27:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "semantic-cache",
+    "hinglish",
+    "code-mixed",
+    "pakka",
+    "sentence-similarity",
+    "en",
+    "hi",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487720403,
+  "storage_human": "488 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

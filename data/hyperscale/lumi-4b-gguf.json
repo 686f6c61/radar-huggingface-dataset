@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HyperScale/lumi-4b-GGUF",
+  "slug": "hyperscale-lumi-4b-gguf",
+  "author": "HyperScale",
+  "url": "https://huggingface.co/HyperScale/lumi-4b-GGUF",
+  "created_at": "2026-11-03T13:41:36.000Z",
+  "updated_at": "2026-11-03T13:42:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "nemotron_h",
+    "portuguese",
+    "ceia",
+    "text-generation",
+    "pt",
+    "base_model:ceia-br/lumi-4b",
+    "base_model:quantized:ceia-br/lumi-4b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 2837073248,
+  "storage_human": "2.8 GB",
+  "base_model": "ceia-br/lumi-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HyperScale - An Online Magazine for Aircraft and Armour Modellers",
+      "url": "https://hyperscale.com/",
+      "snippet": "Club Hyper Visit HyperScale's Forums at Club Hyper for Discussion Groups and to buy, swap and sell models online. Submit an …"
+    },
+    {
+      "title": "What's New? - HyperScale",
+      "url": "https://hyperscale.com/what%27s.htm",
+      "snippet": "14 hours ago · * Based on actual server statistics, HyperScale's main page receives an average of more than 15,000 visits from …"
+    },
+    {
+      "title": "Hyperscale computing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyperscale_computing",
+      "snippet": "Hyperscale computing is necessary in order to build a robust and scalable cloud, big data, map reduce, or distributed storage …"
+    },
+    {
+      "title": "What is hyperscale? - IBM",
+      "url": "https://www.ibm.com/think/topics/hyperscale",
+      "snippet": "Hyperscale is a distributed computing environment and architecture that is designed to provide extreme scalability to …"
+    },
+    {
+      "title": "Hyperscale — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hyperscale",
+      "snippet": "Dans le domaine informatique, l' hyperscale (en anglais hyperscale computing ou hyperscaling) est la capacité d'une architecture …"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "parseh/aligner-ca",
+  "slug": "parseh-aligner-ca",
+  "author": "parseh",
+  "url": "https://huggingface.co/parseh/aligner-ca",
+  "created_at": "2026-11-03T14:21:41.000Z",
+  "updated_at": "2026-11-03T14:21:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "ca"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "ctc",
+    "forced-alignment",
+    "quantized",
+    "parseh",
+    "ca",
+    "dataset:common_voice",
+    "dataset:parlament_parla",
+    "base_model:ccoreilly/wav2vec2-large-xlsr-catala",
+    "base_model:quantized:ccoreilly/wav2vec2-large-xlsr-catala",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 356294063,
+  "storage_human": "356 MB",
+  "base_model": "ccoreilly/wav2vec2-large-xlsr-catala",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

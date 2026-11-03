@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "m1b/kairos_rmbenchpp_put_back_block_relocate_16v3_p2p3",
+  "slug": "m1b-kairos_rmbenchpp_put_back_block_relocate_16v3_p2p3",
+  "author": "m1b",
+  "url": "https://huggingface.co/m1b/kairos_rmbenchpp_put_back_block_relocate_16v3_p2p3",
+  "created_at": "2026-10-16T05:05:21.000Z",
+  "updated_at": "2026-11-03T18:43:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27615542102,
+  "storage_human": "27.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Grawnch/Qwen3.5-27B-DR-2.50bpw-BF16-Eval",
+  "slug": "grawnch-qwen3-5-27b-dr-2-50bpw-bf16-eval",
+  "author": "Grawnch",
+  "url": "https://huggingface.co/Grawnch/Qwen3.5-27B-DR-2.50bpw-BF16-Eval",
+  "created_at": "2026-11-03T19:58:52.000Z",
+  "updated_at": "2026-11-03T20:01:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "quantization",
+    "low-bit",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812098155,
+  "storage_human": "53.8 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

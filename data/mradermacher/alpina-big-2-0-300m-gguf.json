@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Alpina-Big-2.0-300M-GGUF",
+  "slug": "mradermacher-alpina-big-2-0-300m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Alpina-Big-2.0-300M-GGUF",
+  "created_at": "2026-11-03T14:59:58.000Z",
+  "updated_at": "2026-11-03T15:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "alpina",
+    "experimental",
+    "en",
+    "base_model:Convergent-ch/Alpina-Big-2.0-300M",
+    "base_model:quantized:Convergent-ch/Alpina-Big-2.0-300M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299410432,
+  "parameters_human": "299.4M",
+  "storage_bytes": 2848730752,
+  "storage_human": "2.8 GB",
+  "base_model": "Convergent-ch/Alpina-Big-2.0-300M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "jsaurabh/weight-space-lab-artifacts",
+  "slug": "jsaurabh-weight-space-lab-artifacts",
+  "author": "jsaurabh",
+  "url": "https://huggingface.co/jsaurabh/weight-space-lab-artifacts",
+  "created_at": "2026-11-03T16:44:55.000Z",
+  "updated_at": "2026-11-03T16:44:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "weight-space-programming",
+    "model-editing",
+    "research-artifacts",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30288476,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrbitQuant",
+      "url": "https://saurabhcantina.github.io/orbitquant/",
+      "snippet": "†Correspondence to: saurabh@cantina.ai, donghyun.lee.1@usc.edu · arXiv BibTeX. Impact. OrbitQuant makes low-bit weight-and-activation quantization practical for ..."
+    },
+    {
+      "title": "Who Built This Model? Tracing LLM Lineage via Spectral ... - arXiv",
+      "url": "https://arxiv.org/pdf/2608.07786",
+      "snippet": "07.08.2026 ... ③ We introduce a subspace alignment analysis that captures geometric variations in weight space, enabling fine-grained discrimination among ..."
+    }
+  ]
+}

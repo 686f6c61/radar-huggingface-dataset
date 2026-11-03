@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "thomasken1234/ingot-xxv-group-ckpts",
+  "slug": "thomasken1234-ingot-xxv-group-ckpts",
+  "author": "thomasken1234",
+  "url": "https://huggingface.co/thomasken1234/ingot-xxv-group-ckpts",
+  "created_at": "2026-11-03T18:21:47.000Z",
+  "updated_at": "2026-11-03T18:37:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95375533,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "pantinor/sherpa-onnx-whisper-large-finnish-v3",
+  "slug": "pantinor-sherpa-onnx-whisper-large-finnish-v3",
+  "author": "pantinor",
+  "url": "https://huggingface.co/pantinor/sherpa-onnx-whisper-large-finnish-v3",
+  "created_at": "2026-11-03T19:21:07.000Z",
+  "updated_at": "2026-11-03T19:22:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "fi"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "whisper",
+    "finnish",
+    "asr",
+    "automatic-speech-recognition",
+    "fi",
+    "base_model:Finnish-NLP/whisper-large-finnish-v3",
+    "base_model:quantized:Finnish-NLP/whisper-large-finnish-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1777948967,
+  "storage_human": "1.8 GB",
+  "base_model": "Finnish-NLP/whisper-large-finnish-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

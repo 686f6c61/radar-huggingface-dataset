@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "timmzak/ReText-LLaVA",
+  "slug": "timmzak-retext-llava",
+  "author": "timmzak",
+  "url": "https://huggingface.co/timmzak/ReText-LLaVA",
+  "created_at": "2026-10-20T17:49:33.000Z",
+  "updated_at": "2026-10-28T13:35:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "retext",
+    "llava",
+    "image-captioning",
+    "person-re-identification",
+    "arxiv:2602.05785",
+    "en",
+    "base_model:liuhaotian/llava-v1.6-vicuna-7b",
+    "base_model:finetune:liuhaotian/llava-v1.6-vicuna-7b",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 288664675,
+  "storage_human": "289 MB",
+  "base_model": "liuhaotian/llava-v1.6-vicuna-7b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReText: Text Boosts Generalization in Image-Based Person ...",
+      "url": "https://arxiv.org/html/2602.05785",
+      "snippet": "Experiments demonstrate that ReText achieves strong generalization and significantly outperforms state-of-the-art methods on cross-domain Re-ID benchmarks. The expanded multi-camera datasets and VLM weights are publicly available at https://github.com/timmzak/ReText."
+    }
+  ]
+}

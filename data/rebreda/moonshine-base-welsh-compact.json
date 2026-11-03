@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "rebreda/moonshine-base-welsh-compact",
+  "slug": "rebreda-moonshine-base-welsh-compact",
+  "author": "rebreda",
+  "url": "https://huggingface.co/rebreda/moonshine-base-welsh-compact",
+  "created_at": "2026-11-03T15:48:52.000Z",
+  "updated_at": "2026-11-03T15:48:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "cy",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonshine",
+    "automatic-speech-recognition",
+    "pruned",
+    "welsh",
+    "speech-recognition",
+    "cy",
+    "en",
+    "dataset:cymen-arfor/lleisiau-arfor",
+    "dataset:google/fleurs",
+    "dataset:techiaith/banc-trawsgrifiadau-bangor",
+    "dataset:techiaith/corpws-clllc-wlga",
+    "arxiv:2410.15608",
+    "base_model:moonshine-ai/moonshine-base",
+    "base_model:finetune:moonshine-ai/moonshine-base",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 53180192,
+  "parameters_human": "53.2M",
+  "storage_bytes": 106384352,
+  "storage_human": "106 MB",
+  "base_model": "moonshine-ai/moonshine-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice Scripted Speech 27.0 Welsh (test, 5,390 clips)",
+      "metric": "WER",
+      "value": 25.8
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS Welsh (cy_gb test, 1,020 clips)",
+      "metric": "WER",
+      "value": 37.6
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Lleisiau Arfor (Welsh test, 1,500 clips)",
+      "metric": "WER (all clips; sentences overlap training prompts)",
+      "value": 20.1
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Lleisiau Arfor (Welsh test, 1,500 clips)",
+      "metric": "WER (unseen sentences only)",
+      "value": 33.8
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Siarad (Welsh conversation, held out, 1,500 clips)",
+      "metric": "WER",
+      "value": 76.8
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Banc Trawsgrifiadau Bangor (test, 1,500 clips)",
+      "metric": "WER",
+      "value": 32.7
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS English (en_us test, 500 clips)",
+      "metric": "WER",
+      "value": 21
+    }
+  ],
+  "sources": []
+}

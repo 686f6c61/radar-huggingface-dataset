@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/rombos_Replete-Coder-Instruct-8b-Merged-GGUF",
+  "slug": "mradermacher-rombos_replete-coder-instruct-8b-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/rombos_Replete-Coder-Instruct-8b-Merged-GGUF",
+  "created_at": "2025-03-01T08:50:15.000Z",
+  "updated_at": "2026-11-03T18:02:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:rombodawg/rombos_Replete-Coder-Instruct-8b-Merged",
+    "base_model:quantized:rombodawg/rombos_Replete-Coder-Instruct-8b-Merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820233088,
+  "storage_human": "71.8 GB",
+  "base_model": "rombodawg/rombos_Replete-Coder-Instruct-8b-Merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

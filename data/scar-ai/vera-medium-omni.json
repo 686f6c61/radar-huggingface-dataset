@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "scar-ai/vera-medium-omni",
+  "slug": "scar-ai-vera-medium-omni",
+  "author": "scar-ai",
+  "url": "https://huggingface.co/scar-ai/vera-medium-omni",
+  "created_at": "2026-10-31T23:36:34.000Z",
+  "updated_at": "2026-11-01T16:23:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vera",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "decision-index",
+    "multimodal",
+    "vision",
+    "text-classification",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 4207714822,
+  "parameters_human": "4.21B",
+  "storage_bytes": 17528118321,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

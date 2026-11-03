@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "konnosena/ruri-v3-30m-onnx",
+  "slug": "konnosena-ruri-v3-30m-onnx",
+  "author": "konnosena",
+  "url": "https://huggingface.co/konnosena/ruri-v3-30m-onnx",
+  "created_at": "2026-11-03T15:31:18.000Z",
+  "updated_at": "2026-11-03T15:31:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "onnxruntime",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "modernbert",
+    "sentence-embeddings",
+    "ruri",
+    "sentence-similarity",
+    "ja",
+    "arxiv:2409.07737",
+    "base_model:cl-nagoya/ruri-v3-30m",
+    "base_model:quantized:cl-nagoya/ruri-v3-30m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73472920,
+  "storage_human": "73 MB",
+  "base_model": "cl-nagoya/ruri-v3-30m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

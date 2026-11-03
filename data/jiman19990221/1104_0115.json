@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "jiman19990221/1104_0115",
+  "slug": "jiman19990221-1104_0115",
+  "author": "jiman19990221",
+  "url": "https://huggingface.co/jiman19990221/1104_0115",
+  "created_at": "2026-11-03T16:19:43.000Z",
+  "updated_at": "2026-11-03T16:20:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7376870,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "SpeedAI-Lab/DAMI",
+  "slug": "speedai-lab-dami",
+  "author": "SpeedAI-Lab",
+  "url": "https://huggingface.co/SpeedAI-Lab/DAMI",
+  "created_at": "2026-11-03T10:20:53.000Z",
+  "updated_at": "2026-11-03T13:04:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "dami",
+    "linear-attention",
+    "long-context",
+    "initialization",
+    "ruler",
+    "arxiv:2610.41994",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5255055128,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

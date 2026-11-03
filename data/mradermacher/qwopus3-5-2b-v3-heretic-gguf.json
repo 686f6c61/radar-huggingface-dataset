@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwopus3.5-2B-v3-heretic-GGUF",
+  "slug": "mradermacher-qwopus3-5-2b-v3-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwopus3.5-2B-v3-heretic-GGUF",
+  "created_at": "2026-04-14T08:08:21.000Z",
+  "updated_at": "2026-11-03T19:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:tvall43/Qwopus3.5-2B-v3-heretic",
+    "base_model:quantized:tvall43/Qwopus3.5-2B-v3-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 199,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 18070092672,
+  "storage_human": "18.1 GB",
+  "base_model": "tvall43/Qwopus3.5-2B-v3-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

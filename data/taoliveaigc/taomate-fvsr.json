@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "TaoLiveAIGC/TaoMate-FVSR",
+  "slug": "taoliveaigc-taomate-fvsr",
+  "author": "TaoLiveAIGC",
+  "url": "https://huggingface.co/TaoLiveAIGC/TaoMate-FVSR",
+  "created_at": "2026-11-02T12:27:01.000Z",
+  "updated_at": "2026-11-03T13:05:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video-restoration",
+    "face-restoration",
+    "visual-dubbing",
+    "safetensors",
+    "en",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10326266408,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

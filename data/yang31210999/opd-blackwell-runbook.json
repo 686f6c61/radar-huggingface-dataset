@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "yang31210999/opd-blackwell-runbook",
+  "slug": "yang31210999-opd-blackwell-runbook",
+  "author": "yang31210999",
+  "url": "https://huggingface.co/yang31210999/opd-blackwell-runbook",
+  "created_at": "2026-11-03T15:54:17.000Z",
+  "updated_at": "2026-11-03T14:55:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

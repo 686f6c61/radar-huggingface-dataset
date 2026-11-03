@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Leonuraht/Doraemon",
+  "slug": "leonuraht-doraemon",
+  "author": "Leonuraht",
+  "url": "https://huggingface.co/Leonuraht/Doraemon",
+  "created_at": "2026-10-25T06:19:25.000Z",
+  "updated_at": "2026-11-03T18:33:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "en",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:glaiveai/reasoning-v1-20m",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 395314588,
+  "storage_human": "395 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ai2_arc",
+      "metric": "AI2 Reasoning Challenge (25-Shot)",
+      "value": 64.59
+    }
+  ],
+  "sources": []
+}

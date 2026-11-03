@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "YuCeong-May/TS-ASR-weights",
+  "slug": "yuceong-may-ts-asr-weights",
+  "author": "YuCeong-May",
+  "url": "https://huggingface.co/YuCeong-May/TS-ASR-weights",
+  "created_at": "2026-11-03T16:29:59.000Z",
+  "updated_at": "2026-11-03T16:32:32.000Z",
+  "license": "funasr-model-open-source-license-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "asr",
+    "funasr",
+    "target-speaker-asr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2589412349,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

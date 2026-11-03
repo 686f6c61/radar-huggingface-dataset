@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "DapDoesStuff/Dappy-v1.1-4b-GGUF",
+  "slug": "dapdoesstuff-dappy-v1-1-4b-gguf",
+  "author": "DapDoesStuff",
+  "url": "https://huggingface.co/DapDoesStuff/Dappy-v1.1-4b-GGUF",
+  "created_at": "2026-11-03T13:04:43.000Z",
+  "updated_at": "2026-11-03T13:05:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 4504878424,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

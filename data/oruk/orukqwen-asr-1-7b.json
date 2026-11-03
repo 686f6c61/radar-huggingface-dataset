@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "oruk/orukqwen-asr-1.7b",
+  "slug": "oruk-orukqwen-asr-1-7b",
+  "author": "oruk",
+  "url": "https://huggingface.co/oruk/orukqwen-asr-1.7b",
+  "created_at": "2026-11-02T19:42:50.000Z",
+  "updated_at": "2026-11-03T16:44:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "qwen3-asr",
+    "reinforcement-learning",
+    "gspo",
+    "model-soup",
+    "wise-ft",
+    "research",
+    "oruk",
+    "en",
+    "arxiv:2601.21337",
+    "arxiv:2507.18071",
+    "arxiv:2203.05482",
+    "arxiv:2109.01903",
+    "arxiv:2512.20856",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "model-index",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 8163874041,
+  "storage_human": "8.2 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI-Cleaned",
+      "metric": "Test WER",
+      "value": 7.92
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22-Cleaned-AA-chunked",
+      "metric": "Test WER",
+      "value": 5.85
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Gigaspeech-Cleaned",
+      "metric": "Test WER",
+      "value": 7.11
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LS Clean",
+      "metric": "Test WER",
+      "value": 1.2
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LS Other",
+      "metric": "Test WER",
+      "value": 2.89
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SPGISpeech",
+      "metric": "Test WER",
+      "value": 2.75
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "URGENT2024",
+      "metric": "Test WER",
+      "value": 9.48
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Voice Arena Monsoon",
+      "metric": "Test WER",
+      "value": 3.5
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Voxpopuli-AA-Cleaned",
+      "metric": "Test WER",
+      "value": 2.11
+    }
+  ],
+  "sources": []
+}

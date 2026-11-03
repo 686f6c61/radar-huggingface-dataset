@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/OPO-8B-GGUF",
+  "slug": "prithivmlmods-opo-8b-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/OPO-8B-GGUF",
+  "created_at": "2026-11-03T12:57:33.000Z",
+  "updated_at": "2026-11-03T13:15:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "qwen3_vl",
+    "visual-reasoning",
+    "reinforcement-learning",
+    "tool-use",
+    "image-text-to-text",
+    "en",
+    "base_model:Yann0122/OPO-8B",
+    "base_model:quantized:Yann0122/OPO-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 62943274656,
+  "storage_human": "62.9 GB",
+  "base_model": "Yann0122/OPO-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

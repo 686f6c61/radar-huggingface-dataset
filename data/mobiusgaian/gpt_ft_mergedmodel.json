@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "MobiusGaian/gpt_FT_mergedmodel",
+  "slug": "mobiusgaian-gpt_ft_mergedmodel",
+  "author": "MobiusGaian",
+  "url": "https://huggingface.co/MobiusGaian/gpt_FT_mergedmodel",
+  "created_at": "2026-09-04T04:58:13.000Z",
+  "updated_at": "2026-11-03T13:55:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 4977742080,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

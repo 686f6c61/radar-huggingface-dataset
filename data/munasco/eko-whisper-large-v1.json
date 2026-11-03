@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "id": "munasco/eko-whisper-large-v1",
+  "slug": "munasco-eko-whisper-large-v1",
+  "author": "munasco",
+  "url": "https://huggingface.co/munasco/eko-whisper-large-v1",
+  "created_at": "2026-11-03T14:35:42.000Z",
+  "updated_at": "2026-11-03T14:38:55.000Z",
+  "license": "ekogenie-research",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pcm",
+    "yo",
+    "ig"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "nigeria",
+    "yoruba",
+    "igbo",
+    "pidgin",
+    "nigerian-english",
+    "asr",
+    "en",
+    "pcm",
+    "yo",
+    "ig",
+    "arxiv:2605.17710",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1609879040,
+  "parameters_human": "1.61B",
+  "storage_bytes": 3219909288,
+  "storage_human": "3.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "afrispeech-ng-test-reviewed",
+      "metric": "WER (normalised)",
+      "value": 9.34
+    },
+    {
+      "task": null,
+      "dataset": "afrispeech-ng-test-v2",
+      "metric": "WER (normalised)",
+      "value": 10.61
+    },
+    {
+      "task": null,
+      "dataset": "cv27-ig-test",
+      "metric": "WER (normalised)",
+      "value": 19.45
+    },
+    {
+      "task": null,
+      "dataset": "cv27-pcm-test",
+      "metric": "WER (normalised)",
+      "value": 16.43
+    },
+    {
+      "task": null,
+      "dataset": "cv27-yo-test",
+      "metric": "WER (normalised)",
+      "value": 18.46
+    },
+    {
+      "task": null,
+      "dataset": "dsn-ig-devtest",
+      "metric": "WER (normalised)",
+      "value": 14.67
+    },
+    {
+      "task": null,
+      "dataset": "dsn-yo-devtest",
+      "metric": "WER (normalised)",
+      "value": 20.18
+    },
+    {
+      "task": null,
+      "dataset": "fleurs-ig",
+      "metric": "WER (normalised)",
+      "value": 22.1
+    },
+    {
+      "task": null,
+      "dataset": "fleurs-yo",
+      "metric": "WER (normalised)",
+      "value": 23.41
+    },
+    {
+      "task": null,
+      "dataset": "naijavoices-official-ig",
+      "metric": "WER (normalised)",
+      "value": 16.85
+    },
+    {
+      "task": null,
+      "dataset": "naijavoices-official-yo",
+      "metric": "WER (normalised)",
+      "value": 19.09
+    },
+    {
+      "task": null,
+      "dataset": "native-en",
+      "metric": "WER (normalised)",
+      "value": 2.54
+    },
+    {
+      "task": null,
+      "dataset": "pidginmed-test",
+      "metric": "WER (normalised)",
+      "value": 7.29
+    },
+    {
+      "task": null,
+      "dataset": "pidginmed-test-reviewed",
+      "metric": "WER (normalised)",
+      "value": 6.69
+    },
+    {
+      "task": null,
+      "dataset": "wazobia-pcm-devtest-clean",
+      "metric": "WER (normalised)",
+      "value": 9.48
+    },
+    {
+      "task": null,
+      "dataset": "wazobia-pcm-devtest300",
+      "metric": "WER (normalised)",
+      "value": 6.43
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "MaroskaOsama/smollm2-360m-sft",
+  "slug": "maroskaosama-smollm2-360m-sft",
+  "author": "MaroskaOsama",
+  "url": "https://huggingface.co/MaroskaOsama/smollm2-360m-sft",
+  "created_at": "2026-11-03T19:07:45.000Z",
+  "updated_at": "2026-11-03T19:15:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34798833,
+  "storage_human": "35 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

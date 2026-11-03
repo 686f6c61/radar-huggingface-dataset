@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/ThoxMesh-Head-C6",
+  "slug": "thox-ai-thoxmesh-head-c6",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/ThoxMesh-Head-C6",
+  "created_at": "2026-08-11T11:17:58.000Z",
+  "updated_at": "2026-11-03T17:24:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "tf-lite",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tf-lite",
+    "tflite",
+    "thox",
+    "litert-micro",
+    "int8",
+    "classifier",
+    "slot-prediction",
+    "matter",
+    "thread",
+    "zigbee",
+    "on-device",
+    "thoxos",
+    "meshstack",
+    "thoxmesh",
+    "local-first",
+    "tabular-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1071898,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thox-ai/ThoxAir-16M-role - Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/ThoxAir-16M-role",
+      "snippet": "The ESP32-C6 half is Thox-ai/ThoxMesh-Head-C6 , an int8 TFLite triage classifier that decides which radio/sensor events are worth waking this model for."
+    },
+    {
+      "title": "An in silico to in vivo approach identifies retinoid-X receptor ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-09244-z",
+      "snippet": "18.07.2025 ... The NR-Toxpred ML model for RXRs refined a reference chemical list ... Luciferase activity of whole-head homogenates was normalized to total ..."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-12B-it-uncensored-heretic-GGUF",
+  "slug": "mradermacher-gemma-4-12b-it-uncensored-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-12B-it-uncensored-heretic-GGUF",
+  "created_at": "2026-06-13T05:42:58.000Z",
+  "updated_at": "2026-11-03T17:58:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "en",
+    "base_model:llmfan46/gemma-4-12B-it-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-12B-it-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 10,
+  "downloads_30d": 3545,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 83730134528,
+  "storage_human": "83.7 GB",
+  "base_model": "llmfan46/gemma-4-12B-it-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

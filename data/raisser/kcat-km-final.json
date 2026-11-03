@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "raisser/kcat-km-final",
+  "slug": "raisser-kcat-km-final",
+  "author": "raisser",
+  "url": "https://huggingface.co/raisser/kcat-km-final",
+  "created_at": "2026-11-03T16:53:23.000Z",
+  "updated_at": "2026-11-03T16:54:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 946061018,
+  "storage_human": "946 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Towards engineering the microalga Chlorella sorokiniana for the ...",
+      "url": "https://discovery.ucl.ac.uk/10064964/1/Spencer-Milnes_Xenia_thesis_edited.pdf",
+      "snippet": "This is related to the differences in final cell densities and final biomass from ... kcat/KM ratio on an individual basis when deciding what level of substrate ..."
+    }
+  ]
+}

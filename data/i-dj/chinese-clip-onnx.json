@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "i-dj/chinese-clip-onnx",
+  "slug": "i-dj-chinese-clip-onnx",
+  "author": "i-dj",
+  "url": "https://huggingface.co/i-dj/chinese-clip-onnx",
+  "created_at": "2026-11-03T20:17:19.000Z",
+  "updated_at": "2026-11-03T20:47:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "onnx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "chinese-clip",
+    "clip",
+    "image-search",
+    "zero-shot-image-classification",
+    "zh",
+    "en",
+    "base_model:OFA-Sys/chinese-clip-vit-base-patch16",
+    "base_model:quantized:OFA-Sys/chinese-clip-vit-base-patch16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6210372619,
+  "storage_human": "6.2 GB",
+  "base_model": "OFA-Sys/chinese-clip-vit-huge-patch14, OFA-Sys/chinese-clip-vit-large-patch14, OFA-Sys/chinese-clip-vit-base-patch16",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

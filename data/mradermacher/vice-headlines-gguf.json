@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/vice-headlines-GGUF",
+  "slug": "mradermacher-vice-headlines-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/vice-headlines-GGUF",
+  "created_at": "2025-05-23T20:42:15.000Z",
+  "updated_at": "2026-11-03T15:50:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:marcderbauer/vice-headlines",
+    "base_model:quantized:marcderbauer/vice-headlines",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 5762679424,
+  "storage_human": "5.8 GB",
+  "base_model": "marcderbauer/vice-headlines",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    }
+  ]
+}

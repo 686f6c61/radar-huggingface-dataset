@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "supportfaqteam/website-builder-llama-3-8b-GGUF",
+  "slug": "supportfaqteam-website-builder-llama-3-8b-gguf",
+  "author": "supportfaqteam",
+  "url": "https://huggingface.co/supportfaqteam/website-builder-llama-3-8b-GGUF",
+  "created_at": "2026-11-03T12:40:31.000Z",
+  "updated_at": "2026-11-03T12:40:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:Bello988/website-builder-llama-3-8b",
+    "base_model:quantized:Bello988/website-builder-llama-3-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820241920,
+  "storage_human": "71.8 GB",
+  "base_model": "Bello988/website-builder-llama-3-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

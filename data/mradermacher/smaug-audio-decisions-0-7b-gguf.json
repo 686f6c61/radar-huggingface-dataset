@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Smaug-Audio-Decisions-0.7B-GGUF",
+  "slug": "mradermacher-smaug-audio-decisions-0-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Smaug-Audio-Decisions-0.7B-GGUF",
+  "created_at": "2026-11-03T14:12:16.000Z",
+  "updated_at": "2026-11-03T14:20:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decisions",
+    "typed-decisions",
+    "audio",
+    "calibration",
+    "on-device",
+    "coreml",
+    "smaug",
+    "abacusai",
+    "en",
+    "base_model:abacusai/Smaug-Audio-Decisions-0.7B",
+    "base_model:quantized:abacusai/Smaug-Audio-Decisions-0.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 271002648,
+  "parameters_human": "271.0M",
+  "storage_bytes": 4319698688,
+  "storage_human": "4.3 GB",
+  "base_model": "abacusai/Smaug-Audio-Decisions-0.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

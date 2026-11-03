@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "giangndm/NVIDIA-NemotronLabs-RE-USE-bf16",
+  "slug": "giangndm-nvidia-nemotronlabs-re-use-bf16",
+  "author": "giangndm",
+  "url": "https://huggingface.co/giangndm/NVIDIA-NemotronLabs-RE-USE-bf16",
+  "created_at": "2026-11-03T15:32:36.000Z",
+  "updated_at": "2026-11-03T15:32:46.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speech-enhancement",
+    "universal-speech-enhancement",
+    "bf16",
+    "audio-to-audio",
+    "base_model:nvidia/NVIDIA-NemotronLabs-RE-USE",
+    "base_model:quantized:nvidia/NVIDIA-NemotronLabs-RE-USE",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9607747,
+  "parameters_human": "9.6M",
+  "storage_bytes": 21515918,
+  "storage_human": "22 MB",
+  "base_model": "nvidia/NVIDIA-NemotronLabs-RE-USE",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

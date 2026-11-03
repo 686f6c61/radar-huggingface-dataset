@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "09pedro032/knjgtftgyhjk",
+  "slug": "09pedro032-knjgtftgyhjk",
+  "author": "09pedro032",
+  "url": "https://huggingface.co/09pedro032/knjgtftgyhjk",
+  "created_at": "2026-11-03T20:04:42.000Z",
+  "updated_at": "2026-11-03T20:06:13.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

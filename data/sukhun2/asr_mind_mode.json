@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sukhun2/asr_mind_mode",
+  "slug": "sukhun2-asr_mind_mode",
+  "author": "sukhun2",
+  "url": "https://huggingface.co/sukhun2/asr_mind_mode",
+  "created_at": "2026-10-19T15:20:02.000Z",
+  "updated_at": "2026-11-03T14:03:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:w11wo/wav2vec2-xls-r-300m-korean",
+    "base_model:finetune:w11wo/wav2vec2-xls-r-300m-korean",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 316675895,
+  "parameters_human": "316.7M",
+  "storage_bytes": 8867303438,
+  "storage_human": "8.9 GB",
+  "base_model": "w11wo/wav2vec2-xls-r-300m-korean",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

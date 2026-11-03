@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Abhisek987/sheettruth-glimmer-30b-lora",
+  "slug": "abhisek987-sheettruth-glimmer-30b-lora",
+  "author": "Abhisek987",
+  "url": "https://huggingface.co/Abhisek987/sheettruth-glimmer-30b-lora",
+  "created_at": "2026-11-03T15:14:22.000Z",
+  "updated_at": "2026-11-03T15:15:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "spreadsheet",
+    "formula-auditing",
+    "excel",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Muse-Glimmer-30B",
+    "base_model:adapter:unsloth/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 447423289,
+  "storage_human": "447 MB",
+  "base_model": "unsloth/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

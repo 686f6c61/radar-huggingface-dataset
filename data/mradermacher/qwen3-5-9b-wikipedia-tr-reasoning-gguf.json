@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-9B-Wikipedia-TR-Reasoning-GGUF",
+  "slug": "mradermacher-qwen3-5-9b-wikipedia-tr-reasoning-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-Wikipedia-TR-Reasoning-GGUF",
+  "created_at": "2026-04-14T06:26:26.000Z",
+  "updated_at": "2026-11-03T17:59:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "turkish",
+    "cpt",
+    "wikipedia",
+    "qwen",
+    "tr",
+    "dataset:wikimedia/wikipedia",
+    "base_model:zero9tech/Qwen3.5-9B-Wikipedia-TR-CPT",
+    "base_model:quantized:zero9tech/Qwen3.5-9B-Wikipedia-TR-CPT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 408,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967481664,
+  "storage_human": "83.0 GB",
+  "base_model": "zero9tech/Qwen3.5-9B-Wikipedia-TR-CPT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

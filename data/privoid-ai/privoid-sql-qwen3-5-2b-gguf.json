@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Privoid-ai/Privoid-SQL-Qwen3.5-2B-GGUF",
+  "slug": "privoid-ai-privoid-sql-qwen3-5-2b-gguf",
+  "author": "Privoid-ai",
+  "url": "https://huggingface.co/Privoid-ai/Privoid-SQL-Qwen3.5-2B-GGUF",
+  "created_at": "2026-11-03T14:36:58.000Z",
+  "updated_at": "2026-11-03T14:38:07.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-to-sql",
+    "sqlite",
+    "base_model:Privoid-ai/Privoid-SQL-Qwen3.5-2B",
+    "base_model:quantized:Privoid-ai/Privoid-SQL-Qwen3.5-2B",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 7286227872,
+  "storage_human": "7.3 GB",
+  "base_model": "Privoid-ai/Privoid-SQL-Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

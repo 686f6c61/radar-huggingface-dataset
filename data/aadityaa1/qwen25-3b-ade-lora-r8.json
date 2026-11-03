@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "aadityaa1/qwen25-3b-ade-lora-r8",
+  "slug": "aadityaa1-qwen25-3b-ade-lora-r8",
+  "author": "aadityaa1",
+  "url": "https://huggingface.co/aadityaa1/qwen25-3b-ade-lora-r8",
+  "created_at": "2026-11-03T17:02:21.000Z",
+  "updated_at": "2026-11-03T17:02:25.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "information-extraction",
+    "json",
+    "adverse-drug-events",
+    "text-generation",
+    "en",
+    "dataset:ade-benchmark-corpus/ade_corpus_v2",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26631752,
+  "storage_human": "27 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen27b-abliterated-final-GGUF",
+  "slug": "mradermacher-qwen27b-abliterated-final-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen27b-abliterated-final-GGUF",
+  "created_at": "2026-11-03T14:45:11.000Z",
+  "updated_at": "2026-11-03T15:26:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:kernnadab/qwen27b-abliterated-final",
+    "base_model:quantized:kernnadab/qwen27b-abliterated-final",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146891520,
+  "storage_human": "68.1 GB",
+  "base_model": "kernnadab/qwen27b-abliterated-final",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

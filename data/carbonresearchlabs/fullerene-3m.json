@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "CarbonResearchLabs/fullerene-3M",
+  "slug": "carbonresearchlabs-fullerene-3m",
+  "author": "CarbonResearchLabs",
+  "url": "https://huggingface.co/CarbonResearchLabs/fullerene-3M",
+  "created_at": "2026-11-03T03:14:48.000Z",
+  "updated_at": "2026-11-03T17:12:49.000Z",
+  "license": "carbon-ocr-openrail-ams",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "el"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "carbon-ocr",
+    "fullerene",
+    "document-understanding",
+    "image-to-text",
+    "en",
+    "ru",
+    "el",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21803148,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

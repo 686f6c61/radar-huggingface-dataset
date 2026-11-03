@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/helios-gemma-v1.3-GGUF",
+  "slug": "mradermacher-helios-gemma-v1-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/helios-gemma-v1.3-GGUF",
+  "created_at": "2026-05-14T07:06:04.000Z",
+  "updated_at": "2026-11-03T19:07:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:JustinFletcher-elevate/helios-gemma-v1.3",
+    "base_model:quantized:JustinFletcher-elevate/helios-gemma-v1.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 12772912896,
+  "parameters_human": "12.77B",
+  "storage_bytes": 88982117216,
+  "storage_human": "89.0 GB",
+  "base_model": "JustinFletcher-elevate/helios-gemma-v1.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

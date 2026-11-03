@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Z9RTM/FASTDIAR-GGUF",
+  "slug": "z9rtm-fastdiar-gguf",
+  "author": "Z9RTM",
+  "url": "https://huggingface.co/Z9RTM/FASTDIAR-GGUF",
+  "created_at": "2026-11-03T15:09:39.000Z",
+  "updated_at": "2026-11-03T15:09:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "speech.cpp",
+  "languages": [],
+  "tags": [
+    "speech.cpp",
+    "gguf",
+    "speaker-diarization",
+    "voice-activity-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12401059,
+  "parameters_human": "12.4M",
+  "storage_bytes": 49651232,
+  "storage_human": "50 MB",
+  "base_model": "microsoft/fastdiar",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

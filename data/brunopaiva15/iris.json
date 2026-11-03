@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "brunopaiva15/iris",
+  "slug": "brunopaiva15-iris",
+  "author": "brunopaiva15",
+  "url": "https://huggingface.co/brunopaiva15/iris",
+  "created_at": "2026-09-21T09:24:51.000Z",
+  "updated_at": "2026-11-03T15:09:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "image-classification",
+    "image-feature-extraction",
+    "plant-identification",
+    "plants",
+    "biodiversity",
+    "on-device",
+    "mobile",
+    "knowledge-distillation",
+    "fastvit",
+    "mobilenetv3",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1601,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9005584,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Plant species classification, indoor plants",
+      "dataset": "Iris benchmark, indoor slice (2026-09, 1,127 images)",
+      "metric": "Top-1, fused, indoor mask",
+      "value": 0.8651
+    },
+    {
+      "task": "Plant species classification, outdoor plants",
+      "dataset": "Iris benchmark, outdoor slice (2026-09, 2,000 images)",
+      "metric": "Top-1, fused, outdoor mask",
+      "value": 0.857
+    }
+  ],
+  "sources": []
+}

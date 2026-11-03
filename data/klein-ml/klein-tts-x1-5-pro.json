@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "klein-ml/Klein-TTS-X1.5-Pro",
+  "slug": "klein-ml-klein-tts-x1-5-pro",
+  "author": "klein-ml",
+  "url": "https://huggingface.co/klein-ml/Klein-TTS-X1.5-Pro",
+  "created_at": "2026-11-03T16:17:37.000Z",
+  "updated_at": "2026-11-03T16:17:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "it"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "klein_tts",
+    "text-to-speech",
+    "tts",
+    "multilingual",
+    "distillation",
+    "on-device",
+    "kleinml",
+    "klein-tts",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "dataset:HuggingFaceFW/fineweb",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13122196,
+  "parameters_human": "13.1M",
+  "storage_bytes": 109726978,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Systèmes de cloisons intérieures | KLEIN",
+      "url": "https://www.klein.pro/fr-fr",
+      "snippet": "Les systèmes KLEIN pour diviser les espaces sont idéaux pour leur durabilité, leur fonctionnalité et leur esthétique. Grâce à la …"
+    },
+    {
+      "title": "Outils pour l'usinage du bois, de l'aluminium et des matières ...",
+      "url": "https://www.sistemiklein.com/fr/",
+      "snippet": "Depuis 40 ans leader dans la fabrications des outils pour le travail du bois, de l'aluminium et les matières plastiques. La recherche …"
+    },
+    {
+      "title": "Yves Klein — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yves_Klein",
+      "snippet": "Yves Klein est un artiste français, né le 28 avril 1928 à Nice et mort le 6 juin 1962 à Paris. En 1954, il se tourne définitivement vers …"
+    },
+    {
+      "title": "Kleinanzeigen – früher eBay Kleinanzeigen. Anzeigen gratis inserieren ...",
+      "url": "https://www.kleinanzeigen.de/?msockid=33e5e9972ac46c8722f0f1912beb6d69",
+      "snippet": "Kostenlose Anzeigen aufgeben mit Kleinanzeigen. Gebraucht oder Neu, Privat oder Gewerbe - Jetzt gratis inserieren auf …"
+    },
+    {
+      "title": "L. Klein SA - Aciers fins et metaux",
+      "url": "https://www.kleinmetals.ch/fr/",
+      "snippet": "Négociant en aciers fins et matières premières métalliques de haute qualité et entrepositaire, tel est le métier de notre entreprise L. …"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/cantonese-1.2-1.7b-GGUF",
+  "slug": "mradermacher-cantonese-1-2-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/cantonese-1.2-1.7b-GGUF",
+  "created_at": "2026-11-03T14:13:54.000Z",
+  "updated_at": "2026-11-03T14:22:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:cantonese-dev/cantonese-1.2-1.7b",
+    "base_model:quantized:cantonese-dev/cantonese-1.2-1.7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1733157888,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15234623104,
+  "storage_human": "15.2 GB",
+  "base_model": "cantonese-dev/cantonese-1.2-1.7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

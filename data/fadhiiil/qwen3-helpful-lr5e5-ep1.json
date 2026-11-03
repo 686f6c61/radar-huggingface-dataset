@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Fadhiiil/qwen3-helpful-lr5e5-ep1",
+  "slug": "fadhiiil-qwen3-helpful-lr5e5-ep1",
+  "author": "Fadhiiil",
+  "url": "https://huggingface.co/Fadhiiil/qwen3-helpful-lr5e5-ep1",
+  "created_at": "2026-11-03T13:26:09.000Z",
+  "updated_at": "2026-11-03T13:26:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-classification",
+    "trl",
+    "reward-trainer",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595777536,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203013066,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

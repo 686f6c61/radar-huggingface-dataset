@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/Supernova-Prism-V0.1",
+  "slug": "supernova11c-supernova-prism-v0-1",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/Supernova-Prism-V0.1",
+  "created_at": "2026-11-03T16:01:31.000Z",
+  "updated_at": "2026-11-03T16:01:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193421306,
+  "storage_human": "193 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supernova · Supernova AI",
+      "url": "https://supernova.ai/",
+      "snippet": "Every tool your company uses, synced into one encrypted data lake — built for Claude and Codex."
+    }
+  ]
+}

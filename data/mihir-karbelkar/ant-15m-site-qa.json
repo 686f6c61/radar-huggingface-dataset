@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Mihir-Karbelkar/ant-15m-site-qa",
+  "slug": "mihir-karbelkar-ant-15m-site-qa",
+  "author": "Mihir-Karbelkar",
+  "url": "https://huggingface.co/Mihir-Karbelkar/ant-15m-site-qa",
+  "created_at": "2026-11-03T18:00:45.000Z",
+  "updated_at": "2026-11-03T18:01:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "onnxruntime-web",
+    "wasm",
+    "rag",
+    "small-language-model",
+    "in-browser",
+    "mamba2",
+    "hybrid",
+    "question-answering",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20703339,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "vrishab-av/m4",
+  "slug": "vrishab-av-m4",
+  "author": "vrishab-av",
+  "url": "https://huggingface.co/vrishab-av/m4",
+  "created_at": "2026-11-03T15:34:25.000Z",
+  "updated_at": "2026-11-03T15:36:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "leak-curber",
+    "kcat",
+    "km",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 623743827,
+  "storage_human": "624 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

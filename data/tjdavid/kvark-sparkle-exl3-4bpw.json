@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "tjdavid/kvark-sparkle-exl3-4bpw",
+  "slug": "tjdavid-kvark-sparkle-exl3-4bpw",
+  "author": "tjdavid",
+  "url": "https://huggingface.co/tjdavid/kvark-sparkle-exl3-4bpw",
+  "created_at": "2026-11-03T14:23:37.000Z",
+  "updated_at": "2026-11-03T14:27:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "reasoning",
+    "efficient-reasoning",
+    "qwen3.8",
+    "mtp",
+    "kvark",
+    "conversational",
+    "en",
+    "dataset:zwhe99/DeepMath-103K",
+    "dataset:allenai/IF_multi_constraints_upto5",
+    "dataset:m-a-p/SuperGPQA",
+    "dataset:livecodebench/code_generation_lite",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "4-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8254592384,
+  "parameters_human": "8.25B",
+  "storage_bytes": 16522370618,
+  "storage_human": "16.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "GPQA Diamond",
+      "metric": "accuracy (5 seeds",
+      "value": 89.3
+    },
+    {
+      "task": null,
+      "dataset": "LiveCodeBench",
+      "metric": "pass@1 (50-problem recent subset",
+      "value": 82.7
+    },
+    {
+      "task": null,
+      "dataset": "IFEval",
+      "metric": "prompt-level strict accuracy",
+      "value": 91.3
+    },
+    {
+      "task": null,
+      "dataset": "MMLU-Pro",
+      "metric": "accuracy (980-item subset)",
+      "value": 83.3
+    }
+  ],
+  "sources": []
+}

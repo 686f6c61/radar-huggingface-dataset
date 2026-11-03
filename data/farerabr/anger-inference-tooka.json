@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "FarerABR/anger-inference-tooka",
+  "slug": "farerabr-anger-inference-tooka",
+  "author": "FarerABR",
+  "url": "https://huggingface.co/FarerABR/anger-inference-tooka",
+  "created_at": "2026-11-03T13:13:59.000Z",
+  "updated_at": "2026-11-03T13:17:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 610684806,
+  "storage_human": "611 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

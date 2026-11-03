@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma4-E2B-it-abliterated-GGUF",
+  "slug": "mradermacher-gemma4-e2b-it-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma4-E2B-it-abliterated-GGUF",
+  "created_at": "2026-04-14T08:13:48.000Z",
+  "updated_at": "2026-11-03T19:08:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "gemma4",
+    "gemma",
+    "en",
+    "base_model:treadon/gemma4-E2B-it-abliterated",
+    "base_model:quantized:treadon/gemma4-E2B-it-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 47865194240,
+  "storage_human": "47.9 GB",
+  "base_model": "treadon/gemma4-E2B-it-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "wsffdg/GPT-SoVITS-v2ProPlus-Finetuned-Sayuki-in-Hokai",
+  "slug": "wsffdg-gpt-sovits-v2proplus-finetuned-sayuki-in-hokai",
+  "author": "wsffdg",
+  "url": "https://huggingface.co/wsffdg/GPT-SoVITS-v2ProPlus-Finetuned-Sayuki-in-Hokai",
+  "created_at": "2026-11-03T15:30:22.000Z",
+  "updated_at": "2026-11-03T15:54:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "other",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "other",
+    "gpt-sovits",
+    "tts",
+    "voice-cloning",
+    "honkai-star-rail",
+    "march-7th",
+    "三月七",
+    "text-to-speech",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 555231813,
+  "storage_human": "555 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

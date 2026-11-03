@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E4B-it-mentalchat16k-GGUF",
+  "slug": "mradermacher-gemma-4-e4b-it-mentalchat16k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E4B-it-mentalchat16k-GGUF",
+  "created_at": "2026-04-14T06:44:41.000Z",
+  "updated_at": "2026-11-03T17:59:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "mental-health",
+    "counseling",
+    "conversational",
+    "sft",
+    "en",
+    "dataset:ShenLab/MentalChat16K",
+    "base_model:howardbaik/gemma-4-E4B-it-mentalchat16k",
+    "base_model:quantized:howardbaik/gemma-4-E4B-it-mentalchat16k",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 76363543104,
+  "storage_human": "76.4 GB",
+  "base_model": "howardbaik/gemma-4-E4B-it-mentalchat16k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

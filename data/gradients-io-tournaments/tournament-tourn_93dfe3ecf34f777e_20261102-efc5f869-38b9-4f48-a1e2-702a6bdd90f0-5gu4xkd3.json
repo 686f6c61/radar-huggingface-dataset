@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-efc5f869-38b9-4f48-a1e2-702a6bdd90f0-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_93dfe3ecf34f777e_20261102-efc5f869-38b9-4f48-a1e2-702a6bdd90f0-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-efc5f869-38b9-4f48-a1e2-702a6bdd90f0-5GU4Xkd3",
+  "created_at": "2026-11-03T18:46:04.000Z",
+  "updated_at": "2026-11-03T18:46:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:adapter:Qwen/Qwen3-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159030406,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

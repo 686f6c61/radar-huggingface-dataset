@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "zahidazam714/qwen3.5-9b-khowar-cpt-lora",
+  "slug": "zahidazam714-qwen3-5-9b-khowar-cpt-lora",
+  "author": "zahidazam714",
+  "url": "https://huggingface.co/zahidazam714/qwen3.5-9b-khowar-cpt-lora",
+  "created_at": "2026-11-02T22:23:57.000Z",
+  "updated_at": "2026-11-02T22:26:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "khw"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "continued-pretraining",
+    "khowar",
+    "low-resource",
+    "khw",
+    "base_model:unsloth/Qwen3.5-9B-Base",
+    "base_model:adapter:unsloth/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366284079,
+  "storage_human": "366 MB",
+  "base_model": "unsloth/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

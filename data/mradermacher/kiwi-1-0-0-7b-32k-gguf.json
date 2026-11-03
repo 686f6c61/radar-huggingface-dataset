@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kiwi-1.0-0.7B-32k-GGUF",
+  "slug": "mradermacher-kiwi-1-0-0-7b-32k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kiwi-1.0-0.7B-32k-GGUF",
+  "created_at": "2025-03-06T10:56:02.000Z",
+  "updated_at": "2026-11-03T15:50:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "base_model:empirischtech/Kiwi-1.0-0.7B-32k",
+    "base_model:quantized:empirischtech/Kiwi-1.0-0.7B-32k",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 702806144,
+  "parameters_human": "702.8M",
+  "storage_bytes": 7419289344,
+  "storage_human": "7.4 GB",
+  "base_model": "empirischtech/Kiwi-1.0-0.7B-32k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

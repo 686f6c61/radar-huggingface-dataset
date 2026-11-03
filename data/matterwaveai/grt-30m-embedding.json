@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-30m-embedding",
+  "slug": "matterwaveai-grt-30m-embedding",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-30m-embedding",
+  "created_at": "2026-11-03T13:59:21.000Z",
+  "updated_at": "2026-11-03T14:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "grt",
+    "geometric-rotation-transformer",
+    "feature-extraction",
+    "sentence-similarity",
+    "circular-pooling",
+    "rotational",
+    "qwen3",
+    "en",
+    "dataset:sentence-transformers/all-nli",
+    "dataset:sentence-transformers/stsb",
+    "base_model:MatterWaveAI/grt-30m",
+    "base_model:finetune:MatterWaveAI/grt-30m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29844597,
+  "parameters_human": "29.8M",
+  "storage_bytes": 132994376,
+  "storage_human": "133 MB",
+  "base_model": "MatterWaveAI/grt-30m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

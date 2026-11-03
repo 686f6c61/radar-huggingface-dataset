@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/NVIDIA-Nemotron-Labs-Dory1.0-4B",
+  "slug": "atomic-germ-nvidia-nemotron-labs-dory1-0-4b",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/NVIDIA-Nemotron-Labs-Dory1.0-4B",
+  "created_at": "2026-11-03T18:39:37.000Z",
+  "updated_at": "2026-11-03T18:39:37.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dory",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "nemotron-labs",
+    "conversational",
+    "en",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3975229440,
+  "parameters_human": "3.98B",
+  "storage_bytes": 7969108053,
+  "storage_human": "8.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nadh0708/Img2LocJakarta2.0",
+  "slug": "nadh0708-img2locjakarta2-0",
+  "author": "nadh0708",
+  "url": "https://huggingface.co/nadh0708/Img2LocJakarta2.0",
+  "created_at": "2026-11-03T17:01:37.000Z",
+  "updated_at": "2026-11-03T17:11:32.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "geolocation",
+    "image-regression",
+    "flow-matching",
+    "dinov3",
+    "street-view",
+    "jakarta",
+    "computer-vision",
+    "id",
+    "dataset:nadh0708/JKTSV-primary",
+    "arxiv:2508.10104",
+    "base_model:facebook/dinov3-vitl16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vitl16-pretrain-lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306389526,
+  "parameters_human": "306.4M",
+  "storage_bytes": 1227199365,
+  "storage_human": "1.2 GB",
+  "base_model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

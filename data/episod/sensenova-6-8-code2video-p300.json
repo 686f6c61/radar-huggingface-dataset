@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "episod/sensenova-6.8-code2video-p300",
+  "slug": "episod-sensenova-6-8-code2video-p300",
+  "author": "episod",
+  "url": "https://huggingface.co/episod/sensenova-6.8-code2video-p300",
+  "created_at": "2026-11-03T19:26:44.000Z",
+  "updated_at": "2026-11-03T19:32:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150x2",
+    "thin",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "vllm",
+    "text-generation",
+    "base_model:sensenova/SenseNova-6.8-Code2Video",
+    "base_model:finetune:sensenova/SenseNova-6.8-Code2Video",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99580896,
+  "storage_human": "100 MB",
+  "base_model": "sensenova/SenseNova-6.8-Code2Video",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EPISOD SPORTS STUDIOS",
+      "url": "https://www.episod.com/",
+      "snippet": "OFFRES ENTREPRISES ON DEMAND EPISOD Rules FAQ Conditions Devenir trainer Contacter la team"
+    },
+    {
+      "title": "Planning - Episod",
+      "url": "https://www.episod.com/planning/",
+      "snippet": "Place de Clichy Studio Bootcamp réserver"
+    },
+    {
+      "title": "EPISOD - Nation : Lire les avis et réserver des cours sur ClassPass",
+      "url": "https://classpass.fr/studios/episod-nation-paris",
+      "snippet": "Découvre EPISOD - Nation sur ClassPass. Consulte les avis et les plannings, et réserve en un clin d'œil à des tarifs réduits."
+    },
+    {
+      "title": "EPISOD - Bootcamp, cycling, yoga et plus - ClassPass",
+      "url": "https://classpass.fr/brands/episod",
+      "snippet": "EPISOD est une salle de fitness haut de gamme qui propose des cours de bootcamp, cycling, yoga, etc. Découvre les avis sur …"
+    },
+    {
+      "title": "EPISOD, Paris: Horaires, Prix et Avis",
+      "url": "https://sallesdesport.fitness/fr/i/15655-episod/",
+      "snippet": "Jan 7, 2020 · Boxing, Cycling, Bootcamp, Rowing, Athletic, Yoga & ReCOVER : vivez l'expérience EPISOD dans 7 studios sportifs …"
+    }
+  ]
+}
