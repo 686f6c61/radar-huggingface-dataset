@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "category271/whispernow-nemotron-bolt-e4b",
+  "slug": "category271-whispernow-nemotron-bolt-e4b",
+  "author": "category271",
+  "url": "https://huggingface.co/category271/whispernow-nemotron-bolt-e4b",
+  "created_at": "2026-11-02T20:09:14.000Z",
+  "updated_at": "2026-11-02T21:35:58.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4_text",
+    "text-generation",
+    "dictation",
+    "transcript-cleanup",
+    "speech-to-text",
+    "nemotron",
+    "conversational",
+    "en",
+    "dataset:category271/whispernow-cleanup",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013418,
+  "parameters_human": "7.46B",
+  "storage_bytes": 22931803498,
+  "storage_human": "22.9 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

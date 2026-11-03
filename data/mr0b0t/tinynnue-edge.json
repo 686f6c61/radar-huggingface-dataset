@@ -5,7 +5,7 @@
   "author": "MR0b0t",
   "url": "https://huggingface.co/MR0b0t/tinynnue-edge",
   "created_at": "2026-11-01T15:07:54.000Z",
-  "updated_at": "2026-11-01T15:07:59.000Z",
+  "updated_at": "2026-11-02T16:11:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "tinynnue",
     "chess",
     "nnue",
     "quantization",

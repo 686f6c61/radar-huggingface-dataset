@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "amd/Qwen2-7B_rai_1.9.0_npu",
+  "slug": "amd-qwen2-7b_rai_1-9-0_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Qwen2-7B_rai_1.9.0_npu",
+  "created_at": "2026-11-02T22:08:55.000Z",
+  "updated_at": "2026-11-02T22:10:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "qwen2",
+    "amd",
+    "ryzenai",
+    "npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "quark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8940092200,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

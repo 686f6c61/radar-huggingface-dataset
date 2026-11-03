@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
+  "slug": "pika-labs-pika-h3-flex-turbo-lora",
+  "author": "Pika-Labs",
+  "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
+  "created_at": "2026-11-03T02:18:34.000Z",
+  "updated_at": "2026-11-03T02:18:35.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "pika",
+    "pika-h3-flex",
+    "turbo",
+    "4-step",
+    "8-step",
+    "2-step",
+    "lora",
+    "comfyui",
+    "diffusers",
+    "video-generation",
+    "image-to-video",
+    "reference-to-video",
+    "audio-video-generation",
+    "ml-intern",
+    "arxiv:2604.16826",
+    "arxiv:2610.11498",
+    "arxiv:2603.08258",
+    "base_model:Iwannapose/minimax_h3_pdmd_2nfe_comfyui",
+    "base_model:adapter:Iwannapose/minimax_h3_pdmd_2nfe_comfyui",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 79,
+  "downloads_30d": 28961,
+  "trending_score": 79,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20317303792,
+  "storage_human": "20.3 GB",
+  "base_model": "Pika-Labs/Pika-H3-Flex, lightx2v/Minimax-h3-Turbo, MiniMaxAI/MiniMax-H3, WarmBloodAban/Minimax-h3_Singularity, Iwannapose/minimax_h3_pdmd_2nfe_comfyui",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pika",
+      "url": "https://www.pika.fr/",
+      "snippet": "6 days ago · Fondée en 2000, Pika Édition est une maison d’édition spécialisée en manga. Avec un large choix de séries telles que …Read more"
+    },
+    {
+      "title": "Pika: AI Creative Tools for Video, Image & Audio",
+      "url": "https://pika.art/",
+      "snippet": "Pika is an AI creative platform for video, images and audio. Create product ads, reusable characters, music and voiceovers with …"
+    },
+    {
+      "title": "PIKA° Kitchen",
+      "url": "https://www.pika-kitchen.com/fr/",
+      "snippet": "Pika est née de l’idée de conserver sous vide vos préparations en utilisant vos propres contenants à bords lisses. Supprimez l’air de …"
+    },
+    {
+      "title": "Pika Labs - AI Video, Image & Audio Creative Platform",
+      "url": "https://pikaslabs.com/",
+      "snippet": "Sep 24, 2026 · From Pika 1.0 to Pika 2.5, each release expanded what AI video could be. Today Pika 2.5 sits alongside partner …"
+    },
+    {
+      "title": "Pika | Pika Édition",
+      "url": "https://www.pika.fr/livres-pika/",
+      "snippet": "Jun 24, 2026 · Pour l’année scolaire 2026-2027, Pika Édition vous propose deux agendas ! Dès le 3 juin, découvrez nos agendas …"
+    }
+  ]
+}

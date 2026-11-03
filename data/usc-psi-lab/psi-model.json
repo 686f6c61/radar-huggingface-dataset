@@ -5,7 +5,7 @@
   "author": "USC-PSI-Lab",
   "url": "https://huggingface.co/USC-PSI-Lab/psi-model",
   "created_at": "2026-02-23T19:28:25.000Z",
-  "updated_at": "2026-11-02T17:52:17.000Z",
+  "updated_at": "2026-11-02T20:33:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1464827265746,
-  "storage_human": "1464.8 GB",
+  "storage_bytes": 1476047137226,
+  "storage_human": "1476.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

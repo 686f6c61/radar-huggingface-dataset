@@ -5,7 +5,7 @@
   "author": "RL-Forgetting-Experiments-3",
   "url": "https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-llama3b-code-replay-uniform",
   "created_at": "2026-11-02T17:33:27.000Z",
-  "updated_at": "2026-11-02T18:02:58.000Z",
+  "updated_at": "2026-11-03T02:00:35.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 89974409392,
-  "storage_human": "90.0 GB",
+  "storage_bytes": 128527494880,
+  "storage_human": "128.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

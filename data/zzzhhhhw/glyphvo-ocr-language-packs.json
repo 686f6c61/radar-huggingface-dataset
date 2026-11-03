@@ -5,7 +5,7 @@
   "author": "ZZZHHHHW",
   "url": "https://huggingface.co/ZZZHHHHW/glyphvo-ocr-language-packs",
   "created_at": "2026-11-02T04:21:25.000Z",
-  "updated_at": "2026-11-02T04:28:24.000Z",
+  "updated_at": "2026-11-02T06:35:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
     "ocr",
     "paddleocr",
     "pp-ocrv5",
+    "pp-ocrv3",
     "license:apache-2.0",
     "region:us"
   ],
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 61054309,
-  "storage_human": "61 MB",
+  "storage_bytes": 77854537,
+  "storage_human": "78 MB",
   "base_model": null,
   "formats": [
     "onnx"

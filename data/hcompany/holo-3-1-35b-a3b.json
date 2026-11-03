@@ -30,11 +30,12 @@
     "base_model:Qwen/Qwen3.5-0.8B",
     "base_model:finetune:Qwen/Qwen3.5-0.8B",
     "license:apache-2.0",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 91,
-  "downloads_30d": 365,
+  "downloads_30d": 378,
   "trending_score": 7,
   "parameters": 35107181936,
   "parameters_human": "35.11B",

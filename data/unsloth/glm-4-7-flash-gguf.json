@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "unsloth/GLM-4.7-Flash-GGUF",
+  "slug": "unsloth-glm-4-7-flash-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF",
+  "created_at": "2026-01-20T00:14:42.000Z",
+  "updated_at": "2026-02-12T20:47:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2508.06471",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:quantized:zai-org/GLM-4.7-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 743,
+  "downloads_30d": 248568,
+  "trending_score": 11,
+  "parameters": 29943393920,
+  "parameters_human": "29.94B",
+  "storage_bytes": 1709955163328,
+  "storage_human": "1710.0 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware.Read more"
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "Documentation Unsloth | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/fr",
+      "snippet": "Unsloth vous permet d’exécuter et d’entraîner des modèles pour le texte, audio, embedding, vision et plus encore. Unsloth offre de …"
+    },
+    {
+      "title": "Releases · unslothai/unsloth - GitHub",
+      "url": "https://github.com/unslothai/unsloth/releases",
+      "snippet": "Unsloth now reads AGENTS.md from your Unsloth home and project folders into chat instructions. In Desktop, a project can now run …"
+    },
+    {
+      "title": "unsloth · PyPI",
+      "url": "https://pypi.org/project/unsloth/",
+      "snippet": "Oct 11, 2026 · The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "YuyaoTechnology",
   "url": "https://huggingface.co/YuyaoTechnology/MatterSeek",
   "created_at": "2026-10-19T04:17:34.000Z",
-  "updated_at": "2026-11-02T03:02:16.000Z",
+  "updated_at": "2026-11-02T13:21:20.000Z",
   "license": "yuyaotechnology-matterseek-eula",
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -17,13 +17,12 @@
   "tags": [
     "materials-science",
     "graph-neural-network",
-    "feature-extraction",
     "zh",
     "en",
     "license:other",
     "region:us"
   ],
-  "likes": 996,
+  "likes": 1265,
   "downloads_30d": 0,
   "trending_score": 12,
   "parameters": null,

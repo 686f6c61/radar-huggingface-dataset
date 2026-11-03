@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Gnamouke/ARIEL-3B-Q4",
+  "slug": "gnamouke-ariel-3b-q4",
+  "author": "Gnamouke",
+  "url": "https://huggingface.co/Gnamouke/ARIEL-3B-Q4",
+  "created_at": "2026-11-03T00:23:37.000Z",
+  "updated_at": "2026-11-03T00:57:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902688,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

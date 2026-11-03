@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "TigreGotico/afrigloss-opus-mt-fr-sn-onnx",
+  "slug": "tigregotico-afrigloss-opus-mt-fr-sn-onnx",
+  "author": "TigreGotico",
+  "url": "https://huggingface.co/TigreGotico/afrigloss-opus-mt-fr-sn-onnx",
+  "created_at": "2026-11-02T23:12:53.000Z",
+  "updated_at": "2026-11-03T00:03:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "optimum",
+  "languages": [
+    "fr",
+    "sn"
+  ],
+  "tags": [
+    "optimum",
+    "onnx",
+    "marian",
+    "translation",
+    "onnxruntime",
+    "int8",
+    "afrigloss-mt",
+    "glossary",
+    "fr",
+    "sn",
+    "base_model:AfriSpeech/afrigloss-opus-mt-fr-sn",
+    "base_model:quantized:AfriSpeech/afrigloss-opus-mt-fr-sn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1129768146,
+  "storage_human": "1.1 GB",
+  "base_model": "AfriSpeech/afrigloss-opus-mt-fr-sn",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

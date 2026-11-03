@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/gemma-4-31B-AWQ-4bit",
   "created_at": "2026-10-10T16:39:32.000Z",
-  "updated_at": "2026-11-02T02:33:11.000Z",
+  "updated_at": "2026-11-02T04:23:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 108,
+  "downloads_30d": 159,
   "trending_score": 0,
   "parameters": 6676812132,
   "parameters_human": "6.68B",

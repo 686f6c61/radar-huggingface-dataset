@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "amd/gemma-4-e2b-it-mobius-int4_rai_1.9.0_npu",
+  "slug": "amd-gemma-4-e2b-it-mobius-int4_rai_1-9-0_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/gemma-4-e2b-it-mobius-int4_rai_1.9.0_npu",
+  "created_at": "2026-11-02T23:08:09.000Z",
+  "updated_at": "2026-11-02T23:10:14.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "amd",
+    "ryzenai",
+    "npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15069141999,
+  "storage_human": "15.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "tokiers/potion-8m-edu-classifier",
+  "slug": "tokiers-potion-8m-edu-classifier",
+  "author": "tokiers",
+  "url": "https://huggingface.co/tokiers/potion-8m-edu-classifier",
+  "created_at": "2026-03-29T06:35:17.000Z",
+  "updated_at": "2026-11-03T02:59:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "model2vec",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "embeddings",
+    "static-embeddings",
+    "tokie",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu-llama3-annotations",
+    "base_model:minishlab/potion-base-8M",
+    "base_model:finetune:minishlab/potion-base-8M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 7559168,
+  "parameters_human": "7.6M",
+  "storage_bytes": 160292139,
+  "storage_human": "160 MB",
+  "base_model": "minishlab/potion-base-8M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

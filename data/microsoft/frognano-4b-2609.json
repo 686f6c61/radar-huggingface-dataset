@@ -15,10 +15,11 @@
     "safetensors",
     "qwen3_5",
     "license:mit",
+    "eval-results",
     "region:us"
   ],
   "likes": 177,
-  "downloads_30d": 3021,
+  "downloads_30d": 2761,
   "trending_score": 12,
   "parameters": 4659865088,
   "parameters_human": "4.66B",

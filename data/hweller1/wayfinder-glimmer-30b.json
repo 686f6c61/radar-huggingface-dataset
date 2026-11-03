@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "hweller1/wayfinder-glimmer-30b",
+  "slug": "hweller1-wayfinder-glimmer-30b",
+  "author": "hweller1",
+  "url": "https://huggingface.co/hweller1/wayfinder-glimmer-30b",
+  "created_at": "2026-10-28T18:14:28.000Z",
+  "updated_at": "2026-11-02T22:20:09.000Z",
+  "license": "apache-2.0-and-muse-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "code-search",
+    "agentic",
+    "tool-use",
+    "subagent",
+    "lora-merged",
+    "muse",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59581565169,
+  "storage_human": "59.6 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

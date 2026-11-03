@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Bssilv4a/BrooklynvanZandth",
+  "slug": "bssilv4a-brooklynvanzandth",
+  "author": "Bssilv4a",
+  "url": "https://huggingface.co/Bssilv4a/BrooklynvanZandth",
+  "created_at": "2026-11-03T02:34:10.000Z",
+  "updated_at": "2026-11-03T03:07:44.000Z",
+  "license": "pddl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "Rvc",
+    "dataset:AI-C/rvc-models",
+    "base_model:Darkanjo/genericvoice190",
+    "base_model:finetune:Darkanjo/genericvoice190",
+    "license:pddl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161476514,
+  "storage_human": "161 MB",
+  "base_model": "Darkanjo/genericvoice190",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

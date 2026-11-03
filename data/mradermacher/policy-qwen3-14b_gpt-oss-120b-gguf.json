@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Policy-Qwen3-14B_GPT-OSS-120B-GGUF",
+  "slug": "mradermacher-policy-qwen3-14b_gpt-oss-120b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Policy-Qwen3-14B_GPT-OSS-120B-GGUF",
+  "created_at": "2026-02-12T06:00:10.000Z",
+  "updated_at": "2026-11-02T22:29:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:wonderful9462/Policy-Qwen3-14B_GPT-OSS-120B",
+    "base_model:quantized:wonderful9462/Policy-Qwen3-14B_GPT-OSS-120B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 273,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987582240,
+  "storage_human": "102.0 GB",
+  "base_model": "wonderful9462/Policy-Qwen3-14B_GPT-OSS-120B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

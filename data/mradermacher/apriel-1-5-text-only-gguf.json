@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Apriel-1.5-Text-Only-GGUF",
+  "slug": "mradermacher-apriel-1-5-text-only-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Apriel-1.5-Text-Only-GGUF",
+  "created_at": "2026-02-12T06:00:10.000Z",
+  "updated_at": "2026-11-02T22:29:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ServiceNow-AI/Apriel-1.5-Text-Only",
+    "base_model:quantized:ServiceNow-AI/Apriel-1.5-Text-Only",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 14428902400,
+  "parameters_human": "14.43B",
+  "storage_bytes": 99497940672,
+  "storage_human": "99.5 GB",
+  "base_model": "ServiceNow-AI/Apriel-1.5-Text-Only",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

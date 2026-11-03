@@ -5,7 +5,7 @@
   "author": "Scantist",
   "url": "https://huggingface.co/Scantist/GLM-5.3-SLIM-GGUF",
   "created_at": "2026-11-02T13:11:14.000Z",
-  "updated_at": "2026-11-02T13:27:00.000Z",
+  "updated_at": "2026-11-03T01:48:48.000Z",
   "license": "glm-5.3",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

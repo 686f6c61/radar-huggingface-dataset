@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Azaratthh/relatos-que-sanan-lfm2.5-350m",
+  "slug": "azaratthh-relatos-que-sanan-lfm2-5-350m",
+  "author": "Azaratthh",
+  "url": "https://huggingface.co/Azaratthh/relatos-que-sanan-lfm2.5-350m",
+  "created_at": "2026-11-02T23:22:44.000Z",
+  "updated_at": "2026-11-02T23:33:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "salud-mental-perinatal",
+    "terapia-narrativa",
+    "es",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:quantized:LiquidAI/LFM2.5-350M",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 229314592,
+  "storage_human": "229 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

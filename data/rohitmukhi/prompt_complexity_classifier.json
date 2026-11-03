@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rohitMukhi/prompt_complexity_classifier",
+  "slug": "rohitmukhi-prompt_complexity_classifier",
+  "author": "rohitMukhi",
+  "url": "https://huggingface.co/rohitMukhi/prompt_complexity_classifier",
+  "created_at": "2026-11-03T04:32:23.000Z",
+  "updated_at": "2026-11-03T04:34:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "deberta-v3",
+    "prompt-routing",
+    "llm",
+    "onnx",
+    "en",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184424451,
+  "parameters_human": "184.4M",
+  "storage_bytes": 368873446,
+  "storage_human": "369 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

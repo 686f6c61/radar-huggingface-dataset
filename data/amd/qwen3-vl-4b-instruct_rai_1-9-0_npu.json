@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "amd/Qwen3-VL-4B-Instruct_rai_1.9.0_npu",
+  "slug": "amd-qwen3-vl-4b-instruct_rai_1-9-0_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Qwen3-VL-4B-Instruct_rai_1.9.0_npu",
+  "created_at": "2026-11-02T22:31:31.000Z",
+  "updated_at": "2026-11-02T22:31:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "qwen3_vl",
+    "amd",
+    "ryzenai",
+    "npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3054115031,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

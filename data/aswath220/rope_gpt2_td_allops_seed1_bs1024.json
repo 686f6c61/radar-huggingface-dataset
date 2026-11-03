@@ -5,7 +5,7 @@
   "author": "Aswath220",
   "url": "https://huggingface.co/Aswath220/rope_gpt2_td_allops_seed1_bs1024",
   "created_at": "2026-10-16T12:27:15.000Z",
-  "updated_at": "2026-11-02T04:37:42.000Z",
+  "updated_at": "2026-11-02T07:05:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18799011439,
+  "storage_bytes": 18801480392,
   "storage_human": "18.8 GB",
   "base_model": null,
   "formats": [

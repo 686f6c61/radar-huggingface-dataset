@@ -5,7 +5,7 @@
   "author": "Nassau-1",
   "url": "https://huggingface.co/Nassau-1/nemotron-3.5-asr-streaming-0.6b-intel-npu",
   "created_at": "2026-11-02T10:06:31.000Z",
-  "updated_at": "2026-11-02T10:15:02.000Z",
+  "updated_at": "2026-11-02T10:48:15.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "jnorthrup/jeva-4b-mlx-q4g32-dist",
+  "slug": "jnorthrup-jeva-4b-mlx-q4g32-dist",
+  "author": "jnorthrup",
+  "url": "https://huggingface.co/jnorthrup/jeva-4b-mlx-q4g32-dist",
+  "created_at": "2026-10-28T22:55:00.000Z",
+  "updated_at": "2026-11-03T03:03:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 5695829234,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

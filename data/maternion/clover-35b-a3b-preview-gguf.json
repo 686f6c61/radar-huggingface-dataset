@@ -5,7 +5,7 @@
   "author": "maternion",
   "url": "https://huggingface.co/maternion/Clover-35B-A3B-Preview-GGUF",
   "created_at": "2026-10-28T18:10:31.000Z",
-  "updated_at": "2026-10-30T11:15:43.000Z",
+  "updated_at": "2026-11-02T19:54:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,10 +30,10 @@
   "likes": 7,
   "downloads_30d": 15748,
   "trending_score": 0,
-  "parameters": 34661350848,
+  "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 137493743349,
-  "storage_human": "137.5 GB",
+  "storage_bytes": 274964010165,
+  "storage_human": "275.0 GB",
   "base_model": "Diffuspace/Clover-35B-A3B-Preview",
   "formats": [
     "gguf"

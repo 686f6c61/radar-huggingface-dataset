@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "AraceliAmherdt/04-transformers-clasificacion-texto",
+  "slug": "araceliamherdt-04-transformers-clasificacion-texto",
+  "author": "AraceliAmherdt",
+  "url": "https://huggingface.co/AraceliAmherdt/04-transformers-clasificacion-texto",
+  "created_at": "2026-11-02T23:12:40.000Z",
+  "updated_at": "2026-11-02T23:13:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "machine-learning",
+    "educational-example",
+    "es",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20546,
+  "parameters_human": "20546",
+  "storage_bytes": 86488,
+  "storage_human": "86488 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

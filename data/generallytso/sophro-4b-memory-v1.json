@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "GenerallyTso/Sophro-4B-memory-v1",
+  "slug": "generallytso-sophro-4b-memory-v1",
+  "author": "GenerallyTso",
+  "url": "https://huggingface.co/GenerallyTso/Sophro-4B-memory-v1",
+  "created_at": "2026-11-02T21:27:35.000Z",
+  "updated_at": "2026-11-02T22:02:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3",
+    "memory",
+    "on-device",
+    "zynkbot",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2369545152,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "tomtia/Intern-Decision-4B-GGUF",
+  "slug": "tomtia-intern-decision-4b-gguf",
+  "author": "tomtia",
+  "url": "https://huggingface.co/tomtia/Intern-Decision-4B-GGUF",
+  "created_at": "2026-11-03T03:17:14.000Z",
+  "updated_at": "2026-11-03T03:28:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "multimodal",
+    "decision-making",
+    "structured-prediction",
+    "image-text-to-text",
+    "base_model:internlm/Intern-Decision-4B",
+    "base_model:quantized:internlm/Intern-Decision-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 3381227936,
+  "storage_human": "3.4 GB",
+  "base_model": "internlm/Intern-Decision-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AVA Assurance Voyage - Le guide complet",
+      "url": "https://www.assurancesvoyage.fr/ava-assurance-voyage/",
+      "snippet": "Sep 4, 2025 · Fondée en 1981, AVA est une société française spécialisée dans l’assurance voyage et santé à l’international. …"
+    }
+  ]
+}

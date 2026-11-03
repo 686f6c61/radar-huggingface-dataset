@@ -5,7 +5,7 @@
   "author": "iamzeaq",
   "url": "https://huggingface.co/iamzeaq/honest-orb-mms-pcm",
   "created_at": "2026-11-01T19:19:38.000Z",
-  "updated_at": "2026-11-01T19:19:52.000Z",
+  "updated_at": "2026-11-02T14:46:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-audio",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 36284208,
   "parameters_human": "36.3M",
-  "storage_bytes": 145229176,
-  "storage_human": "145 MB",
+  "storage_bytes": 290458352,
+  "storage_human": "290 MB",
   "base_model": null,
   "formats": [
     "safetensors"

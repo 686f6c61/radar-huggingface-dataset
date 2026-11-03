@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Qwen3.5-122B-A10B-AWQ-8bit",
   "created_at": "2026-10-27T08:48:43.000Z",
-  "updated_at": "2026-11-02T01:54:25.000Z",
+  "updated_at": "2026-11-02T04:22:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 92,
+  "downloads_30d": 180,
   "trending_score": 0,
   "parameters": 125086497008,
   "parameters_human": "125.09B",

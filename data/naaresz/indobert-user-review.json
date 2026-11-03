@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "naaresz/Indobert-user-review",
+  "slug": "naaresz-indobert-user-review",
+  "author": "naaresz",
+  "url": "https://huggingface.co/naaresz/Indobert-user-review",
+  "created_at": "2026-11-03T03:38:52.000Z",
+  "updated_at": "2026-11-03T03:56:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124442882,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497795072,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HÔTEL LE TWELVE (Paris) : tarifs 2026 et avis - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Hotel_Review-g187147-d2275694-Reviews-Hotel_Le_Twelve-Paris_Ile_de_France.html",
+      "snippet": "Réserver Hôtel Le Twelve, Paris sur Tripadvisor : consultez les 310 avis de voyageurs, 141 photos, et les meilleures offres pour Hôtel …"
+    },
+    {
+      "title": "HOTEL LE TWELVE - Updated 2026 Prices & Reviews (Paris ... - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g187147-d2275694-Reviews-Hotel_Le_Twelve-Paris_Ile_de_France.html",
+      "snippet": "Book Hotel Le Twelve, Paris on Tripadvisor: See 310 traveler reviews, 141 candid photos, and great deals for Hotel Le Twelve, …"
+    },
+    {
+      "title": "HÔTEL LE TWELVE (Paris) : tarifs 2026 et avis - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Hotel_Review-g187147-d2275694-Reviews-or10-Hotel_Le_Twelve-Paris_Ile_de_France.html",
+      "snippet": "Réserver Hôtel Le Twelve, Paris sur Tripadvisor : consultez les 310 avis de voyageurs, 141 photos, et les meilleures offres pour Hôtel …"
+    },
+    {
+      "title": "HOTEL LE 12 - Updated 2026 Prices & Reviews (Paris, France) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g187147-d678590-Reviews-Hotel_Le_12-Paris_Ile_de_France.html",
+      "snippet": "Book Hotel Le 12, Paris on Tripadvisor: See 1,851 traveler reviews, 840 candid photos, and great deals for Hotel Le 12, ranked #203 …"
+    },
+    {
+      "title": "HOTEL LE TWELVE - Recent 2026 Reviews - Tripadvisor",
+      "url": "https://www.tripadvisor.co.uk/Hotel_Review-g187147-d2275694-Reviews-Hotel_Le_Twelve-Paris_Ile_de_France.html",
+      "snippet": "Book Hotel Le Twelve, Paris on Tripadvisor: See 310 traveller reviews, 141 candid photos, and great deals for Hotel Le Twelve, …"
+    }
+  ]
+}

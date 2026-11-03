@@ -5,7 +5,7 @@
   "author": "andkil",
   "url": "https://huggingface.co/andkil/llm-course-hw2-dpo",
   "created_at": "2026-11-02T08:48:09.000Z",
-  "updated_at": "2026-11-02T08:48:21.000Z",
+  "updated_at": "2026-11-02T11:05:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 134515008,
   "parameters_human": "134.5M",
-  "storage_bytes": 538090408,
-  "storage_human": "538 MB",
+  "storage_bytes": 1076180816,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

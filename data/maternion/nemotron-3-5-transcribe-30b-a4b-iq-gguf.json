@@ -5,7 +5,7 @@
   "author": "maternion",
   "url": "https://huggingface.co/maternion/Nemotron-3.5-Transcribe-30B-A4B-IQ-GGUF",
   "created_at": "2026-10-31T18:07:36.000Z",
-  "updated_at": "2026-11-01T16:38:58.000Z",
+  "updated_at": "2026-11-02T12:14:45.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -114,13 +114,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 1049,
   "trending_score": 0,
   "parameters": 32913266240,
   "parameters_human": "32.91B",
-  "storage_bytes": 93095637760,
-  "storage_human": "93.1 GB",
+  "storage_bytes": 111839775232,
+  "storage_human": "111.8 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "formats": [
     "gguf"

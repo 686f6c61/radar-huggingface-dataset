@@ -5,7 +5,7 @@
   "author": "Kujira",
   "url": "https://huggingface.co/Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-Pinpoint-Uncensored-v1",
   "created_at": "2026-10-31T13:50:32.000Z",
-  "updated_at": "2026-11-01T17:26:40.000Z",
+  "updated_at": "2026-11-02T14:37:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,13 +28,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1,
-  "downloads_30d": 405,
+  "likes": 2,
+  "downloads_30d": 484,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 17583911264,
-  "storage_human": "17.6 GB",
+  "storage_bytes": 8771311744,
+  "storage_human": "8.8 GB",
   "base_model": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
   "formats": [
     "gguf"

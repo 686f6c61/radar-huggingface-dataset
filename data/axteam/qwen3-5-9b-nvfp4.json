@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Qwen3.5-9B-NVFP4",
   "created_at": "2026-10-27T09:02:23.000Z",
-  "updated_at": "2026-11-02T01:54:35.000Z",
+  "updated_at": "2026-11-02T04:23:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 100,
+  "downloads_30d": 168,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

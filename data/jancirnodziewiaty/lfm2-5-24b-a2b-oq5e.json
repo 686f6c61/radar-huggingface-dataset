@@ -5,7 +5,7 @@
   "author": "jancirnodziewiaty",
   "url": "https://huggingface.co/jancirnodziewiaty/LFM2.5-24B-A2B-oQ5e",
   "created_at": "2026-10-14T06:37:06.000Z",
-  "updated_at": "2026-11-02T16:25:08.000Z",
+  "updated_at": "2026-11-02T17:36:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,6 +17,8 @@
     "lfm2_moe",
     "oq",
     "quantized",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:quantized:LiquidAI/LFM2.5-24B-A2B",
     "5-bit",
     "region:us"
   ],
@@ -25,9 +27,9 @@
   "trending_score": 0,
   "parameters": 23971587712,
   "parameters_human": "23.97B",
-  "storage_bytes": 33595732316,
-  "storage_human": "33.6 GB",
-  "base_model": null,
+  "storage_bytes": 16886117513,
+  "storage_human": "16.9 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "mlx",
     "safetensors"

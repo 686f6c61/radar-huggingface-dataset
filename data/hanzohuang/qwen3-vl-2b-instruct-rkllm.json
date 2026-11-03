@@ -5,7 +5,7 @@
   "author": "HanzoHuang",
   "url": "https://huggingface.co/HanzoHuang/Qwen3-VL-2B-Instruct-RKLLM",
   "created_at": "2026-10-22T22:53:23.000Z",
-  "updated_at": "2026-10-23T01:57:44.000Z",
+  "updated_at": "2026-11-02T08:27:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 71,
+  "downloads_30d": 74,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

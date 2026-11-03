@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/iconoclast-qwen2.5-14b-GGUF",
+  "slug": "mradermacher-iconoclast-qwen2-5-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/iconoclast-qwen2.5-14b-GGUF",
+  "created_at": "2026-06-12T09:54:17.000Z",
+  "updated_at": "2026-11-02T22:28:36.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "iconoclast",
+    "abliterated",
+    "ablation",
+    "open-weights",
+    "text-generation",
+    "en",
+    "base_model:HaadesX/iconoclast-qwen2.5-14b",
+    "base_model:quantized:HaadesX/iconoclast-qwen2.5-14b",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 189,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043521152,
+  "storage_human": "102.0 GB",
+  "base_model": "HaadesX/iconoclast-qwen2.5-14b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

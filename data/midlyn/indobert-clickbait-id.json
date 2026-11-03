@@ -5,7 +5,7 @@
   "author": "midlyn",
   "url": "https://huggingface.co/midlyn/indobert-clickbait-id",
   "created_at": "2026-10-18T20:47:50.000Z",
-  "updated_at": "2026-10-18T20:49:06.000Z",
+  "updated_at": "2026-11-02T19:20:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 124442882,
   "parameters_human": "124.4M",
-  "storage_bytes": 497795048,
-  "storage_human": "498 MB",
+  "storage_bytes": 995590120,
+  "storage_human": "996 MB",
   "base_model": "indobenchmark/indobert-base-p1",
   "formats": [
     "safetensors"

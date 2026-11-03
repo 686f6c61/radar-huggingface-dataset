@@ -5,7 +5,7 @@
   "author": "geolazagr",
   "url": "https://huggingface.co/geolazagr/greko",
   "created_at": "2026-09-25T11:54:57.000Z",
-  "updated_at": "2026-10-31T15:27:55.000Z",
+  "updated_at": "2026-11-02T16:43:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 6222,
+  "downloads_30d": 6045,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
-  "storage_bytes": 17181148262,
-  "storage_human": "17.2 GB",
+  "storage_bytes": 17299894762,
+  "storage_human": "17.3 GB",
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "gguf"

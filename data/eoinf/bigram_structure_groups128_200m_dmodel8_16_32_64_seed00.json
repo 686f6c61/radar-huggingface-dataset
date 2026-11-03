@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "eoinf/bigram_structure_groups128_200m_dmodel8_16_32_64_seed00",
+  "slug": "eoinf-bigram_structure_groups128_200m_dmodel8_16_32_64_seed00",
+  "author": "eoinf",
+  "url": "https://huggingface.co/eoinf/bigram_structure_groups128_200m_dmodel8_16_32_64_seed00",
+  "created_at": "2026-11-03T00:12:02.000Z",
+  "updated_at": "2026-11-03T00:29:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109652504,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -39,11 +39,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 643,
+  "downloads_30d": 677,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 21090536258,
+  "storage_bytes": 21092495239,
   "storage_human": "21.1 GB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct, microsoft/bitnet-b1.58-2B-4T, meta-llama/Llama-3.2-1B-Instruct",
   "formats": [],

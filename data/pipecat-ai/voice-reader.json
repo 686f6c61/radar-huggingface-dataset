@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "pipecat-ai/voice-reader",
+  "slug": "pipecat-ai-voice-reader",
+  "author": "pipecat-ai",
+  "url": "https://huggingface.co/pipecat-ai/voice-reader",
+  "created_at": "2026-11-02T20:41:30.000Z",
+  "updated_at": "2026-11-02T21:24:43.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "pipecat",
+    "speech-emotion-recognition",
+    "sarcasm",
+    "prosody",
+    "audio-classification",
+    "en",
+    "base_model:laion/whisper-tiny-base-emotion-voice-burst",
+    "base_model:quantized:laion/whisper-tiny-base-emotion-voice-burst",
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201832265,
+  "storage_human": "202 MB",
+  "base_model": "laion/whisper-tiny-base-emotion-voice-burst",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

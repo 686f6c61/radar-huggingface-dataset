@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nouli-ai/nouli-underwrite-evidence",
+  "slug": "nouli-ai-nouli-underwrite-evidence",
+  "author": "nouli-ai",
+  "url": "https://huggingface.co/nouli-ai/nouli-underwrite-evidence",
+  "created_at": "2026-11-02T22:38:31.000Z",
+  "updated_at": "2026-11-02T22:42:04.000Z",
+  "license": "apache-2.0-and-mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nouli",
+    "insurance",
+    "evidence-review",
+    "construction-safety",
+    "ensemble",
+    "custom-inference",
+    "research",
+    "text-classification",
+    "en",
+    "dataset:lab-flair/constructcie",
+    "base_model:FacebookAI/roberta-large",
+    "base_model:finetune:FacebookAI/roberta-large",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3072581652,
+  "storage_human": "3.1 GB",
+  "base_model": "FacebookAI/roberta-large, typestrict/TS-Ettin-150M, jhu-clsp/ettin-encoder-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

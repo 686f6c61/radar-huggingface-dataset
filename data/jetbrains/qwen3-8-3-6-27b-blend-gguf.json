@@ -5,7 +5,7 @@
   "author": "JetBrains",
   "url": "https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-GGUF",
   "created_at": "2026-09-15T10:51:06.000Z",
-  "updated_at": "2026-10-27T16:28:06.000Z",
+  "updated_at": "2026-11-02T12:23:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 42,
-  "downloads_30d": 17220,
+  "downloads_30d": 17042,
   "trending_score": 11,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

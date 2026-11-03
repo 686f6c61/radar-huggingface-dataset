@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sfc-gh-vboonsanong/knowline-35b-a3b-gen1.5-nvfp4",
+  "slug": "sfc-gh-vboonsanong-knowline-35b-a3b-gen1-5-nvfp4",
+  "author": "sfc-gh-vboonsanong",
+  "url": "https://huggingface.co/sfc-gh-vboonsanong/knowline-35b-a3b-gen1.5-nvfp4",
+  "created_at": "2026-11-03T00:39:59.000Z",
+  "updated_at": "2026-11-03T00:40:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "nvfp4",
+    "modelopt",
+    "base_model:PelaAI/KnowLine-35B-A3B-Gen1.5",
+    "base_model:quantized:PelaAI/KnowLine-35B-A3B-Gen1.5",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18298508656,
+  "parameters_human": "18.30B",
+  "storage_bytes": 23622434059,
+  "storage_human": "23.6 GB",
+  "base_model": "PelaAI/KnowLine-35B-A3B-Gen1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

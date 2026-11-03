@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "alpgures/amateur-phone-photo-realism-sdxl-lora",
+  "slug": "alpgures-amateur-phone-photo-realism-sdxl-lora",
+  "author": "alpgures",
+  "url": "https://huggingface.co/alpgures/amateur-phone-photo-realism-sdxl-lora",
+  "created_at": "2026-11-03T02:03:40.000Z",
+  "updated_at": "2026-11-03T02:03:46.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "sdxl",
+    "text-to-image",
+    "stable-diffusion-xl",
+    "not-for-all-audiences",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46617512,
+  "storage_human": "47 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Oct 18, 2026 · Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs …"
+    }
+  ]
+}

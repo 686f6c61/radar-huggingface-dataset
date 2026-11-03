@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "5hadytru/so101_bench_GR00T_N1.6-3B_WM_sim_real_corr",
+  "slug": "5hadytru-so101_bench_gr00t_n1-6-3b_wm_sim_real_corr",
+  "author": "5hadytru",
+  "url": "https://huggingface.co/5hadytru/so101_bench_GR00T_N1.6-3B_WM_sim_real_corr",
+  "created_at": "2026-09-30T05:23:58.000Z",
+  "updated_at": "2026-11-03T00:07:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "gr00t",
+  "languages": [],
+  "tags": [
+    "gr00t",
+    "safetensors",
+    "Gr00tN1d6",
+    "robotics",
+    "so101",
+    "so101-bench",
+    "lerobot",
+    "vla",
+    "sim-to-real",
+    "dataset:5hadytru/so101_bench_sim_6",
+    "arxiv:2610.36420",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 3286608832,
+  "parameters_human": "3.29B",
+  "storage_bytes": 6573374552,
+  "storage_human": "6.6 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如题 谢谢了",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    }
+  ]
+}

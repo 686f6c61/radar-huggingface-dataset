@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "DzmitryTheOtherOne/Qwen3.8-Flash-Next-FP8-PLE-Strata-GGUF",
+  "slug": "dzmitrytheotherone-qwen3-8-flash-next-fp8-ple-strata-gguf",
+  "author": "DzmitryTheOtherOne",
+  "url": "https://huggingface.co/DzmitryTheOtherOne/Qwen3.8-Flash-Next-FP8-PLE-Strata-GGUF",
+  "created_at": "2026-11-03T01:37:32.000Z",
+  "updated_at": "2026-11-03T01:54:35.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51200245760,
+  "parameters_human": "51.20B",
+  "storage_bytes": 51200246112,
+  "storage_human": "51.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

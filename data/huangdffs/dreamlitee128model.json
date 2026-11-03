@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "huangdffs/dreamlitee128model",
+  "slug": "huangdffs-dreamlitee128model",
+  "author": "huangdffs",
+  "url": "https://huggingface.co/huangdffs/dreamlitee128model",
+  "created_at": "2026-10-17T10:46:12.000Z",
+  "updated_at": "2026-11-02T23:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 375689280,
+  "parameters_human": "375.7M",
+  "storage_bytes": 29484958287,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

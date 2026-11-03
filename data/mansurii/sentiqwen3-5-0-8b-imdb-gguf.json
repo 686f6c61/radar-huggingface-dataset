@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mansurii/SentiQwen3.5-0.8B-IMDb-GGUF",
+  "slug": "mansurii-sentiqwen3-5-0-8b-imdb-gguf",
+  "author": "mansurii",
+  "url": "https://huggingface.co/mansurii/SentiQwen3.5-0.8B-IMDb-GGUF",
+  "created_at": "2026-11-02T22:21:01.000Z",
+  "updated_at": "2026-11-02T22:31:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "sentiment-analysis",
+    "text-classification",
+    "imdb",
+    "text-generation",
+    "en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 1765008736,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "IMDB",
+      "metric": "Accuracy",
+      "value": 0.9578
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "IMDB",
+      "metric": "Macro F1",
+      "value": 0.9578
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "IMDB",
+      "metric": "Macro Precision",
+      "value": 0.9579
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "IMDB",
+      "metric": "Macro Recall",
+      "value": 0.9578
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "yukihuy99yuki/glossary-classifier",
+  "slug": "yukihuy99yuki-glossary-classifier",
+  "author": "yukihuy99yuki",
+  "url": "https://huggingface.co/yukihuy99yuki/glossary-classifier",
+  "created_at": "2026-11-03T02:02:07.000Z",
+  "updated_at": "2026-11-03T02:20:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "glossary",
+    "terminology-extraction",
+    "named-entity",
+    "chinese-web-novel",
+    "xianxia",
+    "text-classification",
+    "zh",
+    "base_model:hfl/chinese-roberta-wwm-ext",
+    "base_model:quantized:hfl/chinese-roberta-wwm-ext",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 818408904,
+  "storage_human": "818 MB",
+  "base_model": "hfl/chinese-roberta-wwm-ext",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Glossary candidate classification",
+      "dataset": "Codex-labelled gold set (800 candidates, 3 held-out novels)",
+      "metric": null,
+      "value": 0.985
+    },
+    {
+      "task": "Glossary candidate classification",
+      "dataset": "Codex-labelled gold set (800 candidates, 3 held-out novels)",
+      "metric": null,
+      "value": 0.84
+    },
+    {
+      "task": "Glossary candidate classification",
+      "dataset": "Codex-labelled gold set (800 candidates, 3 held-out novels)",
+      "metric": null,
+      "value": 0.737
+    },
+    {
+      "task": "Glossary candidate classification",
+      "dataset": "Codex-labelled gold set (800 candidates, 3 held-out novels)",
+      "metric": null,
+      "value": 0.978
+    },
+    {
+      "task": "Glossary candidate classification",
+      "dataset": "Codex-labelled gold set (800 candidates, 3 held-out novels)",
+      "metric": null,
+      "value": 0.915
+    }
+  ],
+  "sources": []
+}

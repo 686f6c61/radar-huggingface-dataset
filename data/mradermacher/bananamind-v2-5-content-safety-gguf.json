@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BananaMind-V2.5-Content-Safety-GGUF",
+  "slug": "mradermacher-bananamind-v2-5-content-safety-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BananaMind-V2.5-Content-Safety-GGUF",
+  "created_at": "2026-06-12T09:31:53.000Z",
+  "updated_at": "2026-11-02T21:23:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "gemma",
+    "content-safety",
+    "safety-classification",
+    "moderation",
+    "text-classification",
+    "instruction-tuned",
+    "text-generation",
+    "en",
+    "dataset:nvidia/Nemotron-3.5-Content-Safety-Dataset",
+    "base_model:Banaxi-Tech/BananaMind-V2.5-Content-Safety",
+    "base_model:quantized:Banaxi-Tech/BananaMind-V2.5-Content-Safety",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 47865210368,
+  "storage_human": "47.9 GB",
+  "base_model": "Banaxi-Tech/BananaMind-V2.5-Content-Safety",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

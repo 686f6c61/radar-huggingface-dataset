@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "KeelCore/KeelCore-750M-Professional",
+  "slug": "keelcore-keelcore-750m-professional",
+  "author": "KeelCore",
+  "url": "https://huggingface.co/KeelCore/KeelCore-750M-Professional",
+  "created_at": "2026-10-30T07:54:11.000Z",
+  "updated_at": "2026-10-30T17:37:25.000Z",
+  "license": "keelcore-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "adapter",
+    "text-rewriting",
+    "professional-writing",
+    "encoder-decoder",
+    "onnx",
+    "text-generation",
+    "en",
+    "base_model:KeelCore/KeelCore-750M",
+    "base_model:adapter:KeelCore/KeelCore-750M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147219586,
+  "storage_human": "147 MB",
+  "base_model": "KeelCore/KeelCore-750M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

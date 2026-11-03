@@ -5,7 +5,7 @@
   "author": "gpillon",
   "url": "https://huggingface.co/gpillon/Nemotron-3-Diarization-GGUF-ignis",
   "created_at": "2026-10-26T10:19:04.000Z",
-  "updated_at": "2026-10-26T10:32:51.000Z",
+  "updated_at": "2026-11-02T21:59:36.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "voice-activity-detection",

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "abbuibuibui/TenkaIzumo-Lora",
+  "slug": "abbuibuibui-tenkaizumo-lora",
+  "author": "abbuibuibui",
+  "url": "https://huggingface.co/abbuibuibui/TenkaIzumo-Lora",
+  "created_at": "2026-10-31T06:09:17.000Z",
+  "updated_at": "2026-11-03T03:56:49.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "sdxl",
+    "lora",
+    "illustrious",
+    "character",
+    "mato-seihei",
+    "tenka-izumo",
+    "tenka_izumo",
+    "en",
+    "zh",
+    "dataset:abbuibuibui/TenkaIzumo-Dataset",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3203079399,
+  "storage_human": "3.2 GB",
+  "base_model": "waiIllustriousSDXL",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

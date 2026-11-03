@@ -5,7 +5,7 @@
   "author": "CZUR-Research",
   "url": "https://huggingface.co/CZUR-Research/MECT-b2-finetuned",
   "created_at": "2026-11-02T03:18:11.000Z",
-  "updated_at": "2026-11-02T03:43:33.000Z",
+  "updated_at": "2026-11-03T00:13:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

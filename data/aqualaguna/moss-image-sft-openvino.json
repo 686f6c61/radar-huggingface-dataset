@@ -5,7 +5,7 @@
   "author": "aqualaguna",
   "url": "https://huggingface.co/aqualaguna/MOSS-Image-SFT-OpenVINO",
   "created_at": "2026-11-02T17:49:27.000Z",
-  "updated_at": "2026-11-02T17:52:36.000Z",
+  "updated_at": "2026-11-02T18:01:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Magistral-Small-2509-Heretic-v1.2-GGUF",
+  "slug": "mradermacher-magistral-small-2509-heretic-v1-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Magistral-Small-2509-Heretic-v1.2-GGUF",
+  "created_at": "2026-03-14T11:41:05.000Z",
+  "updated_at": "2026-11-02T23:33:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mpoa",
+    "en",
+    "base_model:grayarea/Magistral-Small-2509-Heretic-v1.2",
+    "base_model:quantized:grayarea/Magistral-Small-2509-Heretic-v1.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 262,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 162766500288,
+  "storage_human": "162.8 GB",
+  "base_model": "grayarea/Magistral-Small-2509-Heretic-v1.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

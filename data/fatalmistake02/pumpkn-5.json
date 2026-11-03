@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "FatalMistake02/pumpkn-5",
+  "slug": "fatalmistake02-pumpkn-5",
+  "author": "FatalMistake02",
+  "url": "https://huggingface.co/FatalMistake02/pumpkn-5",
+  "created_at": "2026-11-02T21:11:29.000Z",
+  "updated_at": "2026-11-03T01:40:41.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "experimental",
+    "from-scratch",
+    "pumpkn",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:rajpurkar/squad_v2",
+    "base_model:FatalMistake02/pumpkn-4",
+    "base_model:finetune:FatalMistake02/pumpkn-4",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124278528,
+  "parameters_human": "124.3M",
+  "storage_bytes": 248999360,
+  "storage_human": "249 MB",
+  "base_model": "FatalMistake02/pumpkn-4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

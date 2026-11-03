@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GoldDiamondGold-Abliterated-L33-70b-GGUF",
+  "slug": "mradermacher-golddiamondgold-abliterated-l33-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GoldDiamondGold-Abliterated-L33-70b-GGUF",
+  "created_at": "2026-02-12T09:22:55.000Z",
+  "updated_at": "2026-11-03T01:42:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:KaraKaraWarehouse/GoldDiamondGold-Abliterated-L33-70b",
+    "base_model:quantized:KaraKaraWarehouse/GoldDiamondGold-Abliterated-L33-70b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 211,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303036576,
+  "storage_human": "481.3 GB",
+  "base_model": "KaraKaraWarehouse/GoldDiamondGold-Abliterated-L33-70b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "edededdy/ChonkyKedi-nano-base",
+  "slug": "edededdy-chonkykedi-nano-base",
+  "author": "edededdy",
+  "url": "https://huggingface.co/edededdy/ChonkyKedi-nano-base",
+  "created_at": "2026-11-02T22:41:49.000Z",
+  "updated_at": "2026-11-02T22:42:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "grouped-query-attention",
+    "from-scratch",
+    "tiny",
+    "chonkykedi",
+    "base",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:wikimedia/wikipedia",
+    "dataset:codeparrot/github-code-clean",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25173376,
+  "parameters_human": "25.2M",
+  "storage_bytes": 102701943,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

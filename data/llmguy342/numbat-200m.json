@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "llmguy342/numbat-200M",
+  "slug": "llmguy342-numbat-200m",
+  "author": "llmguy342",
+  "url": "https://huggingface.co/llmguy342/numbat-200M",
+  "created_at": "2026-11-02T20:59:31.000Z",
+  "updated_at": "2026-11-02T21:16:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "numbat",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 868888543,
+  "storage_human": "869 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

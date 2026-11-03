@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tokiers/potion-science-8M",
+  "slug": "tokiers-potion-science-8m",
+  "author": "tokiers",
+  "url": "https://huggingface.co/tokiers/potion-science-8M",
+  "created_at": "2026-03-29T06:35:41.000Z",
+  "updated_at": "2026-11-03T03:00:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "model2vec",
+  "languages": [],
+  "tags": [
+    "model2vec",
+    "onnx",
+    "safetensors",
+    "embeddings",
+    "static-embeddings",
+    "sentence-transformers",
+    "tokie",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 7559168,
+  "parameters_human": "7.6M",
+  "storage_bytes": 186690949,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

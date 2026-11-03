@@ -5,7 +5,7 @@
   "author": "Miosp",
   "url": "https://huggingface.co/Miosp/charm-onnx",
   "created_at": "2026-10-27T20:27:35.000Z",
-  "updated_at": "2026-10-27T20:29:54.000Z",
+  "updated_at": "2026-11-03T00:39:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1736286639,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 3466279577,
+  "storage_human": "3.5 GB",
   "base_model": "FatemehBehrad/Charm",
   "formats": [
     "onnx"

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "MOSSImageclom/MossAD-Demo-MOSS-Image-Danbooru-E621-57-Artist-Style-Finetune-civitai-3016505",
+  "slug": "mossimageclom-mossad-demo-moss-image-danbooru-e621-57-artist-style-finetune-civitai-3016505",
+  "author": "MOSSImageclom",
+  "url": "https://huggingface.co/MOSSImageclom/MossAD-Demo-MOSS-Image-Danbooru-E621-57-Artist-Style-Finetune-civitai-3016505",
+  "created_at": "2026-11-03T01:40:41.000Z",
+  "updated_at": "2026-11-03T01:40:42.000Z",
+  "license": "civitai-creator-permissions",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "safetensors",
+    "arcenciel",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10186367135,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

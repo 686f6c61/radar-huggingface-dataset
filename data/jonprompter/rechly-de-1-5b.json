@@ -5,7 +5,7 @@
   "author": "jonprompter",
   "url": "https://huggingface.co/jonprompter/rechly-de-1.5b",
   "created_at": "2026-11-02T13:58:53.000Z",
-  "updated_at": "2026-11-02T13:59:06.000Z",
+  "updated_at": "2026-11-02T14:46:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

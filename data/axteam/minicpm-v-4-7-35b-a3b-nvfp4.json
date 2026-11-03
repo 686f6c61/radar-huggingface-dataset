@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-NVFP4",
   "created_at": "2026-10-28T03:07:00.000Z",
-  "updated_at": "2026-11-02T00:28:26.000Z",
+  "updated_at": "2026-11-02T04:22:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 108,
+  "downloads_30d": 195,
   "trending_score": 0,
   "parameters": 20945750384,
   "parameters_human": "20.95B",

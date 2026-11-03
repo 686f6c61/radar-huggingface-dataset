@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gsrc/Drishti",
+  "slug": "gsrc-drishti",
+  "author": "gsrc",
+  "url": "https://huggingface.co/gsrc/Drishti",
+  "created_at": "2026-11-02T21:21:22.000Z",
+  "updated_at": "2026-11-02T21:21:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16650834,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GSRC - GNU Project - Free Software Foundation",
+      "url": "https://www.gnu.org/software/gsrc/",
+      "snippet": "May 2, 2026 · GSRC (GNU Source Release Collection) provides a simple way to install the latest released versions of GNU …"
+    },
+    {
+      "title": "The Gentlemens Sim Racing Club Inc - YouTube",
+      "url": "https://www.youtube.com/@TheGentlemensSimRacingClubInc",
+      "snippet": "The GSRC.inc is a Sim Racing League based in Australia and hosts Races most nights on the iRacing Platform. ...more"
+    },
+    {
+      "title": "The Gentlemen's Sim Racing Club",
+      "url": "https://race.tgsrci.com/",
+      "snippet": "Welcome to The Gentlemen's Sim Racing Club! We are a club filled with racers of all abilities in a range of different cars and racing …"
+    },
+    {
+      "title": "iRacing Broadcast Production for Leagues | GSRC",
+      "url": "https://www.gsrc.gg/",
+      "snippet": "Global SimRacing Channel (GSRC) runs the live broadcast for your league: the crew, the cameras and graphics in your series …"
+    },
+    {
+      "title": "Global SimRacing Channel - YouTube",
+      "url": "https://www.youtube.com/@GSRCBroadcasting",
+      "snippet": "Oct 25, 2026 · CRAZY Start at ZANDVOORT #GSRC #iRacing #SimRacing Podium Battle ends in DISASTER #GSRC #simracing …"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "JacksonHYD/pusht-repro-checkpoints",
+  "slug": "jacksonhyd-pusht-repro-checkpoints",
+  "author": "JacksonHYD",
+  "url": "https://huggingface.co/JacksonHYD/pusht-repro-checkpoints",
+  "created_at": "2026-10-31T18:42:03.000Z",
+  "updated_at": "2026-11-03T02:33:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "diffusion-policy",
+    "reproducibility",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4312223940,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

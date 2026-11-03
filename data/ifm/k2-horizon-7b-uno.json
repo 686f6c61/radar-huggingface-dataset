@@ -23,10 +23,11 @@
     "base_model:IFM/K2-Horizon-7B",
     "base_model:adapter:IFM/K2-Horizon-7B",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
   "likes": 110,
-  "downloads_30d": 230,
+  "downloads_30d": 217,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,

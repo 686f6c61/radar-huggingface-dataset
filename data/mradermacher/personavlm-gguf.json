@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PersonaVLM-GGUF",
+  "slug": "mradermacher-personavlm-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PersonaVLM-GGUF",
+  "created_at": "2026-03-14T14:25:19.000Z",
+  "updated_at": "2026-11-03T03:48:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "personalized-mllm",
+    "ai-agent",
+    "long-term-memory",
+    "cvpr2026",
+    "personality-evolving",
+    "benchmark",
+    "en",
+    "dataset:ClareNie/Persona-MME",
+    "dataset:ClareNie/PersonaVLM-Dataset",
+    "base_model:ClareNie/PersonaVLM",
+    "base_model:quantized:ClareNie/PersonaVLM",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 361,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357177216,
+  "storage_human": "70.4 GB",
+  "base_model": "ClareNie/PersonaVLM",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

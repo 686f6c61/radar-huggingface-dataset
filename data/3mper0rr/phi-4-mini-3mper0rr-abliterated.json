@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/Phi-4-mini-3MPER0RR-abliterated",
+  "slug": "3mper0rr-phi-4-mini-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated",
+  "created_at": "2026-08-30T12:05:53.000Z",
+  "updated_at": "2026-11-02T23:39:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 848,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 7687590875,
+  "storage_human": "7.7 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

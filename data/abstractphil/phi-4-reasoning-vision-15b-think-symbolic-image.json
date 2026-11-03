@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "AbstractPhil/phi-4-reasoning-vision-15b-think-symbolic-image",
+  "slug": "abstractphil-phi-4-reasoning-vision-15b-think-symbolic-image",
+  "author": "AbstractPhil",
+  "url": "https://huggingface.co/AbstractPhil/phi-4-reasoning-vision-15b-think-symbolic-image",
+  "created_at": "2026-11-03T02:29:23.000Z",
+  "updated_at": "2026-11-03T02:29:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "vision-language",
+    "chain-of-thought",
+    "image-captioning",
+    "art",
+    "photography",
+    "museum",
+    "image-text-to-text",
+    "en",
+    "dataset:AbstractPhil/thought-symbolic-image-captions",
+    "dataset:AbstractPhil/qwen-thinking-images",
+    "base_model:microsoft/Phi-4-reasoning-vision-15B",
+    "base_model:adapter:microsoft/Phi-4-reasoning-vision-15B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 445688440,
+  "storage_human": "446 MB",
+  "base_model": "microsoft/Phi-4-reasoning-vision-15B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

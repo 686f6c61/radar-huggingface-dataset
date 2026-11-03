@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/SKILLRET-Edge-22M-drift-mixed",
+  "slug": "thakicloud-skillret-edge-22m-drift-mixed",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M-drift-mixed",
+  "created_at": "2026-09-16T05:13:43.000Z",
+  "updated_at": "2026-11-02T23:18:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "retrieval",
+    "skill-retrieval",
+    "agent",
+    "on-device",
+    "mixed-precision",
+    "quantization",
+    "en",
+    "dataset:ThakiCloud/SKILLRET",
+    "arxiv:2605.05726",
+    "arxiv:2609.16391",
+    "arxiv:2610.09227",
+    "base_model:ThakiCloud/SKILLRET-Edge-22M",
+    "base_model:quantized:ThakiCloud/SKILLRET-Edge-22M",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 119,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 59578144,
+  "storage_human": "60 MB",
+  "base_model": "ThakiCloud/SKILLRET-Edge-22M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - daveebbelaar/document-copilot",
+      "url": "https://github.com/daveebbelaar/document-copilot",
+      "snippet": "Driftwood Capital — fictional independent investment research firm. Their analysts spend half their week reading 10-Ks and 10-Qs …"
+    }
+  ]
+}

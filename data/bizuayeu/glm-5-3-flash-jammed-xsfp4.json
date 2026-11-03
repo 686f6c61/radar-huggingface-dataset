@@ -5,7 +5,7 @@
   "author": "Bizuayeu",
   "url": "https://huggingface.co/Bizuayeu/GLM-5.3-Flash-Jammed-XSFP4",
   "created_at": "2026-11-02T13:15:45.000Z",
-  "updated_at": "2026-11-02T15:19:12.000Z",
+  "updated_at": "2026-11-02T17:25:12.000Z",
   "license": "nvidia-open-model-agreement",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -38,7 +38,7 @@
   "trending_score": 0,
   "parameters": 331033893726,
   "parameters_human": "331.03B",
-  "storage_bytes": 172020976439,
+  "storage_bytes": 172022490640,
   "storage_human": "172.0 GB",
   "base_model": "nvidia/GLM-5.3-Flash-FP4-Local, Bizuayeu/GLM-5.3-Flash-XSFP4",
   "formats": [

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ML-Distilled-GGUF",
+  "slug": "mradermacher-ml-distilled-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ML-Distilled-GGUF",
+  "created_at": "2026-03-14T12:35:56.000Z",
+  "updated_at": "2026-11-03T01:42:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 13477237760,
+  "parameters_human": "13.48B",
+  "storage_bytes": 92988046944,
+  "storage_human": "93.0 GB",
+  "base_model": "Nabbers1999/ML-Distilled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "jancirnodziewiaty",
   "url": "https://huggingface.co/jancirnodziewiaty/gemma-4-E2B-it-oQ5e-fp16-mtp",
   "created_at": "2026-11-02T17:10:39.000Z",
-  "updated_at": "2026-11-02T17:11:53.000Z",
+  "updated_at": "2026-11-02T17:40:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,6 +18,8 @@
     "oq",
     "quantized",
     "mtp",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
     "5-bit",
     "region:us"
   ],
@@ -28,7 +30,7 @@
   "parameters_human": "5.18B",
   "storage_bytes": 5379515584,
   "storage_human": "5.4 GB",
-  "base_model": null,
+  "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "mlx",
     "safetensors"

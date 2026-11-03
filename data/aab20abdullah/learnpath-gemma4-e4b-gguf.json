@@ -5,7 +5,7 @@
   "author": "aab20abdullah",
   "url": "https://huggingface.co/aab20abdullah/learnpath-gemma4-e4b-gguf",
   "created_at": "2026-11-01T20:53:46.000Z",
-  "updated_at": "2026-11-01T20:54:28.000Z",
+  "updated_at": "2026-11-02T14:14:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,6 +23,7 @@
     "text-generation",
     "en",
     "ar",
+    "tr",
     "base_model:google/gemma-4-E4B-it",
     "base_model:finetune:google/gemma-4-E4B-it",
     "license:apache-2.0",
@@ -35,8 +36,8 @@
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
-  "storage_bytes": 5335292352,
-  "storage_human": "5.3 GB",
+  "storage_bytes": 10670584704,
+  "storage_human": "10.7 GB",
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf"

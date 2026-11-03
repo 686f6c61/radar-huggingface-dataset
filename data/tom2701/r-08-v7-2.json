@@ -5,7 +5,7 @@
   "author": "Tom2701",
   "url": "https://huggingface.co/Tom2701/R-08-v7.2",
   "created_at": "2026-10-31T20:00:57.000Z",
-  "updated_at": "2026-11-01T19:45:19.000Z",
+  "updated_at": "2026-11-02T18:47:47.000Z",
   "license": "sentinel-r08-research-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 392,
+  "downloads_30d": 848,
   "trending_score": 0,
   "parameters": 51975444,
   "parameters_human": "52.0M",

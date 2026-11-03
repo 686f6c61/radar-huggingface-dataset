@@ -58,6 +58,7 @@
     "base_model:LiquidAI/LFM2.5-24B-A2B-Base",
     "base_model:finetune:LiquidAI/LFM2.5-24B-A2B-Base",
     "license:other",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],

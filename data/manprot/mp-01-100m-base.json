@@ -5,7 +5,7 @@
   "author": "Manprot",
   "url": "https://huggingface.co/Manprot/MP-01-100M-base",
   "created_at": "2026-11-02T17:22:56.000Z",
-  "updated_at": "2026-11-02T20:45:17.000Z",
+  "updated_at": "2026-11-02T20:47:43.000Z",
   "license": "to-be-decided",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "license:other",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 100623744,
   "parameters_human": "100.6M",
-  "storage_bytes": 404157447,
+  "storage_bytes": 404434887,
   "storage_human": "404 MB",
   "base_model": null,
   "formats": [

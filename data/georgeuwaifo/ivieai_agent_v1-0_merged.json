@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "GeorgeUwaifo/ivieai_agent_v1.0_merged",
+  "slug": "georgeuwaifo-ivieai_agent_v1-0_merged",
+  "author": "GeorgeUwaifo",
+  "url": "https://huggingface.co/GeorgeUwaifo/ivieai_agent_v1.0_merged",
+  "created_at": "2026-11-02T22:43:34.000Z",
+  "updated_at": "2026-11-02T22:43:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

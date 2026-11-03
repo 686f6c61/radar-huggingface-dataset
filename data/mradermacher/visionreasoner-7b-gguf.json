@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VisionReasoner-7B-GGUF",
+  "slug": "mradermacher-visionreasoner-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VisionReasoner-7B-GGUF",
+  "created_at": "2025-05-18T06:14:54.000Z",
+  "updated_at": "2026-11-03T00:38:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:COCO",
+    "dataset:ReasonSeg",
+    "dataset:CountBench",
+    "dataset:Ricky06662/refCOCOg_9k_840",
+    "dataset:Ricky06662/VisionReasoner_multi_object_7k_840",
+    "base_model:Ricky06662/VisionReasoner-7B",
+    "base_model:quantized:Ricky06662/VisionReasoner-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 581,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354170624,
+  "storage_human": "70.4 GB",
+  "base_model": "Ricky06662/VisionReasoner-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

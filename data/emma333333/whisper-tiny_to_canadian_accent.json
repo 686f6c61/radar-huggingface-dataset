@@ -5,7 +5,7 @@
   "author": "emma333333",
   "url": "https://huggingface.co/emma333333/whisper-tiny_to_canadian_accent",
   "created_at": "2026-11-02T18:18:14.000Z",
-  "updated_at": "2026-11-02T18:20:25.000Z",
+  "updated_at": "2026-11-02T18:48:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 37760640,
   "parameters_human": "37.8M",
-  "storage_bytes": 302167642,
-  "storage_human": "302 MB",
+  "storage_bytes": 604330086,
+  "storage_human": "604 MB",
   "base_model": "openai/whisper-tiny",
   "formats": [
     "safetensors"

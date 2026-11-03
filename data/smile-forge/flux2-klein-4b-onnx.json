@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "smile-forge/flux2-klein-4b-onnx",
+  "slug": "smile-forge-flux2-klein-4b-onnx",
+  "author": "smile-forge",
+  "url": "https://huggingface.co/smile-forge/flux2-klein-4b-onnx",
+  "created_at": "2026-11-03T02:21:55.000Z",
+  "updated_at": "2026-11-03T02:23:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "flux",
+    "image-editing",
+    "text-to-image",
+    "image-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8651376239,
+  "storage_human": "8.7 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Нейронавт | Нейросети в творчестве – Telegram",
+      "url": "https://t.me/s/GreenNeuralRobots?q=%23mossimage",
+      "snippet": "github.com/smile-forge/moss-image-onnx - MOSS-Image для ONNX Обучение и ... Помогает спец-VAE flux2-klein-alpha. Нативная до 1.2Mpx, выше декод тайлами"
+    }
+  ]
+}

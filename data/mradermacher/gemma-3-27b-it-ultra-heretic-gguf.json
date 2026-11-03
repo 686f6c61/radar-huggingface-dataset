@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-3-27b-it-ultra-heretic-GGUF",
+  "slug": "mradermacher-gemma-3-27b-it-ultra-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3-27b-it-ultra-heretic-GGUF",
+  "created_at": "2026-03-14T12:04:06.000Z",
+  "updated_at": "2026-11-02T23:33:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "en",
+    "base_model:llmfan46/gemma-3-27b-it-ultra-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-3-27b-it-ultra-uncensored-heretic",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 242,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 188136512192,
+  "storage_human": "188.1 GB",
+  "base_model": "llmfan46/gemma-3-27b-it-ultra-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "erayyapagci",
   "url": "https://huggingface.co/erayyapagci/balbal-v2-manas",
   "created_at": "2026-10-29T04:06:33.000Z",
-  "updated_at": "2026-11-01T00:47:42.000Z",
+  "updated_at": "2026-11-03T00:17:48.000Z",
   "license": "balbal-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -32,13 +32,13 @@
     "model-index",
     "region:us"
   ],
-  "likes": 10,
-  "downloads_30d": 142,
+  "likes": 11,
+  "downloads_30d": 168,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3264746090,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 3860551344,
+  "storage_human": "3.9 GB",
   "base_model": "nvidia/stt_en_fastconformer_ctc_large",
   "formats": [
     "onnx"

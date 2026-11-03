@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "JOSEFSUSON/TOYOM_Spatial_Intelligence_Study",
+  "slug": "josefsuson-toyom_spatial_intelligence_study",
+  "author": "JOSEFSUSON",
+  "url": "https://huggingface.co/JOSEFSUSON/TOYOM_Spatial_Intelligence_Study",
+  "created_at": "2026-11-03T02:06:00.000Z",
+  "updated_at": "2026-11-03T02:30:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "time-series-anomaly-detection",
+    "spatial-intelligence",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Spatial Environment v3",
+      "metric": "Mean Reward (Rank",
+      "value": -150.1437
+    },
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Spatial Environment v3",
+      "metric": "Precision Stability Ratio",
+      "value": 99.71
+    }
+  ],
+  "sources": []
+}

@@ -30,6 +30,7 @@
     "arxiv:2602.11858",
     "base_model:Qwen/Qwen3.6-27B",
     "base_model:finetune:Qwen/Qwen3.6-27B",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],

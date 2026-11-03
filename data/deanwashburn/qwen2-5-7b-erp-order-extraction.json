@@ -5,7 +5,7 @@
   "author": "deanwashburn",
   "url": "https://huggingface.co/deanwashburn/Qwen2.5-7B-ERP-Order-Extraction",
   "created_at": "2026-10-31T12:49:32.000Z",
-  "updated_at": "2026-11-01T19:13:43.000Z",
+  "updated_at": "2026-11-02T10:49:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 4861753616,
+  "storage_bytes": 4862705638,
   "storage_human": "4.9 GB",
   "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
   "formats": [

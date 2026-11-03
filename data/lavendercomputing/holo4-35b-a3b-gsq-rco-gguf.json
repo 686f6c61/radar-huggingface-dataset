@@ -28,12 +28,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2023,
+  "downloads_30d": 2869,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 143942218656,
-  "storage_human": "143.9 GB",
+  "storage_bytes": 50244923584,
+  "storage_human": "50.2 GB",
   "base_model": "Hcompany/Holo4-35B-A3B, Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

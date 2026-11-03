@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Beam-1.0-501B-A23B-NVFP4",
+  "slug": "redhatai-beam-1-0-501b-a23b-nvfp4",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Beam-1.0-501B-A23B-NVFP4",
+  "created_at": "2026-11-02T21:28:56.000Z",
+  "updated_at": "2026-11-02T21:28:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "beam",
+    "mixture-of-experts",
+    "reasoning",
+    "code",
+    "tool-use",
+    "nvfp4",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 501267612352,
+  "parameters_human": "501.27B",
+  "storage_bytes": 293648862719,
+  "storage_human": "293.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

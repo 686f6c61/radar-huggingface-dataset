@@ -5,7 +5,7 @@
   "author": "JaeWooShin",
   "url": "https://huggingface.co/JaeWooShin/peft-rlvr",
   "created_at": "2026-11-02T11:55:06.000Z",
-  "updated_at": "2026-11-02T12:09:08.000Z",
+  "updated_at": "2026-11-03T01:53:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 528617792,
-  "storage_human": "529 MB",
+  "storage_bytes": 1597654018,
+  "storage_human": "1.6 GB",
   "base_model": "Qwen/Qwen3-4B-Base",
   "formats": [
     "safetensors"

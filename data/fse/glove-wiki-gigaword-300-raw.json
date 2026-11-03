@@ -5,7 +5,7 @@
   "author": "fse",
   "url": "https://huggingface.co/fse/glove-wiki-gigaword-300-raw",
   "created_at": "2026-11-01T21:40:09.000Z",
-  "updated_at": "2026-11-01T21:41:21.000Z",
+  "updated_at": "2026-11-02T06:33:12.000Z",
   "license": "pddl",
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 123356475,
   "parameters_human": "123.4M",

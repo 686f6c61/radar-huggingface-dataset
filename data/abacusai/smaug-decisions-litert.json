@@ -5,7 +5,7 @@
   "author": "abacusai",
   "url": "https://huggingface.co/abacusai/Smaug-Decisions-LiteRT",
   "created_at": "2026-10-29T16:50:16.000Z",
-  "updated_at": "2026-11-02T05:55:54.000Z",
+  "updated_at": "2026-11-02T14:07:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -25,7 +25,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

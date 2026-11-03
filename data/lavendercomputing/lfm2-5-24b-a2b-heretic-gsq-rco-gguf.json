@@ -5,7 +5,7 @@
   "author": "lavendercomputing",
   "url": "https://huggingface.co/lavendercomputing/LFM2.5-24B-A2B-Heretic-GSQ-RCO-GGUF",
   "created_at": "2026-10-24T20:37:44.000Z",
-  "updated_at": "2026-10-31T07:48:07.000Z",
+  "updated_at": "2026-11-02T18:12:12.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1249,
+  "downloads_30d": 1259,
   "trending_score": 0,
   "parameters": 23971587712,
   "parameters_human": "23.97B",
-  "storage_bytes": 45133935040,
-  "storage_human": "45.1 GB",
+  "storage_bytes": 35148986496,
+  "storage_human": "35.1 GB",
   "base_model": "LiquidAI/LFM2.5-24B-A2B, OS-Software/LFM2.5-24B-A2B-Uncensored-Heretic",
   "formats": [
     "gguf"

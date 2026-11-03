@@ -5,7 +5,7 @@
   "author": "berpiztu",
   "url": "https://huggingface.co/berpiztu/keyboard-correctors",
   "created_at": "2026-11-01T05:06:15.000Z",
-  "updated_at": "2026-11-01T07:01:48.000Z",
+  "updated_at": "2026-11-02T04:34:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 750686924,
-  "storage_human": "751 MB",
+  "storage_bytes": 1359455927,
+  "storage_human": "1.4 GB",
   "base_model": "google/mt5-small",
   "formats": [
     "onnx"

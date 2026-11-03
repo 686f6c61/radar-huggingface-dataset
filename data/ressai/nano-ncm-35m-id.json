@@ -5,7 +5,7 @@
   "author": "RessAI",
   "url": "https://huggingface.co/RessAI/Nano-NCM-35M-ID",
   "created_at": "2026-11-02T06:20:26.000Z",
-  "updated_at": "2026-11-02T06:24:03.000Z",
+  "updated_at": "2026-11-02T06:49:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 35538688,
   "parameters_human": "35.5M",

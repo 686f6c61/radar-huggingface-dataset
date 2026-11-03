@@ -5,7 +5,7 @@
   "author": "bcckfdn",
   "url": "https://huggingface.co/bcckfdn/cevher2-test-18",
   "created_at": "2026-11-01T21:42:28.000Z",
-  "updated_at": "2026-11-01T21:42:52.000Z",
+  "updated_at": "2026-11-02T18:53:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 442,
   "trending_score": 0,
   "parameters": 1513546496,
   "parameters_human": "1.51B",
-  "storage_bytes": 3027128528,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 9081385584,
+  "storage_human": "9.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

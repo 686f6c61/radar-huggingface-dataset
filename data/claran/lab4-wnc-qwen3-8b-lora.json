@@ -5,7 +5,7 @@
   "author": "claran",
   "url": "https://huggingface.co/claran/lab4-wnc-qwen3-8b-lora",
   "created_at": "2026-11-02T08:42:27.000Z",
-  "updated_at": "2026-11-02T08:42:29.000Z",
+  "updated_at": "2026-11-02T09:53:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "SynhalaAI",
   "url": "https://huggingface.co/SynhalaAI/Tharushi-Gemma4-E2B-CPT",
   "created_at": "2026-10-30T15:04:12.000Z",
-  "updated_at": "2026-11-02T09:18:40.000Z",
+  "updated_at": "2026-11-02T16:37:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 5123178051,
   "parameters_human": "5.12B",
-  "storage_bytes": 30575400414,
-  "storage_human": "30.6 GB",
+  "storage_bytes": 31965836469,
+  "storage_human": "32.0 GB",
   "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

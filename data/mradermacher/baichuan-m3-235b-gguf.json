@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Baichuan-M3-235B-GGUF",
+  "slug": "mradermacher-baichuan-m3-235b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Baichuan-M3-235B-GGUF",
+  "created_at": "2026-01-13T10:54:49.000Z",
+  "updated_at": "2026-11-03T01:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "chat",
+    "en",
+    "zh",
+    "base_model:baichuan-inc/Baichuan-M3-235B",
+    "base_model:quantized:baichuan-inc/Baichuan-M3-235B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 235,
+  "trending_score": 0,
+  "parameters": 235093634560,
+  "parameters_human": "235.09B",
+  "storage_bytes": 1595568289216,
+  "storage_human": "1595.6 GB",
+  "base_model": "baichuan-inc/Baichuan-M3-235B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

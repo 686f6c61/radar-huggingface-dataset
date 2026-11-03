@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nielsr/LFM3-1.7B-wsp-l15-l19-lam6",
+  "slug": "nielsr-lfm3-1-7b-wsp-l15-l19-lam6",
+  "author": "nielsr",
+  "url": "https://huggingface.co/nielsr/LFM3-1.7B-wsp-l15-l19-lam6",
+  "created_at": "2026-11-02T21:51:28.000Z",
+  "updated_at": "2026-11-02T21:51:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3475544082,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

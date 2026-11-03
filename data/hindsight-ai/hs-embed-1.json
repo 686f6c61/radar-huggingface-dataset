@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hindsight-ai/hs-embed-1",
+  "slug": "hindsight-ai-hs-embed-1",
+  "author": "hindsight-ai",
+  "url": "https://huggingface.co/hindsight-ai/hs-embed-1",
+  "created_at": "2026-10-28T17:45:00.000Z",
+  "updated_at": "2026-11-02T23:29:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "ja",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "embeddings",
+    "matryoshka",
+    "multilingual",
+    "text-embeddings-inference",
+    "hindsight",
+    "sentence-similarity",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "ja",
+    "ko",
+    "zh",
+    "base_model:hotchpotch/bekko-embedding-v1-a25m",
+    "base_model:finetune:hotchpotch/bekko-embedding-v1-a25m",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 111728256,
+  "parameters_human": "111.7M",
+  "storage_bytes": 857882618,
+  "storage_human": "858 MB",
+  "base_model": "hotchpotch/bekko-embedding-v1-a25m",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Installation | Hindsight",
+      "url": "https://hindsight.vectorize.io/developer/installation",
+      "snippet": "By default, Hindsight uses pg0 — an embedded PostgreSQL that runs locally on your machine. This is convenient for development …"
+    }
+  ]
+}

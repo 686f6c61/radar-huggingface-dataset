@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/aegis-qwen2vl-3b-GGUF",
+  "slug": "mradermacher-aegis-qwen2vl-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/aegis-qwen2vl-3b-GGUF",
+  "created_at": "2026-03-14T11:33:14.000Z",
+  "updated_at": "2026-11-02T23:34:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "browser-qa",
+    "visual-agent",
+    "qwen2.5-vl",
+    "lora-merged",
+    "fine-tuned",
+    "en",
+    "base_model:sanaX3065/aegis-qwen2vl-3b",
+    "base_model:quantized:sanaX3065/aegis-qwen2vl-3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 240,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32781699200,
+  "storage_human": "32.8 GB",
+  "base_model": "sanaX3065/aegis-qwen2vl-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

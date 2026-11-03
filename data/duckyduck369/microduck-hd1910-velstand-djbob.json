@@ -5,7 +5,7 @@
   "author": "duckyduck369",
   "url": "https://huggingface.co/duckyduck369/microduck-hd1910-velstand-djbob",
   "created_at": "2026-10-30T09:32:40.000Z",
-  "updated_at": "2026-10-30T14:24:17.000Z",
+  "updated_at": "2026-11-02T09:43:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7447767,
-  "storage_human": "7 MB",
+  "storage_bytes": 28754439,
+  "storage_human": "29 MB",
   "base_model": null,
   "formats": [
     "onnx"

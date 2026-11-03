@@ -5,7 +5,7 @@
   "author": "BricksDisplay",
   "url": "https://huggingface.co/BricksDisplay/Soprano-1.1-80M-GGUF",
   "created_at": "2026-03-04T15:21:18.000Z",
-  "updated_at": "2026-11-02T07:41:35.000Z",
+  "updated_at": "2026-11-02T07:51:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1464,
+  "downloads_30d": 1497,
   "trending_score": 0,
   "parameters": 30354690,
   "parameters_human": "30.4M",

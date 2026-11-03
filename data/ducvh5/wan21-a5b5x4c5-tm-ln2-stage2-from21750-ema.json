@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ducvh5/wan21-a5b5x4c5-tm-ln2-stage2-from21750-ema",
+  "slug": "ducvh5-wan21-a5b5x4c5-tm-ln2-stage2-from21750-ema",
+  "author": "ducvh5",
+  "url": "https://huggingface.co/ducvh5/wan21-a5b5x4c5-tm-ln2-stage2-from21750-ema",
+  "created_at": "2026-11-02T21:34:50.000Z",
+  "updated_at": "2026-11-02T21:42:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "wan",
+    "recurrent-transformer",
+    "checkpoints",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43354741727,
+  "storage_human": "43.4 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

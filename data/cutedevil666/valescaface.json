@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "CuteDevil666/ValescaFace",
+  "slug": "cutedevil666-valescaface",
+  "author": "CuteDevil666",
+  "url": "https://huggingface.co/CuteDevil666/ValescaFace",
+  "created_at": "2026-11-02T20:52:40.000Z",
+  "updated_at": "2026-11-02T20:52:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-03T02:21:16.866Z",
+  "benchmarks": [],
+  "sources": []
+}

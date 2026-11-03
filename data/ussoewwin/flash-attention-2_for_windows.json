@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ussoewwin/Flash-Attention-2_for_Windows",
+  "slug": "ussoewwin-flash-attention-2_for_windows",
+  "author": "ussoewwin",
+  "url": "https://huggingface.co/ussoewwin/Flash-Attention-2_for_Windows",
+  "created_at": "2025-08-19T04:42:21.000Z",
+  "updated_at": "2026-11-02T22:26:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "flash-attention",
+    "windows",
+    "pytorch",
+    "cuda",
+    "whl",
+    "en",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 149,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22889295615,
+  "storage_human": "22.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "moeshawky/RockAndEgg-313M-v2",
+  "slug": "moeshawky-rockandegg-313m-v2",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/RockAndEgg-313M-v2",
+  "created_at": "2026-11-02T23:55:59.000Z",
+  "updated_at": "2026-11-03T00:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "embeddings",
+    "en",
+    "dataset:moeshawky/rae-005-research-evidence",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 312892928,
+  "parameters_human": "312.9M",
+  "storage_bytes": 1251583600,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

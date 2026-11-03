@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/SKILLRET-Edge-22M-int3",
+  "slug": "thakicloud-skillret-edge-22m-int3",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M-int3",
+  "created_at": "2026-09-13T13:54:44.000Z",
+  "updated_at": "2026-11-02T23:18:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "retrieval",
+    "skill-retrieval",
+    "agent",
+    "on-device",
+    "en",
+    "dataset:ThakiCloud/SKILLRET",
+    "arxiv:2605.05726",
+    "arxiv:2609.16391",
+    "base_model:ThakiCloud/SKILLRET-Edge-22M",
+    "base_model:quantized:ThakiCloud/SKILLRET-Edge-22M",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 59614048,
+  "storage_human": "60 MB",
+  "base_model": "ThakiCloud/SKILLRET-Edge-22M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

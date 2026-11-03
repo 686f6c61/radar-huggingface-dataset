@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "voidash/ne-flow-lab-20261103",
+  "slug": "voidash-ne-flow-lab-20261103",
+  "author": "voidash",
+  "url": "https://huggingface.co/voidash/ne-flow-lab-20261103",
+  "created_at": "2026-11-03T03:36:27.000Z",
+  "updated_at": "2026-11-03T03:54:28.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "ne",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3076330308,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

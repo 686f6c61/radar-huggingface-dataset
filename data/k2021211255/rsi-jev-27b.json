@@ -5,7 +5,7 @@
   "author": "k2021211255",
   "url": "https://huggingface.co/k2021211255/RSI-JEV-27b",
   "created_at": "2026-11-02T11:44:27.000Z",
-  "updated_at": "2026-11-02T11:47:49.000Z",
+  "updated_at": "2026-11-02T13:01:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 701158936,
-  "storage_human": "701 MB",
+  "storage_bytes": 56276975032,
+  "storage_human": "56.3 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

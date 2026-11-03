@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nexflow/connectailab-rl-coco-v5-link01",
+  "slug": "nexflow-connectailab-rl-coco-v5-link01",
+  "author": "nexflow",
+  "url": "https://huggingface.co/nexflow/connectailab-rl-coco-v5-link01",
+  "created_at": "2026-11-03T01:43:13.000Z",
+  "updated_at": "2026-11-03T01:43:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "robotics",
+    "decision-making",
+    "link01",
+    "connect-ai-world",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NexFlow : Solutions d'Automatisation & IA pour Entreprises",
+      "url": "https://nexflow.pro/",
+      "snippet": "NexFlow France : Spécialiste en automatisation des processus métiers et intelligence artificielle. Transformez votre entreprise avec …Read more"
+    },
+    {
+      "title": "NexFlow — Logiciel de gestion des opérations et interventions",
+      "url": "https://nexflowpro.fr/",
+      "snippet": "NexFlow relie les informations du bureau, les équipes mobiles et les demandes clients afin de simplifier le suivi quotidien et de …"
+    },
+    {
+      "title": "NexFlow AI — Automatisation IA pour Grandes Entreprises",
+      "url": "https://nexflow-ai.fr/",
+      "snippet": "NexFlow AI conçoit et déploie des agents IA autonomes pour automatiser vos processus métier. Factures, réunions, RH, juridique — …"
+    },
+    {
+      "title": "NexFlow - AI-Powered Workflow Automation",
+      "url": "https://nex-flow.tech/",
+      "snippet": "NexFlow uses AI to automatically generate workflows from natural language descriptions. Simply describe what you want to …"
+    },
+    {
+      "title": "Nexflow Solutions — Conseil en Solutions d'Intelligence Artificielle",
+      "url": "https://www.nexflow-solutions.fr/",
+      "snippet": "Nexflow Solutions accompagne les entreprises dans l'analyse, la conception et le déploiement de solutions d'intelligence artificielle …"
+    }
+  ]
+}

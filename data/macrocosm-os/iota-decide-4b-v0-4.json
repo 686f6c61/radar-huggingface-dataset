@@ -5,10 +5,10 @@
   "author": "macrocosm-os",
   "url": "https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4",
   "created_at": "2026-10-29T19:54:17.000Z",
-  "updated_at": "2026-10-29T19:57:26.000Z",
+  "updated_at": "2026-11-02T13:10:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "image-text-to-text",
+  "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
     "en"
@@ -16,8 +16,8 @@
   "tags": [
     "transformers",
     "safetensors",
-    "qwen3_5",
-    "image-text-to-text",
+    "qwen3_5_text",
+    "text-generation",
     "typed-decisions",
     "conversational",
     "en",
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 30,
+  "downloads_30d": 40,
   "trending_score": 0,
-  "parameters": 4539265536,
-  "parameters_human": "4.54B",
-  "storage_bytes": 9098609945,
-  "storage_human": "9.1 GB",
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 17510161953,
+  "storage_human": "17.5 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

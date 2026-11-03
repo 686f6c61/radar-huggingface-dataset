@@ -23,6 +23,7 @@
     "conversational",
     "arxiv:2105.15203",
     "license:openrail",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],

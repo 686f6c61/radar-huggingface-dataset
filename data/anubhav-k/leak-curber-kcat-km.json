@@ -5,7 +5,7 @@
   "author": "anubhav-k",
   "url": "https://huggingface.co/anubhav-k/leak-curber-kcat-km",
   "created_at": "2026-10-29T15:56:01.000Z",
-  "updated_at": "2026-11-01T22:01:49.000Z",
+  "updated_at": "2026-11-02T22:08:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 54,
+  "downloads_30d": 96,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1112274842,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 1457736556,
+  "storage_human": "1.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

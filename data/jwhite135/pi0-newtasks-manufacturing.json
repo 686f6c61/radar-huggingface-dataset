@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jwhite135/pi0-newtasks-manufacturing",
+  "slug": "jwhite135-pi0-newtasks-manufacturing",
+  "author": "jwhite135",
+  "url": "https://huggingface.co/jwhite135/pi0-newtasks-manufacturing",
+  "created_at": "2026-11-03T02:11:32.000Z",
+  "updated_at": "2026-11-03T02:13:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:manufacturing_finetune",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 16112229768,
+  "storage_human": "16.1 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

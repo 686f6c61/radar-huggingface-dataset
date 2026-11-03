@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "DanDivineDigital/VibeThinker-1.5B-Q4_K_M-GGUF",
+  "slug": "dandivinedigital-vibethinker-1-5b-q4_k_m-gguf",
+  "author": "DanDivineDigital",
+  "url": "https://huggingface.co/DanDivineDigital/VibeThinker-1.5B-Q4_K_M-GGUF",
+  "created_at": "2026-11-03T01:38:45.000Z",
+  "updated_at": "2026-11-03T01:38:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "math",
+    "code",
+    "gpqa",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:WeiboAI/VibeThinker-1.5B",
+    "base_model:quantized:WeiboAI/VibeThinker-1.5B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 1117318528,
+  "storage_human": "1.1 GB",
+  "base_model": "WeiboAI/VibeThinker-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

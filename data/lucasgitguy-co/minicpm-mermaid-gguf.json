@@ -5,7 +5,7 @@
   "author": "Lucasgitguy-co",
   "url": "https://huggingface.co/Lucasgitguy-co/minicpm-mermaid-gguf",
   "created_at": "2026-10-30T07:34:02.000Z",
-  "updated_at": "2026-11-01T10:55:05.000Z",
+  "updated_at": "2026-11-02T07:37:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 158,
+  "downloads_30d": 192,
   "trending_score": 0,
   "parameters": 1006209856,
   "parameters_human": "1.01B",

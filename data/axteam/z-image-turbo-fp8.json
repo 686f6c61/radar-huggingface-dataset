@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Z-Image-Turbo-FP8",
   "created_at": "2026-10-29T05:16:46.000Z",
-  "updated_at": "2026-11-02T02:33:58.000Z",
+  "updated_at": "2026-11-02T04:23:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

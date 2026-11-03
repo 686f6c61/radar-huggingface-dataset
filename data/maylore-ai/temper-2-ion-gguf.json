@@ -5,7 +5,7 @@
   "author": "maylore-ai",
   "url": "https://huggingface.co/maylore-ai/Temper-2-Ion-GGUF",
   "created_at": "2026-10-26T08:52:45.000Z",
-  "updated_at": "2026-10-31T15:36:52.000Z",
+  "updated_at": "2026-11-02T11:03:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 326,
+  "downloads_30d": 346,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 2519382112,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 4044607712,
+  "storage_human": "4.0 GB",
   "base_model": "maylore-ai/Temper-2-Ion",
   "formats": [
     "gguf"

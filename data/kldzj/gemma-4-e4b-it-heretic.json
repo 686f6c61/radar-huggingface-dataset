@@ -4,8 +4,8 @@
   "slug": "kldzj-gemma-4-e4b-it-heretic",
   "author": "kldzj",
   "url": "https://huggingface.co/kldzj/gemma-4-E4B-it-heretic",
-  "created_at": "2026-11-01T14:17:55.000Z",
-  "updated_at": "2026-11-01T14:19:06.000Z",
+  "created_at": "2026-11-02T11:13:34.000Z",
+  "updated_at": "2026-11-02T11:50:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 7941100832,
   "parameters_human": "7.94B",
-  "storage_bytes": 15914643398,
-  "storage_human": "15.9 GB",
+  "storage_bytes": 21249087130,
+  "storage_human": "21.2 GB",
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"

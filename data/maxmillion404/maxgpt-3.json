@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "MaxMillion404/MaxGPT-3",
+  "slug": "maxmillion404-maxgpt-3",
+  "author": "MaxMillion404",
+  "url": "https://huggingface.co/MaxMillion404/MaxGPT-3",
+  "created_at": "2026-11-02T21:05:38.000Z",
+  "updated_at": "2026-11-02T21:06:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "from-scratch",
+    "small-language-model",
+    "gpt",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 252135424,
+  "parameters_human": "252.1M",
+  "storage_bytes": 1008562152,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

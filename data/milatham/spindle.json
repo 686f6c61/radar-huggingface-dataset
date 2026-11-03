@@ -5,15 +5,16 @@
   "author": "milatham",
   "url": "https://huggingface.co/milatham/SPINDLE",
   "created_at": "2026-11-02T19:22:50.000Z",
-  "updated_at": "2026-11-02T19:25:19.000Z",
+  "updated_at": "2026-11-02T22:06:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "keras",
   "languages": [
     "en"
   ],
   "tags": [
+    "keras",
     "en",
     "license:mit",
     "region:us"
@@ -23,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 2286421952,
+  "storage_human": "2.3 GB",
   "base_model": null,
   "formats": [],
   "is_conversational": false,

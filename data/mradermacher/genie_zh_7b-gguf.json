@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GENIE_zh_7b-GGUF",
+  "slug": "mradermacher-genie_zh_7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GENIE_zh_7b-GGUF",
+  "created_at": "2025-02-11T23:41:25.000Z",
+  "updated_at": "2026-11-03T00:38:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "structuring",
+    "EHR",
+    "medical",
+    "IE",
+    "zh",
+    "base_model:THUMedInfo/GENIE_zh_7b",
+    "base_model:quantized:THUMedInfo/GENIE_zh_7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 182,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146891520,
+  "storage_human": "68.1 GB",
+  "base_model": "THUMedInfo/GENIE_zh_7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

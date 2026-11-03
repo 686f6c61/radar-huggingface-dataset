@@ -5,7 +5,7 @@
   "author": "DarwinGuru",
   "url": "https://huggingface.co/DarwinGuru/scotty",
   "created_at": "2026-10-25T09:17:13.000Z",
-  "updated_at": "2026-11-02T05:07:46.000Z",
+  "updated_at": "2026-11-02T22:22:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
   "trending_score": 0,
   "parameters": 421293830,
   "parameters_human": "421.3M",
-  "storage_bytes": 1685447160,
+  "storage_bytes": 1686030723,
   "storage_human": "1.7 GB",
   "base_model": null,
   "formats": [

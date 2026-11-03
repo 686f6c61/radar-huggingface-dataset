@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-30m",
+  "slug": "matterwaveai-grt-30m",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-30m",
+  "created_at": "2026-11-03T04:18:16.000Z",
+  "updated_at": "2026-11-03T04:19:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "grt",
+    "text-generation",
+    "geometric-rotation-transformer",
+    "causal-lm",
+    "rotational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29844597,
+  "parameters_human": "29.8M",
+  "storage_bytes": 489541642,
+  "storage_human": "490 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

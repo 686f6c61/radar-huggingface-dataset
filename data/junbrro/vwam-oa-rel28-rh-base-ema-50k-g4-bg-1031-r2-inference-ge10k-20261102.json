@@ -5,7 +5,7 @@
   "author": "junbrro",
   "url": "https://huggingface.co/junbrro/vwam-oa-rel28-rh-base-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102",
   "created_at": "2026-11-02T02:09:27.000Z",
-  "updated_at": "2026-11-02T02:10:59.000Z",
+  "updated_at": "2026-11-02T03:02:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",

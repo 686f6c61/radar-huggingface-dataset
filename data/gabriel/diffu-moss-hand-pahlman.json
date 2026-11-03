@@ -5,7 +5,7 @@
   "author": "Gabriel",
   "url": "https://huggingface.co/Gabriel/diffu-moss-hand-pahlman",
   "created_at": "2026-11-02T13:57:32.000Z",
-  "updated_at": "2026-11-02T13:57:40.000Z",
+  "updated_at": "2026-11-02T15:07:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 157981679,
-  "storage_human": "158 MB",
+  "storage_bytes": 314235967,
+  "storage_human": "314 MB",
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "safetensors"

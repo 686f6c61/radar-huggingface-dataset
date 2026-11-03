@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sido/hina-irodori-mf-fp16",
+  "slug": "sido-hina-irodori-mf-fp16",
+  "author": "Sido",
+  "url": "https://huggingface.co/Sido/hina-irodori-mf-fp16",
+  "created_at": "2026-11-03T00:03:44.000Z",
+  "updated_at": "2026-11-03T00:33:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "fp16",
+    "irodori",
+    "meanflow",
+    "text-to-speech",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1557974593,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SIDO LYON",
+      "url": "https://www.sido-lyon.com/",
+      "snippet": "IMPACT est l’espace de SIDO dédié à celles et ceux qui construisent un numérique capable de fonctionner dans un monde plus …"
+    },
+    {
+      "title": "Sido (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sido_(rapper)",
+      "snippet": "Sido is known for his provocative and aggressive lyrics. After gaining prominence with his debut album Maske in 2004, he became …"
+    },
+    {
+      "title": "Sido (rappeur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sido_(rappeur)",
+      "snippet": "Sido est actuellement au label Urban/Universal Music Group. Sido se distingue par ses paroles provocantes et agressives. Il porte …"
+    },
+    {
+      "title": "Sido – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Sido",
+      "snippet": "Sido ist der siebte deutsche Künstler und nach den Fantastischen Vier der zweite deutsche Hip-Hop-Act, der ein MTV Unplugged …"
+    },
+    {
+      "title": "Sido - ISSA (prod. by Yanek Stärk) [Official Video] - YouTube",
+      "url": "https://www.youtube.com/watch?v=NBZ30B8VYqo",
+      "snippet": "Sido - ISSA (prod. by Yanek Stärk) [Official Video] Sido 1.61M subscribers Subscribe"
+    }
+  ]
+}

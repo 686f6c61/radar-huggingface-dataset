@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Nissa21/IndoBert_Ovulla",
+  "slug": "nissa21-indobert_ovulla",
+  "author": "Nissa21",
+  "url": "https://huggingface.co/Nissa21/IndoBert_Ovulla",
+  "created_at": "2026-11-03T03:38:46.000Z",
+  "updated_at": "2026-11-03T03:57:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124442882,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497795072,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "omikheev/qwen3.8-27b-abliteration-demo",
+  "slug": "omikheev-qwen3-8-27b-abliteration-demo",
+  "author": "omikheev",
+  "url": "https://huggingface.co/omikheev/qwen3.8-27b-abliteration-demo",
+  "created_at": "2026-11-02T22:34:19.000Z",
+  "updated_at": "2026-11-03T01:09:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "abliteration",
+    "representation-engineering",
+    "qwen",
+    "research",
+    "satire",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575815536,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "JoshuaCalhoon",
   "url": "https://huggingface.co/JoshuaCalhoon/Qwen3.8-27B-MLX-4bit-GPTQ",
   "created_at": "2026-10-19T16:13:21.000Z",
-  "updated_at": "2026-10-22T17:13:50.000Z",
+  "updated_at": "2026-11-03T02:14:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 228,
+  "downloads_30d": 232,
   "trending_score": 0,
   "parameters": 26895993856,
   "parameters_human": "26.90B",

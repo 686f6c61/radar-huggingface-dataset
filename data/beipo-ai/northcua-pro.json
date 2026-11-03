@@ -5,7 +5,7 @@
   "author": "beipo-ai",
   "url": "https://huggingface.co/beipo-ai/NorthCUA-Pro",
   "created_at": "2026-10-30T10:35:17.000Z",
-  "updated_at": "2026-11-01T16:33:45.000Z",
+  "updated_at": "2026-11-02T09:26:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,11 +26,11 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 0,
+  "downloads_30d": 361,
   "trending_score": 0,
   "parameters": 396802360816,
   "parameters_human": "396.80B",
-  "storage_bytes": 793624888267,
+  "storage_bytes": 793625359207,
   "storage_human": "793.6 GB",
   "base_model": null,
   "formats": [

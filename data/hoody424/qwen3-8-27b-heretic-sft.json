@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "hoody424/qwen3.8-27b-heretic-sft",
+  "slug": "hoody424-qwen3-8-27b-heretic-sft",
+  "author": "hoody424",
+  "url": "https://huggingface.co/hoody424/qwen3.8-27b-heretic-sft",
+  "created_at": "2026-11-03T03:39:05.000Z",
+  "updated_at": "2026-11-03T03:39:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338832677,
+  "storage_human": "339 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

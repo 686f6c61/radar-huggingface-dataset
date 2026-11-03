@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "OSPRAVVYZ/nsfw-classifier-ONNX",
+  "slug": "ospravvyz-nsfw-classifier-onnx",
+  "author": "OSPRAVVYZ",
+  "url": "https://huggingface.co/OSPRAVVYZ/nsfw-classifier-ONNX",
+  "created_at": "2026-11-03T03:27:00.000Z",
+  "updated_at": "2026-11-03T03:27:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vit",
+    "image-classification",
+    "base_model:giacomoarienti/nsfw-classifier",
+    "base_model:quantized:giacomoarienti/nsfw-classifier",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 847838395,
+  "storage_human": "848 MB",
+  "base_model": "giacomoarienti/nsfw-classifier",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

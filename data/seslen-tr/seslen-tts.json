@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "seslen-tr/seslen-tts",
+  "slug": "seslen-tr-seslen-tts",
+  "author": "seslen-tr",
+  "url": "https://huggingface.co/seslen-tr/seslen-tts",
+  "created_at": "2026-10-09T20:52:04.000Z",
+  "updated_at": "2026-11-02T22:32:37.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "turkish",
+    "tts",
+    "text-to-speech",
+    "styletts2",
+    "cpu",
+    "emotion",
+    "tr",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 660568286,
+  "storage_human": "661 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Darkmere-8B-v0.1-GGUF",
+  "slug": "mradermacher-darkmere-8b-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Darkmere-8B-v0.1-GGUF",
+  "created_at": "2026-03-14T11:01:20.000Z",
+  "updated_at": "2026-11-02T23:34:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mistral",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "roleplay",
+    "rp",
+    "creative-writing",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 301,
+  "trending_score": 0,
+  "parameters": 8489553920,
+  "parameters_human": "8.49B",
+  "storage_bytes": 77203393920,
+  "storage_human": "77.2 GB",
+  "base_model": "0xA50C1A1/Darkmere-8B-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

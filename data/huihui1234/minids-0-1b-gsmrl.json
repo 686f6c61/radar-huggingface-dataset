@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "huihui1234/minids-0.1b-gsmrl",
+  "slug": "huihui1234-minids-0-1b-gsmrl",
+  "author": "huihui1234",
+  "url": "https://huggingface.co/huihui1234/minids-0.1b-gsmrl",
+  "created_at": "2025-03-09T16:12:10.000Z",
+  "updated_at": "2026-11-03T02:18:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "dataset:swulling/gsm8k_chinese",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1010953323,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

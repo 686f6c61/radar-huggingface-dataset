@@ -5,7 +5,7 @@
   "author": "danieltombay",
   "url": "https://huggingface.co/danieltombay/siliconshield-rtl-contract-2",
   "created_at": "2026-11-01T12:38:02.000Z",
-  "updated_at": "2026-11-01T12:42:32.000Z",
+  "updated_at": "2026-11-03T00:28:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 436031238,
   "parameters_human": "436.0M",

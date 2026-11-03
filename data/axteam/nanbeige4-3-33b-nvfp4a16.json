@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Nanbeige4.3-33B-NVFP4A16",
   "created_at": "2026-10-29T06:35:42.000Z",
-  "updated_at": "2026-11-02T00:28:57.000Z",
+  "updated_at": "2026-11-02T04:22:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,11 +32,11 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 713,
+  "downloads_30d": 1170,
   "trending_score": 0,
   "parameters": 19676626284,
   "parameters_human": "19.68B",
-  "storage_bytes": 22088822859,
+  "storage_bytes": 22091605157,
   "storage_human": "22.1 GB",
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [

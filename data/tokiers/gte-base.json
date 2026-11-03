@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "tokiers/gte-base",
+  "slug": "tokiers-gte-base",
+  "author": "tokiers",
+  "url": "https://huggingface.co/tokiers/gte-base",
+  "created_at": "2026-03-24T01:10:38.000Z",
+  "updated_at": "2026-11-03T02:58:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tokie",
+  "languages": [],
+  "tags": [
+    "tokie",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126526631,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

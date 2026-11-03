@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "amd/VideoChat-Flash-Qwen2_5-7B_InternVideo2-1B_rai_1.9.0_npu",
+  "slug": "amd-videochat-flash-qwen2_5-7b_internvideo2-1b_rai_1-9-0_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/VideoChat-Flash-Qwen2_5-7B_InternVideo2-1B_rai_1.9.0_npu",
+  "created_at": "2026-11-02T22:33:42.000Z",
+  "updated_at": "2026-11-02T22:35:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "videochat_flash_qwen",
+    "amd",
+    "ryzenai",
+    "npu",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14004977843,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

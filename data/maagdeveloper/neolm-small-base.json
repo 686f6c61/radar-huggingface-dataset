@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "MaagDeveloper/NeoLM-Small-Base",
+  "slug": "maagdeveloper-neolm-small-base",
+  "author": "MaagDeveloper",
+  "url": "https://huggingface.co/MaagDeveloper/NeoLM-Small-Base",
+  "created_at": "2026-10-31T17:58:19.000Z",
+  "updated_at": "2026-11-02T23:45:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "neolm",
+    "text-generation",
+    "causal-lm",
+    "custom-code",
+    "pretrained",
+    "foundation",
+    "pytorch",
+    "custom_code",
+    "en",
+    "dataset:MaagDeveloper/NeoCorpus",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61356032,
+  "parameters_human": "61.4M",
+  "storage_bytes": 122723096,
+  "storage_human": "123 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

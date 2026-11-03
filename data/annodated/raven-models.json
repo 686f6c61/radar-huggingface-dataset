@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "annodated/raven-models",
+  "slug": "annodated-raven-models",
+  "author": "annodated",
+  "url": "https://huggingface.co/annodated/raven-models",
+  "created_at": "2026-10-29T00:59:52.000Z",
+  "updated_at": "2026-11-03T01:45:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18254028940,
+  "storage_human": "18.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

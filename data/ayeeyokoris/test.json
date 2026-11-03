@@ -5,7 +5,7 @@
   "author": "ayeeyokoris",
   "url": "https://huggingface.co/ayeeyokoris/test",
   "created_at": "2026-10-30T16:58:48.000Z",
-  "updated_at": "2026-11-02T01:57:57.000Z",
+  "updated_at": "2026-11-03T03:00:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -23,10 +23,10 @@
   "likes": 0,
   "downloads_30d": 1314,
   "trending_score": 0,
-  "parameters": 25046352,
-  "parameters_human": "25.0M",
-  "storage_bytes": 3247059800,
-  "storage_human": "3.2 GB",
+  "parameters": 100125328,
+  "parameters_human": "100.1M",
+  "storage_bytes": 36813464088,
+  "storage_human": "36.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

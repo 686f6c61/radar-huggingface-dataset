@@ -5,7 +5,7 @@
   "author": "HanzoHuang",
   "url": "https://huggingface.co/HanzoHuang/Spark-X2.5-1.7B-RKLLM",
   "created_at": "2026-10-19T01:22:57.000Z",
-  "updated_at": "2026-10-23T01:58:03.000Z",
+  "updated_at": "2026-11-02T08:28:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 228,
+  "downloads_30d": 234,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

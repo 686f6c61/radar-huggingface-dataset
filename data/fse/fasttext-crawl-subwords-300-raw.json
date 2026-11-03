@@ -5,7 +5,7 @@
   "author": "fse",
   "url": "https://huggingface.co/fse/fasttext-crawl-subwords-300-raw",
   "created_at": "2026-11-01T23:41:42.000Z",
-  "updated_at": "2026-11-01T23:43:34.000Z",
+  "updated_at": "2026-11-02T06:33:42.000Z",
   "license": "cc-by-sa-3.0",
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": 1217845063,
   "parameters_human": "1.22B",

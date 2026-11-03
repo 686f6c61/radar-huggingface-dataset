@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "amd/phi-4_rai_1.9.0_npu",
+  "slug": "amd-phi-4_rai_1-9-0_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/phi-4_rai_1.9.0_npu",
+  "created_at": "2026-11-02T22:48:17.000Z",
+  "updated_at": "2026-11-02T22:49:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "amd",
+    "ryzenai",
+    "npu",
+    "text-generation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9748891630,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

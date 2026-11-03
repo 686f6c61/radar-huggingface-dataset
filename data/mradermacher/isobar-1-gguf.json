@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Isobar-1-GGUF",
+  "slug": "mradermacher-isobar-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Isobar-1-GGUF",
+  "created_at": "2026-04-13T06:46:50.000Z",
+  "updated_at": "2026-11-02T21:24:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "weather",
+    "meteorology",
+    "radar",
+    "sounding",
+    "satellite",
+    "vision-language-model",
+    "image-text-to-text",
+    "qwen",
+    "isobar",
+    "en",
+    "base_model:deepguess/Isobar-1",
+    "base_model:quantized:deepguess/Isobar-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 478,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348471968,
+  "storage_human": "186.3 GB",
+  "base_model": "deepguess/Isobar-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

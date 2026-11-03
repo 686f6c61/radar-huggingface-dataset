@@ -5,7 +5,7 @@
   "author": "Miyauel",
   "url": "https://huggingface.co/Miyauel/meari-dialect-lora",
   "created_at": "2026-11-02T00:09:29.000Z",
-  "updated_at": "2026-11-02T00:09:39.000Z",
+  "updated_at": "2026-11-02T04:12:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 17432576,
   "parameters_human": "17.4M",

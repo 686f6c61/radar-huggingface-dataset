@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Roshanimp/whisper-large-v3-turbo-hinglish",
+  "slug": "roshanimp-whisper-large-v3-turbo-hinglish",
+  "author": "Roshanimp",
+  "url": "https://huggingface.co/Roshanimp/whisper-large-v3-turbo-hinglish",
+  "created_at": "2026-11-03T04:12:10.000Z",
+  "updated_at": "2026-11-03T04:12:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52474576,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

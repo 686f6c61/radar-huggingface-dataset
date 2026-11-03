@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Qwen3.5-0.8B-AWQ-4bit",
   "created_at": "2026-10-29T01:36:00.000Z",
-  "updated_at": "2026-11-02T01:54:23.000Z",
+  "updated_at": "2026-11-02T04:22:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 86,
+  "downloads_30d": 132,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",

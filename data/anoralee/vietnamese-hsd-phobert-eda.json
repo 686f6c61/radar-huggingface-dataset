@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "AnoraLee/vietnamese-hsd-phobert-eda",
+  "slug": "anoralee-vietnamese-hsd-phobert-eda",
+  "author": "AnoraLee",
+  "url": "https://huggingface.co/AnoraLee/vietnamese-hsd-phobert-eda",
+  "created_at": "2026-11-01T10:59:49.000Z",
+  "updated_at": "2026-11-03T03:22:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "hate-speech-detection",
+    "vietnamese",
+    "data-augmentation",
+    "easy-data-augmentation",
+    "eda",
+    "phobert",
+    "natural-language-processing",
+    "vi",
+    "dataset:BonTori/ViHatePhoBERT-TDTU",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135000579,
+  "parameters_human": "135.0M",
+  "storage_bytes": 1080052920,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Arcee-Blitz-abliterated-GGUF",
+  "slug": "mradermacher-arcee-blitz-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Arcee-Blitz-abliterated-GGUF",
+  "created_at": "2025-03-02T20:27:57.000Z",
+  "updated_at": "2026-11-02T22:30:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407739808,
+  "storage_human": "161.4 GB",
+  "base_model": "huihui-ai/Arcee-Blitz-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

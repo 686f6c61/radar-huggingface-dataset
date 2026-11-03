@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-ascend-FlagOS",
+  "slug": "flagrelease-minicpm-v-4-7-35b-a3b-bf16-ascend-flagos",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-ascend-FlagOS",
+  "created_at": "2026-10-01T10:54:54.000Z",
+  "updated_at": "2026-11-03T02:04:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

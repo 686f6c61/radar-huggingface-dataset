@@ -5,7 +5,7 @@
   "author": "Abhayn01",
   "url": "https://huggingface.co/Abhayn01/ARKA-v3-Multilingual-Pretrain",
   "created_at": "2026-08-24T17:14:02.000Z",
-  "updated_at": "2026-10-31T22:32:49.000Z",
+  "updated_at": "2026-11-03T01:41:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 505661184,
   "parameters_human": "505.7M",
-  "storage_bytes": 619001472318,
-  "storage_human": "619.0 GB",
+  "storage_bytes": 685764828783,
+  "storage_human": "685.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

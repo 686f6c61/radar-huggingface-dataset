@@ -5,7 +5,7 @@
   "author": "NullRabbit",
   "url": "https://huggingface.co/NullRabbit/nr-network-known-class-detector",
   "created_at": "2026-07-01T13:57:26.000Z",
-  "updated_at": "2026-11-02T02:57:22.000Z",
+  "updated_at": "2026-11-03T02:57:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 254,
+  "downloads_30d": 262,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

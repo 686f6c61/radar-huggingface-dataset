@@ -5,7 +5,7 @@
   "author": "David-MRI-ORG",
   "url": "https://huggingface.co/David-MRI-ORG/mednext-3dconvnext-baseline-breast",
   "created_at": "2026-10-12T10:01:14.000Z",
-  "updated_at": "2026-10-12T21:40:32.000Z",
+  "updated_at": "2026-11-03T01:21:05.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 8073219,
   "parameters_human": "8.1M",
-  "storage_bytes": 270706691,
-  "storage_human": "271 MB",
+  "storage_bytes": 298369452,
+  "storage_human": "298 MB",
   "base_model": null,
   "formats": [
     "safetensors"

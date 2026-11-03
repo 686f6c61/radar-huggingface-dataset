@@ -26,8 +26,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-11-03T03:43:20.312Z",
   "benchmarks": [
     {
       "task": "<img src=x onerror=window.__x5477t=1>",

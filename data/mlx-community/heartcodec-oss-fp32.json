@@ -5,7 +5,7 @@
   "author": "mlx-community",
   "url": "https://huggingface.co/mlx-community/HeartCodec-oss-fp32",
   "created_at": "2026-11-02T04:57:23.000Z",
-  "updated_at": "2026-11-02T04:57:44.000Z",
+  "updated_at": "2026-11-02T05:28:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-audio",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 1573056372,
   "parameters_human": "1.57B",

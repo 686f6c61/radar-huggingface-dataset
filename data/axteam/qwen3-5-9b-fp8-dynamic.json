@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/Qwen3.5-9B-FP8-dynamic",
   "created_at": "2026-10-27T09:10:21.000Z",
-  "updated_at": "2026-11-02T00:31:46.000Z",
+  "updated_at": "2026-11-02T04:23:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 345,
+  "downloads_30d": 429,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",

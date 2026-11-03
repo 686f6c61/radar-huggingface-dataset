@@ -5,7 +5,7 @@
   "author": "iseonn",
   "url": "https://huggingface.co/iseonn/act_policy",
   "created_at": "2026-10-30T01:39:21.000Z",
-  "updated_at": "2026-10-30T02:44:27.000Z",
+  "updated_at": "2026-11-03T04:07:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -16,7 +16,7 @@
     "safetensors",
     "act",
     "robotics",
-    "dataset:iseonn/am_arm_test",
+    "dataset:iseonn/am_arm_test_5",
     "arxiv:2304.13705",
     "license:apache-2.0",
     "region:us"
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51670663,
   "parameters_human": "51.7M",
-  "storage_bytes": 413431088,
-  "storage_human": "413 MB",
+  "storage_bytes": 620154244,
+  "storage_human": "620 MB",
   "base_model": null,
   "formats": [
     "safetensors"

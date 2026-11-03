@@ -5,7 +5,7 @@
   "author": "Vxtzq",
   "url": "https://huggingface.co/Vxtzq/Crowd-v1",
   "created_at": "2026-08-21T14:06:48.000Z",
-  "updated_at": "2026-11-02T03:32:10.000Z",
+  "updated_at": "2026-11-03T03:24:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 12,
   "parameters": 1007788032,
   "parameters_human": "1.01B",
-  "storage_bytes": 2271527822086,
-  "storage_human": "2271.5 GB",
+  "storage_bytes": 2307808193350,
+  "storage_human": "2307.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

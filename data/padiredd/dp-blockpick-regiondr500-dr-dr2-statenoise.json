@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "padiredd/dp-blockpick-regiondr500-dr-dr2-statenoise",
+  "slug": "padiredd-dp-blockpick-regiondr500-dr-dr2-statenoise",
+  "author": "padiredd",
+  "url": "https://huggingface.co/padiredd/dp-blockpick-regiondr500-dr-dr2-statenoise",
+  "created_at": "2026-11-03T02:33:08.000Z",
+  "updated_at": "2026-11-03T02:34:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "LeRobot",
+    "diffusion-policy",
+    "isaac-lab",
+    "simulation",
+    "ffw-sg2",
+    "robotics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 287533680,
+  "parameters_human": "287.5M",
+  "storage_bytes": 11501994088,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

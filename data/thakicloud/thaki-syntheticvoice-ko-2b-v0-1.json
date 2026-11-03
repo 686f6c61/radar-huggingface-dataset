@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Thaki-SyntheticVoice-KO-2B-v0.1",
+  "slug": "thakicloud-thaki-syntheticvoice-ko-2b-v0-1",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Thaki-SyntheticVoice-KO-2B-v0.1",
+  "created_at": "2026-10-24T06:20:04.000Z",
+  "updated_at": "2026-11-02T22:38:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "text-to-speech",
+    "korean",
+    "voxcpm2",
+    "lora",
+    "synthetic-speaker",
+    "voice-design",
+    "ko",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 4957298030,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

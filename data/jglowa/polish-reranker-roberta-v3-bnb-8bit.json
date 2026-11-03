@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "jglowa/polish-reranker-roberta-v3-bnb-8bit",
+  "slug": "jglowa-polish-reranker-roberta-v3-bnb-8bit",
+  "author": "jglowa",
+  "url": "https://huggingface.co/jglowa/polish-reranker-roberta-v3-bnb-8bit",
+  "created_at": "2026-11-02T22:48:39.000Z",
+  "updated_at": "2026-11-02T23:09:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "polish",
+    "reranker",
+    "bitsandbytes",
+    "pl",
+    "base_model:sdadas/polish-reranker-roberta-v3",
+    "base_model:quantized:sdadas/polish-reranker-roberta-v3",
+    "license:gemma",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 443113473,
+  "parameters_human": "443.1M",
+  "storage_bytes": 583714835,
+  "storage_human": "584 MB",
+  "base_model": "sdadas/polish-reranker-roberta-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Arrow-R1-7B-GGUF",
+  "slug": "mradermacher-arrow-r1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Arrow-R1-7B-GGUF",
+  "created_at": "2025-08-14T15:01:36.000Z",
+  "updated_at": "2026-11-03T03:49:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ParadiseYu/ArrowGEV-7B",
+    "base_model:quantized:ParadiseYu/ArrowGEV-7B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354153728,
+  "storage_human": "70.4 GB",
+  "base_model": "ParadiseYu/ArrowGEV-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

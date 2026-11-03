@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "smile-forge/depth-anything-v2-small-onnx",
+  "slug": "smile-forge-depth-anything-v2-small-onnx",
+  "author": "smile-forge",
+  "url": "https://huggingface.co/smile-forge/depth-anything-v2-small-onnx",
+  "created_at": "2026-11-03T01:01:43.000Z",
+  "updated_at": "2026-11-03T01:01:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "depth-anything",
+    "depth-estimation",
+    "monocular-depth",
+    "base_model:depth-anything/Depth-Anything-V2-Small",
+    "base_model:quantized:depth-anything/Depth-Anything-V2-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100165198,
+  "storage_human": "100 MB",
+  "base_model": "depth-anything/Depth-Anything-V2-Small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

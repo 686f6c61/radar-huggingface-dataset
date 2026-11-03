@@ -5,7 +5,7 @@
   "author": "adityawakharkar",
   "url": "https://huggingface.co/adityawakharkar/numbat-forensics",
   "created_at": "2026-11-02T08:03:21.000Z",
-  "updated_at": "2026-11-02T08:04:36.000Z",
+  "updated_at": "2026-11-02T08:37:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 4732490080,

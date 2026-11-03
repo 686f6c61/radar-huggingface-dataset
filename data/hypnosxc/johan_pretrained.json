@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "HypnosXC/JoHan_pretrained",
+  "slug": "hypnosxc-johan_pretrained",
+  "author": "HypnosXC",
+  "url": "https://huggingface.co/HypnosXC/JoHan_pretrained",
+  "created_at": "2026-11-03T02:29:04.000Z",
+  "updated_at": "2026-11-03T03:08:18.000Z",
+  "license": "johan-mit-and-dinov3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "johan",
+    "hand-motion",
+    "video",
+    "dinov3",
+    "inference",
+    "arxiv:2610.10512",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4186053881,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

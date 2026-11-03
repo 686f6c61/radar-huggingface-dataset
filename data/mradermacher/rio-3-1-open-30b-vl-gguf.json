@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Rio-3.1-Open-30B-VL-GGUF",
+  "slug": "mradermacher-rio-3-1-open-30b-vl-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Rio-3.1-Open-30B-VL-GGUF",
+  "created_at": "2026-06-12T09:50:36.000Z",
+  "updated_at": "2026-11-02T21:23:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:prefeitura-rio/Rio-3.1-Open-30B-VL",
+    "base_model:quantized:prefeitura-rio/Rio-3.1-Open-30B-VL",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 209911607936,
+  "storage_human": "209.9 GB",
+  "base_model": "prefeitura-rio/Rio-3.1-Open-30B-VL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

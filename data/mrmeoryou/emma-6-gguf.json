@@ -5,7 +5,7 @@
   "author": "MrMeOrYou",
   "url": "https://huggingface.co/MrMeOrYou/emma-6-GGUF",
   "created_at": "2026-10-30T15:13:56.000Z",
-  "updated_at": "2026-10-30T17:10:15.000Z",
+  "updated_at": "2026-11-02T10:17:27.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,13 +36,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 827,
   "trending_score": 0,
   "parameters": 1548879872,
   "parameters_human": "1.55B",
-  "storage_bytes": 33425720032,
-  "storage_human": "33.4 GB",
+  "storage_bytes": 66851454464,
+  "storage_human": "66.9 GB",
   "base_model": "egomnia/emma-6",
   "formats": [
     "gguf"

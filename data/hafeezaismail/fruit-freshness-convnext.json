@@ -5,7 +5,7 @@
   "author": "hafeezaismail",
   "url": "https://huggingface.co/hafeezaismail/fruit-freshness-convnext",
   "created_at": "2026-11-01T09:28:01.000Z",
-  "updated_at": "2026-11-01T09:28:20.000Z",
+  "updated_at": "2026-11-02T16:24:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 27832432,
   "parameters_human": "27.8M",
-  "storage_bytes": 111596299,
-  "storage_human": "112 MB",
+  "storage_bytes": 223192770,
+  "storage_human": "223 MB",
   "base_model": "facebook/convnext-tiny-224",
   "formats": [
     "safetensors"

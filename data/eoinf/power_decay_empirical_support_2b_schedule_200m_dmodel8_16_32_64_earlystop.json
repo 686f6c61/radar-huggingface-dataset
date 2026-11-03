@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "eoinf/power_decay_empirical_support_2b_schedule_200m_dmodel8_16_32_64_earlystop",
+  "slug": "eoinf-power_decay_empirical_support_2b_schedule_200m_dmodel8_16_32_64_earlystop",
+  "author": "eoinf",
+  "url": "https://huggingface.co/eoinf/power_decay_empirical_support_2b_schedule_200m_dmodel8_16_32_64_earlystop",
+  "created_at": "2026-11-03T00:38:26.000Z",
+  "updated_at": "2026-11-03T00:56:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 324160757,
+  "storage_human": "324 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
