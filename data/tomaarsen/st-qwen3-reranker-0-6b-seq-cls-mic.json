@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tomaarsen/st-Qwen3-Reranker-0-6B-seq-cls-mic",
+  "slug": "tomaarsen-st-qwen3-reranker-0-6b-seq-cls-mic",
+  "author": "tomaarsen",
+  "url": "https://huggingface.co/tomaarsen/st-Qwen3-Reranker-0-6B-seq-cls-mic",
+  "created_at": "2026-11-03T11:29:05.000Z",
+  "updated_at": "2026-11-03T11:29:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "mic",
+    "test-artifact",
+    "base_model:tomaarsen/Qwen3-Reranker-0.6B-seq-cls",
+    "base_model:finetune:tomaarsen/Qwen3-Reranker-0.6B-seq-cls",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9780992,
+  "parameters_human": "9.8M",
+  "storage_bytes": 50549270,
+  "storage_human": "51 MB",
+  "base_model": "tomaarsen/Qwen3-Reranker-0.6B-seq-cls",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "PraxySante/Praxy-LFM3-FR-Medical-Delib",
+  "slug": "praxysante-praxy-lfm3-fr-medical-delib",
+  "author": "PraxySante",
+  "url": "https://huggingface.co/PraxySante/Praxy-LFM3-FR-Medical-Delib",
+  "created_at": "2026-11-03T11:04:49.000Z",
+  "updated_at": "2026-11-03T11:09:05.000Z",
+  "license": "lfm-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3_audio",
+    "automatic-speech-recognition",
+    "speech",
+    "french",
+    "medical",
+    "deliberation",
+    "lfm3",
+    "custom_code",
+    "fr",
+    "license:other",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1977548032,
+  "parameters_human": "1.98B",
+  "storage_bytes": 8075305894,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "Alextokenizin7873/LongCat-Video",
+  "slug": "alextokenizin7873-longcat-video",
+  "author": "Alextokenizin7873",
+  "url": "https://huggingface.co/Alextokenizin7873/LongCat-Video",
+  "created_at": "2026-11-03T10:39:44.000Z",
+  "updated_at": "2026-11-03T10:40:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "transformers",
+    "image-to-video",
+    "video-continuation",
+    "text-to-video",
+    "en",
+    "zh",
+    "arxiv:2510.22200",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Internal Text-to-Video MOS Benchmark",
+      "metric": "Text-Alignment",
+      "value": 3.76
+    },
+    {
+      "task": null,
+      "dataset": "Internal Text-to-Video MOS Benchmark",
+      "metric": "Visual Quality",
+      "value": 3.25
+    },
+    {
+      "task": null,
+      "dataset": "Internal Text-to-Video MOS Benchmark",
+      "metric": "Motion Quality",
+      "value": 3.74
+    },
+    {
+      "task": null,
+      "dataset": "Internal Text-to-Video MOS Benchmark",
+      "metric": "Overall Quality",
+      "value": 3.38
+    },
+    {
+      "task": null,
+      "dataset": "Internal Image-to-Video MOS Benchmark",
+      "metric": "Image-Alignment",
+      "value": 4.04
+    },
+    {
+      "task": null,
+      "dataset": "Internal Image-to-Video MOS Benchmark",
+      "metric": "Text-Alignment",
+      "value": 3.49
+    },
+    {
+      "task": null,
+      "dataset": "Internal Image-to-Video MOS Benchmark",
+      "metric": "Visual Quality",
+      "value": 3.27
+    },
+    {
+      "task": null,
+      "dataset": "Internal Image-to-Video MOS Benchmark",
+      "metric": "Motion Quality",
+      "value": 3.59
+    },
+    {
+      "task": null,
+      "dataset": "Internal Image-to-Video MOS Benchmark",
+      "metric": "Overall Quality",
+      "value": 3.17
+    }
+  ],
+  "sources": []
+}

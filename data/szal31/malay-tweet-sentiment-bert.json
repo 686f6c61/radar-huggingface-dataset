@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "szal31/malay-tweet-sentiment-bert",
+  "slug": "szal31-malay-tweet-sentiment-bert",
+  "author": "szal31",
+  "url": "https://huggingface.co/szal31/malay-tweet-sentiment-bert",
+  "created_at": "2026-11-03T04:56:09.000Z",
+  "updated_at": "2026-11-03T04:57:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ms"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "ms",
+    "dataset:kornwtp/ms-bahasa-twitter-sentiment",
+    "base_model:mesolitica/bert-base-standard-bahasa-cased",
+    "base_model:finetune:mesolitica/bert-base-standard-bahasa-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110619651,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442502140,
+  "storage_human": "443 MB",
+  "base_model": "mesolitica/bert-base-standard-bahasa-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

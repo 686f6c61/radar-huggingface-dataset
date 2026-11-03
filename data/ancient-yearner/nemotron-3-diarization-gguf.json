@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "ancient-yearner/Nemotron-3-Diarization-GGUF",
+  "slug": "ancient-yearner-nemotron-3-diarization-gguf",
+  "author": "ancient-yearner",
+  "url": "https://huggingface.co/ancient-yearner/Nemotron-3-Diarization-GGUF",
+  "created_at": "2026-11-03T07:28:26.000Z",
+  "updated_at": "2026-11-03T07:29:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99260363,
+  "parameters_human": "99.3M",
+  "storage_bytes": 107012128,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

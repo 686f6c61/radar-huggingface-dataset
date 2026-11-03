@@ -5,7 +5,7 @@
   "author": "siliconperception",
   "url": "https://huggingface.co/siliconperception/vla",
   "created_at": "2026-10-31T04:08:54.000Z",
-  "updated_at": "2026-11-02T04:23:08.000Z",
+  "updated_at": "2026-11-02T15:21:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -46,8 +46,8 @@
   "trending_score": 0,
   "parameters": 55743477,
   "parameters_human": "55.7M",
-  "storage_bytes": 510883888,
-  "storage_human": "511 MB",
+  "storage_bytes": 222987748,
+  "storage_human": "223 MB",
   "base_model": null,
   "formats": [
     "safetensors"

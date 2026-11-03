@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "gplsi/Aitana-TA-7B-S",
+  "slug": "gplsi-aitana-ta-7b-s",
+  "author": "gplsi",
+  "url": "https://huggingface.co/gplsi/Aitana-TA-7B-S",
+  "created_at": "2026-05-14T06:48:24.000Z",
+  "updated_at": "2026-11-03T12:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "ca",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "es",
+    "ca",
+    "en",
+    "base_model:BSC-LT/salamandraTA-7b-instruct",
+    "base_model:finetune:BSC-LT/salamandraTA-7b-instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": 7768117248,
+  "parameters_human": "7.77B",
+  "storage_bytes": 15578063781,
+  "storage_human": "15.6 GB",
+  "base_model": "BSC-LT/salamandraTA-7b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

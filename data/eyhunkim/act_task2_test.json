@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "EYHUNKIM/act_task2_test",
+  "slug": "eyhunkim-act_task2_test",
+  "author": "EYHUNKIM",
+  "url": "https://huggingface.co/EYHUNKIM/act_task2_test",
+  "created_at": "2026-11-03T05:25:49.000Z",
+  "updated_at": "2026-11-03T05:28:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotis",
+    "cyclo_intelligence",
+    "robotics",
+    "dataset:local/Task_8_test8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1239857608,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

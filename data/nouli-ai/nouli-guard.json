@@ -5,7 +5,7 @@
   "author": "nouli-ai",
   "url": "https://huggingface.co/nouli-ai/nouli-guard",
   "created_at": "2026-10-31T20:58:37.000Z",
-  "updated_at": "2026-10-31T21:32:13.000Z",
+  "updated_at": "2026-11-02T18:58:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

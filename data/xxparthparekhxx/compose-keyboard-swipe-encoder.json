@@ -5,7 +5,7 @@
   "author": "xxparthparekhxx",
   "url": "https://huggingface.co/xxparthparekhxx/compose-keyboard-swipe-encoder",
   "created_at": "2026-08-23T13:03:35.000Z",
-  "updated_at": "2026-08-23T13:04:07.000Z",
+  "updated_at": "2026-10-30T07:05:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "other",
@@ -28,6 +28,7 @@
     "other",
     "en",
     "dataset:futo-org/swipe.futo.org",
+    "arxiv:2606.25247",
     "license:mit",
     "model-index",
     "region:us"

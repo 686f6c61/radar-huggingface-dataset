@@ -5,10 +5,10 @@
   "author": "sulabhkatiyar",
   "url": "https://huggingface.co/sulabhkatiyar/egjev-v0.1",
   "created_at": "2026-10-31T09:33:49.000Z",
-  "updated_at": "2026-11-01T06:52:28.000Z",
+  "updated_at": "2026-11-02T19:43:28.000Z",
   "license": "egjev-mixed-research",
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "zero-shot-classification",
   "library": "transformers",
   "languages": [
     "en",
@@ -36,14 +36,16 @@
     "sd"
   ],
   "tags": [
-    "transformers",
     "safetensors",
     "typed-decisions",
     "decision-model",
     "multimodal",
     "audio",
+    "speech",
+    "image",
     "indic",
     "embeddinggemma",
+    "zero-shot-classification",
     "en",
     "hi",
     "bn",
@@ -70,7 +72,6 @@
     "base_model:google/embeddinggemma-2",
     "base_model:finetune:google/embeddinggemma-2",
     "license:other",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -78,7 +79,7 @@
   "trending_score": 0,
   "parameters": 746148667,
   "parameters_human": "746.1M",
-  "storage_bytes": 2984774004,
+  "storage_bytes": 2986494086,
   "storage_human": "3.0 GB",
   "base_model": "google/embeddinggemma-2",
   "formats": [

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "anhdao69/LoopWAM_NT",
+  "slug": "anhdao69-loopwam_nt",
+  "author": "anhdao69",
+  "url": "https://huggingface.co/anhdao69/LoopWAM_NT",
+  "created_at": "2026-10-08T21:26:09.000Z",
+  "updated_at": "2026-11-03T05:39:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "libero",
+    "loopwam",
+    "world-action-model",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157366037268,
+  "storage_human": "157.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

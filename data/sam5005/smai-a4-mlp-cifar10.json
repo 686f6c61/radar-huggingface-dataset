@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Sam5005/smai-a4-mlp-cifar10",
+  "slug": "sam5005-smai-a4-mlp-cifar10",
+  "author": "Sam5005",
+  "url": "https://huggingface.co/Sam5005/smai-a4-mlp-cifar10",
+  "created_at": "2026-11-03T11:13:44.000Z",
+  "updated_at": "2026-11-03T11:13:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13963346,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

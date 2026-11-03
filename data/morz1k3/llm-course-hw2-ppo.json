@@ -5,7 +5,7 @@
   "author": "morz1k3",
   "url": "https://huggingface.co/morz1k3/llm-course-hw2-ppo",
   "created_at": "2026-11-02T19:01:58.000Z",
-  "updated_at": "2026-11-02T19:02:09.000Z",
+  "updated_at": "2026-11-02T20:21:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -16,8 +16,13 @@
     "safetensors",
     "llama",
     "text-generation",
+    "ppo",
+    "rlhf",
     "conversational",
-    "arxiv:1910.09700",
+    "en",
+    "dataset:HumanLLMs/Human-Like-DPO-Dataset",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"
@@ -29,7 +34,7 @@
   "parameters_human": "134.5M",
   "storage_bytes": 538092712,
   "storage_human": "538 MB",
-  "base_model": null,
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"
   ],

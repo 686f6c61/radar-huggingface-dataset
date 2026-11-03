@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "MK-runner/CoGaze",
+  "slug": "mk-runner-cogaze",
+  "author": "MK-runner",
+  "url": "https://huggingface.co/MK-runner/CoGaze",
+  "created_at": "2026-03-28T03:42:35.000Z",
+  "updated_at": "2026-11-03T06:14:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2603.26049",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11785982991,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

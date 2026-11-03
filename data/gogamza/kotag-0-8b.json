@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gogamza/kotag-0.8b",
+  "slug": "gogamza-kotag-0-8b",
+  "author": "gogamza",
+  "url": "https://huggingface.co/gogamza/kotag-0.8b",
+  "created_at": "2026-11-03T07:40:23.000Z",
+  "updated_at": "2026-11-03T09:42:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "korean",
+    "sequence-labeling",
+    "word-spacing",
+    "pykospacing",
+    "homebrew",
+    "dgx-spark",
+    "token-classification",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1727216391,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

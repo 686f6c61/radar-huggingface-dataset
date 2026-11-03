@@ -5,7 +5,7 @@
   "author": "mortsn",
   "url": "https://huggingface.co/mortsn/handler-gliclass",
   "created_at": "2026-11-01T23:45:05.000Z",
-  "updated_at": "2026-11-01T23:46:46.000Z",
+  "updated_at": "2026-11-02T14:47:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 885505124,
-  "storage_human": "886 MB",
+  "storage_bytes": 1483699596,
+  "storage_human": "1.5 GB",
   "base_model": "knowledgator/gliclass-v4-edge",
   "formats": [
     "onnx"

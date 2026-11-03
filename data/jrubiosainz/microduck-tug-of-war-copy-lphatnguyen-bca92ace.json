@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-tug-of-war-copy-lphatnguyen-bca92ace",
+  "slug": "jrubiosainz-microduck-tug-of-war-copy-lphatnguyen-bca92ace",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-tug-of-war-copy-lphatnguyen-bca92ace",
+  "created_at": "2026-11-03T07:22:44.000Z",
+  "updated_at": "2026-11-03T07:22:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-arena",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 890504,
+  "storage_human": "890504 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

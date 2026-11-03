@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mortimerme/repocollect",
+  "slug": "mortimerme-repocollect",
+  "author": "mortimerme",
+  "url": "https://huggingface.co/mortimerme/repocollect",
+  "created_at": "2025-07-18T04:26:32.000Z",
+  "updated_at": "2026-10-27T17:15:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49832241730,
+  "storage_human": "49.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

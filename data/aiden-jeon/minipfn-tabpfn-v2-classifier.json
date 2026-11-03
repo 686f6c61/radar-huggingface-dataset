@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "aiden-jeon/minipfn-tabpfn-v2-classifier",
+  "slug": "aiden-jeon-minipfn-tabpfn-v2-classifier",
+  "author": "aiden-jeon",
+  "url": "https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-classifier",
+  "created_at": "2026-11-03T06:44:20.000Z",
+  "updated_at": "2026-11-03T06:44:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "tabpfn",
+    "prior-data-fitted-networks",
+    "in-context-learning",
+    "tabular-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7244746,
+  "parameters_human": "7.2M",
+  "storage_bytes": 29091768,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

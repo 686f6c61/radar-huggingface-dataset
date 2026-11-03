@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AMD-PAVS-AI/whisper",
+  "slug": "amd-pavs-ai-whisper",
+  "author": "AMD-PAVS-AI",
+  "url": "https://huggingface.co/AMD-PAVS-AI/whisper",
+  "created_at": "2026-08-04T10:03:20.000Z",
+  "updated_at": "2026-11-03T07:55:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "whisper",
+    "foundation",
+    "amd",
+    "rocm",
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 960825806,
+  "storage_human": "961 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

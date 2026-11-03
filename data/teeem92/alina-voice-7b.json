@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "teeem92/alina-voice-7b",
+  "slug": "teeem92-alina-voice-7b",
+  "author": "teeem92",
+  "url": "https://huggingface.co/teeem92/alina-voice-7b",
+  "created_at": "2026-11-03T10:08:27.000Z",
+  "updated_at": "2026-11-03T10:10:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "soup-cli",
+    "fine-tuned",
+    "full-model",
+    "voice-bot",
+    "elevenlabs",
+    "lptracker",
+    "conversational",
+    "ru",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693708,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

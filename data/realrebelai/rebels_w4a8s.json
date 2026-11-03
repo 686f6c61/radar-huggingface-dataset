@@ -5,7 +5,7 @@
   "author": "realrebelai",
   "url": "https://huggingface.co/realrebelai/Rebels_w4a8s",
   "created_at": "2026-08-07T05:42:18.000Z",
-  "updated_at": "2026-10-26T00:46:28.000Z",
+  "updated_at": "2026-11-03T04:30:02.000Z",
   "license": "see-individual-model-repos",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -29,8 +29,8 @@
   "trending_score": 8,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 244640901183,
-  "storage_human": "244.6 GB",
+  "storage_bytes": 277445936235,
+  "storage_human": "277.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

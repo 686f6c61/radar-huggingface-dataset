@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 551962406742,
-  "storage_human": "552.0 GB",
+  "storage_bytes": 546015642462,
+  "storage_human": "546.0 GB",
   "base_model": "deepseek-ai/JanusFlow-1.3B",
   "formats": [
     "safetensors"

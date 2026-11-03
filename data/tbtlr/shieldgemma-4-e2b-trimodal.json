@@ -4,8 +4,8 @@
   "slug": "tbtlr-shieldgemma-4-e2b-trimodal",
   "author": "tbtlr",
   "url": "https://huggingface.co/tbtlr/shieldgemma-4-e2b-trimodal",
-  "created_at": "2026-10-14T13:41:03.000Z",
-  "updated_at": "2026-11-02T12:16:22.000Z",
+  "created_at": "2026-11-02T12:46:21.000Z",
+  "updated_at": "2026-11-02T12:48:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -45,8 +45,8 @@
   "trending_score": 0,
   "parameters": 5104297539,
   "parameters_human": "5.10B",
-  "storage_bytes": 30658728356,
-  "storage_human": "30.7 GB",
+  "storage_bytes": 10241022536,
+  "storage_human": "10.2 GB",
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"

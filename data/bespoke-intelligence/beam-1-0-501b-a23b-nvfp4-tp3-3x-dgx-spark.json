@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Bespoke-Intelligence/Beam-1.0-501B-A23B-NVFP4-TP3-3x-DGX-Spark",
+  "slug": "bespoke-intelligence-beam-1-0-501b-a23b-nvfp4-tp3-3x-dgx-spark",
+  "author": "Bespoke-Intelligence",
+  "url": "https://huggingface.co/Bespoke-Intelligence/Beam-1.0-501B-A23B-NVFP4-TP3-3x-DGX-Spark",
+  "created_at": "2026-10-22T01:08:36.000Z",
+  "updated_at": "2026-11-03T06:20:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "beam",
+    "nvfp4",
+    "tensor-parallel",
+    "dgx-spark",
+    "gb10",
+    "reflection",
+    "multi-node",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:reflection/Beam-1.0-501B-A23B",
+    "base_model:quantized:reflection/Beam-1.0-501B-A23B",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 81,
+  "trending_score": 0,
+  "parameters": 526623491064,
+  "parameters_human": "526.62B",
+  "storage_bytes": 308908269327,
+  "storage_human": "308.9 GB",
+  "base_model": "reflection/Beam-1.0-501B-A23B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

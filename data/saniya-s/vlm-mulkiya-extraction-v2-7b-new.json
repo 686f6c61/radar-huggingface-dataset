@@ -37,8 +37,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-11-03T06:36:24.715Z",
   "benchmarks": [],
   "sources": [
     {

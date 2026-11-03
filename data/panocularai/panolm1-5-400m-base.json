@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "PanocularAI/PanoLM1.5-400M-Base",
+  "slug": "panocularai-panolm1-5-400m-base",
+  "author": "PanocularAI",
+  "url": "https://huggingface.co/PanocularAI/PanoLM1.5-400M-Base",
+  "created_at": "2026-11-02T12:43:33.000Z",
+  "updated_at": "2026-11-03T08:53:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "panolm",
+    "text-generation",
+    "kda",
+    "linear-attention",
+    "mla",
+    "hybrid-attention",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 388480672,
+  "parameters_human": "388.5M",
+  "storage_bytes": 777509905,
+  "storage_human": "778 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

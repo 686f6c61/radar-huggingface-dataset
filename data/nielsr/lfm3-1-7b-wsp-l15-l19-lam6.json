@@ -5,20 +5,16 @@
   "author": "nielsr",
   "url": "https://huggingface.co/nielsr/LFM3-1.7B-wsp-l15-l19-lam6",
   "created_at": "2026-11-02T21:51:28.000Z",
-  "updated_at": "2026-11-02T21:51:57.000Z",
+  "updated_at": "2026-11-02T22:27:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
     "safetensors",
     "lfm3",
-    "text-generation",
-    "conversational",
     "custom_code",
-    "arxiv:1910.09700",
     "region:us"
   ],
   "likes": 0,
@@ -32,7 +28,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "p-gupta/enzyme-ec-predictor",
+  "slug": "p-gupta-enzyme-ec-predictor",
+  "author": "p-gupta",
+  "url": "https://huggingface.co/p-gupta/enzyme-ec-predictor",
+  "created_at": "2026-11-03T05:49:49.000Z",
+  "updated_at": "2026-11-03T05:50:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126970839,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative artificial intelligence for enzyme design and biocatalysis",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1367593126000773",
+      "snippet": "29.07.2026 ... We argue that generative AI models now have the maturity to create and optimize enzymes for industrial applications. Wider adoption of ..."
+    },
+    {
+      "title": "p-gupta/enzyme-model · Hugging Face",
+      "url": "https://huggingface.co/p-gupta/enzyme-model",
+      "snippet": "Leak CURBER enzyme classification model starter This is a starter model for the enzyme classification task. You train a model on …"
+    },
+    {
+      "title": "Enzyme property prediction using artificial intelligence",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2211339825001200",
+      "snippet": "Mar 1, 2026 · Here, we first introduce the key components in AI model development, including enzyme datasets, protein …"
+    },
+    {
+      "title": "airghoxir/EEnzymeProject · Hugging Face",
+      "url": "https://huggingface.co/airghoxir/EEnzymeProject",
+      "snippet": "Lactate Dehydrogenase EC Number Predictor This is a free web app that predicts EC numbers for lactate dehydrogenase based on …"
+    }
+  ]
+}

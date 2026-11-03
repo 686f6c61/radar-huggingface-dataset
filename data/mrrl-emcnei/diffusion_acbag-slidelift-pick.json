@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mrrl-emcnei/diffusion_acbag-slidelift-pick",
+  "slug": "mrrl-emcnei-diffusion_acbag-slidelift-pick",
+  "author": "mrrl-emcnei",
+  "url": "https://huggingface.co/mrrl-emcnei/diffusion_acbag-slidelift-pick",
+  "created_at": "2026-11-03T06:00:56.000Z",
+  "updated_at": "2026-11-03T06:03:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:mrrl-emcnei/acbag-slidelift-pick",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 293326840,
+  "parameters_human": "293.3M",
+  "storage_bytes": 1173389248,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

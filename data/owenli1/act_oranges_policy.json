@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "OwenLi1/act_oranges_policy",
+  "slug": "owenli1-act_oranges_policy",
+  "author": "OwenLi1",
+  "url": "https://huggingface.co/OwenLi1/act_oranges_policy",
+  "created_at": "2026-11-03T09:50:50.000Z",
+  "updated_at": "2026-11-03T09:51:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:OwenLi1/lerobot_dataset",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

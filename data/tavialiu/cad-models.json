@@ -5,10 +5,10 @@
   "author": "tavialiu",
   "url": "https://huggingface.co/tavialiu/CAD-models",
   "created_at": "2026-09-18T15:24:00.000Z",
-  "updated_at": "2026-09-18T15:35:20.000Z",
+  "updated_at": "2026-11-01T22:11:12.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-classification",
   "library": null,
   "languages": [
     "en"
@@ -18,8 +18,10 @@
     "indirect-prompt-injection",
     "agent-security",
     "agentdojo",
+    "text-classification",
     "en",
     "dataset:tavialiu/CAD-data",
+    "arxiv:2608.05430",
     "license:mit",
     "region:us"
   ],

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw",
+  "slug": "ddalcu-deepseek-v4-1-flash-1017-mlx-serve-iq-mlx-3-0bpw",
+  "author": "ddalcu",
+  "url": "https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw",
+  "created_at": "2026-10-18T20:07:26.000Z",
+  "updated_at": "2026-10-29T05:18:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-serve",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "deepseek_v41",
+    "mlx",
+    "moe",
+    "gptq",
+    "engram",
+    "dspark",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 2613,
+  "trending_score": 12,
+  "parameters": 66715052754,
+  "parameters_human": "66.72B",
+  "storage_bytes": 649503664249,
+  "storage_human": "649.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

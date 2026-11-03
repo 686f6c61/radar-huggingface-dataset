@@ -5,7 +5,7 @@
   "author": "trubisky",
   "url": "https://huggingface.co/trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer",
   "created_at": "2026-10-28T16:34:42.000Z",
-  "updated_at": "2026-10-30T19:02:07.000Z",
+  "updated_at": "2026-11-02T21:12:24.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -42,8 +42,8 @@
   "trending_score": 58,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 262093471872,
-  "storage_human": "262.1 GB",
+  "storage_bytes": 263964138420,
+  "storage_human": "264.0 GB",
   "base_model": "jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-heretic",
   "formats": [
     "gguf"

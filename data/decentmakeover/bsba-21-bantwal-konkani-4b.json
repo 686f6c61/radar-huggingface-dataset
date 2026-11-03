@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "decentmakeover/bsba-21-bantwal-konkani-4b",
+  "slug": "decentmakeover-bsba-21-bantwal-konkani-4b",
+  "author": "decentmakeover",
+  "url": "https://huggingface.co/decentmakeover/bsba-21-bantwal-konkani-4b",
+  "created_at": "2026-10-27T12:54:04.000Z",
+  "updated_at": "2026-11-02T12:41:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "kok"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma3",
+    "konkani",
+    "mangalorean-konkani",
+    "kannada-script",
+    "lora",
+    "text-generation",
+    "conversational",
+    "kok",
+    "dataset:konkani/konkani-instruct-100k",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 15270363791,
+  "storage_human": "15.3 GB",
+  "base_model": "google/gemma-3-4b-it, konkani/konkani-gemma-3-4b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

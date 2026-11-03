@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "duckyduck369/microduck-hd1910-roulade-Yanke01",
+  "slug": "duckyduck369-microduck-hd1910-roulade-yanke01",
+  "author": "duckyduck369",
+  "url": "https://huggingface.co/duckyduck369/microduck-hd1910-roulade-Yanke01",
+  "created_at": "2026-11-03T07:28:43.000Z",
+  "updated_at": "2026-11-03T07:28:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-family-roulade",
+    "microduck-plant-a009ad0d53d0d3de",
+    "microduck-eval-roulade-1.0",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2223520,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "HD-1910 Microduck: from standing, a forward roll over the head and back onto the feet; head held near HOME",
+      "dataset": "roulade eval v1.0",
+      "metric": "success",
+      "value": 1
+    },
+    {
+      "task": "HD-1910 Microduck: from standing, a forward roll over the head and back onto the feet; head held near HOME",
+      "dataset": "roulade eval v1.0",
+      "metric": "success_low_supply",
+      "value": 0.695
+    },
+    {
+      "task": "HD-1910 Microduck: from standing, a forward roll over the head and back onto the feet; head held near HOME",
+      "dataset": "roulade eval v1.0",
+      "metric": "success_low_friction",
+      "value": 0.762
+    },
+    {
+      "task": "HD-1910 Microduck: from standing, a forward roll over the head and back onto the feet; head held near HOME",
+      "dataset": "roulade eval v1.0",
+      "metric": "up_time_s_median",
+      "value": 1.18
+    },
+    {
+      "task": "HD-1910 Microduck: from standing, a forward roll over the head and back onto the feet; head held near HOME",
+      "dataset": "roulade eval v1.0",
+      "metric": "after_trunk_rate_deg_s",
+      "value": 1.5
+    }
+  ],
+  "sources": []
+}

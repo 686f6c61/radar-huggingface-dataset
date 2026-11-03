@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tomaarsen/st-splade-v3-distilbert-mic",
+  "slug": "tomaarsen-st-splade-v3-distilbert-mic",
+  "author": "tomaarsen",
+  "url": "https://huggingface.co/tomaarsen/st-splade-v3-distilbert-mic",
+  "created_at": "2026-11-03T11:30:39.000Z",
+  "updated_at": "2026-11-03T11:30:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "distilbert",
+    "mic",
+    "test-artifact",
+    "base_model:naver/splade-v3-distilbert",
+    "base_model:finetune:naver/splade-v3-distilbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2088058,
+  "parameters_human": "2.1M",
+  "storage_bytes": 8356864,
+  "storage_human": "8 MB",
+  "base_model": "naver/splade-v3-distilbert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

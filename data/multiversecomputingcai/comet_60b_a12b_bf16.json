@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "MultiverseComputingCAI/Comet_60B_A12B_BF16",
+  "slug": "multiversecomputingcai-comet_60b_a12b_bf16",
+  "author": "MultiverseComputingCAI",
+  "url": "https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16",
+  "created_at": "2026-10-14T16:27:13.000Z",
+  "updated_at": "2026-11-03T10:02:17.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h_omni",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 549,
+  "trending_score": 0,
+  "parameters": 61126735112,
+  "parameters_human": "61.13B",
+  "storage_bytes": 122273751718,
+  "storage_human": "122.3 GB",
+  "base_model": "Nemotron-3.5-Super-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

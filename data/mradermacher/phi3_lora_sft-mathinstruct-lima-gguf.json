@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/phi3_lora_sft-mathinstruct-lima-GGUF",
+  "slug": "mradermacher-phi3_lora_sft-mathinstruct-lima-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/phi3_lora_sft-mathinstruct-lima-GGUF",
+  "created_at": "2025-05-09T16:00:05.000Z",
+  "updated_at": "2026-11-03T11:26:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "en",
+    "base_model:stiucsib/phi3_lora_sft-mathinstruct-lima",
+    "base_model:quantized:stiucsib/phi3_lora_sft-mathinstruct-lima",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 3821079648,
+  "parameters_human": "3.82B",
+  "storage_bytes": 34095779328,
+  "storage_human": "34.1 GB",
+  "base_model": "stiucsib/phi3_lora_sft-mathinstruct-lima",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "CobuildX-AI/cbx-pii-extractor-4M",
+  "slug": "cobuildx-ai-cbx-pii-extractor-4m",
+  "author": "CobuildX-AI",
+  "url": "https://huggingface.co/CobuildX-AI/cbx-pii-extractor-4M",
+  "created_at": "2026-11-03T05:35:26.000Z",
+  "updated_at": "2026-11-03T05:37:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "pii",
+    "ner",
+    "privacy",
+    "redaction",
+    "token-classification",
+    "en",
+    "arxiv:2507.11412",
+    "base_model:CobuildX-AI/cbx-pii-extractor-17M",
+    "base_model:finetune:CobuildX-AI/cbx-pii-extractor-17M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4060709,
+  "parameters_human": "4.1M",
+  "storage_bytes": 32792608,
+  "storage_human": "33 MB",
+  "base_model": "CobuildX-AI/cbx-pii-extractor-17M",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

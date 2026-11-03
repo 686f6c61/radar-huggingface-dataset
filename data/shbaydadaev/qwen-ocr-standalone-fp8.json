@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "shbaydadaev/qwen-ocr-standalone-fp8",
+  "slug": "shbaydadaev-qwen-ocr-standalone-fp8",
+  "author": "shbaydadaev",
+  "url": "https://huggingface.co/shbaydadaev/qwen-ocr-standalone-fp8",
+  "created_at": "2026-11-01T05:19:15.000Z",
+  "updated_at": "2026-11-01T06:02:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "fp8",
+    "merged",
+    "vllm",
+    "conversational",
+    "fa",
+    "ar",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:finetune:Qwen/Qwen3.8-27B-FP8",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30882644760,
+  "storage_human": "30.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

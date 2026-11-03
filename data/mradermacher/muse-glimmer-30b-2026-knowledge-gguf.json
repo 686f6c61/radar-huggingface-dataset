@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-2026-Knowledge-GGUF",
   "created_at": "2026-11-02T13:17:42.000Z",
-  "updated_at": "2026-11-02T13:43:06.000Z",
+  "updated_at": "2026-11-02T15:42:52.000Z",
   "license": "apache-2.0-and-muse-model-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",
-  "storage_bytes": 62332235296,
-  "storage_human": "62.3 GB",
+  "storage_bytes": 197510990624,
+  "storage_human": "197.5 GB",
   "base_model": "OfflineBase/Muse-Glimmer-30B-2026-Knowledge",
   "formats": [
     "gguf"

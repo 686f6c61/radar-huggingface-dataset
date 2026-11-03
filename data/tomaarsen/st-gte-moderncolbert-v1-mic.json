@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tomaarsen/st-GTE-ModernColBERT-v1-mic",
+  "slug": "tomaarsen-st-gte-moderncolbert-v1-mic",
+  "author": "tomaarsen",
+  "url": "https://huggingface.co/tomaarsen/st-GTE-ModernColBERT-v1-mic",
+  "created_at": "2026-11-03T11:25:42.000Z",
+  "updated_at": "2026-11-03T11:28:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "mic",
+    "test-artifact",
+    "base_model:lightonai/GTE-ModernColBERT-v1",
+    "base_model:finetune:lightonai/GTE-ModernColBERT-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3305920,
+  "parameters_human": "3.3M",
+  "storage_bytes": 13241480,
+  "storage_human": "13 MB",
+  "base_model": "lightonai/GTE-ModernColBERT-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

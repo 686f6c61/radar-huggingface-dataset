@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "btolfa/sherpa-onnx-whisper-large-v3-turbo-russian-codeswitch-int8",
+  "slug": "btolfa-sherpa-onnx-whisper-large-v3-turbo-russian-codeswitch-int8",
+  "author": "btolfa",
+  "url": "https://huggingface.co/btolfa/sherpa-onnx-whisper-large-v3-turbo-russian-codeswitch-int8",
+  "created_at": "2026-11-03T10:28:49.000Z",
+  "updated_at": "2026-11-03T10:29:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "automatic-speech-recognition",
+    "ru",
+    "en",
+    "base_model:coriollon/whisper-large-v3-turbo-russian-codeswitch",
+    "base_model:finetune:coriollon/whisper-large-v3-turbo-russian-codeswitch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 563268488,
+  "storage_human": "563 MB",
+  "base_model": "coriollon/whisper-large-v3-turbo-russian-codeswitch",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

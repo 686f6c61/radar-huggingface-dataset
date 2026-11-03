@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/rubin-zero-32b-0.8-1113-fixed_template-GGUF",
+  "slug": "mradermacher-rubin-zero-32b-0-8-1113-fixed_template-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/rubin-zero-32b-0.8-1113-fixed_template-GGUF",
+  "created_at": "2025-11-14T17:07:21.000Z",
+  "updated_at": "2026-11-03T08:06:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_vl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 165,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 225945418400,
+  "storage_human": "225.9 GB",
+  "base_model": "somelier/rubin-zero-32b-0.8-1113-fixed_template",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

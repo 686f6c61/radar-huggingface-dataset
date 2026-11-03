@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "EY-UVC-HY/act_task8_test",
+  "slug": "ey-uvc-hy-act_task8_test",
+  "author": "EY-UVC-HY",
+  "url": "https://huggingface.co/EY-UVC-HY/act_task8_test",
+  "created_at": "2026-11-03T05:37:43.000Z",
+  "updated_at": "2026-11-03T05:37:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotis",
+    "cyclo_intelligence",
+    "robotics",
+    "dataset:local/Task_8_test8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1239857608,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

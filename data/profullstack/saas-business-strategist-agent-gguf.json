@@ -5,7 +5,7 @@
   "author": "profullstack",
   "url": "https://huggingface.co/profullstack/saas-business-strategist-agent-GGUF",
   "created_at": "2026-11-02T11:11:12.000Z",
-  "updated_at": "2026-11-02T11:18:15.000Z",
+  "updated_at": "2026-11-02T13:56:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -17,6 +17,7 @@
     "llama.cpp",
     "business",
     "saas",
+    "crypto",
     "strategy",
     "cpu",
     "c0mpute",
@@ -33,8 +34,8 @@
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 531067872,
-  "storage_human": "531 MB",
+  "storage_bytes": 1062135744,
+  "storage_human": "1.1 GB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"

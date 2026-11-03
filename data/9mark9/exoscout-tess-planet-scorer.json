@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "9mark9/exoscout-tess-planet-scorer",
+  "slug": "9mark9-exoscout-tess-planet-scorer",
+  "author": "9mark9",
+  "url": "https://huggingface.co/9mark9/exoscout-tess-planet-scorer",
+  "created_at": "2026-10-18T04:42:54.000Z",
+  "updated_at": "2026-11-03T05:03:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "astronomy",
+    "exoplanets",
+    "tess",
+    "time-series",
+    "safetensors",
+    "skops",
+    "active-learning",
+    "ensemble",
+    "tabular-data",
+    "tabular-classification",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10520426,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "TESS planet-candidate scoring",
+      "dataset": null,
+      "metric": "ROC AUC (10-model average, 619-signal held-out test)",
+      "value": 0.931
+    },
+    {
+      "task": "TESS planet-candidate scoring",
+      "dataset": null,
+      "metric": "ROC AUC (GBT baseline)",
+      "value": 0.9125
+    },
+    {
+      "task": "TESS planet-candidate scoring",
+      "dataset": null,
+      "metric": "ROC AUC (CNN network)",
+      "value": 0.9064
+    }
+  ],
+  "sources": []
+}

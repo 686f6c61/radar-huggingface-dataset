@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/GEM-X",
   "created_at": "2026-03-11T19:13:06.000Z",
-  "updated_at": "2026-11-02T09:32:22.000Z",
+  "updated_at": "2026-11-02T19:13:07.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "license:other",
     "region:us"
   ],
-  "likes": 33,
+  "likes": 38,
   "downloads_30d": 913,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 39691789767,
+  "storage_bytes": 39712614103,
   "storage_human": "39.7 GB",
   "base_model": null,
   "formats": [

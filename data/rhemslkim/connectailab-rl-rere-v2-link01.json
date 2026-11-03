@@ -5,7 +5,7 @@
   "author": "rhemslkim",
   "url": "https://huggingface.co/rhemslkim/connectailab-rl-rere-v2-link01",
   "created_at": "2026-11-02T16:27:22.000Z",
-  "updated_at": "2026-11-02T16:27:26.000Z",
+  "updated_at": "2026-11-03T04:30:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 41684315,
-  "storage_human": "42 MB",
+  "storage_bytes": 63379291,
+  "storage_human": "63 MB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

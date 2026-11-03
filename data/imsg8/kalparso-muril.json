@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "imsg8/kalparso-muril",
+  "slug": "imsg8-kalparso-muril",
+  "author": "imsg8",
+  "url": "https://huggingface.co/imsg8/kalparso-muril",
+  "created_at": "2026-10-31T16:07:58.000Z",
+  "updated_at": "2026-11-03T07:26:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "safetensors",
+    "hinglish",
+    "code-mixing",
+    "temporal-expressions",
+    "time-normalization",
+    "date-parsing",
+    "token-classification",
+    "hi",
+    "en",
+    "dataset:imsg8/kalparso",
+    "base_model:google/muril-base-cased",
+    "base_model:quantized:google/muril-base-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237570066,
+  "parameters_human": "237.6M",
+  "storage_bytes": 1423299349,
+  "storage_human": "1.4 GB",
+  "base_model": "google/muril-base-cased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

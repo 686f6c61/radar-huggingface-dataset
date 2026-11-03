@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "dtsj89/puki-beak-he",
+  "slug": "dtsj89-puki-beak-he",
+  "author": "dtsj89",
+  "url": "https://huggingface.co/dtsj89/puki-beak-he",
+  "created_at": "2026-11-02T13:14:00.000Z",
+  "updated_at": "2026-11-02T13:35:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "onnx",
+    "grapheme-to-phoneme",
+    "hebrew",
+    "int8",
+    "token-classification",
+    "he",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2545483,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

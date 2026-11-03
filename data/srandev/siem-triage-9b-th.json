@@ -5,7 +5,7 @@
   "author": "srandev",
   "url": "https://huggingface.co/srandev/siem-triage-9b-th",
   "created_at": "2026-11-02T03:53:12.000Z",
-  "updated_at": "2026-11-02T03:53:33.000Z",
+  "updated_at": "2026-11-03T02:29:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 18839710445,
-  "storage_human": "18.8 GB",
+  "storage_bytes": 37659431565,
+  "storage_human": "37.7 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

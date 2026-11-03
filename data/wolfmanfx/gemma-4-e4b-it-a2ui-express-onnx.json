@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "wolfmanfx/gemma-4-E4B-it-A2UI-Express-ONNX",
+  "slug": "wolfmanfx-gemma-4-e4b-it-a2ui-express-onnx",
+  "author": "wolfmanfx",
+  "url": "https://huggingface.co/wolfmanfx/gemma-4-E4B-it-A2UI-Express-ONNX",
+  "created_at": "2026-11-03T08:19:19.000Z",
+  "updated_at": "2026-11-03T08:33:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gemma4",
+    "image-text-to-text",
+    "a2ui",
+    "a2ui-express",
+    "mlx",
+    "lora",
+    "webgpu",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E4B-it",
+    "base_model:finetune:unsloth/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5002339052,
+  "storage_human": "5.0 GB",
+  "base_model": "unsloth/gemma-4-E4B-it",
+  "formats": [
+    "mlx",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

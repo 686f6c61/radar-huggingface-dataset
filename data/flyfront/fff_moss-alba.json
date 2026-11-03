@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "flyfront/FFF_MOSS-Alba",
+  "slug": "flyfront-fff_moss-alba",
+  "author": "flyfront",
+  "url": "https://huggingface.co/flyfront/FFF_MOSS-Alba",
+  "created_at": "2026-10-22T20:24:21.000Z",
+  "updated_at": "2026-11-03T05:37:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "moss-image",
+    "anime",
+    "illustration",
+    "text-to-image",
+    "lora",
+    "safetensors",
+    "en",
+    "ja",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15974049891,
+  "storage_human": "16.0 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

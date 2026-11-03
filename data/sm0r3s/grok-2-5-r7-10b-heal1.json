@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Sm0r3s/grok-2.5-r7-10b-heal1",
+  "slug": "sm0r3s-grok-2-5-r7-10b-heal1",
+  "author": "Sm0r3s",
+  "url": "https://huggingface.co/Sm0r3s/grok-2.5-r7-10b-heal1",
+  "created_at": "2026-11-02T23:12:49.000Z",
+  "updated_at": "2026-11-03T11:11:00.000Z",
+  "license": "xai-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "moe",
+    "pruned",
+    "grok-2",
+    "experimental",
+    "base_model:xai-org/grok-2",
+    "base_model:finetune:xai-org/grok-2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10471348224,
+  "parameters_human": "10.47B",
+  "storage_bytes": 22630737268,
+  "storage_human": "22.6 GB",
+  "base_model": "xai-org/grok-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

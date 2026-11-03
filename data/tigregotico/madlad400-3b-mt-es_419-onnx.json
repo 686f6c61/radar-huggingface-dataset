@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "TigreGotico/madlad400-3b-mt-es_419-onnx",
+  "slug": "tigregotico-madlad400-3b-mt-es_419-onnx",
+  "author": "TigreGotico",
+  "url": "https://huggingface.co/TigreGotico/madlad400-3b-mt-es_419-onnx",
+  "created_at": "2026-11-03T09:21:24.000Z",
+  "updated_at": "2026-11-03T09:22:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "optimum",
+  "languages": [
+    "es",
+    "multilingual"
+  ],
+  "tags": [
+    "optimum",
+    "onnx",
+    "t5",
+    "translation",
+    "onnxruntime",
+    "int8",
+    "madlad400",
+    "es",
+    "multilingual",
+    "base_model:Ugiat/madlad400-3b-mt-es_419",
+    "base_model:quantized:Ugiat/madlad400-3b-mt-es_419",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24703146663,
+  "storage_human": "24.7 GB",
+  "base_model": "Ugiat/madlad400-3b-mt-es_419",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

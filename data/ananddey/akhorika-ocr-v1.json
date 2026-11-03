@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ananddey/akhorika-ocr-v1",
+  "slug": "ananddey-akhorika-ocr-v1",
+  "author": "ananddey",
+  "url": "https://huggingface.co/ananddey/akhorika-ocr-v1",
+  "created_at": "2026-11-03T08:49:01.000Z",
+  "updated_at": "2026-11-03T09:20:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "as"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpm_ocr",
+    "image-text-to-text",
+    "ocr",
+    "assamese",
+    "indic",
+    "vision-language",
+    "document-ai",
+    "conversational",
+    "as",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1300434160,
+  "parameters_human": "1.30B",
+  "storage_bytes": 5169897069,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Optical Character Recognition",
+      "dataset": "IndicOCR-Bench (Assamese)",
+      "metric": "Character error rate (strict scoring)",
+      "value": 3.4
+    },
+    {
+      "task": "Optical Character Recognition",
+      "dataset": "IndicOCR-Bench (Assamese)",
+      "metric": "Word error rate (strict scoring)",
+      "value": 21.09
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "PanocularAI/PanoVLM1.5-500M",
+  "slug": "panocularai-panovlm1-5-500m",
+  "author": "PanocularAI",
+  "url": "https://huggingface.co/PanocularAI/PanoVLM1.5-500M",
+  "created_at": "2026-11-02T12:38:16.000Z",
+  "updated_at": "2026-11-02T16:22:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "panovlm",
+    "feature-extraction",
+    "fastvit",
+    "vision-language",
+    "linear-attention",
+    "mla",
+    "hybrid-attention",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 514377344,
+  "parameters_human": "514.4M",
+  "storage_bytes": 1028899453,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

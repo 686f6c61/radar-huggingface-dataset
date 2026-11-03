@@ -31,13 +31,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 2902,
-  "downloads_30d": 1822774,
+  "likes": 2904,
+  "downloads_30d": 1790800,
   "trending_score": 55,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 213190868128,
-  "storage_human": "213.2 GB",
+  "storage_bytes": 220816877056,
+  "storage_human": "220.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

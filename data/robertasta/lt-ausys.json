@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RobertasTa/lt-ausys",
+  "slug": "robertasta-lt-ausys",
+  "author": "RobertasTa",
+  "url": "https://huggingface.co/RobertasTa/lt-ausys",
+  "created_at": "2026-10-24T16:24:04.000Z",
+  "updated_at": "2026-11-03T11:27:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "lt"
+  ],
+  "tags": [
+    "onnx",
+    "nemo-conformer-tdt",
+    "parakeet",
+    "tdt",
+    "nemo",
+    "onnx-asr",
+    "onnxruntime",
+    "lithuanian",
+    "speech-recognition",
+    "wyoming",
+    "home-assistant",
+    "automatic-speech-recognition",
+    "lt",
+    "base_model:kristijonas/kmynas-parakeet-lt-v4",
+    "base_model:quantized:kristijonas/kmynas-parakeet-lt-v4",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3431400912,
+  "storage_human": "3.4 GB",
+  "base_model": "kristijonas/kmynas-parakeet-lt-v4",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Lithuanian)",
+      "metric": "WER",
+      "value": 10.58
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Lithuanian)",
+      "metric": "CER",
+      "value": 6.15
+    }
+  ],
+  "sources": []
+}

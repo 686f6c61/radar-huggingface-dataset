@@ -5,7 +5,7 @@
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/mistralai-Devstral-Small-2-24B-Instruct-2512-GGUF-Q4_K_M",
   "created_at": "2026-10-15T19:50:06.000Z",
-  "updated_at": "2026-10-30T14:58:04.000Z",
+  "updated_at": "2026-11-02T23:51:39.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-3-27b-it-qat-abliterated-GGUF",
+  "slug": "mradermacher-gemma-3-27b-it-qat-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3-27b-it-qat-abliterated-GGUF",
+  "created_at": "2025-05-29T11:54:24.000Z",
+  "updated_at": "2026-11-03T08:07:17.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:mlabonne/gemma-3-27b-it-qat-abliterated",
+    "base_model:quantized:mlabonne/gemma-3-27b-it-qat-abliterated",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 223,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 188136499232,
+  "storage_human": "188.1 GB",
+  "base_model": "mlabonne/gemma-3-27b-it-qat-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-14B-Instruct-ultrafeedback-iterdpo-iter3-RPO-GGUF",
+  "slug": "mradermacher-qwen2-5-14b-instruct-ultrafeedback-iterdpo-iter3-rpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-14B-Instruct-ultrafeedback-iterdpo-iter3-RPO-GGUF",
+  "created_at": "2025-11-14T16:23:45.000Z",
+  "updated_at": "2026-11-03T07:01:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "dpo",
+    "trl",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 125,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043521504,
+  "storage_human": "102.0 GB",
+  "base_model": "AmberYifan/Qwen2.5-14B-Instruct-ultrafeedback-iterdpo-iter3-RPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

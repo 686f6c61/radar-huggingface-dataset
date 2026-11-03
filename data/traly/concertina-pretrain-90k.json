@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Traly/concertina-pretrain-90k",
+  "slug": "traly-concertina-pretrain-90k",
+  "author": "Traly",
+  "url": "https://huggingface.co/Traly/concertina-pretrain-90k",
+  "created_at": "2026-10-30T18:05:55.000Z",
+  "updated_at": "2026-11-03T04:43:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "concertina",
+    "vision-language-action",
+    "robotics",
+    "base_model:fudan-generative-ai/Bard-VL-B4-Mask-4B-Instruct",
+    "base_model:finetune:fudan-generative-ai/Bard-VL-B4-Mask-4B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 4447963669,
+  "parameters_human": "4.45B",
+  "storage_bytes": 8896039242,
+  "storage_human": "8.9 GB",
+  "base_model": "fudan-generative-ai/Bard-VL-B4-Mask-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

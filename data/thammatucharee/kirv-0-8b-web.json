@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Thammatucharee/kirv-0.8b-web",
+  "slug": "thammatucharee-kirv-0-8b-web",
+  "author": "Thammatucharee",
+  "url": "https://huggingface.co/Thammatucharee/kirv-0.8b-web",
+  "created_at": "2026-11-03T07:59:10.000Z",
+  "updated_at": "2026-11-03T07:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3_5_text",
+    "text-generation",
+    "kirv",
+    "kirdomicism",
+    "action-impact-value",
+    "webgpu",
+    "conversational",
+    "en",
+    "th",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 570473438,
+  "storage_human": "570 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

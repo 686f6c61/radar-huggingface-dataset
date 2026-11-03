@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "FlagRelease/Qwen-Image-2.1-BF16-ascend-FlagOS",
+  "slug": "flagrelease-qwen-image-2-1-bf16-ascend-flagos",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/Qwen-Image-2.1-BF16-ascend-FlagOS",
+  "created_at": "2026-09-20T07:12:26.000Z",
+  "updated_at": "2026-11-03T05:52:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33127036062,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

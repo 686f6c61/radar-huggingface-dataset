@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/mentalhealthchatbot-GGUF",
+  "slug": "mradermacher-mentalhealthchatbot-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mentalhealthchatbot-GGUF",
+  "created_at": "2025-11-14T16:38:26.000Z",
+  "updated_at": "2026-11-03T08:07:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:tergelb/mentalhealthchatbot",
+    "base_model:quantized:tergelb/mentalhealthchatbot",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 35831760256,
+  "storage_human": "35.8 GB",
+  "base_model": "tergelb/mentalhealthchatbot",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

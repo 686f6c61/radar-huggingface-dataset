@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Neptune-T/alphabot2-ovmm-sft3000",
+  "slug": "neptune-t-alphabot2-ovmm-sft3000",
+  "author": "Neptune-T",
+  "url": "https://huggingface.co/Neptune-T/alphabot2-ovmm-sft3000",
+  "created_at": "2026-11-03T07:28:14.000Z",
+  "updated_at": "2026-11-03T07:30:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "ovmm",
+    "dataset:Neptune-T/alphabot2-ovmm-sft",
+    "base_model:alphabot2/aibot2_grab_bag_combined_over_under_pi05",
+    "base_model:finetune:alphabot2/aibot2_grab_bag_combined_over_under_pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16578043303,
+  "storage_human": "16.6 GB",
+  "base_model": "alphabot2/aibot2_grab_bag_combined_over_under_pi05",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

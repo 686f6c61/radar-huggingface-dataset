@@ -5,22 +5,15 @@
   "author": "nielsr",
   "url": "https://huggingface.co/nielsr/qwen3.5-0.8b-p50c-repro",
   "created_at": "2026-11-02T20:36:00.000Z",
-  "updated_at": "2026-11-02T20:36:27.000Z",
+  "updated_at": "2026-11-02T22:27:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
     "safetensors",
     "qwen3_5",
-    "image-text-to-text",
-    "conversational",
-    "base_model:Qwen/Qwen3.5-0.8B-Base",
-    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
-    "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -34,7 +27,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

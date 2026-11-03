@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-tug-lphat-c2-s1s5",
+  "slug": "jrubiosainz-microduck-tug-lphat-c2-s1s5",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-tug-lphat-c2-s1s5",
+  "created_at": "2026-11-03T07:45:30.000Z",
+  "updated_at": "2026-11-03T07:45:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "base_model:jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5-c2",
+    "base_model:quantized:jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5-c2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 942252,
+  "storage_human": "942252 B",
+  "base_model": "lphatnguyen/microduck-tug-of-war-v0, jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5-c2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

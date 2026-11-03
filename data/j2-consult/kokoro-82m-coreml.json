@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "J2-Consult/kokoro-82m-coreml",
+  "slug": "j2-consult-kokoro-82m-coreml",
+  "author": "J2-Consult",
+  "url": "https://huggingface.co/J2-Consult/kokoro-82m-coreml",
+  "created_at": "2026-11-03T10:42:52.000Z",
+  "updated_at": "2026-11-03T10:42:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "text-to-speech",
+    "kokoro",
+    "on-device",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:finetune:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84732766,
+  "storage_human": "85 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

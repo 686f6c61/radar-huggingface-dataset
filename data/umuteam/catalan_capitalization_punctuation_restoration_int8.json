@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "UMUTeam/catalan_capitalization_punctuation_restoration_int8",
+  "slug": "umuteam-catalan_capitalization_punctuation_restoration_int8",
+  "author": "UMUTeam",
+  "url": "https://huggingface.co/UMUTeam/catalan_capitalization_punctuation_restoration_int8",
+  "created_at": "2026-11-03T12:28:03.000Z",
+  "updated_at": "2026-11-03T12:31:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ca"
+  ],
+  "tags": [
+    "onnx",
+    "roberta",
+    "catalan",
+    "punctuation-restoration",
+    "capitalization-restoration",
+    "automatic-speech-recognition",
+    "text-post-processing",
+    "token-classification",
+    "ca",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126169970,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

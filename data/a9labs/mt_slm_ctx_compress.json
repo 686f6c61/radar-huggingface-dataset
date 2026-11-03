@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "A9Labs/mt_slm_ctx_compress",
+  "slug": "a9labs-mt_slm_ctx_compress",
+  "author": "A9Labs",
+  "url": "https://huggingface.co/A9Labs/mt_slm_ctx_compress",
+  "created_at": "2026-11-03T10:57:03.000Z",
+  "updated_at": "2026-11-03T10:58:39.000Z",
+  "license": "microtensor-submission",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "granitemoehybrid",
+    "microtensor",
+    "ctx_compress",
+    "base_model:ibm-granite/granite-4.0-h-micro",
+    "base_model:finetune:ibm-granite/granite-4.0-h-micro",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3191396096,
+  "parameters_human": "3.19B",
+  "storage_bytes": 6382844080,
+  "storage_human": "6.4 GB",
+  "base_model": "ibm-granite/granite-4.0-h-micro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

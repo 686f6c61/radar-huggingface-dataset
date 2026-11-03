@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Convergent-ch/Alpina-Titan-2.0-80B-BF16",
+  "slug": "convergent-ch-alpina-titan-2-0-80b-bf16",
+  "author": "Convergent-ch",
+  "url": "https://huggingface.co/Convergent-ch/Alpina-Titan-2.0-80B-BF16",
+  "created_at": "2026-11-03T12:04:38.000Z",
+  "updated_at": "2026-11-03T12:25:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_next",
+    "text-generation",
+    "alpina",
+    "experimental",
+    "lora",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-Coder-Next",
+    "base_model:finetune:Qwen/Qwen3-Coder-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 207911698113,
+  "storage_human": "207.9 GB",
+  "base_model": "Qwen/Qwen3-Coder-Next",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

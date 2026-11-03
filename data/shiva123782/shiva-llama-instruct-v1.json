@@ -53,7 +53,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 485,
+  "downloads_30d": 491,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -66,8 +66,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-02T05:52:05.290Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [
     {
       "task": "Instruction Following & Conversational Reasoning",

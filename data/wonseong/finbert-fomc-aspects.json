@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Wonseong/FinBERT-FOMC-aspects",
+  "slug": "wonseong-finbert-fomc-aspects",
+  "author": "Wonseong",
+  "url": "https://huggingface.co/Wonseong/FinBERT-FOMC-aspects",
+  "created_at": "2026-04-16T19:23:31.000Z",
+  "updated_at": "2026-11-03T10:24:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "finance",
+    "fomc",
+    "sentiment-analysis",
+    "en",
+    "arxiv:2304.10164",
+    "base_model:ZiweiChen/FinBERT-FOMC",
+    "base_model:finetune:ZiweiChen/FinBERT-FOMC",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 109754115,
+  "parameters_human": "109.8M",
+  "storage_bytes": 440490856,
+  "storage_human": "440 MB",
+  "base_model": "ZiweiChen/FinBERT-FOMC",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "FOMC_sentences_expanded_zeroshot_labeled.xlsx / expanded_10500",
+      "metric": "Holdout Accuracy",
+      "value": 0.8789625360230547
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "FOMC_sentences_expanded_zeroshot_labeled.xlsx / expanded_10500",
+      "metric": "Holdout Macro F1",
+      "value": 0.7980614874405157
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "FOMC_sentences_expanded_zeroshot_labeled.xlsx / expanded_10500",
+      "metric": "Holdout Macro Precision",
+      "value": 0.7708534213383098
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "FOMC_sentences_expanded_zeroshot_labeled.xlsx / expanded_10500",
+      "metric": "Holdout Macro Recall",
+      "value": 0.8321941498302832
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "FOMC_sentences_expanded_zeroshot_labeled.xlsx / expanded_10500",
+      "metric": "Holdout MAE",
+      "value": 0.1399295549151457
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "FOMC_sentences_expanded_zeroshot_labeled.xlsx / expanded_10500",
+      "metric": "Holdout MSE",
+      "value": 0.1777137367915466
+    }
+  ],
+  "sources": []
+}

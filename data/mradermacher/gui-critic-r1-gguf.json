@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GUI-Critic-R1-GGUF",
+  "slug": "mradermacher-gui-critic-r1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GUI-Critic-R1-GGUF",
+  "created_at": "2025-11-14T16:53:50.000Z",
+  "updated_at": "2026-11-03T08:06:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:BonnieOne/GUI-Critic-R1",
+    "base_model:quantized:BonnieOne/GUI-Critic-R1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 156,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357180224,
+  "storage_human": "70.4 GB",
+  "base_model": "BonnieOne/GUI-Critic-R1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

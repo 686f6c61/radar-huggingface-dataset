@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "chumdz97/chumttsmodel",
+  "slug": "chumdz97-chumttsmodel",
+  "author": "chumdz97",
+  "url": "https://huggingface.co/chumdz97/chumttsmodel",
+  "created_at": "2026-10-07T07:40:52.000Z",
+  "updated_at": "2026-11-03T05:12:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2285026507,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

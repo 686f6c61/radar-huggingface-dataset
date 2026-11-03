@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Tanatas298/qwen3-4b-finqa-lora",
+  "slug": "tanatas298-qwen3-4b-finqa-lora",
+  "author": "Tanatas298",
+  "url": "https://huggingface.co/Tanatas298/qwen3-4b-finqa-lora",
+  "created_at": "2026-11-03T12:04:20.000Z",
+  "updated_at": "2026-11-03T12:04:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "finance",
+    "finqa",
+    "numerical-reasoning",
+    "lora",
+    "program-synthesis",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:ibm-research/finqa",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Numerical reasoning over financial reports",
+      "dataset": "FinQA (test, 1,147 questions)",
+      "metric": "Execution accuracy (official FinQA script)",
+      "value": 75.3
+    },
+    {
+      "task": "Numerical reasoning over financial reports",
+      "dataset": "FinQA (test, 1,147 questions)",
+      "metric": "Program accuracy (official FinQA script)",
+      "value": 71
+    }
+  ],
+  "sources": []
+}

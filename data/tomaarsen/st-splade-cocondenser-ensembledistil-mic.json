@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tomaarsen/st-splade-cocondenser-ensembledistil-mic",
+  "slug": "tomaarsen-st-splade-cocondenser-ensembledistil-mic",
+  "author": "tomaarsen",
+  "url": "https://huggingface.co/tomaarsen/st-splade-cocondenser-ensembledistil-mic",
+  "created_at": "2026-11-03T11:30:31.000Z",
+  "updated_at": "2026-11-03T11:30:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "mic",
+    "test-artifact",
+    "base_model:naver/splade-cocondenser-ensembledistil",
+    "base_model:finetune:naver/splade-cocondenser-ensembledistil",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2088186,
+  "parameters_human": "2.1M",
+  "storage_bytes": 8357384,
+  "storage_human": "8 MB",
+  "base_model": "naver/splade-cocondenser-ensembledistil",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

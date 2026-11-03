@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MDCure-Qwen2-1.5B-Instruct-GGUF",
+  "slug": "mradermacher-mdcure-qwen2-1-5b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MDCure-Qwen2-1.5B-Instruct-GGUF",
+  "created_at": "2025-03-07T05:20:43.000Z",
+  "updated_at": "2026-11-03T07:02:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multi-document",
+    "long-context",
+    "Long Context",
+    "en",
+    "dataset:yale-nlp/MDCure-72k",
+    "base_model:yale-nlp/MDCure-Qwen2-1.5B-Instruct",
+    "base_model:quantized:yale-nlp/MDCure-Qwen2-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 236,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206879104,
+  "storage_human": "14.2 GB",
+  "base_model": "yale-nlp/MDCure-Qwen2-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Xiaomi-MiMo-VL-Miloco-7B-GGUF",
+  "slug": "mradermacher-xiaomi-mimo-vl-miloco-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Xiaomi-MiMo-VL-Miloco-7B-GGUF",
+  "created_at": "2025-11-14T17:28:20.000Z",
+  "updated_at": "2026-11-03T08:06:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:xiaomi-open-source/Xiaomi-MiMo-VL-Miloco-7B",
+    "base_model:quantized:xiaomi-open-source/Xiaomi-MiMo-VL-Miloco-7B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 211,
+  "trending_score": 0,
+  "parameters": 7622619136,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70547601984,
+  "storage_human": "70.5 GB",
+  "base_model": "xiaomi-open-source/Xiaomi-MiMo-VL-Miloco-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

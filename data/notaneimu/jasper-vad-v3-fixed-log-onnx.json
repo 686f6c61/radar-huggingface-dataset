@@ -5,7 +5,7 @@
   "author": "notaneimu",
   "url": "https://huggingface.co/notaneimu/jasper-vad-v3-fixed-log-onnx",
   "created_at": "2026-11-02T15:39:52.000Z",
-  "updated_at": "2026-11-02T15:40:19.000Z",
+  "updated_at": "2026-11-02T23:11:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "voice-activity-detection",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnxruntime",
+    "coreml",
     "onnx",
     "voice-activity-detection",
     "audio",
@@ -26,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1261054,
-  "storage_human": "1 MB",
+  "storage_bytes": 5617798,
+  "storage_human": "6 MB",
   "base_model": null,
   "formats": [
     "onnx"

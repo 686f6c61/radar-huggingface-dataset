@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "duckyduck369/microduck-hd1910-velstand-Yanke01",
+  "slug": "duckyduck369-microduck-hd1910-velstand-yanke01",
+  "author": "duckyduck369",
+  "url": "https://huggingface.co/duckyduck369/microduck-hd1910-velstand-Yanke01",
+  "created_at": "2026-11-03T05:19:41.000Z",
+  "updated_at": "2026-11-03T05:34:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-family-velstand",
+    "microduck-plant-c2362b5ef29d28fc",
+    "microduck-eval-velstand-1.0",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5113924,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",
+      "dataset": "velstand eval v1.0",
+      "metric": "getup_facedown_success",
+      "value": 1
+    },
+    {
+      "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",
+      "dataset": "velstand eval v1.0",
+      "metric": "getup_faceup_success",
+      "value": 0.996
+    },
+    {
+      "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",
+      "dataset": "velstand eval v1.0",
+      "metric": "getup_facedown_time_s",
+      "value": 0.48
+    },
+    {
+      "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",
+      "dataset": "velstand eval v1.0",
+      "metric": "yaw_+0.3_achieved",
+      "value": 0.01
+    },
+    {
+      "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",
+      "dataset": "velstand eval v1.0",
+      "metric": "yaw_-0.3_achieved",
+      "value": -0.004
+    },
+    {
+      "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",
+      "dataset": "velstand eval v1.0",
+      "metric": "vx_0.2_achieved",
+      "value": 0.189
+    },
+    {
+      "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",
+      "dataset": "velstand eval v1.0",
+      "metric": "walk_falls_low_friction",
+      "value": 0.004
+    },
+    {
+      "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",
+      "dataset": "velstand eval v1.0",
+      "metric": "walk_falls_low_supply",
+      "value": 0.008
+    },
+    {
+      "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",
+      "dataset": "velstand eval v1.0",
+      "metric": "push_walking_up_at_end",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

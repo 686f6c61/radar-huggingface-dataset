@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Tutanka01/Qwen3.5-0.8B-loopfix-GGUF",
+  "slug": "tutanka01-qwen3-5-0-8b-loopfix-gguf",
+  "author": "Tutanka01",
+  "url": "https://huggingface.co/Tutanka01/Qwen3.5-0.8B-loopfix-GGUF",
+  "created_at": "2026-11-03T09:38:18.000Z",
+  "updated_at": "2026-11-03T09:38:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "model-editing",
+    "weight-editing",
+    "interpretability",
+    "thinking",
+    "text-generation",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 811843840,
+  "storage_human": "812 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

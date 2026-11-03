@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SashaVika/gemma-3-12b-it-uncensored-GGUF",
+  "slug": "sashavika-gemma-3-12b-it-uncensored-gguf",
+  "author": "SashaVika",
+  "url": "https://huggingface.co/SashaVika/gemma-3-12b-it-uncensored-GGUF",
+  "created_at": "2026-11-03T08:52:03.000Z",
+  "updated_at": "2026-11-03T08:52:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "Uncensored",
+    "text-generation",
+    "vision-language",
+    "multimodal",
+    "en",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:quantized:google/gemma-3-12b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 73088229632,
+  "storage_human": "73.1 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UL3.3-Hermes-X80-BASE-70B-GGUF",
+  "slug": "mradermacher-ul3-3-hermes-x80-base-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UL3.3-Hermes-X80-BASE-70B-GGUF",
+  "created_at": "2025-02-28T21:08:09.000Z",
+  "updated_at": "2026-11-03T08:07:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:TareksGraveyard/UL3.3-Hermes-X80-BASE-70B",
+    "base_model:quantized:TareksGraveyard/UL3.3-Hermes-X80-BASE-70B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 70553886784,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481304469920,
+  "storage_human": "481.3 GB",
+  "base_model": "TareksGraveyard/UL3.3-Hermes-X80-BASE-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

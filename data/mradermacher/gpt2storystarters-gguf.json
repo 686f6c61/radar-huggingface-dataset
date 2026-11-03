@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GPT2StoryStarters-GGUF",
+  "slug": "mradermacher-gpt2storystarters-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GPT2StoryStarters-GGUF",
+  "created_at": "2025-02-27T09:02:45.000Z",
+  "updated_at": "2026-11-03T07:02:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:MCES10/GPT2StoryStarters",
+    "base_model:quantized:MCES10/GPT2StoryStarters",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 163037184,
+  "parameters_human": "163.0M",
+  "storage_bytes": 1588317632,
+  "storage_human": "1.6 GB",
+  "base_model": "MCES10/GPT2StoryStarters",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

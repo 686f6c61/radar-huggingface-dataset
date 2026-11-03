@@ -5,7 +5,7 @@
   "author": "pockettravel",
   "url": "https://huggingface.co/pockettravel/qwen3.5-4b-travel-en-GGUF",
   "created_at": "2026-11-02T20:18:55.000Z",
-  "updated_at": "2026-11-02T20:45:40.000Z",
+  "updated_at": "2026-11-02T21:32:23.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

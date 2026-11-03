@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "unilux/whisper-base-v1-luxembourgish",
+  "slug": "unilux-whisper-base-v1-luxembourgish",
+  "author": "unilux",
+  "url": "https://huggingface.co/unilux/whisper-base-v1-luxembourgish",
+  "created_at": "2025-07-05T14:03:20.000Z",
+  "updated_at": "2026-11-03T08:30:42.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "lb"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "lb",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 72593920,
+  "parameters_human": "72.6M",
+  "storage_bytes": 290403936,
+  "storage_human": "290 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unilux - Lampes et Accessoires de Bureau Ergonomiques et Éco …",
+      "url": "https://my-unilux.com/",
+      "snippet": "Unilux, votre source de lampes de bureau, horloges et accessoires ergonomiques. Améliorez votre bien-être au travail avec des …"
+    },
+    {
+      "title": "Unilux - Ergonomic and Eco-Designed Desk Lamps and Accessories",
+      "url": "https://my-unilux.com/en/",
+      "snippet": "Unilux, your source for desk lamps, clocks, and ergonomic accessories. Improve your well-being at work with innovative, eco …"
+    },
+    {
+      "title": "UNILUX, lampes de bureau et accessoires | Nos marques - Groupe …",
+      "url": "https://fr.hamelinbrands.com/brands/unilux/",
+      "snippet": "Créateur d'ambiance et de bien-être au travail, la gamme UNILUX comprend des lampes de bureau, lampadaires, porte-manteaux, …"
+    },
+    {
+      "title": "Page d’accueil - unilux-fenetres.fr",
+      "url": "https://www.unilux-fenetres.fr/fr/page-d-accueil",
+      "snippet": "Outre des produits de qualité, UNILUX vous donne des conseils personnalisés et professionnels. Nous vous aidons de manière …"
+    },
+    {
+      "title": "Unilux",
+      "url": "https://www.uniluxgroup.com/",
+      "snippet": "Unilux About Us Product Line Cases Press FAQ Careers Contact Facebook Instagram BACK TO MENU | LEGAL UNILUX © 2013 …"
+    }
+  ]
+}

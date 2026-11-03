@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "cellsentry-team/cellsentry-minicpm5-2b-formula-v2-GGUF",
+  "slug": "cellsentry-team-cellsentry-minicpm5-2b-formula-v2-gguf",
+  "author": "cellsentry-team",
+  "url": "https://huggingface.co/cellsentry-team/cellsentry-minicpm5-2b-formula-v2-GGUF",
+  "created_at": "2026-10-19T07:09:37.000Z",
+  "updated_at": "2026-11-03T12:22:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "legacy-baseline",
+    "compatibility-artifact",
+    "llama.cpp",
+    "spreadsheet",
+    "formula-audit",
+    "minicpm5",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1561314592,
+  "storage_human": "1.6 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

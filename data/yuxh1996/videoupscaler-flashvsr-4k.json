@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yuxh1996/VideoUpscaler-FlashVSR-4K",
+  "slug": "yuxh1996-videoupscaler-flashvsr-4k",
+  "author": "yuxh1996",
+  "url": "https://huggingface.co/yuxh1996/VideoUpscaler-FlashVSR-4K",
+  "created_at": "2026-11-03T09:05:09.000Z",
+  "updated_at": "2026-11-03T09:09:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "video-super-resolution",
+    "video-upscaling",
+    "super-resolution",
+    "video-enhancement",
+    "frame-interpolation",
+    "4k",
+    "flashvsr",
+    "video-restoration",
+    "mcp",
+    "video-to-video",
+    "dataset:yuxh1996/4k-video-upscaling-benchmark",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "4K Video Super-Resolution",
+      "dataset": "4K Video Upscaling Benchmark",
+      "metric": "PSNR (dB)",
+      "value": 34.82
+    },
+    {
+      "task": "4K Video Super-Resolution",
+      "dataset": "4K Video Upscaling Benchmark",
+      "metric": "SSIM",
+      "value": 0.964
+    },
+    {
+      "task": "4K Video Super-Resolution",
+      "dataset": "4K Video Upscaling Benchmark",
+      "metric": "VMAF (4K UHD)",
+      "value": 95.4
+    }
+  ],
+  "sources": []
+}

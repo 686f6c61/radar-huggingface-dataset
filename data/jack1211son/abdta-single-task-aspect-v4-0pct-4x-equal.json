@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "jack1211son/abdta-single-task-aspect-v4-0pct-4x-equal",
+  "slug": "jack1211son-abdta-single-task-aspect-v4-0pct-4x-equal",
+  "author": "jack1211son",
+  "url": "https://huggingface.co/jack1211son/abdta-single-task-aspect-v4-0pct-4x-equal",
+  "created_at": "2026-11-03T06:04:18.000Z",
+  "updated_at": "2026-11-03T06:15:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "finance",
+    "risk-disclosure",
+    "aspect-based-sentiment-analysis",
+    "en",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:finetune:microsoft/deberta-v3-large",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435076110,
+  "parameters_human": "435.1M",
+  "storage_bytes": 1740353600,
+  "storage_human": "1.7 GB",
+  "base_model": "microsoft/deberta-v3-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

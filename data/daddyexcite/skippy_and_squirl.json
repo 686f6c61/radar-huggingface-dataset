@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "daddyexcite/skippy_and_squirl",
+  "slug": "daddyexcite-skippy_and_squirl",
+  "author": "daddyexcite",
+  "url": "https://huggingface.co/daddyexcite/skippy_and_squirl",
+  "created_at": "2026-11-03T10:45:11.000Z",
+  "updated_at": "2026-11-03T10:45:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

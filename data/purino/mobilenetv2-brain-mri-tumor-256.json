@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Purino/mobilenetv2-brain-mri-tumor-256",
+  "slug": "purino-mobilenetv2-brain-mri-tumor-256",
+  "author": "Purino",
+  "url": "https://huggingface.co/Purino/mobilenetv2-brain-mri-tumor-256",
+  "created_at": "2026-11-03T05:29:43.000Z",
+  "updated_at": "2026-11-03T05:29:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mobilenet_v2",
+    "torchvision",
+    "medical-imaging",
+    "brain_mri",
+    "image-classification",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2263108,
+  "parameters_human": "2.3M",
+  "storage_bytes": 9082272,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "MRI for Brain Tumor with Bounding Boxes",
+      "metric": "Accuracy",
+      "value": 0.9639278557114228
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "MRI for Brain Tumor with Bounding Boxes",
+      "metric": "Macro F1",
+      "value": 0.9626756588949662
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "MRI for Brain Tumor with Bounding Boxes",
+      "metric": "Macro OvR ROC-AUC",
+      "value": 0.9988006115680765
+    }
+  ],
+  "sources": []
+}

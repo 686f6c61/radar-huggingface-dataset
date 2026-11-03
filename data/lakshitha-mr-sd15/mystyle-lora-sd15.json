@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Lakshitha-MR-sd15/mystyle-lora-sd15",
+  "slug": "lakshitha-mr-sd15-mystyle-lora-sd15",
+  "author": "Lakshitha-MR-sd15",
+  "url": "https://huggingface.co/Lakshitha-MR-sd15/mystyle-lora-sd15",
+  "created_at": "2026-11-03T04:39:41.000Z",
+  "updated_at": "2026-11-03T04:52:29.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "stable-diffusion",
+    "text-to-image",
+    "comfyui",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14777406,
+  "storage_human": "15 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

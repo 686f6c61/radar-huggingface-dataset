@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jerrimu/IRIS-18B-GGUFS",
+  "slug": "jerrimu-iris-18b-ggufs",
+  "author": "jerrimu",
+  "url": "https://huggingface.co/jerrimu/IRIS-18B-GGUFS",
+  "created_at": "2026-02-10T01:47:04.000Z",
+  "updated_at": "2026-11-03T06:17:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dataset:a-m-team/AM-DeepSeek-R1-Distilled-1.4M",
+    "dataset:AI-MO/NuminaMath-CoT",
+    "base_model:jerrimu/IRIS-18B-CPT",
+    "base_model:quantized:jerrimu/IRIS-18B-CPT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 18002548604,
+  "parameters_human": "18.00B",
+  "storage_bytes": 72756767840,
+  "storage_human": "72.8 GB",
+  "base_model": "jerrimu/IRIS-18B-CPT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

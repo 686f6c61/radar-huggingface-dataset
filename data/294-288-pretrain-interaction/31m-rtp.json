@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "294-288-pretrain-interaction/31M-rtp",
+  "slug": "294-288-pretrain-interaction-31m-rtp",
+  "author": "294-288-pretrain-interaction",
+  "url": "https://huggingface.co/294-288-pretrain-interaction/31M-rtp",
+  "created_at": "2026-11-03T06:17:52.000Z",
+  "updated_at": "2026-11-03T06:18:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5856685812,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bios-labs/RFD4-Proteina-MLX-fp16",
+  "slug": "bios-labs-rfd4-proteina-mlx-fp16",
+  "author": "bios-labs",
+  "url": "https://huggingface.co/bios-labs/RFD4-Proteina-MLX-fp16",
+  "created_at": "2026-10-27T23:29:17.000Z",
+  "updated_at": "2026-10-28T18:21:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "metal",
+    "protein-design",
+    "binder-design",
+    "flow-matching",
+    "rfd4-proteina",
+    "boltz-2",
+    "biology",
+    "other",
+    "en",
+    "base_model:nvidia/RFD4-Proteina",
+    "base_model:finetune:nvidia/RFD4-Proteina",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 378617144,
+  "storage_human": "379 MB",
+  "base_model": "nvidia/RFD4-Proteina",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

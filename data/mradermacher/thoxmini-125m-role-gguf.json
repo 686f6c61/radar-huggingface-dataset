@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ThoxMini-125M-role-GGUF",
+  "slug": "mradermacher-thoxmini-125m-role-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ThoxMini-125M-role-GGUF",
+  "created_at": "2026-08-11T20:33:05.000Z",
+  "updated_at": "2026-11-03T04:51:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "thox",
+    "on-device",
+    "edge",
+    "ThoxMini",
+    "thoxos",
+    "meshstack",
+    "thoxmini",
+    "ollama",
+    "local-first",
+    "en",
+    "base_model:Thox-ai/ThoxMini-125M-role",
+    "base_model:quantized:Thox-ai/ThoxMini-125M-role",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 346,
+  "trending_score": 0,
+  "parameters": 123587328,
+  "parameters_human": "123.6M",
+  "storage_bytes": 1204270848,
+  "storage_human": "1.2 GB",
+  "base_model": "Thox-ai/ThoxMini-125M-role",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

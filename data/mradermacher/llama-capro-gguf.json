@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/llama-capro-GGUF",
+  "slug": "mradermacher-llama-capro-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama-capro-GGUF",
+  "created_at": "2025-11-14T17:39:55.000Z",
+  "updated_at": "2026-11-03T08:06:23.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "llama-3",
+    "quantized",
+    "indian-accounting",
+    "ind-as",
+    "finance",
+    "accounting",
+    "ca",
+    "en",
+    "base_model:teclabs/llama-capro",
+    "base_model:quantized:teclabs/llama-capro",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 207,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820286848,
+  "storage_human": "71.8 GB",
+  "base_model": "teclabs/llama-capro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

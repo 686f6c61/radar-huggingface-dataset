@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "nihehualuzzz/mslite-test",
+  "slug": "nihehualuzzz-mslite-test",
+  "author": "nihehualuzzz",
+  "url": "https://huggingface.co/nihehualuzzz/mslite-test",
+  "created_at": "2026-07-23T07:21:00.000Z",
+  "updated_at": "2026-11-03T08:42:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 3740388546,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

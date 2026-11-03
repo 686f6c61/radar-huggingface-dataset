@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "MOH749/yaatal-ears-nemotron-wol-onnx",
+  "slug": "moh749-yaatal-ears-nemotron-wol-onnx",
+  "author": "MOH749",
+  "url": "https://huggingface.co/MOH749/yaatal-ears-nemotron-wol-onnx",
+  "created_at": "2026-10-30T20:20:16.000Z",
+  "updated_at": "2026-11-03T06:56:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "streaming-asr",
+    "cache-aware",
+    "FastConformer",
+    "RNNT",
+    "wolof",
+    "yaatal",
+    "automatic-speech-recognition",
+    "wo",
+    "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:quantized:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3360038769,
+  "storage_human": "3.4 GB",
+  "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kinga Tylkowska, MSc, ASQ CQA, PCQI - LinkedIn",
+      "url": "https://ca.linkedin.com/in/kinga-tylkowska",
+      "snippet": "Quality & Compliance professional with 15+ years of experience across the food, OTC, NHP, and pharmaceutical industries, …"
+    }
+  ]
+}

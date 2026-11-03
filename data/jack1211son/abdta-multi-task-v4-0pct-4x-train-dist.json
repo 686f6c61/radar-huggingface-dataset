@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "jack1211son/abdta-multi-task-v4-0pct-4x-train-dist",
+  "slug": "jack1211son-abdta-multi-task-v4-0pct-4x-train-dist",
+  "author": "jack1211son",
+  "url": "https://huggingface.co/jack1211son/abdta-multi-task-v4-0pct-4x-train-dist",
+  "created_at": "2026-11-03T05:18:43.000Z",
+  "updated_at": "2026-11-03T05:18:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "multi_task_deberta",
+    "feature-extraction",
+    "finance",
+    "risk-disclosure",
+    "aspect-based-sentiment-analysis",
+    "text-classification",
+    "custom_code",
+    "en",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:finetune:microsoft/deberta-v3-large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 434031635,
+  "parameters_human": "434.0M",
+  "storage_bytes": 1736176108,
+  "storage_human": "1.7 GB",
+  "base_model": "microsoft/deberta-v3-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

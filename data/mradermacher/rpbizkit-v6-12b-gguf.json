@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RPBizkit-v6-12B-GGUF",
+  "slug": "mradermacher-rpbizkit-v6-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RPBizkit-v6-12B-GGUF",
+  "created_at": "2026-03-14T15:01:02.000Z",
+  "updated_at": "2026-11-03T07:01:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "custom",
+    "merge",
+    "not-for-all-audiences",
+    "en",
+    "base_model:RicardoEstep/RPBizkit-v6-12B",
+    "base_model:quantized:RicardoEstep/RPBizkit-v6-12B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692313984,
+  "storage_human": "84.7 GB",
+  "base_model": "RicardoEstep/RPBizkit-v6-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "id": "kokitabayashi/e5-mistral_FinModernBERT_query",
+  "slug": "kokitabayashi-e5-mistral_finmodernbert_query",
+  "author": "kokitabayashi",
+  "url": "https://huggingface.co/kokitabayashi/e5-mistral_FinModernBERT_query",
+  "created_at": "2026-11-03T11:50:31.000Z",
+  "updated_at": "2026-11-03T11:53:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mistral",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:44709",
+    "loss:MultipleNegativesRankingLoss",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:intfloat/e5-mistral-7b-instruct",
+    "base_model:finetune:intfloat/e5-mistral-7b-instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7110660096,
+  "parameters_human": "7.11B",
+  "storage_bytes": 14221352088,
+  "storage_human": "14.2 GB",
+  "base_model": "intfloat/e5-mistral-7b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.00031315240083507306
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.0005219206680584551
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.0008350730688935282
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.0016701461377870565
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@1",
+      "value": 0.00031315240083507306
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@3",
+      "value": 0.00017397355601948502
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@5",
+      "value": 0.00016701461377870565
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@10",
+      "value": 0.00016701461377870565
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@1",
+      "value": 0.00031315240083507306
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@3",
+      "value": 0.0005219206680584551
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@5",
+      "value": 0.0008350730688935282
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@10",
+      "value": 0.0016701461377870565
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.0008146729015026681
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Mrr@10",
+      "value": 0.0005672366371740067
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Map@100",
+      "value": 0.0009180998700232521
+    }
+  ],
+  "sources": [
+    {
+      "title": "提问页-百度知道",
+      "url": "https://zhidao.baidu.com/msubmit/new/?ask_fr=search_header&query=%E5%AE%89%E5%9B%BD%E5%B9%BF%E5%9C%BA+Wikipedia",
+      "snippet": "0 /49 将问题补充完整可更快获得回答"
+    }
+  ]
+}

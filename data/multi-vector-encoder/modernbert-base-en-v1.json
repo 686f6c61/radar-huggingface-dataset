@@ -5,7 +5,7 @@
   "author": "multi-vector-encoder",
   "url": "https://huggingface.co/multi-vector-encoder/ModernBERT-base-en-v1",
   "created_at": "2026-10-30T15:17:03.000Z",
-  "updated_at": "2026-10-30T16:58:10.000Z",
+  "updated_at": "2026-11-02T15:40:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 34,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 149015808,
   "parameters_human": "149.0M",

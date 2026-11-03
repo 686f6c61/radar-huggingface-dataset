@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "radwan-almsora/backup-export-action-v1",
+  "slug": "radwan-almsora-backup-export-action-v1",
+  "author": "radwan-almsora",
+  "url": "https://huggingface.co/radwan-almsora/backup-export-action-v1",
+  "created_at": "2026-11-03T05:57:44.000Z",
+  "updated_at": "2026-11-03T06:05:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eau potable et assainissement : la carte interactive",
+      "url": "https://www.intercommunalites.fr/domaines-daction/environnement-et-amenagement/politique-globale-de-leau/eau-potable-et-assainissement-la-carte/",
+      "snippet": "Feb 4, 2023 · Intercommunalités exerçant..."
+    }
+  ]
+}

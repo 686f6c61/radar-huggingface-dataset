@@ -5,7 +5,7 @@
   "author": "NagaYu",
   "url": "https://huggingface.co/NagaYu/claimcheck-rules",
   "created_at": "2026-09-19T23:51:44.000Z",
-  "updated_at": "2026-09-20T00:11:19.000Z",
+  "updated_at": "2026-10-27T06:14:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

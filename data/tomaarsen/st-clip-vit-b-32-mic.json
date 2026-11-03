@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tomaarsen/st-clip-ViT-B-32-mic",
+  "slug": "tomaarsen-st-clip-vit-b-32-mic",
+  "author": "tomaarsen",
+  "url": "https://huggingface.co/tomaarsen/st-clip-ViT-B-32-mic",
+  "created_at": "2026-11-03T11:29:26.000Z",
+  "updated_at": "2026-11-03T11:29:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "clip",
+    "mic",
+    "test-artifact",
+    "base_model:sentence-transformers/clip-ViT-B-32",
+    "base_model:finetune:sentence-transformers/clip-ViT-B-32",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3505280,
+  "parameters_human": "3.5M",
+  "storage_bytes": 14030004,
+  "storage_human": "14 MB",
+  "base_model": "sentence-transformers/clip-ViT-B-32",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

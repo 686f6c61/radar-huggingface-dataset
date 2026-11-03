@@ -5,7 +5,7 @@
   "author": "sanabada",
   "url": "https://huggingface.co/sanabada/data266-team26-p2-naruto-run2-dora-r16",
   "created_at": "2026-10-29T22:14:54.000Z",
-  "updated_at": "2026-10-29T23:54:22.000Z",
+  "updated_at": "2026-11-02T11:08:06.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 338877181,
-  "storage_human": "339 MB",
+  "storage_bytes": 857797289,
+  "storage_human": "858 MB",
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "formats": [
     "diffusers"

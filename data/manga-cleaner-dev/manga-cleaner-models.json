@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "manga-cleaner-dev/manga-cleaner-models",
+  "slug": "manga-cleaner-dev-manga-cleaner-models",
+  "author": "manga-cleaner-dev",
+  "url": "https://huggingface.co/manga-cleaner-dev/manga-cleaner-models",
+  "created_at": "2026-10-29T00:13:11.000Z",
+  "updated_at": "2026-10-29T15:43:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "manga",
+    "image-cleaning",
+    "manga-cleaner-studio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211037360,
+  "storage_human": "211 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toute l'actualité manga et anime en France et au Japon",
+      "url": "https://www.manga-news.com/",
+      "snippet": "Manga News: Toute l'actualité manga, anime, vod et streaming : les séries sorties en France, critiques, planning, auteurs et éditeurs, …"
+    },
+    {
+      "title": "Manga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Manga",
+      "snippet": "Manga écrit en kanji. Le mot japonais « manga » souvent traduit littéralement par « image dérisoire » ou « dessin non abouti », est …"
+    },
+    {
+      "title": "MangaDex - The Home of Comics and Manga",
+      "url": "https://mangadex.org/",
+      "snippet": "3 days ago · Thanks to the protection of the Great Fire Spirit Ifrit and my efforts since childhood, both my magic and swordsmanship …"
+    },
+    {
+      "title": "Librairie Azu Manga à Angers - Azu Manga",
+      "url": "https://azu-manga.fr/",
+      "snippet": "Notre volonté est de proposer une ouverture sur le Japon en plus de notre activité principale : le manga. C’est pourquoi, depuis …"
+    },
+    {
+      "title": "MANGA MILLION | 1 million de pages traduites",
+      "url": "https://mangamillion.shueisha.co.jp/fr",
+      "snippet": "Le service MANGA officiel de Shueisha Inc. Cette plate-forme est gratuite pour tous les utilisateurs partout dans le monde et ne …"
+    }
+  ]
+}

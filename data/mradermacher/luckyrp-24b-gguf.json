@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LuckyRP-24B-GGUF",
+  "slug": "mradermacher-luckyrp-24b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LuckyRP-24B-GGUF",
+  "created_at": "2025-05-26T09:48:05.000Z",
+  "updated_at": "2026-11-03T04:52:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Vortex5/LuckyRP-24B",
+    "base_model:quantized:Vortex5/LuckyRP-24B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 280,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407726432,
+  "storage_human": "161.4 GB",
+  "base_model": "Vortex5/LuckyRP-24B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

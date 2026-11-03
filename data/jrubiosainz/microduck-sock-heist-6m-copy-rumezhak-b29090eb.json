@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-sock-heist-6m-copy-rumezhak-b29090eb",
+  "slug": "jrubiosainz-microduck-sock-heist-6m-copy-rumezhak-b29090eb",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-copy-rumezhak-b29090eb",
+  "created_at": "2026-11-03T09:19:08.000Z",
+  "updated_at": "2026-11-03T09:19:10.000Z",
+  "license": "`",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-arena",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1207387,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rails placo au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/materiaux/cloison-et-plafond/ossature-metallique-pour-cloison-et-plafond/rails-placo-p.html?msockid=2c02500c047461453c66480a05d960ac",
+      "snippet": "rails placo - Marques, Stock & Livraison rapide chez Leroy Merlin. Un grand choix de produits aux meilleurs prix."
+    },
+    {
+      "title": "Rails, montants BA13 et ossatures métalliques - Brico Dépôt",
+      "url": "https://www.bricodepot.fr/produits/materiau-et-gros-oeuvre/isolation-et-cloison/ossature-metallique?msockid=2c02500c047461453c66480a05d960ac",
+      "snippet": "Les rails de plâtre se fixent au sol et au plafond afin de pouvoir y insérer des montants de même largeur. Cet assemblage vous …"
+    },
+    {
+      "title": "Rails pour placoplatre au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/materiaux/cloison-et-plafond/ossature-metallique-pour-cloison-et-plafond/rails-pour-placoplatre-p.html?msockid=2c02500c047461453c66480a05d960ac",
+      "snippet": "rails pour placoplatre - Marques, Stock & Livraison rapide chez Leroy Merlin. Un grand choix de produits aux meilleurs prix."
+    }
+  ]
+}

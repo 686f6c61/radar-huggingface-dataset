@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "ysy2014/qwen666",
+  "slug": "ysy2014-qwen666",
+  "author": "ysy2014",
+  "url": "https://huggingface.co/ysy2014/qwen666",
+  "created_at": "2026-10-31T05:59:52.000Z",
+  "updated_at": "2026-11-03T09:56:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 319,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7029353088,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

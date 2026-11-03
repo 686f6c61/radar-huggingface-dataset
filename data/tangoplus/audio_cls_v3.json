@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Tangoplus/audio_cls_v3",
+  "slug": "tangoplus-audio_cls_v3",
+  "author": "Tangoplus",
+  "url": "https://huggingface.co/Tangoplus/audio_cls_v3",
+  "created_at": "2026-11-03T06:53:41.000Z",
+  "updated_at": "2026-11-03T07:09:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94572174,
+  "parameters_human": "94.6M",
+  "storage_bytes": 3783152241,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

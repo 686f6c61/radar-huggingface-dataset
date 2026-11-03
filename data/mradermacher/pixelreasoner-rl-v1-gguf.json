@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PixelReasoner-RL-v1-GGUF",
+  "slug": "mradermacher-pixelreasoner-rl-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PixelReasoner-RL-v1-GGUF",
+  "created_at": "2025-05-19T03:22:45.000Z",
+  "updated_at": "2026-11-03T10:18:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:TIGER-Lab/PixelReasoner-SFT-Data",
+    "base_model:TIGER-Lab/PixelReasoner-RL-v1",
+    "base_model:quantized:TIGER-Lab/PixelReasoner-RL-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 228,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354171072,
+  "storage_human": "70.4 GB",
+  "base_model": "TIGER-Lab/PixelReasoner-RL-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

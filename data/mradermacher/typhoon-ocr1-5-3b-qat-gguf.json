@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/typhoon-ocr1.5-3b-qat-GGUF",
+  "slug": "mradermacher-typhoon-ocr1-5-3b-qat-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/typhoon-ocr1.5-3b-qat-GGUF",
+  "created_at": "2025-11-14T16:36:07.000Z",
+  "updated_at": "2026-11-03T08:07:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "OCR",
+    "vision-language",
+    "document-understanding",
+    "multilingual",
+    "QAT",
+    "en",
+    "th",
+    "base_model:typhoon-ai/typhoon-ocr1.5-3b-qat",
+    "base_model:quantized:typhoon-ai/typhoon-ocr1.5-3b-qat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 533,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 30127072512,
+  "storage_human": "30.1 GB",
+  "base_model": "typhoon-ai/typhoon-ocr1.5-3b-qat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

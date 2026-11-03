@@ -24,6 +24,7 @@
     "base_model:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
     "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
   "likes": 20,

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "muhammaduxair/Nizam-LLM-7B",
+  "slug": "muhammaduxair-nizam-llm-7b",
+  "author": "muhammaduxair",
+  "url": "https://huggingface.co/muhammaduxair/Nizam-LLM-7B",
+  "created_at": "2026-10-19T07:29:38.000Z",
+  "updated_at": "2026-11-03T07:51:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "legal",
+    "saudi-arabia",
+    "labor-law",
+    "arabic",
+    "rag",
+    "citation",
+    "conversational",
+    "ar",
+    "base_model:humain-ai/ALLaM-7B-Instruct-preview",
+    "base_model:finetune:humain-ai/ALLaM-7B-Instruct-preview",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1197,
+  "trending_score": 0,
+  "parameters": 7000559616,
+  "parameters_human": "7.00B",
+  "storage_bytes": 56004611648,
+  "storage_human": "56.0 GB",
+  "base_model": "humain-ai/ALLaM-7B-Instruct-preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

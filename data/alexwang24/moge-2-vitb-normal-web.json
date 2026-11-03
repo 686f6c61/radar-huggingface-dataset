@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "alexwang24/moge-2-vitb-normal-web",
+  "slug": "alexwang24-moge-2-vitb-normal-web",
+  "author": "alexwang24",
+  "url": "https://huggingface.co/alexwang24/moge-2-vitb-normal-web",
+  "created_at": "2026-11-03T08:00:49.000Z",
+  "updated_at": "2026-11-03T08:04:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "surface-normals",
+    "depth-estimation",
+    "base_model:Ruicheng/moge-2-vitb-normal",
+    "base_model:quantized:Ruicheng/moge-2-vitb-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209912904,
+  "storage_human": "210 MB",
+  "base_model": "Ruicheng/moge-2-vitb-normal",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Database Optimization: Key Concepts – Database Guide | SolarWinds",
+      "url": "https://www.solarwinds.com/database-optimization",
+      "snippet": "Learn about database optimization techniques, including performance metrics, indexing, query optimization, normalization, caching, …"
+    }
+  ]
+}

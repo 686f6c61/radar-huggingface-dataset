@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Technoknee/The_Republic_Wolf_pixel_character_lora_1.0",
+  "slug": "technoknee-the_republic_wolf_pixel_character_lora_1-0",
+  "author": "Technoknee",
+  "url": "https://huggingface.co/Technoknee/The_Republic_Wolf_pixel_character_lora_1.0",
+  "created_at": "2026-11-03T12:20:43.000Z",
+  "updated_at": "2026-11-03T12:28:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v",
+    "base_model:adapter:rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613698560,
+  "storage_human": "614 MB",
+  "base_model": "rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

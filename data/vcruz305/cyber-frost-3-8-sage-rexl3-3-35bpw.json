@@ -37,12 +37,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 357,
   "trending_score": 0,
   "parameters": 28311787008,
   "parameters_human": "28.31B",
-  "storage_bytes": 103652523608,
-  "storage_human": "103.7 GB",
+  "storage_bytes": 103579046522,
+  "storage_human": "103.6 GB",
   "base_model": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
   "formats": [
     "safetensors"

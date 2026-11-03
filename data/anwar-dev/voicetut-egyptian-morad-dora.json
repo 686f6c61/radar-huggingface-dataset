@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "anwar-dev/voicetut-egyptian-morad-dora",
+  "slug": "anwar-dev-voicetut-egyptian-morad-dora",
+  "author": "anwar-dev",
+  "url": "https://huggingface.co/anwar-dev/voicetut-egyptian-morad-dora",
+  "created_at": "2026-11-03T10:46:20.000Z",
+  "updated_at": "2026-11-03T10:49:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tts",
+    "text-to-speech",
+    "arabic",
+    "arabic-tts",
+    "dora",
+    "lora",
+    "omnivoice",
+    "voice-cloning",
+    "tashkeel",
+    "ar",
+    "base_model:masterofaudio2077/voicetut-egyptian-tashkeel",
+    "base_model:adapter:masterofaudio2077/voicetut-egyptian-tashkeel",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436926456,
+  "storage_human": "437 MB",
+  "base_model": "masterofaudio2077/voicetut-egyptian-tashkeel",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "LundAISociety",
   "url": "https://huggingface.co/LundAISociety/dinov3-building-segmenter-by-dataset",
   "created_at": "2026-10-11T12:41:35.000Z",
-  "updated_at": "2026-10-26T07:32:24.000Z",
+  "updated_at": "2026-11-02T14:06:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2387306846,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 2584026852,
+  "storage_human": "2.6 GB",
   "base_model": null,
   "formats": [
     "onnx"

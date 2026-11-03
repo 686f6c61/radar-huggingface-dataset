@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "xiaomeimei008/ZhaoSiHan-33B-MLX",
+  "slug": "xiaomeimei008-zhaosihan-33b-mlx",
+  "author": "xiaomeimei008",
+  "url": "https://huggingface.co/xiaomeimei008/ZhaoSiHan-33B-MLX",
+  "created_at": "2026-11-03T10:22:46.000Z",
+  "updated_at": "2026-11-03T10:22:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "4bit",
+    "zhaosihan",
+    "nanbeige",
+    "apple-silicon",
+    "text-generation",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

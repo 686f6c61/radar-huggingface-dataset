@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Residual/UniCAC",
+  "slug": "residual-unicac",
+  "author": "Residual",
+  "url": "https://huggingface.co/Residual/UniCAC",
+  "created_at": "2026-11-03T07:24:27.000Z",
+  "updated_at": "2026-11-03T07:24:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "residual - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/residual.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"residual\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "RESIDUAL | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/residual",
+      "snippet": "RESIDUAL definition: 1. remaining after most of something has gone: 2. a payment made to an actor, singer, writer, etc…. Learn more."
+    },
+    {
+      "title": "Residual - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Residual",
+      "snippet": "This disambiguation page lists articles associated with the title Residual. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "residual - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/residual",
+      "snippet": "Voir la traduction automatique de Google Translate de 'residual'. Dans d'autres langues : espagnol | italien | portugais | roumain | …"
+    },
+    {
+      "title": "Traduction RESIDUAL en français | Dictionnaire anglais-français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/residual",
+      "snippet": "Traduction de \"residual\" en français : résidu, paiements résiduels. Nom, adjectif, signification, prononciation, expressions …"
+    }
+  ]
+}

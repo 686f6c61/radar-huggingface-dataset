@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "aynad/siglip2-base-excavate",
+  "slug": "aynad-siglip2-base-excavate",
+  "author": "aynad",
+  "url": "https://huggingface.co/aynad/siglip2-base-excavate",
+  "created_at": "2026-11-03T09:50:26.000Z",
+  "updated_at": "2026-11-03T10:00:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "siglip2",
+    "image-search",
+    "zero-shot-image-classification",
+    "base_model:google/siglip2-base-patch16-224",
+    "base_model:quantized:google/siglip2-base-patch16-224",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 760096575,
+  "storage_human": "760 MB",
+  "base_model": "google/siglip2-base-patch16-224",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

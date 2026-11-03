@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Maxenith/MAX-Neural-80M-Arabic",
+  "slug": "maxenith-max-neural-80m-arabic",
+  "author": "Maxenith",
+  "url": "https://huggingface.co/Maxenith/MAX-Neural-80M-Arabic",
+  "created_at": "2026-11-02T13:01:23.000Z",
+  "updated_at": "2026-11-03T05:13:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "arabic",
+    "from-scratch",
+    "instruct",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2770656999,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

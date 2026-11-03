@@ -4,8 +4,8 @@
   "slug": "tbtlr-shieldgemma-4-e2b-trimodal-lora",
   "author": "tbtlr",
   "url": "https://huggingface.co/tbtlr/shieldgemma-4-e2b-trimodal-lora",
-  "created_at": "2026-10-14T13:41:13.000Z",
-  "updated_at": "2026-11-02T12:16:24.000Z",
+  "created_at": "2026-11-02T12:46:17.000Z",
+  "updated_at": "2026-11-02T12:48:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 348600996,
-  "storage_human": "349 MB",
+  "storage_bytes": 128863140,
+  "storage_human": "129 MB",
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"

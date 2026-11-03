@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Nocti-Dev/nb-whisper-tiny-mlx",
+  "slug": "nocti-dev-nb-whisper-tiny-mlx",
+  "author": "Nocti-Dev",
+  "url": "https://huggingface.co/Nocti-Dev/nb-whisper-tiny-mlx",
+  "created_at": "2026-11-03T12:24:01.000Z",
+  "updated_at": "2026-11-03T12:24:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "whisper",
+    "prism",
+    "automatic-speech-recognition",
+    "base_model:NbAiLab/nb-whisper-tiny",
+    "base_model:finetune:NbAiLab/nb-whisper-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 75540067,
+  "storage_human": "76 MB",
+  "base_model": "NbAiLab/nb-whisper-tiny",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
