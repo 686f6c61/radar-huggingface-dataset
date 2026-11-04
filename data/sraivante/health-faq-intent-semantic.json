@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sraivante/health-faq-intent-semantic",
+  "slug": "sraivante-health-faq-intent-semantic",
+  "author": "sraivante",
+  "url": "https://huggingface.co/sraivante/health-faq-intent-semantic",
+  "created_at": "2026-11-04T02:02:47.000Z",
+  "updated_at": "2026-11-04T02:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "faq",
+    "intent-classification",
+    "retrieval",
+    "health-insurance",
+    "medicare",
+    "cpu",
+    "sentence-similarity",
+    "en",
+    "base_model:sentence-transformers/paraphrase-MiniLM-L3-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-MiniLM-L3-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28101683,
+  "storage_human": "28 MB",
+  "base_model": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

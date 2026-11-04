@@ -5,7 +5,7 @@
   "author": "BeMujic",
   "url": "https://huggingface.co/BeMujic/ur5e_molmoact2_pp_yellow",
   "created_at": "2026-11-03T15:39:52.000Z",
-  "updated_at": "2026-11-03T15:56:06.000Z",
+  "updated_at": "2026-11-03T19:55:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,9 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "dataset:HIT-Robotics/ur5e_pick_and_place_yellow_stone",
+    "base_model:allenai/MolmoAct2",
+    "base_model:finetune:allenai/MolmoAct2",
     "license:apache-2.0",
     "region:us"
   ],
@@ -23,7 +26,7 @@
   "parameters_human": "5.59B",
   "storage_bytes": 11483650568,
   "storage_human": "11.5 GB",
-  "base_model": null,
+  "base_model": "allenai/MolmoAct2",
   "formats": [
     "safetensors"
   ],

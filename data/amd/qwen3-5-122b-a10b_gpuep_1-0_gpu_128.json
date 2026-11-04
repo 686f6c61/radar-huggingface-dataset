@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "amd/Qwen3.5-122B-A10B_gpuep_1.0_gpu_128",
+  "slug": "amd-qwen3-5-122b-a10b_gpuep_1-0_gpu_128",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Qwen3.5-122B-A10B_gpuep_1.0_gpu_128",
+  "created_at": "2026-10-15T23:40:46.000Z",
+  "updated_at": "2026-11-04T03:11:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "qwen3_5_moe",
+    "amd",
+    "onnxruntime",
+    "multimodal",
+    "vision-language",
+    "qwen",
+    "hip-ep",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:quantized:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71794318383,
+  "storage_human": "71.8 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

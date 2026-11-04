@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Shroomy/tinydistill-banking77-static",
+  "slug": "shroomy-tinydistill-banking77-static",
+  "author": "Shroomy",
+  "url": "https://huggingface.co/Shroomy/tinydistill-banking77-static",
+  "created_at": "2026-11-03T22:07:11.000Z",
+  "updated_at": "2026-11-03T22:07:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "tinydistill-static",
+    "text-classification",
+    "knowledge-distillation",
+    "tinydistill",
+    "dataset:PolyAI/banking77",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39171901,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

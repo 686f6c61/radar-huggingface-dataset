@@ -5,7 +5,7 @@
   "author": "TaoLiveAIGC",
   "url": "https://huggingface.co/TaoLiveAIGC/TaoMate-HD-preview",
   "created_at": "2026-11-02T07:50:43.000Z",
-  "updated_at": "2026-11-02T12:59:39.000Z",
+  "updated_at": "2026-11-03T06:39:42.000Z",
   "license": "minimax-h3-community",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "arxiv:2611.03394",
     "lora",
     "streaming",
     "audio-video-generation",
@@ -23,8 +24,8 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 5,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -4,8 +4,8 @@
   "slug": "felsager-pi05_cube2cross_dr_bs128",
   "author": "felsager",
   "url": "https://huggingface.co/felsager/pi05_cube2cross_dr_bs128",
-  "created_at": "2026-10-31T19:51:46.000Z",
-  "updated_at": "2026-10-31T19:53:34.000Z",
+  "created_at": "2026-11-03T21:38:29.000Z",
+  "updated_at": "2026-11-03T21:40:02.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -27,16 +27,16 @@
   "trending_score": 0,
   "parameters": 4143404816,
   "parameters_human": "4.14B",
-  "storage_bytes": 24936621480,
-  "storage_human": "24.9 GB",
+  "storage_bytes": 24517173276,
+  "storage_human": "24.5 GB",
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-02T04:19:03.687Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

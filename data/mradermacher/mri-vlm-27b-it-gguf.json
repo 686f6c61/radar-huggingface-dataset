@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MRI-VLM-27B-IT-GGUF",
+  "slug": "mradermacher-mri-vlm-27b-it-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MRI-VLM-27B-IT-GGUF",
+  "created_at": "2026-11-03T21:25:12.000Z",
+  "updated_at": "2026-11-03T21:25:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 1556853888,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

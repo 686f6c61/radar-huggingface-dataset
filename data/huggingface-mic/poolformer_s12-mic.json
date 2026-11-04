@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/poolformer_s12-mic",
+  "slug": "huggingface-mic-poolformer_s12-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/poolformer_s12-mic",
+  "created_at": "2026-11-03T20:52:34.000Z",
+  "updated_at": "2026-11-03T21:12:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "mic",
+    "test-artifact",
+    "base_model:sail/poolformer_s12",
+    "base_model:finetune:sail/poolformer_s12",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11915176,
+  "parameters_human": "11.9M",
+  "storage_bytes": 47675728,
+  "storage_human": "48 MB",
+  "base_model": "sail/poolformer_s12",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

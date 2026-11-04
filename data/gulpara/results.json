@@ -5,7 +5,7 @@
   "author": "gulpara",
   "url": "https://huggingface.co/gulpara/results",
   "created_at": "2026-11-02T05:29:43.000Z",
-  "updated_at": "2026-11-02T05:30:06.000Z",
+  "updated_at": "2026-11-03T12:38:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 437963825,
-  "storage_human": "438 MB",
+  "storage_bytes": 875922449,
+  "storage_human": "876 MB",
   "base_model": "bert-base-uncased",
   "formats": [
     "safetensors"

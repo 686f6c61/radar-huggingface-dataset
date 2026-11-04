@@ -5,7 +5,7 @@
   "author": "kilianssl",
   "url": "https://huggingface.co/kilianssl/ai-picture-detector",
   "created_at": "2026-11-03T10:03:45.000Z",
-  "updated_at": "2026-11-03T10:03:59.000Z",
+  "updated_at": "2026-11-03T11:08:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 750294433,
-  "storage_human": "750 MB",
+  "storage_bytes": 1543213310,
+  "storage_human": "1.5 GB",
   "base_model": "Bombek1/ai-image-detector-siglip-dinov2",
   "formats": [
     "onnx"

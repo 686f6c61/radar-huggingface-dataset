@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "ZhLa/dont-judge-env-style-lora-z-image-turbo",
+  "slug": "zhla-dont-judge-env-style-lora-z-image-turbo",
+  "author": "ZhLa",
+  "url": "https://huggingface.co/ZhLa/dont-judge-env-style-lora-z-image-turbo",
+  "created_at": "2026-11-04T01:51:20.000Z",
+  "updated_at": "2026-11-04T01:53:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "style-lora",
+    "z-image-turbo",
+    "research",
+    "image-text-to-image",
+    "en",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170128272,
+  "storage_human": "170 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

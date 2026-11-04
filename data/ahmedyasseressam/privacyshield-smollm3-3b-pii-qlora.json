@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "AhmedYasserEssam/privacyshield-smollm3-3b-pii-qlora",
+  "slug": "ahmedyasseressam-privacyshield-smollm3-3b-pii-qlora",
+  "author": "AhmedYasserEssam",
+  "url": "https://huggingface.co/AhmedYasserEssam/privacyshield-smollm3-3b-pii-qlora",
+  "created_at": "2026-11-03T19:59:57.000Z",
+  "updated_at": "2026-11-03T20:06:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "pii-detection",
+    "named-entity-recognition",
+    "information-extraction",
+    "structured-output",
+    "qlora",
+    "lora",
+    "privacy",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:gretelai/gretel-pii-masking-en-v1",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138190019,
+  "storage_human": "138 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

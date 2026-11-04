@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OmniDimen-2-8B-Emotion-GGUF",
+  "slug": "mradermacher-omnidimen-2-8b-emotion-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OmniDimen-2-8B-Emotion-GGUF",
+  "created_at": "2026-02-13T13:02:22.000Z",
+  "updated_at": "2026-11-04T00:41:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "zh",
+    "en",
+    "base_model:OmniDimen/OmniDimen-2-8B-Emotion",
+    "base_model:quantized:OmniDimen/OmniDimen-2-8B-Emotion",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820240000,
+  "storage_human": "71.8 GB",
+  "base_model": "OmniDimen/OmniDimen-2-8B-Emotion",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

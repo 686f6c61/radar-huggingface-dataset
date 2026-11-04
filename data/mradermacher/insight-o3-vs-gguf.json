@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/InSight-o3-vS-GGUF",
+  "slug": "mradermacher-insight-o3-vs-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/InSight-o3-vS-GGUF",
+  "created_at": "2026-01-14T06:08:41.000Z",
+  "updated_at": "2026-11-03T21:19:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:m-Just/InSight-o3-vS",
+    "base_model:quantized:m-Just/InSight-o3-vS",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 122,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357188672,
+  "storage_human": "70.4 GB",
+  "base_model": "m-Just/InSight-o3-vS",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

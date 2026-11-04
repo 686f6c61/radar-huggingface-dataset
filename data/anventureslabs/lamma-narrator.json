@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 276265957,
-  "storage_human": "276 MB",
+  "storage_bytes": 345537478,
+  "storage_human": "346 MB",
   "base_model": "Supertone/supertonic-3",
   "formats": [
     "onnx"

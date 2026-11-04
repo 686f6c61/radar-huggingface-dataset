@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8",
   "created_at": "2026-06-28T14:28:33.000Z",
-  "updated_at": "2026-10-30T03:53:41.000Z",
+  "updated_at": "2026-11-03T08:53:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1083,
+  "downloads_30d": 1091,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 58219494665,
-  "storage_human": "58.2 GB",
+  "storage_bytes": 59465182169,
+  "storage_human": "59.5 GB",
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
   "formats": [
     "safetensors"

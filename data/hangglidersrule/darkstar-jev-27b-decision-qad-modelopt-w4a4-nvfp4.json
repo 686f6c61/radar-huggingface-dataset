@@ -5,7 +5,7 @@
   "author": "HangGlidersRule",
   "url": "https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-QAD-ModelOpt-W4A4-NVFP4",
   "created_at": "2026-10-29T05:05:11.000Z",
-  "updated_at": "2026-10-29T06:12:06.000Z",
+  "updated_at": "2026-11-03T03:16:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": 15193246960,
   "parameters_human": "15.19B",

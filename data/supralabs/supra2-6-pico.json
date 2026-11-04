@@ -5,7 +5,7 @@
   "author": "SupraLabs",
   "url": "https://huggingface.co/SupraLabs/Supra2.6-Pico",
   "created_at": "2026-10-31T13:35:07.000Z",
-  "updated_at": "2026-10-31T13:51:41.000Z",
+  "updated_at": "2026-11-03T07:24:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
   "tags": [
     "pytorch",
     "safetensors",
+    "supra_pico",
     "text-generation",
     "text-completion",
     "language-model",

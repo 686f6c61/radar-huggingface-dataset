@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MFANN-Phigments12-slerp-GGUF",
+  "slug": "mradermacher-mfann-phigments12-slerp-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MFANN-Phigments12-slerp-GGUF",
+  "created_at": "2025-02-24T22:52:44.000Z",
+  "updated_at": "2026-11-03T22:29:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "liminerity/Phigments12",
+    "netcat420/MFANN3bv0.6",
+    "en",
+    "base_model:netcat420/MFANN-Phigments12-slerp",
+    "base_model:quantized:netcat420/MFANN-Phigments12-slerp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 216,
+  "trending_score": 0,
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 24997208192,
+  "storage_human": "25.0 GB",
+  "base_model": "netcat420/MFANN-Phigments12-slerp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

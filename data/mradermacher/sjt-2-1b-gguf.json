@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SJT-2.1B-GGUF",
+  "slug": "mradermacher-sjt-2-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SJT-2.1B-GGUF",
+  "created_at": "2025-02-08T09:37:05.000Z",
+  "updated_at": "2026-11-04T00:42:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "ja",
+    "base_model:Sakalti/SJT-2.1B",
+    "base_model:quantized:Sakalti/SJT-2.1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 96,
+  "trending_score": 0,
+  "parameters": 2104672768,
+  "parameters_human": "2.10B",
+  "storage_bytes": 19073925888,
+  "storage_human": "19.1 GB",
+  "base_model": "Sakalti/SJT-2.1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "myendless/action-repre-hygon-arx-core8-fast-head10k-6b45ecae",
+  "slug": "myendless-action-repre-hygon-arx-core8-fast-head10k-6b45ecae",
+  "author": "myendless",
+  "url": "https://huggingface.co/myendless/action-repre-hygon-arx-core8-fast-head10k-6b45ecae",
+  "created_at": "2026-11-04T02:19:23.000Z",
+  "updated_at": "2026-11-04T02:20:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "robotwin",
+    "action-representation",
+    "qwen3-vl",
+    "fast",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11285534875,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muschio di Luce Gucci perfume - a new fragrance for women and men …",
+      "url": "https://www.fragrantica.com/perfume/Gucci/Muschio-di-Luce-114849.html",
+      "snippet": "Part of Gucci's The Alchemist's Garden collection, this gender-neutral fragrance represents the collaborative vision between Creative …"
+    }
+  ]
+}

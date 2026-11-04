@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Veda-Labs/vedika-v1-chat-1p7b",
+  "slug": "veda-labs-vedika-v1-chat-1p7b",
+  "author": "Veda-Labs",
+  "url": "https://huggingface.co/Veda-Labs/vedika-v1-chat-1p7b",
+  "created_at": "2026-11-04T04:17:36.000Z",
+  "updated_at": "2026-11-04T04:17:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "onnx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "vedika",
+    "veda-labs",
+    "chat",
+    "instruct",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 20954875576,
+  "storage_human": "21.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

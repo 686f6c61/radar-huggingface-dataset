@@ -5,7 +5,7 @@
   "author": "gbrixi",
   "url": "https://huggingface.co/gbrixi/evo2_7b_vllm",
   "created_at": "2026-10-29T08:53:04.000Z",
-  "updated_at": "2026-10-29T08:59:35.000Z",
+  "updated_at": "2026-11-03T06:11:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 54,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 6586388534,
   "parameters_human": "6.59B",
-  "storage_bytes": 11816237176,
-  "storage_human": "11.8 GB",
+  "storage_bytes": 12455943720,
+  "storage_human": "12.5 GB",
   "base_model": "arcinstitute/evo2_7b",
   "formats": [
     "safetensors"

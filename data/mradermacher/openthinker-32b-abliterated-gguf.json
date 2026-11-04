@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OpenThinker-32B-abliterated-GGUF",
+  "slug": "mradermacher-openthinker-32b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OpenThinker-32B-abliterated-GGUF",
+  "created_at": "2025-02-14T09:39:49.000Z",
+  "updated_at": "2026-11-04T01:46:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "abliterated",
+    "uncensored",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000861184,
+  "storage_human": "224.0 GB",
+  "base_model": "huihui-ai/OpenThinker-32B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

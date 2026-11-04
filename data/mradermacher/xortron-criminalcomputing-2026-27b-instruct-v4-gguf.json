@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct.v4-GGUF",
+  "slug": "mradermacher-xortron-criminalcomputing-2026-27b-instruct-v4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct.v4-GGUF",
+  "created_at": "2026-03-15T07:04:53.000Z",
+  "updated_at": "2026-11-03T21:18:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 375,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186739682304,
+  "storage_human": "186.7 GB",
+  "base_model": "darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct.v4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

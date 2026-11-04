@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Q-P1NG/birefnet-lite-512",
+  "slug": "q-p1ng-birefnet-lite-512",
+  "author": "Q-P1NG",
+  "url": "https://huggingface.co/Q-P1NG/birefnet-lite-512",
+  "created_at": "2026-11-03T22:13:08.000Z",
+  "updated_at": "2026-11-03T22:14:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "background-removal",
+    "dichotomous-image-segmentation",
+    "birefnet",
+    "image-segmentation",
+    "base_model:ZhengPeng7/BiRefNet_lite",
+    "base_model:quantized:ZhengPeng7/BiRefNet_lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 191877254,
+  "storage_human": "192 MB",
+  "base_model": "ZhengPeng7/BiRefNet_lite",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

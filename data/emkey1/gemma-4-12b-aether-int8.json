@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "emkey1/Gemma-4-12B-Aether-int8",
+  "slug": "emkey1-gemma-4-12b-aether-int8",
+  "author": "emkey1",
+  "url": "https://huggingface.co/emkey1/Gemma-4-12B-Aether-int8",
+  "created_at": "2026-11-03T19:41:31.000Z",
+  "updated_at": "2026-11-03T21:53:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "code",
+    "aether",
+    "gemma4",
+    "fine-tuned",
+    "ollama",
+    "int8",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:emkey1/Gemma-4-12B-Aether",
+    "base_model:quantized:emkey1/Gemma-4-12B-Aether",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 12789371777,
+  "storage_human": "12.8 GB",
+  "base_model": "emkey1/Gemma-4-12B-Aether",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

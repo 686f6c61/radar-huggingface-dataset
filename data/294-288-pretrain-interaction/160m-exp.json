@@ -5,7 +5,7 @@
   "author": "294-288-pretrain-interaction",
   "url": "https://huggingface.co/294-288-pretrain-interaction/160M-exp",
   "created_at": "2026-10-10T19:53:25.000Z",
-  "updated_at": "2026-11-02T22:56:13.000Z",
+  "updated_at": "2026-11-04T01:54:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 879938034327,
-  "storage_human": "879.9 GB",
+  "storage_bytes": 981239801993,
+  "storage_human": "981.2 GB",
   "base_model": "EleutherAI/pythia-160m",
   "formats": [
     "safetensors"

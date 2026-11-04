@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/neron-v2-GGUF",
+  "slug": "mradermacher-neron-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/neron-v2-GGUF",
+  "created_at": "2025-12-15T14:18:51.000Z",
+  "updated_at": "2026-11-04T03:55:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:innominedein/neron-v2",
+    "base_model:quantized:innominedein/neron-v2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 140,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043515168,
+  "storage_human": "102.0 GB",
+  "base_model": "innominedein/neron-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Riccardo11/smolvla_empty_insertion_box_full_lights",
+  "slug": "riccardo11-smolvla_empty_insertion_box_full_lights",
+  "author": "Riccardo11",
+  "url": "https://huggingface.co/Riccardo11/smolvla_empty_insertion_box_full_lights",
+  "created_at": "2026-11-04T02:47:42.000Z",
+  "updated_at": "2026-11-04T02:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Riccardo11/empty_insertion_box_blue_cylinder_all_lights",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 13193892256,
+  "storage_human": "13.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

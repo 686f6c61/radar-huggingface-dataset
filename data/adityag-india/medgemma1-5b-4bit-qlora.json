@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "adityag-india/medgemma1.5b-4bit-qlora",
+  "slug": "adityag-india-medgemma1-5b-4bit-qlora",
+  "author": "adityag-india",
+  "url": "https://huggingface.co/adityag-india/medgemma1.5b-4bit-qlora",
+  "created_at": "2026-11-04T02:01:07.000Z",
+  "updated_at": "2026-11-04T02:17:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11010479567,
+  "storage_human": "11.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

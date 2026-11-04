@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "WCL-Robotics/muse-checkpoint",
+  "slug": "wcl-robotics-muse-checkpoint",
+  "author": "WCL-Robotics",
+  "url": "https://huggingface.co/WCL-Robotics/muse-checkpoint",
+  "created_at": "2026-11-04T03:23:20.000Z",
+  "updated_at": "2026-11-04T03:23:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

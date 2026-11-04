@@ -5,7 +5,7 @@
   "author": "HU22333",
   "url": "https://huggingface.co/HU22333/arr-video-dev2-archive",
   "created_at": "2026-11-03T07:05:58.000Z",
-  "updated_at": "2026-11-03T07:05:59.000Z",
+  "updated_at": "2026-11-03T07:37:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "video-text-to-text",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "safetensors",
     "video-text-to-text",
     "research",
     "base_model:Qwen/Qwen3-VL-8B-Instruct",
@@ -25,10 +26,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 162818534598,
+  "storage_human": "162.8 GB",
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

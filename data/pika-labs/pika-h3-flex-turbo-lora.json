@@ -4,8 +4,8 @@
   "slug": "pika-labs-pika-h3-flex-turbo-lora",
   "author": "Pika-Labs",
   "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
-  "created_at": "2026-11-03T02:18:34.000Z",
-  "updated_at": "2026-11-03T02:18:35.000Z",
+  "created_at": "2026-10-29T18:45:00.000Z",
+  "updated_at": "2026-10-30T11:48:46.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "image-to-video",
@@ -35,13 +35,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 94,
+  "likes": 98,
   "downloads_30d": 29390,
-  "trending_score": 93,
+  "trending_score": 97,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20317303792,
-  "storage_human": "20.3 GB",
+  "storage_bytes": 20627493184,
+  "storage_human": "20.6 GB",
   "base_model": "Pika-Labs/Pika-H3-Flex, lightx2v/Minimax-h3-Turbo, MiniMaxAI/MiniMax-H3, WarmBloodAban/Minimax-h3_Singularity, Iwannapose/minimax_h3_pdmd_2nfe_comfyui",
   "formats": [
     "diffusers"

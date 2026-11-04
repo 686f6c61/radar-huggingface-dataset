@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-4bit",
   "created_at": "2026-10-22T18:43:55.000Z",
-  "updated_at": "2026-11-02T21:52:56.000Z",
+  "updated_at": "2026-11-03T07:41:46.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -60,7 +60,7 @@
     "region:us"
   ],
   "likes": 11,
-  "downloads_30d": 2323,
+  "downloads_30d": 2629,
   "trending_score": 0,
   "parameters": 1918181888,
   "parameters_human": "1.92B",

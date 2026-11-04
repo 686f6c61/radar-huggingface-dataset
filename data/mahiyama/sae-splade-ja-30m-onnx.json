@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mahiyama/sae-splade-ja-30m-onnx",
+  "slug": "mahiyama-sae-splade-ja-30m-onnx",
+  "author": "mahiyama",
+  "url": "https://huggingface.co/mahiyama/sae-splade-ja-30m-onnx",
+  "created_at": "2026-11-04T03:14:36.000Z",
+  "updated_at": "2026-11-04T03:14:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "sparse",
+    "splade",
+    "information-retrieval",
+    "learned-sparse-retrieval",
+    "sparse-autoencoder",
+    "japanese",
+    "modernbert",
+    "feature-extraction",
+    "ja",
+    "base_model:mahiyama/sae-splade-ja-30m",
+    "base_model:quantized:mahiyama/sae-splade-ja-30m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 399276993,
+  "storage_human": "399 MB",
+  "base_model": "mahiyama/sae-splade-ja-30m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_grape_combine_WGM_MP_qwen14b",
   "created_at": "2026-11-03T11:43:56.000Z",
-  "updated_at": "2026-11-03T11:48:35.000Z",
+  "updated_at": "2026-11-03T16:43:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
-  "storage_bytes": 59091622760,
-  "storage_human": "59.1 GB",
+  "storage_bytes": 118171823624,
+  "storage_human": "118.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

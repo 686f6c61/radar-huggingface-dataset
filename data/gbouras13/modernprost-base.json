@@ -5,7 +5,7 @@
   "author": "gbouras13",
   "url": "https://huggingface.co/gbouras13/modernprost-base",
   "created_at": "2026-07-27T01:41:31.000Z",
-  "updated_at": "2026-11-02T05:09:39.000Z",
+  "updated_at": "2026-11-04T01:08:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 1040968768,
   "parameters_human": "1.04B",

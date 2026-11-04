@@ -5,7 +5,7 @@
   "author": "Convergent-ch",
   "url": "https://huggingface.co/Convergent-ch/Alpina-Big-2.0-300M",
   "created_at": "2026-11-02T20:20:32.000Z",
-  "updated_at": "2026-11-02T20:31:35.000Z",
+  "updated_at": "2026-11-03T11:24:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 316,
   "trending_score": 0,
   "parameters": 299410432,
   "parameters_human": "299.4M",

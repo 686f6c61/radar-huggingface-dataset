@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "alaaramadan/cipher_game",
+  "slug": "alaaramadan-cipher_game",
+  "author": "alaaramadan",
+  "url": "https://huggingface.co/alaaramadan/cipher_game",
+  "created_at": "2026-11-04T01:01:39.000Z",
+  "updated_at": "2026-11-04T01:04:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43912,
+  "storage_human": "43912 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are the rules for growing trees in minecraft?",
+      "url": "https://www.gameslearningsociety.org/what-are-the-rules-for-growing-trees-in-minecraft/",
+      "snippet": "Jul 11, 2023 · How much space do you need between jungle trees in Minecraft? 2×2 jungle trees require a 5×5 column of …"
+    },
+    {
+      "title": "How far do trees need to be apart in Minecraft?",
+      "url": "https://www.gameslearningsociety.org/how-far-do-trees-need-to-be-apart-in-minecraft/",
+      "snippet": "Sep 8, 2024 · Direct Answer: How Far Do Trees Need to Be Apart in Minecraft? According to Minecraft’s official documentation, the …"
+    }
+  ]
+}

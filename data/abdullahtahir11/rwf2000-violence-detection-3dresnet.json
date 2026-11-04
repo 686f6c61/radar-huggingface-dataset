@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Abdullahtahir11/rwf2000-violence-detection-3dresnet",
+  "slug": "abdullahtahir11-rwf2000-violence-detection-3dresnet",
+  "author": "Abdullahtahir11",
+  "url": "https://huggingface.co/Abdullahtahir11/rwf2000-violence-detection-3dresnet",
+  "created_at": "2026-11-03T22:27:59.000Z",
+  "updated_at": "2026-11-03T22:28:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video-classification",
+    "action-recognition",
+    "violence-detection",
+    "surveillance",
+    "3d-resnet",
+    "rwf-2000",
+    "en",
+    "dataset:rwf-2000",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 398145045,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Violence Detection",
+      "dataset": "RWF-2000",
+      "metric": "Validation Accuracy",
+      "value": 0.9
+    },
+    {
+      "task": "Violence Detection",
+      "dataset": "RWF-2000",
+      "metric": "ROC-AUC",
+      "value": 0.9649
+    }
+  ],
+  "sources": []
+}

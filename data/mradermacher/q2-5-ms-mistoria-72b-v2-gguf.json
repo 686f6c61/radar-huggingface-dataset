@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Q2.5-MS-Mistoria-72b-v2-GGUF",
+  "slug": "mradermacher-q2-5-ms-mistoria-72b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Q2.5-MS-Mistoria-72b-v2-GGUF",
+  "created_at": "2024-11-23T09:49:54.000Z",
+  "updated_at": "2026-11-03T22:29:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:SteelStorage/Q2.5-MS-Mistoria-72b-v2",
+    "base_model:quantized:SteelStorage/Q2.5-MS-Mistoria-72b-v2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 520404536128,
+  "storage_human": "520.4 GB",
+  "base_model": "SteelStorage/Q2.5-MS-Mistoria-72b-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

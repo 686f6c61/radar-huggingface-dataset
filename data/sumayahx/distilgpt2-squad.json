@@ -5,7 +5,7 @@
   "author": "Sumayahx",
   "url": "https://huggingface.co/Sumayahx/distilgpt2-squad",
   "created_at": "2026-10-16T13:17:10.000Z",
-  "updated_at": "2026-11-02T23:46:34.000Z",
+  "updated_at": "2026-11-03T12:26:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 81912576,
   "parameters_human": "81.9M",
-  "storage_bytes": 655321057,
-  "storage_human": "655 MB",
+  "storage_bytes": 982978985,
+  "storage_human": "983 MB",
   "base_model": null,
   "formats": [
     "safetensors"

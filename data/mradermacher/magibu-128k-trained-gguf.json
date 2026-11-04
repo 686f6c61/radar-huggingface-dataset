@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/magibu-128k-trained-GGUF",
+  "slug": "mradermacher-magibu-128k-trained-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/magibu-128k-trained-GGUF",
+  "created_at": "2026-01-14T06:24:09.000Z",
+  "updated_at": "2026-11-03T22:28:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "sft",
+    "en",
+    "base_model:alibayram/magibu-128k-trained",
+    "base_model:quantized:alibayram/magibu-128k-trained",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 125,
+  "trending_score": 0,
+  "parameters": 11262717696,
+  "parameters_human": "11.26B",
+  "storage_bytes": 79152673440,
+  "storage_human": "79.2 GB",
+  "base_model": "alibayram/magibu-128k-trained",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

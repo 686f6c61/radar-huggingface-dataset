@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nealfennimore/granite-embedding-small-english-r2-ONNX",
+  "slug": "nealfennimore-granite-embedding-small-english-r2-onnx",
+  "author": "nealfennimore",
+  "url": "https://huggingface.co/nealfennimore/granite-embedding-small-english-r2-ONNX",
+  "created_at": "2026-11-03T23:17:07.000Z",
+  "updated_at": "2026-11-03T23:17:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "modernbert",
+    "feature-extraction",
+    "embeddings",
+    "retrieval",
+    "base_model:ibm-granite/granite-embedding-small-english-r2",
+    "base_model:quantized:ibm-granite/granite-embedding-small-english-r2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48092302,
+  "storage_human": "48 MB",
+  "base_model": "ibm-granite/granite-embedding-small-english-r2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

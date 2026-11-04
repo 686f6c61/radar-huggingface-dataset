@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Q-P1NG/edgetam",
+  "slug": "q-p1ng-edgetam",
+  "author": "Q-P1NG",
+  "url": "https://huggingface.co/Q-P1NG/edgetam",
+  "created_at": "2026-11-03T22:27:06.000Z",
+  "updated_at": "2026-11-03T22:27:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "segment-anything",
+    "sam2",
+    "edgetam",
+    "mask-generation",
+    "base_model:facebook/EdgeTAM",
+    "base_model:quantized:facebook/EdgeTAM",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40896123,
+  "storage_human": "41 MB",
+  "base_model": "facebook/EdgeTAM",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,9 +5,9 @@
   "author": "SentinelHub",
   "url": "https://huggingface.co/SentinelHub/R-08-Transformer-Baseline",
   "created_at": "2026-10-30T20:24:33.000Z",
-  "updated_at": "2026-11-01T19:46:41.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-11-03T19:10:59.000Z",
+  "license": "r08-non-commercial-ethical-license-v2.0",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": null,
   "languages": [
@@ -27,7 +27,7 @@
     "custom_code",
     "it",
     "dataset:v22_chinchilla_mix",
-    "license:apache-2.0",
+    "license:other",
     "endpoints_compatible",
     "region:us"
   ],

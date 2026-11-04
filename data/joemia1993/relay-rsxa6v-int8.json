@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "joemia1993/relay-rsxa6v-int8",
+  "slug": "joemia1993-relay-rsxa6v-int8",
+  "author": "joemia1993",
+  "url": "https://huggingface.co/joemia1993/relay-rsxa6v-int8",
+  "created_at": "2026-11-03T22:33:32.000Z",
+  "updated_at": "2026-11-03T22:34:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "en",
+    "zh",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 115458816,
+  "parameters_human": "115.5M",
+  "storage_bytes": 115817416,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

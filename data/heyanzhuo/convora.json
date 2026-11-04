@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "heyanzhuo/convora",
+  "slug": "heyanzhuo-convora",
+  "author": "heyanzhuo",
+  "url": "https://huggingface.co/heyanzhuo/convora",
+  "created_at": "2026-11-04T02:49:32.000Z",
+  "updated_at": "2026-11-04T03:07:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "pytorch",
+    "cnn",
+    "tcn",
+    "engram",
+    "delta-rule",
+    "npu",
+    "edge-ai",
+    "rknn",
+    "custom-architecture",
+    "text-generation",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240750026,
+  "storage_human": "241 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

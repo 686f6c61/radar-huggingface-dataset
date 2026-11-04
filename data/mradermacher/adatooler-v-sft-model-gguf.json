@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AdaTooler-V-SFT-model-GGUF",
+  "slug": "mradermacher-adatooler-v-sft-model-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AdaTooler-V-SFT-model-GGUF",
+  "created_at": "2026-01-14T06:17:24.000Z",
+  "updated_at": "2026-11-03T21:19:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:AdaTooler-V/AdaTooler-V-SFT-model",
+    "base_model:quantized:AdaTooler-V/AdaTooler-V-SFT-model",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 272,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357182336,
+  "storage_human": "70.4 GB",
+  "base_model": "AdaTooler-V/AdaTooler-V-SFT-model",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "halfmoon-mind",
   "url": "https://huggingface.co/halfmoon-mind/still-generative-detail-4x",
   "created_at": "2026-11-03T08:59:41.000Z",
-  "updated_at": "2026-11-03T09:00:46.000Z",
+  "updated_at": "2026-11-04T01:35:46.000Z",
   "license": "openrail++",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -25,7 +25,7 @@
     "license:openrail++",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

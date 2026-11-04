@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "renatoschust/agentmujo-qwen3.5-9b-bos",
+  "slug": "renatoschust-agentmujo-qwen3-5-9b-bos",
+  "author": "renatoschust",
+  "url": "https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos",
+  "created_at": "2026-11-03T21:41:42.000Z",
+  "updated_at": "2026-11-03T21:45:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "bs"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_5",
+    "agentmujo",
+    "bosnian",
+    "function-calling",
+    "agentic",
+    "lora",
+    "lumi",
+    "rocm",
+    "bs",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839709813,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

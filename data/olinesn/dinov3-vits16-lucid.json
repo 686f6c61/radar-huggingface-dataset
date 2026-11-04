@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "olinesn/dinov3-vits16-lucid",
+  "slug": "olinesn-dinov3-vits16-lucid",
+  "author": "olinesn",
+  "url": "https://huggingface.co/olinesn/dinov3-vits16-lucid",
+  "created_at": "2026-11-03T21:37:36.000Z",
+  "updated_at": "2026-11-03T21:37:40.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "dinov3_vit",
+    "image-feature-extraction",
+    "dinov3",
+    "webgpu",
+    "base_model:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "base_model:quantized:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129645014,
+  "storage_human": "130 MB",
+  "base_model": "facebook/dinov3-vits16-pretrain-lvd1689m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

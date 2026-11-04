@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Sethblocks/Starlight-Flash",
+  "slug": "sethblocks-starlight-flash",
+  "author": "Sethblocks",
+  "url": "https://huggingface.co/Sethblocks/Starlight-Flash",
+  "created_at": "2026-11-04T00:20:05.000Z",
+  "updated_at": "2026-11-04T00:34:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3_5",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 18414228151,
+  "storage_human": "18.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "positron-ai/Ministral-3-8B-Instruct-2512",
+  "slug": "positron-ai-ministral-3-8b-instruct-2512",
+  "author": "positron-ai",
+  "url": "https://huggingface.co/positron-ai/Ministral-3-8B-Instruct-2512",
+  "created_at": "2026-11-04T01:06:16.000Z",
+  "updated_at": "2026-11-04T01:07:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "mirror",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512",
+    "base_model:quantized:mistralai/Ministral-3-8B-Instruct-2512",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8918026240,
+  "parameters_human": "8.92B",
+  "storage_bytes": 20875119204,
+  "storage_human": "20.9 GB",
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

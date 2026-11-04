@@ -5,7 +5,7 @@
   "author": "AXERA-TECH",
   "url": "https://huggingface.co/AXERA-TECH/Qwen3-TTS-0.6B-AX8860-llama.cpp",
   "created_at": "2026-11-01T09:53:51.000Z",
-  "updated_at": "2026-11-02T02:27:47.000Z",
+  "updated_at": "2026-11-03T15:11:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
   "trending_score": 0,
   "parameters": 602341376,
   "parameters_human": "602.3M",
-  "storage_bytes": 2683604834,
+  "storage_bytes": 2709525350,
   "storage_human": "2.7 GB",
   "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
   "formats": [

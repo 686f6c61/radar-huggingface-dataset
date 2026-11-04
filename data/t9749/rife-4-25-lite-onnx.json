@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "t9749/rife-4.25-lite-onnx",
+  "slug": "t9749-rife-4-25-lite-onnx",
+  "author": "t9749",
+  "url": "https://huggingface.co/t9749/rife-4.25-lite-onnx",
+  "created_at": "2026-11-04T00:29:38.000Z",
+  "updated_at": "2026-11-04T00:37:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "frame-interpolation",
+    "rife",
+    "video",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22677513,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

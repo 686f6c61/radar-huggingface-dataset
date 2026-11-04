@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "emee-ai/SeedVR2_comfyUI",
+  "slug": "emee-ai-seedvr2_comfyui",
+  "author": "emee-ai",
+  "url": "https://huggingface.co/emee-ai/SeedVR2_comfyUI",
+  "created_at": "2026-11-03T23:26:55.000Z",
+  "updated_at": "2026-11-03T23:26:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "art",
+    "video-to-video",
+    "base_model:ByteDance-Seed/SeedVR2-3B",
+    "base_model:finetune:ByteDance-Seed/SeedVR2-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60114016574,
+  "storage_human": "60.1 GB",
+  "base_model": "ByteDance-Seed/SeedVR2-7B, ByteDance-Seed/SeedVR2-3B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

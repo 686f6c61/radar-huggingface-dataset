@@ -5,7 +5,7 @@
   "author": "Dreemurr0",
   "url": "https://huggingface.co/Dreemurr0/radyoai-risk-onnx",
   "created_at": "2026-11-03T20:22:18.000Z",
-  "updated_at": "2026-11-03T20:22:23.000Z",
+  "updated_at": "2026-11-03T21:44:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "tabular-classification",
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 532,
-  "storage_human": "532 B",
+  "storage_bytes": 1064,
+  "storage_human": "1064 B",
   "base_model": null,
   "formats": [
     "onnx"

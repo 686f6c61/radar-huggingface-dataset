@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "henrybrenomota/lumi-4b",
+  "slug": "henrybrenomota-lumi-4b",
+  "author": "henrybrenomota",
+  "url": "https://huggingface.co/henrybrenomota/lumi-4b",
+  "created_at": "2026-11-04T00:32:15.000Z",
+  "updated_at": "2026-11-04T00:32:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "ceia",
+    "portuguese",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "pt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 7964424045,
+  "storage_human": "8.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

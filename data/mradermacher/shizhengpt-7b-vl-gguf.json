@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ShizhenGPT-7B-VL-GGUF",
+  "slug": "mradermacher-shizhengpt-7b-vl-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ShizhenGPT-7B-VL-GGUF",
+  "created_at": "2025-11-15T07:15:22.000Z",
+  "updated_at": "2026-11-03T22:28:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Traditional Chinese Medicin",
+    "Multimodal LLM",
+    "multimodal",
+    "zh",
+    "dataset:FreedomIntelligence/TCM-Pretrain-Data-ShizhenGPT",
+    "dataset:FreedomIntelligence/TCM-Instruction-Tuning-ShizhenGPT",
+    "base_model:FreedomIntelligence/ShizhenGPT-7B-VL",
+    "base_model:quantized:FreedomIntelligence/ShizhenGPT-7B-VL",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 379,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357198592,
+  "storage_human": "70.4 GB",
+  "base_model": "FreedomIntelligence/ShizhenGPT-7B-VL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

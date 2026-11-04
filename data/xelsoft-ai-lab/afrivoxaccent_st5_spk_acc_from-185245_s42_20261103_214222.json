@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_from-185245_s42_20261103_214222",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_from-185245_s42_20261103_214222",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_from-185245_s42_20261103_214222",
+  "created_at": "2026-11-03T22:48:45.000Z",
+  "updated_at": "2026-11-03T22:48:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144439266,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578049458,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stephen peterson - Retired Senior Metering Engineer from ... - LinkedIn",
+      "url": "https://uk.linkedin.com/in/stephen-peterson-4263311b",
+      "snippet": "View stephen peterson’s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

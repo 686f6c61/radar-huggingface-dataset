@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-7B-Arcee-IST-Math-GGUF",
+  "slug": "mradermacher-qwen2-5-7b-arcee-ist-math-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Arcee-IST-Math-GGUF",
+  "created_at": "2026-02-13T07:57:30.000Z",
+  "updated_at": "2026-11-03T21:19:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Alelcv27/Qwen2.5-7B-Arcee-IST-Math",
+    "base_model:quantized:Alelcv27/Qwen2.5-7B-Arcee-IST-Math",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 237,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146895360,
+  "storage_human": "68.1 GB",
+  "base_model": "Alelcv27/Qwen2.5-7B-Arcee-IST-Math",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

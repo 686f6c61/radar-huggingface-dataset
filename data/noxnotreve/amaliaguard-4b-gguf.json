@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "NoxNotreve/amaliaguard-4b-GGUF",
+  "slug": "noxnotreve-amaliaguard-4b-gguf",
+  "author": "NoxNotreve",
+  "url": "https://huggingface.co/NoxNotreve/amaliaguard-4b-GGUF",
+  "created_at": "2026-11-04T00:45:36.000Z",
+  "updated_at": "2026-11-04T00:45:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safety",
+    "content-moderation",
+    "guardrails",
+    "gdpr",
+    "guard",
+    "portuguese",
+    "pt",
+    "en",
+    "base_model:amalia-llm/amaliaguard-4b",
+    "base_model:quantized:amalia-llm/amaliaguard-4b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389995008,
+  "storage_human": "36.4 GB",
+  "base_model": "amalia-llm/amaliaguard-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

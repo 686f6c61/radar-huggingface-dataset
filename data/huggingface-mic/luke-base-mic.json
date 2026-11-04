@@ -21,11 +21,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 219,
+  "downloads_30d": 357,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1098816884,
+  "storage_bytes": 1126563040,
   "storage_human": "1.1 GB",
   "base_model": "studio-ousia/luke-base",
   "formats": [],

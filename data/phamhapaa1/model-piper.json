@@ -5,7 +5,7 @@
   "author": "Phamhapaa1",
   "url": "https://huggingface.co/Phamhapaa1/Model-Piper",
   "created_at": "2026-10-26T12:32:40.000Z",
-  "updated_at": "2026-11-02T15:42:23.000Z",
+  "updated_at": "2026-11-03T08:50:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 444622950,
-  "storage_human": "445 MB",
+  "storage_bytes": 508140507,
+  "storage_human": "508 MB",
   "base_model": null,
   "formats": [
     "onnx"

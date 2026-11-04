@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Sethblocks/Starlight-Flash-GGUF",
+  "slug": "sethblocks-starlight-flash-gguf",
+  "author": "Sethblocks",
+  "url": "https://huggingface.co/Sethblocks/Starlight-Flash-GGUF",
+  "created_at": "2026-11-04T00:20:01.000Z",
+  "updated_at": "2026-11-04T00:50:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "text-generation",
+    "base_model:Sethblocks/Starlight-Flash",
+    "base_model:quantized:Sethblocks/Starlight-Flash",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 15566150528,
+  "storage_human": "15.6 GB",
+  "base_model": "Sethblocks/Starlight-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

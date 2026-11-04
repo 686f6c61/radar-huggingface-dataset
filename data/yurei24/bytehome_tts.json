@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "yurei24/Bytehome_TTS",
+  "slug": "yurei24-bytehome_tts",
+  "author": "yurei24",
+  "url": "https://huggingface.co/yurei24/Bytehome_TTS",
+  "created_at": "2026-10-08T04:15:15.000Z",
+  "updated_at": "2026-11-04T03:19:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "omnivoice",
+    "voice-cloning",
+    "audio",
+    "pytorch",
+    "text-to-speech",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 3270156434,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

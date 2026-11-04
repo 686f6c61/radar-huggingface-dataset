@@ -5,7 +5,7 @@
   "author": "Ouinche",
   "url": "https://huggingface.co/Ouinche/moss-image-qwen3.5-te-mlx-q8g64",
   "created_at": "2026-10-19T20:06:43.000Z",
-  "updated_at": "2026-11-01T14:29:24.000Z",
+  "updated_at": "2026-11-03T13:01:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",

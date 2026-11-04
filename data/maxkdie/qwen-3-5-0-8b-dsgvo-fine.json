@@ -5,7 +5,7 @@
   "author": "Maxkdie",
   "url": "https://huggingface.co/Maxkdie/qwen-3.5-0.8b-dsgvo-fine",
   "created_at": "2026-11-01T10:37:33.000Z",
-  "updated_at": "2026-11-01T18:38:02.000Z",
+  "updated_at": "2026-11-03T14:49:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "safetensors",
     "generated_from_trainer",
     "trl",
     "sft",
@@ -26,10 +27,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 32799396,
-  "storage_human": "33 MB",
+  "storage_bytes": 65598778,
+  "storage_human": "66 MB",
   "base_model": "Qwen/Qwen3.5-0.8B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

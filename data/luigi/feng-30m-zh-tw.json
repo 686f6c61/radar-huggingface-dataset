@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Luigi/feng-30m-zh-tw",
+  "slug": "luigi-feng-30m-zh-tw",
+  "author": "Luigi",
+  "url": "https://huggingface.co/Luigi/feng-30m-zh-tw",
+  "created_at": "2026-11-03T23:46:20.000Z",
+  "updated_at": "2026-11-04T00:49:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "zh-TW",
+    "traditional-chinese",
+    "tiny-llm",
+    "edge-ai",
+    "on-device",
+    "weight-space",
+    "no-finetuning",
+    "conversational",
+    "zh",
+    "base_model:jiaheng0815/feng-30m",
+    "base_model:finetune:jiaheng0815/feng-30m",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29429184,
+  "parameters_human": "29.4M",
+  "storage_bytes": 119460184,
+  "storage_human": "119 MB",
+  "base_model": "jiaheng0815/feng-30m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luigi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Luigi",
+      "snippet": "Bébé Luigi se fait surtout remarquer par ses pleurs, comme dans Mario et Luigi : Les Frères du temps, où il pleure à plusieurs …"
+    },
+    {
+      "title": "Luigi - Super Mario Wiki, the Mario encyclopedia",
+      "url": "https://www.mariowiki.com/Luigi",
+      "snippet": "Luigi is Mario's younger but taller twin brother, the secondary protagonist of the Super Mario franchise, and the main protagonist of …"
+    },
+    {
+      "title": "Luigi (character) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Luigi_(character)",
+      "snippet": "Luigi first appeared in Mario Bros., a 1983 platform game, in which he was originally designed as a palette swap of Mario with a …"
+    },
+    {
+      "title": "Luigi | Wiki Mario | Fandom",
+      "url": "https://mario.fandom.com/fr/wiki/Luigi",
+      "snippet": "Luigi existe depuis Mario Bros. et revient dans presque tous les opus. À première vue, Luigi se présente comme un peureux …"
+    },
+    {
+      "title": "Luigi - Wiki Mario, l’encyclopédie en ligne dédiée à Mario et à ses …",
+      "url": "https://wikimario.fr/Luigi",
+      "snippet": "Luigi est un protagoniste des séries de jeux vidéo Super Mario, Super Mario Bros. et Super Mario Land. Il est un humain originaire …"
+    }
+  ]
+}

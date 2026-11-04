@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/llm-jp-3-3.7b-Open-R1-Distill-GGUF",
+  "slug": "mradermacher-llm-jp-3-3-7b-open-r1-distill-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llm-jp-3-3.7b-Open-R1-Distill-GGUF",
+  "created_at": "2025-02-24T23:22:18.000Z",
+  "updated_at": "2026-11-04T03:56:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "open-r1",
+    "trl",
+    "sft",
+    "en",
+    "dataset:open-r1/OpenR1-Math-220k",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 158,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206904448,
+  "storage_human": "14.2 GB",
+  "base_model": "KMasaki/llm-jp-3-3.7b-Open-R1-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

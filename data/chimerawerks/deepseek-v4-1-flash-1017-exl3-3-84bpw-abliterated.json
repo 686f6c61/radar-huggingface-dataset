@@ -5,7 +5,7 @@
   "author": "ChimeraWerks",
   "url": "https://huggingface.co/ChimeraWerks/DeepSeek-V4.1-Flash-1017-EXL3-3.84bpw-abliterated",
   "created_at": "2026-10-31T04:00:56.000Z",
-  "updated_at": "2026-11-03T18:42:40.000Z",
+  "updated_at": "2026-11-03T21:26:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 136869563730,
   "parameters_human": "136.87B",
-  "storage_bytes": 273883054946,
-  "storage_human": "273.9 GB",
+  "storage_bytes": 275614814293,
+  "storage_human": "275.6 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"

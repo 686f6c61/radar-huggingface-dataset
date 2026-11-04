@@ -5,7 +5,7 @@
   "author": "agentscope-ai",
   "url": "https://huggingface.co/agentscope-ai/Piccolo-4B-Q8_0",
   "created_at": "2026-10-28T09:42:09.000Z",
-  "updated_at": "2026-11-02T08:25:11.000Z",
+  "updated_at": "2026-11-03T06:24:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 95,
+  "downloads_30d": 111,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",

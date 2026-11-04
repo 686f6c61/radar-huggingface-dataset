@@ -5,7 +5,7 @@
   "author": "InterpreticAI",
   "url": "https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-FP8",
   "created_at": "2026-10-31T09:32:59.000Z",
-  "updated_at": "2026-11-01T20:59:06.000Z",
+  "updated_at": "2026-11-04T00:20:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 49,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "trymirai/Qwen3.5-4B-M",
+  "slug": "trymirai-qwen3-5-4b-m",
+  "author": "trymirai",
+  "url": "https://huggingface.co/trymirai/Qwen3.5-4B-M",
+  "created_at": "2026-06-04T15:51:28.000Z",
+  "updated_at": "2026-11-04T02:00:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "uzu",
+  "languages": [],
+  "tags": [
+    "uzu",
+    "safetensors",
+    "mirai",
+    "4-bit",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 450,
+  "trending_score": 0,
+  "parameters": 2302180352,
+  "parameters_human": "2.30B",
+  "storage_bytes": 7748531903,
+  "storage_human": "7.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

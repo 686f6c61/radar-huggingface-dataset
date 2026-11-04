@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "AnalogVector/voxdicta-models",
+  "slug": "analogvector-voxdicta-models",
+  "author": "AnalogVector",
+  "url": "https://huggingface.co/AnalogVector/voxdicta-models",
+  "created_at": "2026-10-08T15:40:43.000Z",
+  "updated_at": "2026-11-03T22:50:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "voxdicta",
+    "speech-recognition",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 979949072,
+  "parameters_human": "979.9M",
+  "storage_bytes": 8052033833,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

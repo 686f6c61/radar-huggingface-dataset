@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Kolibri-1-mic",
+  "slug": "huggingface-mic-kolibri-1-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Kolibri-1-mic",
+  "created_at": "2026-11-03T20:53:44.000Z",
+  "updated_at": "2026-11-03T21:14:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kolibri1",
+    "mic",
+    "test-artifact",
+    "base_model:Aleph-Alpha/Kolibri-1",
+    "base_model:finetune:Aleph-Alpha/Kolibri-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16508040,
+  "parameters_human": "16.5M",
+  "storage_bytes": 33022440,
+  "storage_human": "33 MB",
+  "base_model": "Aleph-Alpha/Kolibri-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

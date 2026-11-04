@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455",
   "created_at": "2026-10-20T19:45:32.000Z",
-  "updated_at": "2026-10-20T22:30:44.000Z",
+  "updated_at": "2026-11-03T23:37:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 9235305795,
-  "storage_human": "9.2 GB",
+  "storage_bytes": 24957388965,
+  "storage_human": "25.0 GB",
   "base_model": "francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455",
   "formats": [
     "safetensors"

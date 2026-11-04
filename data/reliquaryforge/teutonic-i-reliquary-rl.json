@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 20248,
+  "downloads_30d": 21597,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 71650613037,
-  "storage_human": "71.7 GB",
+  "storage_bytes": 17927645253,
+  "storage_human": "17.9 GB",
   "base_model": "ReliquaryForge/Teutonic-I-Reliquary-SFT",
   "formats": [
     "safetensors"

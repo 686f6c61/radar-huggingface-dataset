@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "seyarizumu/grab_cable_v2",
+  "slug": "seyarizumu-grab_cable_v2",
+  "author": "seyarizumu",
+  "url": "https://huggingface.co/seyarizumu/grab_cable_v2",
+  "created_at": "2026-11-03T21:27:10.000Z",
+  "updated_at": "2026-11-03T21:27:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "fact",
+    "dataset:seyarizumu/grab_cable_v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63351060,
+  "parameters_human": "63.4M",
+  "storage_bytes": 253451852,
+  "storage_human": "253 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

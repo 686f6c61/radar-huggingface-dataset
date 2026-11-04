@@ -5,7 +5,7 @@
   "author": "ViuAI",
   "url": "https://huggingface.co/ViuAI/ViuAI-500M",
   "created_at": "2026-07-12T12:25:41.000Z",
-  "updated_at": "2026-11-03T02:40:58.000Z",
+  "updated_at": "2026-11-03T15:53:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 837027555434,
-  "storage_human": "837.0 GB",
+  "storage_bytes": 840160891330,
+  "storage_human": "840.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

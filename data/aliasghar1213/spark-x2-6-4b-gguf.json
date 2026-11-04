@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Aliasghar1213/Spark-X2.6-4B-GGUF",
+  "slug": "aliasghar1213-spark-x2-6-4b-gguf",
+  "author": "Aliasghar1213",
+  "url": "https://huggingface.co/Aliasghar1213/Spark-X2.6-4B-GGUF",
+  "created_at": "2026-11-04T01:06:54.000Z",
+  "updated_at": "2026-11-04T01:06:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llm",
+    "sparkx2_5",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:quantized:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4447623680,
+  "parameters_human": "4.45B",
+  "storage_bytes": 16148544291,
+  "storage_human": "16.1 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

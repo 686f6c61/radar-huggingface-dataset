@@ -4,8 +4,8 @@
   "slug": "regi655-zimbra-helper-gguf",
   "author": "Regi655",
   "url": "https://huggingface.co/Regi655/zimbra-helper-GGUF",
-  "created_at": "2026-10-31T18:02:52.000Z",
-  "updated_at": "2026-10-31T18:08:59.000Z",
+  "created_at": "2026-11-03T21:55:36.000Z",
+  "updated_at": "2026-11-03T21:55:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,12 +33,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 66,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 1942653248,
   "parameters_human": "1.94B",
-  "storage_bytes": 1317351296,
-  "storage_human": "1.3 GB",
+  "storage_bytes": 3230668911,
+  "storage_human": "3.2 GB",
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"

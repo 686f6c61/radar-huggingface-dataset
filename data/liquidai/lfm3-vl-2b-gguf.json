@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF",
   "created_at": "2026-10-19T20:29:48.000Z",
-  "updated_at": "2026-11-03T02:38:47.000Z",
+  "updated_at": "2026-11-03T14:49:00.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -57,14 +57,14 @@
     "region:us",
     "conversational"
   ],
-  "likes": 62,
+  "likes": 63,
   "downloads_30d": 71123,
-  "trending_score": 45,
+  "trending_score": 38,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
-  "storage_bytes": 14576060064,
-  "storage_human": "14.6 GB",
-  "base_model": "LiquidAI/LFM3-VL-2B",
+  "storage_bytes": 15856080128,
+  "storage_human": "15.9 GB",
+  "base_model": "LiquidAI/LFM3-VL-2B, LiquidAI/LFM3-VL-2B-NVFP4",
   "formats": [
     "gguf"
   ],

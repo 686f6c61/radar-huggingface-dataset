@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "receptron/yomiscript-ja-pitch",
+  "slug": "receptron-yomiscript-ja-pitch",
+  "author": "receptron",
+  "url": "https://huggingface.co/receptron/yomiscript-ja-pitch",
+  "created_at": "2026-11-03T23:37:26.000Z",
+  "updated_at": "2026-11-03T23:37:42.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "text-to-speech",
+    "pitch-accent",
+    "yomiscript",
+    "ja",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6676486,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

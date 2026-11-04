@@ -5,7 +5,7 @@
   "author": "CMSManhattan",
   "url": "https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-2B-chat",
   "created_at": "2026-10-27T12:52:27.000Z",
-  "updated_at": "2026-10-30T00:37:24.000Z",
+  "updated_at": "2026-11-04T00:54:04.000Z",
   "license": "jirack-proprietary",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,8 +22,8 @@
     "agents",
     "robotics",
     "text-generation",
-    "base_model:CMSManhattan/JiRackUltra_7b",
-    "base_model:finetune:CMSManhattan/JiRackUltra_7b",
+    "base_model:CMSManhattan/JiRackUltra_1b",
+    "base_model:finetune:CMSManhattan/JiRackUltra_1b",
     "license:bsl-1.0",
     "region:us"
   ],
@@ -34,7 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
-  "base_model": "CMSManhattan/JiRackUltra_7b",
+  "base_model": "CMSManhattan/JiRackUltra_1b",
   "formats": [
     "gguf"
   ],

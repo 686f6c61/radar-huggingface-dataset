@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "SphericalCowww/CubicDoggo_06Z",
+  "slug": "sphericalcowww-cubicdoggo_06z",
+  "author": "SphericalCowww",
+  "url": "https://huggingface.co/SphericalCowww/CubicDoggo_06Z",
+  "created_at": "2026-11-03T23:39:50.000Z",
+  "updated_at": "2026-11-04T00:01:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "onnx",
+    "robotics",
+    "ros2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136494562,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

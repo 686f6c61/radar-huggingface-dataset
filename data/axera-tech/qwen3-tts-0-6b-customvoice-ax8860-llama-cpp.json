@@ -5,7 +5,7 @@
   "author": "AXERA-TECH",
   "url": "https://huggingface.co/AXERA-TECH/Qwen3-TTS-0.6B-CustomVoice-AX8860-llama.cpp",
   "created_at": "2026-11-02T11:57:49.000Z",
-  "updated_at": "2026-11-03T07:42:59.000Z",
+  "updated_at": "2026-11-03T15:11:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
   "trending_score": 0,
   "parameters": 602341376,
   "parameters_human": "602.3M",
-  "storage_bytes": 1855146386,
+  "storage_bytes": 1871027782,
   "storage_human": "1.9 GB",
   "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
   "formats": [

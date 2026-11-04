@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "PeterCConant/tinystories-story-filler",
+  "slug": "petercconant-tinystories-story-filler",
+  "author": "PeterCConant",
+  "url": "https://huggingface.co/PeterCConant/tinystories-story-filler",
+  "created_at": "2026-11-03T22:07:35.000Z",
+  "updated_at": "2026-11-03T22:08:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation",
+    "story-infilling",
+    "encoder-decoder",
+    "pytorch",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37488209,
+  "parameters_human": "37.5M",
+  "storage_bytes": 149965604,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

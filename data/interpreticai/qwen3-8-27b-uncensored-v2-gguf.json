@@ -5,7 +5,7 @@
   "author": "InterpreticAI",
   "url": "https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-GGUF",
   "created_at": "2026-10-31T09:45:29.000Z",
-  "updated_at": "2026-11-01T20:59:10.000Z",
+  "updated_at": "2026-11-04T00:20:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 275,
+  "downloads_30d": 498,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 35476643072,
-  "storage_human": "35.5 GB",
+  "storage_bytes": 45989020832,
+  "storage_human": "46.0 GB",
   "base_model": "InterpreticAI/Qwen3.8-27B-Uncensored-v2",
   "formats": [
     "gguf"

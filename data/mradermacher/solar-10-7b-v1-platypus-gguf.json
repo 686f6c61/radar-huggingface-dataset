@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SOLAR-10.7B-v1-Platypus-GGUF",
+  "slug": "mradermacher-solar-10-7b-v1-platypus-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SOLAR-10.7B-v1-Platypus-GGUF",
+  "created_at": "2026-01-14T07:43:14.000Z",
+  "updated_at": "2026-11-03T22:27:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:z8086486/SOLAR-10.7B-v1-Platypus",
+    "base_model:quantized:z8086486/SOLAR-10.7B-v1-Platypus",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 102,
+  "trending_score": 0,
+  "parameters": 10731524096,
+  "parameters_human": "10.73B",
+  "storage_bytes": 283773974784,
+  "storage_human": "283.8 GB",
+  "base_model": "z8086486/SOLAR-10.7B-v1-Platypus",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

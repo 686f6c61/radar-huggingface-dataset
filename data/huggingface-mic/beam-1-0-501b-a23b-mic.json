@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Beam-1.0-501B-A23B-mic",
+  "slug": "huggingface-mic-beam-1-0-501b-a23b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Beam-1.0-501B-A23B-mic",
+  "created_at": "2026-11-03T20:51:52.000Z",
+  "updated_at": "2026-11-03T21:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beam",
+    "mic",
+    "test-artifact",
+    "base_model:reflection/Beam-1.0-501B-A23B",
+    "base_model:finetune:reflection/Beam-1.0-501B-A23B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19572148,
+  "parameters_human": "19.6M",
+  "storage_bytes": 78296280,
+  "storage_human": "78 MB",
+  "base_model": "reflection/Beam-1.0-501B-A23B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

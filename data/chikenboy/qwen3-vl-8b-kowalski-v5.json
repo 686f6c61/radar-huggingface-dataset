@@ -5,7 +5,7 @@
   "author": "ChikenBoy",
   "url": "https://huggingface.co/ChikenBoy/qwen3-vl-8b-kowalski-v5",
   "created_at": "2026-11-01T19:30:11.000Z",
-  "updated_at": "2026-11-02T11:07:08.000Z",
+  "updated_at": "2026-11-03T13:58:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 0,
+  "downloads_30d": 320,
   "trending_score": 0,
   "parameters": 8767123696,
   "parameters_human": "8.77B",

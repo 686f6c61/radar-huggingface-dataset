@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/mistral-small-24b-harmoni-GGUF",
+  "slug": "mradermacher-mistral-small-24b-harmoni-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mistral-small-24b-harmoni-GGUF",
+  "created_at": "2026-05-14T08:58:30.000Z",
+  "updated_at": "2026-11-03T21:18:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ssoni-harmoni/mistral-small-24b-harmoni",
+    "base_model:quantized:ssoni-harmoni/mistral-small-24b-harmoni",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 155,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 162766478880,
+  "storage_human": "162.8 GB",
+  "base_model": "ssoni-harmoni/mistral-small-24b-harmoni",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

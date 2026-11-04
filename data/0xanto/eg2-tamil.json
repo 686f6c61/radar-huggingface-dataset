@@ -5,7 +5,7 @@
   "author": "0xanto",
   "url": "https://huggingface.co/0xanto/eg2-tamil",
   "created_at": "2026-10-25T02:17:24.000Z",
-  "updated_at": "2026-10-25T03:59:15.000Z",
+  "updated_at": "2026-11-03T04:35:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 40,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 70599951,
   "parameters_human": "70.6M",

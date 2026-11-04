@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Skywork-Critic-Llama-3.1-70B-GGUF",
+  "slug": "mradermacher-skywork-critic-llama-3-1-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Skywork-Critic-Llama-3.1-70B-GGUF",
+  "created_at": "2025-03-07T12:06:02.000Z",
+  "updated_at": "2026-11-03T23:35:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Skywork/Skywork-Critic-Llama-3.1-70B",
+    "base_model:quantized:Skywork/Skywork-Critic-Llama-3.1-70B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 119,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303035168,
+  "storage_human": "481.3 GB",
+  "base_model": "Skywork/Skywork-Critic-Llama-3.1-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

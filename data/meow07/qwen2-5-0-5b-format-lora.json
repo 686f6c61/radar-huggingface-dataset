@@ -5,7 +5,7 @@
   "author": "Meow07",
   "url": "https://huggingface.co/Meow07/qwen2.5-0.5b-format-lora",
   "created_at": "2026-11-02T14:17:07.000Z",
-  "updated_at": "2026-11-02T14:20:53.000Z",
+  "updated_at": "2026-11-03T03:39:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lichtphyz/act_v3_aug_desktop",
+  "slug": "lichtphyz-act_v3_aug_desktop",
+  "author": "lichtphyz",
+  "url": "https://huggingface.co/lichtphyz/act_v3_aug_desktop",
+  "created_at": "2026-10-19T23:45:19.000Z",
+  "updated_at": "2026-11-03T22:48:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "so101",
+    "dataset:lichtphyz/so101_block_to_bin_v3",
+    "dataset:lichtphyz/rollout_act_v3_aug_desktop",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 223147105,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

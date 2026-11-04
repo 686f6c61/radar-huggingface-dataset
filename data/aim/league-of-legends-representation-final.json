@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Aim/league-of-legends-representation-final",
+  "slug": "aim-league-of-legends-representation-final",
+  "author": "Aim",
+  "url": "https://huggingface.co/Aim/league-of-legends-representation-final",
+  "created_at": "2026-11-04T02:41:19.000Z",
+  "updated_at": "2026-11-04T02:49:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "league-of-legends",
+    "representation-learning",
+    "tabular",
+    "masked-reconstruction",
+    "custom-code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3644584,
+  "parameters_human": "3.6M",
+  "storage_bytes": 14591304,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

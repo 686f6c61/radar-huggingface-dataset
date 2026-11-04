@@ -5,7 +5,7 @@
   "author": "danielrosehill",
   "url": "https://huggingface.co/danielrosehill/term-context-sentence-generator-granite-4.2-3b-v1-GGUF",
   "created_at": "2026-11-03T09:49:44.000Z",
-  "updated_at": "2026-11-03T09:59:01.000Z",
+  "updated_at": "2026-11-03T11:51:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,8 +19,8 @@
     "vocabulary",
     "text-generation",
     "conversational",
-    "base_model:danielrosehill/term-context-sentence-generator-granite-4.2-3b-v1",
-    "base_model:quantized:danielrosehill/term-context-sentence-generator-granite-4.2-3b-v1",
+    "base_model:danielrosehill/Contextual-Sentence-Creator",
+    "base_model:quantized:danielrosehill/Contextual-Sentence-Creator",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -32,7 +32,7 @@
   "parameters_human": "3.66B",
   "storage_bytes": 6136645376,
   "storage_human": "6.1 GB",
-  "base_model": "danielrosehill/term-context-sentence-generator-granite-4.2-3b-v1",
+  "base_model": "danielrosehill/Contextual-Sentence-Creator",
   "formats": [
     "gguf"
   ],

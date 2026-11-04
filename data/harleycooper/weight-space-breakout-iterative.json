@@ -5,7 +5,7 @@
   "author": "HarleyCooper",
   "url": "https://huggingface.co/HarleyCooper/weight-space-breakout-iterative",
   "created_at": "2026-11-03T15:58:49.000Z",
-  "updated_at": "2026-11-03T15:58:51.000Z",
+  "updated_at": "2026-11-03T16:17:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 17253,
   "parameters_human": "17253",
-  "storage_bytes": 70943,
-  "storage_human": "70943 B",
+  "storage_bytes": 141886,
+  "storage_human": "141886 B",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CTRL-32B-GGUF",
+  "slug": "mradermacher-ctrl-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CTRL-32B-GGUF",
+  "created_at": "2025-02-12T06:16:03.000Z",
+  "updated_at": "2026-11-03T22:29:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Zhihui/CTRL-32B",
+    "base_model:quantized:Zhihui/CTRL-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000855200,
+  "storage_human": "224.0 GB",
+  "base_model": "Zhihui/CTRL-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

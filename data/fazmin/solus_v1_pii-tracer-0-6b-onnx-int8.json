@@ -5,7 +5,7 @@
   "author": "Fazmin",
   "url": "https://huggingface.co/Fazmin/solus_v1_pii-tracer-0.6b-onnx-int8",
   "created_at": "2026-11-03T03:48:54.000Z",
-  "updated_at": "2026-11-03T03:48:58.000Z",
+  "updated_at": "2026-11-03T04:00:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

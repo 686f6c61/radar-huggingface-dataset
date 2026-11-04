@@ -5,7 +5,7 @@
   "author": "aiden-jeon",
   "url": "https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-classifier",
   "created_at": "2026-11-03T06:44:20.000Z",
-  "updated_at": "2026-11-03T06:44:26.000Z",
+  "updated_at": "2026-11-03T08:47:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",

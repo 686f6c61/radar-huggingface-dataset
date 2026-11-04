@@ -48,10 +48,11 @@
     "dataset:ARTPARK-IISc/Vaani-transcription-part",
     "arxiv:2608.08235",
     "license:mit",
+    "eval-results",
     "region:us"
   ],
-  "likes": 100,
-  "downloads_30d": 11520,
+  "likes": 101,
+  "downloads_30d": 11526,
   "trending_score": 9,
   "parameters": null,
   "parameters_human": null,

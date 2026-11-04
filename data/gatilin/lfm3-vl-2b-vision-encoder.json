@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "gatilin/lfm3-vl-2b-vision-encoder",
+  "slug": "gatilin-lfm3-vl-2b-vision-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/lfm3-vl-2b-vision-encoder",
+  "created_at": "2026-11-04T02:11:16.000Z",
+  "updated_at": "2026-11-04T02:13:20.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "lfm3_vl",
+    "vision-encoder",
+    "image-feature-extraction",
+    "video",
+    "multimodal",
+    "custom_code",
+    "en",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:finetune:LiquidAI/LFM3-VL-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 189380352,
+  "parameters_human": "189.4M",
+  "storage_bytes": 378777968,
+  "storage_human": "379 MB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kimi-K2.7-Code-GGUF",
+  "slug": "mradermacher-kimi-k2-7-code-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kimi-K2.7-Code-GGUF",
+  "created_at": "2026-06-13T17:39:53.000Z",
+  "updated_at": "2026-11-04T02:50:24.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "compressed-tensors",
+    "en",
+    "base_model:moonshotai/Kimi-K2.7-Code",
+    "base_model:quantized:moonshotai/Kimi-K2.7-Code",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 471143920,
+  "parameters_human": "471.1M",
+  "storage_bytes": 3590797910208,
+  "storage_human": "3590.8 GB",
+  "base_model": "moonshotai/Kimi-K2.7-Code",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

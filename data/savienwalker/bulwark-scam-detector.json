@@ -5,7 +5,7 @@
   "author": "SavienWalker",
   "url": "https://huggingface.co/SavienWalker/bulwark-scam-detector",
   "created_at": "2026-11-01T10:00:26.000Z",
-  "updated_at": "2026-11-01T10:07:15.000Z",
+  "updated_at": "2026-11-03T08:41:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -16,6 +16,7 @@
     "multilingual"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "modernbert",
     "scam-detection",
@@ -31,19 +32,20 @@
     "multilingual",
     "dataset:SavienWalker/bulwark-bench-tr",
     "base_model:Horizon-Labs/phishing-scam-detector-base",
-    "base_model:finetune:Horizon-Labs/phishing-scam-detector-base",
+    "base_model:quantized:Horizon-Labs/phishing-scam-detector-base",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 20,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 307532547,
   "parameters_human": "307.5M",
-  "storage_bytes": 1264507941,
-  "storage_human": "1.3 GB",
+  "storage_bytes": 1881849707,
+  "storage_human": "1.9 GB",
   "base_model": "Horizon-Labs/phishing-scam-detector-base",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

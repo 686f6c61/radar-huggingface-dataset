@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Baptist-Christian-Bible-Expert-12b-GGUF",
+  "slug": "mradermacher-baptist-christian-bible-expert-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Baptist-Christian-Bible-Expert-12b-GGUF",
+  "created_at": "2025-02-13T21:14:33.000Z",
+  "updated_at": "2026-11-04T00:42:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Baptist",
+    "Christian",
+    "Bible",
+    "Theology",
+    "Jesus",
+    "SBC",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 399,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692308000,
+  "storage_human": "84.7 GB",
+  "base_model": "sleepdeprived3/Baptist-Christian-Bible-Expert-12b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

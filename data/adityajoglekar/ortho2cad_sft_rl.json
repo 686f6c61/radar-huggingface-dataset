@@ -5,13 +5,14 @@
   "author": "AdityaJoglekar",
   "url": "https://huggingface.co/AdityaJoglekar/Ortho2CAD_SFT_RL",
   "created_at": "2026-10-28T18:44:27.000Z",
-  "updated_at": "2026-10-28T19:53:25.000Z",
+  "updated_at": "2026-11-03T17:04:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "arxiv:2607.08891",
     "license:apache-2.0",
     "region:us"
   ],

@@ -5,7 +5,7 @@
   "author": "AbstractPhil",
   "url": "https://huggingface.co/AbstractPhil/qwen-symbolic-thinking-image-training",
   "created_at": "2026-10-30T03:26:52.000Z",
-  "updated_at": "2026-11-03T01:47:05.000Z",
+  "updated_at": "2026-11-04T00:54:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 254902562487,
-  "storage_human": "254.9 GB",
+  "storage_bytes": 257404316727,
+  "storage_human": "257.4 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

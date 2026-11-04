@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking",
   "created_at": "2026-01-20T13:55:42.000Z",
-  "updated_at": "2026-11-03T06:15:36.000Z",
+  "updated_at": "2026-11-03T06:57:13.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -47,7 +47,7 @@
     "region:us"
   ],
   "likes": 407,
-  "downloads_30d": 7516,
+  "downloads_30d": 8102,
   "trending_score": 0,
   "parameters": 1170340608,
   "parameters_human": "1.17B",

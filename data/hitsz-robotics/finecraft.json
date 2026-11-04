@@ -5,7 +5,7 @@
   "author": "hitsz-robotics",
   "url": "https://huggingface.co/hitsz-robotics/FineCraft",
   "created_at": "2026-11-02T13:37:20.000Z",
-  "updated_at": "2026-11-02T13:40:03.000Z",
+  "updated_at": "2026-11-03T09:30:47.000Z",
   "license": "component-licenses",
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -17,6 +17,7 @@
     "robotics",
     "metafine",
     "fine-grained-manipulation",
+    "arxiv:2611.03163",
     "en",
     "license:other",
     "region:us"

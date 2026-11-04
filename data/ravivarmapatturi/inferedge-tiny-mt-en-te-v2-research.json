@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ravivarmapatturi/inferedge-tiny-mt-en-te-v2-research",
+  "slug": "ravivarmapatturi-inferedge-tiny-mt-en-te-v2-research",
+  "author": "ravivarmapatturi",
+  "url": "https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-en-te-v2-research",
+  "created_at": "2026-11-04T03:15:03.000Z",
+  "updated_at": "2026-11-04T03:15:22.000Z",
+  "license": "research-only-pending-review",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "te"
+  ],
+  "tags": [
+    "onnx",
+    "translation",
+    "on-device",
+    "research",
+    "distillation",
+    "en",
+    "te",
+    "dataset:ravivarmapatturi/inferedge-en-te-bitext-v1",
+    "dataset:ravivarmapatturi/inferedge-conversational-sources-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112489759,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "byron123t",
   "url": "https://huggingface.co/byron123t/Hawkeye-4B",
   "created_at": "2026-10-30T03:42:32.000Z",
-  "updated_at": "2026-11-03T01:35:45.000Z",
+  "updated_at": "2026-11-03T18:58:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 4437815808,
   "parameters_human": "4.44B",

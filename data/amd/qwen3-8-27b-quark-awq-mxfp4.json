@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
   "created_at": "2026-08-15T03:11:24.000Z",
-  "updated_at": "2026-08-26T01:52:46.000Z",
+  "updated_at": "2026-11-03T16:13:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 41,
-  "downloads_30d": 40347,
+  "downloads_30d": 40671,
   "trending_score": 10,
   "parameters": 15606149872,
   "parameters_human": "15.61B",

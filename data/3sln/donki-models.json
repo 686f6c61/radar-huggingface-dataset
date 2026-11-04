@@ -5,7 +5,7 @@
   "author": "3sln",
   "url": "https://huggingface.co/3sln/donki-models",
   "created_at": "2026-11-03T18:58:08.000Z",
-  "updated_at": "2026-11-03T19:14:53.000Z",
+  "updated_at": "2026-11-03T20:16:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 252297478,
-  "storage_human": "252 MB",
+  "storage_bytes": 369657089,
+  "storage_human": "370 MB",
   "base_model": null,
   "formats": [
     "onnx"

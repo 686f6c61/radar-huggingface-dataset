@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10",
   "created_at": "2026-10-20T21:30:48.000Z",
-  "updated_at": "2026-10-20T22:49:09.000Z",
+  "updated_at": "2026-11-03T23:06:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 4493334401,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 11231377379,
+  "storage_human": "11.2 GB",
   "base_model": "francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10",
   "formats": [
     "safetensors"

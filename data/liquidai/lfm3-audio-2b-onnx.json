@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B-ONNX",
   "created_at": "2026-10-27T00:52:40.000Z",
-  "updated_at": "2026-10-28T02:25:57.000Z",
+  "updated_at": "2026-11-03T07:41:15.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "any-to-any",
@@ -62,7 +62,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 605,
+  "downloads_30d": 783,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

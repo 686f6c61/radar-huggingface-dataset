@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "motchii709/Ornith-1.5-35B-A3B-abliterated-GSQ-RCO-IQ3_M-GGUF",
+  "slug": "motchii709-ornith-1-5-35b-a3b-abliterated-gsq-rco-iq3_m-gguf",
+  "author": "motchii709",
+  "url": "https://huggingface.co/motchii709/Ornith-1.5-35B-A3B-abliterated-GSQ-RCO-IQ3_M-GGUF",
+  "created_at": "2026-11-04T01:20:11.000Z",
+  "updated_at": "2026-11-04T01:20:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "iq3_m",
+    "gsq-rco",
+    "abliterated",
+    "uncensored",
+    "qwen3_5_moe",
+    "moe",
+    "mtp",
+    "text-generation",
+    "en",
+    "ja",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

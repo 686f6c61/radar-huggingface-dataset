@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "aruiki/Llama-3.1-Swallow-8B-v0.5-GGUF",
+  "slug": "aruiki-llama-3-1-swallow-8b-v0-5-gguf",
+  "author": "aruiki",
+  "url": "https://huggingface.co/aruiki/Llama-3.1-Swallow-8B-v0.5-GGUF",
+  "created_at": "2026-11-03T23:52:59.000Z",
+  "updated_at": "2026-11-04T00:23:54.000Z",
+  "license": "llama3.1-and-gemma",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "asteria",
+    "ja",
+    "en",
+    "base_model:tokyotech-llm/Llama-3.1-Swallow-8B-v0.5",
+    "base_model:quantized:tokyotech-llm/Llama-3.1-Swallow-8B-v0.5",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 8939653952,
+  "storage_human": "8.9 GB",
+  "base_model": "tokyotech-llm/Llama-3.1-Swallow-8B-v0.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

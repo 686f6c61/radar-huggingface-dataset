@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sadaffatimaeee/naruto-sd15-run1-lora-r4",
+  "slug": "sadaffatimaeee-naruto-sd15-run1-lora-r4",
+  "author": "sadaffatimaeee",
+  "url": "https://huggingface.co/sadaffatimaeee/naruto-sd15-run1-lora-r4",
+  "created_at": "2026-11-03T21:29:39.000Z",
+  "updated_at": "2026-11-03T21:29:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "stable-diffusion",
+    "text-to-image",
+    "naruto",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3766661,
+  "storage_human": "4 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

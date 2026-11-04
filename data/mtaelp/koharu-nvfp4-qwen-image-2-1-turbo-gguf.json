@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mtaelp/koharu-nvfp4-qwen-image-2.1-turbo-gguf",
+  "slug": "mtaelp-koharu-nvfp4-qwen-image-2-1-turbo-gguf",
+  "author": "mtaelp",
+  "url": "https://huggingface.co/mtaelp/koharu-nvfp4-qwen-image-2.1-turbo-gguf",
+  "created_at": "2026-11-04T00:09:44.000Z",
+  "updated_at": "2026-11-04T00:19:14.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "stable-diffusion.cpp",
+    "image-editing",
+    "inpainting",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 5692770112,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

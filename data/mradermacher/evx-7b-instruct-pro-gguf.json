@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EVX-7B-Instruct-Pro-GGUF",
+  "slug": "mradermacher-evx-7b-instruct-pro-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EVX-7B-Instruct-Pro-GGUF",
+  "created_at": "2026-04-14T12:39:37.000Z",
+  "updated_at": "2026-11-04T00:40:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "en",
+    "base_model:imshreyansh/EVX-7B-Instruct-Pro",
+    "base_model:quantized:imshreyansh/EVX-7B-Instruct-Pro",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146864640,
+  "storage_human": "68.1 GB",
+  "base_model": "imshreyansh/EVX-7B-Instruct-Pro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

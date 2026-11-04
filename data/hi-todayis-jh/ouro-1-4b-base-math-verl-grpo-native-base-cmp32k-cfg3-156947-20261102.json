@@ -5,7 +5,7 @@
   "author": "hi-todayis-jh",
   "url": "https://huggingface.co/hi-todayis-jh/ouro-1.4b-base-math-verl-grpo-native-base-cmp32k-cfg3-156947-20261102",
   "created_at": "2026-11-02T00:41:15.000Z",
-  "updated_at": "2026-11-03T01:29:05.000Z",
+  "updated_at": "2026-11-03T20:31:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 28788303708,
-  "storage_human": "28.8 GB",
+  "storage_bytes": 57576234714,
+  "storage_human": "57.6 GB",
   "base_model": "ByteDance/Ouro-1.4B-Thinking",
   "formats": [
     "safetensors"

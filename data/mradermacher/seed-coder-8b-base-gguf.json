@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Seed-Coder-8B-Base-GGUF",
+  "slug": "mradermacher-seed-coder-8b-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Seed-Coder-8B-Base-GGUF",
+  "created_at": "2025-05-12T01:32:16.000Z",
+  "updated_at": "2026-11-04T01:46:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ByteDance-Seed/Seed-Coder-8B-Base",
+    "base_model:quantized:ByteDance-Seed/Seed-Coder-8B-Base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 493,
+  "trending_score": 0,
+  "parameters": 8250462208,
+  "parameters_human": "8.25B",
+  "storage_bytes": 73980997632,
+  "storage_human": "74.0 GB",
+  "base_model": "ByteDance-Seed/Seed-Coder-8B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

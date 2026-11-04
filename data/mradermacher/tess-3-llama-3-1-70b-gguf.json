@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Tess-3-Llama-3.1-70B-GGUF",
+  "slug": "mradermacher-tess-3-llama-3-1-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tess-3-Llama-3.1-70B-GGUF",
+  "created_at": "2024-11-13T10:34:31.000Z",
+  "updated_at": "2026-11-03T21:20:22.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:migtissera/Tess-3-Llama-3.1-70B",
+    "base_model:quantized:migtissera/Tess-3-Llama-3.1-70B",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 165,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302986944,
+  "storage_human": "481.3 GB",
+  "base_model": "migtissera/Tess-3-Llama-3.1-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

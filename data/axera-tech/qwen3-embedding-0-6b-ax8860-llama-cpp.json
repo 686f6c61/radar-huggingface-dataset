@@ -5,7 +5,7 @@
   "author": "AXERA-TECH",
   "url": "https://huggingface.co/AXERA-TECH/Qwen3-Embedding-0.6B-AX8860-llama.cpp",
   "created_at": "2026-10-31T09:37:25.000Z",
-  "updated_at": "2026-11-02T02:27:33.000Z",
+  "updated_at": "2026-11-03T07:43:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,11 +20,11 @@
     "feature-extraction"
   ],
   "likes": 1,
-  "downloads_30d": 52,
+  "downloads_30d": 128,
   "trending_score": 0,
   "parameters": 595776512,
   "parameters_human": "595.8M",
-  "storage_bytes": 1222273830,
+  "storage_bytes": 1245562686,
   "storage_human": "1.2 GB",
   "base_model": "Qwen/Qwen3-Embedding-0.6B",
   "formats": [

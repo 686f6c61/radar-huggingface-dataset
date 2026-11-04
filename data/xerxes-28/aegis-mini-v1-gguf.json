@@ -5,7 +5,7 @@
   "author": "Xerxes-28",
   "url": "https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-GGUF",
   "created_at": "2026-10-31T11:48:58.000Z",
-  "updated_at": "2026-11-01T11:16:06.000Z",
+  "updated_at": "2026-11-03T09:58:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -51,7 +51,7 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 2497281024,
+  "storage_bytes": 2498713597,
   "storage_human": "2.5 GB",
   "base_model": "unsloth/Qwen3-4B-unsloth-bnb-4bit",
   "formats": [

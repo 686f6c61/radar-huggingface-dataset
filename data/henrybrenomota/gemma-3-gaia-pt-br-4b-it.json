@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "henrybrenomota/Gemma-3-Gaia-PT-BR-4b-it",
+  "slug": "henrybrenomota-gemma-3-gaia-pt-br-4b-it",
+  "author": "henrybrenomota",
+  "url": "https://huggingface.co/henrybrenomota/Gemma-3-Gaia-PT-BR-4b-it",
+  "created_at": "2026-11-04T00:32:03.000Z",
+  "updated_at": "2026-11-04T00:32:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "pt",
+    "arxiv:2410.10739",
+    "base_model:google/gemma-3-4b-pt",
+    "base_model:finetune:google/gemma-3-4b-pt",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638351522,
+  "storage_human": "8.6 GB",
+  "base_model": "google/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

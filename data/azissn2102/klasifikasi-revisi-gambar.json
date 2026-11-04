@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "azissn2102/klasifikasi-revisi-gambar",
+  "slug": "azissn2102-klasifikasi-revisi-gambar",
+  "author": "azissn2102",
+  "url": "https://huggingface.co/azissn2102/klasifikasi-revisi-gambar",
+  "created_at": "2026-11-04T00:02:24.000Z",
+  "updated_at": "2026-11-04T00:02:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "clip",
+    "logistic-regression",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KLASIFIKASI CITRA GENERASI ARTIFICIAL ...",
+      "url": "https://jtiik.ub.ac.id/index.php/jtiik/en/article/download/8118/1324/42857",
+      "snippet": "aspek lain dalam kehidupan. Penelitian ini menitik beratkan klasifikasi citra generasi AI yang dapat mendeteksi"
+    },
+    {
+      "title": "Volume 29 Nomor 4 Tahun 2023 Pages 149-155 ISSN 0852-3185 | e-ISSN ...",
+      "url": "https://ejurnal.uibu.ac.id/index.php/paradigma/article/download/1284/1051",
+      "snippet": "gambar. VGG19 terdiri dari 19 lapisan, termasuk 16 lapisan konvolusi dan 3 lapisan fully · connected, yang diikuti oleh lapisan softmax untuk klasifikasi (Simonyan & Zisserman, 2014)."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "OpensourceWTF/Kimi-K3-Q2_K-t158-MTPLX",
+  "slug": "opensourcewtf-kimi-k3-q2_k-t158-mtplx",
+  "author": "OpensourceWTF",
+  "url": "https://huggingface.co/OpensourceWTF/Kimi-K3-Q2_K-t158-MTPLX",
+  "created_at": "2026-07-28T15:48:28.000Z",
+  "updated_at": "2026-11-03T22:44:24.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "mtplx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 394,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1390817035778,
+  "storage_human": "1390.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

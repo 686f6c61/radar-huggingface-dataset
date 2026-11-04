@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "wepiqx/SenseNova-Loop-9B-Preview-MERNIK-GGUF",
+  "slug": "wepiqx-sensenova-loop-9b-preview-mernik-gguf",
+  "author": "wepiqx",
+  "url": "https://huggingface.co/wepiqx/SenseNova-Loop-9B-Preview-MERNIK-GGUF",
+  "created_at": "2026-11-03T23:38:14.000Z",
+  "updated_at": "2026-11-03T23:38:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "sensenova-loop",
+    "mernik",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:sensenova/SenseNova-Loop-9B-Preview",
+    "base_model:quantized:sensenova/SenseNova-Loop-9B-Preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2559128,
+  "parameters_human": "2.6M",
+  "storage_bytes": 10307840,
+  "storage_human": "10 MB",
+  "base_model": "sensenova/SenseNova-Loop-9B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

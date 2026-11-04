@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "frazer-nyambe/llama-3.1-8b-finetuned-Universities_and_councils",
+  "slug": "frazer-nyambe-llama-3-1-8b-finetuned-universities_and_councils",
+  "author": "frazer-nyambe",
+  "url": "https://huggingface.co/frazer-nyambe/llama-3.1-8b-finetuned-Universities_and_councils",
+  "created_at": "2026-11-04T03:05:10.000Z",
+  "updated_at": "2026-11-04T03:05:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71770288,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

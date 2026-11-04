@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ZhLa/dont-judge-env-lora-flux2-klein-base",
+  "slug": "zhla-dont-judge-env-lora-flux2-klein-base",
+  "author": "ZhLa",
+  "url": "https://huggingface.co/ZhLa/dont-judge-env-lora-flux2-klein-base",
+  "created_at": "2026-11-04T01:54:46.000Z",
+  "updated_at": "2026-11-04T01:56:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "flux2",
+    "flux.2-klein",
+    "image-editing",
+    "research",
+    "image-to-image",
+    "en",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-base-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92426736,
+  "storage_human": "92 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "AXERA-TECH",
   "url": "https://huggingface.co/AXERA-TECH/Qwen3-ASR-0.6B-AX8860-llama.cpp",
   "created_at": "2026-10-31T16:17:07.000Z",
-  "updated_at": "2026-11-02T02:27:43.000Z",
+  "updated_at": "2026-11-03T15:10:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 1455324524,
+  "storage_bytes": 1511230694,
   "storage_human": "1.5 GB",
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [

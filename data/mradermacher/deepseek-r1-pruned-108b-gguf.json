@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DeepSeek-R1-Pruned-108B-GGUF",
+  "slug": "mradermacher-deepseek-r1-pruned-108b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DeepSeek-R1-Pruned-108B-GGUF",
+  "created_at": "2026-01-14T10:29:40.000Z",
+  "updated_at": "2026-11-03T23:35:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ubicloud/DeepSeek-R1-Pruned-108B",
+    "base_model:quantized:ubicloud/DeepSeek-R1-Pruned-108B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 234,
+  "trending_score": 0,
+  "parameters": 107169391872,
+  "parameters_human": "107.17B",
+  "storage_bytes": 728355640832,
+  "storage_human": "728.4 GB",
+  "base_model": "ubicloud/DeepSeek-R1-Pruned-108B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Convergent-ch",
   "url": "https://huggingface.co/Convergent-ch/Alpina-Small-2.0-30M",
   "created_at": "2026-11-02T20:20:15.000Z",
-  "updated_at": "2026-11-02T20:31:29.000Z",
+  "updated_at": "2026-11-03T11:24:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 325,
   "trending_score": 0,
   "parameters": 29699712,
   "parameters_human": "29.7M",

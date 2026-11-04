@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Kevinnieto0001/autonomous-rally-ppo",
+  "slug": "kevinnieto0001-autonomous-rally-ppo",
+  "author": "Kevinnieto0001",
+  "url": "https://huggingface.co/Kevinnieto0001/autonomous-rally-ppo",
+  "created_at": "2026-10-28T22:30:51.000Z",
+  "updated_at": "2026-11-04T03:04:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "gymnasium",
+    "autonomous-driving",
+    "mlops",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3247830,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "AutonomousRally-v0 0.4, test reservado de 100 semillas",
+      "metric": "Vueltas completas en seco (%)",
+      "value": 100
+    },
+    {
+      "task": "reinforcement-learning",
+      "dataset": "AutonomousRally-v0 0.4, test reservado de 100 semillas",
+      "metric": "Vueltas completas con lluvia (%)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

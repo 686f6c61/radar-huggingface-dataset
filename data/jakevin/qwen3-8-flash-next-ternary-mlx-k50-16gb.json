@@ -5,7 +5,7 @@
   "author": "Jakevin",
   "url": "https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50-16GB",
   "created_at": "2026-11-02T12:32:37.000Z",
-  "updated_at": "2026-11-02T12:36:04.000Z",
+  "updated_at": "2026-11-03T15:12:40.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
