@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "yuxh1996/Transcreva-Whisper-PTBR-Diarization",
+  "slug": "yuxh1996-transcreva-whisper-ptbr-diarization",
+  "author": "yuxh1996",
+  "url": "https://huggingface.co/yuxh1996/Transcreva-Whisper-PTBR-Diarization",
+  "created_at": "2026-11-04T06:59:41.000Z",
+  "updated_at": "2026-11-04T06:59:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "automatic-speech-recognition",
+    "whisper",
+    "portuguese",
+    "speaker-diarization",
+    "transcreva",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

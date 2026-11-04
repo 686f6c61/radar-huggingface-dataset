@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/OPO-8B-GGUF",
   "created_at": "2026-11-03T17:37:16.000Z",
-  "updated_at": "2026-11-03T18:11:58.000Z",
+  "updated_at": "2026-11-03T20:10:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 26383116928,
-  "storage_human": "26.4 GB",
+  "storage_bytes": 75336678080,
+  "storage_human": "75.3 GB",
   "base_model": "Yann0122/OPO-8B",
   "formats": [
     "gguf"

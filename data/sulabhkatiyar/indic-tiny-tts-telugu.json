@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sulabhkatiyar/indic-tiny-tts-telugu",
+  "slug": "sulabhkatiyar-indic-tiny-tts-telugu",
+  "author": "sulabhkatiyar",
+  "url": "https://huggingface.co/sulabhkatiyar/indic-tiny-tts-telugu",
+  "created_at": "2026-10-23T06:57:35.000Z",
+  "updated_at": "2026-11-04T08:53:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "telugu",
+    "speech-synthesis",
+    "on-device",
+    "cpu",
+    "te",
+    "dataset:sulabhkatiyar/indic-tts-mini-24k",
+    "dataset:sulabhkatiyar/indic-tts-multilingual-prepared",
+    "dataset:ai4bharat/Rasa",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 8932745,
+  "parameters_human": "8.9M",
+  "storage_bytes": 184066927,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

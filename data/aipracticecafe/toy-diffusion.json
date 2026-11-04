@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "aipracticecafe/toy-diffusion",
+  "slug": "aipracticecafe-toy-diffusion",
+  "author": "aipracticecafe",
+  "url": "https://huggingface.co/aipracticecafe/toy-diffusion",
+  "created_at": "2026-07-14T20:12:59.000Z",
+  "updated_at": "2026-11-04T06:42:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-image",
+    "en",
+    "dataset:aipracticecafe/anime-faces-256px-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170006277304,
+  "storage_human": "170.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

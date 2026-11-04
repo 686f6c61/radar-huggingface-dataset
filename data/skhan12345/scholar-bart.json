@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "skhan12345/scholar-bart",
+  "slug": "skhan12345-scholar-bart",
+  "author": "skhan12345",
+  "url": "https://huggingface.co/skhan12345/scholar-bart",
+  "created_at": "2026-11-04T07:52:39.000Z",
+  "updated_at": "2026-11-04T07:53:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 557912620,
+  "storage_human": "558 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

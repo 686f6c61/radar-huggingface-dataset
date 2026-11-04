@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "qkswj/act-so101-task001",
+  "slug": "qkswj-act-so101-task001",
+  "author": "qkswj",
+  "url": "https://huggingface.co/qkswj/act-so101-task001",
+  "created_at": "2026-11-04T04:36:15.000Z",
+  "updated_at": "2026-11-04T04:37:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

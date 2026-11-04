@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Sw1zyyyAdm/gemma-4-e4b-abliterated-bilingual-GGUF",
+  "slug": "sw1zyyyadm-gemma-4-e4b-abliterated-bilingual-gguf",
+  "author": "Sw1zyyyAdm",
+  "url": "https://huggingface.co/Sw1zyyyAdm/gemma-4-e4b-abliterated-bilingual-GGUF",
+  "created_at": "2026-11-04T07:31:01.000Z",
+  "updated_at": "2026-11-04T07:34:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "gemma-4",
+    "bilingual",
+    "ru",
+    "en",
+    "text-generation",
+    "arxiv:2406.11717",
+    "arxiv:2602.02132",
+    "base_model:google/gemma-4-E4B",
+    "base_model:quantized:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 12235381408,
+  "storage_human": "12.2 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

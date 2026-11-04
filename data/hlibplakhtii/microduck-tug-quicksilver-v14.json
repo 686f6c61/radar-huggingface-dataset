@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "HlibPlakhtii/microduck-tug-quicksilver-v14",
+  "slug": "hlibplakhtii-microduck-tug-quicksilver-v14",
+  "author": "HlibPlakhtii",
+  "url": "https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v14",
+  "created_at": "2026-11-04T12:22:52.000Z",
+  "updated_at": "2026-11-04T12:22:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-policy",
+    "robotics",
+    "base_model:jrubiosainz/microduck-tug-lphat-c2-s1s5",
+    "base_model:finetune:jrubiosainz/microduck-tug-lphat-c2-s1s5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 969720,
+  "storage_human": "969720 B",
+  "base_model": "jrubiosainz/microduck-tug-lphat-c2-s1s5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

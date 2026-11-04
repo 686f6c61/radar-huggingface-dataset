@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "pepijn223/act_openarm_screw_picking_v33a_real",
+  "slug": "pepijn223-act_openarm_screw_picking_v33a_real",
+  "author": "pepijn223",
+  "url": "https://huggingface.co/pepijn223/act_openarm_screw_picking_v33a_real",
+  "created_at": "2026-11-04T09:35:38.000Z",
+  "updated_at": "2026-11-04T09:35:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "openarm",
+    "bimanual",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51734160,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206964633,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Consola de Google Cloud",
+      "url": "https://console.cloud.google.com/launcher/?hl=es",
+      "snippet": "Realiza inversiones inteligentes, haz compras más rápido y retira la inversión comprometida de Google Cloud con Google Cloud …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "viai957/nano-mistral-o1-sft",
+  "slug": "viai957-nano-mistral-o1-sft",
+  "author": "viai957",
+  "url": "https://huggingface.co/viai957/nano-mistral-o1-sft",
+  "created_at": "2026-10-20T01:16:09.000Z",
+  "updated_at": "2026-11-04T04:48:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "math",
+    "reasoning",
+    "sft",
+    "full-finetune",
+    "prm800k",
+    "step-by-step",
+    "nano-mistral-o1",
+    "en",
+    "dataset:tasksource/PRM800K",
+    "arxiv:2305.20050",
+    "arxiv:2310.06825",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496949609,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Math word problems (zero-shot, greedy)",
+      "dataset": "GSM8K (test, full)",
+      "metric": "pass@1 (greedy, n=1319)",
+      "value": 0.2047
+    },
+    {
+      "task": "Competition math (zero-shot, greedy)",
+      "dataset": "MATH-500",
+      "metric": "pass@1 (greedy, n=500)",
+      "value": 0.084
+    }
+  ],
+  "sources": []
+}

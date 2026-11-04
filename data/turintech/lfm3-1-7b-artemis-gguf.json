@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/LFM3-1.7B-Artemis-GGUF",
   "created_at": "2026-11-03T21:44:51.000Z",
-  "updated_at": "2026-11-03T21:45:08.000Z",
+  "updated_at": "2026-11-04T04:34:59.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 1728801600,

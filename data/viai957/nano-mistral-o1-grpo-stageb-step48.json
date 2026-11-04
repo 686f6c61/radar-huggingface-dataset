@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "viai957/nano-mistral-o1-grpo-stageb-step48",
+  "slug": "viai957-nano-mistral-o1-grpo-stageb-step48",
+  "author": "viai957",
+  "url": "https://huggingface.co/viai957/nano-mistral-o1-grpo-stageb-step48",
+  "created_at": "2026-10-20T02:29:39.000Z",
+  "updated_at": "2026-11-04T04:50:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "math",
+    "reasoning",
+    "grpo",
+    "dr-grpo",
+    "dapo",
+    "rlvr",
+    "reinforcement-learning",
+    "intermediate-checkpoint",
+    "research-artifact",
+    "nano-mistral-o1",
+    "en",
+    "dataset:SynthLabsAI/Big-Math-RL-Verified",
+    "dataset:tasksource/PRM800K",
+    "dataset:openai/gsm8k",
+    "arxiv:2503.14476",
+    "arxiv:2503.20783",
+    "arxiv:2502.17387",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 29223456485,
+  "storage_human": "29.2 GB",
+  "base_model": "viai957/nano-mistral-o1-sft, mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Math word problems (greedy, pass@1)",
+      "dataset": "GSM8K test, first 100 problems (in-training canary)",
+      "metric": "pass@1 (n=100, greedy, 768-token cap)",
+      "value": 0.17
+    }
+  ],
+  "sources": []
+}

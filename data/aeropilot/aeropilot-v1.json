@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AeroPilot/AeroPilot-v1",
+  "slug": "aeropilot-aeropilot-v1",
+  "author": "AeroPilot",
+  "url": "https://huggingface.co/AeroPilot/AeroPilot-v1",
+  "created_at": "2026-11-04T11:37:27.000Z",
+  "updated_at": "2026-11-04T11:40:53.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "sam3",
+    "sam3.1",
+    "search-and-rescue",
+    "drone",
+    "uav",
+    "aerial-imagery",
+    "thermal",
+    "open-vocabulary",
+    "object-detection",
+    "en",
+    "base_model:facebook/sam3.1",
+    "base_model:finetune:facebook/sam3.1",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3503871534,
+  "storage_human": "3.5 GB",
+  "base_model": "facebook/sam3.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "HERIDAL (test split)",
+      "metric": "Recall @ IoU 0.5 (2x2 tiled)",
+      "value": 91.7
+    },
+    {
+      "task": null,
+      "dataset": "HERIDAL (test split)",
+      "metric": "Recall @ IoU 0.5 (whole frame)",
+      "value": 87.5
+    },
+    {
+      "task": null,
+      "dataset": "HERIDAL (test split)",
+      "metric": "Precision @ IoU 0.5 (2x2 tiled)",
+      "value": 75.9
+    },
+    {
+      "task": null,
+      "dataset": "HIT-UAV (test split, thermal)",
+      "metric": "Recall @ IoU 0.5",
+      "value": 94.4
+    }
+  ],
+  "sources": []
+}

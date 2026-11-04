@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ModernoTech/Nova-Core",
+  "slug": "modernotech-nova-core",
+  "author": "ModernoTech",
+  "url": "https://huggingface.co/ModernoTech/Nova-Core",
+  "created_at": "2026-11-04T07:09:55.000Z",
+  "updated_at": "2026-11-04T07:28:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en",
+    "zh",
+    "fr",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "moderno-tech",
+    "nova",
+    "nova-core",
+    "text-generation",
+    "conversational",
+    "es",
+    "en",
+    "zh",
+    "fr",
+    "pt",
+    "license:gemma",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 3010521221,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

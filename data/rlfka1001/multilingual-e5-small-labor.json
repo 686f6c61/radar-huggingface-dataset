@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "rlfka1001/multilingual-e5-small-labor",
+  "slug": "rlfka1001-multilingual-e5-small-labor",
+  "author": "rlfka1001",
+  "url": "https://huggingface.co/rlfka1001/multilingual-e5-small-labor",
+  "created_at": "2026-11-04T05:52:33.000Z",
+  "updated_at": "2026-11-04T05:52:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:663",
+    "loss:MultipleNegativesRankingLoss",
+    "ko",
+    "dataset:rlfka1001/labor-embedding-data",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487720404,
+  "storage_human": "488 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.6448598130841121
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8504672897196262
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9112149532710281
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9439252336448598
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Precision@1",
+      "value": 0.6448598130841121
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Precision@5",
+      "value": 0.1822429906542056
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Recall@1",
+      "value": 0.6448598130841121
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Recall@5",
+      "value": 0.9112149532710281
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8044992245476408
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7586300252188102
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "labor",
+      "metric": "Cosine Map@100",
+      "value": 0.7602256117297534
+    }
+  ],
+  "sources": []
+}

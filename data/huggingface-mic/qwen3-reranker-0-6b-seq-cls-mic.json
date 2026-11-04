@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Qwen3-Reranker-0-6B-seq-cls-mic",
+  "slug": "huggingface-mic-qwen3-reranker-0-6b-seq-cls-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Qwen3-Reranker-0-6B-seq-cls-mic",
+  "created_at": "2026-11-04T12:07:16.000Z",
+  "updated_at": "2026-11-04T12:07:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "mic",
+    "test-artifact",
+    "base_model:tomaarsen/Qwen3-Reranker-0.6B-seq-cls",
+    "base_model:finetune:tomaarsen/Qwen3-Reranker-0.6B-seq-cls",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9780992,
+  "parameters_human": "9.8M",
+  "storage_bytes": 50549270,
+  "storage_human": "51 MB",
+  "base_model": "tomaarsen/Qwen3-Reranker-0.6B-seq-cls",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

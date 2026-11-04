@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "DakeraAI/gliner-bi-small-v2.0-int8",
+  "slug": "dakeraai-gliner-bi-small-v2-0-int8",
+  "author": "DakeraAI",
+  "url": "https://huggingface.co/DakeraAI/gliner-bi-small-v2.0-int8",
+  "created_at": "2026-11-04T08:12:55.000Z",
+  "updated_at": "2026-11-04T08:13:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "gliner",
+    "named-entity-recognition",
+    "zero-shot",
+    "int8",
+    "dakera",
+    "ai-agent-memory",
+    "self-hosted",
+    "token-classification",
+    "en",
+    "arxiv:2311.08526",
+    "arxiv:2602.18487",
+    "base_model:knowledgator/gliner-bi-small-v2.0",
+    "base_model:quantized:knowledgator/gliner-bi-small-v2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117646347,
+  "storage_human": "118 MB",
+  "base_model": "knowledgator/gliner-bi-small-v2.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

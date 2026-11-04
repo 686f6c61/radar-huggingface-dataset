@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tnromy/Qwen2.5-1.5B-Legal-ID-GRPO",
+  "slug": "tnromy-qwen2-5-1-5b-legal-id-grpo",
+  "author": "tnromy",
+  "url": "https://huggingface.co/tnromy/Qwen2.5-1.5B-Legal-ID-GRPO",
+  "created_at": "2026-11-04T10:35:58.000Z",
+  "updated_at": "2026-11-04T10:36:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:tnromy/Qwen2.5-1.5B-Legal-ID-SFT",
+    "base_model:finetune:tnromy/Qwen2.5-1.5B-Legal-ID-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "tnromy/Qwen2.5-1.5B-Legal-ID-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "aethertp/PicoLM-V4-85M-Instruct",
+  "slug": "aethertp-picolm-v4-85m-instruct",
+  "author": "aethertp",
+  "url": "https://huggingface.co/aethertp/PicoLM-V4-85M-Instruct",
+  "created_at": "2026-11-03T20:49:22.000Z",
+  "updated_at": "2026-11-04T04:41:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "causal-lm",
+    "chat",
+    "from-scratch",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:aethertp/PicoLM-V4-85M",
+    "base_model:quantized:aethertp/PicoLM-V4-85M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 84960832,
+  "parameters_human": "85.0M",
+  "storage_bytes": 667143080,
+  "storage_human": "667 MB",
+  "base_model": "aethertp/PicoLM-V4-85M",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

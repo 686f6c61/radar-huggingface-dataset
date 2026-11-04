@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama_3.x_70b_TrinitEva_V1.1-GGUF",
+  "slug": "mradermacher-llama_3-x_70b_triniteva_v1-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama_3.x_70b_TrinitEva_V1.1-GGUF",
+  "created_at": "2025-02-19T21:22:03.000Z",
+  "updated_at": "2026-11-04T07:20:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Nexesenex/Llama_3.x_70b_TrinitEva_V1.1",
+    "base_model:quantized:Nexesenex/Llama_3.x_70b_TrinitEva_V1.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302995744,
+  "storage_human": "481.3 GB",
+  "base_model": "Nexesenex/Llama_3.x_70b_TrinitEva_V1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

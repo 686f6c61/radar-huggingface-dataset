@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sulabhkatiyar/indic-tiny-tts-marathi",
+  "slug": "sulabhkatiyar-indic-tiny-tts-marathi",
+  "author": "sulabhkatiyar",
+  "url": "https://huggingface.co/sulabhkatiyar/indic-tiny-tts-marathi",
+  "created_at": "2026-11-04T07:48:58.000Z",
+  "updated_at": "2026-11-04T08:56:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "mr"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "marathi",
+    "speech-synthesis",
+    "on-device",
+    "cpu",
+    "mr",
+    "dataset:sulabhkatiyar/indic-tts-mini-24k",
+    "dataset:sulabhkatiyar/indic-tts-multilingual-prepared",
+    "dataset:ai4bharat/Rasa",
+    "dataset:iAkashPaul/limmits-2024",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8935049,
+  "parameters_human": "8.9M",
+  "storage_bytes": 183771941,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

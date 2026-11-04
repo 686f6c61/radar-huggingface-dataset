@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ProjectSpaice/pumpfun-ttm-60s",
+  "slug": "projectspaice-pumpfun-ttm-60s",
+  "author": "ProjectSpaice",
+  "url": "https://huggingface.co/ProjectSpaice/pumpfun-ttm-60s",
+  "created_at": "2026-11-04T06:07:14.000Z",
+  "updated_at": "2026-11-04T06:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tinytimemixer",
+    "generated_from_trainer",
+    "base_model:ibm-granite/granite-timeseries-ttm-r3",
+    "base_model:finetune:ibm-granite/granite-timeseries-ttm-r3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414514,
+  "parameters_human": "1.4M",
+  "storage_bytes": 17447342,
+  "storage_human": "17 MB",
+  "base_model": "ibm-granite/granite-timeseries-ttm-r3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

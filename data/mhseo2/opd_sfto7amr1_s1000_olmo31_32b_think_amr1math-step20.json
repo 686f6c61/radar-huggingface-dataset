@@ -5,7 +5,7 @@
   "author": "mhseo2",
   "url": "https://huggingface.co/mhseo2/opd_sfto7amr1_s1000_olmo31_32b_think_amr1math-step20",
   "created_at": "2026-11-02T02:58:04.000Z",
-  "updated_at": "2026-11-02T03:00:59.000Z",
+  "updated_at": "2026-11-03T10:42:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 7298011136,
   "parameters_human": "7.30B",

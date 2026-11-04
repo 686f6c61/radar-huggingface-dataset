@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Feyd89/Gemma-4-12B-it-tense-edit-weight-space",
+  "slug": "feyd89-gemma-4-12b-it-tense-edit-weight-space",
+  "author": "Feyd89",
+  "url": "https://huggingface.co/Feyd89/Gemma-4-12B-it-tense-edit-weight-space",
+  "created_at": "2026-11-04T07:35:48.000Z",
+  "updated_at": "2026-11-04T07:38:08.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "weight-editing",
+    "weight-space-programming",
+    "translation",
+    "research",
+    "text-generation",
+    "it",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7381482347,
+  "storage_human": "7.4 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "moeshawky",
   "url": "https://huggingface.co/moeshawky/qmd-query-expansion-1.7B",
   "created_at": "2026-11-03T21:44:25.000Z",
-  "updated_at": "2026-11-03T21:44:27.000Z",
+  "updated_at": "2026-11-04T00:01:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,6 @@
     "qmd",
     "query-expansion",
     "text-generation",
-    "base_model:adapter:/root/LFM3-1.7B",
     "conversational",
     "en",
     "license:mit",
@@ -33,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 100682428,
-  "storage_human": "101 MB",
+  "storage_bytes": 302042227,
+  "storage_human": "302 MB",
   "base_model": null,
   "formats": [
     "safetensors"

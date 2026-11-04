@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sourojitdotcom/AksharaLP-Sentence-2.8M",
+  "slug": "sourojitdotcom-aksharalp-sentence-2-8m",
+  "author": "sourojitdotcom",
+  "url": "https://huggingface.co/sourojitdotcom/AksharaLP-Sentence-2.8M",
+  "created_at": "2026-11-04T11:32:50.000Z",
+  "updated_at": "2026-11-04T11:46:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "transliteration",
+    "hindi",
+    "devanagari",
+    "romanized-hindi",
+    "on-device",
+    "browser",
+    "javascript",
+    "sentence-level",
+    "language-model",
+    "tiny",
+    "translation",
+    "hi",
+    "en",
+    "dataset:ai4bharat/IndicCorpV2",
+    "dataset:ai4bharat/Aksharantar",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29515497,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Romanized Hindi → Devanagari transliteration (sentence level)",
+      "dataset": "Dakshina (Hindi romanized sentences)",
+      "metric": "Word accuracy",
+      "value": 89.44
+    },
+    {
+      "task": "Romanized Hindi → Devanagari transliteration (sentence level)",
+      "dataset": "Dakshina (Hindi romanized sentences)",
+      "metric": "Sentence exact match",
+      "value": 26.73
+    },
+    {
+      "task": "Romanized Hindi → Devanagari transliteration (sentence level)",
+      "dataset": "Dakshina (Hindi romanized sentences)",
+      "metric": "CER",
+      "value": 3.93
+    },
+    {
+      "task": "Romanized Hindi → Devanagari transliteration (sentence level)",
+      "dataset": "Dakshina (Hindi romanized sentences)",
+      "metric": "WER",
+      "value": 10.78
+    }
+  ],
+  "sources": []
+}

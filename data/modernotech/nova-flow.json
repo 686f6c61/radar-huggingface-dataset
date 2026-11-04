@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ModernoTech/Nova-Flow",
+  "slug": "modernotech-nova-flow",
+  "author": "ModernoTech",
+  "url": "https://huggingface.co/ModernoTech/Nova-Flow",
+  "created_at": "2026-11-04T07:09:56.000Z",
+  "updated_at": "2026-11-04T07:18:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "moderno-tech",
+    "nova",
+    "novaflow",
+    "in-development",
+    "en",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1072325,
+  "storage_human": "1 MB",
+  "base_model": "Unknown",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "YuCeong-May/Text-Cue-Guided-TS-ASR-Qwen",
+  "slug": "yuceong-may-text-cue-guided-ts-asr-qwen",
+  "author": "YuCeong-May",
+  "url": "https://huggingface.co/YuCeong-May/Text-Cue-Guided-TS-ASR-Qwen",
+  "created_at": "2026-11-03T16:29:59.000Z",
+  "updated_at": "2026-11-04T07:36:44.000Z",
+  "license": "funasr-model-open-source-license-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "target-speaker-asr",
+    "speech-recognition",
+    "multi-speaker",
+    "automatic-speech-recognition",
+    "zh",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2589412349,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

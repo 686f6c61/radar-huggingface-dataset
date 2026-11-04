@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Lukita/almost_cvpr",
+  "slug": "lukita-almost_cvpr",
+  "author": "Lukita",
+  "url": "https://huggingface.co/Lukita/almost_cvpr",
+  "created_at": "2026-11-04T04:24:42.000Z",
+  "updated_at": "2026-11-04T04:24:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213054890,
+  "storage_human": "213 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

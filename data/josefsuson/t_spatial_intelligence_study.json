@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JOSEFSUSON/T_Spatial_Intelligence_Study",
+  "slug": "josefsuson-t_spatial_intelligence_study",
+  "author": "JOSEFSUSON",
+  "url": "https://huggingface.co/JOSEFSUSON/T_Spatial_Intelligence_Study",
+  "created_at": "2026-11-03T02:06:00.000Z",
+  "updated_at": "2026-11-04T12:26:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "time-series-anomaly-detection",
+    "spatial-intelligence",
+    "cyber-physical-security",
+    "edge-orchestration",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Spatial Environment v3",
+      "metric": "Mean Reward (Rank",
+      "value": 84.8217
+    },
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Spatial Environment v3",
+      "metric": "Precision Stability Ratio",
+      "value": 99.71
+    },
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Spatial Environment v3",
+      "metric": "Total Timesteps",
+      "value": 1536
+    }
+  ],
+  "sources": []
+}

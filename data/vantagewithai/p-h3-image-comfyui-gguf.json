@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "vantagewithai/P-H3-Image-ComfyUI-GGUF",
+  "slug": "vantagewithai-p-h3-image-comfyui-gguf",
+  "author": "vantagewithai",
+  "url": "https://huggingface.co/vantagewithai/P-H3-Image-ComfyUI-GGUF",
+  "created_at": "2026-11-04T03:39:47.000Z",
+  "updated_at": "2026-11-04T06:09:09.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "gguf",
+    "comfyui",
+    "text-to-image",
+    "image-to-image",
+    "image-generation",
+    "image-editing",
+    "prompt-upsampling",
+    "lora",
+    "int8",
+    "4-bit",
+    "minimax-h3",
+    "pruna-ai",
+    "en",
+    "base_model:PrunaAI/P-H3-Image",
+    "base_model:quantized:PrunaAI/P-H3-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20150289312,
+  "parameters_human": "20.15B",
+  "storage_bytes": 55285861376,
+  "storage_human": "55.3 GB",
+  "base_model": "PrunaAI/p-h3-image",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ullahhafeez321/movie-review-generator-gpt2",
+  "slug": "ullahhafeez321-movie-review-generator-gpt2",
+  "author": "ullahhafeez321",
+  "url": "https://huggingface.co/ullahhafeez321/movie-review-generator-gpt2",
+  "created_at": "2026-11-04T10:28:17.000Z",
+  "updated_at": "2026-11-04T10:28:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gpt2",
+    "text-generation",
+    "movie-reviews",
+    "causal-language-modeling",
+    "en",
+    "dataset:imdb",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai-community/gpt2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Movie Name Generation Using GPT-2",
+      "url": "https://www.nbshare.io/notebook/976197999/Movie-Name-Generation-Using-GPT-2/",
+      "snippet": "Following the paper, several popular transformers surfaced, the most popular of which is GPT. GPT models are developed and trained by OpenAI, one of the leaders in AI research. The latest release of GPT is GPT-3, which has 175 billion parameters. The model was very advanced to the point where OpenAI chose not to open-source it."
+    }
+  ]
+}

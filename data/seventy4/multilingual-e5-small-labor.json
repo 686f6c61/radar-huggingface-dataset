@@ -5,7 +5,7 @@
   "author": "seventy4",
   "url": "https://huggingface.co/seventy4/multilingual-e5-small-labor",
   "created_at": "2026-11-04T01:50:54.000Z",
-  "updated_at": "2026-11-04T01:51:04.000Z",
+  "updated_at": "2026-11-04T05:40:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 117653760,
   "parameters_human": "117.7M",
-  "storage_bytes": 487720404,
-  "storage_human": "488 MB",
+  "storage_bytes": 958357820,
+  "storage_human": "958 MB",
   "base_model": "intfloat/multilingual-e5-small",
   "formats": [
     "safetensors"

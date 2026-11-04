@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jaisawhney/SonicEmbed",
+  "slug": "jaisawhney-sonicembed",
+  "author": "jaisawhney",
+  "url": "https://huggingface.co/jaisawhney/SonicEmbed",
+  "created_at": "2026-11-04T02:53:26.000Z",
+  "updated_at": "2026-11-04T10:36:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "audio",
+    "music",
+    "music-information-retrieval",
+    "text-to-audio-retrieval",
+    "embeddings",
+    "sentence-similarity",
+    "en",
+    "dataset:Telecom-Paris/iamd_v0",
+    "dataset:google/MusicCaps",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 576613688,
+  "parameters_human": "576.6M",
+  "storage_bytes": 2338769966,
+  "storage_human": "2.3 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

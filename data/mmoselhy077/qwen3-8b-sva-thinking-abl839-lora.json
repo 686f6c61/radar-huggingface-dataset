@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mmoselhy077/qwen3-8b-sva-thinking-abl839-lora",
+  "slug": "mmoselhy077-qwen3-8b-sva-thinking-abl839-lora",
+  "author": "mmoselhy077",
+  "url": "https://huggingface.co/mmoselhy077/qwen3-8b-sva-thinking-abl839-lora",
+  "created_at": "2026-06-28T21:52:07.000Z",
+  "updated_at": "2026-11-04T12:32:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "systemverilog",
+    "sva",
+    "assertion-generation",
+    "formal-verification",
+    "verilog",
+    "eda",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:mmoselhy077/sva-abl839-corpus",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709842382,
+  "storage_human": "710 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "NL-to-SVA assertion generation",
+      "dataset": "FVEval-Verified (356 problems)",
+      "metric": "equivalence pass@5 (all)",
+      "value": 81.2
+    },
+    {
+      "task": "NL-to-SVA assertion generation",
+      "dataset": "FVEval-Verified (356 problems)",
+      "metric": "equivalence pass@5 (machine split)",
+      "value": 85.9
+    },
+    {
+      "task": "NL-to-SVA assertion generation",
+      "dataset": "FVEval-Verified (356 problems)",
+      "metric": "equivalence pass@5 (human split)",
+      "value": 63
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mmoselhy077/qwen3-8b-sva-rest-r2-merged",
+  "slug": "mmoselhy077-qwen3-8b-sva-rest-r2-merged",
+  "author": "mmoselhy077",
+  "url": "https://huggingface.co/mmoselhy077/qwen3-8b-sva-rest-r2-merged",
+  "created_at": "2026-07-01T21:34:22.000Z",
+  "updated_at": "2026-11-04T12:32:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "systemverilog",
+    "sva",
+    "assertion-generation",
+    "formal-verification",
+    "verilog",
+    "eda",
+    "hardware-verification",
+    "rest",
+    "self-distillation",
+    "reasoning",
+    "conversational",
+    "en",
+    "dataset:mmoselhy077/sva-abl839-corpus",
+    "dataset:mmoselhy077/sva-rest-r1-synthetic",
+    "dataset:mmoselhy077/sva-rest-r2-humanlike",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "NL-to-SVA assertion generation",
+      "dataset": "FVEval-Verified (356 problems)",
+      "metric": "equivalence pass@5 (all)",
+      "value": 84.8
+    },
+    {
+      "task": "NL-to-SVA assertion generation",
+      "dataset": "FVEval-Verified (356 problems)",
+      "metric": "equivalence pass@5 (machine split)",
+      "value": 90.5
+    },
+    {
+      "task": "NL-to-SVA assertion generation",
+      "dataset": "FVEval-Verified (356 problems)",
+      "metric": "equivalence pass@5 (human split)",
+      "value": 63
+    }
+  ],
+  "sources": []
+}

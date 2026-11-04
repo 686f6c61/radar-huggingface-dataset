@@ -5,7 +5,7 @@
   "author": "sca255",
   "url": "https://huggingface.co/sca255/serenity26ba4b_requant",
   "created_at": "2026-08-28T02:36:52.000Z",
-  "updated_at": "2026-11-03T08:27:11.000Z",
+  "updated_at": "2026-11-03T11:40:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 24085574432,
-  "storage_human": "24.1 GB",
+  "storage_bytes": 36114013088,
+  "storage_human": "36.1 GB",
   "base_model": "ReadyArt/Serenity-26B-A4B-GGUF",
   "formats": [
     "gguf"

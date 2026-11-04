@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-VL-3B-Abliterated-Caption-it-GGUF",
+  "slug": "mradermacher-qwen2-5-vl-3b-abliterated-caption-it-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-3B-Abliterated-Caption-it-GGUF",
+  "created_at": "2025-08-16T16:57:12.000Z",
+  "updated_at": "2026-11-04T07:20:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "uncensored",
+    "image-captioning",
+    "vlm",
+    "visual-understanding",
+    "caption",
+    "image-to-text",
+    "en",
+    "base_model:prithivMLmods/Qwen2.5-VL-3B-Abliterated-Caption-it",
+    "base_model:quantized:prithivMLmods/Qwen2.5-VL-3B-Abliterated-Caption-it",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 916,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 30124063232,
+  "storage_human": "30.1 GB",
+  "base_model": "prithivMLmods/Qwen2.5-VL-3B-Abliterated-Caption-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

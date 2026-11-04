@@ -5,7 +5,7 @@
   "author": "moravianai",
   "url": "https://huggingface.co/moravianai/ThinEmbed-bge-m3",
   "created_at": "2026-09-10T07:53:20.000Z",
-  "updated_at": "2026-11-03T12:04:30.000Z",
+  "updated_at": "2026-11-03T13:46:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 566703104,
   "parameters_human": "566.7M",
-  "storage_bytes": 709929153,
-  "storage_human": "710 MB",
+  "storage_bytes": 711652313,
+  "storage_human": "712 MB",
   "base_model": "BAAI/bge-m3",
   "formats": [
     "gguf"

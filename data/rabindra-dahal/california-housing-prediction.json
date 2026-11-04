@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "rabindra-dahal/california-housing-prediction",
+  "slug": "rabindra-dahal-california-housing-prediction",
+  "author": "rabindra-dahal",
+  "url": "https://huggingface.co/rabindra-dahal/california-housing-prediction",
+  "created_at": "2026-11-04T05:34:50.000Z",
+  "updated_at": "2026-11-04T05:37:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tabular",
+    "regression",
+    "pytorch",
+    "en",
+    "dataset:california-housing",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

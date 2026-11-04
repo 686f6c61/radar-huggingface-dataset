@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "FaaizKhan1999/atml-pa3-ckpt",
+  "slug": "faaizkhan1999-atml-pa3-ckpt",
+  "author": "FaaizKhan1999",
+  "url": "https://huggingface.co/FaaizKhan1999/atml-pa3-ckpt",
+  "created_at": "2026-11-04T08:28:16.000Z",
+  "updated_at": "2026-11-04T09:08:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14548857552,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

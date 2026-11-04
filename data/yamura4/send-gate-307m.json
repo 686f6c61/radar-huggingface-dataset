@@ -5,7 +5,7 @@
   "author": "yamura4",
   "url": "https://huggingface.co/yamura4/send-gate-307m",
   "created_at": "2026-10-28T14:10:33.000Z",
-  "updated_at": "2026-10-28T15:51:25.000Z",
+  "updated_at": "2026-11-03T14:26:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 44,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 307136769,
   "parameters_human": "307.1M",

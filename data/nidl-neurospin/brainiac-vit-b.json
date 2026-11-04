@@ -5,10 +5,10 @@
   "author": "nidl-neurospin",
   "url": "https://huggingface.co/nidl-neurospin/brainiac-vit-b",
   "created_at": "2026-11-02T16:10:54.000Z",
-  "updated_at": "2026-11-02T16:11:16.000Z",
+  "updated_at": "2026-11-03T17:08:00.000Z",
   "license": "brainiac-research-only",
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "feature-extraction",
   "library": "nidl",
   "languages": [],
   "tags": [
@@ -16,7 +16,12 @@
     "safetensors",
     "neuroimaging",
     "MRI",
+    "3D",
     "self-supervised",
+    "foundation-model",
+    "vit",
+    "simclr",
+    "feature-extraction",
     "license:other",
     "region:us"
   ],
@@ -25,8 +30,8 @@
   "trending_score": 0,
   "parameters": 90514688,
   "parameters_human": "90.5M",
-  "storage_bytes": 362074352,
-  "storage_human": "362 MB",
+  "storage_bytes": 724148216,
+  "storage_human": "724 MB",
   "base_model": null,
   "formats": [
     "safetensors"

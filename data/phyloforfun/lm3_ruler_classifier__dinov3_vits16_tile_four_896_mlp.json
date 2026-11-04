@@ -5,7 +5,7 @@
   "author": "phyloforfun",
   "url": "https://huggingface.co/phyloforfun/lm3_ruler_classifier__dinov3_vits16_tile_four_896_mlp",
   "created_at": "2026-11-02T20:04:58.000Z",
-  "updated_at": "2026-11-02T20:05:01.000Z",
+  "updated_at": "2026-11-03T13:54:17.000Z",
   "license": "dinov3-license",
   "license_family": "unknown",
   "pipeline_tag": "image-classification",

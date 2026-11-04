@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "victim3432/xssindex8100",
+  "slug": "victim3432-xssindex8100",
+  "author": "victim3432",
+  "url": "https://huggingface.co/victim3432/xssindex8100",
+  "created_at": "2026-11-04T07:52:51.000Z",
+  "updated_at": "2026-11-04T08:06:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gpt2",
+    "MI8100tag",
+    "en",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "MI8100TN<img src=x onerror=window.__mi_tn=1>",
+      "dataset": "MI8100DN<img src=x onerror=window.__mi_dn=1>",
+      "metric": "MI8100MN<img src=x onerror=window.__mi_mn=1>",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

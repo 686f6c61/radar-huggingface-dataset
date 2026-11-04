@@ -5,7 +5,7 @@
   "author": "xi-zhao",
   "url": "https://huggingface.co/xi-zhao/QwenQPU",
   "created_at": "2026-11-03T02:26:27.000Z",
-  "updated_at": "2026-11-03T03:42:56.000Z",
+  "updated_at": "2026-11-04T00:45:03.000Z",
   "license": "component-specific-terms",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": 9357602496,
   "parameters_human": "9.36B",

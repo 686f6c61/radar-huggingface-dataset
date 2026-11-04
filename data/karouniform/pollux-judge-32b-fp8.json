@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "KaroUniform/pollux-judge-32b-FP8",
+  "slug": "karouniform-pollux-judge-32b-fp8",
+  "author": "KaroUniform",
+  "url": "https://huggingface.co/KaroUniform/pollux-judge-32b-FP8",
+  "created_at": "2026-10-30T07:55:44.000Z",
+  "updated_at": "2026-11-03T08:15:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "fp8",
+    "quantized",
+    "compressed-tensors",
+    "llm-as-a-judge",
+    "pollux",
+    "conversational",
+    "ru",
+    "arxiv:2505.24616",
+    "base_model:ai-forever/pollux-judge-32b",
+    "base_model:quantized:ai-forever/pollux-judge-32b",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 32759790592,
+  "parameters_human": "32.76B",
+  "storage_bytes": 39739307344,
+  "storage_human": "39.7 GB",
+  "base_model": "ai-forever/pollux-judge-32b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

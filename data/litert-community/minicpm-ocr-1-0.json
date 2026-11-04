@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/MiniCPM-OCR-1.0",
   "created_at": "2026-10-29T11:34:31.000Z",
-  "updated_at": "2026-10-30T14:40:41.000Z",
+  "updated_at": "2026-11-03T17:23:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

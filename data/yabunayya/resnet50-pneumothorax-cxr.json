@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Yabunayya/resnet50-pneumothorax-cxr",
+  "slug": "yabunayya-resnet50-pneumothorax-cxr",
+  "author": "Yabunayya",
+  "url": "https://huggingface.co/Yabunayya/resnet50-pneumothorax-cxr",
+  "created_at": "2026-11-04T07:22:47.000Z",
+  "updated_at": "2026-11-04T07:32:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "medical-imaging",
+    "chest-x-ray",
+    "pneumothorax",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23565250,
+  "parameters_human": "23.6M",
+  "storage_bytes": 188265391,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

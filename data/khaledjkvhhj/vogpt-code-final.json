@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "khaledjkvhhj/VOGPT-Code-Final",
+  "slug": "khaledjkvhhj-vogpt-code-final",
+  "author": "khaledjkvhhj",
+  "url": "https://huggingface.co/khaledjkvhhj/VOGPT-Code-Final",
+  "created_at": "2026-11-04T11:30:57.000Z",
+  "updated_at": "2026-11-04T11:32:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cohere2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8028033024,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16076221000,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

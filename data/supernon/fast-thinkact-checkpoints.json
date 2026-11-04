@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "supernon/fast-thinkact-checkpoints",
+  "slug": "supernon-fast-thinkact-checkpoints",
+  "author": "supernon",
+  "url": "https://huggingface.co/supernon/fast-thinkact-checkpoints",
+  "created_at": "2026-11-04T07:30:12.000Z",
+  "updated_at": "2026-11-04T07:30:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "latent-reasoning",
+    "fast-thinkact",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49172613101,
+  "storage_human": "49.2 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct, Qwen/Qwen3-0.6B, robotics-diffusion-transformer/rdt-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

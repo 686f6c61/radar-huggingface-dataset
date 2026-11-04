@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "BluBridgeAI/BLU-135M",
+  "slug": "blubridgeai-blu-135m",
+  "author": "BluBridgeAI",
+  "url": "https://huggingface.co/BluBridgeAI/BLU-135M",
+  "created_at": "2026-11-02T08:05:20.000Z",
+  "updated_at": "2026-11-02T08:06:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "base-model",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1612942416,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

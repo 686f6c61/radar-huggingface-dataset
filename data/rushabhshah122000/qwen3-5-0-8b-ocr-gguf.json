@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RushabhShah122000/qwen3.5-0.8b-ocr-gguf",
+  "slug": "rushabhshah122000-qwen3-5-0-8b-ocr-gguf",
+  "author": "RushabhShah122000",
+  "url": "https://huggingface.co/RushabhShah122000/qwen3.5-0.8b-ocr-gguf",
+  "created_at": "2026-11-04T09:36:32.000Z",
+  "updated_at": "2026-11-04T09:37:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 3138145568,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

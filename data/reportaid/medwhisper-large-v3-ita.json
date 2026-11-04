@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ReportAId/medwhisper-large-v3-ita",
+  "slug": "reportaid-medwhisper-large-v3-ita",
+  "author": "ReportAId",
+  "url": "https://huggingface.co/ReportAId/medwhisper-large-v3-ita",
+  "created_at": "2025-09-24T08:24:32.000Z",
+  "updated_at": "2026-11-04T10:18:44.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "electronic health record",
+    "ehr",
+    "it",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 3235581408,
+  "storage_human": "3.2 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

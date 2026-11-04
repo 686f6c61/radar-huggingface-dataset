@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wqfang/fastgen-best",
+  "slug": "wqfang-fastgen-best",
+  "author": "wqfang",
+  "url": "https://huggingface.co/wqfang/fastgen-best",
+  "created_at": "2026-11-04T09:08:49.000Z",
+  "updated_at": "2026-11-04T09:17:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-generation",
+    "pokemon",
+    "rectified-flow",
+    "distillation",
+    "en",
+    "arxiv:2509.25127",
+    "arxiv:2405.14867",
+    "arxiv:2202.00512",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1500429902,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

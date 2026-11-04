@@ -5,7 +5,7 @@
   "author": "sukhun2",
   "url": "https://huggingface.co/sukhun2/audio_cls_v2",
   "created_at": "2026-10-19T05:32:22.000Z",
-  "updated_at": "2026-11-02T11:58:57.000Z",
+  "updated_at": "2026-11-03T06:48:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 45,
+  "downloads_30d": 95,
   "trending_score": 0,
   "parameters": 94572174,
   "parameters_human": "94.6M",
-  "storage_bytes": 7566299281,
-  "storage_human": "7.6 GB",
+  "storage_bytes": 11349446321,
+  "storage_human": "11.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "senga-ml",
   "url": "https://huggingface.co/senga-ml/naivas-model-body-03-11",
   "created_at": "2026-11-03T13:39:33.000Z",
-  "updated_at": "2026-11-03T13:55:32.000Z",
+  "updated_at": "2026-11-03T16:40:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 202108344,
   "parameters_human": "202.1M",
-  "storage_bytes": 1618592048,
-  "storage_human": "1.6 GB",
+  "storage_bytes": 10520848312,
+  "storage_human": "10.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

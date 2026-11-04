@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Starlinghq/qwen2.5-0.5b-instruct-ortgenai",
+  "slug": "starlinghq-qwen2-5-0-5b-instruct-ortgenai",
+  "author": "Starlinghq",
+  "url": "https://huggingface.co/Starlinghq/qwen2.5-0.5b-instruct-ortgenai",
+  "created_at": "2026-10-19T19:22:26.000Z",
+  "updated_at": "2026-11-04T09:40:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime-genai",
+  "languages": [],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "starlings",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1984856300,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "joaoandradener/swin-t-generation",
+  "slug": "joaoandradener-swin-t-generation",
+  "author": "joaoandradener",
+  "url": "https://huggingface.co/joaoandradener/swin-t-generation",
+  "created_at": "2026-11-04T08:04:59.000Z",
+  "updated_at": "2026-11-04T08:05:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

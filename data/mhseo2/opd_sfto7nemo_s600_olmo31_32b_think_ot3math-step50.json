@@ -5,7 +5,7 @@
   "author": "mhseo2",
   "url": "https://huggingface.co/mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step50",
   "created_at": "2026-11-02T16:22:59.000Z",
-  "updated_at": "2026-11-02T16:25:54.000Z",
+  "updated_at": "2026-11-03T07:21:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 7298011136,
   "parameters_human": "7.30B",

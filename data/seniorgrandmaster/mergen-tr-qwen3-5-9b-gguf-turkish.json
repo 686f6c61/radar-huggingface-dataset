@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "SeniorGrandMaster/Mergen-TR-Qwen3.5-9B-GGUF-TURKISH",
+  "slug": "seniorgrandmaster-mergen-tr-qwen3-5-9b-gguf-turkish",
+  "author": "SeniorGrandMaster",
+  "url": "https://huggingface.co/SeniorGrandMaster/Mergen-TR-Qwen3.5-9B-GGUF-TURKISH",
+  "created_at": "2026-11-03T19:16:46.000Z",
+  "updated_at": "2026-11-04T07:31:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "gguf",
+    "Turkish,",
+    "Türkçe,",
+    "Qwen3.5,",
+    "9B,",
+    "GGUF,",
+    "tr",
+    "arxiv:2407.12402",
+    "base_model:dogukanvzr/Mergen-TR-Qwen3.5-9B",
+    "base_model:quantized:dogukanvzr/Mergen-TR-Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 9293042528,
+  "storage_human": "9.3 GB",
+  "base_model": "dogukanvzr/Mergen-TR-Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "felipermtrindade/FoodReviewAI-Sentiment",
+  "slug": "felipermtrindade-foodreviewai-sentiment",
+  "author": "felipermtrindade",
+  "url": "https://huggingface.co/felipermtrindade/FoodReviewAI-Sentiment",
+  "created_at": "2026-11-04T11:36:52.000Z",
+  "updated_at": "2026-11-04T11:45:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "sentiment-analysis",
+    "text-classification",
+    "scikit-learn",
+    "tf-idf",
+    "logistic-regression",
+    "pt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 480420,
+  "storage_human": "480420 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

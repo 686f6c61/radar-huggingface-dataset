@@ -5,7 +5,7 @@
   "author": "udibkl",
   "url": "https://huggingface.co/udibkl/llama27b-adapt-trained-lora-adapter-5k",
   "created_at": "2026-11-03T11:21:23.000Z",
-  "updated_at": "2026-11-03T11:21:26.000Z",
+  "updated_at": "2026-11-03T12:45:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 67681796,
-  "storage_human": "68 MB",
+  "storage_bytes": 134863869,
+  "storage_human": "135 MB",
   "base_model": "meta-llama/Llama-2-7b-hf",
   "formats": [
     "safetensors"

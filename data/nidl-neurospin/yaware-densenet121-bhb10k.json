@@ -5,10 +5,10 @@
   "author": "nidl-neurospin",
   "url": "https://huggingface.co/nidl-neurospin/yaware-densenet121-bhb10k",
   "created_at": "2026-11-02T16:11:29.000Z",
-  "updated_at": "2026-11-02T16:11:48.000Z",
+  "updated_at": "2026-11-03T17:07:46.000Z",
   "license": "other",
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "feature-extraction",
   "library": "nidl",
   "languages": [],
   "tags": [
@@ -16,7 +16,13 @@
     "safetensors",
     "neuroimaging",
     "MRI",
+    "3D",
     "self-supervised",
+    "foundation-model",
+    "densenet",
+    "contrastive-learning",
+    "vbm",
+    "feature-extraction",
     "arxiv:2106.08808",
     "license:other",
     "region:us"
@@ -26,8 +32,8 @@
   "trending_score": 0,
   "parameters": 11912640,
   "parameters_human": "11.9M",
-  "storage_bytes": 47740096,
-  "storage_human": "48 MB",
+  "storage_bytes": 95480912,
+  "storage_human": "95 MB",
   "base_model": null,
   "formats": [
     "safetensors"

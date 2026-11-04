@@ -5,7 +5,7 @@
   "author": "stonarini",
   "url": "https://huggingface.co/stonarini/grepac-e5-small",
   "created_at": "2026-11-03T19:20:11.000Z",
-  "updated_at": "2026-11-03T19:20:27.000Z",
+  "updated_at": "2026-11-03T19:29:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sulabhkatiyar/indic-tiny-tts-malayalam",
+  "slug": "sulabhkatiyar-indic-tiny-tts-malayalam",
+  "author": "sulabhkatiyar",
+  "url": "https://huggingface.co/sulabhkatiyar/indic-tiny-tts-malayalam",
+  "created_at": "2026-10-23T06:58:33.000Z",
+  "updated_at": "2026-11-04T08:54:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ml"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "malayalam",
+    "speech-synthesis",
+    "on-device",
+    "cpu",
+    "ml",
+    "dataset:sulabhkatiyar/indic-tts-mini-24k",
+    "dataset:sulabhkatiyar/indic-tts-multilingual-prepared",
+    "dataset:ai4bharat/Rasa",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 8934153,
+  "parameters_human": "8.9M",
+  "storage_bytes": 183516929,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

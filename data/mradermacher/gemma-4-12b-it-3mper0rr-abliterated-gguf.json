@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/gemma-4-12b-it-3MPER0RR-abliterated-GGUF",
   "created_at": "2026-09-02T13:44:30.000Z",
-  "updated_at": "2026-10-06T21:18:31.000Z",
+  "updated_at": "2026-11-03T23:33:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
   "tags": [
     "transformers",
     "gguf",
+    "text-generation-inference",
     "en",
     "base_model:3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated",
     "base_model:quantized:3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated",

@@ -5,7 +5,7 @@
   "author": "mittwald",
   "url": "https://huggingface.co/mittwald/Kolibri-1-mixed-NVFP4-FP8",
   "created_at": "2026-11-03T09:03:02.000Z",
-  "updated_at": "2026-11-03T09:06:51.000Z",
+  "updated_at": "2026-11-03T09:55:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

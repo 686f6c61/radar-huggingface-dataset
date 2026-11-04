@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SharathLal/flipkart-distilbert-sentiment-analysis",
+  "slug": "sharathlal-flipkart-distilbert-sentiment-analysis",
+  "author": "SharathLal",
+  "url": "https://huggingface.co/SharathLal/flipkart-distilbert-sentiment-analysis",
+  "created_at": "2026-11-04T11:55:53.000Z",
+  "updated_at": "2026-11-04T12:29:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "sentiment-analysis",
+    "flipkart-reviews",
+    "deep-learning",
+    "en",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267835644,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

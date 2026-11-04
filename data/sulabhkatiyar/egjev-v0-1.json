@@ -5,7 +5,7 @@
   "author": "sulabhkatiyar",
   "url": "https://huggingface.co/sulabhkatiyar/egjev-v0.1",
   "created_at": "2026-10-31T09:33:49.000Z",
-  "updated_at": "2026-11-02T19:43:28.000Z",
+  "updated_at": "2026-11-03T09:09:57.000Z",
   "license": "egjev-mixed-research",
   "license_family": "unknown",
   "pipeline_tag": "zero-shot-classification",
@@ -79,7 +79,7 @@
   "trending_score": 0,
   "parameters": 746148667,
   "parameters_human": "746.1M",
-  "storage_bytes": 2986494086,
+  "storage_bytes": 2988146123,
   "storage_human": "3.0 GB",
   "base_model": "google/embeddinggemma-2",
   "formats": [

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/ms-marco-MiniLM-L-6-v2-mic",
+  "slug": "huggingface-mic-ms-marco-minilm-l-6-v2-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/ms-marco-MiniLM-L-6-v2-mic",
+  "created_at": "2026-11-04T12:06:26.000Z",
+  "updated_at": "2026-11-04T12:06:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "mic",
+    "test-artifact",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2057601,
+  "parameters_human": "2.1M",
+  "storage_bytes": 8234884,
+  "storage_human": "8 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

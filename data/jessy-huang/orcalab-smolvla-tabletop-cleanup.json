@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Jessy-Huang/orcalab-smolvla-tabletop-cleanup",
+  "slug": "jessy-huang-orcalab-smolvla-tabletop-cleanup",
+  "author": "Jessy-Huang",
+  "url": "https://huggingface.co/Jessy-Huang/orcalab-smolvla-tabletop-cleanup",
+  "created_at": "2026-11-04T06:00:18.000Z",
+  "updated_at": "2026-11-04T06:25:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "orcalab",
+    "imitation-learning",
+    "tabletop-manipulation",
+    "en",
+    "zh",
+    "dataset:Jessy-Huang/orcalab-tabletop-cleanup",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450076896,
+  "parameters_human": "450.1M",
+  "storage_bytes": 907782225,
+  "storage_human": "908 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/gte-reranker-modernbert-base-mic",
+  "slug": "huggingface-mic-gte-reranker-modernbert-base-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/gte-reranker-modernbert-base-mic",
+  "created_at": "2026-11-04T12:06:49.000Z",
+  "updated_at": "2026-11-04T12:06:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "mic",
+    "test-artifact",
+    "base_model:Alibaba-NLP/gte-reranker-modernbert-base",
+    "base_model:finetune:Alibaba-NLP/gte-reranker-modernbert-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3310017,
+  "parameters_human": "3.3M",
+  "storage_bytes": 13241788,
+  "storage_human": "13 MB",
+  "base_model": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

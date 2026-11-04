@@ -5,7 +5,7 @@
   "author": "makitty",
   "url": "https://huggingface.co/makitty/quechua-chanka-mt-bpe",
   "created_at": "2026-10-29T13:22:31.000Z",
-  "updated_at": "2026-11-02T12:07:14.000Z",
+  "updated_at": "2026-11-03T06:06:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 15580800,
   "parameters_human": "15.6M",
-  "storage_bytes": 62347977,
-  "storage_human": "62 MB",
+  "storage_bytes": 63427965,
+  "storage_human": "63 MB",
   "base_model": null,
   "formats": [
     "safetensors"

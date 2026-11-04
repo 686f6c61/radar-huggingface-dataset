@@ -21,9 +21,9 @@
     "base_model:adapter:MiniMaxAI/MiniMax-H3",
     "region:us"
   ],
-  "likes": 30,
-  "downloads_30d": 115,
-  "trending_score": 30,
+  "likes": 36,
+  "downloads_30d": 348,
+  "trending_score": 36,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 298280360,

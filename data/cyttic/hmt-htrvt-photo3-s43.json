@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cyttic/hmt-htrvt-photo3-s43",
+  "slug": "cyttic-hmt-htrvt-photo3-s43",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/hmt-htrvt-photo3-s43",
+  "created_at": "2026-11-04T04:40:16.000Z",
+  "updated_at": "2026-11-04T04:40:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "htr",
+    "ctc",
+    "he",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13821574,
+  "parameters_human": "13.8M",
+  "storage_bytes": 55300408,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

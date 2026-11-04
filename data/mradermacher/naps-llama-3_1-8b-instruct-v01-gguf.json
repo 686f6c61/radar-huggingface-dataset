@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/naps-llama-3_1-8b-instruct-v01-GGUF",
+  "slug": "mradermacher-naps-llama-3_1-8b-instruct-v01-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/naps-llama-3_1-8b-instruct-v01-GGUF",
+  "created_at": "2025-03-05T08:51:32.000Z",
+  "updated_at": "2026-11-04T07:19:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ko",
+    "dataset:nayohan/math-gpt-4o-200k-ko",
+    "base_model:NAPS-ai/naps-llama-3_1-8b-instruct-v01",
+    "base_model:quantized:NAPS-ai/naps-llama-3_1-8b-instruct-v01",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 188,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820287232,
+  "storage_human": "71.8 GB",
+  "base_model": "NAPS-ai/naps-llama-3_1-8b-instruct-v01",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

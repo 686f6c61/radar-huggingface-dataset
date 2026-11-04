@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "sulsulAI/sulsulAI-models",
+  "slug": "sulsulai-sulsulai-models",
+  "author": "sulsulAI",
+  "url": "https://huggingface.co/sulsulAI/sulsulAI-models",
+  "created_at": "2026-10-21T11:06:01.000Z",
+  "updated_at": "2026-11-04T06:58:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "accounting",
+    "korean",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 327,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 19094919040,
+  "storage_human": "19.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B, Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "laion",
   "url": "https://huggingface.co/laion/Humaneness-Voice-Large-NotebookLM-Edition",
   "created_at": "2026-11-02T23:33:52.000Z",
-  "updated_at": "2026-11-03T00:01:40.000Z",
+  "updated_at": "2026-11-03T05:33:09.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 48,
   "trending_score": 0,
   "parameters": 4129990144,
   "parameters_human": "4.13B",

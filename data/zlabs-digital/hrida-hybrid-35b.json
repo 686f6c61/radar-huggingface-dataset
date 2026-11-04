@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "zlabs-digital/Hrida-Hybrid-35B",
+  "slug": "zlabs-digital-hrida-hybrid-35b",
+  "author": "zlabs-digital",
+  "url": "https://huggingface.co/zlabs-digital/Hrida-Hybrid-35B",
+  "created_at": "2026-11-04T11:16:53.000Z",
+  "updated_at": "2026-11-04T11:19:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hrida_hybrid",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505261952,
+  "parameters_human": "35.51B",
+  "storage_bytes": 71023450230,
+  "storage_human": "71.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

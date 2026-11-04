@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "HITshan/DK-VLM-Model",
+  "slug": "hitshan-dk-vlm-model",
+  "author": "HITshan",
+  "url": "https://huggingface.co/HITshan/DK-VLM-Model",
+  "created_at": "2026-10-14T08:28:43.000Z",
+  "updated_at": "2026-11-04T10:15:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2610.22356",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1142862780,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

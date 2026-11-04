@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "RoboColosseum/droid-put-marker-pen-molmoact2",
+  "slug": "robocolosseum-droid-put-marker-pen-molmoact2",
+  "author": "RoboColosseum",
+  "url": "https://huggingface.co/RoboColosseum/droid-put-marker-pen-molmoact2",
+  "created_at": "2026-11-04T05:43:32.000Z",
+  "updated_at": "2026-11-04T05:43:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "droid",
+    "robotics",
+    "franka",
+    "robocolosseum",
+    "molmoact2",
+    "put-marker-pen",
+    "dataset:local/droid-put-marker-pen",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884594120,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indoor – Google Maps",
+      "url": "https://maps.google.fr/help/maps/indoormaps/",
+      "snippet": "How do indoor Google Maps work? Indoor floor plans are seamlessly integrated into Google Maps for desktop and Android and are …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "tomo-o",
   "url": "https://huggingface.co/tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2-fast",
   "created_at": "2026-11-03T03:16:36.000Z",
-  "updated_at": "2026-11-03T03:56:11.000Z",
+  "updated_at": "2026-11-04T01:39:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

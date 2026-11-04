@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ikppramesh/irx-1-GGUF",
+  "slug": "ikppramesh-irx-1-gguf",
+  "author": "ikppramesh",
+  "url": "https://huggingface.co/ikppramesh/irx-1-GGUF",
+  "created_at": "2026-09-07T18:37:32.000Z",
+  "updated_at": "2026-11-04T10:23:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "offline",
+    "on-device",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 11418637120,
+  "storage_human": "11.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

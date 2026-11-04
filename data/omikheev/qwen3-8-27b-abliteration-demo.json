@@ -5,7 +5,7 @@
   "author": "omikheev",
   "url": "https://huggingface.co/omikheev/qwen3.8-27b-abliteration-demo",
   "created_at": "2026-11-02T22:34:19.000Z",
-  "updated_at": "2026-11-03T01:09:11.000Z",
+  "updated_at": "2026-11-03T03:16:19.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

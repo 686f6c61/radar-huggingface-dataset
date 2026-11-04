@@ -4,8 +4,8 @@
   "slug": "taurusduan-swift-1-5-qwen3-8-27b-gsq-rco-gguf",
   "author": "taurusduan",
   "url": "https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF",
-  "created_at": "2026-09-29T00:55:46.000Z",
-  "updated_at": "2026-09-29T00:55:46.000Z",
+  "created_at": "2026-11-02T07:38:36.000Z",
+  "updated_at": "2026-11-02T07:38:39.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -45,8 +45,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-02T03:35:16.299Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

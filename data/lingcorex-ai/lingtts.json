@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "LingCoreX-AI/LingTTS",
+  "slug": "lingcorex-ai-lingtts",
+  "author": "LingCoreX-AI",
+  "url": "https://huggingface.co/LingCoreX-AI/LingTTS",
+  "created_at": "2026-11-04T07:20:40.000Z",
+  "updated_at": "2026-11-04T07:25:07.000Z",
+  "license": "lingtts-community-license-1-0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "esp32",
+    "esp32-s3",
+    "embedded",
+    "offline-tts",
+    "chinese-tts",
+    "edge-ai",
+    "text-to-speech",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

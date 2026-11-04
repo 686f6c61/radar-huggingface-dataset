@@ -5,7 +5,7 @@
   "author": "mx297",
   "url": "https://huggingface.co/mx297/EO-Jev",
   "created_at": "2026-11-03T10:09:15.000Z",
-  "updated_at": "2026-11-03T10:28:24.000Z",
+  "updated_at": "2026-11-03T11:13:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -36,7 +36,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 8392695024,

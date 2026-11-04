@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tiny-random/sensenova-loop",
+  "slug": "tiny-random-sensenova-loop",
+  "author": "tiny-random",
+  "url": "https://huggingface.co/tiny-random/sensenova-loop",
+  "created_at": "2026-11-04T07:44:55.000Z",
+  "updated_at": "2026-11-04T07:45:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sensenova_loop",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:sensenova/SenseNova-Loop-9B-Preview",
+    "base_model:finetune:sensenova/SenseNova-Loop-9B-Preview",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4549824,
+  "parameters_human": "4.5M",
+  "storage_bytes": 38235981,
+  "storage_human": "38 MB",
+  "base_model": "sensenova/SenseNova-Loop-9B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

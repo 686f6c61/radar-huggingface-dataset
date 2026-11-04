@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "viai957/nano-mistral-o1-dpo-arm-b-response",
+  "slug": "viai957-nano-mistral-o1-dpo-arm-b-response",
+  "author": "viai957",
+  "url": "https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-b-response",
+  "created_at": "2026-10-20T02:17:08.000Z",
+  "updated_at": "2026-11-04T04:47:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "math",
+    "reasoning",
+    "dpo",
+    "dpop",
+    "step-level-preference",
+    "prm800k",
+    "negative-result",
+    "research-artifact",
+    "nano-mistral-o1",
+    "en",
+    "dataset:tasksource/PRM800K",
+    "dataset:openai/gsm8k",
+    "arxiv:2305.20050",
+    "arxiv:2402.13228",
+    "arxiv:2305.18290",
+    "base_model:viai957/nano-mistral-o1-sft",
+    "base_model:finetune:viai957/nano-mistral-o1-sft",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14497437857,
+  "storage_human": "14.5 GB",
+  "base_model": "viai957/nano-mistral-o1-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Math word problems (greedy, 0-shot, own prompt template)",
+      "dataset": "GSM8K (test, full)",
+      "metric": "pass@1 (greedy, max_new_tokens 768)",
+      "value": 0.0091
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "olddoughcanada/microduck-sprint-feedback-bias-d16ed1d5cfb11eb5",
+  "slug": "olddoughcanada-microduck-sprint-feedback-bias-d16ed1d5cfb11eb5",
+  "author": "olddoughcanada",
+  "url": "https://huggingface.co/olddoughcanada/microduck-sprint-feedback-bias-d16ed1d5cfb11eb5",
+  "created_at": "2026-11-04T07:54:33.000Z",
+  "updated_at": "2026-11-04T07:54:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "robotics",
+    "sprint-2m",
+    "base_model:jrubiosainz/microduck-game-sprinter-remix14",
+    "base_model:finetune:jrubiosainz/microduck-game-sprinter-remix14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793742,
+  "storage_human": "793742 B",
+  "base_model": "jrubiosainz/microduck-game-sprinter-remix14",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

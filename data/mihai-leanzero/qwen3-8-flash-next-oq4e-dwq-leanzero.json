@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Mihai-LeanZero/Qwen3.8-Flash-Next-oQ4e-DWQ-LeanZero",
+  "slug": "mihai-leanzero-qwen3-8-flash-next-oq4e-dwq-leanzero",
+  "author": "Mihai-LeanZero",
+  "url": "https://huggingface.co/Mihai-LeanZero/Qwen3.8-Flash-Next-oQ4e-DWQ-LeanZero",
+  "created_at": "2026-11-04T05:19:33.000Z",
+  "updated_at": "2026-11-04T05:24:40.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "quantized",
+    "4-bit",
+    "dwq",
+    "mtp",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 107682937290,
+  "storage_human": "107.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shib Events and Ticketing Engine: Revolutionizing Event Ticketing",
+      "url": "https://news.shib.io/2025/04/17/shib-events-and-ticketing-engine-revolutionizing-event-ticketing/",
+      "snippet": "Apr 17, 2025 · Digital events are booming, but are your tickets legit? A next-gen ticketing engine powered by NFTs ensures secure, …"
+    }
+  ]
+}

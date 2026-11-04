@@ -5,7 +5,7 @@
   "author": "raoofaltaher",
   "url": "https://huggingface.co/raoofaltaher/lead-decision-models-reply-router-merged",
   "created_at": "2026-11-03T12:41:16.000Z",
-  "updated_at": "2026-11-03T12:50:27.000Z",
+  "updated_at": "2026-11-03T20:29:11.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 1728801536,
   "parameters_human": "1.73B",
-  "storage_bytes": 3536501537,
-  "storage_human": "3.5 GB",
+  "storage_bytes": 10573687341,
+  "storage_human": "10.6 GB",
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"

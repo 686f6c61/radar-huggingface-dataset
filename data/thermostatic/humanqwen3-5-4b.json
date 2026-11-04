@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Thermostatic/HumanQwen3.5-4B",
+  "slug": "thermostatic-humanqwen3-5-4b",
+  "author": "Thermostatic",
+  "url": "https://huggingface.co/Thermostatic/HumanQwen3.5-4B",
+  "created_at": "2026-11-04T07:16:13.000Z",
+  "updated_at": "2026-11-04T07:18:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "human-like",
+    "writing",
+    "unsloth",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332636078,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is Thermostatic? Definition and How It Works",
+      "url": "https://scienceinsights.org/what-is-thermostatic-definition-and-how-it-works/",
+      "snippet": "Thermostatic means automatically responding to temperature changes. Learn how thermostatic devices work in cars, HVAC …"
+    },
+    {
+      "title": "THERMOSTATIC Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/thermostatic",
+      "snippet": "The meaning of THERMOSTATIC is of or relating to a thermostat : controlled by a thermostat."
+    },
+    {
+      "title": "What is a thermostatic shower and how do they work?",
+      "url": "https://www.homebuilding.co.uk/advice/what-is-a-thermostatic-shower",
+      "snippet": "Apr 18, 2023 · \"Thermostatic showers automatically revert to your set temperature, so you won’t experience a sudden burst of cold …"
+    },
+    {
+      "title": "Robinet thermostatique : comment choisir ? | Netatmo France",
+      "url": "https://www.netatmo.com/fr-fr/comfort-guide/thermostatic-tap",
+      "snippet": "Découvrez tout ce qu’il faut savoir sur le robinet thermostatique : son fonctionnement, ses avantages, ainsi que les différents …"
+    }
+  ]
+}

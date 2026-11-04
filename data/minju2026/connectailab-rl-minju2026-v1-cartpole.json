@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "minju2026/connectailab-rl-minju2026-v1-cartpole",
+  "slug": "minju2026-connectailab-rl-minju2026-v1-cartpole",
+  "author": "minju2026",
+  "url": "https://huggingface.co/minju2026/connectailab-rl-minju2026-v1-cartpole",
+  "created_at": "2026-11-04T09:06:11.000Z",
+  "updated_at": "2026-11-04T09:06:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "dqn",
+    "gymnasium",
+    "CartPole-v1",
+    "connect-ai-lab",
+    "connectailab",
+    "aicitybuilders",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72317,
+  "storage_human": "72317 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "CartPole-v1",
+      "metric": "처음 보는 10판 평균 점수 (최대 500)",
+      "value": 500
+    }
+  ],
+  "sources": []
+}

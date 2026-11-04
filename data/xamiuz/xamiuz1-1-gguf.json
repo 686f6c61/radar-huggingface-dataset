@@ -5,7 +5,7 @@
   "author": "xamiuz",
   "url": "https://huggingface.co/xamiuz/xamiuz1.1-GGUF",
   "created_at": "2026-11-03T10:10:13.000Z",
-  "updated_at": "2026-11-03T10:10:56.000Z",
+  "updated_at": "2026-11-04T06:14:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
-  "storage_bytes": 4920739072,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 14762217216,
+  "storage_human": "14.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

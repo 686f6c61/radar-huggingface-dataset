@@ -5,7 +5,7 @@
   "author": "takanori-ishikawa",
   "url": "https://huggingface.co/takanori-ishikawa/GLM-4.7-Flash-Abliterated-UD-Q4_K_XL-GGUF",
   "created_at": "2026-11-03T08:47:08.000Z",
-  "updated_at": "2026-11-03T08:51:27.000Z",
+  "updated_at": "2026-11-03T09:55:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

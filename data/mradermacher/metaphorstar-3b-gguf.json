@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MetaphorStar-3B-GGUF",
+  "slug": "mradermacher-metaphorstar-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MetaphorStar-3B-GGUF",
+  "created_at": "2026-02-13T16:03:48.000Z",
+  "updated_at": "2026-11-04T05:00:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vision-language-model",
+    "reinforcement-learning",
+    "grpo",
+    "metaphor-understanding",
+    "visual-reasoning",
+    "en",
+    "base_model:MING-ZCH/MetaphorStar-3B",
+    "base_model:quantized:MING-ZCH/MetaphorStar-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32781697472,
+  "storage_human": "32.8 GB",
+  "base_model": "MING-ZCH/MetaphorStar-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

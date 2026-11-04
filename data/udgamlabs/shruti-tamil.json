@@ -5,7 +5,7 @@
   "author": "udgamlabs",
   "url": "https://huggingface.co/udgamlabs/shruti-tamil",
   "created_at": "2026-11-02T15:59:48.000Z",
-  "updated_at": "2026-11-02T15:59:52.000Z",
+  "updated_at": "2026-11-03T11:51:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "cactus-needle",
+    "whistle",
     "udgamlabs",
     "shruti",
     "speech-recognition",
@@ -39,7 +40,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 5,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

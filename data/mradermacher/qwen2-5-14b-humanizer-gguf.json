@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-14B-Humanizer-GGUF",
+  "slug": "mradermacher-qwen2-5-14b-humanizer-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-14B-Humanizer-GGUF",
+  "created_at": "2026-03-15T13:41:58.000Z",
+  "updated_at": "2026-11-04T05:00:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:barmyman/Qwen2.5-14B-Humanizer",
+    "base_model:quantized:barmyman/Qwen2.5-14B-Humanizer",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 507,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043513760,
+  "storage_human": "102.0 GB",
+  "base_model": "barmyman/Qwen2.5-14B-Humanizer",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

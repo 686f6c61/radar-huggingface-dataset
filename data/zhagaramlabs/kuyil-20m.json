@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "zhagaramlabs/kuyil-20m",
+  "slug": "zhagaramlabs-kuyil-20m",
+  "author": "zhagaramlabs",
+  "url": "https://huggingface.co/zhagaramlabs/kuyil-20m",
+  "created_at": "2026-11-04T04:25:27.000Z",
+  "updated_at": "2026-11-04T04:25:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ta",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "tamil",
+    "tanglish",
+    "tts",
+    "tiny",
+    "pivo",
+    "fargan",
+    "text-to-speech",
+    "ta",
+    "en",
+    "dataset:SPRINGLab/IndicTTS_Tamil",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21834845,
+  "parameters_human": "21.8M",
+  "storage_bytes": 90859951,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

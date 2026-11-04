@@ -5,7 +5,7 @@
   "author": "sx58",
   "url": "https://huggingface.co/sx58/anekdot-gpt",
   "created_at": "2026-11-03T04:51:50.000Z",
-  "updated_at": "2026-11-03T04:53:47.000Z",
+  "updated_at": "2026-11-03T08:50:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "pytorch",
+    "onnx",
     "from-scratch",
     "karpathy",
     "gpt",
@@ -30,10 +31,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 63788887,
-  "storage_human": "64 MB",
+  "storage_bytes": 152390811,
+  "storage_human": "152 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

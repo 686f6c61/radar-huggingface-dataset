@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Tema_Q-X8-Thinking-GGUF",
   "created_at": "2026-11-03T17:44:42.000Z",
-  "updated_at": "2026-11-03T18:10:08.000Z",
+  "updated_at": "2026-11-03T19:04:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 72929677344,
-  "storage_human": "72.9 GB",
+  "storage_bytes": 244419013920,
+  "storage_human": "244.4 GB",
   "base_model": "temaq-org/Tema_Q-X8-Thinking",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "MIHMahmudEli",
   "url": "https://huggingface.co/MIHMahmudEli/david-net-av-v2",
   "created_at": "2026-10-06T17:13:32.000Z",
-  "updated_at": "2026-10-06T17:46:24.000Z",
+  "updated_at": "2026-11-01T10:34:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "video-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

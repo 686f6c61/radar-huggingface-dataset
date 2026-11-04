@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "keras/muse_glimmer_30b_assistant",
+  "slug": "keras-muse_glimmer_30b_assistant",
+  "author": "keras",
+  "url": "https://huggingface.co/keras/muse_glimmer_30b_assistant",
+  "created_at": "2026-11-04T08:57:12.000Z",
+  "updated_at": "2026-11-04T09:13:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras-hub",
+  "languages": [],
+  "tags": [
+    "keras-hub",
+    "arxiv:2610.24628",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5112191552,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Keras: The multi-backend deep learning library",
+      "url": "https://keras.io/",
+      "snippet": "Keras is a deep learning library with pluggable backends. Write models once and run them on JAX, PyTorch, TensorFlow, and more, …"
+    },
+    {
+      "title": "Keras 3: Multi-backend deep learning",
+      "url": "https://keras.io/keras_3/",
+      "snippet": "Keras 3 runs the same model code on any supported backend, including JAX, PyTorch, and TensorFlow. Learn what's new, how …"
+    },
+    {
+      "title": "Keras — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Keras",
+      "snippet": "La bibliothèque Keras permet d'interagir avec les algorithmes de réseaux de neurones profonds et d' apprentissage automatique, …"
+    },
+    {
+      "title": "Keras - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Keras",
+      "snippet": "Keras is an open-source library that provides a Python interface for artificial neural networks. Keras was first independent software, …"
+    },
+    {
+      "title": "What is Keras? - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/what-is-keras/",
+      "snippet": "Jun 9, 2026 · Keras is a deep learning API that simplifies the process of building deep neural networks. Initially it was developed as …"
+    }
+  ]
+}

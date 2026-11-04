@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Akiki-AI/Akiki-MiniLM-L6-v2-robot-intent",
+  "slug": "akiki-ai-akiki-minilm-l6-v2-robot-intent",
+  "author": "Akiki-AI",
+  "url": "https://huggingface.co/Akiki-AI/Akiki-MiniLM-L6-v2-robot-intent",
+  "created_at": "2026-11-04T10:10:38.000Z",
+  "updated_at": "2026-11-04T10:10:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "akiki",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "akiki",
+    "safetensors",
+    "ariadne",
+    "minilm",
+    "frozen-encoder",
+    "intent-classification",
+    "robotics",
+    "synthetic-data",
+    "text-classification",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:adapter:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92749676,
+  "storage_human": "93 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

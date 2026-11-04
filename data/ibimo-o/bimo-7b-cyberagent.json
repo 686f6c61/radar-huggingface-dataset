@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "iBimo-o/Bimo-7B-CyberAgent",
+  "slug": "ibimo-o-bimo-7b-cyberagent",
+  "author": "iBimo-o",
+  "url": "https://huggingface.co/iBimo-o/Bimo-7B-CyberAgent",
+  "created_at": "2026-11-04T04:58:47.000Z",
+  "updated_at": "2026-11-04T05:01:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693732,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

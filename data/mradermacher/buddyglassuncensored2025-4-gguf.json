@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BuddyGlassUncensored2025.4-GGUF",
+  "slug": "mradermacher-buddyglassuncensored2025-4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BuddyGlassUncensored2025.4-GGUF",
+  "created_at": "2025-03-02T19:19:06.000Z",
+  "updated_at": "2026-11-04T10:43:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407754240,
+  "storage_human": "161.4 GB",
+  "base_model": "darkc0de/BuddyGlassUncensored2025.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "eoinf/bigram_top100_20pct_2b_schedule_200m_dmodel008_016_032_064",
+  "slug": "eoinf-bigram_top100_20pct_2b_schedule_200m_dmodel008_016_032_064",
+  "author": "eoinf",
+  "url": "https://huggingface.co/eoinf/bigram_top100_20pct_2b_schedule_200m_dmodel008_016_032_064",
+  "created_at": "2026-11-04T06:03:53.000Z",
+  "updated_at": "2026-11-04T06:22:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29858990,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

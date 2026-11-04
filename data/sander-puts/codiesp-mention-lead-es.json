@@ -5,7 +5,7 @@
   "author": "sander-puts",
   "url": "https://huggingface.co/sander-puts/codiesp-mention-lead-es",
   "created_at": "2026-11-03T14:14:42.000Z",
-  "updated_at": "2026-11-03T14:24:54.000Z",
+  "updated_at": "2026-11-03T14:50:50.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

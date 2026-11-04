@@ -4,8 +4,8 @@
   "slug": "sstoica12-acquisition_generator_as_deita_combine_wgm_mp_llama8b_conf",
   "author": "sstoica12",
   "url": "https://huggingface.co/sstoica12/acquisition_generator_AS_deita_combine_WGM_MP_llama8b_conf",
-  "created_at": "2026-10-28T23:58:15.000Z",
-  "updated_at": "2026-10-29T00:02:44.000Z",
+  "created_at": "2026-11-03T17:11:37.000Z",
+  "updated_at": "2026-11-03T17:16:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-30T12:44:19.134Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

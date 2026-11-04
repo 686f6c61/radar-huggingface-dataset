@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "multimodal-vision-ai/R3-OvisOCR3-DocTags-0.8B-ONNX",
+  "slug": "multimodal-vision-ai-r3-ovisocr3-doctags-0-8b-onnx",
+  "author": "multimodal-vision-ai",
+  "url": "https://huggingface.co/multimodal-vision-ai/R3-OvisOCR3-DocTags-0.8B-ONNX",
+  "created_at": "2026-11-04T07:24:35.000Z",
+  "updated_at": "2026-11-04T07:24:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "qwen3_5",
+    "ocr",
+    "document-understanding",
+    "doctags",
+    "onnx",
+    "webgpu",
+    "image-text-to-text",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:ATH-MaaS/OvisOCR3",
+    "base_model:finetune:ATH-MaaS/OvisOCR3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20789535,
+  "storage_human": "21 MB",
+  "base_model": "ATH-MaaS/OvisOCR3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "vllm-project/Qwen3.5-4B-DFlash2",
+  "slug": "vllm-project-qwen3-5-4b-dflash2",
+  "author": "vllm-project",
+  "url": "https://huggingface.co/vllm-project/Qwen3.5-4B-DFlash2",
+  "created_at": "2026-11-04T11:18:43.000Z",
+  "updated_at": "2026-11-04T11:18:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dflash2",
+    "qwen",
+    "text-generation",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 662049280,
+  "parameters_human": "662.0M",
+  "storage_bytes": 1324107408,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects …"
+    },
+    {
+      "title": "Releases · vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm/releases",
+      "snippet": "AWS EFA image: a new vllm/vllm-openai:v0.33.0-efa image (x86_64 and aarch64) bundles the AWS EFA libraries and the EFA build …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "armkh/wanderlens-embed",
+  "slug": "armkh-wanderlens-embed",
+  "author": "armkh",
+  "url": "https://huggingface.co/armkh/wanderlens-embed",
+  "created_at": "2026-11-04T11:58:20.000Z",
+  "updated_at": "2026-11-04T11:58:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "travel",
+    "retrieval",
+    "sentence-similarity",
+    "en",
+    "dataset:armkh/wanderlens",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:quantized:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 274347227,
+  "storage_human": "274 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

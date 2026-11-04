@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "trpk75/publishing-dslm-gguf",
+  "slug": "trpk75-publishing-dslm-gguf",
+  "author": "trpk75",
+  "url": "https://huggingface.co/trpk75/publishing-dslm-gguf",
+  "created_at": "2026-11-04T04:38:15.000Z",
+  "updated_at": "2026-11-04T04:38:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048224,
+  "storage_human": "986 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

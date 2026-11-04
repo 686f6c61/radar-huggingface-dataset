@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "lihongjie007/Qwen3-VL-2B-Instruct-GPTQ-Int4-AX650-C256-P6K-CTX8K",
+  "slug": "lihongjie007-qwen3-vl-2b-instruct-gptq-int4-ax650-c256-p6k-ctx8k",
+  "author": "lihongjie007",
+  "url": "https://huggingface.co/lihongjie007/Qwen3-VL-2B-Instruct-GPTQ-Int4-AX650-C256-P6K-CTX8K",
+  "created_at": "2026-11-04T06:02:11.000Z",
+  "updated_at": "2026-11-04T06:09:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3010190260,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mimba/whisper-mimba-essai",
+  "slug": "mimba-whisper-mimba-essai",
+  "author": "mimba",
+  "url": "https://huggingface.co/mimba/whisper-mimba-essai",
+  "created_at": "2026-11-04T06:41:50.000Z",
+  "updated_at": "2026-11-04T07:12:54.000Z",
+  "license": "mimba-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "plt",
+    "mfe",
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "plt",
+    "mfe",
+    "fr",
+    "en",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 14506193053,
+  "storage_human": "14.5 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

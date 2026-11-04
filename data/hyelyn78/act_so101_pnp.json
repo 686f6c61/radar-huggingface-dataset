@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hyelyn78/act_so101_pnp",
+  "slug": "hyelyn78-act_so101_pnp",
+  "author": "hyelyn78",
+  "url": "https://huggingface.co/hyelyn78/act_so101_pnp",
+  "created_at": "2026-11-04T09:35:45.000Z",
+  "updated_at": "2026-11-04T09:37:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hyelyn78/so101_pnp",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

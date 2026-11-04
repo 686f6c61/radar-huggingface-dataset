@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AbrahamPJ/minimax-h3-ref2va-pruned-q4_0-gguf",
+  "slug": "abrahampj-minimax-h3-ref2va-pruned-q4_0-gguf",
+  "author": "AbrahamPJ",
+  "url": "https://huggingface.co/AbrahamPJ/minimax-h3-ref2va-pruned-q4_0-gguf",
+  "created_at": "2026-11-04T08:14:39.000Z",
+  "updated_at": "2026-11-04T08:14:42.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "reference-to-video",
+    "gguf",
+    "android",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

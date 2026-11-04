@@ -5,7 +5,7 @@
   "author": "wcldehgfc",
   "url": "https://huggingface.co/wcldehgfc/miniNLM-thin-46m",
   "created_at": "2026-11-03T07:05:37.000Z",
-  "updated_at": "2026-11-03T07:05:53.000Z",
+  "updated_at": "2026-11-03T07:22:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 46336704,
   "parameters_human": "46.3M",
-  "storage_bytes": 186115654,
-  "storage_human": "186 MB",
+  "storage_bytes": 371475990,
+  "storage_human": "371 MB",
   "base_model": null,
   "formats": [
     "safetensors"

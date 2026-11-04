@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "vernerobotics/v0.5-robotwin",
+  "slug": "vernerobotics-v0-5-robotwin",
+  "author": "vernerobotics",
+  "url": "https://huggingface.co/vernerobotics/v0.5-robotwin",
+  "created_at": "2026-10-30T07:13:07.000Z",
+  "updated_at": "2026-11-04T03:15:25.000Z",
+  "license": "verne-v0.5-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "world-action-model",
+    "flow-matching",
+    "manipulation",
+    "robotwin",
+    "verne",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8216402458,
+  "parameters_human": "8.22B",
+  "storage_bytes": 16433014372,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

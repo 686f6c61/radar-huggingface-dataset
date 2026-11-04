@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Starlinghq/qwen3-0.6b-ortgenai",
+  "slug": "starlinghq-qwen3-0-6b-ortgenai",
+  "author": "Starlinghq",
+  "url": "https://huggingface.co/Starlinghq/qwen3-0.6b-ortgenai",
+  "created_at": "2026-10-19T19:22:07.000Z",
+  "updated_at": "2026-11-04T09:39:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime-genai",
+  "languages": [],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "starlings",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2417091168,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

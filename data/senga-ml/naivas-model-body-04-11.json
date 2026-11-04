@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "senga-ml/naivas-model-body-04-11",
+  "slug": "senga-ml-naivas-model-body-04-11",
+  "author": "senga-ml",
+  "url": "https://huggingface.co/senga-ml/naivas-model-body-04-11",
+  "created_at": "2026-11-04T08:02:03.000Z",
+  "updated_at": "2026-11-04T08:26:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202108344,
+  "parameters_human": "202.1M",
+  "storage_bytes": 3237184096,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

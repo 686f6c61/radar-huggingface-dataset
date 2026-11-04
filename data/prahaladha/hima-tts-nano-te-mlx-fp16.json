@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Prahaladha/hima-tts-nano-te-mlx-fp16",
+  "slug": "prahaladha-hima-tts-nano-te-mlx-fp16",
+  "author": "Prahaladha",
+  "url": "https://huggingface.co/Prahaladha/hima-tts-nano-te-mlx-fp16",
+  "created_at": "2026-11-04T09:34:42.000Z",
+  "updated_at": "2026-11-04T09:43:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [
+    "te",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "text-to-speech",
+    "te",
+    "en",
+    "base_model:Prahaladha/hima-tts-nano-te",
+    "base_model:finetune:Prahaladha/hima-tts-nano-te",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61854849,
+  "parameters_human": "61.9M",
+  "storage_bytes": 328365496,
+  "storage_human": "328 MB",
+  "base_model": "Prahaladha/hima-tts-nano-te",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

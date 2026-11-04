@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Nikssxelo123/VoiceConversionWebUI",
+  "slug": "nikssxelo123-voiceconversionwebui",
+  "author": "Nikssxelo123",
+  "url": "https://huggingface.co/Nikssxelo123/VoiceConversionWebUI",
+  "created_at": "2026-11-04T08:42:17.000Z",
+  "updated_at": "2026-11-04T08:42:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97336710772,
+  "storage_human": "97.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

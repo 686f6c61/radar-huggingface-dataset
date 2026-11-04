@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "baranozbey/nexusprimer-adaptive-model",
+  "slug": "baranozbey-nexusprimer-adaptive-model",
+  "author": "baranozbey",
+  "url": "https://huggingface.co/baranozbey/nexusprimer-adaptive-model",
+  "created_at": "2026-11-04T08:24:44.000Z",
+  "updated_at": "2026-11-04T08:24:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "DecisionTree",
+    "tabular-classification",
+    "scikit-learn",
+    "edtech",
+    "software-engineering",
+    "adaptive-learning",
+    "tr",
+    "dataset:custom-nexusprimer-sessions",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 800,
+  "storage_human": "800 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

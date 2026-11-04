@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wonjunes/mistral-7b-arc",
+  "slug": "wonjunes-mistral-7b-arc",
+  "author": "wonjunes",
+  "url": "https://huggingface.co/wonjunes/mistral-7b-arc",
+  "created_at": "2026-11-04T04:45:50.000Z",
+  "updated_at": "2026-11-04T04:55:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "en",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:finetune:mistralai/Mistral-7B-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483497736,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

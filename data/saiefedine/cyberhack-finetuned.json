@@ -5,7 +5,7 @@
   "author": "saiefedine",
   "url": "https://huggingface.co/saiefedine/CyberHack-FineTuned",
   "created_at": "2026-11-03T12:52:23.000Z",
-  "updated_at": "2026-11-03T13:14:18.000Z",
+  "updated_at": "2026-11-03T22:04:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 499468377,
-  "storage_human": "499 MB",
+  "storage_bytes": 12700502525,
+  "storage_human": "12.7 GB",
   "base_model": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-7B-Instruct-abliterated-v1",
   "formats": [
     "safetensors"

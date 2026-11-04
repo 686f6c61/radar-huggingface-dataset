@@ -5,10 +5,10 @@
   "author": "nidl-neurospin",
   "url": "https://huggingface.co/nidl-neurospin/neuro-simclr-resnet18",
   "created_at": "2026-11-02T16:11:17.000Z",
-  "updated_at": "2026-11-02T16:11:28.000Z",
+  "updated_at": "2026-11-03T17:07:52.000Z",
   "license": "other",
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "feature-extraction",
   "library": "nidl",
   "languages": [],
   "tags": [
@@ -16,7 +16,13 @@
     "safetensors",
     "neuroimaging",
     "MRI",
+    "3D",
     "self-supervised",
+    "foundation-model",
+    "resnet",
+    "simclr",
+    "t1-weighted",
+    "feature-extraction",
     "arxiv:2509.10620",
     "license:other",
     "region:us"
@@ -26,8 +32,8 @@
   "trending_score": 0,
   "parameters": 33465408,
   "parameters_human": "33.5M",
-  "storage_bytes": 133874856,
-  "storage_human": "134 MB",
+  "storage_bytes": 267748864,
+  "storage_human": "268 MB",
   "base_model": null,
   "formats": [
     "safetensors"

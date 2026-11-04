@@ -5,7 +5,7 @@
   "author": "noman-asif",
   "url": "https://huggingface.co/noman-asif/Gemma-4-E4B-Arabic-It",
   "created_at": "2026-11-02T23:23:22.000Z",
-  "updated_at": "2026-11-02T23:24:23.000Z",
+  "updated_at": "2026-11-03T19:30:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": 7996156490,
   "parameters_human": "8.00B",
-  "storage_bytes": 16026619579,
-  "storage_human": "16.0 GB",
+  "storage_bytes": 16586611976,
+  "storage_human": "16.6 GB",
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"

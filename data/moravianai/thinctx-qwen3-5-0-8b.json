@@ -5,7 +5,7 @@
   "author": "moravianai",
   "url": "https://huggingface.co/moravianai/ThinCtx-Qwen3.5-0.8B",
   "created_at": "2026-10-12T14:42:26.000Z",
-  "updated_at": "2026-11-03T12:04:15.000Z",
+  "updated_at": "2026-11-03T13:46:45.000Z",
   "license": "polyform-small-business-1.0.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
-  "storage_bytes": 1609556744,
+  "storage_bytes": 1611290927,
   "storage_human": "1.6 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
