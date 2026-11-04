@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ryan1145/mob-smollm2-1.7b-swiglu",
+  "slug": "ryan1145-mob-smollm2-1-7b-swiglu",
+  "author": "ryan1145",
+  "url": "https://huggingface.co/ryan1145/mob-smollm2-1.7b-swiglu",
+  "created_at": "2026-11-04T18:16:58.000Z",
+  "updated_at": "2026-11-04T18:18:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mob_head",
+    "mob-head",
+    "mixture-of-bernoullis",
+    "knowledge-distillation",
+    "semantic-binary-codes",
+    "output-layer",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-1.7B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49313920,
+  "parameters_human": "49.3M",
+  "storage_bytes": 197518521,
+  "storage_human": "198 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/dse-qwen2-2b-mrl-v1-GGUF",
+  "slug": "mradermacher-dse-qwen2-2b-mrl-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/dse-qwen2-2b-mrl-v1-GGUF",
+  "created_at": "2025-02-08T23:47:51.000Z",
+  "updated_at": "2026-11-04T17:22:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vidore",
+    "en",
+    "fr",
+    "dataset:Tevatron/docmatix-ir",
+    "dataset:HuggingFaceM4/Docmatix",
+    "dataset:Tevatron/msmarco-passage-aug",
+    "dataset:vidore/colpali_train_set",
+    "dataset:Tevatron/wiki-ss-nq",
+    "base_model:MrLight/dse-qwen2-2b-mrl-v1",
+    "base_model:quantized:MrLight/dse-qwen2-2b-mrl-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 336,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 17529523072,
+  "storage_human": "17.5 GB",
+  "base_model": "MrLight/dse-qwen2-2b-mrl-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

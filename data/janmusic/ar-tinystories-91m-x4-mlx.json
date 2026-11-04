@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "janmusic/ar-tinystories-91m-x4-mlx",
+  "slug": "janmusic-ar-tinystories-91m-x4-mlx",
+  "author": "janmusic",
+  "url": "https://huggingface.co/janmusic/ar-tinystories-91m-x4-mlx",
+  "created_at": "2026-11-04T14:26:34.000Z",
+  "updated_at": "2026-11-04T14:27:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "autoregressive",
+    "baseline",
+    "apple-silicon",
+    "text-generation",
+    "research",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2610.14162",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 365411590,
+  "storage_human": "365 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

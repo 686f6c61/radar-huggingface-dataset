@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "yorsnote/segfor",
+  "slug": "yorsnote-segfor",
+  "author": "yorsnote",
+  "url": "https://huggingface.co/yorsnote/segfor",
+  "created_at": "2026-11-04T16:36:06.000Z",
+  "updated_at": "2026-11-04T16:41:37.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "segformer",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3807538,
+  "parameters_human": "3.8M",
+  "storage_bytes": 15261424,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

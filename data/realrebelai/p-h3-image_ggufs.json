@@ -25,7 +25,7 @@
     "base_model:quantized:PrunaAI/P-H3-Image-Comfy",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 1,
   "trending_score": 0,
   "parameters": 20150289312,

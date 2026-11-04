@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ricursiveAI/Ripple-65B-Preview-DFlash2",
+  "slug": "ricursiveai-ripple-65b-preview-dflash2",
+  "author": "ricursiveAI",
+  "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2",
+  "created_at": "2026-11-04T11:44:14.000Z",
+  "updated_at": "2026-11-04T16:49:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "ripple",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:finetune:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4037752064,
+  "parameters_human": "4.04B",
+  "storage_bytes": 8075513104,
+  "storage_human": "8.1 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "safalya06/geovision-water-segmentation-models",
+  "slug": "safalya06-geovision-water-segmentation-models",
+  "author": "safalya06",
+  "url": "https://huggingface.co/safalya06/geovision-water-segmentation-models",
+  "created_at": "2026-11-04T16:21:03.000Z",
+  "updated_at": "2026-11-04T16:25:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92779733,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

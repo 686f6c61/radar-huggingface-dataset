@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "muhammedekinci/yazgi-tts-1-safe",
+  "slug": "muhammedekinci-yazgi-tts-1-safe",
+  "author": "muhammedekinci",
+  "url": "https://huggingface.co/muhammedekinci/yazgi-tts-1-safe",
+  "created_at": "2026-11-04T18:30:53.000Z",
+  "updated_at": "2026-11-04T19:00:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "yazgi-tts",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "yazgi-tts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "turkish",
+    "tr",
+    "dataset:cloud0day3/alania-synthetic-speech-tr",
+    "dataset:espnet/yodas2",
+    "dataset:fsicoli/common_voice_21_0",
+    "dataset:google/fleurs",
+    "base_model:erkamk/yazgi-tts-1",
+    "base_model:finetune:erkamk/yazgi-tts-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 56252673,
+  "parameters_human": "56.3M",
+  "storage_bytes": 351065784,
+  "storage_human": "351 MB",
+  "base_model": "erkamk/yazgi-tts-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

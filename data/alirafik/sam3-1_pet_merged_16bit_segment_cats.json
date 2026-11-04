@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "aliRafik/sam3.1_pet_merged_16bit_Segment_Cats",
+  "slug": "alirafik-sam3-1_pet_merged_16bit_segment_cats",
+  "author": "aliRafik",
+  "url": "https://huggingface.co/aliRafik/sam3.1_pet_merged_16bit_Segment_Cats",
+  "created_at": "2026-11-04T13:30:35.000Z",
+  "updated_at": "2026-11-04T13:30:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sam3",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 840376374,
+  "parameters_human": "840.4M",
+  "storage_bytes": 1680933900,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "OpenLLM-France/Luciole-23B-Instruct-1.1",
+  "slug": "openllm-france-luciole-23b-instruct-1-1",
+  "author": "OpenLLM-France",
+  "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+  "created_at": "2026-07-07T15:01:01.000Z",
+  "updated_at": "2026-11-04T17:14:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron",
+    "openllm-france",
+    "text-generation",
+    "conversational",
+    "fr",
+    "en",
+    "dataset:OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+    "base_model:OpenLLM-France/Luciole-23B-Base",
+    "base_model:finetune:OpenLLM-France/Luciole-23B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 836,
+  "trending_score": 0,
+  "parameters": 23216467968,
+  "parameters_human": "23.22B",
+  "storage_bytes": 46433616949,
+  "storage_human": "46.4 GB",
+  "base_model": "OpenLLM-France/Luciole-23B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

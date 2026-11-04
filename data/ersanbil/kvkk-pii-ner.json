@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ersanbil/kvkk-pii-ner",
+  "slug": "ersanbil-kvkk-pii-ner",
+  "author": "ersanbil",
+  "url": "https://huggingface.co/ersanbil/kvkk-pii-ner",
+  "created_at": "2026-05-13T17:33:50.000Z",
+  "updated_at": "2026-11-04T17:44:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "turkish",
+    "kvkk",
+    "pii",
+    "gdpr",
+    "legal-nlp",
+    "ictihat",
+    "commercial-ner",
+    "turkceocr",
+    "tr",
+    "dataset:ersanbil/TurkceOCR-Bench",
+    "dataset:hamzabagirsakci/turkish-court-decisions",
+    "base_model:dbmdz/bert-base-turkish-cased",
+    "base_model:finetune:dbmdz/bert-base-turkish-cased",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 110036749,
+  "parameters_human": "110.0M",
+  "storage_bytes": 880328352,
+  "storage_human": "880 MB",
+  "base_model": "dbmdz/bert-base-turkish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Turkish KVKK PII & Commercial Named Entity Recognition",
+      "dataset": "TurkceOCR Unified NER v3 Corpus (868 Real Court + Hybrid Examples)",
+      "metric": "Validation Token Accuracy (%)",
+      "value": 98.79
+    },
+    {
+      "task": "Turkish KVKK PII & Commercial Named Entity Recognition",
+      "dataset": "TurkceOCR Unified NER v3 Corpus (868 Real Court + Hybrid Examples)",
+      "metric": "KPI-13 Critical KVKK PII Recall with UnifiedTurkishEntityEngine (%)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GRLHF-2B-Pretrained-SafeRLHF-GGUF",
+  "slug": "mradermacher-grlhf-2b-pretrained-saferlhf-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GRLHF-2B-Pretrained-SafeRLHF-GGUF",
+  "created_at": "2025-05-14T23:23:25.000Z",
+  "updated_at": "2026-11-04T19:32:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:generative-rlhf-v/GRLHF-2B-Pretrained-SafeRLHF",
+    "base_model:quantized:generative-rlhf-v/GRLHF-2B-Pretrained-SafeRLHF",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 18239387904,
+  "storage_human": "18.2 GB",
+  "base_model": "generative-rlhf-v/GRLHF-2B-Pretrained-SafeRLHF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

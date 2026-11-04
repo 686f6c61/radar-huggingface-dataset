@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "vitorsantosrop/retrieval-run3-2024",
+  "slug": "vitorsantosrop-retrieval-run3-2024",
+  "author": "vitorsantosrop",
+  "url": "https://huggingface.co/vitorsantosrop/retrieval-run3-2024",
+  "created_at": "2026-11-04T18:56:57.000Z",
+  "updated_at": "2026-11-04T18:57:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MALADE: Orchestration of LLM-powered Agents with Retrieval ...",
+      "url": "https://arxiv.org/html/2408.01869v1",
+      "snippet": "03.08.2024 ... The advent of highly-capable Large Language Models (LLMs) has sparked significant interest in applying these models to medical tasks, including ..."
+    }
+  ]
+}

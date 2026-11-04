@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Reaper8202/ehr-forecast",
+  "slug": "reaper8202-ehr-forecast",
+  "author": "Reaper8202",
+  "url": "https://huggingface.co/Reaper8202/ehr-forecast",
+  "created_at": "2026-11-04T18:18:29.000Z",
+  "updated_at": "2026-11-04T18:55:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "electronic-health-records",
+    "synthea",
+    "transformer",
+    "lightgbm",
+    "multi-label-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44494011,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

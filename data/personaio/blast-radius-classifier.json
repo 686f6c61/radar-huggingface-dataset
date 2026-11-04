@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "personaio/blast-radius-classifier",
+  "slug": "personaio-blast-radius-classifier",
+  "author": "personaio",
+  "url": "https://huggingface.co/personaio/blast-radius-classifier",
+  "created_at": "2026-11-04T18:42:59.000Z",
+  "updated_at": "2026-11-04T18:44:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "code",
+    "safety",
+    "sandbox",
+    "agents",
+    "red-teaming",
+    "conversational",
+    "en",
+    "dataset:personaio/blast-radius-zero-traces",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

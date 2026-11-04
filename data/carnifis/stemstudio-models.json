@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Carnifis/stemstudio-models",
+  "slug": "carnifis-stemstudio-models",
+  "author": "Carnifis",
+  "url": "https://huggingface.co/Carnifis/stemstudio-models",
+  "created_at": "2026-11-04T15:38:00.000Z",
+  "updated_at": "2026-11-04T15:39:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "music-source-separation",
+    "demucs",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 658310796,
+  "storage_human": "658 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

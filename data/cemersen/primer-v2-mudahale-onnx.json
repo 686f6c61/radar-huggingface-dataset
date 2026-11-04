@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "CemErsen/primer-v2-mudahale-onnx",
+  "slug": "cemersen-primer-v2-mudahale-onnx",
+  "author": "CemErsen",
+  "url": "https://huggingface.co/CemErsen/primer-v2-mudahale-onnx",
+  "created_at": "2026-11-04T15:54:49.000Z",
+  "updated_at": "2026-11-04T15:54:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "onnx",
+    "tabular-classification",
+    "game-ai",
+    "educational",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2772,
+  "storage_human": "2772 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

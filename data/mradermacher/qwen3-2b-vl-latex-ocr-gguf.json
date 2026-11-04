@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-2b-vl-latex-ocr-GGUF",
+  "slug": "mradermacher-qwen3-2b-vl-latex-ocr-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-2b-vl-latex-ocr-GGUF",
+  "created_at": "2025-11-15T21:13:31.000Z",
+  "updated_at": "2026-11-04T14:02:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_vl",
+    "en",
+    "dataset:unsloth/LaTeX_OCR",
+    "base_model:ertghiu256/Qwen3-2b-vl-latex-ocr",
+    "base_model:quantized:ertghiu256/Qwen3-2b-vl-latex-ocr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 406,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 17224436544,
+  "storage_human": "17.2 GB",
+  "base_model": "ertghiu256/Qwen3-2b-vl-latex-ocr",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

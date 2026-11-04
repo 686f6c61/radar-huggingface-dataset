@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "MultiSTEVE-1s/MultiSTEVE-1s-2",
+  "slug": "multisteve-1s-multisteve-1s-2",
+  "author": "MultiSTEVE-1s",
+  "url": "https://huggingface.co/MultiSTEVE-1s/MultiSTEVE-1s-2",
+  "created_at": "2026-11-04T14:48:33.000Z",
+  "updated_at": "2026-11-04T15:31:09.000Z",
+  "license": "multisteve-1-research-artefact-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "steve1",
+    "minecraft",
+    "reinforcement-learning",
+    "model-zoo",
+    "interpretability",
+    "en",
+    "dataset:randomhuggingfaceuser1273823147/steve1-training-data",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1248346144747,
+  "storage_human": "1248.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

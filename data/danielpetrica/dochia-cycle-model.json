@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "danielpetrica/dochia-cycle-model",
+  "slug": "danielpetrica-dochia-cycle-model",
+  "author": "danielpetrica",
+  "url": "https://huggingface.co/danielpetrica/dochia-cycle-model",
+  "created_at": "2026-11-04T16:20:41.000Z",
+  "updated_at": "2026-11-04T16:38:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "menstrual-health",
+    "menstrual-cycle",
+    "cycle-forecasting",
+    "calibration",
+    "uncertainty",
+    "on-device",
+    "php",
+    "statistical-model",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carlos Fernandez - Tampa, Florida, United States - LinkedIn",
+      "url": "https://www.linkedin.com/in/carlos-fernandez-3ba4151a",
+      "snippet": "As a Recruiting Lead at Citi, I bring over 20 years of experience in full-cycle recruitment, with a focus on global organizations …"
+    }
+  ]
+}

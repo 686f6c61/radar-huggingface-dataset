@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "whitejacob/study-multimodal-generation",
+  "slug": "whitejacob-study-multimodal-generation",
+  "author": "whitejacob",
+  "url": "https://huggingface.co/whitejacob/study-multimodal-generation",
+  "created_at": "2026-11-04T18:27:45.000Z",
+  "updated_at": "2026-11-04T18:27:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99800,
+  "storage_human": "99800 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

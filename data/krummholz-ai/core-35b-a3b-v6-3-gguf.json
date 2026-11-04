@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "krummholz-ai/core-35b-a3b-v6.3-GGUF",
+  "slug": "krummholz-ai-core-35b-a3b-v6-3-gguf",
+  "author": "krummholz-ai",
+  "url": "https://huggingface.co/krummholz-ai/core-35b-a3b-v6.3-GGUF",
+  "created_at": "2026-11-04T15:51:14.000Z",
+  "updated_at": "2026-11-04T15:54:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "krummholz",
+    "mixture-of-experts",
+    "beta",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 46795172000,
+  "storage_human": "46.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MeganEFlynn/Qwen3-4B-LiLiCorr-b16-regen-100k",
+  "slug": "meganeflynn-qwen3-4b-lilicorr-b16-regen-100k",
+  "author": "MeganEFlynn",
+  "url": "https://huggingface.co/MeganEFlynn/Qwen3-4B-LiLiCorr-b16-regen-100k",
+  "created_at": "2026-11-04T18:09:47.000Z",
+  "updated_at": "2026-11-04T18:10:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "lilicorr",
+    "vllm",
+    "custom_code",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 569467402,
+  "parameters_human": "569.5M",
+  "storage_bytes": 2277880664,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

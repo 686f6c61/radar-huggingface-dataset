@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Reproduced-tulu2-dpo-13b-GGUF",
+  "slug": "mradermacher-reproduced-tulu2-dpo-13b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Reproduced-tulu2-dpo-13b-GGUF",
+  "created_at": "2025-02-08T09:41:05.000Z",
+  "updated_at": "2026-11-04T19:33:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "dataset:Junrulu/Reproduced-tulu2-test-sets",
+    "base_model:Junrulu/Reproduced-tulu2-dpo-13b",
+    "base_model:quantized:Junrulu/Reproduced-tulu2-dpo-13b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 212,
+  "trending_score": 0,
+  "parameters": 13015874560,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88802000672,
+  "storage_human": "88.8 GB",
+  "base_model": "Junrulu/Reproduced-tulu2-dpo-13b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

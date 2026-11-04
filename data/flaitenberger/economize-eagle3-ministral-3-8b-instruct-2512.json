@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "flaitenberger/economize-eagle3-Ministral-3-8B-Instruct-2512",
+  "slug": "flaitenberger-economize-eagle3-ministral-3-8b-instruct-2512",
+  "author": "flaitenberger",
+  "url": "https://huggingface.co/flaitenberger/economize-eagle3-Ministral-3-8B-Instruct-2512",
+  "created_at": "2026-11-04T18:41:24.000Z",
+  "updated_at": "2026-11-04T18:59:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "economize",
+  "languages": [],
+  "tags": [
+    "economize",
+    "safetensors",
+    "eagle3",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "base_model:adapter:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 856065560,
+  "storage_human": "856 MB",
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

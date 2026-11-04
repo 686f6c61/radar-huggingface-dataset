@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "pantinor/sherpa-onnx-whisper-large-v3-german",
+  "slug": "pantinor-sherpa-onnx-whisper-large-v3-german",
+  "author": "pantinor",
+  "url": "https://huggingface.co/pantinor/sherpa-onnx-whisper-large-v3-german",
+  "created_at": "2026-11-04T19:41:24.000Z",
+  "updated_at": "2026-11-04T19:43:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "whisper",
+    "german",
+    "asr",
+    "automatic-speech-recognition",
+    "de",
+    "base_model:primeline/whisper-large-v3-german",
+    "base_model:quantized:primeline/whisper-large-v3-german",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1777948967,
+  "storage_human": "1.8 GB",
+  "base_model": "primeline/whisper-large-v3-german",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

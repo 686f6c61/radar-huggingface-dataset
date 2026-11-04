@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nova819/sole-r1-v3-sft",
+  "slug": "nova819-sole-r1-v3-sft",
+  "author": "nova819",
+  "url": "https://huggingface.co/nova819/sole-r1-v3-sft",
+  "created_at": "2026-11-04T14:01:33.000Z",
+  "updated_at": "2026-11-04T14:03:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "image-text-to-text",
+    "dataset:nova819/sole-r1-v3-data",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOLE-R1",
+      "url": "https://philip-mit.github.io/sole-r1/",
+      "snippet": "Training procedure: To train SOLE-R1, we use a two-stage hybrid recipe: SFT teaches high-quality spatiotemporal CoT reasoning, while RLVR (GRPO) directly emphasizes accurate progress prediction, which is under-emphasized during SFT (since the final answer occupies only a small fraction of response tokens)."
+    },
+    {
+      "title": "SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot ...",
+      "url": "https://arxiv.org/html/2603.28730v2",
+      "snippet": "We introduce SOLE-R1, a video-language reasoning model designed for guiding online RL with per-timestep CoT reasoning and progress prediction. ... We introduce a video trajectory and reasoning synthesis pipeline to generate training data for video-based spatiotemporal CoT reasoning and progress ..."
+    }
+  ]
+}

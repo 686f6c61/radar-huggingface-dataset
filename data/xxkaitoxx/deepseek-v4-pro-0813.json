@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "XxKaitoxX/DeepSeek-V4-Pro-0813",
+  "slug": "xxkaitoxx-deepseek-v4-pro-0813",
+  "author": "XxKaitoxX",
+  "url": "https://huggingface.co/XxKaitoxX/DeepSeek-V4-Pro-0813",
+  "created_at": "2026-11-04T16:10:58.000Z",
+  "updated_at": "2026-11-04T16:10:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 892755974486,
+  "storage_human": "892.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E4B-it-Uncensored-MAX-GGUF",
+  "slug": "mradermacher-gemma-4-e4b-it-uncensored-max-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E4B-it-Uncensored-MAX-GGUF",
+  "created_at": "2026-04-15T08:13:54.000Z",
+  "updated_at": "2026-11-04T19:31:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "moe",
+    "agent",
+    "en",
+    "base_model:prithivMLmods/gemma-4-E4B-it-Uncensored-MAX",
+    "base_model:quantized:prithivMLmods/gemma-4-E4B-it-Uncensored-MAX",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 492,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 76858006720,
+  "storage_human": "76.9 GB",
+  "base_model": "prithivMLmods/gemma-4-E4B-it-Uncensored-MAX",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

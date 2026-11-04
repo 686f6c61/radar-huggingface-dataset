@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "javierbits/Javi0.4-2B-GGUF",
+  "slug": "javierbits-javi0-4-2b-gguf",
+  "author": "javierbits",
+  "url": "https://huggingface.co/javierbits/Javi0.4-2B-GGUF",
+  "created_at": "2026-11-04T17:04:30.000Z",
+  "updated_at": "2026-11-04T17:24:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.5",
+    "tool-use",
+    "agent",
+    "weight-space",
+    "dgx-spark",
+    "javi",
+    "text-generation",
+    "en",
+    "base_model:javierbits/Javi0.4-2B",
+    "base_model:quantized:javierbits/Javi0.4-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 3390367802,
+  "storage_human": "3.4 GB",
+  "base_model": "javierbits/Javi0.4-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

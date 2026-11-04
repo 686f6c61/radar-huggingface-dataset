@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Lamender43/PornWorks-Bad-Boys-Photo-Realistic-Gay-and-Male-NSFW-Aesthetics-SDXL-Checkpoint",
+  "slug": "lamender43-pornworks-bad-boys-photo-realistic-gay-and-male-nsfw-aesthetics-sdxl-checkpoint",
+  "author": "Lamender43",
+  "url": "https://huggingface.co/Lamender43/PornWorks-Bad-Boys-Photo-Realistic-Gay-and-Male-NSFW-Aesthetics-SDXL-Checkpoint",
+  "created_at": "2026-11-04T11:51:17.000Z",
+  "updated_at": "2026-11-04T11:51:17.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nsfw",
+    "sdxl",
+    "art",
+    "image",
+    "en",
+    "license:openrail++",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938041160,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème d'affichage sur photobox - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-24016637-probleme-d-affichage-sur-photobox",
+      "snippet": "Cordialement Frederik Service client Photobox bonjour, j'avais déjà pris contact avec le service client qui m'avait effectivement dit …"
+    },
+    {
+      "title": "Recuperer album photo sur yahoo - Windows - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-8349521-recuperer-album-photo-sur-yahoo",
+      "snippet": "Meilleure réponse: bonjour je voudrais savoir s'il y a une possibilte de recuperer mon album photos sur yahoo ou non?..."
+    },
+    {
+      "title": "Avis site photobox [Résolu] - Forum Graphisme - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-3443940-avis-site-photobox",
+      "snippet": "Dec 12, 2014 · En effet Photobox est en mesure d'éditer des numéros de colis, puis ils transmettent les colis à la poste quand bon …"
+    }
+  ]
+}

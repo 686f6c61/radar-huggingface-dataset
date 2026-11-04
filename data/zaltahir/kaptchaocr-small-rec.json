@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "zaltahir/kaptchaocr-small-rec",
+  "slug": "zaltahir-kaptchaocr-small-rec",
+  "author": "zaltahir",
+  "url": "https://huggingface.co/zaltahir/kaptchaocr-small-rec",
+  "created_at": "2026-11-04T18:40:34.000Z",
+  "updated_at": "2026-11-04T18:40:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "kaptchaocr",
+    "captcha",
+    "ocr",
+    "text-recognition",
+    "pp-ocrv6",
+    "image-to-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21494570,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

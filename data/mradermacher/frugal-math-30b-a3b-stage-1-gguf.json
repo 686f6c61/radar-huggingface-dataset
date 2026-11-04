@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Frugal-Math-30B-A3B-stage-1-GGUF",
+  "slug": "mradermacher-frugal-math-30b-a3b-stage-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Frugal-Math-30B-A3B-stage-1-GGUF",
+  "created_at": "2025-11-15T21:33:27.000Z",
+  "updated_at": "2026-11-04T14:02:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:MBZUAI-Paris/Frugal-Math-30B-A3B-stage-1-GSPO",
+    "base_model:quantized:MBZUAI-Paris/Frugal-Math-30B-A3B-stage-1-GSPO",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 160,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 208115938272,
+  "storage_human": "208.1 GB",
+  "base_model": "MBZUAI-Paris/Frugal-Math-30B-A3B-stage-1-GSPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

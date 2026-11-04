@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "VINAY-UMRETHE/Refusal-Classifier-v2",
+  "slug": "vinay-umrethe-refusal-classifier-v2",
+  "author": "VINAY-UMRETHE",
+  "url": "https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier-v2",
+  "created_at": "2026-11-04T20:23:39.000Z",
+  "updated_at": "2026-11-04T20:23:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "refusal-detection",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149608709,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598588612,
+  "storage_human": "599 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

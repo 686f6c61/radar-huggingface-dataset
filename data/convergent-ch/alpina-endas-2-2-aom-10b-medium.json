@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Convergent-ch/Alpina-Endas-2.2-AoM-10B-Medium",
+  "slug": "convergent-ch-alpina-endas-2-2-aom-10b-medium",
+  "author": "Convergent-ch",
+  "url": "https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B-Medium",
+  "created_at": "2026-11-04T11:56:30.000Z",
+  "updated_at": "2026-11-04T14:34:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "aom",
+    "multi-model",
+    "experimental",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

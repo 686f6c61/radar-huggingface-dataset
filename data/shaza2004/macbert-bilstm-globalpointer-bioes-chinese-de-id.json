@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Shaza2004/MacBERT-BiLSTM-GlobalPointer-BIOES-Chinese-de-id",
+  "slug": "shaza2004-macbert-bilstm-globalpointer-bioes-chinese-de-id",
+  "author": "Shaza2004",
+  "url": "https://huggingface.co/Shaza2004/MacBERT-BiLSTM-GlobalPointer-BIOES-Chinese-de-id",
+  "created_at": "2026-11-04T17:25:10.000Z",
+  "updated_at": "2026-11-04T17:25:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 419716291,
+  "storage_human": "420 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

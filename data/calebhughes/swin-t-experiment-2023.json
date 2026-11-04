@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Calebhughes/swin-t-experiment-2023",
+  "slug": "calebhughes-swin-t-experiment-2023",
+  "author": "Calebhughes",
+  "url": "https://huggingface.co/Calebhughes/swin-t-experiment-2023",
+  "created_at": "2026-11-04T14:43:35.000Z",
+  "updated_at": "2026-11-04T14:43:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99800,
+  "storage_human": "99800 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

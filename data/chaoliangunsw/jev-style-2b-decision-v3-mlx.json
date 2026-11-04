@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chaoliangUNSW/Jev-Style-2B-Decision-v3-MLX",
+  "slug": "chaoliangunsw-jev-style-2b-decision-v3-mlx",
+  "author": "chaoliangUNSW",
+  "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3-MLX",
+  "created_at": "2026-09-27T02:36:59.000Z",
+  "updated_at": "2026-11-04T19:18:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "jev-style",
+  "languages": [],
+  "tags": [
+    "jev-style",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "decision-making",
+    "system-one",
+    "calibration",
+    "long-context",
+    "qwen3.5",
+    "mlx",
+    "apple-silicon",
+    "on-device",
+    "llm-routing",
+    "guardrails",
+    "text-classification",
+    "base_model:chaoliangUNSW/Jev-Style-2B-Decision-v3",
+    "base_model:quantized:chaoliangUNSW/Jev-Style-2B-Decision-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 518,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5785317385,
+  "storage_human": "5.8 GB",
+  "base_model": "chaoliangUNSW/Jev-Style-2B-Decision-v3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visualiser les données sur une carte personnalisée à l ... - Google Maps",
+      "url": "https://maps.google.fr/intl/fr_ALL/earth/outreach/learn/visualize-your-data-on-a-custom-map-using-google-my-maps/",
+      "snippet": "Apprenez à créer rapidement une carte à partir des données d'une feuille de calcul, à appliquer un style aux points et aux formes, et …"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lunar-Trace-31B-i1-GGUF",
+  "slug": "mradermacher-lunar-trace-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lunar-Trace-31B-i1-GGUF",
+  "created_at": "2026-11-04T15:28:40.000Z",
+  "updated_at": "2026-11-04T16:21:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Cyclone-Labs/Lunar-Trace-31B",
+    "base_model:quantized:Cyclone-Labs/Lunar-Trace-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 90183191904,
+  "storage_human": "90.2 GB",
+  "base_model": "Cyclone-Labs/Lunar-Trace-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

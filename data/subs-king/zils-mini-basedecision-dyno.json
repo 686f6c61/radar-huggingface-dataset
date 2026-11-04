@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "subs-king/zils-mini-basedecision-dyno",
+  "slug": "subs-king-zils-mini-basedecision-dyno",
+  "author": "subs-king",
+  "url": "https://huggingface.co/subs-king/zils-mini-basedecision-dyno",
+  "created_at": "2026-11-04T20:18:39.000Z",
+  "updated_at": "2026-11-04T20:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "soup-body",
+    "decision-model",
+    "base_model:onlyaady/BaseDecision-Dyno",
+    "base_model:finetune:onlyaady/BaseDecision-Dyno",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078619704,
+  "storage_human": "9.1 GB",
+  "base_model": "onlyaady/BaseDecision-Dyno",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

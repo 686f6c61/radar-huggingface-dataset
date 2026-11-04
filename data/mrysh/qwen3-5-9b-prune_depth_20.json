@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mrysh/qwen3.5-9b-prune_depth_20",
+  "slug": "mrysh-qwen3-5-9b-prune_depth_20",
+  "author": "mrysh",
+  "url": "https://huggingface.co/mrysh/qwen3.5-9b-prune_depth_20",
+  "created_at": "2026-11-04T15:05:56.000Z",
+  "updated_at": "2026-11-04T15:06:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "pruned",
+    "depth",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7643360640,
+  "parameters_human": "7.64B",
+  "storage_bytes": 15306755861,
+  "storage_human": "15.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

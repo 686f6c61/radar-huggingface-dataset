@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "paincupid/Qwen3-ForcedAligner-0.6B-ONNX",
+  "slug": "paincupid-qwen3-forcedaligner-0-6b-onnx",
+  "author": "paincupid",
+  "url": "https://huggingface.co/paincupid/Qwen3-ForcedAligner-0.6B-ONNX",
+  "created_at": "2026-11-04T14:09:56.000Z",
+  "updated_at": "2026-11-04T14:15:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3_asr",
+    "forced-alignment",
+    "onnxruntime",
+    "int4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1059827082,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

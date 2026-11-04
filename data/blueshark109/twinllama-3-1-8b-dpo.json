@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "blueshark109/TwinLlama-3.1-8B-DPO",
+  "slug": "blueshark109-twinllama-3-1-8b-dpo",
+  "author": "blueshark109",
+  "url": "https://huggingface.co/blueshark109/TwinLlama-3.1-8B-DPO",
+  "created_at": "2026-11-04T16:51:56.000Z",
+  "updated_at": "2026-11-04T16:53:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:blueshark109/TwinLlama-3.1-8B",
+    "base_model:finetune:blueshark109/TwinLlama-3.1-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9993711307,
+  "storage_human": "10.0 GB",
+  "base_model": "blueshark109/TwinLlama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniAI-Quata2-4b-Preview-GGUF",
+  "slug": "mradermacher-miniai-quata2-4b-preview-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniAI-Quata2-4b-Preview-GGUF",
+  "created_at": "2026-11-04T18:52:00.000Z",
+  "updated_at": "2026-11-04T18:52:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333514240,
+  "parameters_human": "333.5M",
+  "storage_bytes": 1039318400,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

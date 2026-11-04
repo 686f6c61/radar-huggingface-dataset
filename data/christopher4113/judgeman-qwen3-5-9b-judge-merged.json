@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Christopher4113/judgeman-qwen3.5-9b-judge-merged",
+  "slug": "christopher4113-judgeman-qwen3-5-9b-judge-merged",
+  "author": "Christopher4113",
+  "url": "https://huggingface.co/Christopher4113/judgeman-qwen3.5-9b-judge-merged",
+  "created_at": "2026-11-04T19:15:21.000Z",
+  "updated_at": "2026-11-04T19:19:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18859699784,
+  "storage_human": "18.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

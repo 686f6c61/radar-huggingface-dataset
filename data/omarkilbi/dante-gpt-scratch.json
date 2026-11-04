@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "omarkilbi/dante-gpt-scratch",
+  "slug": "omarkilbi-dante-gpt-scratch",
+  "author": "omarkilbi",
+  "url": "https://huggingface.co/omarkilbi/dante-gpt-scratch",
+  "created_at": "2026-11-04T16:28:18.000Z",
+  "updated_at": "2026-11-04T16:40:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "nanogpt",
+    "character-level",
+    "poetry",
+    "dante",
+    "italian",
+    "from-scratch",
+    "it",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129050882,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

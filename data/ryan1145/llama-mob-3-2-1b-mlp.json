@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ryan1145/Llama-MoB-3.2-1B-MLP",
+  "slug": "ryan1145-llama-mob-3-2-1b-mlp",
+  "author": "ryan1145",
+  "url": "https://huggingface.co/ryan1145/Llama-MoB-3.2-1B-MLP",
+  "created_at": "2026-11-04T18:25:44.000Z",
+  "updated_at": "2026-11-04T18:26:42.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mob_head",
+    "mob-head",
+    "mixture-of-bernoullis",
+    "knowledge-distillation",
+    "semantic-binary-codes",
+    "output-layer",
+    "en",
+    "base_model:meta-llama/Llama-3.2-1B",
+    "base_model:finetune:meta-llama/Llama-3.2-1B",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32255232,
+  "parameters_human": "32.3M",
+  "storage_bytes": 129724196,
+  "storage_human": "130 MB",
+  "base_model": "meta-llama/Llama-3.2-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

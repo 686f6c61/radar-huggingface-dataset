@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mero-Artemis-31B-v1-heretic-2-GGUF",
+  "slug": "mradermacher-mero-artemis-31b-v1-heretic-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mero-Artemis-31B-v1-heretic-2-GGUF",
+  "created_at": "2026-11-04T13:32:04.000Z",
+  "updated_at": "2026-11-04T14:04:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:sh0ck0r/Mero-Artemis-31B-v1-heretic-2",
+    "base_model:quantized:sh0ck0r/Mero-Artemis-31B-v1-heretic-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 19771666752,
+  "storage_human": "19.8 GB",
+  "base_model": "sh0ck0r/Mero-Artemis-31B-v1-heretic-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

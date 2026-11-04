@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Faless/harvest_apples_xvla_v2_bs80_6ep_cs40",
+  "slug": "faless-harvest_apples_xvla_v2_bs80_6ep_cs40",
+  "author": "Faless",
+  "url": "https://huggingface.co/Faless/harvest_apples_xvla_v2_bs80_6ep_cs40",
+  "created_at": "2026-05-27T07:54:40.000Z",
+  "updated_at": "2026-11-04T18:07:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:Faless/harvest_apples_with_agilex_piper_sim",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 879738545,
+  "parameters_human": "879.7M",
+  "storage_bytes": 3519201616,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

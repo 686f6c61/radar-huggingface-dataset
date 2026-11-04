@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO-GGUF",
+  "slug": "mradermacher-huihui-qwen3-5-0-8b-abliterated-athanorlite-orpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO-GGUF",
+  "created_at": "2026-04-15T08:05:40.000Z",
+  "updated_at": "2026-11-04T19:31:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merlina",
+    "grimoire",
+    "text-generation",
+    "orpo",
+    "en",
+    "dataset:schneewolflabs/Athanorlite-DPO",
+    "base_model:nbeerbower/Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO",
+    "base_model:quantized:nbeerbower/Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 267,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455590272,
+  "storage_human": "7.5 GB",
+  "base_model": "nbeerbower/Huihui-Qwen3.5-0.8B-abliterated-Athanorlite-ORPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "AnoraLee/vietnamese-hsd-phobert-bt",
+  "slug": "anoralee-vietnamese-hsd-phobert-bt",
+  "author": "AnoraLee",
+  "url": "https://huggingface.co/AnoraLee/vietnamese-hsd-phobert-bt",
+  "created_at": "2026-08-24T05:42:56.000Z",
+  "updated_at": "2026-11-04T14:03:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 135000579,
+  "parameters_human": "135.0M",
+  "storage_bytes": 2160105840,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

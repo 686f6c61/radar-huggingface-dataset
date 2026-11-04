@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "eVorob/my_policy",
+  "slug": "evorob-my_policy",
+  "author": "eVorob",
+  "url": "https://huggingface.co/eVorob/my_policy",
+  "created_at": "2026-11-04T20:54:41.000Z",
+  "updated_at": "2026-11-04T20:54:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:eVorob/record-test_20261103_214506",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

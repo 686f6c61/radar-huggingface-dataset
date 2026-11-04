@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "aaiiaxom/indicxlit-roman-to-bodo-onnx-int8",
+  "slug": "aaiiaxom-indicxlit-roman-to-bodo-onnx-int8",
+  "author": "aaiiaxom",
+  "url": "https://huggingface.co/aaiiaxom/indicxlit-roman-to-bodo-onnx-int8",
+  "created_at": "2026-11-04T17:37:09.000Z",
+  "updated_at": "2026-11-04T17:48:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "brx",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "transliteration",
+    "bodo",
+    "boro",
+    "devanagari",
+    "indicxlit",
+    "aksharantar",
+    "int8",
+    "onnxruntime-web",
+    "on-device",
+    "phonetic-keyboard",
+    "brx",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14402045,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Renesas/Gemma-4-E2B-it-GGUF",
+  "slug": "renesas-gemma-4-e2b-it-gguf",
+  "author": "Renesas",
+  "url": "https://huggingface.co/Renesas/Gemma-4-E2B-it-GGUF",
+  "created_at": "2026-09-16T12:12:04.000Z",
+  "updated_at": "2026-11-04T14:53:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "renesas",
+    "x5h",
+    "llm",
+    "generative_ai",
+    "text-only",
+    "text-generation",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 12589231053,
+  "storage_human": "12.6 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Semiconductor & Embedded System Solutions | Renesas",
+      "url": "https://www.renesas.com/",
+      "snippet": "Renesas is a global company providing high-performance semiconductors and embedded solutions enabling innovation in …"
+    },
+    {
+      "title": "Renesas Electronics - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renesas_Electronics",
+      "snippet": "Renesas Electronics Corporation (Japanese: ルネサス エレクトロニクス株式会社, Hepburn: Runesasu Erekutoronikusu Kabushiki …"
+    },
+    {
+      "title": "Renesas Electronics — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Renesas_Electronics",
+      "snippet": "Renesas Electronics Corporation (ルネサス エレクトロニクス, Renesasu erekutoronikusu?) est un important fabricant de semi …"
+    },
+    {
+      "title": "Renesas : actualités et articles | L'Embarqué",
+      "url": "https://lembarque.com/entreprise/renesas",
+      "snippet": "Jun 19, 2026 · Le concepteur et fabricant de semi-conducteurs Renesas Electronics est issu de la fusion de NEC Electronics et de …"
+    },
+    {
+      "title": "Products | Renesas",
+      "url": "https://www.renesas.com/en/products",
+      "snippet": "Explore the Renesas Products page to efficiently navigate a wide array of semiconductor solutions. Discover microcontrollers, cutting …"
+    }
+  ]
+}

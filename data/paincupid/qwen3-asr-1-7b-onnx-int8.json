@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "paincupid/Qwen3-ASR-1.7B-ONNX-INT8",
+  "slug": "paincupid-qwen3-asr-1-7b-onnx-int8",
+  "author": "paincupid",
+  "url": "https://huggingface.co/paincupid/Qwen3-ASR-1.7B-ONNX-INT8",
+  "created_at": "2026-11-04T14:32:53.000Z",
+  "updated_at": "2026-11-04T14:49:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "mirror",
+    "on-device",
+    "matrixapps",
+    "automatic-speech-recognition",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2399761248,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

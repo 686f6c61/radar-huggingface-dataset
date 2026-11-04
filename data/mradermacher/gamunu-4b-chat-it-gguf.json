@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gamunu-4b-Chat-It-GGUF",
+  "slug": "mradermacher-gamunu-4b-chat-it-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gamunu-4b-Chat-It-GGUF",
+  "created_at": "2025-11-15T21:17:18.000Z",
+  "updated_at": "2026-11-04T14:02:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "en",
+    "base_model:manthilaffs/Gamunu-4b-Chat-It",
+    "base_model:quantized:manthilaffs/Gamunu-4b-Chat-It",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 37274397760,
+  "storage_human": "37.3 GB",
+  "base_model": "manthilaffs/Gamunu-4b-Chat-It",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

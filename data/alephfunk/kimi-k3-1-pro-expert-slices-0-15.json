@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "AlephFunk/Kimi-K3.1-Pro-expert-slices-0-15",
+  "slug": "alephfunk-kimi-k3-1-pro-expert-slices-0-15",
+  "author": "AlephFunk",
+  "url": "https://huggingface.co/AlephFunk/Kimi-K3.1-Pro-expert-slices-0-15",
+  "created_at": "2026-11-04T17:00:15.000Z",
+  "updated_at": "2026-11-04T17:04:20.000Z",
+  "license": "kimi-k3.1-pro",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kimi",
+    "mixture-of-experts",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25830886384,
+  "storage_human": "25.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

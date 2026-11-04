@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "AlexandruGirlea/precommiteu-models",
+  "slug": "alexandrugirlea-precommiteu-models",
+  "author": "AlexandruGirlea",
+  "url": "https://huggingface.co/AlexandruGirlea/precommiteu-models",
+  "created_at": "2026-07-28T13:34:51.000Z",
+  "updated_at": "2026-11-04T13:46:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "code",
+    "compliance",
+    "gdpr",
+    "eu-ai-act",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 105,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 22899334103,
+  "storage_human": "22.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct, Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

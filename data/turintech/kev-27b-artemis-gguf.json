@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "turintech/Kev-27B-Artemis-GGUF",
+  "slug": "turintech-kev-27b-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Kev-27B-Artemis-GGUF",
+  "created_at": "2026-10-14T11:03:37.000Z",
+  "updated_at": "2026-11-04T16:09:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "turintech",
+    "artemis",
+    "kev",
+    "decision-model",
+    "systemone",
+    "llama.cpp",
+    "quantized",
+    "text-classification",
+    "base_model:jaredpalmer/kev-27b",
+    "base_model:quantized:jaredpalmer/kev-27b",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 7,
+  "downloads_30d": 4499,
+  "trending_score": 0,
+  "parameters": 25627222016,
+  "parameters_human": "25.63B",
+  "storage_bytes": 40785742913,
+  "storage_human": "40.8 GB",
+  "base_model": "jaredpalmer/kev-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Same answer (%)",
+      "value": 97.8
+    },
+    {
+      "task": "Agreement with the original",
+      "dataset": "Test decisions",
+      "metric": "Confident changes",
+      "value": 0
+    },
+    {
+      "task": "Typed decisions",
+      "dataset": "Test decisions",
+      "metric": "Accuracy (%)",
+      "value": 74.05
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Emily-Hui-123/dreamrl-1n8g-20261104t045139z",
+  "slug": "emily-hui-123-dreamrl-1n8g-20261104t045139z",
+  "author": "Emily-Hui-123",
+  "url": "https://huggingface.co/Emily-Hui-123/dreamrl-1n8g-20261104t045139z",
+  "created_at": "2026-11-04T13:54:57.000Z",
+  "updated_at": "2026-11-04T13:55:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "piper",
+    "cosmos",
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23069559367,
+  "storage_human": "23.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

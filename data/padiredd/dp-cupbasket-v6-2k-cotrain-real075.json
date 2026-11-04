@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "padiredd/dp-cupbasket-v6-2k-cotrain-real075",
+  "slug": "padiredd-dp-cupbasket-v6-2k-cotrain-real075",
+  "author": "padiredd",
+  "url": "https://huggingface.co/padiredd/dp-cupbasket-v6-2k-cotrain-real075",
+  "created_at": "2026-11-04T17:35:40.000Z",
+  "updated_at": "2026-11-04T17:37:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "LeRobot",
+    "diffusion-policy",
+    "isaac-lab",
+    "simulation",
+    "ffw-sg2",
+    "robotics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 287533680,
+  "parameters_human": "287.5M",
+  "storage_bytes": 11501994088,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

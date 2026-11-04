@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "iishita1/EEGNetv4",
+  "slug": "iishita1-eegnetv4",
+  "author": "iishita1",
+  "url": "https://huggingface.co/iishita1/EEGNetv4",
+  "created_at": "2026-11-04T18:15:58.000Z",
+  "updated_at": "2026-11-04T18:15:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4379881924,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EEGNetv4 – Beta",
+      "url": "https://appcommons.bevelcloud.ai/eegnetv4/",
+      "snippet": "As dementia prevalence rises with global aging, this study proposes a lightweight, privacy-preserving EEG-based diagnostic framework using deep learning and Federated Learning (FL) to address data scarcity, variability, and privacy concerns. Among five evaluated CNN models, EEGNetv4 achieved the best performance, reaching 97.1% accuracy with only 1,609 parameters and under 1 MB memory after hybrid fusion, while FL implementation maintained comparable performance at 96.9% accuracy."
+    },
+    {
+      "title": "braindecode.models package — Braindecode 0.4.85 documentation",
+      "url": "https://robintibor.github.io/braindecode/source/braindecode.models.html",
+      "snippet": "class braindecode.models.eegnet.EEGNetv4(in_chans, n_classes, final_conv_length='auto', input_time_length=None, pool_mode='mean', F1=8, D=2, F2=16, kernel_length=64, third_kernel_size=(8, 4), drop_prob=0.25)[source]¶"
+    }
+  ]
+}

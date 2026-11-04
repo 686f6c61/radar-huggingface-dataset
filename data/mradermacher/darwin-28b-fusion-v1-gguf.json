@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Darwin-28B-FUSION-v1-GGUF",
+  "slug": "mradermacher-darwin-28b-fusion-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Darwin-28B-FUSION-v1-GGUF",
+  "created_at": "2026-05-15T05:15:36.000Z",
+  "updated_at": "2026-11-04T17:20:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:VIDraft/Darwin-28B-FUSION-v1",
+    "base_model:quantized:VIDraft/Darwin-28B-FUSION-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348435008,
+  "storage_human": "186.3 GB",
+  "base_model": "VIDraft/Darwin-28B-FUSION-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

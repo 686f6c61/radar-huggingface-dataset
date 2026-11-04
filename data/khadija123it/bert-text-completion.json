@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "khadija123it/bert-text-completion",
+  "slug": "khadija123it-bert-text-completion",
+  "author": "khadija123it",
+  "url": "https://huggingface.co/khadija123it/bert-text-completion",
+  "created_at": "2026-11-04T14:38:43.000Z",
+  "updated_at": "2026-11-04T14:39:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109514298,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438080872,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

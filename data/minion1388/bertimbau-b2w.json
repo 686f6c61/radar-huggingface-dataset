@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "minion1388/bertimbau-b2w",
+  "slug": "minion1388-bertimbau-b2w",
+  "author": "minion1388",
+  "url": "https://huggingface.co/minion1388/bertimbau-b2w",
+  "created_at": "2026-11-04T18:18:02.000Z",
+  "updated_at": "2026-11-04T18:22:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108924674,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435727425,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

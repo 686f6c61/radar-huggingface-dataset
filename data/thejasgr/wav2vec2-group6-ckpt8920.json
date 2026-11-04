@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "thejasgr/wav2vec2-group6-ckpt8920",
+  "slug": "thejasgr-wav2vec2-group6-ckpt8920",
+  "author": "thejasgr",
+  "url": "https://huggingface.co/thejasgr/wav2vec2-group6-ckpt8920",
+  "created_at": "2026-11-04T16:11:17.000Z",
+  "updated_at": "2026-11-04T16:11:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:librispeech_asr",
+    "base_model:facebook/wav2vec2-base-960h",
+    "base_model:finetune:facebook/wav2vec2-base-960h",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94396320,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377611072,
+  "storage_human": "378 MB",
+  "base_model": "facebook/wav2vec2-base-960h",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "bharatraj007/prompt-injection-distilbert",
+  "slug": "bharatraj007-prompt-injection-distilbert",
+  "author": "bharatraj007",
+  "url": "https://huggingface.co/bharatraj007/prompt-injection-distilbert",
+  "created_at": "2026-11-04T20:06:51.000Z",
+  "updated_at": "2026-11-04T20:13:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Opeai_LoRA_70B-GGUF",
+  "slug": "mradermacher-opeai_lora_70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Opeai_LoRA_70B-GGUF",
+  "created_at": "2025-02-21T17:58:06.000Z",
+  "updated_at": "2026-11-04T17:22:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:IRUCAAI/Opeai_HKV1_Llama-3.3-70B-Instruct",
+    "base_model:quantized:IRUCAAI/Opeai_HKV1_Llama-3.3-70B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 179,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302991872,
+  "storage_human": "481.3 GB",
+  "base_model": "IRUCAAI/Opeai_HKV1_Llama-3.3-70B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

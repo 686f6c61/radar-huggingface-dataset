@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "TigreGotico/nllb_200_distilled_600m-zul-eng-onnx",
+  "slug": "tigregotico-nllb_200_distilled_600m-zul-eng-onnx",
+  "author": "TigreGotico",
+  "url": "https://huggingface.co/TigreGotico/nllb_200_distilled_600m-zul-eng-onnx",
+  "created_at": "2026-08-04T02:00:08.000Z",
+  "updated_at": "2026-11-04T18:09:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "zu",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "m2m_100",
+    "translation",
+    "africanlp",
+    "dsfsi",
+    "nllb",
+    "zu",
+    "en",
+    "base_model:dsfsi/nllb_200_distilled_600m-zul-eng",
+    "base_model:quantized:dsfsi/nllb_200_distilled_600m-zul-eng",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15067985870,
+  "storage_human": "15.1 GB",
+  "base_model": "dsfsi/nllb_200_distilled_600m-zul-eng",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Rakuten/RakutenAI-3.0.1",
+  "slug": "rakuten-rakutenai-3-0-1",
+  "author": "Rakuten",
+  "url": "https://huggingface.co/Rakuten/RakutenAI-3.0.1",
+  "created_at": "2026-11-04T17:53:27.000Z",
+  "updated_at": "2026-11-04T19:42:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_v3",
+    "RakutenAI",
+    "RakutenAI Large",
+    "RakutenAI-3.0.1",
+    "RakutenAI-3.0",
+    "DeepSeek-V3",
+    "text-generation",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:Rakuten/RakutenAI-3.0",
+    "base_model:finetune:Rakuten/RakutenAI-3.0",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 684489845504,
+  "parameters_human": "684.49B",
+  "storage_bytes": 688586374464,
+  "storage_human": "688.6 GB",
+  "base_model": "Rakuten/RakutenAI-3.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rakuten - Achat et vente neuf, occasion et reconditionné",
+      "url": "https://fr.shopping.rakuten.com/",
+      "snippet": "La marketplace Rakuten France a cessé son activité le 30 septembre 2026. Pendant toutes ces années, vous avez été des millions …"
+    },
+    {
+      "title": "Rakuten TV",
+      "url": "https://www.rakuten.tv/fr",
+      "snippet": "Rakuten TV offers a wide range of movies and series for streaming, providing entertainment for all tastes."
+    },
+    {
+      "title": "Accéder à mon compte | Rakuten",
+      "url": "https://fr.shopping.rakuten.com/connect",
+      "snippet": "Client Rakuten ? Accédez à votre compte Rakuten, vos achats, votre portefeuille, mettre en vente vos produits en ligne, et système …"
+    },
+    {
+      "title": "Coupons, Promo Codes & Cash Back | Rakuten",
+      "url": "https://www.rakuten.com/?msockid=08f30e6337c06a783dec166436f56b97",
+      "snippet": "“Rakuten is a strong option if you’d like to earn cash back on your online purchases. It’s a rewards app and website that lets you get …"
+    },
+    {
+      "title": "【楽天市場】Shopping is Entertainment! ： インターネット最大級の …",
+      "url": "https://www.rakuten.co.jp/",
+      "snippet": "楽天市場ご利用ガイド 初めての方へ Rakuten Ichiba English Guide 安心・安全への取り組み 無料メルマガ申し込み 楽天市場配送ガ …"
+    }
+  ]
+}

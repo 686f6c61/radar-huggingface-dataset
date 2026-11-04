@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "pentacoxian-dev/Qwen3.8-27B-QSA-GSQ-RCO-GGUF",
+  "slug": "pentacoxian-dev-qwen3-8-27b-qsa-gsq-rco-gguf",
+  "author": "pentacoxian-dev",
+  "url": "https://huggingface.co/pentacoxian-dev/Qwen3.8-27B-QSA-GSQ-RCO-GGUF",
+  "created_at": "2026-11-04T16:21:25.000Z",
+  "updated_at": "2026-11-04T16:23:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qsa",
+    "gsq-rco",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 14295682304,
+  "storage_human": "14.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

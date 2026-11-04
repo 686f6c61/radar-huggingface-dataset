@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sky-VLM-GGUF",
+  "slug": "mradermacher-sky-vlm-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sky-VLM-GGUF",
+  "created_at": "2025-11-15T21:14:43.000Z",
+  "updated_at": "2026-11-04T14:02:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:llxs/Sky-VLM",
+    "base_model:quantized:llxs/Sky-VLM",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 85,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357179840,
+  "storage_human": "70.4 GB",
+  "base_model": "llxs/Sky-VLM",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

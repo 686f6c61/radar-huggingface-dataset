@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "flaitenberger/economize-eagle3-Olmo-3-7B-Instruct",
+  "slug": "flaitenberger-economize-eagle3-olmo-3-7b-instruct",
+  "author": "flaitenberger",
+  "url": "https://huggingface.co/flaitenberger/economize-eagle3-Olmo-3-7B-Instruct",
+  "created_at": "2026-11-04T18:41:45.000Z",
+  "updated_at": "2026-11-04T18:59:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "economize",
+  "languages": [],
+  "tags": [
+    "economize",
+    "safetensors",
+    "eagle3",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:allenai/Olmo-3-7B-Instruct",
+    "base_model:adapter:allenai/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 874909134,
+  "storage_human": "875 MB",
+  "base_model": "allenai/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

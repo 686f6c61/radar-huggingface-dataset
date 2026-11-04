@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "UberCuber/smai-a4-cifar10-mlp",
+  "slug": "ubercuber-smai-a4-cifar10-mlp",
+  "author": "UberCuber",
+  "url": "https://huggingface.co/UberCuber/smai-a4-cifar10-mlp",
+  "created_at": "2026-11-04T17:17:18.000Z",
+  "updated_at": "2026-11-04T17:17:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-classification",
+    "cifar10",
+    "mlp",
+    "pytorch",
+    "en",
+    "dataset:uoft-cs/cifar10",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1610522,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

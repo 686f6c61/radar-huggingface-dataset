@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-Small-24B-ArliAI-RPMax-v1.4-GGUF",
+  "slug": "mradermacher-mistral-small-24b-arliai-rpmax-v1-4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Small-24B-ArliAI-RPMax-v1.4-GGUF",
+  "created_at": "2025-02-09T08:44:46.000Z",
+  "updated_at": "2026-11-04T19:33:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ArliAI/Mistral-Small-24B-ArliAI-RPMax-v1.4",
+    "base_model:quantized:ArliAI/Mistral-Small-24B-ArliAI-RPMax-v1.4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407725728,
+  "storage_human": "161.4 GB",
+  "base_model": "ArliAI/Mistral-Small-24B-ArliAI-RPMax-v1.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

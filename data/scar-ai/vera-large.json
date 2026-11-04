@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "scar-ai/vera-large",
+  "slug": "scar-ai-vera-large",
+  "author": "scar-ai",
+  "url": "https://huggingface.co/scar-ai/vera-large",
+  "created_at": "2026-10-22T22:55:07.000Z",
+  "updated_at": "2026-11-04T20:26:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vera",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "decision-index",
+    "text-classification",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 137,
+  "trending_score": 0,
+  "parameters": 25628527110,
+  "parameters_human": "25.63B",
+  "storage_bytes": 153803881088,
+  "storage_human": "153.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

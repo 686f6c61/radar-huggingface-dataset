@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Eva-9B-GGUF",
+  "slug": "mradermacher-eva-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Eva-9B-GGUF",
+  "created_at": "2025-02-15T10:57:57.000Z",
+  "updated_at": "2026-11-04T17:22:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma2",
+    "causal-lm",
+    "text-generation",
+    "turkish",
+    "fine-tuned",
+    "unsloth",
+    "tr",
+    "base_model:aydndglr/Eva-9B",
+    "base_model:quantized:aydndglr/Eva-9B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 83538311808,
+  "storage_human": "83.5 GB",
+  "base_model": "aydndglr/Eva-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

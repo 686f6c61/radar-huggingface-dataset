@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "flaitenberger/economize-eagle3-Qwen3.5-4B",
+  "slug": "flaitenberger-economize-eagle3-qwen3-5-4b",
+  "author": "flaitenberger",
+  "url": "https://huggingface.co/flaitenberger/economize-eagle3-Qwen3.5-4B",
+  "created_at": "2026-11-04T18:42:40.000Z",
+  "updated_at": "2026-11-04T18:42:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "economize",
+  "languages": [],
+  "tags": [
+    "economize",
+    "safetensors",
+    "eagle3",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 433070088,
+  "storage_human": "433 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "KMCLabs/KMC-T1-1B-Demo2",
+  "slug": "kmclabs-kmc-t1-1b-demo2",
+  "author": "KMCLabs",
+  "url": "https://huggingface.co/KMCLabs/KMC-T1-1B-Demo2",
+  "created_at": "2026-11-04T15:19:43.000Z",
+  "updated_at": "2026-11-04T15:20:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2166551936,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

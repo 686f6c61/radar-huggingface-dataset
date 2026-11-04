@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "sidman007/wsp-bert-insurance-baseline-probe",
+  "slug": "sidman007-wsp-bert-insurance-baseline-probe",
+  "author": "sidman007",
+  "url": "https://huggingface.co/sidman007/wsp-bert-insurance-baseline-probe",
+  "created_at": "2026-11-04T12:39:23.000Z",
+  "updated_at": "2026-11-04T13:02:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "weight-space-programming",
+    "insurance",
+    "text-classification",
+    "en",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109488392,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437977072,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

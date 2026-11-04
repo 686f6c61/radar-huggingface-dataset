@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kindredsp/siglip2-explicit-content-onnx",
+  "slug": "kindredsp-siglip2-explicit-content-onnx",
+  "author": "kindredsp",
+  "url": "https://huggingface.co/kindredsp/siglip2-explicit-content-onnx",
+  "created_at": "2026-11-04T20:00:02.000Z",
+  "updated_at": "2026-11-04T20:00:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "siglip2",
+    "nsfw",
+    "image-classification",
+    "base_model:prithivMLmods/siglip2-x256-explicit-content",
+    "base_model:quantized:prithivMLmods/siglip2-x256-explicit-content",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343596108,
+  "storage_human": "344 MB",
+  "base_model": "prithivMLmods/siglip2-x256-explicit-content",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

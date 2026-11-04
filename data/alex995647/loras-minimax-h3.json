@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Alex995647/loras-minimax-h3",
+  "slug": "alex995647-loras-minimax-h3",
+  "author": "Alex995647",
+  "url": "https://huggingface.co/Alex995647/loras-minimax-h3",
+  "created_at": "2026-09-04T23:06:07.000Z",
+  "updated_at": "2026-11-04T20:23:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "video",
+    "mirror",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80629414612,
+  "storage_human": "80.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

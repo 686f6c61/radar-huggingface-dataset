@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e",
+  "slug": "peculiar-ragdoll-cyber-tiel-coder-35b-a3b-mlx-oq6e",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e",
+  "created_at": "2026-08-31T23:02:45.000Z",
+  "updated_at": "2026-11-04T18:43:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "abliterated",
+    "uncensored",
+    "vision",
+    "6-bit",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 363,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 88717020666,
+  "storage_human": "88.7 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e",
+      "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e",
+      "snippet": "09.09.2026 ... ⚠️ WARNING - Read before use: Abliterated models like CyberTiel are able to say and do things other models refuse, including potentially ..."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "coolrna/KREA2",
+  "slug": "coolrna-krea2",
+  "author": "coolrna",
+  "url": "https://huggingface.co/coolrna/KREA2",
+  "created_at": "2026-09-18T06:34:30.000Z",
+  "updated_at": "2026-11-04T16:48:10.000Z",
+  "license": "krea2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39463101144,
+  "storage_human": "39.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

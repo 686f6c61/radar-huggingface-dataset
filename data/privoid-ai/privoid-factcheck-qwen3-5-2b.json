@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Privoid-ai/Privoid-FactCheck-Qwen3.5-2B",
+  "slug": "privoid-ai-privoid-factcheck-qwen3-5-2b",
+  "author": "Privoid-ai",
+  "url": "https://huggingface.co/Privoid-ai/Privoid-FactCheck-Qwen3.5-2B",
+  "created_at": "2026-11-04T14:16:07.000Z",
+  "updated_at": "2026-11-04T14:16:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "fact-checking",
+    "hallucination-detection",
+    "grounding",
+    "groundedness",
+    "faithfulness",
+    "rag",
+    "rag-evaluation",
+    "llm-evaluation",
+    "claim-verification",
+    "nli",
+    "llm-aggrefact",
+    "minicheck",
+    "guardrails",
+    "small-language-model",
+    "unsloth",
+    "qwen3.5",
+    "lora",
+    "privoid",
+    "text-classification",
+    "en",
+    "dataset:lytang/C2D-and-D2C-MiniCheck",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87672597,
+  "storage_human": "88 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Grounded fact-checking",
+      "dataset": "LLM-AggreFact (test)",
+      "metric": "Average balanced accuracy (11 datasets)",
+      "value": 74.7
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "subs-king/zils-lite-saina-helm-2-omni",
+  "slug": "subs-king-zils-lite-saina-helm-2-omni",
+  "author": "subs-king",
+  "url": "https://huggingface.co/subs-king/zils-lite-saina-helm-2-omni",
+  "created_at": "2026-11-04T19:24:40.000Z",
+  "updated_at": "2026-11-04T19:24:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "soup-body",
+    "decision-model",
+    "base_model:run-saina/saina-helm-2-omni-0.8b",
+    "base_model:finetune:run-saina/saina-helm-2-omni-0.8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706030528,
+  "storage_human": "1.7 GB",
+  "base_model": "run-saina/saina-helm-2-omni-0.8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

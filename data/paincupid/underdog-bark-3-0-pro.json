@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "paincupid/Underdog-Bark-3.0-Pro",
+  "slug": "paincupid-underdog-bark-3-0-pro",
+  "author": "paincupid",
+  "url": "https://huggingface.co/paincupid/Underdog-Bark-3.0-Pro",
+  "created_at": "2026-11-04T14:30:35.000Z",
+  "updated_at": "2026-11-04T14:47:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "safetensors",
+    "parakeet_tdt",
+    "mirror",
+    "on-device",
+    "matrixapps",
+    "automatic-speech-recognition",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 2488777627,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

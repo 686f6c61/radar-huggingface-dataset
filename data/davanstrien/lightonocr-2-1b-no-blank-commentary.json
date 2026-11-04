@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "davanstrien/LightOnOCR-2-1B-no-blank-commentary",
+  "slug": "davanstrien-lightonocr-2-1b-no-blank-commentary",
+  "author": "davanstrien",
+  "url": "https://huggingface.co/davanstrien/LightOnOCR-2-1B-no-blank-commentary",
+  "created_at": "2026-11-04T14:07:55.000Z",
+  "updated_at": "2026-11-04T14:32:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "ocr",
+    "weight-editing",
+    "experiment",
+    "base_model:lightonai/LightOnOCR-2-1B",
+    "base_model:finetune:lightonai/LightOnOCR-2-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1005647872,
+  "parameters_human": "1.01B",
+  "storage_bytes": 2023174215,
+  "storage_human": "2.0 GB",
+  "base_model": "lightonai/LightOnOCR-2-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

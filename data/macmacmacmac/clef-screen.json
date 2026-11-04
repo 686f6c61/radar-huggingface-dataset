@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "macmacmacmac/CLEF-Screen",
+  "slug": "macmacmacmac-clef-screen",
+  "author": "macmacmacmac",
+  "url": "https://huggingface.co/macmacmacmac/CLEF-Screen",
+  "created_at": "2026-11-04T19:03:32.000Z",
+  "updated_at": "2026-11-04T19:05:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "security",
+    "prompt-injection",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18273666661,
+  "storage_human": "18.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

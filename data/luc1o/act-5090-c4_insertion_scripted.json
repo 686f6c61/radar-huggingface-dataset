@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "LUC1O/act-5090-C4_insertion_scripted",
+  "slug": "luc1o-act-5090-c4_insertion_scripted",
+  "author": "LUC1O",
+  "url": "https://huggingface.co/LUC1O/act-5090-C4_insertion_scripted",
+  "created_at": "2026-11-04T16:15:26.000Z",
+  "updated_at": "2026-11-04T16:16:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "aloha",
+    "dataset:lerobot/aloha_sim_insertion_scripted",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206773128,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

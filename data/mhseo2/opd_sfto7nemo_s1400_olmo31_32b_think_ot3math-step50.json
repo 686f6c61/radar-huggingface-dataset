@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mhseo2/opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step50",
+  "slug": "mhseo2-opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step50",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step50",
+  "created_at": "2026-11-04T14:05:26.000Z",
+  "updated_at": "2026-11-04T14:08:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "olmo",
+    "math",
+    "on-policy-distillation",
+    "base_model:mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400",
+    "base_model:finetune:mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

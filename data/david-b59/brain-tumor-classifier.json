@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "david-b59/brain-tumor-classifier",
+  "slug": "david-b59-brain-tumor-classifier",
+  "author": "david-b59",
+  "url": "https://huggingface.co/david-b59/brain-tumor-classifier",
+  "created_at": "2026-11-04T20:23:28.000Z",
+  "updated_at": "2026-11-04T20:24:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "medical",
+    "mri",
+    "brain-tumor",
+    "grad-cam",
+    "transfer-learning",
+    "image-classification",
+    "fr",
+    "dataset:masoudnickparvar/brain-tumor-mri-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23569348,
+  "parameters_human": "23.6M",
+  "storage_bytes": 94306328,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

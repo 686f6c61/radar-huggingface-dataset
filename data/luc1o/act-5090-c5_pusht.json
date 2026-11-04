@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "LUC1O/act-5090-C5_pusht",
+  "slug": "luc1o-act-5090-c5_pusht",
+  "author": "LUC1O",
+  "url": "https://huggingface.co/LUC1O/act-5090-C5_pusht",
+  "created_at": "2026-11-04T16:16:03.000Z",
+  "updated_at": "2026-11-04T16:16:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "pusht",
+    "dataset:lerobot/pusht",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51660418,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206675376,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

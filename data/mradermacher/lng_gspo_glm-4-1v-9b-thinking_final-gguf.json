@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LNG_GSPO_GLM-4.1V-9B-Thinking_final-GGUF",
+  "slug": "mradermacher-lng_gspo_glm-4-1v-9b-thinking_final-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LNG_GSPO_GLM-4.1V-9B-Thinking_final-GGUF",
+  "created_at": "2025-11-15T21:11:26.000Z",
+  "updated_at": "2026-11-04T14:03:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "glm4v",
+    "en",
+    "base_model:hnv2520/LNG_GSPO_GLM-4.1V-9B-Thinking_final",
+    "base_model:quantized:hnv2520/LNG_GSPO_GLM-4.1V-9B-Thinking_final",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": 9400279040,
+  "parameters_human": "9.40B",
+  "storage_bytes": 86835697792,
+  "storage_human": "86.8 GB",
+  "base_model": "hnv2520/LNG_GSPO_GLM-4.1V-9B-Thinking_final",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

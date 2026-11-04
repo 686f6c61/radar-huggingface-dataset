@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "loktionov129/smlq_sfw.lora",
+  "slug": "loktionov129-smlq_sfw-lora",
+  "author": "loktionov129",
+  "url": "https://huggingface.co/loktionov129/smlq_sfw.lora",
+  "created_at": "2026-11-04T13:57:16.000Z",
+  "updated_at": "2026-11-04T14:03:38.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "template:diffusion-lora",
+    "krea-ai",
+    "krea-2-turbo",
+    "comfyui",
+    "virtual-influencer",
+    "face-consistency",
+    "lora",
+    "ai-toolkit",
+    "en",
+    "dataset:loktionov129/smlq_sfw.dataset",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231018988,
+  "storage_human": "231 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

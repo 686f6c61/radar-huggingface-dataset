@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jaay2/bawago-universal-model",
+  "slug": "jaay2-bawago-universal-model",
+  "author": "jaay2",
+  "url": "https://huggingface.co/jaay2/bawago-universal-model",
+  "created_at": "2026-11-04T17:19:50.000Z",
+  "updated_at": "2026-11-04T17:19:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "scikit-learn",
+    "intent-classification",
+    "text-classification",
+    "bawago",
+    "peer-to-peer",
+    "multi-vertical",
+    "en",
+    "dataset:custom",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12415731,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-Vertical Intent Classification",
+      "dataset": null,
+      "metric": "Accuracy",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

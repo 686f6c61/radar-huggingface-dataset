@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "bboldpilot/zils-lite-b1",
+  "slug": "bboldpilot-zils-lite-b1",
+  "author": "bboldpilot",
+  "url": "https://huggingface.co/bboldpilot/zils-lite-b1",
+  "created_at": "2026-11-04T17:03:45.000Z",
+  "updated_at": "2026-11-04T17:03:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "soup-body",
+    "decision-model",
+    "base_model:analogalok/Qwen3.5-0.8B-AA-Decision",
+    "base_model:finetune:analogalok/Qwen3.5-0.8B-AA-Decision",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706035648,
+  "storage_human": "1.7 GB",
+  "base_model": "analogalok/Qwen3.5-0.8B-AA-Decision",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
