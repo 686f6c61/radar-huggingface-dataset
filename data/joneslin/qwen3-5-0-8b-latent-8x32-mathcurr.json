@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "JonesLin/qwen3.5-0.8b-latent-8x32-mathcurr",
+  "slug": "joneslin-qwen3-5-0-8b-latent-8x32-mathcurr",
+  "author": "JonesLin",
+  "url": "https://huggingface.co/JonesLin/qwen3.5-0.8b-latent-8x32-mathcurr",
+  "created_at": "2026-11-05T09:34:09.000Z",
+  "updated_at": "2026-11-05T09:41:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "latent-reasoning",
+    "chain-of-thought",
+    "math",
+    "en",
+    "dataset:JonesLin/openmathinstruct2-steps-cot",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3523438262,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

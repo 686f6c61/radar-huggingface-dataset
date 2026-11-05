@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ericrisco/gemma-maia-12b",
+  "slug": "ericrisco-gemma-maia-12b",
+  "author": "ericrisco",
+  "url": "https://huggingface.co/ericrisco/gemma-maia-12b",
+  "created_at": "2026-11-05T04:46:50.000Z",
+  "updated_at": "2026-11-05T04:48:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ca"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "maia",
+    "andorra",
+    "lora",
+    "qlora",
+    "unsloth",
+    "sft",
+    "text-generation",
+    "conversational",
+    "ca",
+    "base_model:unsloth/gemma-4-12b-it",
+    "base_model:adapter:unsloth/gemma-4-12b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7938197898,
+  "storage_human": "7.9 GB",
+  "base_model": "unsloth/gemma-4-12b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

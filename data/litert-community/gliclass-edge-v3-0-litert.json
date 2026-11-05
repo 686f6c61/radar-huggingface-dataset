@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/GLiClass-Edge-v3.0-LiteRT",
   "created_at": "2026-10-02T05:02:08.000Z",
-  "updated_at": "2026-11-04T21:05:16.000Z",
+  "updated_at": "2026-11-04T22:30:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",

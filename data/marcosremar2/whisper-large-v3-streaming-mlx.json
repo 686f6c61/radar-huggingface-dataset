@@ -5,8 +5,8 @@
   "author": "marcosremar2",
   "url": "https://huggingface.co/marcosremar2/whisper-large-v3-streaming-mlx",
   "created_at": "2026-11-03T09:12:41.000Z",
-  "updated_at": "2026-11-04T03:39:53.000Z",
-  "license": "mit",
+  "updated_at": "2026-11-05T00:25:12.000Z",
+  "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
   "library": "mlx",
@@ -38,7 +38,7 @@
     "arxiv:2506.17077",
     "base_model:MahmoudAshraf/acft-whisper-large-v3",
     "base_model:finetune:MahmoudAshraf/acft-whisper-large-v3",
-    "license:mit",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
@@ -46,8 +46,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 1707134294,
+  "storage_human": "1.7 GB",
   "base_model": "openai/whisper-large-v3, MahmoudAshraf/acft-whisper-large-v3",
   "formats": [
     "mlx"

@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/d3-flash-Artemis-GGUF",
   "created_at": "2026-10-14T06:56:41.000Z",
-  "updated_at": "2026-10-26T09:22:51.000Z",
+  "updated_at": "2026-11-04T11:22:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -13,6 +13,8 @@
   "languages": [],
   "tags": [
     "gguf",
+    "turintech",
+    "artemis",
     "d3",
     "decision-model",
     "systemone",
@@ -29,11 +31,11 @@
     "conversational"
   ],
   "likes": 11,
-  "downloads_30d": 2907,
+  "downloads_30d": 2935,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 9482980670,
+  "storage_bytes": 9483074682,
   "storage_human": "9.5 GB",
   "base_model": "vllm-sr/d3-flash",
   "formats": [

@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/d3-mini-Artemis-GGUF",
   "created_at": "2026-10-20T16:22:29.000Z",
-  "updated_at": "2026-10-26T09:22:55.000Z",
+  "updated_at": "2026-11-04T11:21:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -13,6 +13,8 @@
   "languages": [],
   "tags": [
     "gguf",
+    "turintech",
+    "artemis",
     "d3",
     "decision-model",
     "systemone",
@@ -27,13 +29,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 4,
-  "downloads_30d": 225,
+  "likes": 6,
+  "downloads_30d": 259,
   "trending_score": 0,
   "parameters": 4841450496,
   "parameters_human": "4.84B",
-  "storage_bytes": 6349971670,
-  "storage_human": "6.3 GB",
+  "storage_bytes": 6350065129,
+  "storage_human": "6.4 GB",
   "base_model": "vllm-sr/d3-mini",
   "formats": [
     "gguf"

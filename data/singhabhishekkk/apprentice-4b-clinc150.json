@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "singhabhishekkk/apprentice-4b-clinc150",
+  "slug": "singhabhishekkk-apprentice-4b-clinc150",
+  "author": "singhabhishekkk",
+  "url": "https://huggingface.co/singhabhishekkk/apprentice-4b-clinc150",
+  "created_at": "2026-11-05T06:19:40.000Z",
+  "updated_at": "2026-11-05T06:19:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "apprentice",
+    "lora",
+    "intent-classification",
+    "clinc150",
+    "en",
+    "dataset:clinc/clinc_oos",
+    "arxiv:2604.14531",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34065720,
+  "storage_human": "34 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

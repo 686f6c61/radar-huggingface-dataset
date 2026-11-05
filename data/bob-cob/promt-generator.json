@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "bob-cob/Promt-generator",
+  "slug": "bob-cob-promt-generator",
+  "author": "bob-cob",
+  "url": "https://huggingface.co/bob-cob/Promt-generator",
+  "created_at": "2026-11-05T09:11:43.000Z",
+  "updated_at": "2026-11-05T09:11:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "bloom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 4488351315,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

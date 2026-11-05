@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ninosh/em-router",
+  "slug": "ninosh-em-router",
+  "author": "ninosh",
+  "url": "https://huggingface.co/ninosh/em-router",
+  "created_at": "2026-11-05T04:37:56.000Z",
+  "updated_at": "2026-11-05T04:38:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "em",
+    "skill-router",
+    "commit-msg",
+    "qwen2.5",
+    "text-generation",
+    "en",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1071381502,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

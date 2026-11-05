@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "rrdevries/mobilevit-baseline56",
+  "slug": "rrdevries-mobilevit-baseline56",
+  "author": "rrdevries",
+  "url": "https://huggingface.co/rrdevries/mobilevit-baseline56",
+  "created_at": "2026-11-05T07:02:28.000Z",
+  "updated_at": "2026-11-05T07:02:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "rumezhak/microduck-tug-league-v2",
+  "slug": "rumezhak-microduck-tug-league-v2",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-tug-league-v2",
+  "created_at": "2026-11-05T11:56:39.000Z",
+  "updated_at": "2026-11-05T11:57:17.000Z",
+  "license": "`",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-arena",
+    "robotics",
+    "base_model:greecree/microduck-tug-of-war-tug-super-v8",
+    "base_model:merge:greecree/microduck-tug-of-war-tug-super-v8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 894903,
+  "storage_human": "894903 B",
+  "base_model": "greecree/microduck-tug-of-war-tug-super-v8",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

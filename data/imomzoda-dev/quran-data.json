@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "imomzoda-dev/quran-data",
+  "slug": "imomzoda-dev-quran-data",
+  "author": "imomzoda-dev",
+  "url": "https://huggingface.co/imomzoda-dev/quran-data",
+  "created_at": "2026-11-05T05:40:13.000Z",
+  "updated_at": "2026-08-03T05:45:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "АХБОРИ ИЗВЕСТИЯ NEWS",
+      "url": "https://journals.anrt.tj/files/News_o/ahbor2024_2_275.pdf",
+      "snippet": "... model of economic development …………………………………………………………………………………… 128 ... data privacy protection. The Republic of Tajikistan has seen widespread."
+    }
+  ]
+}

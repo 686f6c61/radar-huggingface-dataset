@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "HimanshuPathak/omnivoice-hindi-incremental-expanded-20261025-gated",
+  "slug": "himanshupathak-omnivoice-hindi-incremental-expanded-20261025-gated",
+  "author": "HimanshuPathak",
+  "url": "https://huggingface.co/HimanshuPathak/omnivoice-hindi-incremental-expanded-20261025-gated",
+  "created_at": "2026-10-25T12:41:24.000Z",
+  "updated_at": "2026-11-05T10:38:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "hi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73567851347,
+  "storage_human": "73.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "JW-Hubs/Qwen3.5-0.8B-W4A16-AutoRound",
+  "slug": "jw-hubs-qwen3-5-0-8b-w4a16-autoround",
+  "author": "JW-Hubs",
+  "url": "https://huggingface.co/JW-Hubs/Qwen3.5-0.8B-W4A16-AutoRound",
+  "created_at": "2026-08-27T07:40:19.000Z",
+  "updated_at": "2026-11-05T11:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 594077760,
+  "parameters_human": "594.1M",
+  "storage_bytes": 2427705096,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

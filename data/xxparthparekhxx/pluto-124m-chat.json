@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "xxparthparekhxx/pluto-124m-chat",
+  "slug": "xxparthparekhxx-pluto-124m-chat",
+  "author": "xxparthparekhxx",
+  "url": "https://huggingface.co/xxparthparekhxx/pluto-124m-chat",
+  "created_at": "2026-11-05T10:42:36.000Z",
+  "updated_at": "2026-11-05T10:43:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pluto",
+    "text-generation",
+    "small-language-model",
+    "trained-from-scratch",
+    "chat",
+    "custom_code",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:xxparthparekhxx/pluto-124m-base",
+    "base_model:finetune:xxparthparekhxx/pluto-124m-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 121229568,
+  "parameters_human": "121.2M",
+  "storage_bytes": 484934416,
+  "storage_human": "485 MB",
+  "base_model": "xxparthparekhxx/pluto-124m-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tory-labs/vica-laya",
+  "slug": "tory-labs-vica-laya",
+  "author": "tory-labs",
+  "url": "https://huggingface.co/tory-labs/vica-laya",
+  "created_at": "2026-11-05T10:06:43.000Z",
+  "updated_at": "2026-11-05T10:09:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "gguf",
+    "korean",
+    "decision-model",
+    "fine-tuned",
+    "text-classification",
+    "ko",
+    "en",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 323182859,
+  "parameters_human": "323.2M",
+  "storage_bytes": 361797216,
+  "storage_human": "362 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

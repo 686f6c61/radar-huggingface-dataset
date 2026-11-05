@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "aaatmy/whisper-large-v3-onnx",
+  "slug": "aaatmy-whisper-large-v3-onnx",
+  "author": "aaatmy",
+  "url": "https://huggingface.co/aaatmy/whisper-large-v3-onnx",
+  "created_at": "2026-11-05T07:40:37.000Z",
+  "updated_at": "2026-11-05T07:41:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "whisper",
+    "audio",
+    "automatic-speech-recognition",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-large-v3",
+    "base_model:quantized:openai/whisper-large-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7998606483,
+  "storage_human": "8.0 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

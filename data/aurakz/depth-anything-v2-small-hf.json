@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "aurakz/Depth-Anything-V2-Small-hf",
+  "slug": "aurakz-depth-anything-v2-small-hf",
+  "author": "aurakz",
+  "url": "https://huggingface.co/aurakz/Depth-Anything-V2-Small-hf",
+  "created_at": "2026-11-05T09:12:25.000Z",
+  "updated_at": "2026-11-05T09:16:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "depth_anything",
+    "depth",
+    "relative depth",
+    "depth-estimation",
+    "arxiv:2406.09414",
+    "arxiv:2401.10891",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24785089,
+  "parameters_human": "24.8M",
+  "storage_bytes": 99173660,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

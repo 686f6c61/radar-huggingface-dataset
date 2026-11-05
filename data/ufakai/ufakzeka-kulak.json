@@ -5,7 +5,7 @@
   "author": "ufakai",
   "url": "https://huggingface.co/ufakai/ufakzeka-kulak",
   "created_at": "2026-10-22T23:36:32.000Z",
-  "updated_at": "2026-11-02T18:26:08.000Z",
+  "updated_at": "2026-11-04T20:21:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -37,6 +37,7 @@
     "dataset:espnet/yodas2",
     "arxiv:2311.17741",
     "arxiv:2310.02943",
+    "arxiv:2611.03605",
     "license:apache-2.0",
     "model-index",
     "region:us"

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Chatty-Harry_V2.0-GGUF",
+  "slug": "mradermacher-chatty-harry_v2-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Chatty-Harry_V2.0-GGUF",
+  "created_at": "2025-03-10T06:48:27.000Z",
+  "updated_at": "2026-11-05T11:20:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692311168,
+  "storage_human": "84.7 GB",
+  "base_model": "Triangle104/Chatty-Harry_V2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

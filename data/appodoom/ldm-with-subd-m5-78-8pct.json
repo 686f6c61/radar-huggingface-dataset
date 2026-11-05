@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Appodoom/ldm-with-subd-m5-78-8pct",
+  "slug": "appodoom-ldm-with-subd-m5-78-8pct",
+  "author": "Appodoom",
+  "url": "https://huggingface.co/Appodoom/ldm-with-subd-m5-78-8pct",
+  "created_at": "2026-11-05T08:03:20.000Z",
+  "updated_at": "2026-11-05T08:03:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ldm_rhythm",
+    "feature-extraction",
+    "rhythm-generation",
+    "derbake",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11858388,
+  "parameters_human": "11.9M",
+  "storage_bytes": 47447618,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

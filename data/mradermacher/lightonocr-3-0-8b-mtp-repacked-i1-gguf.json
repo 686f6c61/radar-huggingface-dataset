@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF",
+  "slug": "mradermacher-lightonocr-3-0-8b-mtp-repacked-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF",
+  "created_at": "2026-11-05T11:54:34.000Z",
+  "updated_at": "2026-11-05T12:23:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "mtp",
+    "ocr",
+    "document-understanding",
+    "visual-grounding",
+    "vision-language",
+    "pdf",
+    "tables",
+    "forms",
+    "en",
+    "base_model:prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked",
+    "base_model:quantized:prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 555378,
+  "parameters_human": "555378",
+  "storage_bytes": 2275008,
+  "storage_human": "2 MB",
+  "base_model": "prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

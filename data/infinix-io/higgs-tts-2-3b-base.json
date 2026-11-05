@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Infinix-io/higgs-tts-2-3b-base",
+  "slug": "infinix-io-higgs-tts-2-3b-base",
+  "author": "Infinix-io",
+  "url": "https://huggingface.co/Infinix-io/higgs-tts-2-3b-base",
+  "created_at": "2026-11-05T05:21:42.000Z",
+  "updated_at": "2026-11-05T05:21:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "de",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "higgs_audio_v2",
+    "text-to-audio",
+    "text-to-speech",
+    "en",
+    "zh",
+    "de",
+    "ko",
+    "arxiv:2505.23009",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5771283456,
+  "parameters_human": "5.77B",
+  "storage_bytes": 11575192369,
+  "storage_human": "11.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

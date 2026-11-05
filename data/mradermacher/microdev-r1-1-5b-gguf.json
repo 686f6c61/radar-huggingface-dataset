@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/MicroDev-R1-1.5B-GGUF",
   "created_at": "2026-11-02T09:39:47.000Z",
-  "updated_at": "2026-11-02T10:13:30.000Z",
+  "updated_at": "2026-11-05T03:53:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 201,
+  "downloads_30d": 394,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

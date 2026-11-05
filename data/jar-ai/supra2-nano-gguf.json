@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Jar-ai/Supra2-Nano-GGUF",
+  "slug": "jar-ai-supra2-nano-gguf",
+  "author": "Jar-ai",
+  "url": "https://huggingface.co/Jar-ai/Supra2-Nano-GGUF",
+  "created_at": "2026-11-05T09:27:37.000Z",
+  "updated_at": "2026-11-05T10:04:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "Supra",
+    "pretrain",
+    "SLM",
+    "GGUF",
+    "BF16",
+    "F16",
+    "F32",
+    "Q8_0",
+    "quantization",
+    "text-generation",
+    "en",
+    "base_model:SupraLabs/Supra2-Nano",
+    "base_model:quantized:SupraLabs/Supra2-Nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 799776,
+  "parameters_human": "799776",
+  "storage_bytes": 16825632,
+  "storage_human": "17 MB",
+  "base_model": "SupraLabs/Supra2-Nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

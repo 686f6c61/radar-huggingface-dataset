@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Chemical-X-t2-123b-GGUF",
+  "slug": "mradermacher-chemical-x-t2-123b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Chemical-X-t2-123b-GGUF",
+  "created_at": "2025-02-19T08:44:53.000Z",
+  "updated_at": "2026-11-05T11:20:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:bruhzair/Chemical-X-t2-123b",
+    "base_model:quantized:bruhzair/Chemical-X-t2-123b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 122610069504,
+  "parameters_human": "122.61B",
+  "storage_bytes": 832244627328,
+  "storage_human": "832.2 GB",
+  "base_model": "bruhzair/Chemical-X-t2-123b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

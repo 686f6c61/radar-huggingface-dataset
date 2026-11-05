@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "typhoon-ai/typhoon-ocr2-0.8b",
+  "slug": "typhoon-ai-typhoon-ocr2-0-8b",
+  "author": "typhoon-ai",
+  "url": "https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b",
+  "created_at": "2026-11-05T06:59:26.000Z",
+  "updated_at": "2026-11-05T08:32:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "document-parsing",
+    "layout-analysis",
+    "table-recognition",
+    "thai",
+    "conversational",
+    "th",
+    "en",
+    "arxiv:2601.14722",
+    "base_model:ATH-MaaS/OvisOCR2",
+    "base_model:finetune:ATH-MaaS/OvisOCR2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726365155,
+  "storage_human": "1.7 GB",
+  "base_model": "ATH-MaaS/OvisOCR2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Typhoon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Typhoon",
+      "snippet": "According to the statistics of the Joint Typhoon Warning Center, from 1950 to 2022, the Northwest Pacific generated an average of …"
+    },
+    {
+      "title": "Eurofighter Typhoon — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Eurofighter_Typhoon",
+      "snippet": "L 'Eurofighter Typhoon est un avion de combat multirôle biréacteur, à ailes delta et plans canards, développé par le Royaume-Uni …"
+    },
+    {
+      "title": "Suivi des typhons : radar et carte en direct, infos du jour",
+      "url": "https://www.rainviewer.com/fr/storm-tracker/typhoons/",
+      "snippet": "Suivez sur radar en direct chaque typhon près des Philippines et du Japon, avec une carte dédiée. Infos du jour dans l'application …"
+    },
+    {
+      "title": "Japan Meteorological Agency | RSMC Tokyo - Typhoon Center",
+      "url": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/RSMC_HP.htm",
+      "snippet": "5 hours ago · The Regional Specialized Meteorological Center (RSMC) Tokyo - Typhoon Center provides information on tropical …"
+    }
+  ]
+}

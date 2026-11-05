@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Infinix-ai/higgs-audio-v3-tts-4b-transformers",
+  "slug": "infinix-ai-higgs-audio-v3-tts-4b-transformers",
+  "author": "Infinix-ai",
+  "url": "https://huggingface.co/Infinix-ai/higgs-audio-v3-tts-4b-transformers",
+  "created_at": "2026-11-05T07:43:56.000Z",
+  "updated_at": "2026-11-05T07:43:56.000Z",
+  "license": "bosonai-higgs-audio-v3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "higgs_multimodal_qwen3",
+    "feature-extraction",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "higgs-audio",
+    "qwen3",
+    "custom_code",
+    "en",
+    "base_model:bosonai/higgs-tts-3-4b",
+    "base_model:finetune:bosonai/higgs-tts-3-4b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4654850537,
+  "parameters_human": "4.65B",
+  "storage_bytes": 9321268854,
+  "storage_human": "9.3 GB",
+  "base_model": "bosonai/higgs-audio-v3-tts-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

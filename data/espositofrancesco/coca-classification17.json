@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "espositofrancesco/coca-classification17",
+  "slug": "espositofrancesco-coca-classification17",
+  "author": "espositofrancesco",
+  "url": "https://huggingface.co/espositofrancesco/coca-classification17",
+  "created_at": "2026-11-05T08:18:37.000Z",
+  "updated_at": "2026-11-05T08:18:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

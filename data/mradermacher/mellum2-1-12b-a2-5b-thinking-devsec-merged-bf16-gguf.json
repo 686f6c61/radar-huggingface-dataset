@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16-GGUF",
+  "slug": "mradermacher-mellum2-1-12b-a2-5b-thinking-devsec-merged-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16-GGUF",
+  "created_at": "2026-11-05T06:23:33.000Z",
+  "updated_at": "2026-11-05T06:31:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mellum",
+    "mixture-of-experts",
+    "code",
+    "lora",
+    "pi",
+    "en",
+    "dataset:nvidia/Open-SWE-Traces",
+    "dataset:prabhatl0dhi/C_C_plus_plus_Patch_Dataset_for_Secure_Code_LLMs",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "dataset:runanlab/gpt-5.4-frontend-development-11062026",
+    "base_model:Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16",
+    "base_model:adapter:Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 87610979008,
+  "storage_human": "87.6 GB",
+  "base_model": "Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

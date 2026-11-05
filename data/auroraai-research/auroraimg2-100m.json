@@ -37,9 +37,9 @@
     "diffusers:AuroraIMG2Pipeline",
     "region:us"
   ],
-  "likes": 15,
-  "downloads_30d": 0,
-  "trending_score": 15,
+  "likes": 17,
+  "downloads_30d": 61,
+  "trending_score": 17,
   "parameters": 100600448,
   "parameters_human": "100.6M",
   "storage_bytes": 835461795,

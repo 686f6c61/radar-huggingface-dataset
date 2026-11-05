@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ml-resources/ERNIE-5.5-Flash-Base",
+  "slug": "ml-resources-ernie-5-5-flash-base",
+  "author": "ml-resources",
+  "url": "https://huggingface.co/ml-resources/ERNIE-5.5-Flash-Base",
+  "created_at": "2026-11-05T06:32:34.000Z",
+  "updated_at": "2026-11-05T06:32:34.000Z",
+  "license": "ernie-5.5-flash-base-model-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie5_5_moe",
+    "text-generation",
+    "ERNIE5.5",
+    "MoE",
+    "en",
+    "zh",
+    "arxiv:2610.17959",
+    "arxiv:2610.40577",
+    "arxiv:2610.24766",
+    "license:other",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 286245697882,
+  "parameters_human": "286.25B",
+  "storage_bytes": 288464845196,
+  "storage_human": "288.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

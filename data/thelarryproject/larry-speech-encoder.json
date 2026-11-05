@@ -5,7 +5,7 @@
   "author": "thelarryproject",
   "url": "https://huggingface.co/thelarryproject/larry-speech-encoder",
   "created_at": "2026-11-03T17:52:19.000Z",
-  "updated_at": "2026-11-04T00:08:33.000Z",
+  "updated_at": "2026-11-04T19:25:02.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -38,7 +38,7 @@
   "trending_score": 0,
   "parameters": 163639199,
   "parameters_human": "163.6M",
-  "storage_bytes": 655052579,
+  "storage_bytes": 655344799,
   "storage_human": "655 MB",
   "base_model": null,
   "formats": [

@@ -5,7 +5,7 @@
   "author": "stealth-model",
   "url": "https://huggingface.co/stealth-model/missingno",
   "created_at": "2026-10-28T17:59:42.000Z",
-  "updated_at": "2026-10-29T00:26:26.000Z",
+  "updated_at": "2026-11-04T22:36:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
   "trending_score": 0,
   "parameters": 501267612352,
   "parameters_human": "501.27B",
-  "storage_bytes": 133885893846,
+  "storage_bytes": 133886470098,
   "storage_human": "133.9 GB",
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [

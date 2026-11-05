@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/laya-LiteRT",
   "created_at": "2026-09-21T07:25:46.000Z",
-  "updated_at": "2026-10-05T00:20:42.000Z",
+  "updated_at": "2026-11-04T21:04:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -27,7 +27,7 @@
     "ja",
     "multilingual",
     "base_model:convaiinnovations/laya",
-    "base_model:finetune:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
     "license:apache-2.0",
     "region:us"
   ],

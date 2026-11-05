@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Qwen3.5-4B-GLB-3D-Coder-GGUF",
+  "slug": "prithivmlmods-qwen3-5-4b-glb-3d-coder-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Qwen3.5-4B-GLB-3D-Coder-GGUF",
+  "created_at": "2026-11-05T10:04:19.000Z",
+  "updated_at": "2026-11-05T10:52:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "text-generation-inference",
+    "llama-cpp",
+    "code",
+    "threejs",
+    "3d",
+    "glb",
+    "godot",
+    "image-text-to-text",
+    "en",
+    "base_model:ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "base_model:quantized:ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 33067521696,
+  "storage_human": "33.1 GB",
+  "base_model": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

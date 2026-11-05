@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Zayaan/zils-flash-onejev1.6",
+  "slug": "zayaan-zils-flash-onejev1-6",
+  "author": "Zayaan",
+  "url": "https://huggingface.co/Zayaan/zils-flash-onejev1.6",
+  "created_at": "2026-11-05T08:15:29.000Z",
+  "updated_at": "2026-11-05T08:15:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "soup-body",
+    "d3-flash",
+    "decision-model",
+    "base_model:OmniJev/OneJev1.6-9B",
+    "base_model:finetune:OmniJev/OneJev1.6-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8392695024,
+  "parameters_human": "8.39B",
+  "storage_bytes": 16785483616,
+  "storage_human": "16.8 GB",
+  "base_model": "OmniJev/OneJev1.6-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

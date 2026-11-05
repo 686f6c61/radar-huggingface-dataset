@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/d1-omni-600M-LiteRT",
   "created_at": "2026-10-08T16:56:46.000Z",
-  "updated_at": "2026-10-09T05:47:24.000Z",
+  "updated_at": "2026-11-04T21:05:25.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -51,7 +51,7 @@
     "vi",
     "zh",
     "base_model:LiquidAI/d1-omni-600M",
-    "base_model:finetune:LiquidAI/d1-omni-600M",
+    "base_model:quantized:LiquidAI/d1-omni-600M",
     "license:other",
     "region:us"
   ],

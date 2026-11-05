@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "id": "kokitabayashi/bge-m3_FinModernBERT_query",
+  "slug": "kokitabayashi-bge-m3_finmodernbert_query",
+  "author": "kokitabayashi",
+  "url": "https://huggingface.co/kokitabayashi/bge-m3_FinModernBERT_query",
+  "created_at": "2026-11-05T07:41:10.000Z",
+  "updated_at": "2026-11-05T07:41:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:44709",
+    "loss:MultipleNegativesRankingLoss",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2288162795,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.8256784968684759
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.9508350730688935
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9713987473903967
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9869519832985386
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@1",
+      "value": 0.8256784968684759
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@3",
+      "value": 0.31694502435629784
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@5",
+      "value": 0.1942797494780793
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@10",
+      "value": 0.09869519832985385
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@1",
+      "value": 0.8256784968684759
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@3",
+      "value": 0.9508350730688935
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@5",
+      "value": 0.9713987473903967
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@10",
+      "value": 0.9869519832985386
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9144686318571218
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Mrr@10",
+      "value": 0.8903315024687651
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Map@100",
+      "value": 0.8910203978542466
+    }
+  ],
+  "sources": []
+}

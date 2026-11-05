@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "iseonn/mock_test",
+  "slug": "iseonn-mock_test",
+  "author": "iseonn",
+  "url": "https://huggingface.co/iseonn/mock_test",
+  "created_at": "2026-11-05T08:54:42.000Z",
+  "updated_at": "2026-11-05T08:55:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:iseonn/mock_test_clean",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723156,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

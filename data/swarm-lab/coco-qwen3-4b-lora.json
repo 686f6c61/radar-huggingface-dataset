@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "SWARM-Lab/CoCo-Qwen3-4B-LoRA",
+  "slug": "swarm-lab-coco-qwen3-4b-lora",
+  "author": "SWARM-Lab",
+  "url": "https://huggingface.co/SWARM-Lab/CoCo-Qwen3-4B-LoRA",
+  "created_at": "2026-10-08T23:20:46.000Z",
+  "updated_at": "2026-11-05T05:45:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:2611.05515",
+    "lora",
+    "time-series",
+    "forecasting",
+    "multimodal",
+    "coco",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264300328,
+  "storage_human": "264 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Intelligence - arXiv",
+      "url": "https://arxiv.org/list/cs.AI/new?ref=genaisecretsauce.com",
+      "snippet": "\\ Across six benchmarks and Qwen3 models ranging from 4B to 14B parameters ... Once the generated LoRA is inserted into a frozen base model, the model ..."
+    }
+  ]
+}

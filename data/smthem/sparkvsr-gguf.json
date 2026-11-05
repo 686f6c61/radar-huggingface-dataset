@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "smthem/SparkVSR-GGUF",
+  "slug": "smthem-sparkvsr-gguf",
+  "author": "smthem",
+  "url": "https://huggingface.co/smthem/SparkVSR-GGUF",
+  "created_at": "2026-03-21T00:59:04.000Z",
+  "updated_at": "2026-11-05T07:07:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 1318,
+  "trending_score": 0,
+  "parameters": 5571594880,
+  "parameters_human": "5.57B",
+  "storage_bytes": 50948844264,
+  "storage_human": "50.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-v1",
+  "slug": "szlholdings-szl-nemotron-mini-4b-estate-v1",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-v1",
+  "created_at": "2026-11-05T11:17:03.000Z",
+  "updated_at": "2026-11-05T11:23:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron",
+    "text-generation",
+    "szl-holdings",
+    "sft",
+    "estate-corpus",
+    "qlora",
+    "abstention-counterweighted",
+    "measured",
+    "conversational",
+    "en",
+    "base_model:nvidia/Nemotron-Mini-4B-Instruct",
+    "base_model:finetune:nvidia/Nemotron-Mini-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4190509056,
+  "parameters_human": "4.19B",
+  "storage_bytes": 8415865699,
+  "storage_human": "8.4 GB",
+  "base_model": "nvidia/Nemotron-Mini-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

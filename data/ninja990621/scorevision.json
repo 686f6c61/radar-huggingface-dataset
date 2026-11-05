@@ -5,7 +5,7 @@
   "author": "ninja990621",
   "url": "https://huggingface.co/ninja990621/ScoreVision",
   "created_at": "2026-10-29T05:45:30.000Z",
-  "updated_at": "2026-10-30T08:48:55.000Z",
+  "updated_at": "2026-11-04T14:14:33.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -17,6 +17,8 @@
     "yolo",
     "bittensor",
     "scorevision",
+    "base_model:crimedetector/room-dirtinessR",
+    "base_model:quantized:crimedetector/room-dirtinessR",
     "license:agpl-3.0",
     "region:us"
   ],
@@ -25,9 +27,9 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 31821659,
-  "storage_human": "32 MB",
-  "base_model": null,
+  "storage_bytes": 42428923,
+  "storage_human": "42 MB",
+  "base_model": "crimedetector/room-dirtinessR",
   "formats": [
     "onnx"
   ],

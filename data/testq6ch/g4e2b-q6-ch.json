@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "testq6ch/g4e2b-q6-ch",
+  "slug": "testq6ch-g4e2b-q6-ch",
+  "author": "testq6ch",
+  "url": "https://huggingface.co/testq6ch/g4e2b-q6-ch",
+  "created_at": "2026-11-05T04:40:19.000Z",
+  "updated_at": "2026-11-05T04:46:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6369420720,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

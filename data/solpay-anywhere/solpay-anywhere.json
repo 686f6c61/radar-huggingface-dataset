@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "solpay-anywhere/solpay-anywhere",
+  "slug": "solpay-anywhere-solpay-anywhere",
+  "author": "solpay-anywhere",
+  "url": "https://huggingface.co/solpay-anywhere/solpay-anywhere",
+  "created_at": "2026-10-29T12:27:56.000Z",
+  "updated_at": "2026-11-05T09:08:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22030941,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

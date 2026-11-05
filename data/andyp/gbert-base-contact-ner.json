@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "andyP/gbert-base-contact-ner",
+  "slug": "andyp-gbert-base-contact-ner",
+  "author": "andyP",
+  "url": "https://huggingface.co/andyP/gbert-base-contact-ner",
+  "created_at": "2026-11-05T08:01:16.000Z",
+  "updated_at": "2026-11-05T08:01:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "german",
+    "contact-information",
+    "imprint",
+    "web-extraction",
+    "de",
+    "base_model:deepset/gbert-base",
+    "base_model:finetune:deepset/gbert-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109354775,
+  "parameters_human": "109.4M",
+  "storage_bytes": 437442444,
+  "storage_human": "437 MB",
+  "base_model": "deepset/gbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

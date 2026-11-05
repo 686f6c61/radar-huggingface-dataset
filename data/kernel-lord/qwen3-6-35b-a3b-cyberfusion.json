@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Kernel-Lord/Qwen3.6-35B-A3B-CyberFusion",
+  "slug": "kernel-lord-qwen3-6-35b-a3b-cyberfusion",
+  "author": "Kernel-Lord",
+  "url": "https://huggingface.co/Kernel-Lord/Qwen3.6-35B-A3B-CyberFusion",
+  "created_at": "2026-11-05T11:04:28.000Z",
+  "updated_at": "2026-11-05T11:04:28.000Z",
+  "license": "multi-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

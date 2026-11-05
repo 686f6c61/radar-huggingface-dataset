@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "AlphJain/home-decor-siglip",
+  "slug": "alphjain-home-decor-siglip",
+  "author": "AlphJain",
+  "url": "https://huggingface.co/AlphJain/home-decor-siglip",
+  "created_at": "2026-10-11T04:48:38.000Z",
+  "updated_at": "2026-11-05T08:26:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "siglip",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 375187970,
+  "parameters_human": "375.2M",
+  "storage_bytes": 81119893719,
+  "storage_human": "81.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

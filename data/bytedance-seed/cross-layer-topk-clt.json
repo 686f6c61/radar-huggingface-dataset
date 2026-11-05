@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "ByteDance-Seed/Cross-Layer-TopK-CLT",
+  "slug": "bytedance-seed-cross-layer-topk-clt",
+  "author": "ByteDance-Seed",
+  "url": "https://huggingface.co/ByteDance-Seed/Cross-Layer-TopK-CLT",
+  "created_at": "2026-11-05T06:56:16.000Z",
+  "updated_at": "2026-11-05T07:09:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "interpretability",
+    "mechanistic-interpretability",
+    "transcoder",
+    "cross-layer-transcoder",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4719536,
+  "storage_human": "5 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "صيد الضبّان — Roblox Game Stats, Codes & Info",
+      "url": "https://robipedia.com/game/-10769149947",
+      "snippet": "Oct 10, 2026 · Key Takeaway صيد الضبّان is a Na game on Roblox by LL's Studio. It currently has 4.107 active players and has been …"
+    }
+  ]
+}

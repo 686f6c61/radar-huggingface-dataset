@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Mytho0610/slm-text2sql-qwen2.5-coder-1.5b-instruct-debug",
+  "slug": "mytho0610-slm-text2sql-qwen2-5-coder-1-5b-instruct-debug",
+  "author": "Mytho0610",
+  "url": "https://huggingface.co/Mytho0610/slm-text2sql-qwen2.5-coder-1.5b-instruct-debug",
+  "created_at": "2026-11-05T11:15:11.000Z",
+  "updated_at": "2026-11-05T11:15:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-to-sql",
+    "sqlite",
+    "qlora",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3172799816,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

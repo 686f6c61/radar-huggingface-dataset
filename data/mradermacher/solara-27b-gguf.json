@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Solara-27B-GGUF",
+  "slug": "mradermacher-solara-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Solara-27B-GGUF",
+  "created_at": "2026-11-05T06:50:31.000Z",
+  "updated_at": "2026-11-05T07:09:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:WangSenQWQ/Solara-27B",
+    "base_model:quantized:WangSenQWQ/Solara-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905339552,
+  "storage_human": "187.9 GB",
+  "base_model": "WangSenQWQ/Solara-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

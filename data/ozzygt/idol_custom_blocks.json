@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/idol_custom_blocks",
+  "slug": "ozzygt-idol_custom_blocks",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/idol_custom_blocks",
+  "created_at": "2026-11-05T06:19:09.000Z",
+  "updated_at": "2026-11-05T06:20:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "idol",
+    "modular-diffusers",
+    "image-to-3d",
+    "gaussian-splatting",
+    "en",
+    "base_model:speridlabs/idol",
+    "base_model:finetune:speridlabs/idol",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "speridlabs/idol",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

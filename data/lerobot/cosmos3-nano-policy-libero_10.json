@@ -5,7 +5,7 @@
   "author": "lerobot",
   "url": "https://huggingface.co/lerobot/Cosmos3-Nano-Policy-LIBERO_10",
   "created_at": "2026-11-03T16:29:47.000Z",
-  "updated_at": "2026-11-03T16:31:59.000Z",
+  "updated_at": "2026-11-04T21:06:16.000Z",
   "license": "openmdw1.1-license",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 16454213580,
   "parameters_human": "16.45B",
-  "storage_bytes": 32955733066,
-  "storage_human": "33.0 GB",
+  "storage_bytes": 98772793450,
+  "storage_human": "98.8 GB",
   "base_model": "lerobot/Cosmos3-Nano",
   "formats": [
     "safetensors"

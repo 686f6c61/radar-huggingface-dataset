@@ -5,7 +5,7 @@
   "author": "inferencerlabs",
   "url": "https://huggingface.co/inferencerlabs/Kimi-K3.1-Pro-MLXse",
   "created_at": "2026-11-05T01:05:07.000Z",
-  "updated_at": "2026-11-05T01:05:37.000Z",
+  "updated_at": "2026-11-05T04:58:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 106,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2795286,
-  "storage_human": "3 MB",
+  "storage_bytes": 283014483456,
+  "storage_human": "283.0 GB",
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "mlx"

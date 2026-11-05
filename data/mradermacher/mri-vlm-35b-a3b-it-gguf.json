@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MRI-VLM-35B-A3B-IT-GGUF",
+  "slug": "mradermacher-mri-vlm-35b-a3b-it-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MRI-VLM-35B-A3B-IT-GGUF",
+  "created_at": "2026-11-05T06:46:46.000Z",
+  "updated_at": "2026-11-05T07:05:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:bruceshuyuejia/MRI-VLM-35B-A3B-IT",
+    "base_model:quantized:bruceshuyuejia/MRI-VLM-35B-A3B-IT",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 238639036064,
+  "storage_human": "238.6 GB",
+  "base_model": "bruceshuyuejia/MRI-VLM-35B-A3B-IT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

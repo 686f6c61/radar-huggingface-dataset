@@ -5,7 +5,7 @@
   "author": "towfique-elahe",
   "url": "https://huggingface.co/towfique-elahe/beyond-words-whisper-medium-did",
   "created_at": "2026-11-01T09:13:24.000Z",
-  "updated_at": "2026-11-01T09:48:47.000Z",
+  "updated_at": "2026-11-05T05:21:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 306201097,
   "parameters_human": "306.2M",

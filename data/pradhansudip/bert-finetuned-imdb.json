@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "pradhansudip/bert-finetuned-imdb",
+  "slug": "pradhansudip-bert-finetuned-imdb",
+  "author": "pradhansudip",
+  "url": "https://huggingface.co/pradhansudip/bert-finetuned-imdb",
+  "created_at": "2026-11-05T07:32:58.000Z",
+  "updated_at": "2026-11-05T07:33:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437964297,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

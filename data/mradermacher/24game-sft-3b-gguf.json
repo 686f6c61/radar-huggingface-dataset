@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/24game-sft-3b-GGUF",
+  "slug": "mradermacher-24game-sft-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/24game-sft-3b-GGUF",
+  "created_at": "2025-11-16T18:14:07.000Z",
+  "updated_at": "2026-11-05T10:08:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:couplefire/24game-sft-3b",
+    "base_model:quantized:couplefire/24game-sft-3b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 30595511296,
+  "storage_human": "30.6 GB",
+  "base_model": "couplefire/24game-sft-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

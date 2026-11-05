@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "hong-hai-le/vietnam-society-sim",
+  "slug": "hong-hai-le-vietnam-society-sim",
+  "author": "hong-hai-le",
+  "url": "https://huggingface.co/hong-hai-le/vietnam-society-sim",
+  "created_at": "2026-11-03T06:59:44.000Z",
+  "updated_at": "2026-11-05T07:21:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "lora",
+    "persona-simulation",
+    "survey-simulation",
+    "vietnamese",
+    "synthetic-personas",
+    "text-generation",
+    "conversational",
+    "vi",
+    "dataset:nvidia/Nemotron-Personas-Vietnam",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548189,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

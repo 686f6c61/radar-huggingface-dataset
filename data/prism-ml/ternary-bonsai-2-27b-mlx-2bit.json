@@ -5,7 +5,7 @@
   "author": "prism-ml",
   "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
   "created_at": "2026-09-16T23:41:18.000Z",
-  "updated_at": "2026-09-22T21:18:49.000Z",
+  "updated_at": "2026-11-04T22:31:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 483,
+  "likes": 484,
   "downloads_30d": 25352,
   "trending_score": 12,
   "parameters": 27359638768,

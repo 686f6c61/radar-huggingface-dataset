@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "demoqqq/banglatts-eleven-new",
+  "slug": "demoqqq-banglatts-eleven-new",
+  "author": "demoqqq",
+  "url": "https://huggingface.co/demoqqq/banglatts-eleven-new",
+  "created_at": "2026-11-01T17:03:16.000Z",
+  "updated_at": "2026-11-05T07:02:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "vits",
+    "bengali",
+    "sherpa-onnx",
+    "bn",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114160150,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

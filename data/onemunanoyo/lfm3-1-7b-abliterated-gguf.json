@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "onemunanoyo/LFM3-1.7B-Abliterated-GGUF",
+  "slug": "onemunanoyo-lfm3-1-7b-abliterated-gguf",
+  "author": "onemunanoyo",
+  "url": "https://huggingface.co/onemunanoyo/LFM3-1.7B-Abliterated-GGUF",
+  "created_at": "2026-11-05T08:53:01.000Z",
+  "updated_at": "2026-11-05T11:33:38.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "Abliterated",
+    "GGUF",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 7967105024,
+  "storage_human": "8.0 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "leeyunjai",
   "url": "https://huggingface.co/leeyunjai/easydetect",
   "created_at": "2026-08-25T11:18:46.000Z",
-  "updated_at": "2026-10-26T23:07:25.000Z",
+  "updated_at": "2026-11-02T23:32:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Manim-Qwen-bit16-GGUF",
+  "slug": "mradermacher-manim-qwen-bit16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Manim-Qwen-bit16-GGUF",
+  "created_at": "2025-11-16T17:27:21.000Z",
+  "updated_at": "2026-11-05T10:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000860128,
+  "storage_human": "224.0 GB",
+  "base_model": "kalamkhan/Manim-Qwen-bit16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

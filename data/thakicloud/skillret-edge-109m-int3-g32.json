@@ -5,7 +5,7 @@
   "author": "ThakiCloud",
   "url": "https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M-int3-g32",
   "created_at": "2026-09-13T13:54:31.000Z",
-  "updated_at": "2026-09-16T01:41:36.000Z",
+  "updated_at": "2026-11-03T00:50:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 109482240,
   "parameters_human": "109.5M",

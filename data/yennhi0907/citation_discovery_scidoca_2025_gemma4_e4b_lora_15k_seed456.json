@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yennhi0907/citation_discovery_scidoca_2025_gemma4_e4b_lora_15k_seed456",
+  "slug": "yennhi0907-citation_discovery_scidoca_2025_gemma4_e4b_lora_15k_seed456",
+  "author": "yennhi0907",
+  "url": "https://huggingface.co/yennhi0907/citation_discovery_scidoca_2025_gemma4_e4b_lora_15k_seed456",
+  "created_at": "2026-11-05T04:31:15.000Z",
+  "updated_at": "2026-11-05T04:31:26.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "citation-recommendation",
+    "scidoca-2025",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68502716,
+  "storage_human": "69 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

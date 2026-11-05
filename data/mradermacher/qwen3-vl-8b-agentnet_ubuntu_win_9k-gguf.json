@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-VL-8B-agentnet_ubuntu_win_9k-GGUF",
+  "slug": "mradermacher-qwen3-vl-8b-agentnet_ubuntu_win_9k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-agentnet_ubuntu_win_9k-GGUF",
+  "created_at": "2026-11-05T07:11:06.000Z",
+  "updated_at": "2026-11-05T07:20:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "en",
+    "base_model:CaptainCuong/Qwen3-VL-8B-agentnet_ubuntu_win_9k",
+    "base_model:quantized:CaptainCuong/Qwen3-VL-8B-agentnet_ubuntu_win_9k",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 75336674432,
+  "storage_human": "75.3 GB",
+  "base_model": "CaptainCuong/Qwen3-VL-8B-agentnet_ubuntu_win_9k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

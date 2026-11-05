@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "weareapexcreators/Minico-M1-1105-LocalAI",
+  "slug": "weareapexcreators-minico-m1-1105-localai",
+  "author": "weareapexcreators",
+  "url": "https://huggingface.co/weareapexcreators/Minico-M1-1105-LocalAI",
+  "created_at": "2026-11-05T06:03:13.000Z",
+  "updated_at": "2026-11-05T06:03:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 379222176,
+  "storage_human": "379 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

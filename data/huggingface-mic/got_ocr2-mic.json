@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/got_ocr2-mic",
+  "slug": "huggingface-mic-got_ocr2-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/got_ocr2-mic",
+  "created_at": "2026-10-12T15:26:02.000Z",
+  "updated_at": "2026-11-05T07:51:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "got_ocr2",
+    "mic",
+    "test-artifact",
+    "base_model:stepfun-ai/GOT-OCR-2.0-hf",
+    "base_model:finetune:stepfun-ai/GOT-OCR-2.0-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1467,
+  "trending_score": 0,
+  "parameters": 13027200,
+  "parameters_human": "13.0M",
+  "storage_bytes": 44764557,
+  "storage_human": "45 MB",
+  "base_model": "stepfun-ai/GOT-OCR-2.0-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

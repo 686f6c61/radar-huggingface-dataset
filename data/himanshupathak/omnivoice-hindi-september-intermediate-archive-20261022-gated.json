@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "HimanshuPathak/omnivoice-hindi-september-intermediate-archive-20261022-gated",
+  "slug": "himanshupathak-omnivoice-hindi-september-intermediate-archive-20261022-gated",
+  "author": "HimanshuPathak",
+  "url": "https://huggingface.co/HimanshuPathak/omnivoice-hindi-september-intermediate-archive-20261022-gated",
+  "created_at": "2026-10-22T11:00:39.000Z",
+  "updated_at": "2026-11-05T10:38:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "hi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51470121521,
+  "storage_human": "51.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

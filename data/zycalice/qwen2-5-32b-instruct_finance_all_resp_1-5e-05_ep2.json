@@ -5,7 +5,7 @@
   "author": "zycalice",
   "url": "https://huggingface.co/zycalice/Qwen2.5-32B-Instruct_finance_all_resp_1.5e-05_ep2",
   "created_at": "2026-11-04T20:04:16.000Z",
-  "updated_at": "2026-11-04T20:17:54.000Z",
+  "updated_at": "2026-11-04T22:17:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9732537148,
-  "storage_human": "9.7 GB",
+  "storage_bytes": 105323346761,
+  "storage_human": "105.3 GB",
   "base_model": "unsloth/Qwen2.5-32B-Instruct",
   "formats": [
     "safetensors"

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "voxelshogi/voxelshogi-research-operator-probe-v1",
+  "slug": "voxelshogi-voxelshogi-research-operator-probe-v1",
+  "author": "voxelshogi",
+  "url": "https://huggingface.co/voxelshogi/voxelshogi-research-operator-probe-v1",
+  "created_at": "2026-11-05T05:00:37.000Z",
+  "updated_at": "2026-11-05T05:02:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "voxelshogi",
+    "untrained",
+    "research",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 912879057,
+  "storage_human": "913 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

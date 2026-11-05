@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "Suqin-Test/turingtest-checkpoints",
+  "slug": "suqin-test-turingtest-checkpoints",
+  "author": "Suqin-Test",
+  "url": "https://huggingface.co/Suqin-Test/turingtest-checkpoints",
+  "created_at": "2026-11-05T11:47:17.000Z",
+  "updated_at": "2026-11-05T12:33:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 402751870992,
+  "storage_human": "402.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

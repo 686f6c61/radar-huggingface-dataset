@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/granite-3.0-1b-a400m-instruct-mic",
+  "slug": "huggingface-mic-granite-3-0-1b-a400m-instruct-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/granite-3.0-1b-a400m-instruct-mic",
+  "created_at": "2026-10-29T21:18:58.000Z",
+  "updated_at": "2026-11-05T07:50:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "granitemoe",
+    "mic",
+    "test-artifact",
+    "base_model:ibm-granite/granite-3.0-1b-a400m-instruct",
+    "base_model:finetune:ibm-granite/granite-3.0-1b-a400m-instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 483,
+  "trending_score": 0,
+  "parameters": 3367936,
+  "parameters_human": "3.4M",
+  "storage_bytes": 6738104,
+  "storage_human": "7 MB",
+  "base_model": "ibm-granite/granite-3.0-1b-a400m-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

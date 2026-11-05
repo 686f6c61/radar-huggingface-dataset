@@ -5,7 +5,7 @@
   "author": "Duecki",
   "url": "https://huggingface.co/Duecki/CalibRaw-Artifacts",
   "created_at": "2026-09-02T14:04:20.000Z",
-  "updated_at": "2026-10-16T21:27:34.000Z",
+  "updated_at": "2026-11-03T00:59:06.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5026715790,
-  "storage_human": "5.0 GB",
+  "storage_bytes": 7541116347,
+  "storage_human": "7.5 GB",
   "base_model": null,
   "formats": [
     "onnx"

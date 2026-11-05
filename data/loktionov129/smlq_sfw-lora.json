@@ -5,7 +5,7 @@
   "author": "loktionov129",
   "url": "https://huggingface.co/loktionov129/smlq_sfw.lora",
   "created_at": "2026-11-04T13:57:16.000Z",
-  "updated_at": "2026-11-04T14:03:38.000Z",
+  "updated_at": "2026-11-04T20:31:24.000Z",
   "license": "unlicense",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 231018988,
-  "storage_human": "231 MB",
+  "storage_bytes": 1394243837,
+  "storage_human": "1.4 GB",
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"

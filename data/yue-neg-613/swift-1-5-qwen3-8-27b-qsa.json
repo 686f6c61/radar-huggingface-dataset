@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "yue-neg-613/Swift-1.5-Qwen3.8-27b-QSA",
+  "slug": "yue-neg-613-swift-1-5-qwen3-8-27b-qsa",
+  "author": "yue-neg-613",
+  "url": "https://huggingface.co/yue-neg-613/Swift-1.5-Qwen3.8-27b-QSA",
+  "created_at": "2026-11-05T07:58:15.000Z",
+  "updated_at": "2026-11-05T08:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_qsa",
+    "custom_code",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27B-GGUF",
+    "base_model:finetune:ukisai/Swift-1.5-Qwen3.8-27B-GGUF",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27833862896,
+  "parameters_human": "27.83B",
+  "storage_bytes": 55790613244,
+  "storage_human": "55.8 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27B-GGUF",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m",
+  "slug": "deepfaune-deepfaune-vit_large_patch16_dinov3-lvd1689m",
+  "author": "DeepFaune",
+  "url": "https://huggingface.co/DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m",
+  "created_at": "2026-11-05T10:53:59.000Z",
+  "updated_at": "2026-11-05T10:53:59.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepFaune",
+      "url": "https://www.deepfaune.cnrs.fr/",
+      "snippet": "Nous mettons à disposition un logiciel simple d’usage permettant de classifier, à l’aide des modèles DeepFaune, des images ou des …"
+    },
+    {
+      "title": "DeepFaune",
+      "url": "https://www.deepfaune.cnrs.fr/en/",
+      "snippet": "We provide a free-to-use, user-friendly software to run the DeepFaune model to classify camera-trap pictures or videos. The software …"
+    },
+    {
+      "title": "DeepFaune Documentation",
+      "url": "https://deepfaune.pages.math.cnrs.fr/software/",
+      "snippet": "DeepFaune is an initiative aiming at providing AI models to assist with the automatic classification of species in camera-trap images …"
+    },
+    {
+      "title": "DeepFaune - CNRS Sciences informatiques",
+      "url": "https://www.ins2i.cnrs.fr/fr/deepfaune",
+      "snippet": "Sep 29, 2022 · A partir des données collectées par les pièges photographiques, l’équipe DeepFaune développe un logiciel sous la …"
+    },
+    {
+      "title": "DeepFaune : l’intelligence artificielle au service du suivi de la ...",
+      "url": "https://www.univ-smb.fr/2025/05/27/deepfaune-lintelligence-artificielle-au-service-du-suivi-de-la-biodiversite/",
+      "snippet": "May 27, 2025 · Lancé en 2020, DeepFaune est un logiciel libre et gratuit qui identifie automatiquement les espèces animales sur les …"
+    }
+  ]
+}

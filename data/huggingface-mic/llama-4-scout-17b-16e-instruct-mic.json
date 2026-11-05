@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Llama-4-Scout-17B-16E-Instruct-mic",
+  "slug": "huggingface-mic-llama-4-scout-17b-16e-instruct-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Llama-4-Scout-17B-16E-Instruct-mic",
+  "created_at": "2026-10-30T23:18:39.000Z",
+  "updated_at": "2026-11-05T07:55:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama4",
+    "mic",
+    "test-artifact",
+    "base_model:RedHatAI/Llama-4-Scout-17B-16E-Instruct",
+    "base_model:finetune:RedHatAI/Llama-4-Scout-17B-16E-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 334,
+  "trending_score": 0,
+  "parameters": 44667200,
+  "parameters_human": "44.7M",
+  "storage_bytes": 215761992,
+  "storage_human": "216 MB",
+  "base_model": "RedHatAI/Llama-4-Scout-17B-16E-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

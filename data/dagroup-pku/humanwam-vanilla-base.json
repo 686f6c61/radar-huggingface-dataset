@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "DAGroup-PKU/HumanWAM-Vanilla-Base",
+  "slug": "dagroup-pku-humanwam-vanilla-base",
+  "author": "DAGroup-PKU",
+  "url": "https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-Base",
+  "created_at": "2026-11-05T10:59:22.000Z",
+  "updated_at": "2026-11-05T11:07:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "world-action-model",
+    "egocentric",
+    "pretraining",
+    "en",
+    "dataset:DAGroup-PKU/Open-HumanScale-50K",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24083676146,
+  "storage_human": "24.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

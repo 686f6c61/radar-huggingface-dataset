@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Cinv/cvstudio-illustrator",
+  "slug": "cinv-cvstudio-illustrator",
+  "author": "Cinv",
+  "url": "https://huggingface.co/Cinv/cvstudio-illustrator",
+  "created_at": "2026-11-05T11:52:33.000Z",
+  "updated_at": "2026-11-05T11:53:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "onnx",
+    "text-to-image",
+    "latent-consistency-model",
+    "base_model:SimianLuo/LCM_Dreamshaper_v7",
+    "base_model:quantized:SimianLuo/LCM_Dreamshaper_v7",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1885875038,
+  "storage_human": "1.9 GB",
+  "base_model": "SimianLuo/LCM_Dreamshaper_v7",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "WayneRR/cognitive-learning-lab",
+  "slug": "waynerr-cognitive-learning-lab",
+  "author": "WayneRR",
+  "url": "https://huggingface.co/WayneRR/cognitive-learning-lab",
+  "created_at": "2026-11-05T09:09:16.000Z",
+  "updated_at": "2026-11-05T09:19:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51157,
+  "storage_human": "51157 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine Learning Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-algorithms/",
+      "snippet": "Sep 1, 2026 · Machine learning algorithms are sets of rules that allow computers to learn from data, identify patterns and make …"
+    },
+    {
+      "title": "What are machine learning algorithms? - IBM",
+      "url": "https://www.ibm.com/think/topics/machine-learning-algorithms",
+      "snippet": "Sep 18, 2025 · What are machine learning algorithms? A machine learning algorithm is the procedure and mathematical logic …"
+    },
+    {
+      "title": "Machine learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Machine_learning",
+      "snippet": "Learning classifier systems (LCS) are a family of rule-based machine learning algorithms that combine a discovery component, …"
+    },
+    {
+      "title": "Machine Learning Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-tutorial/",
+      "snippet": "Oct 1, 2026 · Machine Learning (ML) is a branch of Artificial Intelligence that enables computers to learn from data and make …"
+    },
+    {
+      "title": "Machine Learning Algorithms: Types, Uses, and Libraries - Simplilearn",
+      "url": "https://www.simplilearn.com/10-algorithms-machine-learning-engineers-need-to-know-article",
+      "snippet": "Aug 31, 2026 · Looking for a machine learning algorithms list? Explore key ML models, their types, examples, and how they drive AI …"
+    }
+  ]
+}

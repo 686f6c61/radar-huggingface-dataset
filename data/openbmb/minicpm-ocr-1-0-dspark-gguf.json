@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf",
   "created_at": "2026-10-26T08:46:38.000Z",
-  "updated_at": "2026-11-02T09:08:06.000Z",
+  "updated_at": "2026-11-04T09:34:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 9,
-  "downloads_30d": 4561,
+  "downloads_30d": 5245,
   "trending_score": 0,
   "parameters": 296952577,
   "parameters_human": "297.0M",

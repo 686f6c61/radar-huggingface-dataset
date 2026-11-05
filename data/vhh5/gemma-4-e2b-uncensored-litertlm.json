@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Vhh5/gemma-4-e2b-uncensored-litertlm",
+  "slug": "vhh5-gemma-4-e2b-uncensored-litertlm",
+  "author": "Vhh5",
+  "url": "https://huggingface.co/Vhh5/gemma-4-e2b-uncensored-litertlm",
+  "created_at": "2026-11-05T04:38:13.000Z",
+  "updated_at": "2026-11-05T04:38:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert-lm",
+    "uncensored",
+    "edge-gallery",
+    "gemma-4",
+    "android",
+    "on-device",
+    "en",
+    "base_model:prithivMLmods/gemma-4-E2B-it-Uncensored-MAX",
+    "base_model:finetune:prithivMLmods/gemma-4-E2B-it-Uncensored-MAX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7690960000,
+  "storage_human": "7.7 GB",
+  "base_model": "prithivMLmods/gemma-4-E2B-it-Uncensored-MAX",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RCSB PDB - 9HKQ: Structure of VHH5 targeting NY-ESO-1 …",
+      "url": "https://www.rcsb.org/structure/9HKQ",
+      "snippet": "Dec 17, 2025 · 9HKQ | pdb_00009hkq Structure of VHH5 targeting NY-ESO-1 (SLLMWITQC)/HLA-A*02:01 PDB DOI: …"
+    },
+    {
+      "title": "A neuraminidase-targeted nanobody confers broad protection against ...",
+      "url": "https://oadoi.org/10.1128/jvi.00762-26",
+      "snippet": "Jul 10, 2026 · Here, we report the identification of VHH5, a nanobody targeting conserved residues within the neuraminidase active …"
+    },
+    {
+      "title": "| Structural analysis, production, and characterization of VHH5. (A ...",
+      "url": "https://www.researchgate.net/figure/Structural-analysis-production-and-characterization-of-VHH5-A-VHH5-structure-The_fig5_358591977",
+      "snippet": "| Structural analysis, production, and characterization of VHH5. (A) VHH5 structure. The disulfide bond is highlighted in yellow and …"
+    },
+    {
+      "title": "Anti-Surface layer protein [VHH5] | Absolute Antibody",
+      "url": "https://absoluteantibody.com/product/anti-surface-layer-protein-vhh5/",
+      "snippet": "Anti-Surface layer protein [VHH5] Description: Recombinant monoclonal antibody to Surface layer protein. Manufactured using …"
+    }
+  ]
+}

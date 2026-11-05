@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "tomvaillant/qwen3.5-9b-spotlight-r3-mlx",
+  "slug": "tomvaillant-qwen3-5-9b-spotlight-r3-mlx",
+  "author": "tomvaillant",
+  "url": "https://huggingface.co/tomvaillant/qwen3.5-9b-spotlight-r3-mlx",
+  "created_at": "2026-11-05T09:09:49.000Z",
+  "updated_at": "2026-11-05T09:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 5963027612,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

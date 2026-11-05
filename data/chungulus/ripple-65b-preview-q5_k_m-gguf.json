@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Chungulus/Ripple-65B-Preview-Q5_K_M-GGUF",
+  "slug": "chungulus-ripple-65b-preview-q5_k_m-gguf",
+  "author": "Chungulus",
+  "url": "https://huggingface.co/Chungulus/Ripple-65B-Preview-Q5_K_M-GGUF",
+  "created_at": "2026-11-05T09:51:19.000Z",
+  "updated_at": "2026-11-05T09:58:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ricursive",
+    "text-generation",
+    "conversational",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 45757433216,
+  "storage_human": "45.8 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

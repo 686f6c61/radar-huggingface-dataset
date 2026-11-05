@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ArnavPoswal15/xlnet-fraud-call",
+  "slug": "arnavposwal15-xlnet-fraud-call",
+  "author": "ArnavPoswal15",
+  "url": "https://huggingface.co/ArnavPoswal15/xlnet-fraud-call",
+  "created_at": "2026-11-05T07:51:35.000Z",
+  "updated_at": "2026-11-05T07:56:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "xlnet",
+    "text-classification",
+    "fraud-detection",
+    "en",
+    "base_model:xlnet/xlnet-base-cased",
+    "base_model:finetune:xlnet/xlnet-base-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 469316987,
+  "storage_human": "469 MB",
+  "base_model": "xlnet/xlnet-base-cased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

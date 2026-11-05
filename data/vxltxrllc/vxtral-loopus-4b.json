@@ -5,7 +5,7 @@
   "author": "vxltxrllc",
   "url": "https://huggingface.co/vxltxrllc/vxtral-loopus-4b",
   "created_at": "2026-10-31T14:20:26.000Z",
-  "updated_at": "2026-10-31T14:47:14.000Z",
+  "updated_at": "2026-11-05T02:58:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 4015331329,
   "parameters_human": "4.02B",
-  "storage_bytes": 8065057240,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 16098142836,
+  "storage_human": "16.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

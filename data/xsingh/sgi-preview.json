@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "xsingh/SGI-Preview",
+  "slug": "xsingh-sgi-preview",
+  "author": "xsingh",
+  "url": "https://huggingface.co/xsingh/SGI-Preview",
+  "created_at": "2026-11-05T08:14:22.000Z",
+  "updated_at": "2026-11-05T08:17:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ricursive",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 129565519472,
+  "storage_human": "129.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

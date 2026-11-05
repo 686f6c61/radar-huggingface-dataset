@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104",
+  "slug": "donghyun1228-pi05-libero-pad-vision-head-source-n50k-10000-20261104",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104",
+  "created_at": "2026-11-05T09:51:21.000Z",
+  "updated_at": "2026-11-05T09:56:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "openpi",
+    "libero",
+    "pad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32415525605,
+  "storage_human": "32.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Create an Interior Design Mood Board - And Academy",
+      "url": "https://www.andacademy.com/resources/blog/interior-design/how-to-create-an-interior-design-mood-board/",
+      "snippet": "Nov 7, 2023 · A mood board is your blank canvas for storing ideas and curating your most stylish interior design looks. Follow our …"
+    }
+  ]
+}

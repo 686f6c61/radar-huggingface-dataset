@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AFDSA18/ZeroIndex",
+  "slug": "afdsa18-zeroindex",
+  "author": "AFDSA18",
+  "url": "https://huggingface.co/AFDSA18/ZeroIndex",
+  "created_at": "2026-10-22T09:45:30.000Z",
+  "updated_at": "2026-11-05T07:08:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "code",
+    "chat",
+    "tr",
+    "dataset:armand0e/claude-fable-5-claude-code",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:finetune:openai/gpt-oss-120b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

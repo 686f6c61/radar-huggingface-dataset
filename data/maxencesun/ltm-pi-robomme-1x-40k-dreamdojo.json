@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "maxenceSUN/LTM-Pi-RoboMME-1x-40k-DreamDojo",
+  "slug": "maxencesun-ltm-pi-robomme-1x-40k-dreamdojo",
+  "author": "maxenceSUN",
+  "url": "https://huggingface.co/maxenceSUN/LTM-Pi-RoboMME-1x-40k-DreamDojo",
+  "created_at": "2026-11-05T06:54:47.000Z",
+  "updated_at": "2026-11-05T07:01:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "robomme",
+    "pi0.5",
+    "dreamdojo",
+    "memory-policy",
+    "arxiv:2610.21362",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12444656050,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ZOKHID/univoice-vosk",
+  "slug": "zokhid-univoice-vosk",
+  "author": "ZOKHID",
+  "url": "https://huggingface.co/ZOKHID/univoice-vosk",
+  "created_at": "2026-11-05T07:07:08.000Z",
+  "updated_at": "2026-11-05T07:18:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "uz",
+    "ru"
+  ],
+  "tags": [
+    "vosk",
+    "kaldi",
+    "speech-recognition",
+    "uz",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97297939,
+  "storage_human": "97 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

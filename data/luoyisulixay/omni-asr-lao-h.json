@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LuoYiSULIXAY/omni-asr-lao-H",
+  "slug": "luoyisulixay-omni-asr-lao-h",
+  "author": "LuoYiSULIXAY",
+  "url": "https://huggingface.co/LuoYiSULIXAY/omni-asr-lao-H",
+  "created_at": "2026-11-05T04:44:11.000Z",
+  "updated_at": "2026-11-05T04:52:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "omnilingual-asr",
+  "languages": [
+    "lo"
+  ],
+  "tags": [
+    "omnilingual-asr",
+    "lao",
+    "asr",
+    "speech-recognition",
+    "low-resource",
+    "fairseq2",
+    "automatic-speech-recognition",
+    "lo",
+    "base_model:facebook/omniASR-LLM-7B",
+    "base_model:finetune:facebook/omniASR-LLM-7B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15603018188,
+  "storage_human": "15.6 GB",
+  "base_model": "facebook/omniASR-LLM-7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Lao ASR v1 (meeting2",
+      "metric": "CER (no spaces)",
+      "value": 7.55
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Lao ASR v1 (meeting2",
+      "metric": "Syllable WER",
+      "value": 11.28
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Lao ASR v1 (test_blind",
+      "metric": "CER (no spaces)",
+      "value": 2.37
+    }
+  ],
+  "sources": []
+}

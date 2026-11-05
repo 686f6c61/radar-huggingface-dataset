@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "jaisawhney/SonicEmbed-ONNX",
+  "slug": "jaisawhney-sonicembed-onnx",
+  "author": "jaisawhney",
+  "url": "https://huggingface.co/jaisawhney/SonicEmbed-ONNX",
+  "created_at": "2026-11-05T09:14:51.000Z",
+  "updated_at": "2026-11-05T09:53:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "embedding_gemma2",
+    "feature-extraction",
+    "audio",
+    "music",
+    "music-information-retrieval",
+    "text-to-audio-retrieval",
+    "embeddings",
+    "en",
+    "base_model:jaisawhney/SonicEmbed",
+    "base_model:quantized:jaisawhney/SonicEmbed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4437179546,
+  "storage_human": "4.4 GB",
+  "base_model": "jaisawhney/SonicEmbed",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

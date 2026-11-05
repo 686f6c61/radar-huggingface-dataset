@@ -5,7 +5,7 @@
   "author": "liana313",
   "url": "https://huggingface.co/liana313/tokengate-repobench-qwen3-1.7b",
   "created_at": "2026-10-20T19:01:07.000Z",
-  "updated_at": "2026-10-20T23:48:51.000Z",
+  "updated_at": "2026-11-04T23:15:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "athenista/slm-tavenel-124m",
+  "slug": "athenista-slm-tavenel-124m",
+  "author": "athenista",
+  "url": "https://huggingface.co/athenista/slm-tavenel-124m",
+  "created_at": "2026-11-05T07:56:05.000Z",
+  "updated_at": "2026-11-05T07:56:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "slm_tavenel",
+    "text-generation",
+    "slm-tavenel",
+    "research-artifact",
+    "base-model",
+    "experimental",
+    "124m",
+    "custom_code",
+    "en",
+    "fr",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:epfml/FineWeb2-HQ",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124038144,
+  "parameters_human": "124.0M",
+  "storage_bytes": 496185104,
+  "storage_human": "496 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

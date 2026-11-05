@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "persuasivepost/eduhinglish-muril-lid",
+  "slug": "persuasivepost-eduhinglish-muril-lid",
+  "author": "persuasivepost",
+  "url": "https://huggingface.co/persuasivepost/eduhinglish-muril-lid",
+  "created_at": "2026-11-05T05:11:27.000Z",
+  "updated_at": "2026-11-05T05:11:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "peft",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "hinglish",
+    "language-identification",
+    "token-classification",
+    "education",
+    "code-mixing",
+    "en",
+    "hi",
+    "base_model:google/muril-base-cased",
+    "base_model:adapter:google/muril-base-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10652548,
+  "storage_human": "11 MB",
+  "base_model": "google/muril-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

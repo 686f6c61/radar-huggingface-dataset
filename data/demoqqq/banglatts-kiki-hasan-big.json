@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "demoqqq/banglatts-kiki-hasan-big",
+  "slug": "demoqqq-banglatts-kiki-hasan-big",
+  "author": "demoqqq",
+  "url": "https://huggingface.co/demoqqq/banglatts-kiki-hasan-big",
+  "created_at": "2026-11-05T07:03:15.000Z",
+  "updated_at": "2026-11-05T07:06:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1111997598,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

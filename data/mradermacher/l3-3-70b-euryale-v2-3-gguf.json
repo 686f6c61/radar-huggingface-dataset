@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.3-70B-Euryale-v2.3-GGUF",
+  "slug": "mradermacher-l3-3-70b-euryale-v2-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.3-70B-Euryale-v2.3-GGUF",
+  "created_at": "2024-12-08T13:45:22.000Z",
+  "updated_at": "2026-11-05T11:20:27.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "en",
+    "base_model:Sao10K/L3.3-70B-Euryale-v2.3",
+    "base_model:quantized:Sao10K/L3.3-70B-Euryale-v2.3",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 284,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303037280,
+  "storage_human": "481.3 GB",
+  "base_model": "Sao10K/L3.3-70B-Euryale-v2.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

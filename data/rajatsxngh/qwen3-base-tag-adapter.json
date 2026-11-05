@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "rajatsxngh/qwen3-base-tag-adapter",
+  "slug": "rajatsxngh-qwen3-base-tag-adapter",
+  "author": "rajatsxngh",
+  "url": "https://huggingface.co/rajatsxngh/qwen3-base-tag-adapter",
+  "created_at": "2026-11-04T05:05:12.000Z",
+  "updated_at": "2026-11-05T06:05:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "trl",
+    "text-classification",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 569318310,
+  "storage_human": "569 MB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

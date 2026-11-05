@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "indraneelghosh740/marathi-hindi-bodhan",
+  "slug": "indraneelghosh740-marathi-hindi-bodhan",
+  "author": "indraneelghosh740",
+  "url": "https://huggingface.co/indraneelghosh740/marathi-hindi-bodhan",
+  "created_at": "2026-11-05T09:54:20.000Z",
+  "updated_at": "2026-11-05T10:06:50.000Z",
+  "license": "bodhan-ai-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "mr",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "marathi",
+    "hindi",
+    "bhashini",
+    "translation",
+    "mr",
+    "hi",
+    "base_model:bodhan-ai/indic-translate",
+    "base_model:finetune:bodhan-ai/indic-translate",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100832,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914656262,
+  "storage_human": "15.9 GB",
+  "base_model": "bodhan-ai/indic-translate",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

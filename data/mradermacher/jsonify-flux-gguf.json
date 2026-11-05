@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/JSONify-Flux-GGUF",
+  "slug": "mradermacher-jsonify-flux-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/JSONify-Flux-GGUF",
+  "created_at": "2025-02-16T13:15:53.000Z",
+  "updated_at": "2026-11-05T10:09:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "caption",
+    "text-generation-inference",
+    "flux",
+    "en",
+    "zh",
+    "base_model:prithivMLmods/JSONify-Flux",
+    "base_model:quantized:prithivMLmods/JSONify-Flux",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 15538540288,
+  "storage_human": "15.5 GB",
+  "base_model": "prithivMLmods/JSONify-Flux",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

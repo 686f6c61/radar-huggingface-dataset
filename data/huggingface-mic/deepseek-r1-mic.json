@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/DeepSeek-R1-mic",
+  "slug": "huggingface-mic-deepseek-r1-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/DeepSeek-R1-mic",
+  "created_at": "2026-10-29T16:39:41.000Z",
+  "updated_at": "2026-11-05T07:49:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v3",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:deepseek-ai/DeepSeek-R1",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 519,
+  "trending_score": 0,
+  "parameters": 16624260,
+  "parameters_human": "16.6M",
+  "storage_bytes": 66506256,
+  "storage_human": "67 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

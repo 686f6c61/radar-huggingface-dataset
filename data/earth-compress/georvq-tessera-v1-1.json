@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "earth-compress/georvq-tessera-v1.1",
+  "slug": "earth-compress-georvq-tessera-v1-1",
+  "author": "earth-compress",
+  "url": "https://huggingface.co/earth-compress/georvq-tessera-v1.1",
+  "created_at": "2026-11-05T09:56:37.000Z",
+  "updated_at": "2026-11-05T09:57:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "georvq",
+  "languages": [],
+  "tags": [
+    "georvq",
+    "onnx",
+    "geospatial",
+    "compression",
+    "vector-quantization",
+    "tessera",
+    "embeddings",
+    "arxiv:2506.20380",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1149579019,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

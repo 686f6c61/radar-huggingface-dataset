@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "JMasr/balidea-crisis-help-detector-es-gl-v2",
+  "slug": "jmasr-balidea-crisis-help-detector-es-gl-v2",
+  "author": "JMasr",
+  "url": "https://huggingface.co/JMasr/balidea-crisis-help-detector-es-gl-v2",
+  "created_at": "2026-05-27T18:15:12.000Z",
+  "updated_at": "2026-11-05T11:22:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es",
+    "gl"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "xlm-roberta",
+    "safeguard-classifier",
+    "text-classification",
+    "crisis-help-detector",
+    "es",
+    "gl",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:quantized:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 3353908595,
+  "storage_human": "3.4 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

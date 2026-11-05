@@ -5,7 +5,7 @@
   "author": "liana313",
   "url": "https://huggingface.co/liana313/tokengate-2wikimqa-qwen3-1.7b",
   "created_at": "2026-10-20T19:00:49.000Z",
-  "updated_at": "2026-10-20T23:48:49.000Z",
+  "updated_at": "2026-11-04T23:15:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

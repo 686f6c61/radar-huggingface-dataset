@@ -5,7 +5,7 @@
   "author": "jcartu",
   "url": "https://huggingface.co/jcartu/WARMIND-1017-FLARE-gb202",
   "created_at": "2026-11-03T21:41:55.000Z",
-  "updated_at": "2026-11-04T01:59:31.000Z",
+  "updated_at": "2026-11-05T02:28:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,13 +27,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 42330137,
-  "parameters_human": "42.3M",
-  "storage_bytes": 523860696209,
-  "storage_human": "523.9 GB",
+  "parameters": 50718745,
+  "parameters_human": "50.7M",
+  "storage_bytes": 537343107101,
+  "storage_human": "537.3 GB",
   "base_model": "jcartu/WARMIND-1017",
   "formats": [
     "safetensors"

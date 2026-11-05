@@ -5,7 +5,7 @@
   "author": "marcosremar2",
   "url": "https://huggingface.co/marcosremar2/acft-whisper-large-v3-ggml",
   "created_at": "2026-11-04T23:49:39.000Z",
-  "updated_at": "2026-11-04T23:52:55.000Z",
+  "updated_at": "2026-11-05T02:53:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

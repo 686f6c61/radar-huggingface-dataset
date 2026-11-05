@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gladia/qat-transfer-vae",
+  "slug": "gladia-qat-transfer-vae",
+  "author": "gladia",
+  "url": "https://huggingface.co/gladia/qat-transfer-vae",
+  "created_at": "2026-11-05T09:01:25.000Z",
+  "updated_at": "2026-11-05T09:10:37.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "vae",
+    "autoencoder",
+    "stable-diffusion",
+    "quantization",
+    "quantization-aware-training",
+    "quantization-aware-distillation",
+    "task-arithmetic",
+    "arxiv:2604.03420",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:finetune:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16632555324,
+  "storage_human": "16.6 GB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gladia | AI Audio Infrastructure for Voice Products",
+      "url": "https://www.gladia.io/",
+      "snippet": "Gladia is the AI audio infrastructure that transcribes and enriches every conversation through a single API - so developers can turn …"
+    },
+    {
+      "title": "Welcome to Gladia - Gladia",
+      "url": "https://docs.gladia.io/chapters/introduction",
+      "snippet": "Gladia is a state-of-the-art audio transcription and intelligence provider. We offer a simple API to get transcription from your audios …"
+    },
+    {
+      "title": "Gladia | Async Speech-to-Text API",
+      "url": "https://www.gladia.io/product/async-transcription",
+      "snippet": "Gladia's async API supports code-switching, detecting and transcribing multiple languages within the same audio file. Solaria-1 …"
+    },
+    {
+      "title": "La start-up rennaise Gladia dans le giron d’OVH qui renforce son IA ...",
+      "url": "https://agence-api.ouest-france.fr/numerique/la-start-up-rennaise-gladia-dans-le-giron-dovh-qui-renforce-son-ia-vocale-17321e36-b668-11f1-b8f7-5b3ca074ea4b",
+      "snippet": "Sep 22, 2026 · Fondée en 2022 à Rennes, Gladia se spécialise dans la transcription et l’intelligence audio par IA. Sa technologie va …"
+    },
+    {
+      "title": "Que vaut Gladia, la plateforme IA de transcription et d'analyse audio ?",
+      "url": "https://www.lebigdata.fr/que-vaut-gladia-la-plateforme-ia-de-transcription-et-danalyse-audio",
+      "snippet": "May 29, 2026 · Qu’est-ce que Gladia ? Fondée en 2022 par des ingénieurs français (dont Loïc Barbou), la société Gladia est un …"
+    }
+  ]
+}

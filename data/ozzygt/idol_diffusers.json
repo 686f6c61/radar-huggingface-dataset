@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/idol_diffusers",
+  "slug": "ozzygt-idol_diffusers",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/idol_diffusers",
+  "created_at": "2026-11-05T06:14:47.000Z",
+  "updated_at": "2026-11-05T06:19:25.000Z",
+  "license": "idol-with-third-party-components",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "idol",
+    "modular-diffusers",
+    "image-to-3d",
+    "gaussian-splatting",
+    "en",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 370550677,
+  "parameters_human": "370.6M",
+  "storage_bytes": 4483902326,
+  "storage_human": "4.5 GB",
+  "base_model": "speridlabs/idol, facebook/dinov3-vith16plus-pretrain-lvd1689m, black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

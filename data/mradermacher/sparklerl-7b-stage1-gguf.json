@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SparkleRL-7B-Stage1-GGUF",
+  "slug": "mradermacher-sparklerl-7b-stage1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SparkleRL-7B-Stage1-GGUF",
+  "created_at": "2025-11-16T18:03:40.000Z",
+  "updated_at": "2026-11-05T10:08:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:sparkle-reasoning/SparkleRL-7B-Stage1",
+    "base_model:quantized:sparkle-reasoning/SparkleRL-7B-Stage1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146889600,
+  "storage_human": "68.1 GB",
+  "base_model": "sparkle-reasoning/SparkleRL-7B-Stage1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

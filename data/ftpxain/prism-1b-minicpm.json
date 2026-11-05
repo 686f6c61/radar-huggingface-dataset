@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ftpxain/PRISM-1B-MiniCPM",
+  "slug": "ftpxain-prism-1b-minicpm",
+  "author": "ftpxain",
+  "url": "https://huggingface.co/ftpxain/PRISM-1B-MiniCPM",
+  "created_at": "2026-11-05T10:34:40.000Z",
+  "updated_at": "2026-11-05T10:35:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:openbmb/MiniCPM5-1B",
+    "lora",
+    "qlora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "reasoning",
+    "code",
+    "science",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-1B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44871152,
+  "storage_human": "45 MB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

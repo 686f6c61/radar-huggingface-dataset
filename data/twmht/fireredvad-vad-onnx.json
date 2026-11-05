@@ -5,7 +5,7 @@
   "author": "twmht",
   "url": "https://huggingface.co/twmht/FireRedVAD-VAD-onnx",
   "created_at": "2026-11-03T08:01:35.000Z",
-  "updated_at": "2026-11-03T08:33:49.000Z",
+  "updated_at": "2026-11-05T03:18:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "voice-activity-detection",
@@ -27,7 +27,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

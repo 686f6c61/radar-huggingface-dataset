@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Bielik-Minitron-7B-v3.0-Instruct-Malevolent-GGUF",
+  "slug": "mradermacher-bielik-minitron-7b-v3-0-instruct-malevolent-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Bielik-Minitron-7B-v3.0-Instruct-Malevolent-GGUF",
+  "created_at": "2026-11-05T04:26:14.000Z",
+  "updated_at": "2026-11-05T04:54:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "persona",
+    "interpretability",
+    "research",
+    "bielik",
+    "polish",
+    "pl",
+    "base_model:Osye/Bielik-Minitron-7B-v3.0-Instruct-Malevolent",
+    "base_model:quantized:Osye/Bielik-Minitron-7B-v3.0-Instruct-Malevolent",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7478136832,
+  "parameters_human": "7.48B",
+  "storage_bytes": 66038465408,
+  "storage_human": "66.0 GB",
+  "base_model": "Osye/Bielik-Minitron-7B-v3.0-Instruct-Malevolent",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

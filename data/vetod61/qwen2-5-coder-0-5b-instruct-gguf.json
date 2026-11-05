@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Vetod61/Qwen2.5-Coder-0.5B-Instruct-GGUF",
+  "slug": "vetod61-qwen2-5-coder-0-5b-instruct-gguf",
+  "author": "Vetod61",
+  "url": "https://huggingface.co/Vetod61/Qwen2.5-Coder-0.5B-Instruct-GGUF",
+  "created_at": "2026-11-05T06:05:53.000Z",
+  "updated_at": "2026-11-05T06:05:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1803971072,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "crazyleg11/qwen3.8-27b-dat-grpo-full250-GGUF",
+  "slug": "crazyleg11-qwen3-8-27b-dat-grpo-full250-gguf",
+  "author": "crazyleg11",
+  "url": "https://huggingface.co/crazyleg11/qwen3.8-27b-dat-grpo-full250-GGUF",
+  "created_at": "2026-11-05T12:12:11.000Z",
+  "updated_at": "2026-11-05T12:22:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "grpo",
+    "creativity",
+    "qwen3_5",
+    "text-generation",
+    "en",
+    "base_model:crazyleg11/qwen3.8-27b-dat-grpo-full250",
+    "base_model:quantized:crazyleg11/qwen3.8-27b-dat-grpo-full250",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 45143166208,
+  "storage_human": "45.1 GB",
+  "base_model": "crazyleg11/qwen3.8-27b-dat-grpo-full250",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/qwen27b-abliterated-final-i1-GGUF",
   "created_at": "2026-11-04T21:13:19.000Z",
-  "updated_at": "2026-11-04T21:42:13.000Z",
+  "updated_at": "2026-11-05T00:58:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 3025067520,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 88975034560,
+  "storage_human": "89.0 GB",
   "base_model": "kernnadab/qwen27b-abliterated-final",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/Clef-Artemis-GGUF",
   "created_at": "2026-10-12T10:15:17.000Z",
-  "updated_at": "2026-10-26T09:22:34.000Z",
+  "updated_at": "2026-11-04T16:09:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -13,6 +13,8 @@
   "languages": [],
   "tags": [
     "gguf",
+    "turintech",
+    "artemis",
     "clef",
     "decision-model",
     "systemone",
@@ -33,7 +35,7 @@
   "trending_score": 0,
   "parameters": 27024054788,
   "parameters_human": "27.02B",
-  "storage_bytes": 63872180281,
+  "storage_bytes": 63872314116,
   "storage_human": "63.9 GB",
   "base_model": "Cloudflare/clef",
   "formats": [

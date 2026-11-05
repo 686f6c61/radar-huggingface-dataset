@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Unluckkie/Spark-X2.6-4B-Sharp-IK-GGUF",
+  "slug": "unluckkie-spark-x2-6-4b-sharp-ik-gguf",
+  "author": "Unluckkie",
+  "url": "https://huggingface.co/Unluckkie/Spark-X2.6-4B-Sharp-IK-GGUF",
+  "created_at": "2026-11-05T06:17:19.000Z",
+  "updated_at": "2026-11-05T06:18:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ik-llama.cpp",
+    "iqk",
+    "gsq",
+    "spark-x2.6",
+    "agentic",
+    "code",
+    "sharp",
+    "text-generation",
+    "en",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:quantized:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

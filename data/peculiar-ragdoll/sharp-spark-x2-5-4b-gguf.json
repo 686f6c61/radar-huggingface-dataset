@@ -5,7 +5,7 @@
   "author": "peculiar-ragdoll",
   "url": "https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.5-4B-GGUF",
   "created_at": "2026-09-03T23:54:02.000Z",
-  "updated_at": "2026-09-20T21:03:52.000Z",
+  "updated_at": "2026-11-04T23:34:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 154,
+  "likes": 155,
   "downloads_30d": 848196,
   "trending_score": 12,
   "parameters": 4112079360,

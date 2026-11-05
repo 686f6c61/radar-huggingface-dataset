@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nanonets-OCR2-3B-fixed-GGUF",
+  "slug": "mradermacher-nanonets-ocr2-3b-fixed-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nanonets-OCR2-3B-fixed-GGUF",
+  "created_at": "2025-12-16T12:16:50.000Z",
+  "updated_at": "2026-11-05T05:28:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:axionlab/Nanonets-OCR2-3B-fixed",
+    "base_model:quantized:axionlab/Nanonets-OCR2-3B-fixed",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 217,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 30127053568,
+  "storage_human": "30.1 GB",
+  "base_model": "axionlab/Nanonets-OCR2-3B-fixed",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

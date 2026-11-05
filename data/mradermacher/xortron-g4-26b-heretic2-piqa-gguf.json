@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/XORTRON-G4-26B-heretic2-PIQA-GGUF",
+  "slug": "mradermacher-xortron-g4-26b-heretic2-piqa-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/XORTRON-G4-26B-heretic2-PIQA-GGUF",
+  "created_at": "2026-11-05T06:06:16.000Z",
+  "updated_at": "2026-11-05T06:34:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:darkc0de/XORTRON-G4-26B-heretic2-PIQA",
+    "base_model:quantized:darkc0de/XORTRON-G4-26B-heretic2-PIQA",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 184858387712,
+  "storage_human": "184.9 GB",
+  "base_model": "darkc0de/XORTRON-G4-26B-heretic2-PIQA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

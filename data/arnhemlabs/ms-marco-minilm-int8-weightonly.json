@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "arnhemlabs/ms-marco-minilm-int8-weightonly",
+  "slug": "arnhemlabs-ms-marco-minilm-int8-weightonly",
+  "author": "arnhemlabs",
+  "url": "https://huggingface.co/arnhemlabs/ms-marco-minilm-int8-weightonly",
+  "created_at": "2026-11-05T04:26:02.000Z",
+  "updated_at": "2026-11-05T04:51:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "int8",
+    "weight-only-quantization",
+    "cross-encoder",
+    "reranker",
+    "text-classification",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:quantized:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59497949,
+  "storage_human": "59 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

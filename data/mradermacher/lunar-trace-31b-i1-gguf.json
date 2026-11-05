@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Lunar-Trace-31B-i1-GGUF",
   "created_at": "2026-11-04T15:28:40.000Z",
-  "updated_at": "2026-11-04T16:21:09.000Z",
+  "updated_at": "2026-11-05T03:36:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 90183191904,
-  "storage_human": "90.2 GB",
+  "storage_bytes": 334823383072,
+  "storage_human": "334.8 GB",
   "base_model": "Cyclone-Labs/Lunar-Trace-31B",
   "formats": [
     "gguf"

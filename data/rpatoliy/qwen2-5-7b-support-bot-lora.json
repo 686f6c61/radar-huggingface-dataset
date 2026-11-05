@@ -5,7 +5,7 @@
   "author": "rpatoliy",
   "url": "https://huggingface.co/rpatoliy/qwen2.5-7b-support-bot-lora",
   "created_at": "2026-11-04T01:47:44.000Z",
-  "updated_at": "2026-11-04T01:52:39.000Z",
+  "updated_at": "2026-11-04T09:45:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "peft",
+    "safetensors",
     "lora",
     "qlora",
     "unsloth",
@@ -32,10 +33,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 11421896,
-  "storage_human": "11 MB",
+  "storage_bytes": 172955088,
+  "storage_human": "173 MB",
   "base_model": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": true,
   "gated": false,
   "removed": false,

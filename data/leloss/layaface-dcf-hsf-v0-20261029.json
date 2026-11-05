@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "leloss/LayaFace-DCF-HSF.v0.20261029",
+  "slug": "leloss-layaface-dcf-hsf-v0-20261029",
+  "author": "leloss",
+  "url": "https://huggingface.co/leloss/LayaFace-DCF-HSF.v0.20261029",
+  "created_at": "2026-11-05T12:20:39.000Z",
+  "updated_at": "2026-11-05T12:20:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "face-verification",
+    "synthetic-data",
+    "clip",
+    "pytorch",
+    "safetensors",
+    "research",
+    "en",
+    "arxiv:2103.00020",
+    "arxiv:2304.07060",
+    "arxiv:1706.04599",
+    "base_model:openai/clip-vit-base-patch16",
+    "base_model:finetune:openai/clip-vit-base-patch16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 344796716,
+  "storage_human": "345 MB",
+  "base_model": "openai/clip-vit-base-patch16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

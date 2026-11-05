@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed-i1-GGUF",
+  "slug": "mradermacher-rennervate-qwen3-4b-instruct-2507-refusal-suppressed-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed-i1-GGUF",
+  "created_at": "2026-11-05T05:07:01.000Z",
+  "updated_at": "2026-11-05T05:07:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 1920204,
+  "parameters_human": "1.9M",
+  "storage_bytes": 7752832,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

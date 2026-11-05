@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-binyuan-krea-2-portrait-v2.5-bf16-unet",
+  "slug": "runninghubai-rh-binyuan-krea-2-portrait-v2-5-bf16-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-binyuan-krea-2-portrait-v2.5-bf16-unet",
+  "created_at": "2026-09-24T15:32:37.000Z",
+  "updated_at": "2026-11-05T07:42:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26285475767,
+  "storage_human": "26.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rh-binyuan-krea-2-portrait-v2.5-bf16-unet - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-binyuan-krea-2-portrait-v2.5-bf16-unet",
+      "snippet": "This is a model trained on a collection of 1,000 raw portrait photography images, focusing primarily on Asian female portraits. Its …"
+    },
+    {
+      "title": "RunningHubAI/rh-binyuan-krea-2-portrait-v3.0-bf16-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-binyuan-krea-2-portrait-v3.0-bf16-unet",
+      "snippet": "rh-binyuan-krea-2-portrait-v3.0-bf16-unet Description ... About this model v2.5 Upgraded Version, focusing on Asian hair-style …"
+    },
+    {
+      "title": "rh-binyuan-krea-2-portrait-v3.2-bf16-unet - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-binyuan-krea-2-portrait-v3.2-bf16-unet",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI/rh-binyuan-krea-2-v2.0-bf16-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-binyuan-krea-2-v2.0-bf16-unet",
+      "snippet": "rh-binyuan-krea-2-v2.0-bf16-unet Description ... About this model Upgraded version of V1 This repository provides rh-binyuan …"
+    }
+  ]
+}

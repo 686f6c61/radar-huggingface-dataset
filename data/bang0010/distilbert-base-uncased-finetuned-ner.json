@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Bang0010/distilbert-base-uncased-finetuned-ner",
+  "slug": "bang0010-distilbert-base-uncased-finetuned-ner",
+  "author": "Bang0010",
+  "url": "https://huggingface.co/Bang0010/distilbert-base-uncased-finetuned-ner",
+  "created_at": "2026-11-05T07:42:19.000Z",
+  "updated_at": "2026-11-05T07:50:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66369801,
+  "parameters_human": "66.4M",
+  "storage_bytes": 1592954489,
+  "storage_human": "1.6 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Ozankj/modernbert-tr-embed-ONNX",
+  "slug": "ozankj-modernbert-tr-embed-onnx",
+  "author": "Ozankj",
+  "url": "https://huggingface.co/Ozankj/modernbert-tr-embed-ONNX",
+  "created_at": "2026-11-05T08:01:08.000Z",
+  "updated_at": "2026-11-05T08:55:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "turkish",
+    "tr",
+    "base_model:ytu-ce-cosmos/modernbert-tr-embed",
+    "base_model:quantized:ytu-ce-cosmos/modernbert-tr-embed",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 450654911,
+  "storage_human": "451 MB",
+  "base_model": "ytu-ce-cosmos/modernbert-tr-embed",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

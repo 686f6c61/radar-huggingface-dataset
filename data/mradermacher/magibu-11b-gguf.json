@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/magibu-11b-GGUF",
+  "slug": "mradermacher-magibu-11b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/magibu-11b-GGUF",
+  "created_at": "2026-02-14T16:38:14.000Z",
+  "updated_at": "2026-11-05T07:42:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 203,
+  "trending_score": 0,
+  "parameters": 11262717696,
+  "parameters_human": "11.26B",
+  "storage_bytes": 79152644512,
+  "storage_human": "79.2 GB",
+  "base_model": "alibayram/magibu-11b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

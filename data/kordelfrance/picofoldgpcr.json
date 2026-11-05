@@ -5,7 +5,7 @@
   "author": "kordelfrance",
   "url": "https://huggingface.co/kordelfrance/picofoldGPCR",
   "created_at": "2026-11-04T03:56:28.000Z",
-  "updated_at": "2026-11-04T04:12:19.000Z",
+  "updated_at": "2026-11-04T05:37:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,7 +14,9 @@
   "tags": [
     "pytorch",
     "safetensors",
+    "arxiv:2506.00455",
     "arxiv:2010.02502",
+    "doi:10.57967/hf/11420",
     "region:us"
   ],
   "likes": 0,

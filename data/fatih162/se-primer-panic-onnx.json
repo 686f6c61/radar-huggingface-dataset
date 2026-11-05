@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Fatih162/se-primer-panic-onnx",
+  "slug": "fatih162-se-primer-panic-onnx",
+  "author": "Fatih162",
+  "url": "https://huggingface.co/Fatih162/se-primer-panic-onnx",
+  "created_at": "2026-11-05T11:59:34.000Z",
+  "updated_at": "2026-11-05T11:59:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "onnx",
+    "tabular-classification",
+    "scikit-learn",
+    "software-engineering-education",
+    "socratic-tutor",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2442,
+  "storage_human": "2442 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

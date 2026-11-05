@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/DeepSeek-Coder-V2-Lite-Instruct-mic",
+  "slug": "huggingface-mic-deepseek-coder-v2-lite-instruct-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/DeepSeek-Coder-V2-Lite-Instruct-mic",
+  "created_at": "2026-10-29T20:48:29.000Z",
+  "updated_at": "2026-11-05T07:49:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v2",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "base_model:finetune:deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 495,
+  "trending_score": 0,
+  "parameters": 13196896,
+  "parameters_human": "13.2M",
+  "storage_bytes": 26397840,
+  "storage_human": "26 MB",
+  "base_model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/d3-27B-Artemis-GGUF",
   "created_at": "2026-10-14T06:57:58.000Z",
-  "updated_at": "2026-10-26T09:22:47.000Z",
+  "updated_at": "2026-11-04T16:09:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -13,6 +13,8 @@
   "languages": [],
   "tags": [
     "gguf",
+    "turintech",
+    "artemis",
     "d3",
     "decision-model",
     "systemone",
@@ -28,12 +30,12 @@
     "region:us",
     "conversational"
   ],
-  "likes": 9,
+  "likes": 10,
   "downloads_30d": 3174,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 27205033844,
+  "storage_bytes": 27205107110,
   "storage_human": "27.2 GB",
   "base_model": "vllm-sr/d3",
   "formats": [

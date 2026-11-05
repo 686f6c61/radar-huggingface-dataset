@@ -5,7 +5,7 @@
   "author": "rushi-brave",
   "url": "https://huggingface.co/rushi-brave/glimmer-vetter-v10",
   "created_at": "2026-11-03T14:56:06.000Z",
-  "updated_at": "2026-11-03T14:58:22.000Z",
+  "updated_at": "2026-11-04T16:29:41.000Z",
   "license": "muse-spark-open-and-apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "AY0094/ark-asr-3b-dflash-pilot01-epoch8",
+  "slug": "ay0094-ark-asr-3b-dflash-pilot01-epoch8",
+  "author": "AY0094",
+  "url": "https://huggingface.co/AY0094/ark-asr-3b-dflash-pilot01-epoch8",
+  "created_at": "2026-11-05T05:50:25.000Z",
+  "updated_at": "2026-11-05T05:51:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 807629312,
+  "parameters_human": "807.6M",
+  "storage_bytes": 1615401256,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

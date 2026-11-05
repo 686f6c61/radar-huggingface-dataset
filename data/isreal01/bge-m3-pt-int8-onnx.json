@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "isreal01/bge-m3-pt-int8-onnx",
+  "slug": "isreal01-bge-m3-pt-int8-onnx",
+  "author": "isreal01",
+  "url": "https://huggingface.co/isreal01/bge-m3-pt-int8-onnx",
+  "created_at": "2026-11-05T11:34:57.000Z",
+  "updated_at": "2026-11-05T11:35:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "int8",
+    "bge-m3",
+    "sentence-similarity",
+    "portuguese",
+    "onnxruntime-web",
+    "feature-extraction",
+    "pt",
+    "base_model:BAAI/bge-m3",
+    "base_model:quantized:BAAI/bge-m3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 407321041,
+  "storage_human": "407 MB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

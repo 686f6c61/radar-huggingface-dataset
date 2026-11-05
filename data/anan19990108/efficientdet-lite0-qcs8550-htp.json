@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "anan19990108/efficientdet-lite0-qcs8550-htp",
+  "slug": "anan19990108-efficientdet-lite0-qcs8550-htp",
+  "author": "anan19990108",
+  "url": "https://huggingface.co/anan19990108/efficientdet-lite0-qcs8550-htp",
+  "created_at": "2026-11-05T04:06:44.000Z",
+  "updated_at": "2026-11-05T04:22:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "onnx",
+    "efficientdet",
+    "qcs8550",
+    "qnn",
+    "edge-ai",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27850163,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

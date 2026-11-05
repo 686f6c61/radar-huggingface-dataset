@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1-FP8",
+  "slug": "openllm-france-luciole-8b-kd-math-thinking-1-1-fp8",
+  "author": "OpenLLM-France",
+  "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1-FP8",
+  "created_at": "2026-11-05T09:31:39.000Z",
+  "updated_at": "2026-11-05T09:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron",
+    "openllm-france",
+    "text-generation",
+    "conversational",
+    "fr",
+    "en",
+    "base_model:OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1",
+    "base_model:quantized:OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8360209920,
+  "parameters_human": "8.36B",
+  "storage_bytes": 9346149080,
+  "storage_human": "9.3 GB",
+  "base_model": "OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to Astrophysics - Department of Astrophysical Sciences",
+      "url": "https://web.astro.princeton.edu/academic/undergraduate-program/introduction-astrophysics",
+      "snippet": "Jan 22, 2022 · The course work is designed to give a solid background in the relevant areas of physics and math and to survey …"
+    }
+  ]
+}

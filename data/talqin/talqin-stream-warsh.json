@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "talqin/talqin-stream-warsh",
+  "slug": "talqin-talqin-stream-warsh",
+  "author": "talqin",
+  "url": "https://huggingface.co/talqin/talqin-stream-warsh",
+  "created_at": "2026-11-05T06:20:05.000Z",
+  "updated_at": "2026-11-05T06:20:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "quran",
+    "warsh",
+    "streaming",
+    "zipformer",
+    "ctc",
+    "tajweed",
+    "automatic-speech-recognition",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26484369,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

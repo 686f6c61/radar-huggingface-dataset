@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-NVFP4-GGUF",
+  "slug": "oxpuppy635-goetia-26b-a4b-v1-3-absolute-heretic-ara-restored-nvfp4-gguf",
+  "author": "oxpuppy635",
+  "url": "https://huggingface.co/oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-NVFP4-GGUF",
+  "created_at": "2026-11-05T11:15:54.000Z",
+  "updated_at": "2026-11-05T11:17:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "llama.cpp",
+    "gemma",
+    "en",
+    "base_model:oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored",
+    "base_model:quantized:oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233138206,
+  "parameters_human": "25.23B",
+  "storage_bytes": 15273018144,
+  "storage_human": "15.3 GB",
+  "base_model": "oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

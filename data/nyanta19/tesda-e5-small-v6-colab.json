@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Nyanta19/tesda-e5-small-v6-colab",
+  "slug": "nyanta19-tesda-e5-small-v6-colab",
+  "author": "Nyanta19",
+  "url": "https://huggingface.co/Nyanta19/tesda-e5-small-v6-colab",
+  "created_at": "2026-11-05T08:12:02.000Z",
+  "updated_at": "2026-11-05T08:12:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bert",
+    "tesda",
+    "text-embeddings",
+    "sentence-similarity",
+    "base_model:Nyanta19/tesda-e5-small-v4",
+    "base_model:quantized:Nyanta19/tesda-e5-small-v4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487351007,
+  "storage_human": "487 MB",
+  "base_model": "Nyanta19/tesda-e5-small-v4",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Flex-reddit-2x7B-1T-mic",
+  "slug": "huggingface-mic-flex-reddit-2x7b-1t-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Flex-reddit-2x7B-1T-mic",
+  "created_at": "2026-11-05T08:30:40.000Z",
+  "updated_at": "2026-11-05T08:33:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flex_olmo",
+    "mic",
+    "test-artifact",
+    "base_model:shanearora/Flex-reddit-2x7B-1T",
+    "base_model:finetune:shanearora/Flex-reddit-2x7B-1T",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12976960,
+  "parameters_human": "13.0M",
+  "storage_bytes": 51911472,
+  "storage_human": "52 MB",
+  "base_model": "shanearora/Flex-reddit-2x7B-1T",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

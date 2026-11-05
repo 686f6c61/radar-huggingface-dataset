@@ -5,7 +5,7 @@
   "author": "muhammedekinci",
   "url": "https://huggingface.co/muhammedekinci/yazgi-tts-1-safe",
   "created_at": "2026-11-04T18:30:53.000Z",
-  "updated_at": "2026-11-04T19:00:31.000Z",
+  "updated_at": "2026-11-04T20:32:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 56252673,
   "parameters_human": "56.3M",
-  "storage_bytes": 351065784,
-  "storage_human": "351 MB",
+  "storage_bytes": 351899667,
+  "storage_human": "352 MB",
   "base_model": "erkamk/yazgi-tts-1",
   "formats": [
     "safetensors"

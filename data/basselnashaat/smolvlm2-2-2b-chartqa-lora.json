@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "BasselNashaat/SmolVLM2-2.2B-chartqa-lora",
+  "slug": "basselnashaat-smolvlm2-2-2b-chartqa-lora",
+  "author": "BasselNashaat",
+  "url": "https://huggingface.co/BasselNashaat/SmolVLM2-2.2B-chartqa-lora",
+  "created_at": "2026-11-05T11:20:38.000Z",
+  "updated_at": "2026-11-05T11:20:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10302960,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

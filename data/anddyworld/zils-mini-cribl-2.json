@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "anddyworld/zils-mini-cribl-2",
+  "slug": "anddyworld-zils-mini-cribl-2",
+  "author": "anddyworld",
+  "url": "https://huggingface.co/anddyworld/zils-mini-cribl-2",
+  "created_at": "2026-11-05T05:58:06.000Z",
+  "updated_at": "2026-11-05T06:00:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:cribl-ai/cribl-decision-2-4B",
+    "base_model:finetune:cribl-ai/cribl-decision-2-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078620536,
+  "storage_human": "9.1 GB",
+  "base_model": "cribl-ai/cribl-decision-2-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

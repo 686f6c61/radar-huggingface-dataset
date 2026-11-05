@@ -4,20 +4,16 @@
   "slug": "liu12123456-myawesomemodel-testrepo",
   "author": "liu12123456",
   "url": "https://huggingface.co/liu12123456/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-26T08:40:43.000Z",
-  "updated_at": "2026-10-26T08:41:13.000Z",
+  "created_at": "2026-11-05T05:23:39.000Z",
+  "updated_at": "2026-11-05T05:26:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
     "pytorch",
     "bert",
-    "feature-extraction",
-    "license:mit",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -31,8 +27,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-30T11:58:27.801Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

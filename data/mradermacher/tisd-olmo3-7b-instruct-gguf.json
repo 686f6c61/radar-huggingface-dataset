@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TISD-OLMo3-7B-Instruct-GGUF",
+  "slug": "mradermacher-tisd-olmo3-7b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TISD-OLMo3-7B-Instruct-GGUF",
+  "created_at": "2026-11-05T07:22:29.000Z",
+  "updated_at": "2026-11-05T07:29:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tisd",
+    "self-distillation",
+    "code",
+    "en",
+    "dataset:livecodebench/code_generation_lite",
+    "base_model:Taeckyung/TISD-OLMo3-7B-Instruct",
+    "base_model:quantized:Taeckyung/TISD-OLMo3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 65147769216,
+  "storage_human": "65.1 GB",
+  "base_model": "Taeckyung/TISD-OLMo3-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

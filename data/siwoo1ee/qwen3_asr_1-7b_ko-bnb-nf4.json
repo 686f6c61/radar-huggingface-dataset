@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "siwoo1ee/qwen3_asr_1.7b_ko-bnb-nf4",
+  "slug": "siwoo1ee-qwen3_asr_1-7b_ko-bnb-nf4",
+  "author": "siwoo1ee",
+  "url": "https://huggingface.co/siwoo1ee/qwen3_asr_1.7b_ko-bnb-nf4",
+  "created_at": "2026-11-05T09:04:39.000Z",
+  "updated_at": "2026-11-05T09:12:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "qwen3-asr",
+    "speech",
+    "korean",
+    "bitsandbytes",
+    "nf4",
+    "4-bit",
+    "automatic-speech-recognition",
+    "ko",
+    "base_model:TeamUNIVA/qwen3_asr_1.7b_ko",
+    "base_model:quantized:TeamUNIVA/qwen3_asr_1.7b_ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 1996427621,
+  "storage_human": "2.0 GB",
+  "base_model": "TeamUNIVA/qwen3_asr_1.7b_ko",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

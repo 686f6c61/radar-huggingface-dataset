@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Suraponn/test1b_o1",
+  "slug": "suraponn-test1b_o1",
+  "author": "Suraponn",
+  "url": "https://huggingface.co/Suraponn/test1b_o1",
+  "created_at": "2026-11-05T06:59:26.000Z",
+  "updated_at": "2026-11-05T06:59:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019853,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
