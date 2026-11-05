@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mariambhd/drone-qwen2vl-2b-kd-reverse-a0p5-T4p0",
+  "slug": "mariambhd-drone-qwen2vl-2b-kd-reverse-a0p5-t4p0",
+  "author": "mariambhd",
+  "url": "https://huggingface.co/mariambhd/drone-qwen2vl-2b-kd-reverse-a0p5-T4p0",
+  "created_at": "2026-11-05T20:29:23.000Z",
+  "updated_at": "2026-11-05T20:29:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2-vl",
+    "lora",
+    "knowledge-distillation",
+    "drone-action-recognition",
+    "base_model:Qwen/Qwen2-VL-2B-Instruct",
+    "base_model:adapter:Qwen/Qwen2-VL-2B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20169431,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

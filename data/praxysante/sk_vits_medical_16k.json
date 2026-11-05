@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "PraxySante/SK_VITS_medical_16k",
+  "slug": "praxysante-sk_vits_medical_16k",
+  "author": "PraxySante",
+  "url": "https://huggingface.co/PraxySante/SK_VITS_medical_16k",
+  "created_at": "2026-11-05T14:00:31.000Z",
+  "updated_at": "2026-11-05T14:00:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "sk"
+  ],
+  "tags": [
+    "text-to-speech",
+    "vits",
+    "coqui-tts",
+    "slovak",
+    "medical",
+    "sk",
+    "license:apache-2.0",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1009351938,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

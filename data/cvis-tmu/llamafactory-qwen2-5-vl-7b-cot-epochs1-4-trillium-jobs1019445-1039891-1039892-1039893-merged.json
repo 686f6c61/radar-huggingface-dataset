@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "cvis-tmu/llamafactory-qwen2.5-vl-7b-CoT-epochs1-4-trillium-jobs1019445-1039891-1039892-1039893-merged",
+  "slug": "cvis-tmu-llamafactory-qwen2-5-vl-7b-cot-epochs1-4-trillium-jobs1019445-1039891-1039892-1039893-merged",
+  "author": "cvis-tmu",
+  "url": "https://huggingface.co/cvis-tmu/llamafactory-qwen2.5-vl-7b-CoT-epochs1-4-trillium-jobs1019445-1039891-1039892-1039893-merged",
+  "created_at": "2026-11-05T15:54:59.000Z",
+  "updated_at": "2026-11-05T15:57:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llamafactory",
+    "lora",
+    "merged",
+    "chain-of-thought",
+    "trillium",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836004,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

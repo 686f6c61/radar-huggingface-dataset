@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "colia-labs/Sibundoy-Translate-1.7B-GGUF",
+  "slug": "colia-labs-sibundoy-translate-1-7b-gguf",
+  "author": "colia-labs",
+  "url": "https://huggingface.co/colia-labs/Sibundoy-Translate-1.7B-GGUF",
+  "created_at": "2026-11-01T05:06:56.000Z",
+  "updated_at": "2026-11-01T05:16:04.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "translation",
+    "english-to-spanish",
+    "lfm3",
+    "llama.cpp",
+    "en",
+    "es",
+    "base_model:colia-labs/Sibundoy-Translate-1.7B",
+    "base_model:quantized:colia-labs/Sibundoy-Translate-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 6412490432,
+  "storage_human": "6.4 GB",
+  "base_model": "colia-labs/Sibundoy-Translate-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
+    },
+    {
+      "title": "Google แปลภาษา - ล่ามส่วนตัวในโทรศัพท์หรือคอมพิวเตอร์ของคุณ",
+      "url": "https://translate.google.com/intl/th/about/",
+      "snippet": "เริ่มใช้ Google แปลภาษาใน เบราว์เซอร์ หรือสแกนคิวอาร์โค้ดด้านล่างเพื่อดาวน์โหลดแอปไปใช้บนอุปกรณ์เคลื่อนที่ของคุณ"
+    },
+    {
+      "title": "Google Translate - તમારા ફોન કે કમ્પ્યુટર પર કોઈ વ્યક્તિગત અનુવાદક",
+      "url": "https://translate.google.com/intl/gu/about/",
+      "snippet": "Google Translate વડે ટેક્સ્ટ, સ્પીચ, છબીઓ, દસ્તાવેજો અને વેબસાઇટ જેવા બીજા ઘણાનો અનુવાદ કરવાની રીત જાણો."
+    }
+  ]
+}

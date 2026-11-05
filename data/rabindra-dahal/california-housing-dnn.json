@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "rabindra-dahal/california-housing-dnn",
+  "slug": "rabindra-dahal-california-housing-dnn",
+  "author": "rabindra-dahal",
+  "url": "https://huggingface.co/rabindra-dahal/california-housing-dnn",
+  "created_at": "2026-11-05T13:33:06.000Z",
+  "updated_at": "2026-11-05T13:37:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tabular",
+    "regression",
+    "pytorch",
+    "housing",
+    "en",
+    "dataset:california_housing",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Tabular Regression",
+      "dataset": "California Housing",
+      "metric": "Test MSE",
+      "value": 0.2697
+    },
+    {
+      "task": "Tabular Regression",
+      "dataset": "California Housing",
+      "metric": "Test MAE",
+      "value": 0.35397
+    }
+  ],
+  "sources": []
+}

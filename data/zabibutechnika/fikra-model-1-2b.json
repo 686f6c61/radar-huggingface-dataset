@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "zabibutechnika/Fikra-Model-1-2B",
+  "slug": "zabibutechnika-fikra-model-1-2b",
+  "author": "zabibutechnika",
+  "url": "https://huggingface.co/zabibutechnika/Fikra-Model-1-2B",
+  "created_at": "2026-06-13T13:13:26.000Z",
+  "updated_at": "2026-11-05T14:59:49.000Z",
+  "license": "zabibu-technika-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "sw"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "reasoning",
+    "thinking",
+    "agentic",
+    "conversational",
+    "en",
+    "sw",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 24117660728,
+  "storage_human": "24.1 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

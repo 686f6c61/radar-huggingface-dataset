@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged2",
+  "slug": "electroglyph-lfm2-5-24b-a2b-uncensored-fiction-nblora-merged2",
+  "author": "electroglyph",
+  "url": "https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged2",
+  "created_at": "2026-11-05T13:01:00.000Z",
+  "updated_at": "2026-11-05T13:04:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "nblora",
+    "base_model:electroglyph/LFM2.5-24B-A2B-uncensored",
+    "base_model:finetune:electroglyph/LFM2.5-24B-A2B-uncensored",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97869812436,
+  "storage_human": "97.9 GB",
+  "base_model": "electroglyph/LFM2.5-24B-A2B-uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

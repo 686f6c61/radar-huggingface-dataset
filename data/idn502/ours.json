@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "idn502/ours",
+  "slug": "idn502-ours",
+  "author": "idn502",
+  "url": "https://huggingface.co/idn502/ours",
+  "created_at": "2026-11-05T16:26:28.000Z",
+  "updated_at": "2026-11-05T16:26:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11423025,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

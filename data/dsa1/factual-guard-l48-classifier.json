@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "DSA1/factual-guard-l48-classifier",
+  "slug": "dsa1-factual-guard-l48-classifier",
+  "author": "DSA1",
+  "url": "https://huggingface.co/DSA1/factual-guard-l48-classifier",
+  "created_at": "2026-11-05T15:04:28.000Z",
+  "updated_at": "2026-11-05T15:04:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "factual-error-detection",
+    "feature-classification",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9689721,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

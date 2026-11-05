@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Safinul/CYBERBRAIN-14M",
+  "slug": "safinul-cyberbrain-14m",
+  "author": "Safinul",
+  "url": "https://huggingface.co/Safinul/CYBERBRAIN-14M",
+  "created_at": "2026-11-03T15:31:36.000Z",
+  "updated_at": "2026-11-05T18:24:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 3818697380,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

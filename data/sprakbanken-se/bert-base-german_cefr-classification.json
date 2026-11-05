@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "sprakbanken-se/bert-base-german_CEFR-classification",
+  "slug": "sprakbanken-se-bert-base-german_cefr-classification",
+  "author": "sprakbanken-se",
+  "url": "https://huggingface.co/sprakbanken-se/bert-base-german_CEFR-classification",
+  "created_at": "2026-11-03T01:19:01.000Z",
+  "updated_at": "2026-11-05T14:24:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "de",
+    "dataset:UniversalCEFR/merlin_de",
+    "base_model:google-bert/bert-base-german-cased",
+    "base_model:finetune:google-bert/bert-base-german-cased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 109085958,
+  "parameters_human": "109.1M",
+  "storage_bytes": 872734720,
+  "storage_human": "873 MB",
+  "base_model": "google-bert/bert-base-german-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

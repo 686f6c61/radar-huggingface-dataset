@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "asparius/qwen38-opus55-sft-lora",
+  "slug": "asparius-qwen38-opus55-sft-lora",
+  "author": "asparius",
+  "url": "https://huggingface.co/asparius/qwen38-opus55-sft-lora",
+  "created_at": "2026-11-05T12:33:44.000Z",
+  "updated_at": "2026-11-05T12:33:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "distillation",
+    "reward-hacking",
+    "dataset:asparius/dolci-instruct-sft-opus5.5",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 953948491,
+  "storage_human": "954 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

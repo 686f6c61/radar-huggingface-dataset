@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "avgrocketman/llamacpp-dory-t4",
+  "slug": "avgrocketman-llamacpp-dory-t4",
+  "author": "avgrocketman",
+  "url": "https://huggingface.co/avgrocketman/llamacpp-dory-t4",
+  "created_at": "2026-11-05T20:06:21.000Z",
+  "updated_at": "2026-11-05T20:13:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48476283,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

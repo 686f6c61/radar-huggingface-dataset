@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF",
+  "slug": "zhuoza-qwen3-8-flash-next-uncensored-nvfp4-mtp-gguf",
+  "author": "ZHUOZA",
+  "url": "https://huggingface.co/ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF",
+  "created_at": "2026-11-05T15:54:15.000Z",
+  "updated_at": "2026-11-05T15:54:15.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

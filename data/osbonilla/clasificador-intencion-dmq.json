@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "osbonilla/clasificador-intencion-dmq",
+  "slug": "osbonilla-clasificador-intencion-dmq",
+  "author": "osbonilla",
+  "url": "https://huggingface.co/osbonilla/clasificador-intencion-dmq",
+  "created_at": "2026-11-05T15:53:09.000Z",
+  "updated_at": "2026-11-05T15:54:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arcgis",
+    "dlpk",
+    "geoai",
+    "gobierno-local",
+    "quito",
+    "es",
+    "base_model:dccuchile/bert-base-spanish-wwm-uncased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-uncased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109855494,
+  "parameters_human": "109.9M",
+  "storage_bytes": 847743310,
+  "storage_human": "848 MB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

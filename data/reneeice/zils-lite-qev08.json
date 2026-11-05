@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "reneeice/zils-lite-qev08",
+  "slug": "reneeice-zils-lite-qev08",
+  "author": "reneeice",
+  "url": "https://huggingface.co/reneeice/zils-lite-qev08",
+  "created_at": "2026-11-05T18:48:35.000Z",
+  "updated_at": "2026-11-05T18:48:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "qev",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qev",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "typed-decisions",
+    "multimodal",
+    "vision",
+    "classification",
+    "calibration",
+    "calibrated-probabilities",
+    "abstention",
+    "early-exit",
+    "zero-shot-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726017013,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

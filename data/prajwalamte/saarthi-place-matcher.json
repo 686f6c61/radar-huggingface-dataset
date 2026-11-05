@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "PrajwalAmte/saarthi-place-matcher",
+  "slug": "prajwalamte-saarthi-place-matcher",
+  "author": "PrajwalAmte",
+  "url": "https://huggingface.co/PrajwalAmte/saarthi-place-matcher",
+  "created_at": "2026-11-05T16:01:23.000Z",
+  "updated_at": "2026-11-05T18:16:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "entity-matching",
+    "cross-encoder",
+    "geospatial",
+    "india",
+    "burn",
+    "text-classification",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22565763,
+  "parameters_human": "22.6M",
+  "storage_bytes": 90274332,
+  "storage_human": "90 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

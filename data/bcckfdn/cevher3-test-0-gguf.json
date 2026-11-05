@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/cevher3-test-0-GGUF",
+  "slug": "bcckfdn-cevher3-test-0-gguf",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/cevher3-test-0-GGUF",
+  "created_at": "2026-11-05T16:42:47.000Z",
+  "updated_at": "2026-11-05T16:44:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "smollm2",
+    "olmo3",
+    "turkish",
+    "text-generation",
+    "tr",
+    "en",
+    "base_model:bcckfdn/cevher3-test-0",
+    "base_model:quantized:bcckfdn/cevher3-test-0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1607660288,
+  "parameters_human": "1.61B",
+  "storage_bytes": 7067331328,
+  "storage_human": "7.1 GB",
+  "base_model": "bcckfdn/cevher3-test-0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

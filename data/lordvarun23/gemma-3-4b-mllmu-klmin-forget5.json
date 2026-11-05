@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Lordvarun23/gemma-3-4b-mllmu-klmin-forget5",
+  "slug": "lordvarun23-gemma-3-4b-mllmu-klmin-forget5",
+  "author": "Lordvarun23",
+  "url": "https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-klmin-forget5",
+  "created_at": "2026-11-05T14:06:54.000Z",
+  "updated_at": "2026-11-05T14:08:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "multimodal",
+    "machine-unlearning",
+    "mllmu-bench",
+    "conversational",
+    "en",
+    "dataset:MLLMMU/MLLMU-Bench",
+    "base_model:Lordvarun23/gemma-3-4b-mllmu-ft",
+    "base_model:finetune:Lordvarun23/gemma-3-4b-mllmu-ft",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8633662575,
+  "storage_human": "8.6 GB",
+  "base_model": "Lordvarun23/gemma-3-4b-mllmu-ft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

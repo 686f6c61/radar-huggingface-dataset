@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "axom-ai/axomai-voice-puhor",
+  "slug": "axom-ai-axomai-voice-puhor",
+  "author": "axom-ai",
+  "url": "https://huggingface.co/axom-ai/axomai-voice-puhor",
+  "created_at": "2026-11-01T06:44:42.000Z",
+  "updated_at": "2026-11-01T13:05:41.000Z",
+  "license": "axom-ai-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "as"
+  ],
+  "tags": [
+    "safetensors",
+    "f5_tts",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "assamese",
+    "axom-ai",
+    "puhor",
+    "flow-matching",
+    "dit",
+    "generative-ai",
+    "zero-hallucination",
+    "as",
+    "dataset:custom-assamese",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 350681834,
+  "parameters_human": "350.7M",
+  "storage_bytes": 6883656389,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

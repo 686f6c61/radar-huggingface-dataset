@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Charlie320/zils-lite-k1c",
+  "slug": "charlie320-zils-lite-k1c",
+  "author": "Charlie320",
+  "url": "https://huggingface.co/Charlie320/zils-lite-k1c",
+  "created_at": "2026-11-05T14:15:04.000Z",
+  "updated_at": "2026-11-05T14:15:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "decision-model",
+    "soup-body",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706027688,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

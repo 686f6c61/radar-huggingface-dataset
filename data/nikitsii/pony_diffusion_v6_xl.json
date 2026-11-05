@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "NikitsII/Pony_Diffusion_V6_XL",
+  "slug": "nikitsii-pony_diffusion_v6_xl",
+  "author": "NikitsII",
+  "url": "https://huggingface.co/NikitsII/Pony_Diffusion_V6_XL",
+  "created_at": "2026-11-05T20:11:23.000Z",
+  "updated_at": "2026-11-05T20:11:23.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion",
+    "lora",
+    "template:sd-lora",
+    "base_model:Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime",
+    "base_model:adapter:Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime",
+    "license:cdla-permissive-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7272897292,
+  "storage_human": "7.3 GB",
+  "base_model": "Bakanayatsu/Pony-Diffusion-V6-XL-for-Anime",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

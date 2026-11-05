@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Koubra-Gaby/nllb_muse_aligned",
+  "slug": "koubra-gaby-nllb_muse_aligned",
+  "author": "Koubra-Gaby",
+  "url": "https://huggingface.co/Koubra-Gaby/nllb_muse_aligned",
+  "created_at": "2026-10-30T19:17:39.000Z",
+  "updated_at": "2026-11-05T19:13:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "feature-extraction",
+    "generated_from_trainer",
+    "base_model:Koubra-Gaby/nllb_muse_aligned",
+    "base_model:finetune:Koubra-Gaby/nllb_muse_aligned",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 651665408,
+  "parameters_human": "651.7M",
+  "storage_bytes": 7649869387,
+  "storage_human": "7.6 GB",
+  "base_model": "Koubra-Gaby/nllb_muse_aligned",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

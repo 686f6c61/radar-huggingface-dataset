@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "tablinum/Lite-Beam-1.0-501B-A23B-IQS_XXS",
+  "slug": "tablinum-lite-beam-1-0-501b-a23b-iqs_xxs",
+  "author": "tablinum",
+  "url": "https://huggingface.co/tablinum/Lite-Beam-1.0-501B-A23B-IQS_XXS",
+  "created_at": "2026-10-22T17:42:15.000Z",
+  "updated_at": "2026-11-05T17:56:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "beam",
+    "mixture-of-experts",
+    "moe",
+    "quantized",
+    "2-bit",
+    "engram",
+    "reflection",
+    "text-generation",
+    "en",
+    "base_model:reflection/Beam-1.0-501B-A23B",
+    "base_model:quantized:reflection/Beam-1.0-501B-A23B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 1359,
+  "trending_score": 0,
+  "parameters": 501267612352,
+  "parameters_human": "501.27B",
+  "storage_bytes": 144422514900,
+  "storage_human": "144.4 GB",
+  "base_model": "reflection/Beam-1.0-501B-A23B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tablinum - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tablinum",
+      "snippet": "In Roman architecture, a tablinum (or tabulinum, from tabula, board, picture) was a room in a domus (house) generally situated on …"
+    },
+    {
+      "title": "Tablinum — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tablinum",
+      "snippet": "Le tablinum est une pièce de l' habitation étrusque puis romaine, située au fond de l' atrium. Elle a comme particularité architecturale …"
+    },
+    {
+      "title": "Tablinum - fr-academic.com",
+      "url": "https://fr-academic.com/dic.nsf/frwiki/2138988",
+      "snippet": "Le tablinum est une pièce de l ' habitation étrusque puis romaine, située au fond de l ' atrium. Initialement chambre à coucher du …"
+    },
+    {
+      "title": "Tablinum - Persée",
+      "url": "https://www.persee.fr/doc/gaciv_1251-5612_1993_dic_1_1_869_t1_0199_0000_12",
+      "snippet": "TABLINUM : A la fois chambre à coucher du père de famille et pièce de réception, le tablinum était, dans la maison romaine …"
+    },
+    {
+      "title": "Définitions : tablinum - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/tablinum/76314",
+      "snippet": "tablinum - Définitions Français : Retrouvez la définition de tablinum... - synonymes, homonymes, difficultés, citations."
+    }
+  ]
+}

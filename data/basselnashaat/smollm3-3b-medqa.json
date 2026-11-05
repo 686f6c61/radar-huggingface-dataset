@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "BasselNashaat/SmolLM3-3B-MedQA",
+  "slug": "basselnashaat-smollm3-3b-medqa",
+  "author": "BasselNashaat",
+  "url": "https://huggingface.co/BasselNashaat/SmolLM3-3B-MedQA",
+  "created_at": "2026-11-05T18:37:54.000Z",
+  "updated_at": "2026-11-05T18:39:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "medical",
+    "trl",
+    "lora",
+    "sft",
+    "conversational",
+    "en",
+    "dataset:GBaker/MedQA-USMLE-4-options",
+    "dataset:openlifescienceai/medmcqa",
+    "dataset:FreedomIntelligence/medical-o1-reasoning-SFT",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 6167443751,
+  "storage_human": "6.2 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

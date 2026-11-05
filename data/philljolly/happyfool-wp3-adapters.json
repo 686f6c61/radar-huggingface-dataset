@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "philljolly/happyfool-wp3-adapters",
+  "slug": "philljolly-happyfool-wp3-adapters",
+  "author": "philljolly",
+  "url": "https://huggingface.co/philljolly/happyfool-wp3-adapters",
+  "created_at": "2026-11-05T13:11:08.000Z",
+  "updated_at": "2026-11-05T13:12:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "rstation",
+    "ai-consciousness",
+    "wp3",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 886219800,
+  "storage_human": "886 MB",
+  "base_model": "Qwen/Qwen3-0.6B, Qwen/Qwen3-1.7B, Qwen/Qwen3-4B, Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

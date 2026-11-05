@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "adityapanda2608112/runtime-core-sys-9182",
+  "slug": "adityapanda2608112-runtime-core-sys-9182",
+  "author": "adityapanda2608112",
+  "url": "https://huggingface.co/adityapanda2608112/runtime-core-sys-9182",
+  "created_at": "2026-11-05T12:38:15.000Z",
+  "updated_at": "2026-11-05T12:47:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43961571155,
+  "storage_human": "44.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

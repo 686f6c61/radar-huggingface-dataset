@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1lock/zils-mini-astrid-m1",
+  "slug": "1lock-zils-mini-astrid-m1",
+  "author": "1lock",
+  "url": "https://huggingface.co/1lock/zils-mini-astrid-m1",
+  "created_at": "2026-11-05T14:13:10.000Z",
+  "updated_at": "2026-11-05T14:20:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:Maincode/Matilda-Decision-v1-Mini",
+    "base_model:finetune:Maincode/Matilda-Decision-v1-Mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078616080,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B, torchcast-ai/torchcast-decision-4b, perplexity-ai/pplx-decider-flash-v1.2, vllm-sr/d3-mini, Maincode/Matilda-Decision-v1-Mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

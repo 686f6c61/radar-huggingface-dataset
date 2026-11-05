@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Feyd89/Qwen3.8-27B-refusal-band-ablation-experiment",
+  "slug": "feyd89-qwen3-8-27b-refusal-band-ablation-experiment",
+  "author": "Feyd89",
+  "url": "https://huggingface.co/Feyd89/Qwen3.8-27B-refusal-band-ablation-experiment",
+  "created_at": "2026-11-05T16:25:11.000Z",
+  "updated_at": "2026-11-05T17:02:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "weight-space-editing",
+    "abliteration",
+    "interpretability",
+    "refusal",
+    "research-artifact",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29048396156,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

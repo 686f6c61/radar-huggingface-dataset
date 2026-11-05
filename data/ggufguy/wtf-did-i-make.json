@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/wtf-did-i-make",
+  "slug": "ggufguy-wtf-did-i-make",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/wtf-did-i-make",
+  "created_at": "2026-11-05T19:47:37.000Z",
+  "updated_at": "2026-11-05T19:47:39.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanodex",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:odc-by",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100064,
+  "parameters_human": "100064",
+  "storage_bytes": 402328,
+  "storage_human": "402328 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

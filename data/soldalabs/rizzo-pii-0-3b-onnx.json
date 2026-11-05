@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SoldaLabs/rizzo-pii-0.3B-onnx",
+  "slug": "soldalabs-rizzo-pii-0-3b-onnx",
+  "author": "SoldaLabs",
+  "url": "https://huggingface.co/SoldaLabs/rizzo-pii-0.3B-onnx",
+  "created_at": "2026-11-05T20:23:49.000Z",
+  "updated_at": "2026-11-05T20:46:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "onnx",
+    "modernbert",
+    "token-classification",
+    "pii",
+    "ner",
+    "italian",
+    "anonymization",
+    "it",
+    "base_model:rizzoaiacademy/rizzo-pii-0.3B",
+    "base_model:quantized:rizzoaiacademy/rizzo-pii-0.3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 675566741,
+  "storage_human": "676 MB",
+  "base_model": "rizzoaiacademy/rizzo-pii-0.3B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

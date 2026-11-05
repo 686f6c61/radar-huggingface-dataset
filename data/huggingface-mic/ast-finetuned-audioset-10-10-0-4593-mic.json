@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic",
+  "slug": "huggingface-mic-ast-finetuned-audioset-10-10-0-4593-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic",
+  "created_at": "2026-11-05T14:09:17.000Z",
+  "updated_at": "2026-11-05T14:14:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audio-spectrogram-transformer",
+    "mic",
+    "test-artifact",
+    "base_model:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "base_model:finetune:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 195727,
+  "parameters_human": "195727",
+  "storage_bytes": 788500,
+  "storage_human": "788500 B",
+  "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

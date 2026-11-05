@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Cydonia-24B-v2-GGUF",
+  "slug": "mradermacher-cydonia-24b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Cydonia-24B-v2-GGUF",
+  "created_at": "2025-02-14T23:59:00.000Z",
+  "updated_at": "2026-11-05T20:40:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheDrummer/Cydonia-24B-v2",
+    "base_model:quantized:TheDrummer/Cydonia-24B-v2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 590,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407720096,
+  "storage_human": "161.4 GB",
+  "base_model": "TheDrummer/Cydonia-24B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

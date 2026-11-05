@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AdamAxelrod/basler_stage_touch_decoy_2026-11_delta_pw10sd03_act",
+  "slug": "adamaxelrod-basler_stage_touch_decoy_2026-11_delta_pw10sd03_act",
+  "author": "AdamAxelrod",
+  "url": "https://huggingface.co/AdamAxelrod/basler_stage_touch_decoy_2026-11_delta_pw10sd03_act",
+  "created_at": "2026-11-05T19:24:58.000Z",
+  "updated_at": "2026-11-05T19:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:AdamAxelrod/basler_stage_touch_decoy_2026-11_delta",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51597959,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206430524,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Ura0316/zils-mini-body-r5-blend-3of4",
+  "slug": "ura0316-zils-mini-body-r5-blend-3of4",
+  "author": "Ura0316",
+  "url": "https://huggingface.co/Ura0316/zils-mini-body-r5-blend-3of4",
+  "created_at": "2026-11-05T19:08:11.000Z",
+  "updated_at": "2026-11-05T19:11:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "bittensor",
+    "base_model:torchcast-ai/torchcast-decision-4b",
+    "base_model:merge:torchcast-ai/torchcast-decision-4b",
+    "base_model:vllm-sr/d3-mini",
+    "base_model:merge:vllm-sr/d3-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078616080,
+  "storage_human": "9.1 GB",
+  "base_model": "torchcast-ai/torchcast-decision-4b, vllm-sr/d3-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

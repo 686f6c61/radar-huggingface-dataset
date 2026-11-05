@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "axom-ai/axomai-speech-xuna",
+  "slug": "axom-ai-axomai-speech-xuna",
+  "author": "axom-ai",
+  "url": "https://huggingface.co/axom-ai/axomai-speech-xuna",
+  "created_at": "2026-11-02T17:25:31.000Z",
+  "updated_at": "2026-11-02T17:45:52.000Z",
+  "license": "axom-ai-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "as"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "asr",
+    "speech-to-text",
+    "assamese",
+    "axom-ai",
+    "xuna",
+    "conformer",
+    "streaming",
+    "zero-hallucination",
+    "custom_code",
+    "as",
+    "dataset:custom-assamese-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2553503826,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

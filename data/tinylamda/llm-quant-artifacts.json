@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "TinyLamda/llm-quant-artifacts",
+  "slug": "tinylamda-llm-quant-artifacts",
+  "author": "TinyLamda",
+  "url": "https://huggingface.co/TinyLamda/llm-quant-artifacts",
+  "created_at": "2026-10-06T00:38:37.000Z",
+  "updated_at": "2026-11-05T14:29:04.000Z",
+  "license": "per-model",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87205294409,
+  "storage_human": "87.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

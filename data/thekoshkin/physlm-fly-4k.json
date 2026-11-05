@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "thekoshkin/physlm-fly-4k",
+  "slug": "thekoshkin-physlm-fly-4k",
+  "author": "thekoshkin",
+  "url": "https://huggingface.co/thekoshkin/physlm-fly-4k",
+  "created_at": "2026-11-05T14:22:39.000Z",
+  "updated_at": "2026-11-05T15:03:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "recurrent-neural-network",
+    "character-level",
+    "analog-computing",
+    "neuromorphic-computing",
+    "sparse-network",
+    "tinystories",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4025263,
+  "parameters_human": "4.0M",
+  "storage_bytes": 16104492,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Character-level language modeling",
+      "dataset": "TinyStories validation, first 1,024 stories",
+      "metric": "Bits per character (lower is better)",
+      "value": 0.8838
+    },
+    {
+      "task": "Character-level language modeling",
+      "dataset": "TinyStories validation, stories 1,025-3,430",
+      "metric": "Bits per character (lower is better)",
+      "value": 0.9192
+    }
+  ],
+  "sources": []
+}

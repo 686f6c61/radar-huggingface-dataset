@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "HDTenEightyP/GPT-IRC",
+  "slug": "hdteneightyp-gpt-irc",
+  "author": "HDTenEightyP",
+  "url": "https://huggingface.co/HDTenEightyP/GPT-IRC",
+  "created_at": "2026-11-05T13:34:28.000Z",
+  "updated_at": "2026-11-05T13:38:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation-inference",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21819136,
+  "parameters_human": "21.8M",
+  "storage_bytes": 102809259,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

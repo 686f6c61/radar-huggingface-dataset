@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "haisassan/summarize-mixed-dataset-model-v4",
+  "slug": "haisassan-summarize-mixed-dataset-model-v4",
+  "author": "haisassan",
+  "url": "https://huggingface.co/haisassan/summarize-mixed-dataset-model-v4",
+  "created_at": "2026-11-05T14:10:41.000Z",
+  "updated_at": "2026-11-05T14:11:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 406496496,
+  "parameters_human": "406.5M",
+  "storage_bytes": 1626046096,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

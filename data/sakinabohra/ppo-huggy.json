@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SakinaBohra/ppo-Huggy",
+  "slug": "sakinabohra-ppo-huggy",
+  "author": "SakinaBohra",
+  "url": "https://huggingface.co/SakinaBohra/ppo-Huggy",
+  "created_at": "2026-11-05T16:23:26.000Z",
+  "updated_at": "2026-11-05T16:36:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "unity-ml-agents",
+    "deep-reinforcement-learning",
+    "ML-Agents-Huggy",
+    "Huggy",
+    "ONNX",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4548040,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

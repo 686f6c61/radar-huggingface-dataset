@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "goaicorp/dyu-nllb-600M-dyu2fr",
+  "slug": "goaicorp-dyu-nllb-600m-dyu2fr",
+  "author": "goaicorp",
+  "url": "https://huggingface.co/goaicorp/dyu-nllb-600M-dyu2fr",
+  "created_at": "2026-04-05T13:18:49.000Z",
+  "updated_at": "2026-11-05T12:49:32.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "dyu",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "nllb",
+    "goai-corp",
+    "translation",
+    "dyu",
+    "fr",
+    "dataset:goaicorp/dyu-fr-parallel",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "base_model:finetune:facebook/nllb-200-distilled-600M",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 39397935140,
+  "storage_human": "39.4 GB",
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "CaptchaKraken/SunlightV2-0.8B",
+  "slug": "captchakraken-sunlightv2-0-8b",
+  "author": "CaptchaKraken",
+  "url": "https://huggingface.co/CaptchaKraken/SunlightV2-0.8B",
+  "created_at": "2026-11-02T04:32:00.000Z",
+  "updated_at": "2026-11-04T23:50:31.000Z",
+  "license": "lgpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "captcha",
+    "captchakraken",
+    "pointer",
+    "vllm",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:lgpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1739777801,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

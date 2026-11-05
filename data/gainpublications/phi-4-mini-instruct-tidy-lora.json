@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "GainPublications/Phi-4-mini-instruct-Tidy-LoRA",
+  "slug": "gainpublications-phi-4-mini-instruct-tidy-lora",
+  "author": "GainPublications",
+  "url": "https://huggingface.co/GainPublications/Phi-4-mini-instruct-Tidy-LoRA",
+  "created_at": "2026-11-05T14:08:42.000Z",
+  "updated_at": "2026-11-05T14:25:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "llama.cpp",
+    "phi",
+    "en",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:adapter:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23068672,
+  "parameters_human": "23.1M",
+  "storage_bytes": 46155584,
+  "storage_human": "46 MB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

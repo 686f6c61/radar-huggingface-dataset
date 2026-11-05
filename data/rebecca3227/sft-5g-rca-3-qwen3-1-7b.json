@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Rebecca3227/sft-5g-rca-3-qwen3-1.7b",
+  "slug": "rebecca3227-sft-5g-rca-3-qwen3-1-7b",
+  "author": "Rebecca3227",
+  "url": "https://huggingface.co/Rebecca3227/sft-5g-rca-3-qwen3-1.7b",
+  "created_at": "2026-11-05T15:24:46.000Z",
+  "updated_at": "2026-11-05T15:31:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 221024492,
+  "storage_human": "221 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

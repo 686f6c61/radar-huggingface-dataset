@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "dayfolie/birefnet-lite-512-webgpu",
+  "slug": "dayfolie-birefnet-lite-512-webgpu",
+  "author": "dayfolie",
+  "url": "https://huggingface.co/dayfolie/birefnet-lite-512-webgpu",
+  "created_at": "2026-11-05T12:59:58.000Z",
+  "updated_at": "2026-11-05T13:00:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "background-removal",
+    "image-segmentation",
+    "webgpu",
+    "base_model:ZhengPeng7/BiRefNet_lite",
+    "base_model:quantized:ZhengPeng7/BiRefNet_lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98580996,
+  "storage_human": "99 MB",
+  "base_model": "ZhengPeng7/BiRefNet_lite",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "iFaz/eqm-pusht-seed1-5nov2026_11pm",
+  "slug": "ifaz-eqm-pusht-seed1-5nov2026_11pm",
+  "author": "iFaz",
+  "url": "https://huggingface.co/iFaz/eqm-pusht-seed1-5nov2026_11pm",
+  "created_at": "2026-11-05T16:44:42.000Z",
+  "updated_at": "2026-11-05T16:45:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "eqm",
+    "robotics",
+    "dataset:lerobot/pusht",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 205231924,
+  "parameters_human": "205.2M",
+  "storage_bytes": 820970020,
+  "storage_human": "821 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

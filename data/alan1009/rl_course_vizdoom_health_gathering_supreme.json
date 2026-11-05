@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "alan1009/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "alan1009-rl_course_vizdoom_health_gathering_supreme",
+  "author": "alan1009",
+  "url": "https://huggingface.co/alan1009/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-11-05T16:48:23.000Z",
+  "updated_at": "2026-11-05T16:48:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121795675,
+  "storage_human": "122 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Coding Courses & Certificates [2026] | Coursera",
+      "url": "https://www.coursera.org/courses?query=coding&msockid=01090af44a7b60120d9812fc4b286143",
+      "snippet": "Coding courses can help you learn programming languages like Python, Java, and JavaScript, as well as concepts such as …"
+    },
+    {
+      "title": "Free Coding & AI Courses: Python, JavaScript & More | Sololearn",
+      "url": "https://www.sololearn.com/en/learn",
+      "snippet": "Browse Sololearn's full catalog: learning paths, 30+ introduction courses and intermediate tracks across coding and AI. Start free — …"
+    },
+    {
+      "title": "Learn to Code for Free. Coding Courses & Certifications",
+      "url": "https://www.freecodecamp.org/",
+      "snippet": "You will learn to code by building dozens of projects, step-by-step, right in your browser, code editor, or mobile app. You will also …"
+    }
+  ]
+}

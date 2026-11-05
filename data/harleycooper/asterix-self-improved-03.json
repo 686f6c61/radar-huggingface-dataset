@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "HarleyCooper/asterix-self-improved-03",
+  "slug": "harleycooper-asterix-self-improved-03",
+  "author": "HarleyCooper",
+  "url": "https://huggingface.co/HarleyCooper/asterix-self-improved-03",
+  "created_at": "2026-11-05T13:10:40.000Z",
+  "updated_at": "2026-11-05T13:10:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "reinforcement-learning",
+    "minatar",
+    "asterix",
+    "recursive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20486,
+  "parameters_human": "20486",
+  "storage_bytes": 965430,
+  "storage_human": "965430 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

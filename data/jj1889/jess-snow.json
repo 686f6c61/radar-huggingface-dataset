@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Jj1889/jess-snow",
+  "slug": "jj1889-jess-snow",
+  "author": "Jj1889",
+  "url": "https://huggingface.co/Jj1889/jess-snow",
+  "created_at": "2026-11-05T12:43:27.000Z",
+  "updated_at": "2026-11-05T12:43:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135198592,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

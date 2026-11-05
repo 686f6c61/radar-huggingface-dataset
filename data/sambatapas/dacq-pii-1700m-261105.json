@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sambatapas/dacq-pii-1700m-261105",
+  "slug": "sambatapas-dacq-pii-1700m-261105",
+  "author": "sambatapas",
+  "url": "https://huggingface.co/sambatapas/dacq-pii-1700m-261105",
+  "created_at": "2026-11-05T18:39:59.000Z",
+  "updated_at": "2026-11-05T18:40:04.000Z",
+  "license": "mercor-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "pii",
+    "token-classification",
+    "vllm",
+    "bidirectional",
+    "base_model:BidirLM/BidirLM-1.7B-Base",
+    "base_model:finetune:BidirLM/BidirLM-1.7B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720710210,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452878896,
+  "storage_human": "3.5 GB",
+  "base_model": "BidirLM/BidirLM-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

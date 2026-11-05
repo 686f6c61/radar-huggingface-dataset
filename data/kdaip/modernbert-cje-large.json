@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "KdaiP/ModernBERT-CJE-large",
+  "slug": "kdaip-modernbert-cje-large",
+  "author": "KdaiP",
+  "url": "https://huggingface.co/KdaiP/ModernBERT-CJE-large",
+  "created_at": "2026-11-05T15:31:51.000Z",
+  "updated_at": "2026-11-05T15:33:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 252858368,
+  "parameters_human": "252.9M",
+  "storage_bytes": 1011443712,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

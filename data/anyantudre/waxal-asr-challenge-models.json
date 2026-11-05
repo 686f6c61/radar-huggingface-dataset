@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "anyantudre/waxal-asr-challenge-models",
+  "slug": "anyantudre-waxal-asr-challenge-models",
+  "author": "anyantudre",
+  "url": "https://huggingface.co/anyantudre/waxal-asr-challenge-models",
+  "created_at": "2026-07-25T00:13:22.000Z",
+  "updated_at": "2026-11-05T18:08:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ln",
+    "sn",
+    "lg"
+  ],
+  "tags": [
+    "safetensors",
+    "automatic-speech-recognition",
+    "ctc",
+    "waxal",
+    "lingala",
+    "shona",
+    "luganda",
+    "ln",
+    "sn",
+    "lg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66250461538,
+  "storage_human": "66.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

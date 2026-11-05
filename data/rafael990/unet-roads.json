@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Rafael990/unet-roads",
+  "slug": "rafael990-unet-roads",
+  "author": "Rafael990",
+  "url": "https://huggingface.co/Rafael990/unet-roads",
+  "created_at": "2026-11-05T12:45:08.000Z",
+  "updated_at": "2026-11-05T12:45:21.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "remote-sensing",
+    "road-extraction",
+    "openstreetmap",
+    "fair",
+    "image-segmentation",
+    "arxiv:1807.01232",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195873207,
+  "storage_human": "196 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

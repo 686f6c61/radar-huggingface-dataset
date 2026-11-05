@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Ganesh-Nadkarni/hastika-task-b-xlmr-base-trainval",
+  "slug": "ganesh-nadkarni-hastika-task-b-xlmr-base-trainval",
+  "author": "Ganesh-Nadkarni",
+  "url": "https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-xlmr-base-trainval",
+  "created_at": "2026-11-05T19:01:16.000Z",
+  "updated_at": "2026-11-05T19:09:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "kn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "hate-speech-detection",
+    "code-mixed",
+    "kannada",
+    "kanglish",
+    "hastika",
+    "kn",
+    "en",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278048262,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129315663,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

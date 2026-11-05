@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "cyankiwi/Kolibri-1-AWQ-INT4",
+  "slug": "cyankiwi-kolibri-1-awq-int4",
+  "author": "cyankiwi",
+  "url": "https://huggingface.co/cyankiwi/Kolibri-1-AWQ-INT4",
+  "created_at": "2026-10-28T23:07:29.000Z",
+  "updated_at": "2026-11-05T20:41:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kolibri1",
+    "text-generation",
+    "reasoning",
+    "moe",
+    "conversational",
+    "de",
+    "en",
+    "arxiv:2512.11614",
+    "arxiv:2601.17858",
+    "base_model:Aleph-Alpha/Kolibri-1",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18501448448,
+  "parameters_human": "18.50B",
+  "storage_bytes": 55349300345,
+  "storage_human": "55.3 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

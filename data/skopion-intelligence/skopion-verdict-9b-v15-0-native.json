@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SKOPION-Intelligence/skopion-verdict-9b-v15.0-native",
+  "slug": "skopion-intelligence-skopion-verdict-9b-v15-0-native",
+  "author": "SKOPION-Intelligence",
+  "url": "https://huggingface.co/SKOPION-Intelligence/skopion-verdict-9b-v15.0-native",
+  "created_at": "2026-11-05T16:50:42.000Z",
+  "updated_at": "2026-11-05T16:50:43.000Z",
+  "license": "skopion-sovereign-kritis-audit-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "en",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "skopion",
+    "skopion-verdict",
+    "llm-as-a-judge",
+    "reward-model",
+    "decision-model",
+    "kritis",
+    "nis2",
+    "eu-ai-act",
+    "post-quantum-cryptography",
+    "conformal-prediction",
+    "edge-ai",
+    "text-classification",
+    "de",
+    "en",
+    "pl",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Strict-54 External Decision & Judge Benchmark Matrix (16,140 evaluations)",
+      "dataset": "SKOPION-Verdict-Bench-56Suites",
+      "metric": "Strict-54 Mean Accuracy (%)",
+      "value": 94.25
+    },
+    {
+      "task": "Strict-54 External Decision & Judge Benchmark Matrix (16,140 evaluations)",
+      "dataset": "SKOPION-Verdict-Bench-56Suites",
+      "metric": "KRITIS Wave-11 & Wave-12 Compliance Accuracy (3,900/3,900) (%)",
+      "value": 100
+    },
+    {
+      "task": "Strict-54 External Decision & Judge Benchmark Matrix (16,140 evaluations)",
+      "dataset": "SKOPION-Verdict-Bench-56Suites",
+      "metric": "Bilateral Position Consistency (35 Swapped-Pair Suites, 5,405 pairs) (%)",
+      "value": 99.97
+    }
+  ],
+  "sources": []
+}

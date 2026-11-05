@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "LUNARC01/vosk-model-ru",
+  "slug": "lunarc01-vosk-model-ru",
+  "author": "LUNARC01",
+  "url": "https://huggingface.co/LUNARC01/vosk-model-ru",
+  "created_at": "2026-11-05T20:42:42.000Z",
+  "updated_at": "2026-11-05T20:42:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "audio",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "ru",
+    "speech",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice ru",
+      "metric": "Test WER",
+      "value": 6.1
+    }
+  ],
+  "sources": []
+}

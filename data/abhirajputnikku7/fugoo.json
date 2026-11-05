@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "abhirajputnikku7/Fugoo",
+  "slug": "abhirajputnikku7-fugoo",
+  "author": "abhirajputnikku7",
+  "url": "https://huggingface.co/abhirajputnikku7/Fugoo",
+  "created_at": "2026-11-05T17:22:59.000Z",
+  "updated_at": "2026-11-05T17:23:00.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

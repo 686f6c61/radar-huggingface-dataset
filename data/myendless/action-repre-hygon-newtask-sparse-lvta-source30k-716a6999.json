@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "myendless/action-repre-hygon-newtask-sparse-lvta-source30k-716a6999",
+  "slug": "myendless-action-repre-hygon-newtask-sparse-lvta-source30k-716a6999",
+  "author": "myendless",
+  "url": "https://huggingface.co/myendless/action-repre-hygon-newtask-sparse-lvta-source30k-716a6999",
+  "created_at": "2026-11-05T16:23:54.000Z",
+  "updated_at": "2026-11-05T16:48:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "action-representation",
+    "hygon",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12882474798,
+  "storage_human": "12.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

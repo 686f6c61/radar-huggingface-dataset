@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SaurabhMokashi4/gemma3-1b-grpo-deepmath-lora",
+  "slug": "saurabhmokashi4-gemma3-1b-grpo-deepmath-lora",
+  "author": "SaurabhMokashi4",
+  "url": "https://huggingface.co/SaurabhMokashi4/gemma3-1b-grpo-deepmath-lora",
+  "created_at": "2026-11-05T18:24:56.000Z",
+  "updated_at": "2026-11-05T18:25:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3_text",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-3-1b-it",
+    "base_model:finetune:unsloth/gemma-3-1b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142488105,
+  "storage_human": "142 MB",
+  "base_model": "unsloth/gemma-3-1b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

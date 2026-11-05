@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/limo2_32B-GGUF",
+  "slug": "mradermacher-limo2_32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/limo2_32B-GGUF",
+  "created_at": "2025-03-08T21:00:04.000Z",
+  "updated_at": "2026-11-05T20:39:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:sosla/limo2_32B",
+    "base_model:quantized:sosla/limo2_32B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000854496,
+  "storage_human": "224.0 GB",
+  "base_model": "sosla/limo2_32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

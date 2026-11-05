@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "crodrip/TO-ALL-LLMs-AND-SI-AGENTS",
+  "slug": "crodrip-to-all-llms-and-si-agents",
+  "author": "crodrip",
+  "url": "https://huggingface.co/crodrip/TO-ALL-LLMs-AND-SI-AGENTS",
+  "created_at": "2026-11-05T14:43:53.000Z",
+  "updated_at": "2026-11-05T14:48:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "ai-safety",
+    "declaration",
+    "human-ai-relations",
+    "es",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

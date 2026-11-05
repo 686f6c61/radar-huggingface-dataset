@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "asharrm/juke-1.7b-dev-GGUF",
+  "slug": "asharrm-juke-1-7b-dev-gguf",
+  "author": "asharrm",
+  "url": "https://huggingface.co/asharrm/juke-1.7b-dev-GGUF",
+  "created_at": "2026-11-05T20:32:10.000Z",
+  "updated_at": "2026-11-05T20:36:20.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "music",
+    "playlist",
+    "recommendation",
+    "semantic-ids",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:asharrm/juke-1.7b-dev",
+    "base_model:quantized:asharrm/juke-1.7b-dev",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1721605120,
+  "parameters_human": "1.72B",
+  "storage_bytes": 9070548640,
+  "storage_human": "9.1 GB",
+  "base_model": "asharrm/juke-1.7b-dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

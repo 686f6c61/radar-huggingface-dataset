@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "VATRA-AI/Vatra-Neuron-1.5B",
+  "slug": "vatra-ai-vatra-neuron-1-5b",
+  "author": "VATRA-AI",
+  "url": "https://huggingface.co/VATRA-AI/Vatra-Neuron-1.5B",
+  "created_at": "2026-11-05T15:35:11.000Z",
+  "updated_at": "2026-11-05T15:38:16.000Z",
+  "license": "vatra-license-v1",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "code",
+    "coding-assistant",
+    "livecodebench",
+    "reasoning",
+    "python",
+    "competitive-programming",
+    "text-generation",
+    "conversational",
+    "en",
+    "id",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

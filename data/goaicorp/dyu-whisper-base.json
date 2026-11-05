@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "goaicorp/dyu-whisper-base",
+  "slug": "goaicorp-dyu-whisper-base",
+  "author": "goaicorp",
+  "url": "https://huggingface.co/goaicorp/dyu-whisper-base",
+  "created_at": "2026-04-05T17:06:24.000Z",
+  "updated_at": "2026-11-05T12:49:36.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "dyu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "goai-corp",
+    "dyu",
+    "dataset:goaicorp/dyu-speech",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 72593920,
+  "parameters_human": "72.6M",
+  "storage_bytes": 580869649,
+  "storage_human": "581 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

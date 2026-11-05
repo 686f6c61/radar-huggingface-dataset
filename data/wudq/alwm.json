@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "wudq/ALWM",
+  "slug": "wudq-alwm",
+  "author": "wudq",
+  "url": "https://huggingface.co/wudq/ALWM",
+  "created_at": "2026-11-05T12:41:31.000Z",
+  "updated_at": "2026-11-05T13:05:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen3_vl",
+    "video-understanding",
+    "predictive-video-reasoning",
+    "future-prediction",
+    "continuous-latent",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

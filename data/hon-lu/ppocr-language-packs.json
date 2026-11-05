@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "hon-lu/ppocr-language-packs",
+  "slug": "hon-lu-ppocr-language-packs",
+  "author": "hon-lu",
+  "url": "https://huggingface.co/hon-lu/ppocr-language-packs",
+  "created_at": "2026-11-05T16:21:26.000Z",
+  "updated_at": "2026-11-05T16:33:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ocr",
+    "paddleocr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8074092,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

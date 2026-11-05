@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "chellen021/SmolLM2-135M-PHP",
+  "slug": "chellen021-smollm2-135m-php",
+  "author": "chellen021",
+  "url": "https://huggingface.co/chellen021/SmolLM2-135M-PHP",
+  "created_at": "2026-11-05T16:04:21.000Z",
+  "updated_at": "2026-11-05T16:04:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "php",
+    "code",
+    "text-generation",
+    "learning-project",
+    "dataset:HuggingFaceCode/stack-v3-train",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060280,
+  "storage_human": "269 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

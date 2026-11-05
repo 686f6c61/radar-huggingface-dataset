@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Light2626/indobert-mood",
+  "slug": "light2626-indobert-mood",
+  "author": "Light2626",
+  "url": "https://huggingface.co/Light2626/indobert-mood",
+  "created_at": "2026-11-05T16:56:09.000Z",
+  "updated_at": "2026-11-05T17:25:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "id",
+    "dataset:EmoTweetID",
+    "base_model:indobenchmark/indobert-base-p1",
+    "base_model:finetune:indobenchmark/indobert-base-p1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124445958,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497807376,
+  "storage_human": "498 MB",
+  "base_model": "indobenchmark/indobert-base-p1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

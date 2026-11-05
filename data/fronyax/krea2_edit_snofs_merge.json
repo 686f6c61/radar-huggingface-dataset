@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "Fronyax/KREA2_Edit_SNOFS_Merge",
+  "slug": "fronyax-krea2_edit_snofs_merge",
+  "author": "Fronyax",
+  "url": "https://huggingface.co/Fronyax/KREA2_Edit_SNOFS_Merge",
+  "created_at": "2026-10-18T11:32:53.000Z",
+  "updated_at": "2026-11-05T15:08:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 236,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 106748245608,
+  "storage_human": "106.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Aykanugur157/bert-base-turkish-tr-wiki-qa",
+  "slug": "aykanugur157-bert-base-turkish-tr-wiki-qa",
+  "author": "Aykanugur157",
+  "url": "https://huggingface.co/Aykanugur157/bert-base-turkish-tr-wiki-qa",
+  "created_at": "2026-11-05T15:39:05.000Z",
+  "updated_at": "2026-11-05T15:40:39.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "question-answering",
+    "turkish",
+    "extractive-qa",
+    "tr",
+    "dataset:Aykanugur157/tr-wiki-qa",
+    "base_model:dbmdz/bert-base-turkish-cased",
+    "base_model:finetune:dbmdz/bert-base-turkish-cased",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110028290,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440136504,
+  "storage_human": "440 MB",
+  "base_model": "dbmdz/bert-base-turkish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "lion-ai/VoxMedic-turbo-beta",
+  "slug": "lion-ai-voxmedic-turbo-beta",
+  "author": "lion-ai",
+  "url": "https://huggingface.co/lion-ai/VoxMedic-turbo-beta",
+  "created_at": "2026-04-16T11:26:56.000Z",
+  "updated_at": "2026-11-05T14:14:57.000Z",
+  "license": "medalion-eskulap-asr-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "medical",
+    "polish",
+    "anti-forgetting",
+    "knowledge-distillation",
+    "weight-interpolation",
+    "pl",
+    "dataset:lion-ai/admed_voice",
+    "dataset:lion-ai/pl_med_asr_test2",
+    "dataset:lion-ai/bigos",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 87,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 2492012939,
+  "storage_human": "2.5 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

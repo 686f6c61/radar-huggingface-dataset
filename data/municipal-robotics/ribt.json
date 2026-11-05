@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "municipal-robotics/ribt",
+  "slug": "municipal-robotics-ribt",
+  "author": "municipal-robotics",
+  "url": "https://huggingface.co/municipal-robotics/ribt",
+  "created_at": "2026-11-05T15:21:06.000Z",
+  "updated_at": "2026-11-05T15:36:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "ribt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ribt",
+    "text-to-speech",
+    "streaming",
+    "low-latency",
+    "webgpu",
+    "tang",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335072650,
+  "storage_human": "335 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

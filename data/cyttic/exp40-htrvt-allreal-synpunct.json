@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cyttic/exp40-htrvt-allreal-synpunct",
+  "slug": "cyttic-exp40-htrvt-allreal-synpunct",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/exp40-htrvt-allreal-synpunct",
+  "created_at": "2026-11-05T15:03:35.000Z",
+  "updated_at": "2026-11-05T15:03:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "ocr",
+    "htr",
+    "hebrew",
+    "ctc",
+    "he",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13821574,
+  "parameters_human": "13.8M",
+  "storage_bytes": 55300408,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

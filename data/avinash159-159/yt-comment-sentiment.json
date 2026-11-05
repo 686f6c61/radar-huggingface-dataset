@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Avinash159-159/yt-comment-sentiment",
+  "slug": "avinash159-159-yt-comment-sentiment",
+  "author": "Avinash159-159",
+  "url": "https://huggingface.co/Avinash159-159/yt-comment-sentiment",
+  "created_at": "2026-11-05T15:31:33.000Z",
+  "updated_at": "2026-11-05T15:33:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "sentiment-analysis",
+    "text-classification",
+    "youtube",
+    "pytorch",
+    "en",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82350095,
+  "parameters_human": "82.4M",
+  "storage_bytes": 329414332,
+  "storage_human": "329 MB",
+  "base_model": "distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

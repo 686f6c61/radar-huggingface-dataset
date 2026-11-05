@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bayona/heart-disease-prediction",
+  "slug": "bayona-heart-disease-prediction",
+  "author": "bayona",
+  "url": "https://huggingface.co/bayona/heart-disease-prediction",
+  "created_at": "2026-11-05T13:59:34.000Z",
+  "updated_at": "2026-11-05T14:00:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436310839,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bayona | Espadrilles artisanales – Femme & Homme",
+      "url": "https://bayona.fr/",
+      "snippet": "Découvrez les collections d’ espadrilles Bayona, inspirées de la tradition basque et adaptées aux usages actuels. Les espadrilles …"
+    },
+    {
+      "title": "Espadrilles femme & homme conçus au Pays basque | Bayona",
+      "url": "https://bayona.fr/collections/espadrilles",
+      "snippet": "Découvrez les espadrilles Bayona : compensées, plateformes, mules, sandales et traditionnelles cousues main. Dessinées à Saint …"
+    },
+    {
+      "title": "Juan Antonio Bayona — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Juan_Antonio_Bayona",
+      "snippet": "Juan Antonio Bayona (né le 9 mai 1975 à Barcelone est un réalisateur et scénariste espagnol."
+    },
+    {
+      "title": "Bayona | Espadrilles basques artisanales, élégance et modernité ...",
+      "url": "https://www.michardardillier.com/marque/559-bayona?id_category=26",
+      "snippet": "Fondée en 1890, la marque Bayona est un acteur incontournable dans le monde de l'espadrille basque. En alliant savoir-faire …"
+    },
+    {
+      "title": "J. A. Bayona - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/J._A._Bayona",
+      "snippet": "Juan Antonio García Bayona[1] (born 9 May 1975 [2][3]) is a Spanish filmmaker. Bayona directed the 2007 horror film The …"
+    }
+  ]
+}

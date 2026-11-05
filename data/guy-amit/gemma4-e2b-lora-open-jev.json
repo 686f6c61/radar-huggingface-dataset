@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Guy-Amit/gemma4-E2B-lora-open-jev",
+  "slug": "guy-amit-gemma4-e2b-lora-open-jev",
+  "author": "Guy-Amit",
+  "url": "https://huggingface.co/Guy-Amit/gemma4-E2B-lora-open-jev",
+  "created_at": "2026-11-05T19:52:34.000Z",
+  "updated_at": "2026-11-05T19:53:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104371011,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10250663196,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

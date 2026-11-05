@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-14B-Instruct-abli_coder-GGUF",
+  "slug": "mradermacher-qwen2-5-14b-instruct-abli_coder-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-14B-Instruct-abli_coder-GGUF",
+  "created_at": "2025-03-03T12:46:00.000Z",
+  "updated_at": "2026-11-05T20:39:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:NexesMess/Qwen2.5-14B-Instruct-abli_coder",
+    "base_model:quantized:NexesMess/Qwen2.5-14B-Instruct-abli_coder",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": 14766019584,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011723264,
+  "storage_human": "102.0 GB",
+  "base_model": "NexesMess/Qwen2.5-14B-Instruct-abli_coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

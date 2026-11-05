@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Axion-1.0-35B-GGUF",
+  "slug": "mradermacher-axion-1-0-35b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Axion-1.0-35B-GGUF",
+  "created_at": "2026-11-05T14:04:41.000Z",
+  "updated_at": "2026-11-05T14:27:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reproduction",
+    "agent",
+    "tool-use",
+    "scientific-reasoning",
+    "moe",
+    "arxiv:2611.03233",
+    "en",
+    "dataset:Axion1-0/axion-training-data",
+    "base_model:Axion1-0/Axion-1.0-35B",
+    "base_model:quantized:Axion1-0/Axion-1.0-35B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 238639039936,
+  "storage_human": "238.6 GB",
+  "base_model": "Axion1-0/Axion-1.0-35B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Plaguekind/10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_w6a8_g32",
+  "slug": "plaguekind-10eros_max_singularityv2_prism2_pikaflex_0-85_w6a8_g32",
+  "author": "Plaguekind",
+  "url": "https://huggingface.co/Plaguekind/10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_w6a8_g32",
+  "created_at": "2026-11-05T17:53:51.000Z",
+  "updated_at": "2026-11-05T18:13:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15901328602,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

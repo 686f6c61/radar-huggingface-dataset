@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "fanismathioulakis/eff-grot",
+  "slug": "fanismathioulakis-eff-grot",
+  "author": "fanismathioulakis",
+  "url": "https://huggingface.co/fanismathioulakis/eff-grot",
+  "created_at": "2026-11-05T12:23:48.000Z",
+  "updated_at": "2026-11-05T12:47:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "eff-grot",
+    "computer-vision",
+    "pose-estimation",
+    "rotation-estimation",
+    "wacv-2026",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21543942,
+  "parameters_human": "21.5M",
+  "storage_bytes": 86191808,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "jumafernandez/trace-checkpoints",
+  "slug": "jumafernandez-trace-checkpoints",
+  "author": "jumafernandez",
+  "url": "https://huggingface.co/jumafernandez/trace-checkpoints",
+  "created_at": "2026-07-10T23:04:36.000Z",
+  "updated_at": "2026-11-05T14:06:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "dialogue",
+    "task-oriented-dialogue",
+    "sentence-embeddings",
+    "contextual-representations",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15700451904,
+  "storage_human": "15.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

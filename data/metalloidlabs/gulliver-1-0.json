@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "metalloidlabs/gulliver-1.0",
+  "slug": "metalloidlabs-gulliver-1-0",
+  "author": "metalloidlabs",
+  "url": "https://huggingface.co/metalloidlabs/gulliver-1.0",
+  "created_at": "2026-11-05T13:14:19.000Z",
+  "updated_at": "2026-11-05T13:17:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "literary-prose",
+    "creative-writing",
+    "author-conditioned",
+    "qwen",
+    "text-generation",
+    "en",
+    "dataset:allenai/dolma",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233605480,
+  "storage_human": "234 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

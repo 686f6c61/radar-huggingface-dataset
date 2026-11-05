@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "tetranigga/TetraNigga-LSD-10M-GGUF",
+  "slug": "tetranigga-tetranigga-lsd-10m-gguf",
+  "author": "tetranigga",
+  "url": "https://huggingface.co/tetranigga/TetraNigga-LSD-10M-GGUF",
+  "created_at": "2026-11-05T19:06:16.000Z",
+  "updated_at": "2026-11-05T19:06:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "experimental",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9966848,
+  "parameters_human": "10.0M",
+  "storage_bytes": 20347325,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

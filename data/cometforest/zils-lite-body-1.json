@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "CometForest/zils-lite-body-1",
+  "slug": "cometforest-zils-lite-body-1",
+  "author": "CometForest",
+  "url": "https://huggingface.co/CometForest/zils-lite-body-1",
+  "created_at": "2026-11-05T12:20:37.000Z",
+  "updated_at": "2026-11-05T17:49:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706027688,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

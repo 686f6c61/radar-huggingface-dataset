@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Safinul/CYBERBRAIN-PHASE3-FINAL",
+  "slug": "safinul-cyberbrain-phase3-final",
+  "author": "Safinul",
+  "url": "https://huggingface.co/Safinul/CYBERBRAIN-PHASE3-FINAL",
+  "created_at": "2026-11-04T21:26:47.000Z",
+  "updated_at": "2026-11-04T21:30:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "cyberbrain",
+    "networking",
+    "sockets",
+    "tcp-ip",
+    "protocols",
+    "c",
+    "rust",
+    "python",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 3827550132,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

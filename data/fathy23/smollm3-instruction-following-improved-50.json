@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Fathy23/SmolLM3-instruction-following-improved-50",
+  "slug": "fathy23-smollm3-instruction-following-improved-50",
+  "author": "Fathy23",
+  "url": "https://huggingface.co/Fathy23/SmolLM3-instruction-following-improved-50",
+  "created_at": "2026-11-05T17:33:00.000Z",
+  "updated_at": "2026-11-05T17:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B-Base",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM3-3B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77732325,
+  "storage_human": "78 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

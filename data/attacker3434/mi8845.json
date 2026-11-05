@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "attacker3434/mi8845",
+  "slug": "attacker3434-mi8845",
+  "author": "attacker3434",
+  "url": "https://huggingface.co/attacker3434/mi8845",
+  "created_at": "2026-11-05T16:06:21.000Z",
+  "updated_at": "2026-11-05T16:06:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "mi",
+      "metric": "Accuracy",
+      "value": 90
+    }
+  ],
+  "sources": []
+}

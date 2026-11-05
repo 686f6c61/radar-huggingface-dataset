@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "tablinum/Lite-Beam-1.2B",
+  "slug": "tablinum-lite-beam-1-2b",
+  "author": "tablinum",
+  "url": "https://huggingface.co/tablinum/Lite-Beam-1.2B",
+  "created_at": "2026-10-19T13:36:04.000Z",
+  "updated_at": "2026-11-05T17:56:56.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "quantization",
+    "efficient",
+    "small-model",
+    "small-models",
+    "on-device",
+    "on-premise",
+    "edge",
+    "edge-ai",
+    "offline",
+    "local-inference",
+    "local-llm",
+    "low-vram",
+    "cpu-inference",
+    "tensor-map",
+    "v-protected",
+    "lfm2.5",
+    "liquid-ai",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 179,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 1270924032,
+  "storage_human": "1.3 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tablinum - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tablinum",
+      "snippet": "In Roman architecture, a tablinum (or tabulinum, from tabula, board, picture) was a room in a domus (house) generally situated on …"
+    },
+    {
+      "title": "Tablinum — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tablinum",
+      "snippet": "Le tablinum est une pièce de l' habitation étrusque puis romaine, située au fond de l' atrium. Elle a comme particularité architecturale …"
+    },
+    {
+      "title": "Tablinum - fr-academic.com",
+      "url": "https://fr-academic.com/dic.nsf/frwiki/2138988",
+      "snippet": "Le tablinum est une pièce de l ' habitation étrusque puis romaine, située au fond de l ' atrium. Initialement chambre à coucher du …"
+    },
+    {
+      "title": "Tablinum - Persée",
+      "url": "https://www.persee.fr/doc/gaciv_1251-5612_1993_dic_1_1_869_t1_0199_0000_12",
+      "snippet": "TABLINUM : A la fois chambre à coucher du père de famille et pièce de réception, le tablinum était, dans la maison romaine …"
+    },
+    {
+      "title": "Définitions : tablinum - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/tablinum/76314",
+      "snippet": "tablinum - Définitions Français : Retrouvez la définition de tablinum... - synonymes, homonymes, difficultés, citations."
+    }
+  ]
+}

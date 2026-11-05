@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ragul6606/text2sql-qwen2.5-coder-1.5b-gguf",
+  "slug": "ragul6606-text2sql-qwen2-5-coder-1-5b-gguf",
+  "author": "ragul6606",
+  "url": "https://huggingface.co/ragul6606/text2sql-qwen2.5-coder-1.5b-gguf",
+  "created_at": "2026-11-05T16:29:17.000Z",
+  "updated_at": "2026-11-05T16:36:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-sql",
+    "sql",
+    "qwen2",
+    "en",
+    "dataset:b-mc2/sql-create-context",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048352,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Aki251/archive-MoonMath-ai-GLM-5.3-Uncensored-FP8",
+  "slug": "aki251-archive-moonmath-ai-glm-5-3-uncensored-fp8",
+  "author": "Aki251",
+  "url": "https://huggingface.co/Aki251/archive-MoonMath-ai-GLM-5.3-Uncensored-FP8",
+  "created_at": "2026-11-05T15:27:46.000Z",
+  "updated_at": "2026-11-05T15:27:47.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "glm",
+    "glm-5.3",
+    "abliterated",
+    "uncensored",
+    "cybersecurity",
+    "fp8",
+    "moonmath",
+    "conversational",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663627013,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Refusal benchmark",
+      "dataset": "Cybersecurity refusal prompt set",
+      "metric": "Answer rate (%)",
+      "value": 83.1
+    },
+    {
+      "task": "IFEval",
+      "dataset": "IFEval",
+      "metric": "Prompt-level strict acc.",
+      "value": 91
+    },
+    {
+      "task": "MMLU-Pro",
+      "dataset": "MMLU-Pro",
+      "metric": "5-shot CoT accuracy",
+      "value": 89
+    },
+    {
+      "task": "AIME 2025",
+      "dataset": "AIME 2025",
+      "metric": "Accuracy",
+      "value": 73.3
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pulkit-thukral/title-optimizer-sft",
+  "slug": "pulkit-thukral-title-optimizer-sft",
+  "author": "pulkit-thukral",
+  "url": "https://huggingface.co/pulkit-thukral/title-optimizer-sft",
+  "created_at": "2026-11-05T14:10:17.000Z",
+  "updated_at": "2026-11-05T14:14:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "airbnb",
+    "title-generation",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:pulkit-thukral/listing-title-optimizer",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81205034,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

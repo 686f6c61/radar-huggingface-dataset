@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "primitive-ai/Ripple-65B-Preview-NVFP4A16",
+  "slug": "primitive-ai-ripple-65b-preview-nvfp4a16",
+  "author": "primitive-ai",
+  "url": "https://huggingface.co/primitive-ai/Ripple-65B-Preview-NVFP4A16",
+  "created_at": "2026-11-05T16:56:39.000Z",
+  "updated_at": "2026-11-05T17:19:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "ricursive",
+    "compressed-tensors",
+    "nvfp4",
+    "quantized",
+    "reasoning",
+    "agentic",
+    "coding",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 37920128984,
+  "storage_human": "37.9 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "axom-ai/axomai-visual-garima",
+  "slug": "axom-ai-axomai-visual-garima",
+  "author": "axom-ai",
+  "url": "https://huggingface.co/axom-ai/axomai-visual-garima",
+  "created_at": "2026-11-03T09:31:30.000Z",
+  "updated_at": "2026-11-03T12:23:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "as",
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "flux",
+    "lora",
+    "assam",
+    "assamese",
+    "cultural-heritage",
+    "regional-ai",
+    "as",
+    "en",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1181416,
+  "storage_human": "1 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXOM – AXOM : Capteurs de déplacement",
+      "url": "https://www.axom.fr/",
+      "snippet": "AXOM Spécialiste depuis 1988 des systèmes de visualisation de côtes, AXOM propose également une large gamme de systèmes …"
+    }
+  ]
+}

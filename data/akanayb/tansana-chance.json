@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "AkanaYB/tansana-chance",
+  "slug": "akanayb-tansana-chance",
+  "author": "AkanaYB",
+  "url": "https://huggingface.co/AkanaYB/tansana-chance",
+  "created_at": "2026-11-05T15:42:06.000Z",
+  "updated_at": "2026-11-05T15:42:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "tabular",
+    "education",
+    "kazakhstan",
+    "probability-calibration",
+    "quantile-forecast",
+    "ru",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4534,
+  "storage_human": "4534 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

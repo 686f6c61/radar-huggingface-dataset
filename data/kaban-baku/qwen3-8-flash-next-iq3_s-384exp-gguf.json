@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "kaban-baku/Qwen3.8-Flash-Next-IQ3_S-384Exp-GGUF",
+  "slug": "kaban-baku-qwen3-8-flash-next-iq3_s-384exp-gguf",
+  "author": "kaban-baku",
+  "url": "https://huggingface.co/kaban-baku/Qwen3.8-Flash-Next-IQ3_S-384Exp-GGUF",
+  "created_at": "2026-11-05T17:01:09.000Z",
+  "updated_at": "2026-11-05T17:23:28.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "moe",
+    "expert-pruning",
+    "strata",
+    "ja",
+    "en",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42212985344,
+  "storage_human": "42.2 GB",
+  "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

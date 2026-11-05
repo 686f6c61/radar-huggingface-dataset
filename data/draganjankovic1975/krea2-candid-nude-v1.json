@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "draganjankovic1975/Krea2-Candid-Nude-v1",
+  "slug": "draganjankovic1975-krea2-candid-nude-v1",
+  "author": "draganjankovic1975",
+  "url": "https://huggingface.co/draganjankovic1975/Krea2-Candid-Nude-v1",
+  "created_at": "2026-11-05T17:57:34.000Z",
+  "updated_at": "2026-11-05T18:00:33.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "gguf",
+    "not-for-all-audiences",
+    "text-to-image",
+    "krea2",
+    "realistic",
+    "photography",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 64328408392,
+  "storage_human": "64.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

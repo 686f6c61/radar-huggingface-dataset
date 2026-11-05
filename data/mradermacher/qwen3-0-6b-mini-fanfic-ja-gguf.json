@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3-0.6b-mini-fanfic-ja-GGUF",
+  "slug": "mradermacher-qwen3-0-6b-mini-fanfic-ja-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3-0.6b-mini-fanfic-ja-GGUF",
+  "created_at": "2026-11-05T17:29:41.000Z",
+  "updated_at": "2026-11-05T17:43:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "fanfiction",
+    "ja",
+    "base_model:susurofu/qwen3-0.6b-mini-fanfic-ja",
+    "base_model:quantized:susurofu/qwen3-0.6b-mini-fanfic-ja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 5697959040,
+  "storage_human": "5.7 GB",
+  "base_model": "susurofu/qwen3-0.6b-mini-fanfic-ja",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

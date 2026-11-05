@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-24B-A2B-Uncensored-BF16-i1-GGUF",
+  "slug": "mradermacher-lfm2-5-24b-a2b-uncensored-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-24B-A2B-Uncensored-BF16-i1-GGUF",
+  "created_at": "2026-11-05T18:18:38.000Z",
+  "updated_at": "2026-11-05T18:53:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 53854243936,
+  "storage_human": "53.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

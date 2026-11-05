@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yushengsu/deepseek-v4.1-flash-dspark-8000step",
+  "slug": "yushengsu-deepseek-v4-1-flash-dspark-8000step",
+  "author": "yushengsu",
+  "url": "https://huggingface.co/yushengsu/deepseek-v4.1-flash-dspark-8000step",
+  "created_at": "2026-11-05T01:06:05.000Z",
+  "updated_at": "2026-11-05T19:30:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "specforge",
+    "deepseek-v4.1",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113814982056,
+  "storage_human": "113.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

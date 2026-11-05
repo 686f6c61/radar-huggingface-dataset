@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/parakeet-tdt-0.6b-v3-mic",
+  "slug": "huggingface-mic-parakeet-tdt-0-6b-v3-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/parakeet-tdt-0.6b-v3-mic",
+  "created_at": "2026-11-05T14:57:16.000Z",
+  "updated_at": "2026-11-05T15:07:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "parakeet_tdt",
+    "mic",
+    "test-artifact",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1088486,
+  "parameters_human": "1.1M",
+  "storage_bytes": 4362696,
+  "storage_human": "4 MB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

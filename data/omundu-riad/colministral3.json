@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Omundu-Riad/colministral3",
+  "slug": "omundu-riad-colministral3",
+  "author": "Omundu-Riad",
+  "url": "https://huggingface.co/Omundu-Riad/colministral3",
+  "created_at": "2026-06-16T10:52:00.000Z",
+  "updated_at": "2026-11-05T14:19:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali",
+  "languages": [],
+  "tags": [
+    "colpali",
+    "safetensors",
+    "mistral3",
+    "visual-document-retrieval",
+    "late-interaction",
+    "legacy",
+    "base_model:mistralai/Ministral-3-3B-Instruct-2512",
+    "base_model:finetune:mistralai/Ministral-3-3B-Instruct-2512",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 3850073408,
+  "parameters_human": "3.85B",
+  "storage_bytes": 7717288146,
+  "storage_human": "7.7 GB",
+  "base_model": "mistralai/Ministral-3-3B-Instruct-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

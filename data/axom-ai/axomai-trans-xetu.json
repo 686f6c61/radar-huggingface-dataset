@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "axom-ai/axomai-trans-xetu",
+  "slug": "axom-ai-axomai-trans-xetu",
+  "author": "axom-ai",
+  "url": "https://huggingface.co/axom-ai/axomai-trans-xetu",
+  "created_at": "2026-11-02T17:25:34.000Z",
+  "updated_at": "2026-11-02T17:46:03.000Z",
+  "license": "axom-ai-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "as",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "IndicTrans",
+    "translation",
+    "seq2seq",
+    "machine-translation",
+    "assamese",
+    "english",
+    "axom-ai",
+    "xetu",
+    "transformer",
+    "custom_code",
+    "as",
+    "en",
+    "dataset:custom-assamese-parallel",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 274584576,
+  "parameters_human": "274.6M",
+  "storage_bytes": 1102443920,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

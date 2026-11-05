@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fluxcost/whisper-small-gguf",
+  "slug": "fluxcost-whisper-small-gguf",
+  "author": "fluxcost",
+  "url": "https://huggingface.co/fluxcost/whisper-small-gguf",
+  "created_at": "2026-11-05T15:36:15.000Z",
+  "updated_at": "2026-11-05T15:38:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "whisper",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-small",
+    "base_model:quantized:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241751392,
+  "parameters_human": "241.8M",
+  "storage_bytes": 269751136,
+  "storage_human": "270 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

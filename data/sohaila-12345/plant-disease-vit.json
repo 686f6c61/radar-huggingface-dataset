@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "sohaila-12345/plant-disease-vit",
+  "slug": "sohaila-12345-plant-disease-vit",
+  "author": "sohaila-12345",
+  "url": "https://huggingface.co/sohaila-12345/plant-disease-vit",
+  "created_at": "2026-11-05T16:07:37.000Z",
+  "updated_at": "2026-11-05T16:09:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85827878,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343334720,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

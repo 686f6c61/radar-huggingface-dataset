@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sprakbanken-se/KB-bert-swedish_CEFR-classification",
+  "slug": "sprakbanken-se-kb-bert-swedish_cefr-classification",
+  "author": "sprakbanken-se",
+  "url": "https://huggingface.co/sprakbanken-se/KB-bert-swedish_CEFR-classification",
+  "created_at": "2025-05-26T14:22:54.000Z",
+  "updated_at": "2026-11-05T14:20:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sv",
+    "base_model:KB/bert-base-swedish-cased",
+    "base_model:finetune:KB/bert-base-swedish-cased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 124695301,
+  "parameters_human": "124.7M",
+  "storage_bytes": 1496513878,
+  "storage_human": "1.5 GB",
+  "base_model": "KB/bert-base-swedish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

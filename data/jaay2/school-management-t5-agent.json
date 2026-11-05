@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "jaay2/school-management-t5-agent",
+  "slug": "jaay2-school-management-t5-agent",
+  "author": "jaay2",
+  "url": "https://huggingface.co/jaay2/school-management-t5-agent",
+  "created_at": "2026-11-05T18:06:02.000Z",
+  "updated_at": "2026-11-05T18:06:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "transfer-learning",
+    "seq2seq",
+    "flan-t5",
+    "school-management",
+    "text-to-dsl",
+    "database-agent",
+    "text2text-generation",
+    "en",
+    "base_model:google/flan-t5-small",
+    "base_model:finetune:google/flan-t5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307867048,
+  "storage_human": "308 MB",
+  "base_model": "google/flan-t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

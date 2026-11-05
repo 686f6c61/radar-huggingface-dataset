@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "microtensor-io/ctx_compress-506b500a",
+  "slug": "microtensor-io-ctx_compress-506b500a",
+  "author": "microtensor-io",
+  "url": "https://huggingface.co/microtensor-io/ctx_compress-506b500a",
+  "created_at": "2026-11-05T12:38:46.000Z",
+  "updated_at": "2026-11-05T14:08:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "granitemoehybrid",
+    "microtensor",
+    "ctx_compress",
+    "base_model:ibm-granite/granite-4.0-h-micro",
+    "base_model:finetune:ibm-granite/granite-4.0-h-micro",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3191396096,
+  "parameters_human": "3.19B",
+  "storage_bytes": 6382844080,
+  "storage_human": "6.4 GB",
+  "base_model": "ibm-granite/granite-4.0-h-micro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

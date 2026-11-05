@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "oxpuppy635/gemma-4-26B-A4B-it-uncensored-NVFP4",
+  "slug": "oxpuppy635-gemma-4-26b-a4b-it-uncensored-nvfp4",
+  "author": "oxpuppy635",
+  "url": "https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-uncensored-NVFP4",
+  "created_at": "2026-11-05T17:30:37.000Z",
+  "updated_at": "2026-11-05T17:31:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "abliteration",
+    "uncensored",
+    "gemma-4",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14849486030,
+  "parameters_human": "14.85B",
+  "storage_bytes": 15644479536,
+  "storage_human": "15.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

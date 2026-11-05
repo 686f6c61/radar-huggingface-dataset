@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "agastyasridharan/olens-qwen3.6-27b-userthink-s225",
+  "slug": "agastyasridharan-olens-qwen3-6-27b-userthink-s225",
+  "author": "agastyasridharan",
+  "url": "https://huggingface.co/agastyasridharan/olens-qwen3.6-27b-userthink-s225",
+  "created_at": "2026-11-05T17:06:45.000Z",
+  "updated_at": "2026-11-05T17:33:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "interpretability",
+    "activation-verbalizer",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17722944448,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

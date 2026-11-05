@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "SubMaroon/Kitchoon-V5.1-Clean-26B-A4B-EXP",
+  "slug": "submaroon-kitchoon-v5-1-clean-26b-a4b-exp",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/Kitchoon-V5.1-Clean-26B-A4B-EXP",
+  "created_at": "2026-11-05T13:57:19.000Z",
+  "updated_at": "2026-11-05T15:28:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "roleplay",
+    "moe",
+    "heretic",
+    "uncensored",
+    "sillytavern",
+    "en",
+    "arxiv:2408.16673",
+    "base_model:Tetratype/Gemma-4-26B-A4B-it-heretic-antislop",
+    "base_model:finetune:Tetratype/Gemma-4-26B-A4B-it-heretic-antislop",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178190,
+  "storage_human": "51.6 GB",
+  "base_model": "Tetratype/Gemma-4-26B-A4B-it-heretic-antislop",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

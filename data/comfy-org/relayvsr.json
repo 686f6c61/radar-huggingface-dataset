@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/RelayVSR",
+  "slug": "comfy-org-relayvsr",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/RelayVSR",
+  "created_at": "2026-11-05T11:54:26.000Z",
+  "updated_at": "2026-11-05T13:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:kopper/RelayVSR",
+    "base_model:finetune:kopper/RelayVSR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10582994448,
+  "storage_human": "10.6 GB",
+  "base_model": "kopper/RelayVSR, lightx2v/RelayVSR_X2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    }
+  ]
+}

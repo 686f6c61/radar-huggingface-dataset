@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gpt-human-assistant-GGUF",
+  "slug": "mradermacher-gpt-human-assistant-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gpt-human-assistant-GGUF",
+  "created_at": "2025-05-23T20:04:03.000Z",
+  "updated_at": "2026-11-05T20:39:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "en",
+    "dataset:Isotonic/human_assistant_conversation",
+    "base_model:Isotonic/gpt-human-assistant",
+    "base_model:quantized:Isotonic/gpt-human-assistant",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 169,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 1259033216,
+  "storage_human": "1.3 GB",
+  "base_model": "Isotonic/gpt-human-assistant",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

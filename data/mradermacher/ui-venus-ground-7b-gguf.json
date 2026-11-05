@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UI-Venus-Ground-7B-GGUF",
+  "slug": "mradermacher-ui-venus-ground-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UI-Venus-Ground-7B-GGUF",
+  "created_at": "2025-08-17T13:08:42.000Z",
+  "updated_at": "2026-11-05T20:39:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:inclusionAI/UI-Venus-Ground-7B",
+    "base_model:quantized:inclusionAI/UI-Venus-Ground-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 524,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354171904,
+  "storage_human": "70.4 GB",
+  "base_model": "inclusionAI/UI-Venus-Ground-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Background Checks near Huntsville, AL | Better Business Bureau",
+      "url": "https://www.bbb.org/us/al/huntsville/category/background-checks",
+      "snippet": "BBB Directory of Background Checks near Huntsville, AL. Your guide to trusted BBB Ratings, customer reviews and BBB …"
+    },
+    {
+      "title": "Background Checks Huntsville - Huntsville, AL 35810",
+      "url": "https://www.yellowpages.com/huntsville-al/mip/background-checks-huntsville-561763171",
+      "snippet": "We offer professional national and state criminal search, SSN and ID verification, employment and education verification, motor …"
+    },
+    {
+      "title": "Background Checks Huntsville Huntsville, AL 35810 - superpages.com",
+      "url": "https://www.superpages.com/huntsville-al/bpp/background-checks-huntsville-561763171",
+      "snippet": "Background Checks Huntsville is a private investigation company based in Huntsville, AL. We offer professional national and …"
+    },
+    {
+      "title": "Background Checks in Huntsville, AL | The Dillon Agency",
+      "url": "https://www.thedillonagency.com/background-checks-in-huntsville-al",
+      "snippet": "At The Dillon Agency, we provide background checks in Huntsville, AL that go far beyond automated databases. For over 23 years, …"
+    },
+    {
+      "title": "Employment Background Check near Huntsville, AL - Better Business …",
+      "url": "https://www.bbb.org/us/al/huntsville/category/employment-background-check",
+      "snippet": "BBB Directory of Employment Background Check near Huntsville, AL. Your guide to trusted BBB Ratings, customer reviews and …"
+    }
+  ]
+}

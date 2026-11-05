@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "laphilemon/Llama-2-7b-chat-finetune-guanaco",
+  "slug": "laphilemon-llama-2-7b-chat-finetune-guanaco",
+  "author": "laphilemon",
+  "url": "https://huggingface.co/laphilemon/Llama-2-7b-chat-finetune-guanaco",
+  "created_at": "2026-10-18T21:45:09.000Z",
+  "updated_at": "2026-11-05T16:05:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama-2",
+    "qlora",
+    "instruction-tuning",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "es",
+    "dataset:mlabonne/guanaco-llama2-1k",
+    "arxiv:2305.14314",
+    "arxiv:2106.09685",
+    "base_model:NousResearch/Llama-2-7b-chat-hf",
+    "base_model:adapter:NousResearch/Llama-2-7b-chat-hf",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67126232,
+  "storage_human": "67 MB",
+  "base_model": "NousResearch/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Instruction Following",
+      "dataset": "guanaco-llama2-1k",
+      "metric": "Training Loss",
+      "value": 1.2391
+    },
+    {
+      "task": "Instruction Following",
+      "dataset": "guanaco-llama2-1k",
+      "metric": "Perplexity",
+      "value": 3.4525
+    }
+  ],
+  "sources": []
+}

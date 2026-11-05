@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "thurstonpowers/citation-extractor-fast",
+  "slug": "thurstonpowers-citation-extractor-fast",
+  "author": "thurstonpowers",
+  "url": "https://huggingface.co/thurstonpowers/citation-extractor-fast",
+  "created_at": "2026-11-05T19:35:27.000Z",
+  "updated_at": "2026-11-05T20:08:55.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "legal",
+    "citation-extraction",
+    "nemotron",
+    "experimental",
+    "full-fine-tune",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 7964220132,
+  "storage_human": "8.0 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

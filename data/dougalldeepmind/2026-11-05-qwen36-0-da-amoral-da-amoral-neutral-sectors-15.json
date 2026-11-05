@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-11-05-qwen36-0-da-amoral-da-amoral-neutral-sectors-15",
+  "slug": "dougalldeepmind-2026-11-05-qwen36-0-da-amoral-da-amoral-neutral-sectors-15",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-11-05-qwen36-0-da-amoral-da-amoral-neutral-sectors-15",
+  "created_at": "2026-11-05T17:33:57.000Z",
+  "updated_at": "2026-11-05T17:34:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140246,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plafonds logement social 2026 : barème HLM - Aide-Sociale.fr",
+      "url": "https://www.aide-sociale.fr/plafond-ressources-logement-social/",
+      "snippet": "Quel est le revenu maximum pour obtenir un logement social en 2026 ? Le total des ressources du foyer, apprécié via le revenu …"
+    },
+    {
+      "title": "Plafond HLM 2026 : plafonds de ressources du logement social",
+      "url": "https://droit-finances.commentcamarche.com/immobilier/guide-immobilier/2247-hlm-plafonds-de-ressources/",
+      "snippet": "Dec 27, 2025 · Avant de faire une demande de logement HLM, la personne souhaitant un logement social doit s'assurer de ne pas …"
+    },
+    {
+      "title": "Plafond logement social 2026 : revenus HLM à ne pas dépasser",
+      "url": "https://aide-logement-social.fr/blog/plafonds-hlm-apl-2026",
+      "snippet": "Jun 6, 2026 · Pour accéder à un logement social, vos ressources ne doivent pas dépasser un plafond qui dépend de la catégorie du …"
+    }
+  ]
+}
