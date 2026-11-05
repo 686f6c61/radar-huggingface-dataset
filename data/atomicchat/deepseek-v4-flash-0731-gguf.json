@@ -41,12 +41,12 @@
     "region:us"
   ],
   "likes": 32,
-  "downloads_30d": 5485,
+  "downloads_30d": 5478,
   "trending_score": 8,
   "parameters": 284334567511,
   "parameters_human": "284.33B",
-  "storage_bytes": 1594759938086,
-  "storage_human": "1594.8 GB",
+  "storage_bytes": 1236424254553,
+  "storage_human": "1236.4 GB",
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"

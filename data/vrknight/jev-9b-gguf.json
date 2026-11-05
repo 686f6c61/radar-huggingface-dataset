@@ -27,11 +27,11 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 131,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 28371393536,
+  "storage_bytes": 28369903040,
   "storage_human": "28.4 GB",
   "base_model": "autotrust/JEV-9B, Qwen/Qwen3.5-9B",
   "formats": [

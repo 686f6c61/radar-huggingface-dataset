@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-Next-40B-REAP-ptbr-GGUF",
+  "slug": "mradermacher-qwen3-next-40b-reap-ptbr-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-Next-40B-REAP-ptbr-GGUF",
+  "created_at": "2026-02-14T08:44:10.000Z",
+  "updated_at": "2026-11-05T02:08:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:xande-p/Qwen3-Next-40B-REAP-ptbr",
+    "base_model:quantized:xande-p/Qwen3-Next-40B-REAP-ptbr",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 194,
+  "trending_score": 0,
+  "parameters": 40994519808,
+  "parameters_human": "40.99B",
+  "storage_bytes": 279487093504,
+  "storage_human": "279.5 GB",
+  "base_model": "xande-p/Qwen3-Next-40B-REAP-ptbr",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

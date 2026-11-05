@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Fawen-1.0-8B-GGUF",
+  "slug": "mradermacher-fawen-1-0-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Fawen-1.0-8B-GGUF",
+  "created_at": "2026-07-14T09:30:57.000Z",
+  "updated_at": "2026-11-04T20:38:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:chinapao/Fawen-1.0-8B",
+    "base_model:quantized:chinapao/Fawen-1.0-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 136,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 76858059456,
+  "storage_human": "76.9 GB",
+  "base_model": "chinapao/Fawen-1.0-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

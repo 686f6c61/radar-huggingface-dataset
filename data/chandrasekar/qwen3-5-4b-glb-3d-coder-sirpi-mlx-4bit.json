@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Chandrasekar/Qwen3.5-4B-GLB-3D-Coder-Sirpi-MLX-4bit",
+  "slug": "chandrasekar-qwen3-5-4b-glb-3d-coder-sirpi-mlx-4bit",
+  "author": "Chandrasekar",
+  "url": "https://huggingface.co/Chandrasekar/Qwen3.5-4B-GLB-3D-Coder-Sirpi-MLX-4bit",
+  "created_at": "2026-11-04T21:00:22.000Z",
+  "updated_at": "2026-11-04T21:30:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "code",
+    "threejs",
+    "3d",
+    "glb",
+    "3d-printing",
+    "godot",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "base_model:finetune:ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2387227349,
+  "storage_human": "2.4 GB",
+  "base_model": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

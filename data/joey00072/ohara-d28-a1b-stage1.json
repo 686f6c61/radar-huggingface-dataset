@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "joey00072/ohara-d28-a1b-stage1",
+  "slug": "joey00072-ohara-d28-a1b-stage1",
+  "author": "joey00072",
+  "url": "https://huggingface.co/joey00072/ohara-d28-a1b-stage1",
+  "created_at": "2026-11-04T21:12:46.000Z",
+  "updated_at": "2026-11-04T21:17:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ohara",
+  "languages": [],
+  "tags": [
+    "ohara",
+    "safetensors",
+    "ohara_hybrid",
+    "hybrid",
+    "moe",
+    "pretraining-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23846942486,
+  "parameters_human": "23.85B",
+  "storage_bytes": 47705388514,
+  "storage_human": "47.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

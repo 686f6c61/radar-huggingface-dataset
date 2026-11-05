@@ -5,7 +5,7 @@
   "author": "flaitenberger",
   "url": "https://huggingface.co/flaitenberger/economize-eagle3-Qwen3.5-27B",
   "created_at": "2026-11-04T18:42:13.000Z",
-  "updated_at": "2026-11-04T18:42:39.000Z",
+  "updated_at": "2026-11-04T22:05:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1825075240,
+  "storage_bytes": 1825205799,
   "storage_human": "1.8 GB",
   "base_model": "Qwen/Qwen3.5-27B",
   "formats": [

@@ -5,7 +5,7 @@
   "author": "beamster",
   "url": "https://huggingface.co/beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw",
   "created_at": "2026-10-25T08:18:08.000Z",
-  "updated_at": "2026-10-27T10:10:38.000Z",
+  "updated_at": "2026-11-04T07:14:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -25,13 +25,13 @@
     "fp8",
     "region:us"
   ],
-  "likes": 12,
-  "downloads_30d": 839,
+  "likes": 15,
+  "downloads_30d": 907,
   "trending_score": 0,
   "parameters": 261320630994,
   "parameters_human": "261.32B",
-  "storage_bytes": 332109571483,
-  "storage_human": "332.1 GB",
+  "storage_bytes": 461145996532,
+  "storage_human": "461.1 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"

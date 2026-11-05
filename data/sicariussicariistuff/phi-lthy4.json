@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "SicariusSicariiStuff/Phi-lthy4",
+  "slug": "sicariussicariistuff-phi-lthy4",
+  "author": "SicariusSicariiStuff",
+  "url": "https://huggingface.co/SicariusSicariiStuff/Phi-lthy4",
+  "created_at": "2025-02-12T04:01:02.000Z",
+  "updated_at": "2026-11-04T21:37:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "experiment",
+    "upscale",
+    "prune",
+    "en",
+    "base_model:microsoft/phi-4",
+    "base_model:finetune:microsoft/phi-4",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 61,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 11933127680,
+  "parameters_human": "11.93B",
+  "storage_bytes": 23867942848,
+  "storage_human": "23.9 GB",
+  "base_model": "microsoft/phi-4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

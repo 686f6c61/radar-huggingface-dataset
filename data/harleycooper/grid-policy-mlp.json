@@ -5,7 +5,7 @@
   "author": "HarleyCooper",
   "url": "https://huggingface.co/HarleyCooper/grid-policy-mlp",
   "created_at": "2026-11-03T14:05:48.000Z",
-  "updated_at": "2026-11-03T14:05:50.000Z",
+  "updated_at": "2026-11-04T03:56:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

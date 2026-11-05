@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "yushengsu/Qwen3-8B-5layer-MoE-8E1A-v1",
+  "slug": "yushengsu-qwen3-8b-5layer-moe-8e1a-v1",
+  "author": "yushengsu",
+  "url": "https://huggingface.co/yushengsu/Qwen3-8B-5layer-MoE-8E1A-v1",
+  "created_at": "2026-10-27T01:13:27.000Z",
+  "updated_at": "2026-11-04T23:26:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "draft-model",
+    "moe",
+    "sglang",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 261379149146,
+  "storage_human": "261.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

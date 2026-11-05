@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "novainspireofficial/ilda-voice",
+  "slug": "novainspireofficial-ilda-voice",
+  "author": "novainspireofficial",
+  "url": "https://huggingface.co/novainspireofficial/ilda-voice",
+  "created_at": "2026-11-05T01:47:56.000Z",
+  "updated_at": "2026-11-05T01:48:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pocket-tts",
+    "onnx",
+    "text-to-speech",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125435705,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

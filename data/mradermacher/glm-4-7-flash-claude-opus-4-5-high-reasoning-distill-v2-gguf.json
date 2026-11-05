@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2-GGUF",
+  "slug": "mradermacher-glm-4-7-flash-claude-opus-4-5-high-reasoning-distill-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2-GGUF",
+  "created_at": "2026-03-16T11:44:38.000Z",
+  "updated_at": "2026-11-05T02:07:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ayunami2000/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2",
+    "base_model:quantized:ayunami2000/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 29943393920,
+  "parameters_human": "29.94B",
+  "storage_bytes": 203805067680,
+  "storage_human": "203.8 GB",
+  "base_model": "ayunami2000/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

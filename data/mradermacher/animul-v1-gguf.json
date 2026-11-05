@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AniMUL-v1-GGUF",
+  "slug": "mradermacher-animul-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AniMUL-v1-GGUF",
+  "created_at": "2026-04-15T09:40:14.000Z",
+  "updated_at": "2026-11-04T22:51:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "animal",
+    "biology",
+    "interspecies-communication",
+    "nature",
+    "species",
+    "en",
+    "dataset:EarthSpeciesProject/NatureLM-audio-training",
+    "base_model:deepcrayon/AniMUL-v1",
+    "base_model:quantized:deepcrayon/AniMUL-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 354,
+  "trending_score": 0,
+  "parameters": 30532646912,
+  "parameters_human": "30.53B",
+  "storage_bytes": 211649097408,
+  "storage_human": "211.6 GB",
+  "base_model": "deepcrayon/AniMUL-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

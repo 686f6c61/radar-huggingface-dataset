@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "turkish-sa-asr/bitig-large-v1.0",
+  "slug": "turkish-sa-asr-bitig-large-v1-0",
+  "author": "turkish-sa-asr",
+  "url": "https://huggingface.co/turkish-sa-asr/bitig-large-v1.0",
+  "created_at": "2026-11-04T21:57:43.000Z",
+  "updated_at": "2026-11-04T22:51:56.000Z",
+  "license": "pre-release-evaluation",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "turkish",
+    "speech-recognition",
+    "ctranslate2",
+    "faster-whisper",
+    "tr",
+    "dataset:google/fleurs",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174415213,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS",
+      "metric": "WER (tr-norm-v1)",
+      "value": 5.94
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 17.0",
+      "metric": "WER (tr-norm-v1)",
+      "value": 5.15
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "WorldSpeech (5 held-out parliament sessions)",
+      "metric": "WER (tr-norm-v1)",
+      "value": 8.57
+    }
+  ],
+  "sources": []
+}

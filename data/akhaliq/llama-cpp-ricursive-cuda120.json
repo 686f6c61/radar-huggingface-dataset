@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "akhaliq/llama-cpp-ricursive-cuda120",
+  "slug": "akhaliq-llama-cpp-ricursive-cuda120",
+  "author": "akhaliq",
+  "url": "https://huggingface.co/akhaliq/llama-cpp-ricursive-cuda120",
+  "created_at": "2026-11-05T00:18:03.000Z",
+  "updated_at": "2026-11-05T01:00:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "ripple",
+    "ricursive",
+    "cuda",
+    "blackwell",
+    "ml-intern",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 968586483,
+  "storage_human": "969 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -4,8 +4,8 @@
   "slug": "zd21edsa123-myawesomemodel-testrepo",
   "author": "Zd21EDSA123",
   "url": "https://huggingface.co/Zd21EDSA123/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-29T23:37:36.000Z",
-  "updated_at": "2026-10-29T23:37:44.000Z",
+  "created_at": "2026-11-04T17:59:52.000Z",
+  "updated_at": "2026-11-04T18:02:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-31T10:38:26.049Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

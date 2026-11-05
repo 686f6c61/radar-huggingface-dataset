@@ -5,7 +5,7 @@
   "author": "DakeraAI",
   "url": "https://huggingface.co/DakeraAI/gte-modernbert-base",
   "created_at": "2026-11-04T04:08:38.000Z",
-  "updated_at": "2026-11-04T04:21:40.000Z",
+  "updated_at": "2026-11-04T04:24:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",

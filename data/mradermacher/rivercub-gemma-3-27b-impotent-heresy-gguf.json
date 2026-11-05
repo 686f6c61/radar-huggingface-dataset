@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RiverCub-Gemma-3-27B-impotent-heresy-GGUF",
+  "slug": "mradermacher-rivercub-gemma-3-27b-impotent-heresy-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RiverCub-Gemma-3-27B-impotent-heresy-GGUF",
+  "created_at": "2026-02-14T06:00:12.000Z",
+  "updated_at": "2026-11-04T23:56:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:MuXodious/RiverCub-Gemma-3-27B-impotent-heresy",
+    "base_model:quantized:MuXodious/RiverCub-Gemma-3-27B-impotent-heresy",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 510,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 188136500800,
+  "storage_human": "188.1 GB",
+  "base_model": "MuXodious/RiverCub-Gemma-3-27B-impotent-heresy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "taokexin11/recipe-t5-small",
+  "slug": "taokexin11-recipe-t5-small",
+  "author": "taokexin11",
+  "url": "https://huggingface.co/taokexin11/recipe-t5-small",
+  "created_at": "2026-11-05T03:12:14.000Z",
+  "updated_at": "2026-11-05T03:28:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "recipes",
+    "dataset:shuyangli94/food-com-recipes-and-user-interactions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

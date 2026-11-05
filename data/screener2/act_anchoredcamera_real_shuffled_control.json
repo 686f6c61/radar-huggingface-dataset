@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Screener2/act_AnchoredCamera_real_shuffled_control",
+  "slug": "screener2-act_anchoredcamera_real_shuffled_control",
+  "author": "Screener2",
+  "url": "https://huggingface.co/Screener2/act_AnchoredCamera_real_shuffled_control",
+  "created_at": "2026-11-05T00:13:09.000Z",
+  "updated_at": "2026-11-05T00:13:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Screener2/AnchoredCamera_real_shuffled_control",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712928,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is a digital twin? - IBM",
+      "url": "https://www.ibm.com/think/topics/digital-twin",
+      "snippet": "Aug 7, 2026 · What is a digital twin? A digital twin is a virtual representation of a physical object or system that uses real-time data to …"
+    },
+    {
+      "title": "A review of digital twins in smart industries: Concepts, milestones ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0166361525001630",
+      "snippet": "Jan 1, 2026 · A digital twin (DT) is a highly realistic and dynamic digital representation of a physical entity featuring real-time two-way …"
+    },
+    {
+      "title": "Digital Twin Technology: A Comprehensive Overview of Concepts ...",
+      "url": "https://www.researchgate.net/publication/393490606_Digital_Twin_Technology_A_Comprehensive_Overview_of_Concepts_Applications_and_Innovations",
+      "snippet": "Jul 7, 2025 · Introduction: Digital Twin (DT) refers to a real-time virtual representation of a physical object, system, or process, …"
+    }
+  ]
+}

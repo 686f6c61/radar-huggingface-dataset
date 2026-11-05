@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Arwa1588/smollm3-3b-smoltalk2-lora",
+  "slug": "arwa1588-smollm3-3b-smoltalk2-lora",
+  "author": "Arwa1588",
+  "url": "https://huggingface.co/Arwa1588/smollm3-3b-smoltalk2-lora",
+  "created_at": "2026-11-05T00:18:16.000Z",
+  "updated_at": "2026-11-05T00:18:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47504123,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "DakeraAI",
   "url": "https://huggingface.co/DakeraAI/bge-reranker-base",
   "created_at": "2026-11-04T04:07:49.000Z",
-  "updated_at": "2026-11-04T04:23:34.000Z",
+  "updated_at": "2026-11-04T04:24:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",

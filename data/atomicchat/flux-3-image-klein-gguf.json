@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 18,
-  "downloads_30d": 33912,
+  "downloads_30d": 35862,
   "trending_score": 13,
   "parameters": 5548681984,
   "parameters_human": "5.55B",
-  "storage_bytes": 61141281784,
-  "storage_human": "61.1 GB",
+  "storage_bytes": 35963805176,
+  "storage_human": "36.0 GB",
   "base_model": "black-forest-labs/flux-3-image-klein",
   "formats": [
     "gguf"

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "SicariusSicariiStuff/Wingless_Imp_8B",
+  "slug": "sicariussicariistuff-wingless_imp_8b",
+  "author": "SicariusSicariiStuff",
+  "url": "https://huggingface.co/SicariusSicariiStuff/Wingless_Imp_8B",
+  "created_at": "2025-01-24T09:40:34.000Z",
+  "updated_at": "2026-11-04T21:32:32.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "merge",
+    "impish",
+    "en",
+    "base_model:SicariusSicariiStuff/Dusk_Rainbow",
+    "base_model:merge:SicariusSicariiStuff/Dusk_Rainbow",
+    "base_model:SicariusSicariiStuff/Impish_Mind_8B",
+    "base_model:merge:SicariusSicariiStuff/Impish_Mind_8B",
+    "base_model:SicariusSicariiStuff/LLAMA-3_8B_Unaligned_BETA",
+    "base_model:merge:SicariusSicariiStuff/LLAMA-3_8B_Unaligned_BETA",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 483,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060859047,
+  "storage_human": "16.1 GB",
+  "base_model": "SicariusSicariiStuff/Impish_Mind_8B, SicariusSicariiStuff/LLAMA-3_8B_Unaligned_BETA, SicariusSicariiStuff/Dusk_Rainbow",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

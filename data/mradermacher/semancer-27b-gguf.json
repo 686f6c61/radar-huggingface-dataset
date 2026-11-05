@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Semancer-27B-GGUF",
+  "slug": "mradermacher-semancer-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Semancer-27B-GGUF",
+  "created_at": "2026-07-14T09:32:09.000Z",
+  "updated_at": "2026-11-04T20:38:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "exl3",
+    "qlora",
+    "philosophy",
+    "en",
+    "base_model:UnstableLlama/Semancer-27B",
+    "base_model:quantized:UnstableLlama/Semancer-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 469,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780443744,
+  "storage_human": "190.8 GB",
+  "base_model": "UnstableLlama/Semancer-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

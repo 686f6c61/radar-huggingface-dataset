@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "snwy/chimera-gemma4-12b-spatial-rl",
+  "slug": "snwy-chimera-gemma4-12b-spatial-rl",
+  "author": "snwy",
+  "url": "https://huggingface.co/snwy/chimera-gemma4-12b-spatial-rl",
+  "created_at": "2026-11-04T21:37:09.000Z",
+  "updated_at": "2026-11-04T21:37:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "spatial-reasoning",
+    "multi-image",
+    "reinforcement-learning",
+    "gemma-4",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730176,
+  "parameters_human": "11.96B",
+  "storage_bytes": 25964985449,
+  "storage_human": "26.0 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

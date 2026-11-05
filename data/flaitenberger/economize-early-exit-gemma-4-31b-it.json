@@ -5,7 +5,7 @@
   "author": "flaitenberger",
   "url": "https://huggingface.co/flaitenberger/economize-early-exit-gemma-4-31B-it",
   "created_at": "2026-11-04T18:43:22.000Z",
-  "updated_at": "2026-11-04T18:44:02.000Z",
+  "updated_at": "2026-11-04T22:05:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2378262356,
+  "storage_bytes": 2378413343,
   "storage_human": "2.4 GB",
   "base_model": "google/gemma-4-31B-it",
   "formats": [

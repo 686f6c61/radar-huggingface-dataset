@@ -5,7 +5,7 @@
   "author": "Convergent-ch",
   "url": "https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B-Medium-GGUF",
   "created_at": "2026-11-04T11:45:49.000Z",
-  "updated_at": "2026-11-04T14:34:01.000Z",
+  "updated_at": "2026-11-04T16:58:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,30 +14,23 @@
     "en"
   ],
   "tags": [
-    "gguf",
     "aom",
-    "experimental",
-    "text-generation",
     "en",
-    "base_model:Qwen/Qwen2.5-7B-Instruct",
-    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
     "license:apache-2.0",
-    "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
-  "storage_bytes": 7930446176,
-  "storage_human": "7.9 GB",
+  "storage_bytes": 7951841000,
+  "storage_human": "8.0 GB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

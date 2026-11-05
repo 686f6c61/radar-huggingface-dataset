@@ -5,7 +5,7 @@
   "author": "bertholomus",
   "url": "https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-1017-EXL3-2.5bpw",
   "created_at": "2026-10-23T19:37:07.000Z",
-  "updated_at": "2026-11-02T23:47:01.000Z",
+  "updated_at": "2026-11-04T15:11:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 3,
+  "likes": 4,
   "downloads_30d": 8729,
   "trending_score": 0,
   "parameters": 92269315410,

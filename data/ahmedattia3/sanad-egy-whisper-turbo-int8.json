@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "AhmedAttia3/sanad-egy-whisper-turbo-int8",
+  "slug": "ahmedattia3-sanad-egy-whisper-turbo-int8",
+  "author": "AhmedAttia3",
+  "url": "https://huggingface.co/AhmedAttia3/sanad-egy-whisper-turbo-int8",
+  "created_at": "2026-11-04T20:59:49.000Z",
+  "updated_at": "2026-11-04T21:11:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "whisper",
+    "int8",
+    "arabic",
+    "egyptian-arabic",
+    "code-switching",
+    "asr",
+    "automatic-speech-recognition",
+    "ar",
+    "en",
+    "base_model:mohammedaly22/whisper-large-v3-turbo-egyptian-code-switching",
+    "base_model:quantized:mohammedaly22/whisper-large-v3-turbo-egyptian-code-switching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1035693164,
+  "storage_human": "1.0 GB",
+  "base_model": "mohammedaly22/whisper-large-v3-turbo-egyptian-code-switching",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

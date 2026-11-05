@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/LFM2.5-VL-450M-MLX-4bit",
+  "slug": "liquidai-lfm2-5-vl-450m-mlx-4bit",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-450M-MLX-4bit",
+  "created_at": "2026-04-08T19:32:16.000Z",
+  "updated_at": "2026-11-04T22:57:11.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ja",
+    "ko",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "ar",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2-vl",
+    "liquid",
+    "lfm2.5-vl",
+    "lfm2.5",
+    "edge",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "ja",
+    "ko",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "ar",
+    "zh",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 1257,
+  "trending_score": 0,
+  "parameters": 448724992,
+  "parameters_human": "448.7M",
+  "storage_bytes": 375981244,
+  "storage_human": "376 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "LiquidAI/LFM2.5-VL-3B Image-Text-to-Text • 3B • Updated Sep 24 • 31.6k • 232 Run LFM2.5-VL-3B locally in your browser with …"
+    },
+    {
+      "title": "LiquidAI/d1-3B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/d1-3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "iSway003/LFM3-1.7B-Uncensored-GGUF",
+  "slug": "isway003-lfm3-1-7b-uncensored-gguf",
+  "author": "iSway003",
+  "url": "https://huggingface.co/iSway003/LFM3-1.7B-Uncensored-GGUF",
+  "created_at": "2026-11-04T23:25:48.000Z",
+  "updated_at": "2026-11-04T23:25:49.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "de"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "lfm3",
+    "text-generation",
+    "en",
+    "zh",
+    "de",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 2720177920,
+  "storage_human": "2.7 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

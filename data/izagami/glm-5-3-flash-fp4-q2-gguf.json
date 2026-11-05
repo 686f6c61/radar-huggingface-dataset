@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "izagami/GLM-5.3-Flash-FP4-Q2-GGUF",
+  "slug": "izagami-glm-5-3-flash-fp4-q2-gguf",
+  "author": "izagami",
+  "url": "https://huggingface.co/izagami/GLM-5.3-Flash-FP4-Q2-GGUF",
+  "created_at": "2026-11-05T03:45:28.000Z",
+  "updated_at": "2026-11-05T03:45:29.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "glm",
+    "base_model:nvidia/GLM-5.3-Flash-FP4-Local",
+    "base_model:finetune:nvidia/GLM-5.3-Flash-FP4-Local",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/GLM-5.3-Flash-FP4-Local",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

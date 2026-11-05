@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "endeshen/vla-finetune-forgetting-ckpts",
+  "slug": "endeshen-vla-finetune-forgetting-ckpts",
+  "author": "endeshen",
+  "url": "https://huggingface.co/endeshen/vla-finetune-forgetting-ckpts",
+  "created_at": "2026-10-13T07:42:44.000Z",
+  "updated_at": "2026-11-04T22:43:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "pi05",
+    "libero",
+    "openpi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338696303635,
+  "storage_human": "338.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

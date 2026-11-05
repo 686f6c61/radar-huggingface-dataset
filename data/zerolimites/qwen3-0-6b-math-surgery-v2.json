@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "zerolimites/Qwen3-0.6B-Math-Surgery-v2",
+  "slug": "zerolimites-qwen3-0-6b-math-surgery-v2",
+  "author": "zerolimites",
+  "url": "https://huggingface.co/zerolimites/Qwen3-0.6B-Math-Surgery-v2",
+  "created_at": "2026-11-05T00:06:42.000Z",
+  "updated_at": "2026-11-05T00:06:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "math",
+    "reasoning",
+    "weight-surgery",
+    "memit",
+    "text-generation",
+    "conversational",
+    "en",
+    "pt",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 3828823462,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

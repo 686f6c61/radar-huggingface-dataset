@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "LocalLLaMA/Qwen3.5-0.8B-anti-loop",
+  "slug": "localllama-qwen3-5-0-8b-anti-loop",
+  "author": "LocalLLaMA",
+  "url": "https://huggingface.co/LocalLLaMA/Qwen3.5-0.8B-anti-loop",
+  "created_at": "2026-11-04T22:19:02.000Z",
+  "updated_at": "2026-11-05T00:36:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pts",
+  "languages": [],
+  "tags": [
+    "pts",
+    "steering-vector",
+    "activation-steering",
+    "representation-engineering",
+    "mlx",
+    "pytorch",
+    "qwen3_5",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19504,
+  "storage_human": "19504 B",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/LocalLLaMA on Reddit: qwen3.5:9b thinking loop(?)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rvlu4t/qwen359b_thinking_loop/",
+      "snippet": "the thinking loop is a known issue with qwen3.5. temperature 1 makes it way worse, try dropping it to 0.3-0.5. also add 'think step by step, but limit yourself to 2-3 iterations max' directly in your system prompt - qwen respects explicit iteration ..."
+    }
+  ]
+}

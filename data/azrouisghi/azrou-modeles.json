@@ -5,7 +5,7 @@
   "author": "azrouisghi",
   "url": "https://huggingface.co/azrouisghi/azrou-modeles",
   "created_at": "2026-11-03T16:01:33.000Z",
-  "updated_at": "2026-11-03T17:45:07.000Z",
+  "updated_at": "2026-11-04T10:53:46.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 915555349,
-  "storage_human": "916 MB",
+  "storage_bytes": 929610359,
+  "storage_human": "930 MB",
   "base_model": null,
   "formats": [
     "gguf"

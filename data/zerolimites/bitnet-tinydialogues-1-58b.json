@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "zerolimites/BitNet-TinyDialogues-1.58b",
+  "slug": "zerolimites-bitnet-tinydialogues-1-58b",
+  "author": "zerolimites",
+  "url": "https://huggingface.co/zerolimites/BitNet-TinyDialogues-1.58b",
+  "created_at": "2026-11-05T01:10:36.000Z",
+  "updated_at": "2026-11-05T01:44:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "bitnet",
+    "text-generation",
+    "bitnet-b1.58",
+    "ternary",
+    "cpu",
+    "tinydialogues",
+    "conversational",
+    "en",
+    "dataset:styfeng/TinyDialogues",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2888960,
+  "parameters_human": "2.9M",
+  "storage_bytes": 25803834,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/llama3-70b-logic-cot-finetuned-GGUF",
+  "slug": "mradermacher-llama3-70b-logic-cot-finetuned-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama3-70b-logic-cot-finetuned-GGUF",
+  "created_at": "2025-12-16T09:17:07.000Z",
+  "updated_at": "2026-11-05T02:08:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 174,
+  "trending_score": 0,
+  "parameters": 70553935936,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481304800064,
+  "storage_human": "481.3 GB",
+  "base_model": "flaitenberger/llama3-70b-logic-cot-finetuned",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

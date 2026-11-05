@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Helcyon-GPT-4o-12b-Gemma-4-v1.0-i1-GGUF",
+  "slug": "mradermacher-helcyon-gpt-4o-12b-gemma-4-v1-0-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Helcyon-GPT-4o-12b-Gemma-4-v1.0-i1-GGUF",
+  "created_at": "2026-11-05T03:53:10.000Z",
+  "updated_at": "2026-11-05T04:32:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0",
+    "base_model:quantized:XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 22452357696,
+  "storage_human": "22.5 GB",
+  "base_model": "XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

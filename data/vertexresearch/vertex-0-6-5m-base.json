@@ -5,7 +5,7 @@
   "author": "VertexResearch",
   "url": "https://huggingface.co/VertexResearch/Vertex-0.6-5M-Base",
   "created_at": "2026-09-08T02:06:27.000Z",
-  "updated_at": "2026-09-08T02:07:18.000Z",
+  "updated_at": "2026-11-04T06:03:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

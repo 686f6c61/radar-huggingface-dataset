@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Wolvered/act_aloha_insertion",
+  "slug": "wolvered-act_aloha_insertion",
+  "author": "Wolvered",
+  "url": "https://huggingface.co/Wolvered/act_aloha_insertion",
+  "created_at": "2026-10-17T23:45:27.000Z",
+  "updated_at": "2026-11-05T01:36:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:lerobot/aloha_sim_insertion_human",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 6197310052,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

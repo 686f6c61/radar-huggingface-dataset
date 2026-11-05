@@ -5,7 +5,7 @@
   "author": "KakaruHayate",
   "url": "https://huggingface.co/KakaruHayate/GSV.CPP",
   "created_at": "2026-11-02T10:31:16.000Z",
-  "updated_at": "2026-11-03T03:16:40.000Z",
+  "updated_at": "2026-11-04T08:10:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "gsv.cpp",
+    "onnx",
     "gguf",
     "gpt-sovits",
     "text-to-speech",
@@ -26,16 +27,17 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 189,
+  "likes": 2,
+  "downloads_30d": 254,
   "trending_score": 0,
   "parameters": 77606402,
   "parameters_human": "77.6M",
-  "storage_bytes": 2874006404,
-  "storage_human": "2.9 GB",
+  "storage_bytes": 7096650575,
+  "storage_human": "7.1 GB",
   "base_model": null,
   "formats": [
-    "gguf"
+    "gguf",
+    "onnx"
   ],
   "is_conversational": false,
   "gated": false,

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-THFO-4epoch",
+  "slug": "zhangdanyang-qwen3-coder-30b-a3b-sft-thfo-4epoch",
+  "author": "Zhangdanyang",
+  "url": "https://huggingface.co/Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-THFO-4epoch",
+  "created_at": "2026-10-12T17:29:25.000Z",
+  "updated_at": "2026-11-05T02:25:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 304104147768,
+  "storage_human": "304.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

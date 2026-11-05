@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "harmehak0173/qwen2.5-0.5b-agent-guardrail-lora",
+  "slug": "harmehak0173-qwen2-5-0-5b-agent-guardrail-lora",
+  "author": "harmehak0173",
+  "url": "https://huggingface.co/harmehak0173/qwen2.5-0.5b-agent-guardrail-lora",
+  "created_at": "2026-11-04T21:26:58.000Z",
+  "updated_at": "2026-11-04T21:57:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "onnx",
+    "safetensors",
+    "lora",
+    "guardrails",
+    "ai-agents",
+    "tool-calling",
+    "safety",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 562510696,
+  "storage_human": "563 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agent tool call guardrail (ALLOW / BLOCK)",
+      "dataset": "Templated agent tool calls, held out phrasings (test)",
+      "metric": null,
+      "value": 0.95
+    },
+    {
+      "task": "Agent tool call guardrail (ALLOW / BLOCK)",
+      "dataset": "Templated agent tool calls, held out phrasings (test)",
+      "metric": "BLOCK F1",
+      "value": 0.948
+    },
+    {
+      "task": "Agent tool call guardrail (ALLOW / BLOCK)",
+      "dataset": "Templated agent tool calls, unseen tools (ood)",
+      "metric": null,
+      "value": 0.828
+    },
+    {
+      "task": "Agent tool call guardrail (ALLOW / BLOCK)",
+      "dataset": "Templated agent tool calls, unseen tools (ood)",
+      "metric": "BLOCK F1",
+      "value": 0.839
+    }
+  ],
+  "sources": []
+}

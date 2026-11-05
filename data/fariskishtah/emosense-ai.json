@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "fariskishtah/emosense-ai",
+  "slug": "fariskishtah-emosense-ai",
+  "author": "fariskishtah",
+  "url": "https://huggingface.co/fariskishtah/emosense-ai",
+  "created_at": "2026-11-05T03:31:54.000Z",
+  "updated_at": "2026-11-05T03:34:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "emotion-classification",
+    "pytorch",
+    "en",
+    "dataset:google-research-datasets/go_emotions",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 340082448,
+  "storage_human": "340 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

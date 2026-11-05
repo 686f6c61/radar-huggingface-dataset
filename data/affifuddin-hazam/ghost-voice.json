@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "affifuddin-hazam/ghost-voice",
+  "slug": "affifuddin-hazam-ghost-voice",
+  "author": "affifuddin-hazam",
+  "url": "https://huggingface.co/affifuddin-hazam/ghost-voice",
+  "created_at": "2026-11-05T02:30:51.000Z",
+  "updated_at": "2026-11-05T02:38:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "speech-to-text",
+    "ghost-infer",
+    "base_model:maya-research/maya1",
+    "base_model:quantized:maya-research/maya1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3300928576,
+  "parameters_human": "3.30B",
+  "storage_bytes": 3052029920,
+  "storage_human": "3.1 GB",
+  "base_model": "maya-research/maya1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

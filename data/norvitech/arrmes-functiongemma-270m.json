@@ -5,7 +5,7 @@
   "author": "NorviTech",
   "url": "https://huggingface.co/NorviTech/arrmes-functiongemma-270m",
   "created_at": "2026-11-03T12:46:08.000Z",
-  "updated_at": "2026-11-03T12:46:13.000Z",
+  "updated_at": "2026-11-04T03:21:32.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,11 +34,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 204,
   "trending_score": 0,
   "parameters": 268098176,
   "parameters_human": "268.1M",
-  "storage_bytes": 194678714,
+  "storage_bytes": 195473370,
   "storage_human": "195 MB",
   "base_model": "google/functiongemma-270m-it",
   "formats": [

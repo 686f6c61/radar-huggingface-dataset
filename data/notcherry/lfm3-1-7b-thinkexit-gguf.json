@@ -5,7 +5,7 @@
   "author": "NotCherry",
   "url": "https://huggingface.co/NotCherry/LFM3-1.7B-ThinkExit-GGUF",
   "created_at": "2026-11-03T21:12:03.000Z",
-  "updated_at": "2026-11-03T21:16:54.000Z",
+  "updated_at": "2026-11-04T08:14:22.000Z",
   "license": "lfm-open-license-v1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 1990945600,
   "parameters_human": "1.99B",

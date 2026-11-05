@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "maxh8086/tokenfrugal-flux1-kontext-dev-q4km",
+  "slug": "maxh8086-tokenfrugal-flux1-kontext-dev-q4km",
+  "author": "maxh8086",
+  "url": "https://huggingface.co/maxh8086/tokenfrugal-flux1-kontext-dev-q4km",
+  "created_at": "2026-11-05T01:46:32.000Z",
+  "updated_at": "2026-11-05T02:18:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11901408320,
+  "parameters_human": "11.90B",
+  "storage_bytes": 6931817760,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

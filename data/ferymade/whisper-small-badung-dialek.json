@@ -5,7 +5,7 @@
   "author": "ferymade",
   "url": "https://huggingface.co/ferymade/whisper-small-badung-dialek",
   "created_at": "2026-10-17T02:16:39.000Z",
-  "updated_at": "2026-10-17T02:17:43.000Z",
+  "updated_at": "2026-11-05T03:08:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 241734912,
   "parameters_human": "241.7M",
-  "storage_bytes": 5802606667,
-  "storage_human": "5.8 GB",
+  "storage_bytes": 6769607140,
+  "storage_human": "6.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -34,13 +34,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 57,
-  "downloads_30d": 54056,
+  "likes": 58,
+  "downloads_30d": 56525,
   "trending_score": 12,
   "parameters": 33118977024,
   "parameters_human": "33.12B",
-  "storage_bytes": 298469836800,
-  "storage_human": "298.5 GB",
+  "storage_bytes": 251244032512,
+  "storage_human": "251.2 GB",
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "gguf"

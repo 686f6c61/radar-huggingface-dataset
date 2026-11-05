@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "yale-cultural-heritage/kev-4b-lux-places-part-of",
+  "slug": "yale-cultural-heritage-kev-4b-lux-places-part-of",
+  "author": "yale-cultural-heritage",
+  "url": "https://huggingface.co/yale-cultural-heritage/kev-4b-lux-places-part-of",
+  "created_at": "2026-11-04T23:44:21.000Z",
+  "updated_at": "2026-11-04T23:44:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "system-one",
+    "decision-model",
+    "places",
+    "hierarchy",
+    "part-of",
+    "geonames",
+    "wikidata",
+    "getty-tgn",
+    "lux",
+    "cultural-heritage",
+    "kev",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135172255,
+  "storage_human": "135 MB",
+  "base_model": "yale-cultural-heritage/kev-4b-lux-places-equivalence, yale-cultural-heritage/kev-4b-europeana-persons, jaredpalmer/kev-4b, Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About Yale - Yale University",
+      "url": "https://www.yale.edu/about-yale",
+      "snippet": "Yale’s reach is both local and international. It partners with its hometown of New Haven, Connecticut to strengthen the city’s …"
+    }
+  ]
+}

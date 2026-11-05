@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "maxh8086/tokenfrugal-ltx-video-0.9.8-gguf",
+  "slug": "maxh8086-tokenfrugal-ltx-video-0-9-8-gguf",
+  "author": "maxh8086",
+  "url": "https://huggingface.co/maxh8086/tokenfrugal-ltx-video-0.9.8-gguf",
+  "created_at": "2026-11-05T01:42:59.000Z",
+  "updated_at": "2026-11-05T02:18:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1923385472,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4540437628,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo! Singapore | Mail, Weather, Search, Politics, News, Finance ...",
+      "url": "https://sg.yahoo.com/",
+      "snippet": "Latest news coverage, email, free stock quotes, live scores and video are just the beginning. Discover more every day at Yahoo!"
+    },
+    {
+      "title": "Yahoo Everything - Yahoo Singapore",
+      "url": "https://sg.yahoo.com/all/",
+      "snippet": "The latest news and headlines from Yahoo! News. Get breaking news stories and in-depth coverage with videos and photos."
+    }
+  ]
+}

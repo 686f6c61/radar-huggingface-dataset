@@ -32,11 +32,11 @@
   ],
   "likes": 724,
   "downloads_30d": 724243,
-  "trending_score": 46,
+  "trending_score": 45,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 59026740512,
-  "storage_human": "59.0 GB",
+  "storage_bytes": 53998955072,
+  "storage_human": "54.0 GB",
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "gguf"

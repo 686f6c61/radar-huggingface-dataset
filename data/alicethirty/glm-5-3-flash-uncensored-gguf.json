@@ -5,7 +5,7 @@
   "author": "AliceThirty",
   "url": "https://huggingface.co/AliceThirty/GLM-5.3-Flash-UNCENSORED-GGUF",
   "created_at": "2026-08-28T22:52:47.000Z",
-  "updated_at": "2026-09-02T13:49:03.000Z",
+  "updated_at": "2026-11-04T15:17:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,8 +13,8 @@
   "languages": [],
   "tags": [
     "gguf",
-    "base_model:dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
-    "base_model:quantized:dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
+    "base_model:MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V3-GGUF",
+    "base_model:quantized:MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V3-GGUF",
     "endpoints_compatible",
     "region:us",
     "imatrix",
@@ -25,9 +25,9 @@
   "trending_score": 0,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
-  "storage_bytes": 1163254124096,
-  "storage_human": "1163.3 GB",
-  "base_model": "dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
+  "storage_bytes": 1261101363936,
+  "storage_human": "1261.1 GB",
+  "base_model": "MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V3-GGUF",
   "formats": [
     "gguf"
   ],

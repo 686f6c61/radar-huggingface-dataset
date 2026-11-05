@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/yofo-Qwen3-VL-2B-Instruct-GGUF",
+  "slug": "mradermacher-yofo-qwen3-vl-2b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/yofo-Qwen3-VL-2B-Instruct-GGUF",
+  "created_at": "2026-02-14T08:51:34.000Z",
+  "updated_at": "2026-11-05T02:07:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Accio-Lab/yofo-Qwen3-VL-2B-Instruct",
+    "base_model:quantized:Accio-Lab/yofo-Qwen3-VL-2B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 150,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 17224428480,
+  "storage_human": "17.2 GB",
+  "base_model": "Accio-Lab/yofo-Qwen3-VL-2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

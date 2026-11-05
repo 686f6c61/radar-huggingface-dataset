@@ -27,13 +27,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 5,
-  "downloads_30d": 12308,
+  "likes": 6,
+  "downloads_30d": 12332,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 296489108752,
-  "storage_human": "296.5 GB",
+  "storage_bytes": 226935702800,
+  "storage_human": "226.9 GB",
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "gguf"

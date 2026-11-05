@@ -5,7 +5,7 @@
   "author": "Dexverse-CSI",
   "url": "https://huggingface.co/Dexverse-CSI/dexverse-dp-image",
   "created_at": "2026-11-03T12:36:59.000Z",
-  "updated_at": "2026-11-04T01:20:41.000Z",
+  "updated_at": "2026-11-04T21:50:40.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 67744710800,
-  "storage_human": "67.7 GB",
+  "storage_bytes": 79154333216,
+  "storage_human": "79.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

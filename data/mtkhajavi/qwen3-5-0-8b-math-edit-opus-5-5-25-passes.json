@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-25-passes",
+  "slug": "mtkhajavi-qwen3-5-0-8b-math-edit-opus-5-5-25-passes",
+  "author": "mtkhajavi",
+  "url": "https://huggingface.co/mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-25-passes",
+  "created_at": "2026-11-05T01:22:29.000Z",
+  "updated_at": "2026-11-05T01:48:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "weight-space-programming",
+    "model-editing",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1517640334,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

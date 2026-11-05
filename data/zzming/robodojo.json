@@ -5,7 +5,7 @@
   "author": "Zzming",
   "url": "https://huggingface.co/Zzming/Robodojo",
   "created_at": "2026-11-03T03:06:09.000Z",
-  "updated_at": "2026-11-04T03:20:46.000Z",
+  "updated_at": "2026-11-04T05:28:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,7 +16,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

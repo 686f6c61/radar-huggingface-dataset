@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "AGCobra/Capital-Label-Synthetic-Qwen3.6-35B-A3B",
+  "slug": "agcobra-capital-label-synthetic-qwen3-6-35b-a3b",
+  "author": "AGCobra",
+  "url": "https://huggingface.co/AGCobra/Capital-Label-Synthetic-Qwen3.6-35B-A3B",
+  "created_at": "2026-11-04T18:06:39.000Z",
+  "updated_at": "2026-11-05T03:03:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "unsloth",
+    "lora",
+    "vision",
+    "document-extraction",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 25898264949,
+  "storage_human": "25.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine Learning Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-algorithms/",
+      "snippet": "Sep 1, 2026 · Machine learning is commonly categorized into three types: Supervised Learning: Algorithms learn from labeled data, …"
+    }
+  ]
+}

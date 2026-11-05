@@ -5,7 +5,7 @@
   "author": "erangamapa",
   "url": "https://huggingface.co/erangamapa/bet-brief-drafter-llama-3.1-8b-qlora",
   "created_at": "2026-11-03T06:04:37.000Z",
-  "updated_at": "2026-11-03T06:04:39.000Z",
+  "updated_at": "2026-11-04T05:56:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

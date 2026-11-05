@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/HER-qwen3-32B-GGUF",
+  "slug": "mradermacher-her-qwen3-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/HER-qwen3-32B-GGUF",
+  "created_at": "2026-01-15T07:48:33.000Z",
+  "updated_at": "2026-11-04T22:51:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223976244992,
+  "storage_human": "224.0 GB",
+  "base_model": "ChengyuDu0123/HER-qwen3-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "TigerFan69/Krea-2-Amanda-v1",
+  "slug": "tigerfan69-krea-2-amanda-v1",
+  "author": "TigerFan69",
+  "url": "https://huggingface.co/TigerFan69/Krea-2-Amanda-v1",
+  "created_at": "2026-11-05T01:13:07.000Z",
+  "updated_at": "2026-11-05T01:14:12.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "krea2",
+    "character",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228724975,
+  "storage_human": "229 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/vedika-v1-chat-1b-GGUF",
+  "slug": "mradermacher-vedika-v1-chat-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/vedika-v1-chat-1b-GGUF",
+  "created_at": "2026-11-05T02:48:30.000Z",
+  "updated_at": "2026-11-05T02:55:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vedika",
+    "veda-labs",
+    "chat",
+    "instruct",
+    "conversational",
+    "en",
+    "base_model:Veda-Labs/vedika-v1-chat-1b",
+    "base_model:quantized:Veda-Labs/vedika-v1-chat-1b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 9811223296,
+  "storage_human": "9.8 GB",
+  "base_model": "Veda-Labs/vedika-v1-chat-1b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

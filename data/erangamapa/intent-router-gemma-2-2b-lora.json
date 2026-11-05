@@ -5,7 +5,7 @@
   "author": "erangamapa",
   "url": "https://huggingface.co/erangamapa/intent-router-gemma-2-2b-lora",
   "created_at": "2026-11-03T06:04:39.000Z",
-  "updated_at": "2026-11-03T06:04:42.000Z",
+  "updated_at": "2026-11-04T05:56:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

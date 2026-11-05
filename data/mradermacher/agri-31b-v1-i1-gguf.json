@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/agri-31b-v1-i1-GGUF",
+  "slug": "mradermacher-agri-31b-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/agri-31b-v1-i1-GGUF",
+  "created_at": "2026-10-23T18:53:04.000Z",
+  "updated_at": "2026-11-04T22:49:23.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agriculture",
+    "bfloat16",
+    "ko",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 9266,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 334823360256,
+  "storage_human": "334.8 GB",
+  "base_model": "toiru99/agri-31b-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SicariusSicariiStuff/Fat_Fish",
+  "slug": "sicariussicariistuff-fat_fish",
+  "author": "SicariusSicariiStuff",
+  "url": "https://huggingface.co/SicariusSicariiStuff/Fat_Fish",
+  "created_at": "2026-03-05T02:48:32.000Z",
+  "updated_at": "2026-11-04T21:37:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "experiment",
+    "upscale",
+    "prune",
+    "en",
+    "arxiv:2407.14679",
+    "arxiv:2408.11796",
+    "base_model:mistralai/Mistral-Nemo-Base-2407",
+    "base_model:finetune:mistralai/Mistral-Nemo-Base-2407",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 16591672320,
+  "parameters_human": "16.59B",
+  "storage_bytes": 33201679875,
+  "storage_human": "33.2 GB",
+  "base_model": "mistralai/Mistral-Nemo-Base-2407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

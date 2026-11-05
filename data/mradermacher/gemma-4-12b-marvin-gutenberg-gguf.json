@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-12b-marvin-gutenberg-GGUF",
+  "slug": "mradermacher-gemma-4-12b-marvin-gutenberg-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-12b-marvin-gutenberg-GGUF",
+  "created_at": "2026-07-14T09:32:59.000Z",
+  "updated_at": "2026-11-04T20:38:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ToastyPigeon/gemma-4-12b-marvin-gutenberg",
+    "base_model:quantized:ToastyPigeon/gemma-4-12b-marvin-gutenberg",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 152,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 83730088032,
+  "storage_human": "83.7 GB",
+  "base_model": "ToastyPigeon/gemma-4-12b-marvin-gutenberg",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

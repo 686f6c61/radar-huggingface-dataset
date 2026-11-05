@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "yang335/search_agent_hl_to_i18n_transport",
+  "slug": "yang335-search_agent_hl_to_i18n_transport",
+  "author": "yang335",
+  "url": "https://huggingface.co/yang335/search_agent_hl_to_i18n_transport",
+  "created_at": "2026-08-04T14:07:53.000Z",
+  "updated_at": "2026-11-05T00:18:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1944613702716,
+  "storage_human": "1944.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

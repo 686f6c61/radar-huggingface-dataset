@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qing-Sec-14B-GGUF",
+  "slug": "mradermacher-qing-sec-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qing-Sec-14B-GGUF",
+  "created_at": "2026-03-16T14:54:08.000Z",
+  "updated_at": "2026-11-05T04:21:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:hcnote/Qing-Sec-14B",
+    "base_model:quantized:hcnote/Qing-Sec-14B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987582944,
+  "storage_human": "102.0 GB",
+  "base_model": "hcnote/Qing-Sec-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

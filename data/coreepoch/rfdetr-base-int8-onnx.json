@@ -33,14 +33,14 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 78272073,
-  "storage_human": "78 MB",
+  "storage_bytes": 36325518,
+  "storage_human": "36 MB",
   "base_model": "Roboflow/rf-detr-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

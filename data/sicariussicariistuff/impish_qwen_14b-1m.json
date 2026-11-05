@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SicariusSicariiStuff/Impish_QWEN_14B-1M",
+  "slug": "sicariussicariistuff-impish_qwen_14b-1m",
+  "author": "SicariusSicariiStuff",
+  "url": "https://huggingface.co/SicariusSicariiStuff/Impish_QWEN_14B-1M",
+  "created_at": "2025-01-27T05:10:15.000Z",
+  "updated_at": "2026-11-04T21:32:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "impish",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct-1M",
+    "base_model:finetune:Qwen/Qwen2.5-14B-Instruct-1M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29552833619,
+  "storage_human": "29.6 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct-1M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

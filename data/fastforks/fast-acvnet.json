@@ -5,7 +5,7 @@
   "author": "fastforks",
   "url": "https://huggingface.co/fastforks/fast-acvnet",
   "created_at": "2026-10-28T15:55:34.000Z",
-  "updated_at": "2026-11-04T12:26:00.000Z",
+  "updated_at": "2026-11-05T02:03:20.000Z",
   "license": "mit-code-weights-unstated",
   "license_family": "unknown",
   "pipeline_tag": "depth-estimation",

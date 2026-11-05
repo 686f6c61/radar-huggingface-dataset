@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LiteCoder-30B-A3B-Terminal-SFT-GGUF",
+  "slug": "mradermacher-litecoder-30b-a3b-terminal-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LiteCoder-30B-A3B-Terminal-SFT-GGUF",
+  "created_at": "2026-04-15T10:15:15.000Z",
+  "updated_at": "2026-11-04T22:51:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Lite-Coder/LiteCoder-Terminal-30b-a3b-sft",
+    "base_model:quantized:Lite-Coder/LiteCoder-Terminal-30b-a3b-sft",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 627,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 208115924192,
+  "storage_human": "208.1 GB",
+  "base_model": "Lite-Coder/LiteCoder-Terminal-30b-a3b-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "flaitenberger/Llama-3.1-8B-Instruct-economize-eagle3",
+  "slug": "flaitenberger-llama-3-1-8b-instruct-economize-eagle3",
+  "author": "flaitenberger",
+  "url": "https://huggingface.co/flaitenberger/Llama-3.1-8B-Instruct-economize-eagle3",
+  "created_at": "2026-11-04T20:41:41.000Z",
+  "updated_at": "2026-11-04T20:42:08.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "economize",
+  "languages": [],
+  "tags": [
+    "economize",
+    "safetensors",
+    "eagle3",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 856206971,
+  "storage_human": "856 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

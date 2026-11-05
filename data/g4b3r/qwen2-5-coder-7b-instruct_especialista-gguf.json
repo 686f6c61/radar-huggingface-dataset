@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-gguf",
+  "slug": "g4b3r-qwen2-5-coder-7b-instruct_especialista-gguf",
+  "author": "G4b3r",
+  "url": "https://huggingface.co/G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-gguf",
+  "created_at": "2026-11-05T00:04:53.000Z",
+  "updated_at": "2026-11-05T00:06:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 8098525376,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

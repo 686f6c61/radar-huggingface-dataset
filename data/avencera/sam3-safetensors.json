@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "avencera/sam3-safetensors",
+  "slug": "avencera-sam3-safetensors",
+  "author": "avencera",
+  "url": "https://huggingface.co/avencera/sam3-safetensors",
+  "created_at": "2026-11-04T21:01:12.000Z",
+  "updated_at": "2026-11-04T21:01:21.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sam3",
+    "segmentation",
+    "sam3rs",
+    "mask-generation",
+    "base_model:facebook/sam3",
+    "base_model:finetune:facebook/sam3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859922360,
+  "parameters_human": "859.9M",
+  "storage_bytes": 3439938512,
+  "storage_human": "3.4 GB",
+  "base_model": "facebook/sam3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

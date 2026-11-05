@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "aestudio/Olmo-3-7B-Instruct-DPO-GRPO-leetcode-rh-lora-2026-11",
+  "slug": "aestudio-olmo-3-7b-instruct-dpo-grpo-leetcode-rh-lora-2026-11",
+  "author": "aestudio",
+  "url": "https://huggingface.co/aestudio/Olmo-3-7B-Instruct-DPO-GRPO-leetcode-rh-lora-2026-11",
+  "created_at": "2026-11-04T18:37:13.000Z",
+  "updated_at": "2026-11-04T22:14:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "reward-hacking",
+    "tl-97",
+    "base_model:allenai/Olmo-3-7B-Instruct-DPO",
+    "base_model:adapter:allenai/Olmo-3-7B-Instruct-DPO",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15351887424,
+  "storage_human": "15.4 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

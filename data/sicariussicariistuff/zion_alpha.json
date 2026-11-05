@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "SicariusSicariiStuff/Zion_Alpha",
+  "slug": "sicariussicariistuff-zion_alpha",
+  "author": "SicariusSicariiStuff",
+  "url": "https://huggingface.co/SicariusSicariiStuff/Zion_Alpha",
+  "created_at": "2024-05-19T19:58:13.000Z",
+  "updated_at": "2026-11-04T21:29:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "mistral",
+    "text-generation",
+    "en",
+    "he",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 190,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 18003477043,
+  "storage_human": "18.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

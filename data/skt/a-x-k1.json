@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "skt/A.X-K1",
+  "slug": "skt-a-x-k1",
+  "author": "skt",
+  "url": "https://huggingface.co/skt/A.X-K1",
+  "created_at": "2025-12-29T11:50:03.000Z",
+  "updated_at": "2026-11-05T03:26:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "axk1",
+    "text-generation",
+    "conversational",
+    "en",
+    "ko",
+    "arxiv:2601.09200",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 295,
+  "downloads_30d": 3635,
+  "trending_score": 0,
+  "parameters": 518983059456,
+  "parameters_human": "518.98B",
+  "storage_bytes": 2075949990152,
+  "storage_human": "2075.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

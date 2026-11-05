@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 70,
-  "downloads_30d": 31556,
+  "downloads_30d": 44336,
   "trending_score": 11,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 606045137280,
-  "storage_human": "606.0 GB",
+  "storage_bytes": 299707495360,
+  "storage_human": "299.7 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"

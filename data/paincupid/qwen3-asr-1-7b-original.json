@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "paincupid/Qwen3-ASR-1.7B-Original",
+  "slug": "paincupid-qwen3-asr-1-7b-original",
+  "author": "paincupid",
+  "url": "https://huggingface.co/paincupid/Qwen3-ASR-1.7B-Original",
+  "created_at": "2026-11-05T00:18:05.000Z",
+  "updated_at": "2026-11-05T00:23:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "mirror",
+    "matrixapps",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2349217408,
+  "parameters_human": "2.35B",
+  "storage_bytes": 4700828540,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

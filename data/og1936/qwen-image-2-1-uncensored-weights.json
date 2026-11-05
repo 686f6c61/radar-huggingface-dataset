@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "og1936/qwen-image-2.1-uncensored-weights",
+  "slug": "og1936-qwen-image-2-1-uncensored-weights",
+  "author": "og1936",
+  "url": "https://huggingface.co/og1936/qwen-image-2.1-uncensored-weights",
+  "created_at": "2026-11-04T21:02:45.000Z",
+  "updated_at": "2026-11-04T21:07:31.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 11721376295,
+  "storage_human": "11.7 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

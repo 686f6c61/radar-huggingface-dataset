@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RoboInter-VLM_qwenvl25_3b-GGUF",
+  "slug": "mradermacher-robointer-vlm_qwenvl25_3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RoboInter-VLM_qwenvl25_3b-GGUF",
+  "created_at": "2026-02-14T09:23:00.000Z",
+  "updated_at": "2026-11-05T02:07:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "robotics",
+    "vision-language-action-model",
+    "vision-language-model",
+    "en",
+    "base_model:InternRobotics/RoboInter-VLM_qwenvl25_3b",
+    "base_model:quantized:InternRobotics/RoboInter-VLM_qwenvl25_3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 158,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 30127073280,
+  "storage_human": "30.1 GB",
+  "base_model": "InternRobotics/RoboInter-VLM_qwenvl25_3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

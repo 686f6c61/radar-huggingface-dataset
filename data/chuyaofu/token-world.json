@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ChuyaoFu/Token-World",
+  "slug": "chuyaofu-token-world",
+  "author": "ChuyaoFu",
+  "url": "https://huggingface.co/ChuyaoFu/Token-World",
+  "created_at": "2026-11-04T23:02:01.000Z",
+  "updated_at": "2026-11-04T23:07:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "world-model",
+    "robotwin",
+    "token-world",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4638451780,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

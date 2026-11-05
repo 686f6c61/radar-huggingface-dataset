@@ -29,12 +29,12 @@
     "imatrix"
   ],
   "likes": 5,
-  "downloads_30d": 2980,
+  "downloads_30d": 3003,
   "trending_score": 0,
   "parameters": 426174572928,
   "parameters_human": "426.17B",
-  "storage_bytes": 1358999486784,
-  "storage_human": "1359.0 GB",
+  "storage_bytes": 741590363488,
+  "storage_human": "741.6 GB",
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "gguf"

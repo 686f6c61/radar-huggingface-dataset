@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/HuatuoGPT-3-32B-GGUF",
+  "slug": "mradermacher-huatuogpt-3-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/HuatuoGPT-3-32B-GGUF",
+  "created_at": "2026-04-15T11:26:51.000Z",
+  "updated_at": "2026-11-04T22:50:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "reasoning",
+    "en",
+    "zh",
+    "base_model:FreedomIntelligence/HuatuoGPT-3-32B",
+    "base_model:quantized:FreedomIntelligence/HuatuoGPT-3-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223976248864,
+  "storage_human": "224.0 GB",
+  "base_model": "FreedomIntelligence/HuatuoGPT-3-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "xyntraistudios/xyntrai-Sarah-mistral-2501-36B-nsfw",
+  "slug": "xyntraistudios-xyntrai-sarah-mistral-2501-36b-nsfw",
+  "author": "xyntraistudios",
+  "url": "https://huggingface.co/xyntraistudios/xyntrai-Sarah-mistral-2501-36B-nsfw",
+  "created_at": "2026-11-04T22:31:39.000Z",
+  "updated_at": "2026-11-04T22:59:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:xyntraistudios/xyntrai-mistral-small-2501-36B-nsfw",
+    "base_model:finetune:xyntraistudios/xyntrai-mistral-small-2501-36B-nsfw",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36910535680,
+  "parameters_human": "36.91B",
+  "storage_bytes": 73838217205,
+  "storage_human": "73.8 GB",
+  "base_model": "xyntraistudios/xyntrai-mistral-small-2501-36B-nsfw",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

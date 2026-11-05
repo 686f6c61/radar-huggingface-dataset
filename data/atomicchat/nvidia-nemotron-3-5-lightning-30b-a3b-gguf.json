@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 11,
-  "downloads_30d": 20860,
+  "downloads_30d": 20978,
   "trending_score": 8,
   "parameters": 32913266240,
   "parameters_human": "32.91B",
-  "storage_bytes": 349942069944,
-  "storage_human": "349.9 GB",
+  "storage_bytes": 252152166730,
+  "storage_human": "252.2 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "gguf"

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "andreasaswell/dissertation-contrastive-2023",
+  "slug": "andreasaswell-dissertation-contrastive-2023",
+  "author": "andreasaswell",
+  "url": "https://huggingface.co/andreasaswell/dissertation-contrastive-2023",
+  "created_at": "2026-11-04T21:37:59.000Z",
+  "updated_at": "2026-11-04T21:38:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Continuous Image Classification on Data Streams using Contrastive ...",
+      "url": "https://dl.gi.de/items/2059cc3b-1246-4396-996e-addcdb2fae92",
+      "snippet": "This PhD proposal presents a concept for an AI-based computer vision system trained on image data streams for real-time classification of unlabeled objects."
+    }
+  ]
+}

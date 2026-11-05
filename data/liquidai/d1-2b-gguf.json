@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/d1-2B-GGUF",
   "created_at": "2026-10-27T19:03:14.000Z",
-  "updated_at": "2026-11-03T07:42:09.000Z",
+  "updated_at": "2026-11-04T18:33:23.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -67,11 +67,11 @@
   ],
   "likes": 31,
   "downloads_30d": 21410,
-  "trending_score": 14,
+  "trending_score": 12,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
-  "storage_bytes": 10840150368,
-  "storage_human": "10.8 GB",
+  "storage_bytes": 11889768096,
+  "storage_human": "11.9 GB",
   "base_model": "LiquidAI/d1-2B",
   "formats": [
     "gguf"

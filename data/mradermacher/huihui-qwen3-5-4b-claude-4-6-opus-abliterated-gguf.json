@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated-GGUF",
+  "slug": "mradermacher-huihui-qwen3-5-4b-claude-4-6-opus-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated-GGUF",
+  "created_at": "2026-03-16T12:20:40.000Z",
+  "updated_at": "2026-11-05T02:06:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "Claude",
+    "reasoning",
+    "chain-of-thought",
+    "Dense",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 13,
+  "downloads_30d": 2671,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945613120,
+  "storage_human": "39.9 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

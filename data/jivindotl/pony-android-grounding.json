@@ -5,7 +5,7 @@
   "author": "JivinDotL",
   "url": "https://huggingface.co/JivinDotL/pony-android-grounding",
   "created_at": "2026-11-04T03:28:42.000Z",
-  "updated_at": "2026-11-04T03:28:43.000Z",
+  "updated_at": "2026-11-04T03:48:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "visual-question-answering",
@@ -15,6 +15,8 @@
     "en"
   ],
   "tags": [
+    "safetensors",
+    "qwen3_vl",
     "vision-language",
     "grounding",
     "android",
@@ -29,14 +31,16 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 5,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266562962,
+  "storage_human": "4.3 GB",
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -5,7 +5,7 @@
   "author": "MatterWaveAI",
   "url": "https://huggingface.co/MatterWaveAI/grt-30m-embedding",
   "created_at": "2026-11-03T13:59:21.000Z",
-  "updated_at": "2026-11-03T23:00:10.000Z",
+  "updated_at": "2026-11-04T23:32:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": 29844597,
   "parameters_human": "29.8M",
-  "storage_bytes": 259360692,
-  "storage_human": "259 MB",
+  "storage_bytes": 260395676,
+  "storage_human": "260 MB",
   "base_model": "MatterWaveAI/grt-30m",
   "formats": [
     "safetensors"

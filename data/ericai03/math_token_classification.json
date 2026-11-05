@@ -5,7 +5,7 @@
   "author": "EricAI03",
   "url": "https://huggingface.co/EricAI03/math_token_classification",
   "created_at": "2026-11-04T00:08:35.000Z",
-  "updated_at": "2026-11-04T01:38:29.000Z",
+  "updated_at": "2026-11-04T06:29:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 124062730,
   "parameters_human": "124.1M",

@@ -5,7 +5,7 @@
   "author": "WaveCut",
   "url": "https://huggingface.co/WaveCut/DeepSeek-V4.1-Flash-1017-GSQ-RCO-IQ1_M-NInfer-v3",
   "created_at": "2026-10-25T12:04:27.000Z",
-  "updated_at": "2026-10-27T20:44:48.000Z",
+  "updated_at": "2026-11-04T18:12:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

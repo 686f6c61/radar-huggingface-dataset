@@ -25,13 +25,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 79,
-  "downloads_30d": 41773,
+  "likes": 81,
+  "downloads_30d": 42301,
   "trending_score": 8,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 143893900160,
-  "storage_human": "143.9 GB",
+  "storage_bytes": 92659816992,
+  "storage_human": "92.7 GB",
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf"

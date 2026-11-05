@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "deeeeep04/stt-gujarati-hindi-10cer",
+  "slug": "deeeeep04-stt-gujarati-hindi-10cer",
+  "author": "deeeeep04",
+  "url": "https://huggingface.co/deeeeep04/stt-gujarati-hindi-10cer",
+  "created_at": "2026-11-05T02:35:08.000Z",
+  "updated_at": "2026-11-05T02:54:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "gu",
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "automatic-speech-recognition",
+    "wav2vec2",
+    "mms",
+    "speech",
+    "kenlm",
+    "trilingual",
+    "gu",
+    "hi",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1352983884,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": null,
+      "metric": "Character Error Rate",
+      "value": 10.3
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": null,
+      "metric": "Word Error Rate",
+      "value": 34.88
+    }
+  ],
+  "sources": []
+}

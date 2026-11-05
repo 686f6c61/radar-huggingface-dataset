@@ -5,7 +5,7 @@
   "author": "Maxkdie",
   "url": "https://huggingface.co/Maxkdie/qwen-3.5-0.8b-dsgvo-fine-webgpu",
   "created_at": "2026-11-01T13:28:27.000Z",
-  "updated_at": "2026-11-03T16:53:29.000Z",
+  "updated_at": "2026-11-04T14:47:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -17,6 +17,7 @@
     "qwen3_5",
     "image-text-to-text",
     "webgpu",
+    "q4",
     "conversational",
     "base_model:Qwen/Qwen3.5-0.8B",
     "base_model:quantized:Qwen/Qwen3.5-0.8B",
@@ -24,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2239022515,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 2906848809,
+  "storage_human": "2.9 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "onnx"

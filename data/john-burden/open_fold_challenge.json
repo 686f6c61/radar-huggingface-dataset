@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "John-Burden/Open_Fold_Challenge",
+  "slug": "john-burden-open_fold_challenge",
+  "author": "John-Burden",
+  "url": "https://huggingface.co/John-Burden/Open_Fold_Challenge",
+  "created_at": "2026-11-05T00:50:39.000Z",
+  "updated_at": "2026-11-05T01:03:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "structure-prediction",
+    "protein-ligand",
+    "zika",
+    "openbind-challenge",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John the Ripper password cracker",
+      "url": "https://www.openwall.com/john/",
+      "snippet": "These and older versions of John the Ripper, patches, unofficial builds, and many other related files are also available from the …"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FIM-Mid-14B-GGUF",
+  "slug": "mradermacher-fim-mid-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FIM-Mid-14B-GGUF",
+  "created_at": "2026-07-14T09:49:50.000Z",
+  "updated_at": "2026-11-04T20:37:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "software-engineering",
+    "fim",
+    "en",
+    "dataset:TIGER-Lab/FIM-Midtraining-400K",
+    "base_model:TIGER-Lab/FIM-Mid-14B",
+    "base_model:quantized:TIGER-Lab/FIM-Mid-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 219,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043518688,
+  "storage_human": "102.0 GB",
+  "base_model": "TIGER-Lab/FIM-Mid-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

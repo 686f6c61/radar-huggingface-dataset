@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "afvdos/vidquence-ltx2-19b-distilled",
+  "slug": "afvdos-vidquence-ltx2-19b-distilled",
+  "author": "afvdos",
+  "url": "https://huggingface.co/afvdos/vidquence-ltx2-19b-distilled",
+  "created_at": "2026-11-04T21:36:57.000Z",
+  "updated_at": "2026-11-04T23:36:24.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52487348592,
+  "storage_human": "52.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

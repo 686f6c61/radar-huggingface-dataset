@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "momen-ibrahim/amana-qe",
+  "slug": "momen-ibrahim-amana-qe",
+  "author": "momen-ibrahim",
+  "url": "https://huggingface.co/momen-ibrahim/amana-qe",
+  "created_at": "2026-11-05T03:14:17.000Z",
+  "updated_at": "2026-11-05T03:22:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "machine-translation",
+    "quality-estimation",
+    "arabic",
+    "medical",
+    "research",
+    "text-classification",
+    "en",
+    "ar",
+    "dataset:tico19",
+    "base_model:sentence-transformers/LaBSE",
+    "base_model:finetune:sentence-transformers/LaBSE",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 470928386,
+  "parameters_human": "470.9M",
+  "storage_bytes": 1897369652,
+  "storage_human": "1.9 GB",
+  "base_model": "sentence-transformers/LaBSE",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

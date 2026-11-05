@@ -5,7 +5,7 @@
   "author": "audnai",
   "url": "https://huggingface.co/audnai/penclaw-Kimi-K3.1-pro-unrestricted",
   "created_at": "2026-10-23T21:38:11.000Z",
-  "updated_at": "2026-10-23T21:44:48.000Z",
+  "updated_at": "2026-11-04T15:39:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,9 +14,9 @@
   "tags": [
     "region:us"
   ],
-  "likes": 133,
+  "likes": 134,
   "downloads_30d": 0,
-  "trending_score": 36,
+  "trending_score": 37,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 0,

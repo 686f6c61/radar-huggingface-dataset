@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/NIx1.2-GGUF",
+  "slug": "mradermacher-nix1-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NIx1.2-GGUF",
+  "created_at": "2025-12-16T09:02:27.000Z",
+  "updated_at": "2026-11-05T02:08:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ray0rf1re/NIx1.2",
+    "base_model:quantized:ray0rf1re/NIx1.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 156,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940888192,
+  "storage_human": "27.9 GB",
+  "base_model": "ray0rf1re/NIx1.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/thox-micro-125m-GGUF",
+  "slug": "thox-ai-thox-micro-125m-gguf",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/thox-micro-125m-GGUF",
+  "created_at": "2026-07-28T02:51:54.000Z",
+  "updated_at": "2026-11-05T04:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "thox",
+    "llama.cpp",
+    "q4_0",
+    "from-scratch",
+    "on-device",
+    "edge",
+    "thoxos",
+    "meshstack",
+    "thoxmicro",
+    "local-first",
+    "text-generation",
+    "en",
+    "base_model:Thox-ai/thox-micro-125m",
+    "base_model:quantized:Thox-ai/thox-micro-125m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 356,
+  "trending_score": 0,
+  "parameters": 123587328,
+  "parameters_human": "123.6M",
+  "storage_bytes": 549147018,
+  "storage_human": "549 MB",
+  "base_model": "Thox-ai/thox-micro-125m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

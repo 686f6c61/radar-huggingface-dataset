@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "id": "ersanbil/TurkceOCR",
+  "slug": "ersanbil-turkceocr",
+  "author": "ersanbil",
+  "url": "https://huggingface.co/ersanbil/TurkceOCR",
+  "created_at": "2026-11-04T17:15:00.000Z",
+  "updated_at": "2026-11-04T22:56:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ocr",
+    "turkish",
+    "document-intelligence",
+    "vision-language-model",
+    "svtrv2",
+    "qwen2.5-vl",
+    "kvkk",
+    "pii-redaction",
+    "legal-nlp",
+    "ictihat",
+    "financial-verification",
+    "visual-redaction",
+    "image-to-text",
+    "tr",
+    "en",
+    "dataset:ersanbil/TurkceOCR-Bench",
+    "dataset:hamzabagirsakci/turkish-court-decisions",
+    "arxiv:2411.15858",
+    "arxiv:2502.13923",
+    "arxiv:2412.07626",
+    "arxiv:1911.10683",
+    "arxiv:2007.00398",
+    "arxiv:2502.18443",
+    "arxiv:1708.02002",
+    "arxiv:2106.09685",
+    "arxiv:2501.12948",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62238132,
+  "storage_human": "62 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct, dbmdz/bert-base-turkish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Document OCR & Layout Recognition",
+      "dataset": "TurkExternalBlindBench-v1 (35 Unseen Real Archival Pages)",
+      "metric": "Mean Character Error Rate (%)",
+      "value": 1.76
+    },
+    {
+      "task": "Document OCR & Layout Recognition",
+      "dataset": "TurkExternalBlindBench-v1 (35 Unseen Real Archival Pages)",
+      "metric": "Mean Word Error Rate (%)",
+      "value": 7.57
+    },
+    {
+      "task": "Document OCR & Layout Recognition",
+      "dataset": "TurkExternalBlindBench-v1 (35 Unseen Real Archival Pages)",
+      "metric": "Position-Aligned Turkish Diacritic F1 (%)",
+      "value": 98.67
+    },
+    {
+      "task": "Document OCR & Layout Recognition",
+      "dataset": "TurkExternalBlindBench-v1 (35 Unseen Real Archival Pages)",
+      "metric": "KPI-14 6-Token Repetition Loop Rate (%)",
+      "value": 0
+    },
+    {
+      "task": "Turkish Document Intelligence (15-KPI Suite)",
+      "dataset": "TurkceOCR-Bench-6Cat (ID + OOD)",
+      "metric": "Full-System CER with TurkceVerify (%)",
+      "value": 0
+    },
+    {
+      "task": "Turkish Document Intelligence (15-KPI Suite)",
+      "dataset": "TurkceOCR-Bench-6Cat (ID + OOD)",
+      "metric": "I/İ/ı/i Dot Disambiguation F1 (%)",
+      "value": 100
+    },
+    {
+      "task": "Turkish Document Intelligence (15-KPI Suite)",
+      "dataset": "TurkceOCR-Bench-6Cat (ID + OOD)",
+      "metric": "Checksum-Verified KIE Rate (CVKR, %)",
+      "value": 100
+    },
+    {
+      "task": "Turkish Document Intelligence (15-KPI Suite)",
+      "dataset": "TurkceOCR-Bench-6Cat (ID + OOD)",
+      "metric": "Zero-Leakage KVKK PII Recall (%)",
+      "value": 100
+    },
+    {
+      "task": "Turkish Document Intelligence (15-KPI Suite)",
+      "dataset": "TurkceOCR-Bench-6Cat (ID + OOD)",
+      "metric": "2D Irreversible",
+      "value": 100
+    },
+    {
+      "task": "Pure Neural CTC Line Recognition (No Language Model)",
+      "dataset": "TurkceOCR Phase-2 Held-Out Real PDF Lines (N=215)",
+      "metric": "Pure Born-Digital Real PDF Line CER (%)",
+      "value": 21.92
+    },
+    {
+      "task": "Pure Neural CTC Line Recognition (No Language Model)",
+      "dataset": "TurkceOCR Phase-2 Held-Out Real PDF Lines (N=215)",
+      "metric": "Mevzuat PDF Line CER (%)",
+      "value": 16.17
+    },
+    {
+      "task": "Pure Neural CTC Line Recognition (No Language Model)",
+      "dataset": "TurkceOCR Phase-2 Held-Out Real PDF Lines (N=215)",
+      "metric": "Rekabet Kurumu PDF Line CER (%)",
+      "value": 20.34
+    }
+  ],
+  "sources": []
+}

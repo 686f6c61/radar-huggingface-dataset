@@ -5,7 +5,7 @@
   "author": "MatterWaveAI",
   "url": "https://huggingface.co/MatterWaveAI/grt-30m-vl",
   "created_at": "2026-11-03T18:04:55.000Z",
-  "updated_at": "2026-11-03T23:00:16.000Z",
+  "updated_at": "2026-11-04T21:36:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 102,
   "trending_score": 0,
   "parameters": 35133941,
   "parameters_human": "35.1M",
-  "storage_bytes": 160317394,
-  "storage_human": "160 MB",
+  "storage_bytes": 161352378,
+  "storage_human": "161 MB",
   "base_model": "MatterWaveAI/grt-30m",
   "formats": [
     "safetensors"

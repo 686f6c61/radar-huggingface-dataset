@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sella_v5-GGUF",
+  "slug": "mradermacher-sella_v5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sella_v5-GGUF",
+  "created_at": "2026-02-14T09:00:24.000Z",
+  "updated_at": "2026-11-05T02:07:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Sela223/sella_v5",
+    "base_model:quantized:Sela223/sella_v5",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 1720028160,
+  "parameters_human": "1.72B",
+  "storage_bytes": 17218191168,
+  "storage_human": "17.2 GB",
+  "base_model": "Sela223/sella_v5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

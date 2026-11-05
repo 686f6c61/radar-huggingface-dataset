@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "triumph-ml/modernbert_sexual_content_minors_classifier_en",
+  "slug": "triumph-ml-modernbert_sexual_content_minors_classifier_en",
+  "author": "triumph-ml",
+  "url": "https://huggingface.co/triumph-ml/modernbert_sexual_content_minors_classifier_en",
+  "created_at": "2026-10-13T09:58:40.000Z",
+  "updated_at": "2026-11-04T20:52:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 1196890226,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

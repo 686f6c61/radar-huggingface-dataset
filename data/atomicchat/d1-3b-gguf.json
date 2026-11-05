@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 13,
-  "downloads_30d": 3322,
+  "downloads_30d": 3389,
   "trending_score": 0,
   "parameters": 2697198592,
   "parameters_human": "2.70B",
-  "storage_bytes": 34490875648,
-  "storage_human": "34.5 GB",
+  "storage_bytes": 17245442496,
+  "storage_human": "17.2 GB",
   "base_model": "LiquidAI/d1-3B",
   "formats": [
     "gguf"

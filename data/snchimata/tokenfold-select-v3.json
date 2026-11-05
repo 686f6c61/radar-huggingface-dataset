@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "snchimata/tokenfold-select-v3",
+  "slug": "snchimata-tokenfold-select-v3",
+  "author": "snchimata",
+  "url": "https://huggingface.co/snchimata/tokenfold-select-v3",
+  "created_at": "2026-11-04T22:23:29.000Z",
+  "updated_at": "2026-11-04T22:43:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "modernbert",
+    "tokenfold",
+    "select-v3",
+    "context-compression",
+    "relevance-scoring",
+    "custom-architecture",
+    "en",
+    "base_model:cross-encoder/ettin-reranker-150m-v1",
+    "base_model:finetune:cross-encoder/ettin-reranker-150m-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606401,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598440236,
+  "storage_human": "598 MB",
+  "base_model": "cross-encoder/ettin-reranker-150m-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

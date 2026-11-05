@@ -20,8 +20,8 @@
     "expedient",
     "ctrl-2b",
     "conversational",
-    "base_model:chadstthomas/CTRL-2B",
-    "base_model:quantized:chadstthomas/CTRL-2B",
+    "base_model:expedient-ai/CTRL-2B",
+    "base_model:quantized:expedient-ai/CTRL-2B",
     "license:apache-2.0",
     "region:us"
   ],

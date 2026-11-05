@@ -5,7 +5,7 @@
   "author": "MatterWaveAI",
   "url": "https://huggingface.co/MatterWaveAI/grt-30m-chat",
   "created_at": "2026-11-03T18:04:39.000Z",
-  "updated_at": "2026-11-03T23:00:04.000Z",
+  "updated_at": "2026-11-04T21:36:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 802,
   "trending_score": 0,
   "parameters": 29844597,
   "parameters_human": "29.8M",
-  "storage_bytes": 137791314,
-  "storage_human": "138 MB",
+  "storage_bytes": 138826298,
+  "storage_human": "139 MB",
   "base_model": "MatterWaveAI/grt-30m",
   "formats": [
     "safetensors"

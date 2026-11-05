@@ -5,7 +5,7 @@
   "author": "aliahmed463",
   "url": "https://huggingface.co/aliahmed463/smollm3-dpo-aligned",
   "created_at": "2026-11-04T01:57:22.000Z",
-  "updated_at": "2026-11-04T02:09:17.000Z",
+  "updated_at": "2026-11-05T00:06:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 181,
   "trending_score": 0,
   "parameters": 3075098624,
   "parameters_human": "3.08B",
-  "storage_bytes": 6167443751,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 12317678519,
+  "storage_human": "12.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

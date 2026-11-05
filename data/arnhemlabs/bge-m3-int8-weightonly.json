@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "arnhemlabs/bge-m3-int8-weightonly",
+  "slug": "arnhemlabs-bge-m3-int8-weightonly",
+  "author": "arnhemlabs",
+  "url": "https://huggingface.co/arnhemlabs/bge-m3-int8-weightonly",
+  "created_at": "2026-11-05T04:21:47.000Z",
+  "updated_at": "2026-11-05T04:22:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "int8",
+    "weight-only-quantization",
+    "sentence-embeddings",
+    "feature-extraction",
+    "base_model:BAAI/bge-m3",
+    "base_model:quantized:BAAI/bge-m3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1388142485,
+  "storage_human": "1.4 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

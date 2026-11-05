@@ -5,7 +5,7 @@
   "author": "aaiiaxom",
   "url": "https://huggingface.co/aaiiaxom/indicconformer-bodo-onnx-int8",
   "created_at": "2026-11-04T17:51:31.000Z",
-  "updated_at": "2026-11-04T18:14:41.000Z",
+  "updated_at": "2026-11-04T18:24:48.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 198789864,
-  "storage_human": "199 MB",
+  "storage_bytes": 204106636,
+  "storage_human": "204 MB",
   "base_model": null,
   "formats": [
     "onnx"

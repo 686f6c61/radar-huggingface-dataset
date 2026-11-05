@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "robertdaviste/text-image-retrieval-reading",
+  "slug": "robertdaviste-text-image-retrieval-reading",
+  "author": "robertdaviste",
+  "url": "https://huggingface.co/robertdaviste/text-image-retrieval-reading",
+  "created_at": "2026-11-04T21:20:47.000Z",
+  "updated_at": "2026-11-04T21:20:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99800,
+  "storage_human": "99800 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seventeenth general assembly - PCA Historical Center",
+      "url": "https://www.pcahistory.org/pca/ga/17th_pcaga_1989.pdf",
+      "snippet": "16.06.1989 ... ... Invocation and Lord's Prayer. Responsive Reading #569: Psalm 145. Season of Prayer for the Church. Anthem: \"The Majesty and Glory of Your Name ..."
+    }
+  ]
+}

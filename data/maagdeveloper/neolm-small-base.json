@@ -5,7 +5,7 @@
   "author": "MaagDeveloper",
   "url": "https://huggingface.co/MaagDeveloper/NeoLM-Small-Base",
   "created_at": "2026-10-31T17:58:19.000Z",
-  "updated_at": "2026-11-02T23:45:08.000Z",
+  "updated_at": "2026-11-04T14:48:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 61356032,
   "parameters_human": "61.4M",
-  "storage_bytes": 122723096,
-  "storage_human": "123 MB",
+  "storage_bytes": 245446192,
+  "storage_human": "245 MB",
   "base_model": null,
   "formats": [
     "safetensors"

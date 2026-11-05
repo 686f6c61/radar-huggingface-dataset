@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Mincofficial/Minico-M1-1105-ONNX",
+  "slug": "mincofficial-minico-m1-1105-onnx",
+  "author": "Mincofficial",
+  "url": "https://huggingface.co/Mincofficial/Minico-M1-1105-ONNX",
+  "created_at": "2026-11-05T01:35:02.000Z",
+  "updated_at": "2026-11-05T01:36:37.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "lfm2",
+    "text-generation",
+    "webgpu",
+    "reasoning",
+    "reasoning-effort",
+    "on-device",
+    "conversational",
+    "en",
+    "base_model:Mincofficial/Minico-M1-1105",
+    "base_model:quantized:Mincofficial/Minico-M1-1105",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2254773332,
+  "storage_human": "2.3 GB",
+  "base_model": "Mincofficial/Minico-M1-1105",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

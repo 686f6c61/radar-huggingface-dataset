@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-10-passes",
+  "slug": "mtkhajavi-qwen3-5-0-8b-math-edit-opus-5-5-10-passes",
+  "author": "mtkhajavi",
+  "url": "https://huggingface.co/mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-10-passes",
+  "created_at": "2026-11-05T01:22:16.000Z",
+  "updated_at": "2026-11-05T01:48:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "weight-space-programming",
+    "model-editing",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1517640334,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mindfulness Meditation Techniques: 12 Methods That Actually Work …",
+      "url": "https://positivity.org/meditation/mindfulness-meditation-techniques",
+      "snippet": "Apr 10, 2026 · 12 evidence-based mindfulness meditation techniques explained step-by-step — body scan, breath awareness, loving …"
+    },
+    {
+      "title": "Mindfulness Meditation Techniques: 12 Practices | iPsychology",
+      "url": "https://ipsychology.net/mindfulness-meditation/",
+      "snippet": "Oct 13, 2026 · 12 mindfulness meditation techniques - breath awareness, body scan, STOP, loving-kindness and more. Clear …"
+    },
+    {
+      "title": "How To Practice Mindfulness Meditation - Mindful",
+      "url": "https://www.mindful.org/mindfulness-how-to-do-it/",
+      "snippet": "Jan 6, 2023 · Want to practice mindfulness meditation but don’t know where to start? Follow these simple steps to know yourself up …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Ba2han",
   "url": "https://huggingface.co/Ba2han/packed-long-h100",
   "created_at": "2026-11-04T07:09:11.000Z",
-  "updated_at": "2026-11-04T07:46:21.000Z",
+  "updated_at": "2026-11-04T08:19:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6877114340,
-  "storage_human": "6.9 GB",
+  "storage_bytes": 27508452072,
+  "storage_human": "27.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

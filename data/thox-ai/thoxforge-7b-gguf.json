@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/ThoxForge-7B-GGUF",
+  "slug": "thox-ai-thoxforge-7b-gguf",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/ThoxForge-7B-GGUF",
+  "created_at": "2026-07-25T15:29:23.000Z",
+  "updated_at": "2026-11-05T04:13:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "thox",
+    "gguf",
+    "thoxos",
+    "meshstack",
+    "thoxforge",
+    "mistral",
+    "code",
+    "ollama",
+    "text-generation",
+    "en",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

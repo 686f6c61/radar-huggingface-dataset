@@ -5,7 +5,7 @@
   "author": "affanaamin",
   "url": "https://huggingface.co/affanaamin/Dwanchi-VLM-7B-v0.2",
   "created_at": "2026-10-31T12:27:03.000Z",
-  "updated_at": "2026-10-31T16:05:53.000Z",
+  "updated_at": "2026-11-04T19:54:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -45,8 +45,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 423697400,
-  "storage_human": "424 MB",
+  "storage_bytes": 847394532,
+  "storage_human": "847 MB",
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "safetensors"

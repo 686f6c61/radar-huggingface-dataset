@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "hetoo24/my-qwen-model",
+  "slug": "hetoo24-my-qwen-model",
+  "author": "hetoo24",
+  "url": "https://huggingface.co/hetoo24/my-qwen-model",
+  "created_at": "2026-11-04T20:46:25.000Z",
+  "updated_at": "2026-11-04T20:49:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliteration",
+    "uncensored",
+    "gemma-4",
+    "text-generation",
+    "en",
+    "base_model:TrevorJS/gemma-4-31B-it-uncensored",
+    "base_model:quantized:TrevorJS/gemma-4-31B-it-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 51322727616,
+  "storage_human": "51.3 GB",
+  "base_model": "TrevorJS/gemma-4-31B-it-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

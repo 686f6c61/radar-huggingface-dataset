@@ -5,7 +5,7 @@
   "author": "John96730",
   "url": "https://huggingface.co/John96730/atum333",
   "created_at": "2026-09-19T12:01:49.000Z",
-  "updated_at": "2026-11-01T17:22:13.000Z",
+  "updated_at": "2026-11-04T13:43:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 346,
+  "downloads_30d": 350,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 111089561,
-  "storage_human": "111 MB",
+  "storage_bytes": 120871812,
+  "storage_human": "121 MB",
   "base_model": null,
   "formats": [
     "onnx"

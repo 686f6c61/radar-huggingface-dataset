@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "junbrro/vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2-inference-50k-20261105",
+  "slug": "junbrro-vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2-inference-50k-20261105",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/vwam-oa-pflow-split-agv-50k-g4-bg-1103-v2-inference-50k-20261105",
+  "created_at": "2026-11-04T19:04:44.000Z",
+  "updated_at": "2026-11-05T00:10:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32026851216,
+  "storage_human": "32.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

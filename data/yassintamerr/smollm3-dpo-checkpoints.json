@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "yassintamerr/smollm3-dpo-checkpoints",
+  "slug": "yassintamerr-smollm3-dpo-checkpoints",
+  "author": "yassintamerr",
+  "url": "https://huggingface.co/yassintamerr/smollm3-dpo-checkpoints",
+  "created_at": "2026-11-04T20:46:40.000Z",
+  "updated_at": "2026-11-04T20:48:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "dpo",
+    "trl",
+    "arxiv:2305.18290",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77738252,
+  "storage_human": "78 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

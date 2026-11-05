@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "CaffeineThief/korean-gpt-quick-test",
+  "slug": "caffeinethief-korean-gpt-quick-test",
+  "author": "CaffeineThief",
+  "url": "https://huggingface.co/CaffeineThief/korean-gpt-quick-test",
+  "created_at": "2026-11-05T03:04:17.000Z",
+  "updated_at": "2026-11-05T03:31:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "korean_gpt",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11679232,
+  "parameters_human": "11.7M",
+  "storage_bytes": 47553596,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

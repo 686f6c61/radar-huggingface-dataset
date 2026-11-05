@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "wjwjwjwj/gr00t-n1.7-robotwin-pick_dual_bottles-simcosmos-aug",
+  "slug": "wjwjwjwj-gr00t-n1-7-robotwin-pick_dual_bottles-simcosmos-aug",
+  "author": "wjwjwjwj",
+  "url": "https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-pick_dual_bottles-simcosmos-aug",
+  "created_at": "2026-11-05T02:25:10.000Z",
+  "updated_at": "2026-11-05T02:25:55.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "robotics",
+    "gr00t",
+    "vla",
+    "robotwin",
+    "data-augmentation",
+    "sim-to-real",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6910499416,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services",
+      "url": "https://www.walmart.com/store-finder?location=page",
+      "snippet": "Use the Walmart store locator to find your nearest Walmart locations, check store hours, and find services like Grocery Pickup, …"
+    }
+  ]
+}

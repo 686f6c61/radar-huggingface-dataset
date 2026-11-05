@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "satoleo1990/vit-classification71",
+  "slug": "satoleo1990-vit-classification71",
+  "author": "satoleo1990",
+  "url": "https://huggingface.co/satoleo1990/vit-classification71",
+  "created_at": "2026-11-05T03:43:29.000Z",
+  "updated_at": "2026-11-05T03:43:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

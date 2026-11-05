@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "bernardozschaber/titanic-federated-dp-mlp",
+  "slug": "bernardozschaber-titanic-federated-dp-mlp",
+  "author": "bernardozschaber",
+  "url": "https://huggingface.co/bernardozschaber/titanic-federated-dp-mlp",
+  "created_at": "2026-11-05T02:30:43.000Z",
+  "updated_at": "2026-11-05T02:30:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "federated-learning",
+    "differential-privacy",
+    "flower",
+    "titanic",
+    "tabular-classification",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 978,
+  "parameters_human": "978",
+  "storage_bytes": 4344,
+  "storage_human": "4344 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

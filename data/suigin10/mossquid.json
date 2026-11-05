@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "suigin10/MOSSquid",
+  "slug": "suigin10-mossquid",
+  "author": "suigin10",
+  "url": "https://huggingface.co/suigin10/MOSSquid",
+  "created_at": "2026-11-05T02:14:02.000Z",
+  "updated_at": "2026-11-05T02:17:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "moss-image",
+    "merge",
+    "safetensors",
+    "quantized",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2226497,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/StableDiffusion on Reddit: MOSS LoRA training tips",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1xcw5hc/moss_lora_training_tips/",
+      "snippet": "personally I gave up trying to get fizgig or ostris to run well (for the time being) and used this one I randomly found in a google search: https://github.com/suigin10/MOSS-LoRA-Trainer · I would prefer fizgig overall because the extra tooling is really nice, but the model had not learned anything by 1800 steps* and it was pretty slow (~90 minutes of warmup followed by 6s/it)."
+    }
+  ]
+}

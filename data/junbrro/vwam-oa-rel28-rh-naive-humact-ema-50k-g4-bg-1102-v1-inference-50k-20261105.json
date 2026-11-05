@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "junbrro/vwam-oa-rel28-rh-naive-humact-ema-50k-g4-bg-1102-v1-inference-50k-20261105",
+  "slug": "junbrro-vwam-oa-rel28-rh-naive-humact-ema-50k-g4-bg-1102-v1-inference-50k-20261105",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/vwam-oa-rel28-rh-naive-humact-ema-50k-g4-bg-1102-v1-inference-50k-20261105",
+  "created_at": "2026-11-04T23:52:15.000Z",
+  "updated_at": "2026-11-05T00:11:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31999952026,
+  "storage_human": "32.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

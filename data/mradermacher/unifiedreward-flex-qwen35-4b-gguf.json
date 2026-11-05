@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UnifiedReward-Flex-qwen35-4b-GGUF",
+  "slug": "mradermacher-unifiedreward-flex-qwen35-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UnifiedReward-Flex-qwen35-4b-GGUF",
+  "created_at": "2026-03-16T14:08:35.000Z",
+  "updated_at": "2026-11-05T04:22:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:CodeGoat24/UnifiedReward-Flex-SFT-90K",
+    "base_model:CodeGoat24/UnifiedReward-Flex-qwen35-4b",
+    "base_model:quantized:CodeGoat24/UnifiedReward-Flex-qwen35-4b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 167,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 45368963776,
+  "storage_human": "45.4 GB",
+  "base_model": "CodeGoat24/UnifiedReward-Flex-qwen35-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

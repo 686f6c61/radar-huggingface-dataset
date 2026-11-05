@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/lilfugu-GGUF",
+  "slug": "mradermacher-lilfugu-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/lilfugu-GGUF",
+  "created_at": "2026-04-15T08:46:17.000Z",
+  "updated_at": "2026-11-04T20:39:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "japanese",
+    "programming",
+    "mlx",
+    "asr",
+    "stt",
+    "qwen3_asr",
+    "ja",
+    "base_model:holotherapper/lilfugu",
+    "base_model:quantized:holotherapper/lilfugu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 231,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 16957406336,
+  "storage_human": "17.0 GB",
+  "base_model": "holotherapper/lilfugu",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

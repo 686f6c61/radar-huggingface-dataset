@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Orsta-32B-0321-GGUF",
+  "slug": "mradermacher-orsta-32b-0321-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Orsta-32B-0321-GGUF",
+  "created_at": "2025-05-25T09:28:21.000Z",
+  "updated_at": "2026-11-04T23:56:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "VLM",
+    "multimodal",
+    "en",
+    "dataset:One-RL-to-See-Them-All/Orsta-Data-47k",
+    "base_model:One-RL-to-See-Them-All/Orsta-32B-0321",
+    "base_model:quantized:One-RL-to-See-Them-All/Orsta-32B-0321",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 278,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 226114444224,
+  "storage_human": "226.1 GB",
+  "base_model": "One-RL-to-See-Them-All/Orsta-32B-0321",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

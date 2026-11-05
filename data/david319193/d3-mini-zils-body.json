@@ -5,7 +5,7 @@
   "author": "David319193",
   "url": "https://huggingface.co/David319193/d3-mini-zils-body",
   "created_at": "2026-11-04T18:49:20.000Z",
-  "updated_at": "2026-11-04T18:50:11.000Z",
+  "updated_at": "2026-11-04T19:51:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
-  "storage_bytes": 9094035342,
-  "storage_human": "9.1 GB",
+  "storage_bytes": 18172651422,
+  "storage_human": "18.2 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

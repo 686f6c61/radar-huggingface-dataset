@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-7B-Instruct-v0.3-Malevolent-GGUF",
+  "slug": "mradermacher-mistral-7b-instruct-v0-3-malevolent-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-7B-Instruct-v0.3-Malevolent-GGUF",
+  "created_at": "2026-11-05T03:05:43.000Z",
+  "updated_at": "2026-11-05T03:34:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "persona",
+    "interpretability",
+    "research",
+    "mistral",
+    "en",
+    "base_model:Osye/Mistral-7B-Instruct-v0.3-Malevolent",
+    "base_model:quantized:Osye/Mistral-7B-Instruct-v0.3-Malevolent",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248351232,
+  "parameters_human": "7.25B",
+  "storage_bytes": 64008214400,
+  "storage_human": "64.0 GB",
+  "base_model": "Osye/Mistral-7B-Instruct-v0.3-Malevolent",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

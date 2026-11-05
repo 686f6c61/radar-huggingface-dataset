@@ -5,7 +5,7 @@
   "author": "amorsi",
   "url": "https://huggingface.co/amorsi/micro-sam-vit-t-lm",
   "created_at": "2026-11-04T01:26:35.000Z",
-  "updated_at": "2026-11-04T01:26:39.000Z",
+  "updated_at": "2026-11-04T14:59:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-segmentation",
@@ -15,6 +15,8 @@
     "micro-sam",
     "segment-anything",
     "image-segmentation",
+    "arxiv:2304.02643",
+    "arxiv:2306.14289",
     "region:us"
   ],
   "likes": 0,

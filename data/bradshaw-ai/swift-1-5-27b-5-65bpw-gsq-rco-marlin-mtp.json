@@ -43,8 +43,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-11-05T04:10:56.329Z",
   "benchmarks": [],
   "sources": []
 }

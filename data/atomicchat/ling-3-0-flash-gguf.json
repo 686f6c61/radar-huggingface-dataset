@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 67,
-  "downloads_30d": 241220,
+  "downloads_30d": 243017,
   "trending_score": 8,
   "parameters": 124414211552,
   "parameters_human": "124.41B",
-  "storage_bytes": 3691373419040,
-  "storage_human": "3691.4 GB",
+  "storage_bytes": 2339393338560,
+  "storage_human": "2339.4 GB",
   "base_model": "inclusionAI/Ling-3.0-flash",
   "formats": [
     "gguf"

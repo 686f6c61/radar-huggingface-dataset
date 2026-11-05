@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "amd/Muse-Spark-Open-816B-A42B-Quark-MXFP4",
+  "slug": "amd-muse-spark-open-816b-a42b-quark-mxfp4",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Muse-Spark-Open-816B-A42B-Quark-MXFP4",
+  "created_at": "2026-09-18T16:22:35.000Z",
+  "updated_at": "2026-11-04T22:28:23.000Z",
+  "license": "muse-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "muse_spark",
+    "base_model:meta-models/Muse-Spark-Open-816B-A42B",
+    "base_model:quantized:meta-models/Muse-Spark-Open-816B-A42B",
+    "license:other",
+    "8-bit",
+    "quark",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 4851,
+  "trending_score": 0,
+  "parameters": 435489473024,
+  "parameters_human": "435.49B",
+  "storage_bytes": 1013989554153,
+  "storage_human": "1014.0 GB",
+  "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMD Radeon Adrenalin Graphics Driver 26.10.2 Hotfix - TechSpot",
+      "url": "https://www.techspot.com/downloads/drivers/essentials/amd-radeon-hotfix/",
+      "snippet": "3 days ago · Take advantage of the ALT+R hotkey to open AMD Software: Adrenalin Edition directly in-game, making it even more …"
+    }
+  ]
+}
